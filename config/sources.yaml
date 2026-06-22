@@ -1,0 +1,21 @@
+sources:
+  - name: korben.info
+    type: rss
+    url: https://korben.info/feed
+
+  - name: lemonde.fr
+    type: sitemap
+    url: https://www.lemonde.fr/sitemap_news.xml
+    url_pattern: ".*\\.html$"
+
+settings:
+  if_not_archived_within: "3d"
+  capture_outlinks: false
+  capture_screenshot: false
+  skip_first_archive: true
+  js_behavior_timeout: 0
+  max_captures_per_minute: 7
+  max_concurrent_spn2_jobs: 3
+  poll_interval_seconds: 15
+  poll_timeout_seconds: 180
+  state_max_age_days: 90
