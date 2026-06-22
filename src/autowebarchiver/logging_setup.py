@@ -6,7 +6,7 @@ import sys
 
 
 def setup_logging() -> None:
-    level = logging.DEBUG if os.environ.get("AUTOARCHIVER_DEBUG") else logging.INFO
+    level = logging.DEBUG if os.environ.get("AUTOWEBARCHIVER_DEBUG") else logging.INFO
     logging.basicConfig(
         level=level,
         stream=sys.stdout,

@@ -1,6 +1,6 @@
 import json
 
-from autoarchiver.state.store import SeenStore, normalize_url
+from autowebarchiver.state.store import SeenStore, normalize_url
 
 
 def test_normalize_url_strips_tracking_params():

@@ -1,4 +1,4 @@
-# Auto-Archiver
+# AutoWebArchiver
 
 Archivage automatique de pages web sur l'[Internet Archive](https://web.archive.org/).
 
@@ -17,7 +17,7 @@ cp .env.example .env  # renseigner ARCHIVE_ORG_ACCESS_KEY / ARCHIVE_ORG_SECRET_K
 ## Exécution
 
 ```bash
-python -m autoarchiver.main
+python -m autowebarchiver.main
 ```
 
 ## Tests

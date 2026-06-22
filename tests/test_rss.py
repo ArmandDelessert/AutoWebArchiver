@@ -1,4 +1,4 @@
-from autoarchiver.discovery.rss import discover_rss
+from autowebarchiver.discovery.rss import discover_rss
 
 
 def test_discover_rss_extracts_items(fixtures_dir):

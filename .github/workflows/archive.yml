@@ -6,7 +6,7 @@ on:
   workflow_dispatch: {}
 
 concurrency:
-  group: autoarchiver
+  group: autowebarchiver
   cancel-in-progress: false
 
 permissions:
@@ -31,7 +31,7 @@ jobs:
           ARCHIVE_ORG_ACCESS_KEY: ${{ secrets.ARCHIVE_ORG_ACCESS_KEY }}
           ARCHIVE_ORG_SECRET_KEY: ${{ secrets.ARCHIVE_ORG_SECRET_KEY }}
           PYTHONPATH: src
-        run: python -m autoarchiver.main
+        run: python -m autowebarchiver.main
 
       - name: Commit updated state
         run: |

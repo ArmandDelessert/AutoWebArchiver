@@ -1,6 +1,6 @@
 import responses
 
-from autoarchiver.discovery.sitemap import discover_sitemap
+from autowebarchiver.discovery.sitemap import discover_sitemap
 
 
 @responses.activate

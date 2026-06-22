@@ -11,7 +11,7 @@ from .models import DiscoveredItem
 logger = logging.getLogger(__name__)
 
 _NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-_USER_AGENT = "AutoArchiver/0.1 (+https://github.com/)"
+_USER_AGENT = "AutoWebArchiver/0.1 (+https://github.com/)"
 _REQUEST_TIMEOUT = 10
 
 

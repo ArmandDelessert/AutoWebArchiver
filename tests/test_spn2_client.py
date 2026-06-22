@@ -1,6 +1,6 @@
 import responses
 
-from autoarchiver.spn2.client import SPN2Client
+from autowebarchiver.spn2.client import SPN2Client
 
 
 def make_client(**kwargs):
@@ -24,8 +24,8 @@ def test_submit_returns_job_id():
 
 @responses.activate
 def test_submit_retries_after_429(monkeypatch):
-    monkeypatch.setattr("autoarchiver.spn2.client.time.sleep", lambda *_: None)
-    monkeypatch.setattr("autoarchiver.spn2.client.random.uniform", lambda *_: 0)
+    monkeypatch.setattr("autowebarchiver.spn2.client.time.sleep", lambda *_: None)
+    monkeypatch.setattr("autowebarchiver.spn2.client.random.uniform", lambda *_: 0)
 
     responses.add(responses.POST, "https://web.archive.org/save", status=429)
     responses.add(
@@ -87,7 +87,7 @@ def test_poll_until_resolved_returns_error():
 
 @responses.activate
 def test_poll_until_resolved_times_out(monkeypatch):
-    monkeypatch.setattr("autoarchiver.spn2.client.time.sleep", lambda *_: None)
+    monkeypatch.setattr("autowebarchiver.spn2.client.time.sleep", lambda *_: None)
     responses.add(
         responses.GET,
         "https://web.archive.org/save/status/job-1",
