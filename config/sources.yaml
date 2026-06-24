@@ -1,15 +1,31 @@
 sources:
-  - name: korben.info
+  - name: 24heures.ch
     type: rss
-    url: https://korben.info/feed
+    url: https://partner-feeds.publishing.tamedia.ch/rss/24heures/
+
+  - name: lemonde.fr-une
+    type: rss
+    url: https://www.lemonde.fr/rss/une.xml
+
+  - name: lemonde.fr-en_continu
+    type: rss
+    url: https://www.lemonde.fr/rss/en_continu.xml
 
   - name: lemonde.fr
     type: sitemap
     url: https://www.lemonde.fr/sitemap_news.xml
     url_pattern: ".*\\.html$"
 
+  - name: letemps.ch
+    type: rss
+    url: https://www.letemps.ch/articles.rss
+
+  - name: rts.ch
+    type: rss
+    url: https://www.rts.ch/info/toute-info/?format=rss/news
+
 settings:
-  if_not_archived_within: "3d"
+  if_not_archived_within: "1w"
   capture_outlinks: false
   capture_screenshot: false
   skip_first_archive: true
