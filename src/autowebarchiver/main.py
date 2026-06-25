@@ -41,10 +41,15 @@ def repoll_pending(client: SPN2Client, store: SeenStore, settings: Settings) -> 
         job_id = entry.get("spn2_job_id")
         if not job_id:
             continue
-        result = client.poll_until_resolved(
-            job_id, url, interval=settings.poll_interval_seconds, timeout=settings.poll_timeout_seconds
-        )
-        _record_result(store, result)
+        try:
+            result = client.poll_until_resolved(
+                job_id, url, interval=settings.poll_interval_seconds, timeout=settings.poll_timeout_seconds
+            )
+        except Exception as exc:  # noqa: BLE001 - isolate failures; stays pending for next run
+            logger.error("Failed to poll pending job for %s: %s", url, exc)
+            counts["pending"] += 1
+            continue
+        _record_result(store, result, settings)
         counts[result.status if result.status in counts else "pending"] += 1
     return counts
 
@@ -84,30 +89,50 @@ def submit_new_urls(
             )
         except Exception as exc:  # noqa: BLE001 - isolate failures per URL
             logger.error("Failed to submit %s for capture: %s", item.url, exc)
-            store.mark_resolved(item.url, status="error")
+            # A submit failure is almost always transient (network/SPN2 hiccup),
+            # so keep it eligible for a bounded number of retries.
+            store.mark_error(
+                item.url, retryable=True, max_attempts=settings.max_capture_attempts
+            )
             counts["error"] += 1
             continue
 
         store.mark_pending(item.url, job_id)
-        result = client.poll_until_resolved(
-            job_id,
-            item.url,
-            interval=settings.poll_interval_seconds,
-            timeout=settings.poll_timeout_seconds,
-        )
-        _record_result(store, result)
+        try:
+            result = client.poll_until_resolved(
+                job_id,
+                item.url,
+                interval=settings.poll_interval_seconds,
+                timeout=settings.poll_timeout_seconds,
+            )
+        except Exception as exc:  # noqa: BLE001 - isolate failures; stays pending for next run
+            logger.error("Failed to poll capture job for %s: %s", item.url, exc)
+            counts["pending"] += 1
+            continue
+        _record_result(store, result, settings)
         counts[result.status if result.status in counts else "pending"] += 1
 
     return counts
 
 
-def _record_result(store: SeenStore, result: SPN2Result) -> None:
+def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> None:
     if result.status == "success":
         store.mark_resolved(result.url, status="success", job_id=result.job_id)
         logger.info("Archived %s -> %s", result.url, result.wayback_url)
     elif result.status == "error":
-        store.mark_resolved(result.url, status="error", job_id=result.job_id)
-        logger.error("SPN2 error for %s: %s (%s)", result.url, result.message, result.status_ext)
+        will_retry = store.mark_error(
+            result.url,
+            retryable=result.is_retryable_error,
+            max_attempts=settings.max_capture_attempts,
+            job_id=result.job_id,
+        )
+        logger.error(
+            "SPN2 error for %s: %s (%s)%s",
+            result.url,
+            result.message,
+            result.status_ext,
+            " - will retry next run" if will_retry else " - giving up",
+        )
     else:
         # status == "timeout": leave it marked as pending so it gets repolled next run.
         logger.warning("Job for %s is still pending after polling timeout", result.url)

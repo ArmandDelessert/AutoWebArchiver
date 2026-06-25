@@ -60,3 +60,37 @@ def test_purge_keeps_pending_entries_regardless_of_age(tmp_path):
 
     assert purged == 0
     assert store.is_known("https://example.com/in-flight")
+
+
+def test_retryable_error_stays_unknown_until_max_attempts(tmp_path):
+    store = SeenStore(tmp_path / "seen.json")
+    url = "https://example.com/flaky"
+
+    # First two transient failures keep the URL eligible for re-submission.
+    assert store.mark_error(url, retryable=True, max_attempts=3) is True
+    assert not store.is_known(url)
+    assert store.mark_error(url, retryable=True, max_attempts=3) is True
+    assert not store.is_known(url)
+
+    # Third attempt reaches the cap: give up and treat as known.
+    assert store.mark_error(url, retryable=True, max_attempts=3) is False
+    assert store.is_known(url)
+
+
+def test_non_retryable_error_is_known_immediately(tmp_path):
+    store = SeenStore(tmp_path / "seen.json")
+    url = "https://example.com/gone"
+
+    assert store.mark_error(url, retryable=False, max_attempts=3) is False
+    assert store.is_known(url)
+
+
+def test_attempts_persist_across_pending_resubmit(tmp_path):
+    store = SeenStore(tmp_path / "seen.json")
+    url = "https://example.com/flaky"
+
+    store.mark_error(url, retryable=True, max_attempts=3)  # attempt 1
+    store.mark_pending(url, "job-2")  # re-submitted next run, count preserved
+    assert store.mark_error(url, retryable=True, max_attempts=3) is True  # attempt 2
+    assert store.mark_error(url, retryable=True, max_attempts=3) is False  # attempt 3 -> give up
+    assert store.is_known(url)
