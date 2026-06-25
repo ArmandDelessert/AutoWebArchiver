@@ -101,6 +101,26 @@ def test_poll_until_resolved_times_out(monkeypatch):
     assert result.status == "timeout"
 
 
+def test_next_submit_wait_seconds_tracks_rolling_window(monkeypatch):
+    clock = {"t": 1000.0}
+    monkeypatch.setattr("autowebarchiver.spn2.client.time.monotonic", lambda: clock["t"])
+
+    client = SPN2Client("access", "secret", max_captures_per_minute=2)
+
+    # Empty window: a slot is free.
+    assert client.next_submit_wait_seconds() == 0.0
+
+    # Fill the window to capacity.
+    client._submit_timestamps.append(1000.0)
+    client._submit_timestamps.append(1000.0)
+    wait = client.next_submit_wait_seconds()
+    assert 59.9 < wait <= 60.2  # must wait ~until the oldest leaves the 60s window
+
+    # Once the window has passed, both timestamps are pruned and a slot frees.
+    clock["t"] = 1061.0
+    assert client.next_submit_wait_seconds() == 0.0
+
+
 @responses.activate
 def test_get_user_status():
     responses.add(

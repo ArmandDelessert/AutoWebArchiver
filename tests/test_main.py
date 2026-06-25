@@ -18,6 +18,9 @@ class FakeClient:
     def get_user_status(self):
         return {"available": self.available}
 
+    def next_submit_wait_seconds(self):
+        return 0.0
+
     def submit(self, url, **kwargs):
         self._n += 1
         job_id = f"job-{self._n}"

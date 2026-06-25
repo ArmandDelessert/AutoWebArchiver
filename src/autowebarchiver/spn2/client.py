@@ -41,17 +41,31 @@ class SPN2Client:
     def _headers(self) -> dict[str, str]:
         return {"Accept": "application/json", "Authorization": self._auth_header}
 
-    def _throttle(self) -> None:
-        """Block until submitting would not exceed max_captures_per_minute."""
-        now = time.monotonic()
-        window = 60.0
-        while self._submit_timestamps and now - self._submit_timestamps[0] > window:
+    _WINDOW = 60.0
+
+    def _prune_timestamps(self, now: float) -> None:
+        while self._submit_timestamps and now - self._submit_timestamps[0] > self._WINDOW:
             self._submit_timestamps.popleft()
-        if len(self._submit_timestamps) >= self._max_captures_per_minute:
-            sleep_for = window - (now - self._submit_timestamps[0]) + 0.1
-            if sleep_for > 0:
-                logger.debug("Throttling SPN2 submissions, sleeping %.1fs", sleep_for)
-                time.sleep(sleep_for)
+
+    def next_submit_wait_seconds(self) -> float:
+        """Return how long (in seconds) until a submission would respect
+        max_captures_per_minute. 0.0 means a slot is free right now. This is a
+        pure check based on a local rolling window of submit timestamps -- it
+        records nothing and never blocks."""
+        now = time.monotonic()
+        self._prune_timestamps(now)
+        if len(self._submit_timestamps) < self._max_captures_per_minute:
+            return 0.0
+        return max(0.0, self._WINDOW - (now - self._submit_timestamps[0]) + 0.1)
+
+    def _throttle(self) -> None:
+        """Block until submitting would not exceed max_captures_per_minute, then
+        record the submission. Callers that pre-check next_submit_wait_seconds()
+        (e.g. the sliding-window loop) will find this is a no-op wait."""
+        wait = self.next_submit_wait_seconds()
+        if wait > 0:
+            logger.debug("Throttling SPN2 submissions, sleeping %.1fs", wait)
+            time.sleep(wait)
         self._submit_timestamps.append(time.monotonic())
 
     @retry(

@@ -4,6 +4,7 @@ import logging
 import os
 import sys
 import time
+from collections import deque
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -36,43 +37,47 @@ def discover_source(source: Source) -> list[DiscoveredItem]:
     raise FatalError(f"Unknown source type '{source.type}' for {source.name}")
 
 
+def _poll_once(
+    client: SPN2Client,
+    store: SeenStore,
+    in_flight: dict[str, tuple[str, float]],
+    settings: Settings,
+    counts: dict[str, int],
+) -> None:
+    """Poll every in-flight job (job_id -> (url, deadline)) exactly once. Resolved
+    jobs are recorded and removed; jobs past their per-job deadline are left
+    pending for the next run. Mutates in_flight and counts in place."""
+    now = time.monotonic()
+    for job_id, (url, deadline) in list(in_flight.items()):
+        try:
+            payload = client.get_status(job_id)
+        except Exception as exc:  # noqa: BLE001 - isolate failures; stays pending for next run
+            logger.error("Failed to poll job %s for %s: %s", job_id, url, exc)
+            counts["pending"] += 1
+            del in_flight[job_id]
+            continue
+        result = result_from_status_payload(job_id, url, payload)
+        if result is not None:
+            _record_result(store, result, settings)
+            counts[result.status] += 1
+            del in_flight[job_id]
+        elif now >= deadline:
+            logger.warning("Job for %s is still pending after polling timeout", url)
+            counts["pending"] += 1
+            del in_flight[job_id]
+
+
 def _poll_jobs(
     client: SPN2Client, store: SeenStore, jobs: dict[str, str], settings: Settings
 ) -> dict[str, int]:
-    """Poll a batch of in-flight jobs (job_id -> url) until each resolves or the
-    shared polling deadline is reached. Captures run concurrently server-side, so
-    a whole wave resolves in roughly the time of a single capture."""
+    """Poll a fixed set of jobs (job_id -> url) until each resolves or times out."""
     counts = {"success": 0, "error": 0, "pending": 0}
-    waiting = dict(jobs)
-    if not waiting:
-        return counts
-
     deadline = time.monotonic() + settings.poll_timeout_seconds
-    while waiting:
-        for job_id, url in list(waiting.items()):
-            try:
-                payload = client.get_status(job_id)
-            except Exception as exc:  # noqa: BLE001 - isolate failures; stays pending for next run
-                logger.error("Failed to poll job %s for %s: %s", job_id, url, exc)
-                counts["pending"] += 1
-                del waiting[job_id]
-                continue
-            result = result_from_status_payload(job_id, url, payload)
-            if result is None:
-                continue  # still pending
-            _record_result(store, result, settings)
-            counts[result.status] += 1
-            del waiting[job_id]
-
-        if not waiting:
-            break
-        if time.monotonic() >= deadline:
-            for url in waiting.values():
-                logger.warning("Job for %s is still pending after polling timeout", url)
-                counts["pending"] += 1
-            break
-        time.sleep(settings.poll_interval_seconds)
-
+    in_flight = {job_id: (url, deadline) for job_id, url in jobs.items()}
+    while in_flight:
+        _poll_once(client, store, in_flight, settings, counts)
+        if in_flight:
+            time.sleep(settings.poll_interval_seconds)
     return counts
 
 
@@ -86,41 +91,39 @@ def poll_leftovers(client: SPN2Client, store: SeenStore, settings: Settings) -> 
     return _poll_jobs(client, store, jobs, settings)
 
 
-def _submit_wave(
-    client: SPN2Client, store: SeenStore, items: list[DiscoveredItem], settings: Settings
-) -> tuple[dict[str, str], int]:
-    """Submit a wave of capture requests without waiting for them. Returns the
-    in-flight job_id -> url map plus the number of submit failures."""
-    in_flight: dict[str, str] = {}
-    errors = 0
-    for item in items:
-        try:
-            job_id = client.submit(
-                item.url,
-                capture_screenshot=settings.capture_screenshot,
-                capture_outlinks=settings.capture_outlinks,
-                skip_first_archive=settings.skip_first_archive,
-                if_not_archived_within=settings.if_not_archived_within,
-                js_behavior_timeout=settings.js_behavior_timeout,
-            )
-        except Exception as exc:  # noqa: BLE001 - isolate failures per URL
-            logger.error("Failed to submit %s for capture: %s", item.url, exc)
-            # A submit failure is almost always transient (network/SPN2 hiccup),
-            # so keep it eligible for a bounded number of retries.
-            store.mark_error(item.url, retryable=True, max_attempts=settings.max_capture_attempts)
-            errors += 1
-            continue
-        store.mark_pending(item.url, job_id)
-        in_flight[job_id] = item.url
-    return in_flight, errors
+def _submit(
+    client: SPN2Client, store: SeenStore, item: DiscoveredItem, settings: Settings
+) -> str | None:
+    """Submit a single capture request. Returns its job_id, or None if the submit
+    failed (the URL is then marked for a bounded retry)."""
+    try:
+        job_id = client.submit(
+            item.url,
+            capture_screenshot=settings.capture_screenshot,
+            capture_outlinks=settings.capture_outlinks,
+            skip_first_archive=settings.skip_first_archive,
+            if_not_archived_within=settings.if_not_archived_within,
+            js_behavior_timeout=settings.js_behavior_timeout,
+        )
+    except Exception as exc:  # noqa: BLE001 - isolate failures per URL
+        logger.error("Failed to submit %s for capture: %s", item.url, exc)
+        # A submit failure is almost always transient (network/SPN2 hiccup),
+        # so keep it eligible for a bounded number of retries.
+        store.mark_error(item.url, retryable=True, max_attempts=settings.max_capture_attempts)
+        return None
+    store.mark_pending(item.url, job_id)
+    return job_id
 
 
 def archive_new_urls(
     client: SPN2Client, store: SeenStore, items: list[DiscoveredItem], settings: Settings
 ) -> dict[str, int]:
-    """Archive newly discovered URLs in concurrent waves: submit up to the
-    available concurrency, poll that wave to completion, then move on, up to a
-    per-run budget."""
+    """Archive newly discovered URLs with a single-threaded sliding window: keep
+    up to `concurrency` captures in flight, submitting a new one as soon as a slot
+    frees and the per-minute rate allows, up to a per-run budget. Submitting and
+    polling are both quick HTTP calls, so one thread interleaves them -- no threads
+    or asyncio needed (the throughput ceiling is SPN2's 7 submissions/min, not our
+    local concurrency)."""
     counts = {"success": 0, "error": 0, "pending": 0}
     new_items = [item for item in items if not store.is_known(item.url)]
     logger.info("%d new URL(s) to archive out of %d discovered", len(new_items), len(items))
@@ -132,21 +135,38 @@ def archive_new_urls(
         logger.warning("Could not fetch SPN2 user status (%s), assuming default capacity", exc)
         available = settings.max_concurrent_spn2_jobs
 
-    wave_size = max(1, min(settings.max_concurrent_spn2_jobs, available))
+    concurrency = max(1, min(settings.max_concurrent_spn2_jobs, available))
     budget = settings.max_captures_per_run
     if len(new_items) > budget:
         logger.info(
             "Limiting this run to %d of %d new URL(s) (per-run budget)", budget, len(new_items)
         )
-    queued = new_items[:budget]
+    queued = deque(new_items[:budget])
+    in_flight: dict[str, tuple[str, float]] = {}
 
-    for start in range(0, len(queued), wave_size):
-        wave = queued[start : start + wave_size]
-        in_flight, submit_errors = _submit_wave(client, store, wave, settings)
-        counts["error"] += submit_errors
-        wave_counts = _poll_jobs(client, store, in_flight, settings)
-        for key, value in wave_counts.items():
-            counts[key] += value
+    while queued or in_flight:
+        # Fill free concurrency slots while the per-minute rate allows.
+        while queued and len(in_flight) < concurrency and client.next_submit_wait_seconds() == 0:
+            item = queued.popleft()
+            job_id = _submit(client, store, item, settings)
+            if job_id is None:
+                counts["error"] += 1
+                continue
+            in_flight[job_id] = (item.url, time.monotonic() + settings.poll_timeout_seconds)
+
+        _poll_once(client, store, in_flight, settings, counts)
+
+        if not queued and not in_flight:
+            break
+
+        # Sleep until the next thing can happen: a poll cycle for in-flight jobs,
+        # or the next free rate slot if we still have URLs waiting to be submitted.
+        waits = []
+        if in_flight:
+            waits.append(settings.poll_interval_seconds)
+        if queued and len(in_flight) < concurrency:
+            waits.append(client.next_submit_wait_seconds())
+        time.sleep(min(waits))
 
     return counts
 
