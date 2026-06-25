@@ -8,7 +8,7 @@ from collections import deque
 import requests
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential_jitter
 
-from .models import SPN2Result
+from .models import SPN2Result, result_from_status_payload
 
 logger = logging.getLogger(__name__)
 
@@ -127,25 +127,9 @@ class SPN2Client:
         deadline = time.monotonic() + timeout
         while True:
             payload = self.get_status(job_id)
-            status = payload.get("status")
-
-            if status == "success":
-                return SPN2Result(
-                    job_id=job_id,
-                    url=url,
-                    status="success",
-                    original_url=payload.get("original_url"),
-                    timestamp=payload.get("timestamp"),
-                    duration_sec=payload.get("duration_sec"),
-                )
-            if status == "error":
-                return SPN2Result(
-                    job_id=job_id,
-                    url=url,
-                    status="error",
-                    status_ext=payload.get("status_ext"),
-                    message=payload.get("message"),
-                )
+            result = result_from_status_payload(job_id, url, payload)
+            if result is not None:
+                return result
 
             if time.monotonic() >= deadline:
                 logger.warning("Timed out waiting for SPN2 job %s (%s)", job_id, url)

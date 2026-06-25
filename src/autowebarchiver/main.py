@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 import os
 import sys
+import time
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -13,7 +14,7 @@ from .discovery.rss import discover_rss
 from .discovery.sitemap import discover_sitemap
 from .logging_setup import setup_logging
 from .spn2.client import SPN2Client
-from .spn2.models import SPN2Result
+from .spn2.models import SPN2Result, result_from_status_payload
 from .state.store import SeenStore
 
 logger = logging.getLogger(__name__)
@@ -35,49 +36,64 @@ def discover_source(source: Source) -> list[DiscoveredItem]:
     raise FatalError(f"Unknown source type '{source.type}' for {source.name}")
 
 
-def repoll_pending(client: SPN2Client, store: SeenStore, settings: Settings) -> dict[str, int]:
+def _poll_jobs(
+    client: SPN2Client, store: SeenStore, jobs: dict[str, str], settings: Settings
+) -> dict[str, int]:
+    """Poll a batch of in-flight jobs (job_id -> url) until each resolves or the
+    shared polling deadline is reached. Captures run concurrently server-side, so
+    a whole wave resolves in roughly the time of a single capture."""
     counts = {"success": 0, "error": 0, "pending": 0}
-    for url, entry in list(store.pending_entries().items()):
-        job_id = entry.get("spn2_job_id")
-        if not job_id:
-            continue
-        try:
-            result = client.poll_until_resolved(
-                job_id, url, interval=settings.poll_interval_seconds, timeout=settings.poll_timeout_seconds
-            )
-        except Exception as exc:  # noqa: BLE001 - isolate failures; stays pending for next run
-            logger.error("Failed to poll pending job for %s: %s", url, exc)
-            counts["pending"] += 1
-            continue
-        _record_result(store, result, settings)
-        counts[result.status if result.status in counts else "pending"] += 1
+    waiting = dict(jobs)
+    if not waiting:
+        return counts
+
+    deadline = time.monotonic() + settings.poll_timeout_seconds
+    while waiting:
+        for job_id, url in list(waiting.items()):
+            try:
+                payload = client.get_status(job_id)
+            except Exception as exc:  # noqa: BLE001 - isolate failures; stays pending for next run
+                logger.error("Failed to poll job %s for %s: %s", job_id, url, exc)
+                counts["pending"] += 1
+                del waiting[job_id]
+                continue
+            result = result_from_status_payload(job_id, url, payload)
+            if result is None:
+                continue  # still pending
+            _record_result(store, result, settings)
+            counts[result.status] += 1
+            del waiting[job_id]
+
+        if not waiting:
+            break
+        if time.monotonic() >= deadline:
+            for url in waiting.values():
+                logger.warning("Job for %s is still pending after polling timeout", url)
+                counts["pending"] += 1
+            break
+        time.sleep(settings.poll_interval_seconds)
+
     return counts
 
 
-def submit_new_urls(
+def poll_leftovers(client: SPN2Client, store: SeenStore, settings: Settings) -> dict[str, int]:
+    """Resolve jobs left pending by a previous run."""
+    jobs = {
+        entry["spn2_job_id"]: url
+        for url, entry in store.pending_entries().items()
+        if entry.get("spn2_job_id")
+    }
+    return _poll_jobs(client, store, jobs, settings)
+
+
+def _submit_wave(
     client: SPN2Client, store: SeenStore, items: list[DiscoveredItem], settings: Settings
-) -> dict[str, int]:
-    counts = {"success": 0, "error": 0, "pending": 0}
-    new_items = [item for item in items if not store.is_known(item.url)]
-    logger.info("%d new URL(s) to archive out of %d discovered", len(new_items), len(items))
-
-    try:
-        user_status = client.get_user_status()
-        available = user_status.get("available", settings.max_concurrent_spn2_jobs)
-    except Exception as exc:  # noqa: BLE001 - never let a status check abort the run
-        logger.warning("Could not fetch SPN2 user status (%s), assuming default capacity", exc)
-        available = settings.max_concurrent_spn2_jobs
-
-    batch_size = max(1, min(settings.max_concurrent_spn2_jobs, available))
-    if len(new_items) > batch_size:
-        logger.info(
-            "Limiting this run to %d of %d new URL(s) based on available SPN2 capacity",
-            batch_size,
-            len(new_items),
-        )
-    new_items = new_items[:batch_size]
-
-    for item in new_items:
+) -> tuple[dict[str, str], int]:
+    """Submit a wave of capture requests without waiting for them. Returns the
+    in-flight job_id -> url map plus the number of submit failures."""
+    in_flight: dict[str, str] = {}
+    errors = 0
+    for item in items:
         try:
             job_id = client.submit(
                 item.url,
@@ -91,26 +107,46 @@ def submit_new_urls(
             logger.error("Failed to submit %s for capture: %s", item.url, exc)
             # A submit failure is almost always transient (network/SPN2 hiccup),
             # so keep it eligible for a bounded number of retries.
-            store.mark_error(
-                item.url, retryable=True, max_attempts=settings.max_capture_attempts
-            )
-            counts["error"] += 1
+            store.mark_error(item.url, retryable=True, max_attempts=settings.max_capture_attempts)
+            errors += 1
             continue
-
         store.mark_pending(item.url, job_id)
-        try:
-            result = client.poll_until_resolved(
-                job_id,
-                item.url,
-                interval=settings.poll_interval_seconds,
-                timeout=settings.poll_timeout_seconds,
-            )
-        except Exception as exc:  # noqa: BLE001 - isolate failures; stays pending for next run
-            logger.error("Failed to poll capture job for %s: %s", item.url, exc)
-            counts["pending"] += 1
-            continue
-        _record_result(store, result, settings)
-        counts[result.status if result.status in counts else "pending"] += 1
+        in_flight[job_id] = item.url
+    return in_flight, errors
+
+
+def archive_new_urls(
+    client: SPN2Client, store: SeenStore, items: list[DiscoveredItem], settings: Settings
+) -> dict[str, int]:
+    """Archive newly discovered URLs in concurrent waves: submit up to the
+    available concurrency, poll that wave to completion, then move on, up to a
+    per-run budget."""
+    counts = {"success": 0, "error": 0, "pending": 0}
+    new_items = [item for item in items if not store.is_known(item.url)]
+    logger.info("%d new URL(s) to archive out of %d discovered", len(new_items), len(items))
+
+    try:
+        user_status = client.get_user_status()
+        available = user_status.get("available", settings.max_concurrent_spn2_jobs)
+    except Exception as exc:  # noqa: BLE001 - never let a status check abort the run
+        logger.warning("Could not fetch SPN2 user status (%s), assuming default capacity", exc)
+        available = settings.max_concurrent_spn2_jobs
+
+    wave_size = max(1, min(settings.max_concurrent_spn2_jobs, available))
+    budget = settings.max_captures_per_run
+    if len(new_items) > budget:
+        logger.info(
+            "Limiting this run to %d of %d new URL(s) (per-run budget)", budget, len(new_items)
+        )
+    queued = new_items[:budget]
+
+    for start in range(0, len(queued), wave_size):
+        wave = queued[start : start + wave_size]
+        in_flight, submit_errors = _submit_wave(client, store, wave, settings)
+        counts["error"] += submit_errors
+        wave_counts = _poll_jobs(client, store, in_flight, settings)
+        for key, value in wave_counts.items():
+            counts[key] += value
 
     return counts
 
@@ -163,8 +199,8 @@ def run(config_path: Path = DEFAULT_CONFIG_PATH, state_path: Path = DEFAULT_STAT
 
     totals = {"success": 0, "error": 0, "pending": 0}
 
-    repoll_counts = repoll_pending(client, store, config.settings)
-    for key, value in repoll_counts.items():
+    leftover_counts = poll_leftovers(client, store, config.settings)
+    for key, value in leftover_counts.items():
         totals[key] += value
 
     discovered: list[DiscoveredItem] = []
@@ -176,8 +212,8 @@ def run(config_path: Path = DEFAULT_CONFIG_PATH, state_path: Path = DEFAULT_STAT
         except Exception as exc:  # noqa: BLE001 - isolate failures per source
             logger.error("Failed to discover items from %s: %s", source.name, exc)
 
-    submit_counts = submit_new_urls(client, store, discovered, config.settings)
-    for key, value in submit_counts.items():
+    archive_counts = archive_new_urls(client, store, discovered, config.settings)
+    for key, value in archive_counts.items():
         totals[key] += value
 
     purged = store.purge_older_than(config.settings.state_max_age_days)

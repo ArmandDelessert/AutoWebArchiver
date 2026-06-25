@@ -33,7 +33,8 @@ class Settings:
     skip_first_archive: bool = True
     js_behavior_timeout: int = 0
     max_captures_per_minute: int = 7
-    max_concurrent_spn2_jobs: int = 3
+    max_concurrent_spn2_jobs: int = 10
+    max_captures_per_run: int = 60
     max_capture_attempts: int = 3
     poll_interval_seconds: int = 15
     poll_timeout_seconds: int = 180

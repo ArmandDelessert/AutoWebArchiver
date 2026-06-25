@@ -47,3 +47,27 @@ class SPN2Result:
         if self.status != "success" or not self.timestamp or not self.original_url:
             return None
         return f"https://web.archive.org/web/{self.timestamp}/{self.original_url}"
+
+
+def result_from_status_payload(job_id: str, url: str, payload: dict) -> SPN2Result | None:
+    """Build a resolved SPN2Result from a status-request payload, or return
+    None if the capture is still pending."""
+    status = payload.get("status")
+    if status == "success":
+        return SPN2Result(
+            job_id=job_id,
+            url=url,
+            status="success",
+            original_url=payload.get("original_url"),
+            timestamp=payload.get("timestamp"),
+            duration_sec=payload.get("duration_sec"),
+        )
+    if status == "error":
+        return SPN2Result(
+            job_id=job_id,
+            url=url,
+            status="error",
+            status_ext=payload.get("status_ext"),
+            message=payload.get("message"),
+        )
+    return None
