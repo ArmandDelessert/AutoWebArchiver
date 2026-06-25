@@ -21,7 +21,7 @@ settings:
   max_captures_per_minute: 7
   max_concurrent_spn2_jobs: 10
   max_captures_per_run: 60
-  max_run_seconds: 600
+  max_run_seconds: 900
   max_capture_attempts: 3
   poll_interval_seconds: 15
   poll_timeout_seconds: 180

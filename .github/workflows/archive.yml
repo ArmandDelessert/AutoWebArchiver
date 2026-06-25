@@ -14,10 +14,12 @@ permissions:
 
 jobs:
   archive:
-    runs-on: ubuntu-slim
-    timeout-minutes: 20
+    # NOT ubuntu-slim: single-CPU runners have a hard 15-minute job timeout that
+    # timeout-minutes cannot raise, and our runs can legitimately approach that.
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-python@v6
         with:
