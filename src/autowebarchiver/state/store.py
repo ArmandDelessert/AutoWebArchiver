@@ -8,7 +8,7 @@ from urllib.parse import urlencode, urlparse, parse_qsl, urlunparse
 
 logger = logging.getLogger(__name__)
 
-_TRACKING_PARAM_PREFIXES = ("utm_", "fbclid", "gclid", "mc_cid", "mc_eid")
+_TRACKING_PARAM_PREFIXES = ("utm_", "fbclid", "gclid", "mc_cid", "mc_eid", "rts_source")
 
 
 def normalize_url(url: str) -> str:

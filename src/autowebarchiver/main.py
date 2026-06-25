@@ -16,7 +16,7 @@ from .discovery.sitemap import discover_sitemap
 from .logging_setup import setup_logging
 from .spn2.client import SPN2Client
 from .spn2.models import SPN2Result, result_from_status_payload
-from .state.store import SeenStore
+from .state.store import SeenStore, normalize_url
 
 logger = logging.getLogger(__name__)
 
@@ -52,7 +52,7 @@ def _poll_once(
         try:
             payload = client.get_status(job_id)
         except Exception as exc:  # noqa: BLE001 - isolate failures; stays pending for next run
-            logger.error("Failed to poll job %s for %s: %s", job_id, url, exc)
+            logger.error('Failed to poll job %s for "%s": %s', job_id, url, exc)
             counts["pending"] += 1
             del in_flight[job_id]
             continue
@@ -62,7 +62,7 @@ def _poll_once(
             counts[result.status] += 1
             del in_flight[job_id]
         elif now >= deadline:
-            logger.warning("Job for %s is still pending after polling timeout", url)
+            logger.warning('Job for "%s" is still pending after polling timeout', url)
             counts["pending"] += 1
             del in_flight[job_id]
 
@@ -91,14 +91,13 @@ def poll_leftovers(client: SPN2Client, store: SeenStore, settings: Settings) -> 
     return _poll_jobs(client, store, jobs, settings)
 
 
-def _submit(
-    client: SPN2Client, store: SeenStore, item: DiscoveredItem, settings: Settings
-) -> str | None:
-    """Submit a single capture request. Returns its job_id, or None if the submit
-    failed (the URL is then marked for a bounded retry)."""
+def _submit(client: SPN2Client, store: SeenStore, url: str, settings: Settings) -> str | None:
+    """Submit a single capture request for an already-normalized URL. Returns its
+    job_id, or None if the submit failed (the URL is then marked for a bounded
+    retry)."""
     try:
         job_id = client.submit(
-            item.url,
+            url,
             capture_screenshot=settings.capture_screenshot,
             capture_outlinks=settings.capture_outlinks,
             skip_first_archive=settings.skip_first_archive,
@@ -106,13 +105,34 @@ def _submit(
             js_behavior_timeout=settings.js_behavior_timeout,
         )
     except Exception as exc:  # noqa: BLE001 - isolate failures per URL
-        logger.error("Failed to submit %s for capture: %s", item.url, exc)
+        logger.error('Failed to submit "%s" for capture: %s', url, exc)
         # A submit failure is almost always transient (network/SPN2 hiccup),
         # so keep it eligible for a bounded number of retries.
-        store.mark_error(item.url, retryable=True, max_attempts=settings.max_capture_attempts)
+        store.mark_error(url, retryable=True, max_attempts=settings.max_capture_attempts)
         return None
-    store.mark_pending(item.url, job_id)
+    store.mark_pending(url, job_id)
     return job_id
+
+
+def _interleave_by_source(items: list[DiscoveredItem]) -> list[DiscoveredItem]:
+    """Round-robin items across their source so consecutive captures hit
+    different hosts. This keeps per-host concurrency low and avoids SPN2's
+    same-host throttling (429) and target-site anti-bot blocks (403/502) that
+    occur when many captures target one host at once."""
+    buckets: dict[str, deque[DiscoveredItem]] = {}
+    order: list[str] = []
+    for item in items:
+        if item.source not in buckets:
+            buckets[item.source] = deque()
+            order.append(item.source)
+        buckets[item.source].append(item)
+
+    result: list[DiscoveredItem] = []
+    while len(result) < len(items):
+        for source in order:
+            if buckets[source]:
+                result.append(buckets[source].popleft())
+    return result
 
 
 def archive_new_urls(
@@ -123,9 +143,20 @@ def archive_new_urls(
     frees and the per-minute rate allows, up to a per-run budget. Submitting and
     polling are both quick HTTP calls, so one thread interleaves them -- no threads
     or asyncio needed (the throughput ceiling is SPN2's 7 submissions/min, not our
-    local concurrency)."""
+    local concurrency). URLs are submitted round-robin across sources to spread
+    load over hosts."""
     counts = {"success": 0, "error": 0, "pending": 0}
-    new_items = [item for item in items if not store.is_known(item.url)]
+
+    # Normalize and de-duplicate (a URL can appear under several feeds, or with
+    # different tracking params that normalize to the same canonical URL).
+    new_items: list[DiscoveredItem] = []
+    seen_normalized: set[str] = set()
+    for item in items:
+        normalized = normalize_url(item.url)
+        if normalized in seen_normalized or store.is_known(item.url):
+            continue
+        seen_normalized.add(normalized)
+        new_items.append(item)
     logger.info("%d new URL(s) to archive out of %d discovered", len(new_items), len(items))
 
     try:
@@ -137,22 +168,23 @@ def archive_new_urls(
 
     concurrency = max(1, min(settings.max_concurrent_spn2_jobs, available))
     budget = settings.max_captures_per_run
-    if len(new_items) > budget:
+    ordered = _interleave_by_source(new_items)
+    if len(ordered) > budget:
         logger.info(
-            "Limiting this run to %d of %d new URL(s) (per-run budget)", budget, len(new_items)
+            "Limiting this run to %d of %d new URL(s) (per-run budget)", budget, len(ordered)
         )
-    queued = deque(new_items[:budget])
+    queued = deque(ordered[:budget])
     in_flight: dict[str, tuple[str, float]] = {}
 
     while queued or in_flight:
         # Fill free concurrency slots while the per-minute rate allows.
         while queued and len(in_flight) < concurrency and client.next_submit_wait_seconds() == 0:
-            item = queued.popleft()
-            job_id = _submit(client, store, item, settings)
+            url = normalize_url(queued.popleft().url)
+            job_id = _submit(client, store, url, settings)
             if job_id is None:
                 counts["error"] += 1
                 continue
-            in_flight[job_id] = (item.url, time.monotonic() + settings.poll_timeout_seconds)
+            in_flight[job_id] = (url, time.monotonic() + settings.poll_timeout_seconds)
 
         _poll_once(client, store, in_flight, settings, counts)
 
@@ -174,7 +206,7 @@ def archive_new_urls(
 def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> None:
     if result.status == "success":
         store.mark_resolved(result.url, status="success", job_id=result.job_id)
-        logger.info("Archived %s -> %s", result.url, result.wayback_url)
+        logger.info('Archived "%s" -> "%s"', result.url, result.wayback_url)
     elif result.status == "error":
         will_retry = store.mark_error(
             result.url,
@@ -183,7 +215,7 @@ def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> 
             job_id=result.job_id,
         )
         logger.error(
-            "SPN2 error for %s: %s (%s)%s",
+            'SPN2 error for "%s": %s (%s)%s',
             result.url,
             result.message,
             result.status_ext,

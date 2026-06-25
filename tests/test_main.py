@@ -123,6 +123,54 @@ def test_retryable_error_is_resubmitted_on_next_run(tmp_path):
     assert len([c for c in client.calls if c[0] == "submit"]) == 2
 
 
+def test_interleave_by_source_round_robins():
+    items = [
+        DiscoveredItem(url="a0", title=None, published_at=None, source="a"),
+        DiscoveredItem(url="a1", title=None, published_at=None, source="a"),
+        DiscoveredItem(url="a2", title=None, published_at=None, source="a"),
+        DiscoveredItem(url="b0", title=None, published_at=None, source="b"),
+        DiscoveredItem(url="b1", title=None, published_at=None, source="b"),
+    ]
+
+    result = main._interleave_by_source(items)
+
+    assert [it.source for it in result] == ["a", "b", "a", "b", "a"]
+    assert [it.url for it in result] == ["a0", "b0", "a1", "b1", "a2"]
+
+
+def test_archive_submits_normalized_url(tmp_path):
+    raw = "https://www.rts.ch/article-1.html?rts_source=rss_t"
+    clean = "https://www.rts.ch/article-1.html"
+    item = DiscoveredItem(url=raw, title=None, published_at=None, source="rts.ch")
+    client = FakeClient({clean: _success(clean)}, available=10)
+    store = SeenStore(tmp_path / "seen.json")
+
+    counts = main.archive_new_urls(
+        client, store, [item], _settings(max_concurrent_spn2_jobs=10, max_captures_per_run=60)
+    )
+
+    assert counts["success"] == 1
+    # The tracking param is stripped before submission, so the capture is clean.
+    assert [url for kind, url in client.calls if kind == "submit"] == [clean]
+    assert store.is_known(raw)
+
+
+def test_archive_dedupes_urls_differing_only_by_tracking_param(tmp_path):
+    items = [
+        DiscoveredItem(url="https://e.com/a?rts_source=rss_t", title=None, published_at=None, source="s"),
+        DiscoveredItem(url="https://e.com/a", title=None, published_at=None, source="s"),
+    ]
+    client = FakeClient({"https://e.com/a": _success("https://e.com/a")}, available=10)
+    store = SeenStore(tmp_path / "seen.json")
+
+    counts = main.archive_new_urls(
+        client, store, items, _settings(max_concurrent_spn2_jobs=10, max_captures_per_run=60)
+    )
+
+    assert counts["success"] == 1
+    assert len([c for c in client.calls if c[0] == "submit"]) == 1
+
+
 def test_poll_leftovers_resolves_previous_run_pending(tmp_path):
     item = _items(1)[0]
     client = FakeClient({item.url: _success(item.url)}, available=10)

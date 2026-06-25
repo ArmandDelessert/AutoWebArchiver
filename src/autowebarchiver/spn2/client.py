@@ -110,7 +110,7 @@ class SPN2Client:
         )
 
         if response.status_code == 429:
-            logger.warning("SPN2 returned 429 for %s, backing off", url)
+            logger.warning('SPN2 returned 429 for "%s", backing off', url)
             time.sleep(random.uniform(10, 20))
             response.raise_for_status()
 

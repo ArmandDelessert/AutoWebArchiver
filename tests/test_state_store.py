@@ -8,6 +8,11 @@ def test_normalize_url_strips_tracking_params():
     assert normalize_url(url) == "https://example.com/article?id=42"
 
 
+def test_normalize_url_strips_rts_source():
+    url = "https://www.rts.ch/info/article-29283607.html?rts_source=rss_t"
+    assert normalize_url(url) == "https://www.rts.ch/info/article-29283607.html"
+
+
 def test_seen_store_roundtrip(tmp_path):
     state_path = tmp_path / "seen.json"
     store = SeenStore(state_path)
