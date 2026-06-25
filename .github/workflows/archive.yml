@@ -15,6 +15,7 @@ permissions:
 jobs:
   archive:
     runs-on: ubuntu-slim
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -34,6 +35,7 @@ jobs:
         run: python -m autowebarchiver.main
 
       - name: Commit updated state
+        if: always()  # commit whatever state was saved, even if the crawler step failed or was canceled
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

@@ -171,6 +171,25 @@ def test_archive_dedupes_urls_differing_only_by_tracking_param(tmp_path):
     assert len([c for c in client.calls if c[0] == "submit"]) == 1
 
 
+def test_archive_defers_everything_when_run_budget_is_zero(tmp_path):
+    items = _items(3)
+    client = FakeClient({it.url: _success(it.url) for it in items}, available=10)
+    store = SeenStore(tmp_path / "seen.json")
+
+    counts = main.archive_new_urls(
+        client,
+        store,
+        items,
+        _settings(max_concurrent_spn2_jobs=10, max_captures_per_run=60, max_run_seconds=0),
+    )
+
+    # Time budget spent before submitting anything: nothing captured, nothing
+    # marked known, so every URL is retried on the next run.
+    assert counts == {"success": 0, "error": 0, "pending": 0}
+    assert not any(kind == "submit" for kind, _ in client.calls)
+    assert all(not store.is_known(it.url) for it in items)
+
+
 def test_poll_leftovers_resolves_previous_run_pending(tmp_path):
     item = _items(1)[0]
     client = FakeClient({item.url: _success(item.url)}, available=10)

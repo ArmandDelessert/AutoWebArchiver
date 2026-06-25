@@ -175,10 +175,19 @@ def archive_new_urls(
         )
     queued = deque(ordered[:budget])
     in_flight: dict[str, tuple[str, float]] = {}
+    run_deadline = time.monotonic() + settings.max_run_seconds
 
-    while queued or in_flight:
+    while True:
+        now = time.monotonic()
+        accepting = now < run_deadline  # stop submitting once the time budget is spent
+
         # Fill free concurrency slots while the per-minute rate allows.
-        while queued and len(in_flight) < concurrency and client.next_submit_wait_seconds() == 0:
+        while (
+            accepting
+            and queued
+            and len(in_flight) < concurrency
+            and client.next_submit_wait_seconds() == 0
+        ):
             url = normalize_url(queued.popleft().url)
             job_id = _submit(client, store, url, settings)
             if job_id is None:
@@ -188,7 +197,8 @@ def archive_new_urls(
 
         _poll_once(client, store, in_flight, settings, counts)
 
-        if not queued and not in_flight:
+        # Done once nothing is in flight and we won't submit anything more.
+        if not in_flight and (not accepting or not queued):
             break
 
         # Sleep until the next thing can happen: a poll cycle for in-flight jobs,
@@ -196,9 +206,18 @@ def archive_new_urls(
         waits = []
         if in_flight:
             waits.append(settings.poll_interval_seconds)
-        if queued and len(in_flight) < concurrency:
+        if accepting and queued and len(in_flight) < concurrency:
             waits.append(client.next_submit_wait_seconds())
+        if not waits:
+            break
         time.sleep(min(waits))
+
+    if queued:
+        logger.warning(
+            "Stopped after the %ds run budget; %d URL(s) deferred to the next run",
+            settings.max_run_seconds,
+            len(queued),
+        )
 
     return counts
 

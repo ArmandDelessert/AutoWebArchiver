@@ -3,10 +3,6 @@ sources:
     type: rss
     url: https://www.rts.ch/info/toute-info/?format=rss/news
 
-  - name: 24heures.ch
-    type: rss
-    url: https://partner-feeds.publishing.tamedia.ch/rss/24heures/
-
   - name: lemonde.fr
     type: sitemap
     url: https://www.lemonde.fr/sitemap_news.xml
@@ -25,6 +21,7 @@ settings:
   max_captures_per_minute: 7
   max_concurrent_spn2_jobs: 10
   max_captures_per_run: 60
+  max_run_seconds: 900
   max_capture_attempts: 3
   poll_interval_seconds: 15
   poll_timeout_seconds: 180
