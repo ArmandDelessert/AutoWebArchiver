@@ -109,9 +109,22 @@ def _submit(client: SPN2Client, store: SeenStore, url: str, settings: Settings) 
         # A submit failure is almost always transient (network/SPN2 hiccup),
         # so keep it eligible for a bounded number of retries.
         store.mark_error(url, retryable=True, max_attempts=settings.max_capture_attempts)
+        _save_quietly(store)
         return None
     store.mark_pending(url, job_id)
+    _save_quietly(store)
     return job_id
+
+
+def _save_quietly(store: SeenStore) -> None:
+    """Persist state immediately after every mutation. If the process is killed
+    externally (e.g. a canceled CI job) mid-run, this bounds the data loss to the
+    single in-flight HTTP call instead of the whole run, since nothing was
+    previously durable until the final save() at the end of run()."""
+    try:
+        store.save()
+    except OSError as exc:
+        logger.error("Could not write state file: %s", exc)
 
 
 def _interleave_by_source(items: list[DiscoveredItem]) -> list[DiscoveredItem]:
@@ -243,6 +256,8 @@ def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> 
     else:
         # status == "timeout": leave it marked as pending so it gets repolled next run.
         logger.warning("Job for %s is still pending after polling timeout", result.url)
+        return
+    _save_quietly(store)
 
 
 def run(config_path: Path = DEFAULT_CONFIG_PATH, state_path: Path = DEFAULT_STATE_PATH) -> int:
