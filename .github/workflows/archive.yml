@@ -17,7 +17,7 @@ jobs:
     # NOT ubuntu-slim: single-CPU runners have a hard 15-minute job timeout that
     # timeout-minutes cannot raise, and our runs can legitimately approach that.
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 125  # max_run_seconds (6000s = 100min) + 25% drain/overhead margin
     steps:
       - uses: actions/checkout@v7
 

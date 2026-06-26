@@ -153,11 +153,11 @@ def archive_new_urls(
 ) -> dict[str, int]:
     """Archive newly discovered URLs with a single-threaded sliding window: keep
     up to `concurrency` captures in flight, submitting a new one as soon as a slot
-    frees and the per-minute rate allows, up to a per-run budget. Submitting and
-    polling are both quick HTTP calls, so one thread interleaves them -- no threads
-    or asyncio needed (the throughput ceiling is SPN2's 7 submissions/min, not our
-    local concurrency). URLs are submitted round-robin across sources to spread
-    load over hosts."""
+    frees and the per-minute rate allows, until the time budget runs out.
+    Submitting and polling are both quick HTTP calls, so one thread interleaves
+    them -- no threads or asyncio needed (the throughput ceiling is SPN2's 7
+    submissions/min, not our local concurrency). URLs are submitted round-robin
+    across sources to spread load over hosts."""
     counts = {"success": 0, "error": 0, "pending": 0}
 
     # Normalize and de-duplicate (a URL can appear under several feeds, or with
@@ -180,13 +180,7 @@ def archive_new_urls(
         available = settings.max_concurrent_spn2_jobs
 
     concurrency = max(1, min(settings.max_concurrent_spn2_jobs, available))
-    budget = settings.max_captures_per_run
-    ordered = _interleave_by_source(new_items)
-    if len(ordered) > budget:
-        logger.info(
-            "Limiting this run to %d of %d new URL(s) (per-run budget)", budget, len(ordered)
-        )
-    queued = deque(ordered[:budget])
+    queued = deque(_interleave_by_source(new_items))
     in_flight: dict[str, tuple[str, float]] = {}
     run_deadline = time.monotonic() + settings.max_run_seconds
 
