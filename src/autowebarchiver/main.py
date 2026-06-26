@@ -16,6 +16,7 @@ from .discovery.sitemap import discover_sitemap
 from .logging_setup import setup_logging
 from .spn2.client import SPN2Client
 from .spn2.models import SPN2Result, result_from_status_payload
+from .state.feed_stats import FeedStatsStore
 from .state.store import SeenStore, normalize_url
 
 logger = logging.getLogger(__name__)
@@ -23,6 +24,7 @@ logger = logging.getLogger(__name__)
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG_PATH = REPO_ROOT / "config" / "sources.yaml"
 DEFAULT_STATE_PATH = REPO_ROOT / "state" / "seen.json"
+DEFAULT_FEED_STATS_PATH = REPO_ROOT / "state" / "feed_stats.json"
 
 
 class FatalError(Exception):
@@ -254,7 +256,11 @@ def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> 
     _save_quietly(store)
 
 
-def run(config_path: Path = DEFAULT_CONFIG_PATH, state_path: Path = DEFAULT_STATE_PATH) -> int:
+def run(
+    config_path: Path = DEFAULT_CONFIG_PATH,
+    state_path: Path = DEFAULT_STATE_PATH,
+    feed_stats_path: Path = DEFAULT_FEED_STATS_PATH,
+) -> int:
     setup_logging()
     load_dotenv()
 
@@ -273,6 +279,7 @@ def run(config_path: Path = DEFAULT_CONFIG_PATH, state_path: Path = DEFAULT_STAT
         return 1
 
     store = SeenStore(state_path)
+    feed_stats = FeedStatsStore(feed_stats_path)
     client = SPN2Client(
         access_key, secret_key, max_captures_per_minute=config.settings.max_captures_per_minute
     )
@@ -287,10 +294,37 @@ def run(config_path: Path = DEFAULT_CONFIG_PATH, state_path: Path = DEFAULT_STAT
     for source in config.sources:
         try:
             items = discover_source(source)
+            new_count = sum(1 for item in items if not store.is_known(item.url))
             logger.info("Discovered %d item(s) from %s", len(items), source.name)
+            stats = feed_stats.record(source.name, items, new_count, store)
+            coverage = (
+                f", coverage {stats.oldest_published_at}..{stats.newest_published_at}"
+                if stats.oldest_published_at and stats.newest_published_at
+                else ""
+            )
+            logger.info(
+                "Feed stats for %s: %d new, %d dropped (%d never archived)%s",
+                source.name,
+                stats.new_count,
+                stats.dropped_count,
+                stats.dropped_unarchived_count,
+                coverage,
+            )
+            if stats.dropped_unarchived_count:
+                logger.warning(
+                    "%d URL(s) from %s fell out of the feed before being archived",
+                    stats.dropped_unarchived_count,
+                    source.name,
+                )
             discovered.extend(items)
         except Exception as exc:  # noqa: BLE001 - isolate failures per source
             logger.error("Failed to discover items from %s: %s", source.name, exc)
+
+    try:
+        feed_stats.purge_older_than(config.settings.state_max_age_days)
+        feed_stats.save()
+    except OSError as exc:
+        logger.error("Could not write feed stats file %s: %s", feed_stats_path, exc)
 
     archive_counts = archive_new_urls(client, store, discovered, config.settings)
     for key, value in archive_counts.items():

@@ -54,6 +54,12 @@ class SeenStore:
             return False
         return entry.get("status") != "error_retry"
 
+    def is_archived(self, url: str) -> bool:
+        """True only if SPN2 confirmed a successful capture (stricter than
+        is_known, which also covers pending/error states)."""
+        entry = self._entries.get(normalize_url(url))
+        return entry is not None and entry.get("status") == "success"
+
     def pending_entries(self) -> dict[str, dict]:
         return {
             url: entry for url, entry in self._entries.items() if entry.get("status") == "pending"

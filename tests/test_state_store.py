@@ -25,6 +25,7 @@ def test_seen_store_roundtrip(tmp_path):
 
     store.mark_resolved("https://example.com/a", status="success", job_id="job-1")
     assert len(store.pending_entries()) == 0
+    assert store.is_archived("https://example.com/a")
 
     store.save()
 
@@ -54,6 +55,16 @@ def test_purge_older_than_removes_stale_entries(tmp_path):
     assert purged == 1
     assert not store.is_known("https://example.com/old")
     assert store.is_known("https://example.com/recent")
+
+
+def test_is_archived_false_for_pending_and_error(tmp_path):
+    store = SeenStore(tmp_path / "seen.json")
+    store.mark_pending("https://example.com/a", "job-1")
+    store.mark_error("https://example.com/b", retryable=False, max_attempts=3)
+
+    assert not store.is_archived("https://example.com/a")
+    assert not store.is_archived("https://example.com/b")
+    assert not store.is_archived("https://example.com/unknown")
 
 
 def test_purge_keeps_pending_entries_regardless_of_age(tmp_path):
