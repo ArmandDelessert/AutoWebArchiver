@@ -413,6 +413,27 @@
     "spn2_job_id": "spn2-0759c2a51e127de287d5695840744147f0008591",
     "status": "success"
   },
+  "https://www.lemonde.fr/afrique/article/2026/06/27/afrique-du-sud-15-000-malawites-ont-quitte-le-pays-avant-des-manifestations-anti-immigres_6715922_3212.html": {
+    "attempts": 1,
+    "first_seen": "2026-06-27T01:12:35Z",
+    "last_checked": "2026-06-27T01:12:35Z",
+    "spn2_job_id": null,
+    "status": "error_retry"
+  },
+  "https://www.lemonde.fr/afrique/article/2026/06/27/le-burkina-faso-rompt-avec-la-france-apres-l-adoption-d-une-resolution-critique-contre-la-junte-au-parlement-europeen_6715923_3212.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-27T01:12:01Z",
+    "last_checked": "2026-06-27T01:12:47Z",
+    "spn2_job_id": "spn2-dc9b80c59cecc8a3f7de67d720193e3e7c3e0c78",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/afrique/article/2026/06/27/tunisie-peine-de-prison-confirmee-par-la-justice-contre-le-journaliste-zied-el-heni_6715956_3212.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-27T01:10:37Z",
+    "last_checked": "2026-06-27T01:11:24Z",
+    "spn2_job_id": "spn2-121e57b24dc4ca33e3e09c781529ca7baec7410c",
+    "status": "success"
+  },
   "https://www.lemonde.fr/afrique/video/2026/06/24/epidemie-d-ebola-au-kenya-le-ministre-de-la-sante-suspend-le-projet-de-centre-de-quarantaine-americain_6713213_3212.html": {
     "attempts": 0,
     "first_seen": "2026-06-26T07:39:31Z",
@@ -826,6 +847,13 @@
     "spn2_job_id": "spn2-173cb8727e16761680d09e31d0cbfd7c1913f103",
     "status": "success"
   },
+  "https://www.lemonde.fr/economie/article/2026/06/26/edf-annonce-la-cession-de-ses-activites-edf-power-solutions-aux-etats-unis-et-au-canada-au-fonds-d-investissement-kkr_6715920_3234.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-27T01:13:01Z",
+    "last_checked": "2026-06-27T01:13:26Z",
+    "spn2_job_id": "spn2-67ff7379f2b35bf15a1c728bff38d379036bc45b",
+    "status": "success"
+  },
   "https://www.lemonde.fr/economie/article/2026/06/26/ia-apres-l-inflation-engendree-par-la-crise-energetique-celle-provoquee-par-l-intelligence-artificielle-l-iaflation_6715677_3234.html": {
     "attempts": 0,
     "first_seen": "2026-06-26T05:45:19Z",
@@ -836,9 +864,9 @@
   "https://www.lemonde.fr/economie/article/2026/06/26/la-fonderie-de-bretagne-reprise-par-europlasma-va-demander-son-placement-en-redressement-judiciaire_6715912_3234.html": {
     "attempts": 1,
     "first_seen": "2026-06-26T21:41:34Z",
-    "last_checked": "2026-06-26T21:41:34Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-06-27T01:14:43Z",
+    "spn2_job_id": "spn2-222ff2f2a4e49515b5cf054187c5d3421bffd0f4",
+    "status": "success"
   },
   "https://www.lemonde.fr/economie/article/2026/06/26/la-plateforme-de-cryptos-binance-mise-sur-le-tourisme-reglementaire-en-europe-mais-la-collaboration-entre-les-superviseurs-nationaux-fonctionne-de-mieux-en-mieux_6715828_3234.html": {
     "attempts": 0,
@@ -1518,9 +1546,9 @@
   "https://www.lemonde.fr/international/article/2026/06/26/la-republique-democratique-du-congo-saisit-la-cij-contre-le-rwanda-pour-ses-exactions-dans-l-est-de-la-rdc_6715886_3210.html": {
     "attempts": 2,
     "first_seen": "2026-06-26T19:00:08Z",
-    "last_checked": "2026-06-26T21:44:58Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-06-27T01:15:20Z",
+    "spn2_job_id": "spn2-dadf420278ee536c92c51a62b18936408a084a20",
+    "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/06/26/la-suede-discrimine-les-migrants-d-origine-rom-en-leur-refusant-des-soins-selon-le-conseil-de-l-europe_6715848_3210.html": {
     "attempts": 0,
@@ -1562,6 +1590,13 @@
     "first_seen": "2026-06-26T03:20:30Z",
     "last_checked": "2026-06-26T03:21:52Z",
     "spn2_job_id": "spn2-7290f9988e68652b33e159c3d6cc2c53d1004bca",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/06/27/la-peine-de-harvey-weinstein-en-californie-doit-etre-reevaluee-ordonne-une-cour-d-appel_6715989_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-27T01:09:20Z",
+    "last_checked": "2026-06-27T01:10:02Z",
+    "spn2_job_id": "spn2-1b31abfe9723df12145f4288f1710da00690a05d",
     "status": "success"
   },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
@@ -2103,6 +2138,13 @@
     "spn2_job_id": "spn2-4e71cc5b5c20af049ec018a94eac805c3f04e7ef",
     "status": "success"
   },
+  "https://www.lemonde.fr/planete/live/2026/06/27/en-direct-canicule-a-paris-un-homme-meurt-noye-dans-le-canal-saint-martin_6710159_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-27T01:11:31Z",
+    "last_checked": "2026-06-27T01:12:02Z",
+    "spn2_job_id": "spn2-7b59fbd51cc1a2770dc9fd7476adbdf0acadcece",
+    "status": "success"
+  },
   "https://www.lemonde.fr/planete/video/2026/06/25/seismes-au-venezuela-les-images-au-moment-des-secousses-et-les-degats-importants_6713383_3244.html": {
     "attempts": 0,
     "first_seen": "2026-06-26T01:22:43Z",
@@ -2320,9 +2362,9 @@
   "https://www.lemonde.fr/politique/article/2026/06/26/presidentielle-2027-les-militants-socialistes-approuvent-largement-le-projet-du-parti_6715917_823448.html": {
     "attempts": 1,
     "first_seen": "2026-06-26T21:37:23Z",
-    "last_checked": "2026-06-26T21:37:23Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-06-27T01:13:26Z",
+    "spn2_job_id": "spn2-5d232ff1c22d989045c4be0eeb26480ac9ab9e6b",
+    "status": "success"
   },
   "https://www.lemonde.fr/politique/article/2026/06/26/vraies-reponses-ou-fourre-tout-le-senat-etoffe-le-projet-de-loi-visant-a-simplifier-la-vie-des-elus-locaux_6715605_823448.html": {
     "attempts": 0,
@@ -2550,9 +2592,9 @@
   "https://www.lemonde.fr/societe/article/2026/06/26/au-defi-de-la-canicule-les-urgences-de-metz-thionville-s-attendent-a-un-week-end-tendu-desormais-nous-recevons-des-victimes-directes-de-coups-de-chaleur_6715913_3224.html": {
     "attempts": 1,
     "first_seen": "2026-06-26T21:40:24Z",
-    "last_checked": "2026-06-26T21:40:24Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-06-27T01:14:14Z",
+    "spn2_job_id": "spn2-d6bbc6868b6a86bd13ba48ce9a73b7db25032680",
+    "status": "success"
   },
   "https://www.lemonde.fr/societe/article/2026/06/26/canicule-premiers-deces-passages-aux-urgences-a-l-hopital-le-point-de-basculement-est-franchi_6715671_3224.html": {
     "attempts": 0,
@@ -2599,9 +2641,9 @@
   "https://www.lemonde.fr/societe/article/2026/06/26/le-maintien-du-brevet-en-depit-de-la-canicule-suscite-la-colere-des-equipes-educatives-l-epreuve-a-bien-eu-lieu-mais-dans-de-mauvaises-conditions_6715903_3224.html": {
     "attempts": 2,
     "first_seen": "2026-06-26T18:54:09Z",
-    "last_checked": "2026-06-26T21:44:30Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-06-27T01:15:05Z",
+    "spn2_job_id": "spn2-ce2082e8ec63f3929d20ba1ec621826b9970a3b4",
+    "status": "success"
   },
   "https://www.lemonde.fr/societe/article/2026/06/26/le-proces-du-militant-trotskiste-anasse-kazib-pour-apologie-du-terrorisme-est-renvoye-apres-la-remise-en-cause-d-une-des-parties-civiles_6715808_3224.html": {
     "attempts": 0,
@@ -2622,6 +2664,13 @@
     "first_seen": "2026-06-26T19:00:24Z",
     "last_checked": "2026-06-26T19:00:41Z",
     "spn2_job_id": "spn2-5b1fb48d50f9416b1c35d84130bcf68f7de373cb",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/06/27/dans-les-yvelines-une-panne-d-electricite-geante-en-pleine-canicule-met-les-habitants-a-l-epreuve_6715921_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-27T01:12:47Z",
+    "last_checked": "2026-06-27T01:14:13Z",
+    "spn2_job_id": "spn2-52927be10acc3ecca76c54eb3af889d5d24f3a4a",
     "status": "success"
   },
   "https://www.lemonde.fr/sport/article/2026/06/23/coupe-du-monde-2026-endeuille-didier-deschamps-ne-dirigera-pas-le-match-de-la-france-contre-la-norvege_6710014_3242.html": {
@@ -2807,9 +2856,9 @@
   "https://www.lemonde.fr/sport/live/2026/06/26/en-direct-france-norvege-les-bleus-devant-grace-a-un-triple-d-ousmane-dembele_6715879_3242.html": {
     "attempts": 1,
     "first_seen": "2026-06-26T21:42:44Z",
-    "last_checked": "2026-06-26T21:42:44Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-06-27T01:14:57Z",
+    "spn2_job_id": "spn2-614fbfc39716618f8aa7070c1526c57b3b4419e1",
+    "status": "success"
   },
   "https://www.lemonde.fr/sport/live/2026/06/26/en-direct-france-norvege-suivez-le-match-de-la-coupe-du-monde-de-football_6715879_3242.html": {
     "attempts": 0,
@@ -2896,11 +2945,11 @@
     "status": "success"
   },
   "https://www.letemps.ch/articles/attire-par-les-talents-en-ia-meta-s-etend-a-zurich": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-06-26T18:51:59Z",
-    "last_checked": "2026-06-26T21:38:28Z",
+    "last_checked": "2026-06-27T01:11:17Z",
     "spn2_job_id": null,
-    "status": "error_retry"
+    "status": "error"
   },
   "https://www.letemps.ch/articles/au-venezuela-le-bilan-provisoire-du-seisme-monte-a-235-morts-et-la-recherche-effrenee-des-disparus-continue": {
     "attempts": 0,
@@ -2956,6 +3005,13 @@
     "first_seen": "2026-06-26T18:50:43Z",
     "last_checked": "2026-06-26T18:51:00Z",
     "spn2_job_id": "spn2-1a4b490f7b954578c9c6025782b89dbe830a21e6",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/devant-une-large-communaute-d-expatries-la-france-aplatit-paisiblement-la-norvege": {
+    "attempts": 0,
+    "first_seen": "2026-06-27T01:10:01Z",
+    "last_checked": "2026-06-27T01:11:23Z",
+    "spn2_job_id": "spn2-45ff4d667f19230e699c594b319753f1627b32fe",
     "status": "success"
   },
   "https://www.letemps.ch/articles/dix-livres-jeunesse-pour-un-ete-enchante": {
@@ -3428,9 +3484,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/le-burkina-faso-rompt-ses-relations-diplomatiques-avec-la-france-29287562.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-06-26T21:35:57Z",
-    "last_checked": "2026-06-26T21:36:17Z",
+    "last_checked": "2026-06-27T01:10:01Z",
     "spn2_job_id": "spn2-5573bf895d62be940a1e5d965f5a660605736d25",
     "status": "error_retry"
   },
@@ -3458,9 +3514,9 @@
   "https://www.rts.ch/info/monde/2026/article/un-seisme-de-magnitude-6-7-secoue-le-sud-des-philippines-29287158.html": {
     "attempts": 2,
     "first_seen": "2026-06-26T18:53:36Z",
-    "last_checked": "2026-06-26T21:40:58Z",
+    "last_checked": "2026-06-27T01:12:01Z",
     "spn2_job_id": "spn2-8c3a3052006c96af469473a8455e170fee55c80a",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/minute-par-minute/29282383.html": {
     "first_seen": "2026-06-25T11:03:22Z",
@@ -3490,9 +3546,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/autres-cantons/2026/article/zurich-le-tf-valide-les-restrictions-sur-les-locations-airbnb-29287260.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-06-26T21:39:08Z",
-    "last_checked": "2026-06-26T21:39:08Z",
+    "last_checked": "2026-06-27T01:10:31Z",
     "spn2_job_id": null,
     "status": "error_retry"
   },
