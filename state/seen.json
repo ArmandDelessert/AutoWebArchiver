@@ -816,6 +816,13 @@
     "spn2_job_id": "spn2-42be2bcf7b4a3bd2dece84be71deb0c14d361def",
     "status": "success"
   },
+  "https://www.lemonde.fr/culture/article/2026/06/29/au-festival-de-jazz-de-montreal-st-vincent-passe-brillamment-son-examen-symphonique_6716924_3246.html": {
+    "attempts": 1,
+    "first_seen": "2026-06-29T13:44:09Z",
+    "last_checked": "2026-06-29T13:44:24Z",
+    "spn2_job_id": "spn2-5d6d2875192321be7f205575e231679dc373167c",
+    "status": "error_retry"
+  },
   "https://www.lemonde.fr/culture/article/2026/06/29/bad-bunny-en-six-chansons-a-reviser-avant-ses-concerts-en-france_6716694_3246.html": {
     "attempts": 0,
     "first_seen": "2026-06-29T04:45:13Z",
@@ -1155,6 +1162,13 @@
     "spn2_job_id": "spn2-2eac32157921c34e9e6ce925421ec51a472053e0",
     "status": "success"
   },
+  "https://www.lemonde.fr/economie/article/2026/06/29/beata-javorcik-economiste-les-pays-d-europe-de-l-est-ont-vieilli-avant-de-s-enrichir_6716916_3234.html": {
+    "attempts": 1,
+    "first_seen": "2026-06-29T13:50:12Z",
+    "last_checked": "2026-06-29T13:50:13Z",
+    "spn2_job_id": "spn2-fe6f294c027a7177b9d8bcf795d9ea5e68e3c6a8",
+    "status": "error_retry"
+  },
   "https://www.lemonde.fr/economie/article/2026/06/29/chapsvision-cette-entreprise-de-logiciels-francaise-meconnue-qui-va-remplacer-l-americain-palantir-a-la-dgsi_6716868_3234.html": {
     "attempts": 0,
     "first_seen": "2026-06-29T04:41:17Z",
@@ -1162,11 +1176,25 @@
     "spn2_job_id": "spn2-5177b621a87cb87620f08864da85843475fdfa34",
     "status": "success"
   },
+  "https://www.lemonde.fr/economie/article/2026/06/29/defense-la-banque-europeenne-d-investissement-debloque-3-milliards-d-euros-pour-airbus_6716922_3234.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:45:10Z",
+    "last_checked": "2026-06-29T13:46:16Z",
+    "spn2_job_id": "spn2-64b4771fb1cefd65e83eada8ca3d024ef6f7ab3b",
+    "status": "success"
+  },
   "https://www.lemonde.fr/economie/article/2026/06/29/ia-la-coree-du-sud-annonce-un-plan-colossal-d-investissements-equivalant-a-plus-de-1-000-milliards-d-euros_6716885_3234.html": {
     "attempts": 0,
     "first_seen": "2026-06-29T08:02:51Z",
     "last_checked": "2026-06-29T08:03:07Z",
     "spn2_job_id": "spn2-0775c6d5111d47834cfb91ebd24b24f2bb5ffe5c",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/economie/article/2026/06/29/suez-decroche-un-des-plus-gros-contrats-de-son-histoire-pour-la-gestion-de-l-eau-a-oman_6716911_3234.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:52:01Z",
+    "last_checked": "2026-06-29T13:52:33Z",
+    "spn2_job_id": "spn2-704b95eb81aa8f97217ec90b69f232c30c2208ad",
     "status": "success"
   },
   "https://www.lemonde.fr/education/article/2026/06/26/bernard-arnault-finance-un-nouvel-institut-de-mathematiques-a-polytechnique-avec-un-don-de-50-millions-d-euros_6715503_1473685.html": {
@@ -1188,6 +1216,13 @@
     "first_seen": "2026-06-26T03:30:14Z",
     "last_checked": "2026-06-26T03:30:59Z",
     "spn2_job_id": "spn2-1e955970536b10724a85a046c803d2c8fc294698",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/emploi/article/2026/06/29/la-transparence-des-salaires-une-attente-forte-des-salaries-pour-reduire-les-inegalites-femmes-hommes_6716910_1698637.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:52:01Z",
+    "last_checked": "2026-06-29T13:52:17Z",
+    "spn2_job_id": "spn2-b10a8cf01458a08dfba84ed77d1e16b1f6beda5d",
     "status": "success"
   },
   "https://www.lemonde.fr/football/article/2026/06/25/coupe-du-monde-2026-les-restrictions-contre-l-iran-assouplies-l-equipe-beneficie-desormais-du-meme-protocole-que-les-autres_6713376_1616938.html": {
@@ -1500,6 +1535,20 @@
     "first_seen": "2026-06-29T08:04:26Z",
     "last_checked": "2026-06-29T08:05:14Z",
     "spn2_job_id": "spn2-3e5ea87dfec1091856324fd2db58dd56292f9bf6",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/idees/article/2026/06/29/en-tunisie-kais-saied-contre-la-societe-civile_6716913_3232.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:51:16Z",
+    "last_checked": "2026-06-29T13:52:32Z",
+    "spn2_job_id": "spn2-cdf47768a6441fd3fe9e3456a76f8aa6652be677",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/idees/article/2026/06/29/fin-de-vie-le-role-de-l-etat-n-est-pas-de-decider-a-la-place-des-individus_6716925_3232.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:43:17Z",
+    "last_checked": "2026-06-29T13:43:33Z",
+    "spn2_job_id": "spn2-f0e6f8e3c14611e44bd4f8505245b3208eb6e56e",
     "status": "success"
   },
   "https://www.lemonde.fr/idees/article/2026/06/29/l-eau-element-vital-merite-un-debat-global_6716872_3232.html": {
@@ -2201,6 +2250,13 @@
     "spn2_job_id": "spn2-294c2a94e1eb88b26cafa9bbbb2e101358279bee",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/06/29/allemagne-plusieurs-morts-apres-des-coups-de-feu-a-stade-dans-le-nord-du-pays_6716914_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:51:16Z",
+    "last_checked": "2026-06-29T13:51:32Z",
+    "spn2_job_id": "spn2-8ef9921d4a0375389691b3ce816c3761dc8272ae",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/06/29/australie-et-vanuatu-signent-un-accord-excluant-toute-base-militaire-etrangere-dans-l-archipel_6716902_3210.html": {
     "attempts": 0,
     "first_seen": "2026-06-29T10:44:00Z",
@@ -2220,6 +2276,20 @@
     "first_seen": "2026-06-29T01:15:24Z",
     "last_checked": "2026-06-29T01:15:44Z",
     "spn2_job_id": "spn2-4743a2c4989e30413d3955877a1650ed0957721c",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/06/29/l-armee-francaise-developpe-une-nouvelle-arme-pour-se-positionner-face-a-la-menace-des-drones-d-attaque-bon-marche_6716904_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:54:00Z",
+    "last_checked": "2026-06-29T13:55:31Z",
+    "spn2_job_id": "spn2-be95653434b0b17742140dcf0bd18166de058ae9",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/06/29/la-marine-britannique-va-remplacer-ses-destroyers-vieillissants-par-des-navires-hybrides_6716908_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:52:17Z",
+    "last_checked": "2026-06-29T13:53:40Z",
+    "spn2_job_id": "spn2-3d65eb3a8378d1158545e05a97aac0f5e060dd16",
     "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/06/29/ormuz-oman-et-ses-voisins-du-golfe-emergent-d-une-guerre-qui-n-aurait-jamais-du-avoir-lieu_6716898_3210.html": {
@@ -2891,6 +2961,13 @@
     "spn2_job_id": "spn2-4d91a8a94718c8caa8610637ad99da2757279c4d",
     "status": "success"
   },
+  "https://www.lemonde.fr/m-styles/article/2026/06/29/a-sancerre-catherine-corbeau-mellot-defend-le-rose-comme-un-vin-de-gastronomie_6716919_4497319.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:47:16Z",
+    "last_checked": "2026-06-29T13:47:31Z",
+    "spn2_job_id": "spn2-c6011312eaa4c5d08a85410367b15921d5544e6c",
+    "status": "success"
+  },
   "https://www.lemonde.fr/m-styles/article/2026/06/29/doublet-taakk-et-soshiotsuki-la-nouvelle-garde-japonaise-a-la-fashion-week-homme-de-paris_6716891_4497319.html": {
     "attempts": 0,
     "first_seen": "2026-06-29T10:50:22Z",
@@ -3305,6 +3382,13 @@
     "first_seen": "2026-06-28T10:06:16Z",
     "last_checked": "2026-06-28T10:06:32Z",
     "spn2_job_id": "spn2-9f0f6cee70f7bd0f85fc14508fcaa5db3cf618f0",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/planete/live/2026/06/29/en-direct-canicule-cette-vague-de-chaleur-la-plus-severe-a-avoir-ete-mesuree-en-europe-aurait-ete-quasi-impossible-en-juin-sans-le-changement-climatique-selon-le-world-weather-attribution_6710159_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:48:16Z",
+    "last_checked": "2026-06-29T13:48:32Z",
+    "spn2_job_id": "spn2-ac0c200e1765a0f773e919a31c3772d673fb85a6",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/live/2026/06/29/en-direct-canicule-l-activite-des-samu-est-sur-un-plateau-eleve-mais-pas-a-un-point-de-rupture-selon-une-representante-d-urgentistes_6710159_3244.html": {
@@ -4052,6 +4136,20 @@
     "spn2_job_id": "spn2-8ef2de3eba1c376de0c143eb4f2e199a5d546876",
     "status": "success"
   },
+  "https://www.lemonde.fr/societe/article/2026/06/29/de-premieres-pistes-pour-definir-la-strategie-nationale-de-reduction-de-la-pauvrete_6716920_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:46:16Z",
+    "last_checked": "2026-06-29T13:47:07Z",
+    "spn2_job_id": "spn2-45b5b2082cf49a72ed9b6e31fede255f45dc3954",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/06/29/francis-heaulme-fait-appel-de-son-renvoi-devant-les-assises-pour-le-meurtre-d-un-agriculteur-a-bedarrides-en-1989-pres-d-avignon_6716905_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:53:10Z",
+    "last_checked": "2026-06-29T13:54:00Z",
+    "spn2_job_id": "spn2-a33eb053f49bf8e18d16314f31798894ea2271be",
+    "status": "success"
+  },
   "https://www.lemonde.fr/societe/article/2026/06/29/gerald-darmanin-plus-seul-que-jamais-face-a-la-double-fronde-des-avocats-et-des-magistrats-et-en-difficulte-pour-faire-adopter-son-projet-de-loi_6716693_3224.html": {
     "attempts": 0,
     "first_seen": "2026-06-29T04:46:07Z",
@@ -4072,6 +4170,13 @@
     "last_checked": "2026-06-28T18:39:27Z",
     "spn2_job_id": "spn2-fd96a38a0a24b9a0b4f451e8ded8308ae140836a",
     "status": "success"
+  },
+  "https://www.lemonde.fr/societe/video/2026/06/29/crash-d-avion-en-meurthe-et-moselle-le-maire-de-la-commune-de-l-accident-reagit_6716907_3224.html": {
+    "attempts": 1,
+    "first_seen": "2026-06-29T13:53:08Z",
+    "last_checked": "2026-06-29T13:53:08Z",
+    "spn2_job_id": "spn2-a4682c7ec1115377f0510cfe8cec44335c48a9c6",
+    "status": "error_retry"
   },
   "https://www.lemonde.fr/sport/article/2026/06/23/coupe-du-monde-2026-endeuille-didier-deschamps-ne-dirigera-pas-le-match-de-la-france-contre-la-norvege_6710014_3242.html": {
     "first_seen": "2026-06-23T20:50:36Z",
@@ -4422,6 +4527,20 @@
     "spn2_job_id": "spn2-f78020223334e3070dfe95b4cf7fc1e6b37ada68",
     "status": "success"
   },
+  "https://www.lemonde.fr/sport/article/2026/06/29/leon-marchand-touche-aux-adducteurs-et-forfait-pour-la-finale-du-200-m-brasse-aux-championnats-de-france-de-natation_6716906_3242.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:53:08Z",
+    "last_checked": "2026-06-29T13:54:31Z",
+    "spn2_job_id": "spn2-c9b7c37a7432f4ecfd908b36888112569f00e7d6",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/sport/article/2026/06/29/pays-bas-maroc-summerville-et-brobbey-les-deux-attaquants-que-les-oranje-n-avaient-pas-vu-venir_6716915_3242.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:49:13Z",
+    "last_checked": "2026-06-29T13:49:31Z",
+    "spn2_job_id": "spn2-3b9faea902030cf803482a0ce08079b8c91d9f60",
+    "status": "success"
+  },
   "https://www.lemonde.fr/sport/article/2026/06/29/tant-pis-pour-le-livret-a-ces-supporteurs-qui-depensent-sans-compter-pour-suivre-l-equipe-de-france-a-la-coupe-du-monde-2026_6716833_3242.html": {
     "attempts": 0,
     "first_seen": "2026-06-29T04:43:08Z",
@@ -4575,6 +4694,13 @@
     "spn2_job_id": "spn2-46b5ee1e452f7ac8b840234ce2a38dddd58b9e91",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/apres-le-drame-de-crans-montana-des-relations-distendues-entre-berne-et-le-valais": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:45:10Z",
+    "last_checked": "2026-06-29T13:45:26Z",
+    "spn2_job_id": "spn2-9f5d93cf040a31ad2bb50b7e2c2eddd2d1a42130",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/apres-le-retrait-de-la-poste-neuchatel-espere-maintenir-la-dynamique-du-dossier-electronique-du-patient": {
     "attempts": 0,
     "first_seen": "2026-06-26T15:58:50Z",
@@ -4587,6 +4713,13 @@
     "first_seen": "2026-06-25T20:50:20Z",
     "last_checked": "2026-06-25T20:51:11Z",
     "spn2_job_id": "spn2-5fd7e96aa6814960a76f00148085c8ba4a14ef90",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/atteindre-la-neutralite-carbone-sans-nouvelles-centrales-nucleaires-c-est-possible-en-suisse": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:44:24Z",
+    "last_checked": "2026-06-29T13:45:09Z",
+    "spn2_job_id": "spn2-53a0ea12a92f06b69f0d3c0d3a85a9a71f74bfc3",
     "status": "success"
   },
   "https://www.letemps.ch/articles/attire-par-les-talents-en-ia-meta-s-etend-a-zurich": {
@@ -4657,6 +4790,13 @@
     "first_seen": "2026-06-28T18:35:23Z",
     "last_checked": "2026-06-28T18:36:21Z",
     "spn2_job_id": "spn2-53a57e86ad40754ed1363c871a4884c9f0ba529b",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/bnp-paribas-recoit-le-soutien-indirect-de-la-confederation-dans-son-litige-lie-au-soudan-avec-la-justice-americaine": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:46:18Z",
+    "last_checked": "2026-06-29T13:48:16Z",
+    "spn2_job_id": "spn2-758acdc9ada772d1558d3e844b46fb30d6c3c342",
     "status": "success"
   },
   "https://www.letemps.ch/articles/british-american-tobacco-biffe-5500-postes-dans-le-monde-20-des-salaries-seront-concernes": {
@@ -4764,6 +4904,13 @@
     "spn2_job_id": "spn2-e06097ef511417657ccb2a066ef385f7cbaf1983",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/dans-les-stades-californiens-l-omnipresence-des-supporters-mexicains": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:48:32Z",
+    "last_checked": "2026-06-29T13:49:13Z",
+    "spn2_job_id": "spn2-201c1cee9a7d1d6ccdffb8068d07197c686f68bb",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/de-meilleures-infrastructures-pas-d-impots-supplementaires-le-plr-a-lance-sa-campagne-pour-les-elections-federales-de-2027": {
     "attempts": 0,
     "first_seen": "2026-06-27T18:38:11Z",
@@ -4804,6 +4951,13 @@
     "first_seen": "2026-06-25T22:39:23Z",
     "last_checked": "2026-06-25T22:39:41Z",
     "spn2_job_id": "spn2-60a5d94165d3660fdda7797d2f2ffb54c3765513",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/du-scandale-d-espionnage-aux-bains-publics-japonais-la-vie-hors-norme-de-stephanie-crohin": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:43:17Z",
+    "last_checked": "2026-06-29T13:44:08Z",
+    "spn2_job_id": "spn2-6c73341aef2bf31ed8e6915a6f4d993a2c7ea94f",
     "status": "success"
   },
   "https://www.letemps.ch/articles/dubai-est-too-big-to-fail-aux-emirats-le-soulagement-des-suisses-restes-malgre-la-guerre": {
@@ -5089,9 +5243,9 @@
   "https://www.letemps.ch/articles/la-gloire-des-enfants-de-palestine-l-honneur-de-geneve": {
     "attempts": 1,
     "first_seen": "2026-06-29T10:49:21Z",
-    "last_checked": "2026-06-29T10:49:23Z",
+    "last_checked": "2026-06-29T13:49:31Z",
     "spn2_job_id": "spn2-e93195805213f810f270c7b48a2375b7ce6f33f6",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.letemps.ch/articles/la-maison-blanche-dicte-sa-loi-aux-geants-de-l-ia-une-strategie-suicidaire": {
     "attempts": 0,
@@ -5373,6 +5527,13 @@
     "spn2_job_id": "spn2-02ff0c826de61f6c3621504b395f4df2238c9b07",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/romain-deles-sociologue-alors-qu-on-parle-d-un-metoo-de-l-enfance-penchons-nous-sur-la-suede-qui-a-quasiment-elimine-les-violences-faites-aux-enfants": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:47:31Z",
+    "last_checked": "2026-06-29T13:49:13Z",
+    "spn2_job_id": "spn2-8e96d46fe43b6b719d35a0578ae41571d7f21e92",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/sante-et-prevention-et-si-la-suisse-suivait-l-exemple-du-quebec": {
     "attempts": 0,
     "first_seen": "2026-06-25T20:54:15Z",
@@ -5485,6 +5646,13 @@
     "spn2_job_id": "spn2-1f73310d4e7108681192d3482d5e6e06ab249507",
     "status": "success"
   },
+  "https://www.rts.ch/info/culture/arts-visuels/2026/article/portrait-d-isabelle-ardevol-sculptrice-installee-a-pully-29284977.html": {
+    "attempts": 1,
+    "first_seen": "2026-06-29T13:50:13Z",
+    "last_checked": "2026-06-29T13:51:16Z",
+    "spn2_job_id": "spn2-dfeb02326453037fd8ce91ee61db5b6ab9044254",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/culture/cinema/2026/article/des-minions-et-des-monstres-un-hommage-au-cinema-un-peu-vain-29285704.html": {
     "attempts": 1,
     "first_seen": "2026-06-27T09:49:16Z",
@@ -5562,6 +5730,20 @@
     "spn2_job_id": "spn2-03f72e2c6bfb0d02ec7d6727687475a9c27ea763",
     "status": "error"
   },
+  "https://www.rts.ch/info/economie/2026/article/electricite-les-prix-devraient-baisser-en-suisse-en-2027-29289213.html": {
+    "attempts": 1,
+    "first_seen": "2026-06-29T13:51:16Z",
+    "last_checked": "2026-06-29T13:51:32Z",
+    "spn2_job_id": "spn2-0372f1ba1e294800376e81673c0365aea5a6d43b",
+    "status": "error_retry"
+  },
+  "https://www.rts.ch/info/economie/2026/article/groupe-e-annonce-une-nouvelle-restructuration-et-supprime-des-postes-29289136.html": {
+    "attempts": 1,
+    "first_seen": "2026-06-29T13:50:11Z",
+    "last_checked": "2026-06-29T13:50:13Z",
+    "spn2_job_id": "spn2-97c518e1ff924785cbeee4c0a5531d344da5d151",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/economie/2026/article/louer-ou-acheter-en-suisse-notre-comparateur-interactif-29286233.html": {
     "attempts": 0,
     "first_seen": "2026-06-26T09:16:15Z",
@@ -5597,6 +5779,13 @@
     "spn2_job_id": "spn2-56ef3a3d489c4f08fa9b839e412b33e9ba30b9bc",
     "status": "success"
   },
+  "https://www.rts.ch/info/environnement/2026/article/glaciers-suisses-epuisees-les-reserves-de-neige-fondent-deja-29289351.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:48:16Z",
+    "last_checked": "2026-06-29T13:48:32Z",
+    "spn2_job_id": "spn2-ea746f154708077b4d49e7e46d424c6bdac6aaae",
+    "status": "success"
+  },
   "https://www.rts.ch/info/environnement/2026/article/moustique-tigre-la-lutte-porte-ses-fruits-au-tessin-29287106.html": {
     "attempts": 0,
     "first_seen": "2026-06-27T15:38:14Z",
@@ -5623,6 +5812,13 @@
     "first_seen": "2026-06-26T21:37:36Z",
     "last_checked": "2026-06-26T21:37:53Z",
     "spn2_job_id": "spn2-408afe6e0f113dab14d816a7b0528a871d4fff63",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/monde/2026/article/allemagne-cinq-morts-dans-une-fusillade-a-stade-un-suspect-arrete-29289479.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:47:07Z",
+    "last_checked": "2026-06-29T13:47:31Z",
+    "spn2_job_id": "spn2-9a35565cbc1e6f0f26806da25d761dcf7c138682",
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/attentat-de-magdebourg-prison-a-vie-pour-l-auteur-de-l-attaque-29286937.html": {
@@ -5686,6 +5882,13 @@
     "first_seen": "2026-06-29T01:15:23Z",
     "last_checked": "2026-06-29T01:16:28Z",
     "spn2_job_id": "spn2-1672a583cafc9b8c3a37271ad8f7d93e32888dad",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/monde/2026/article/la-canicule-reflue-a-l-ouest-de-l-europe-mais-persiste-a-l-est-29289504.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:45:09Z",
+    "last_checked": "2026-06-29T13:45:26Z",
+    "spn2_job_id": "spn2-597bd8585b38721e82b8ba6b3a1737b3e9b8823a",
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/le-burkina-faso-rompt-ses-relations-diplomatiques-avec-la-france-29287562.html": {
@@ -5834,6 +6037,13 @@
     "spn2_job_id": "spn2-686c83f5870400afddfa48f5865ccaaecd616b02",
     "status": "success"
   },
+  "https://www.rts.ch/info/regions/fribourg/2026/article/fribourg-inaugure-la-pisciculture-d-estavayer-apres-10-ans-de-deboires-29289378.html": {
+    "attempts": 1,
+    "first_seen": "2026-06-29T13:46:16Z",
+    "last_checked": "2026-06-29T13:46:18Z",
+    "spn2_job_id": "spn2-0bb97d94f7b638cf5a1f0441eee1385f5f09419a",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/regions/geneve/2026/article/geneve-interdit-le-travail-en-exterieur-l-apres-midi-face-a-la-canicule-29285842.html": {
     "first_seen": "2026-06-25T11:03:57Z",
     "last_checked": "2026-06-25T11:04:12Z",
@@ -5845,6 +6055,13 @@
     "first_seen": "2026-06-26T12:53:26Z",
     "last_checked": "2026-06-26T12:54:50Z",
     "spn2_job_id": "spn2-ef44b715ba42dcf1ae7390ce3d5ff82f252e0c50",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/regions/geneve/2026/article/le-futur-metro-de-geneve-doit-passer-par-cornavin-selon-un-rapport-29289501.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:44:08Z",
+    "last_checked": "2026-06-29T13:44:24Z",
+    "spn2_job_id": "spn2-f63accd728ecffe4d33f9e512539fad7b41ab2ef",
     "status": "success"
   },
   "https://www.rts.ch/info/regions/geneve/2026/article/manifestation-no-g7-plaintes-penales-deposees-a-geneve-apres-la-nasse-29286297.html": {
@@ -6008,6 +6225,13 @@
     "spn2_job_id": "spn2-61a6bf79d6306bda892adb1dbf94def5d9148d83",
     "status": "success"
   },
+  "https://www.rts.ch/info/sciences-tech/2026/article/suisse-les-nouvelles-centrales-nucleaires-pas-rentables-sans-l-etat-29289227.html": {
+    "attempts": 0,
+    "first_seen": "2026-06-29T13:43:17Z",
+    "last_checked": "2026-06-29T13:45:09Z",
+    "spn2_job_id": "spn2-11cff076e84c9d716fce0b18d7ae6155cfce19a6",
+    "status": "success"
+  },
   "https://www.rts.ch/info/societe/2026/article/cultiver-du-matcha-en-allemagne-le-pari-fou-d-une-entrepreneuse-29287993.html": {
     "attempts": 0,
     "first_seen": "2026-06-27T21:30:07Z",
@@ -6168,6 +6392,13 @@
     "last_checked": "2026-06-25T20:55:02Z",
     "spn2_job_id": "spn2-8ae9c833e5f9cec4bfd2c8634e18e130a882aaea",
     "status": "success"
+  },
+  "https://www.rts.ch/info/suisse/2026/article/la-surpopulation-des-prisons-suisses-viole-les-droits-humains-29289370.html": {
+    "attempts": 1,
+    "first_seen": "2026-06-29T13:49:13Z",
+    "last_checked": "2026-06-29T13:49:31Z",
+    "spn2_job_id": "spn2-35cfb9640e6824a6b36a1fe38a5bbbe813367589",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/suisse/2026/article/le-conseil-federal-en-course-d-ecole-dans-le-canton-de-vaud-29285934.html": {
     "attempts": 0,
