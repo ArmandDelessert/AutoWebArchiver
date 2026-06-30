@@ -34,6 +34,7 @@ class Settings:
     js_behavior_timeout: int = 0
     max_captures_per_minute: int = 7
     max_concurrent_spn2_jobs: int = 10
+    min_concurrent_slots_per_source: int = 1
     max_run_seconds: int = 6000
     max_capture_attempts: int = 3
     poll_interval_seconds: int = 15

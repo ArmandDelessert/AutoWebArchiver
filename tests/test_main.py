@@ -106,19 +106,47 @@ def test_retryable_error_is_resubmitted_on_next_run(tmp_path):
     assert len([c for c in client.calls if c[0] == "submit"]) == 2
 
 
-def test_interleave_by_source_round_robins():
+def test_scheduler_orders_oldest_first_within_a_source():
     items = [
-        DiscoveredItem(url="a0", title=None, published_at=None, source="a"),
-        DiscoveredItem(url="a1", title=None, published_at=None, source="a"),
-        DiscoveredItem(url="a2", title=None, published_at=None, source="a"),
-        DiscoveredItem(url="b0", title=None, published_at=None, source="b"),
-        DiscoveredItem(url="b1", title=None, published_at=None, source="b"),
+        DiscoveredItem(url="newest", title=None, published_at="2026-06-03T00:00:00Z", source="a"),
+        DiscoveredItem(url="undated", title=None, published_at=None, source="a"),
+        DiscoveredItem(url="oldest", title=None, published_at="2026-06-01T00:00:00Z", source="a"),
     ]
 
-    result = main._interleave_by_source(items)
+    scheduler = main.SourceScheduler(items)
+    order = [scheduler.pop_next({}, min_reserved=1).url for _ in range(3)]
 
-    assert [it.source for it in result] == ["a", "b", "a", "b", "a"]
-    assert [it.url for it in result] == ["a0", "b0", "a1", "b1", "a2"]
+    # Oldest published date first; undated items (unknown urgency) come last.
+    assert order == ["oldest", "newest", "undated"]
+
+
+def test_scheduler_guarantees_minimum_slots_for_minority_source():
+    items = [DiscoveredItem(url=f"a{i}", title=None, published_at=None, source="a") for i in range(9)]
+    items.append(DiscoveredItem(url="b0", title=None, published_at=None, source="b"))
+    scheduler = main.SourceScheduler(items)
+
+    # Even though "a" has 9x the volume and already fills 9 of 10 concurrent
+    # slots, "b" still has an item and 0 in-flight slots (< min_reserved=1):
+    # the next pick must go to "b", not pile more onto the dominant source.
+    picked = scheduler.pop_next({"a": 9, "b": 0}, min_reserved=1)
+    assert picked.source == "b"
+
+
+def test_scheduler_falls_back_to_proportional_once_minimum_is_met():
+    items = [DiscoveredItem(url=f"a{i}", title=None, published_at=None, source="a") for i in range(8)]
+    items += [DiscoveredItem(url=f"b{i}", title=None, published_at=None, source="b") for i in range(2)]
+    scheduler = main.SourceScheduler(items)
+
+    # Both sources are always reported as already meeting the reserved
+    # minimum, so every pick goes through the proportional branch: "b"'s 2
+    # items should land interleaved across the run (not clumped), roughly in
+    # proportion to its 20% share of the 10 items -- not starved-prioritized,
+    # but not starved-out either.
+    in_flight = {"a": 1, "b": 1}
+    picks = [scheduler.pop_next(in_flight, min_reserved=1).source for _ in range(10)]
+
+    assert picks.count("b") == 2
+    assert picks == ["a", "b", "a", "a", "a", "a", "b", "a", "a", "a"]
 
 
 def test_archive_submits_normalized_url(tmp_path):

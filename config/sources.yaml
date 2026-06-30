@@ -20,6 +20,7 @@ settings:
   js_behavior_timeout: 0
   max_captures_per_minute: 7
   max_concurrent_spn2_jobs: 10
+  min_concurrent_slots_per_source: 1
   max_run_seconds: 6000
   max_capture_attempts: 3
   poll_interval_seconds: 15

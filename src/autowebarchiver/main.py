@@ -42,15 +42,15 @@ def discover_source(source: Source) -> list[DiscoveredItem]:
 def _poll_once(
     client: SPN2Client,
     store: SeenStore,
-    in_flight: dict[str, tuple[str, float]],
+    in_flight: dict[str, tuple[str, str, float]],
     settings: Settings,
     counts: dict[str, int],
 ) -> None:
-    """Poll every in-flight job (job_id -> (url, deadline)) exactly once. Resolved
-    jobs are recorded and removed; jobs past their per-job deadline are left
-    pending for the next run. Mutates in_flight and counts in place."""
+    """Poll every in-flight job (job_id -> (url, source, deadline)) exactly once.
+    Resolved jobs are recorded and removed; jobs past their per-job deadline are
+    left pending for the next run. Mutates in_flight and counts in place."""
     now = time.monotonic()
-    for job_id, (url, deadline) in list(in_flight.items()):
+    for job_id, (url, _source, deadline) in list(in_flight.items()):
         try:
             payload = client.get_status(job_id)
         except Exception as exc:  # noqa: BLE001 - isolate failures; stays pending for next run
@@ -75,7 +75,8 @@ def _poll_jobs(
     """Poll a fixed set of jobs (job_id -> url) until each resolves or times out."""
     counts = {"success": 0, "error": 0, "pending": 0}
     deadline = time.monotonic() + settings.poll_timeout_seconds
-    in_flight = {job_id: (url, deadline) for job_id, url in jobs.items()}
+    # No per-source scheduling happens here, so the source slot is unused ("").
+    in_flight = {job_id: (url, "", deadline) for job_id, url in jobs.items()}
     while in_flight:
         _poll_once(client, store, in_flight, settings, counts)
         if in_flight:
@@ -129,25 +130,55 @@ def _save_quietly(store: SeenStore) -> None:
         logger.error("Could not write state file: %s", exc)
 
 
-def _interleave_by_source(items: list[DiscoveredItem]) -> list[DiscoveredItem]:
-    """Round-robin items across their source so consecutive captures hit
-    different hosts. This keeps per-host concurrency low and avoids SPN2's
-    same-host throttling (429) and target-site anti-bot blocks (403/502) that
-    occur when many captures target one host at once."""
-    buckets: dict[str, deque[DiscoveredItem]] = {}
-    order: list[str] = []
-    for item in items:
-        if item.source not in buckets:
-            buckets[item.source] = deque()
-            order.append(item.source)
-        buckets[item.source].append(item)
+def _urgency_key(item: DiscoveredItem) -> tuple[bool, str]:
+    """Sort key putting the oldest-dated items first. Items closest to falling
+    out of a rotating feed/sitemap (lowest publish/lastmod date) are the most
+    urgent to capture before they're lost; items with no date are treated as
+    least urgent (sorted last) since we can't tell how close they are to
+    expiring. Applying this uniformly (rather than only to feeds known to be
+    size-limited) is harmless for exhaustive sitemaps too -- order barely
+    matters there, and processing their oldest content first is in fact what
+    we want, never silently skipping old articles in favor of newer ones."""
+    return (item.published_at is None, item.published_at or "")
 
-    result: list[DiscoveredItem] = []
-    while len(result) < len(items):
-        for source in order:
-            if buckets[source]:
-                result.append(buckets[source].popleft())
-    return result
+
+class SourceScheduler:
+    """Picks which item to submit next across multiple sources, applying two
+    rules: (1) within a source, the most urgent (oldest-dated) item goes
+    first; (2) across sources, no source can fully starve another -- any
+    source with items left is guaranteed at least `min_reserved` of the
+    concurrent in-flight slots once one frees up, even if another source
+    represents the bulk of the queue. Beyond that guaranteed minimum, slots
+    are filled in proportion to each source's remaining share, so a dominant
+    source still gets most of the throughput it's entitled to."""
+
+    def __init__(self, items: list[DiscoveredItem]):
+        self._queues: dict[str, deque[DiscoveredItem]] = {}
+        self._total: dict[str, int] = {}
+        self._emitted: dict[str, int] = {}
+        for item in items:
+            if item.source not in self._queues:
+                self._queues[item.source] = deque()
+                self._total[item.source] = 0
+                self._emitted[item.source] = 0
+            self._queues[item.source].append(item)
+            self._total[item.source] += 1
+        for source, queue in self._queues.items():
+            self._queues[source] = deque(sorted(queue, key=_urgency_key))
+
+    def __len__(self) -> int:
+        return sum(len(q) for q in self._queues.values())
+
+    def pop_next(self, in_flight_count_by_source: dict[str, int], min_reserved: int) -> DiscoveredItem | None:
+        active = [source for source, queue in self._queues.items() if queue]
+        if not active:
+            return None
+
+        starved = [s for s in active if in_flight_count_by_source.get(s, 0) < min_reserved]
+        source = starved[0] if starved else min(active, key=lambda s: self._emitted[s] / self._total[s])
+
+        self._emitted[source] += 1
+        return self._queues[source].popleft()
 
 
 def archive_new_urls(
@@ -158,8 +189,11 @@ def archive_new_urls(
     frees and the per-minute rate allows, until the time budget runs out.
     Submitting and polling are both quick HTTP calls, so one thread interleaves
     them -- no threads or asyncio needed (the throughput ceiling is SPN2's 7
-    submissions/min, not our local concurrency). URLs are submitted round-robin
-    across sources to spread load over hosts."""
+    submissions/min, not our local concurrency). Which item gets the next slot
+    is decided by SourceScheduler: oldest-first within a source, with a
+    guaranteed minimum slot share across sources so no source can starve
+    another, beyond which slots go to sources proportional to their remaining
+    share."""
     counts = {"success": 0, "error": 0, "pending": 0}
 
     # Normalize and de-duplicate (a URL can appear under several feeds, or with
@@ -182,32 +216,40 @@ def archive_new_urls(
         available = settings.max_concurrent_spn2_jobs
 
     concurrency = max(1, min(settings.max_concurrent_spn2_jobs, available))
-    queued = deque(_interleave_by_source(new_items))
-    in_flight: dict[str, tuple[str, float]] = {}
+    scheduler = SourceScheduler(new_items)
+    in_flight: dict[str, tuple[str, str, float]] = {}
     run_deadline = time.monotonic() + settings.max_run_seconds
 
     while True:
         now = time.monotonic()
         accepting = now < run_deadline  # stop submitting once the time budget is spent
 
+        in_flight_count_by_source: dict[str, int] = {}
+        for _url, source, _deadline in in_flight.values():
+            in_flight_count_by_source[source] = in_flight_count_by_source.get(source, 0) + 1
+
         # Fill free concurrency slots while the per-minute rate allows.
         while (
             accepting
-            and queued
+            and len(scheduler)
             and len(in_flight) < concurrency
             and client.next_submit_wait_seconds() == 0
         ):
-            url = normalize_url(queued.popleft().url)
+            item = scheduler.pop_next(in_flight_count_by_source, settings.min_concurrent_slots_per_source)
+            if item is None:
+                break
+            url = normalize_url(item.url)
             job_id = _submit(client, store, url, settings)
             if job_id is None:
                 counts["error"] += 1
                 continue
-            in_flight[job_id] = (url, time.monotonic() + settings.poll_timeout_seconds)
+            in_flight[job_id] = (url, item.source, time.monotonic() + settings.poll_timeout_seconds)
+            in_flight_count_by_source[item.source] = in_flight_count_by_source.get(item.source, 0) + 1
 
         _poll_once(client, store, in_flight, settings, counts)
 
         # Done once nothing is in flight and we won't submit anything more.
-        if not in_flight and (not accepting or not queued):
+        if not in_flight and (not accepting or not len(scheduler)):
             break
 
         # Sleep until the next thing can happen: a poll cycle for in-flight jobs,
@@ -215,17 +257,17 @@ def archive_new_urls(
         waits = []
         if in_flight:
             waits.append(settings.poll_interval_seconds)
-        if accepting and queued and len(in_flight) < concurrency:
+        if accepting and len(scheduler) and len(in_flight) < concurrency:
             waits.append(client.next_submit_wait_seconds())
         if not waits:
             break
         time.sleep(min(waits))
 
-    if queued:
+    if len(scheduler):
         logger.warning(
             "Stopped after the %ds run budget; %d URL(s) deferred to the next run",
             settings.max_run_seconds,
-            len(queued),
+            len(scheduler),
         )
 
     return counts
