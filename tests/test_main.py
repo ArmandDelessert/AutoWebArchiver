@@ -149,6 +149,37 @@ def test_scheduler_falls_back_to_proportional_once_minimum_is_met():
     assert picks == ["a", "b", "a", "a", "a", "a", "b", "a", "a", "a"]
 
 
+def test_scheduler_demotes_exhaustive_sources_behind_urgent_ones():
+    # "huge" has way more items (and thus a much lower emitted/total ratio),
+    # but it's flagged exhaustive: it must not crowd out "urgent" beyond the
+    # guaranteed floor, even though pure proportional fairness would favor it.
+    items = [DiscoveredItem(url=f"h{i}", title=None, published_at=None, source="huge") for i in range(100)]
+    items += [DiscoveredItem(url=f"u{i}", title=None, published_at=None, source="urgent") for i in range(5)]
+    scheduler = main.SourceScheduler(items, exhaustive={"huge": True, "urgent": False})
+
+    # Past the initial floor (both already have 1 in flight), every further
+    # pick should still go to "urgent" while it has items left -- "huge" is
+    # excluded from the proportional pool entirely, not just deprioritized.
+    in_flight = {"huge": 1, "urgent": 1}
+    picks = [scheduler.pop_next(in_flight, min_reserved=1).source for _ in range(4)]
+
+    assert picks == ["urgent", "urgent", "urgent", "urgent"]
+
+
+def test_scheduler_uses_exhaustive_source_once_urgent_is_drained():
+    items = [DiscoveredItem(url=f"h{i}", title=None, published_at=None, source="huge") for i in range(3)]
+    items.append(DiscoveredItem(url="u0", title=None, published_at=None, source="urgent"))
+    scheduler = main.SourceScheduler(items, exhaustive={"huge": True, "urgent": False})
+
+    in_flight = {"huge": 1, "urgent": 1}
+    scheduler.pop_next(in_flight, min_reserved=1)  # drains "urgent"'s only item
+
+    # No urgent items left at all: spare capacity goes to the exhaustive
+    # source rather than sitting idle.
+    picked = scheduler.pop_next(in_flight, min_reserved=1)
+    assert picked.source == "huge"
+
+
 def test_archive_submits_normalized_url(tmp_path):
     raw = "https://www.rts.ch/article-1.html?rts_source=rss_t"
     clean = "https://www.rts.ch/article-1.html"

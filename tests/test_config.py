@@ -20,6 +20,27 @@ def test_load_valid_config(tmp_path):
     config = load_config(_write(tmp_path, _VALID_SOURCE))
     assert len(config.sources) == 1
     assert config.sources[0].name == "example"
+    assert config.sources[0].exhaustive is False
+
+
+def test_exhaustive_flag_is_parsed(tmp_path):
+    text = """
+sources:
+  - name: example
+    type: sitemap
+    url: https://example.com/sitemap.xml
+    exhaustive: true
+"""
+    config = load_config(_write(tmp_path, text))
+    assert config.sources[0].exhaustive is True
+
+
+def test_non_boolean_exhaustive_rejected(tmp_path):
+    text = _VALID_SOURCE.replace(
+        "type: rss", "type: rss\n    exhaustive: \"yes\""
+    )
+    with pytest.raises(ConfigError, match="non-boolean 'exhaustive'"):
+        load_config(_write(tmp_path, text))
 
 
 def test_duplicate_source_name_rejected(tmp_path):

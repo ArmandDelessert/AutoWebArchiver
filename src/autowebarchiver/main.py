@@ -143,16 +143,23 @@ def _urgency_key(item: DiscoveredItem) -> tuple[bool, str]:
 
 
 class SourceScheduler:
-    """Picks which item to submit next across multiple sources, applying two
-    rules: (1) within a source, the most urgent (oldest-dated) item goes
-    first; (2) across sources, no source can fully starve another -- any
-    source with items left is guaranteed at least `min_reserved` of the
-    concurrent in-flight slots once one frees up, even if another source
-    represents the bulk of the queue. Beyond that guaranteed minimum, slots
-    are filled in proportion to each source's remaining share, so a dominant
-    source still gets most of the throughput it's entitled to."""
+    """Picks which item to submit next across multiple sources, applying three
+    rules in order: (1) within a source, the most urgent (oldest-dated) item
+    goes first; (2) any source with items left is guaranteed at least
+    `min_reserved` of the concurrent in-flight slots once one frees up, even
+    if another source represents the bulk of the queue -- this floor applies
+    to every source, including exhaustive ones, so a large historical backlog
+    still makes steady progress every run, just never dominates; (3) beyond
+    that floor, slots are filled in proportion to each source's remaining
+    share, but the proportional pool is restricted to non-exhaustive sources
+    while any of them still have items -- exhaustive sources (sitemaps/feeds
+    listing a site's entire history, where nothing is ever at risk of being
+    lost) only compete for spare capacity once every time-sensitive source is
+    satisfied for this slot-fill, so a huge historical sitemap can't crowd out
+    urgent captures just because it has the largest raw item count."""
 
-    def __init__(self, items: list[DiscoveredItem]):
+    def __init__(self, items: list[DiscoveredItem], exhaustive: dict[str, bool] | None = None):
+        self._exhaustive = exhaustive or {}
         self._queues: dict[str, deque[DiscoveredItem]] = {}
         self._total: dict[str, int] = {}
         self._emitted: dict[str, int] = {}
@@ -175,14 +182,23 @@ class SourceScheduler:
             return None
 
         starved = [s for s in active if in_flight_count_by_source.get(s, 0) < min_reserved]
-        source = starved[0] if starved else min(active, key=lambda s: self._emitted[s] / self._total[s])
+        if starved:
+            source = starved[0]
+        else:
+            urgent = [s for s in active if not self._exhaustive.get(s, False)]
+            pool = urgent or active  # fall back to exhaustive sources if nothing urgent remains
+            source = min(pool, key=lambda s: self._emitted[s] / self._total[s])
 
         self._emitted[source] += 1
         return self._queues[source].popleft()
 
 
 def archive_new_urls(
-    client: SPN2Client, store: SeenStore, items: list[DiscoveredItem], settings: Settings
+    client: SPN2Client,
+    store: SeenStore,
+    items: list[DiscoveredItem],
+    settings: Settings,
+    exhaustive: dict[str, bool] | None = None,
 ) -> dict[str, int]:
     """Archive newly discovered URLs with a single-threaded sliding window: keep
     up to `concurrency` captures in flight, submitting a new one as soon as a slot
@@ -190,10 +206,7 @@ def archive_new_urls(
     Submitting and polling are both quick HTTP calls, so one thread interleaves
     them -- no threads or asyncio needed (the throughput ceiling is SPN2's 7
     submissions/min, not our local concurrency). Which item gets the next slot
-    is decided by SourceScheduler: oldest-first within a source, with a
-    guaranteed minimum slot share across sources so no source can starve
-    another, beyond which slots go to sources proportional to their remaining
-    share."""
+    is decided by SourceScheduler -- see its docstring for the scheduling rules."""
     counts = {"success": 0, "error": 0, "pending": 0}
 
     # Normalize and de-duplicate (a URL can appear under several feeds, or with
@@ -216,7 +229,7 @@ def archive_new_urls(
         available = settings.max_concurrent_spn2_jobs
 
     concurrency = max(1, min(settings.max_concurrent_spn2_jobs, available))
-    scheduler = SourceScheduler(new_items)
+    scheduler = SourceScheduler(new_items, exhaustive)
     in_flight: dict[str, tuple[str, str, float]] = {}
     run_deadline = time.monotonic() + settings.max_run_seconds
 
@@ -374,7 +387,8 @@ def run(
     except OSError as exc:
         logger.error("Could not write feed stats file %s: %s", feed_stats_path, exc)
 
-    archive_counts = archive_new_urls(client, store, discovered, config.settings)
+    exhaustive_by_source = {source.name: source.exhaustive for source in config.sources}
+    archive_counts = archive_new_urls(client, store, discovered, config.settings, exhaustive_by_source)
     for key, value in archive_counts.items():
         totals[key] += value
 

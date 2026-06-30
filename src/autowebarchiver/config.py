@@ -23,6 +23,11 @@ class Source:
     type: str
     url: str
     url_pattern: str | None = None
+    # True for sitemaps/feeds that list a site's entire history (nothing ever
+    # falls out, so there's no urgency): these get scheduling priority only
+    # after every non-exhaustive source's needs are met, so a large historical
+    # backlog never crowds out time-sensitive captures elsewhere.
+    exhaustive: bool = False
 
 
 @dataclass(frozen=True)
@@ -76,12 +81,16 @@ def load_config(path: str | Path) -> Config:
         if name in seen_names:
             raise ConfigError(f"sources[{i}] has duplicate name '{name}'; names must be unique")
         seen_names.add(name)
+        exhaustive = entry.get("exhaustive", False)
+        if not isinstance(exhaustive, bool):
+            raise ConfigError(f"sources[{i}] has non-boolean 'exhaustive': {exhaustive!r}")
         sources.append(
             Source(
                 name=name,
                 type=entry["type"],
                 url=entry["url"],
                 url_pattern=entry.get("url_pattern"),
+                exhaustive=exhaustive,
             )
         )
 
