@@ -23,6 +23,17 @@ class FeedRunStats:
     newest_published_at: str | None
 
 
+@dataclass(frozen=True)
+class DroppedUrl:
+    url: str
+    # Why it never got archived before falling out of the feed:
+    # "never_attempted" - no submit was ever made for it (starved of capacity)
+    # "gave_up" - submitted, retried, and permanently failed (e.g. blocked/403)
+    # "still_retrying" - was mid-retry (error_retry) when it fell out
+    # "still_pending" - a capture job was in flight when it fell out
+    reason: str
+
+
 class FeedStatsStore:
     """Tracks, per source, how a feed/sitemap's content changes run over run:
     its size, how many items are genuinely new, and -- the key signal -- how
@@ -55,16 +66,22 @@ class FeedStatsStore:
 
     def record(
         self, source_name: str, items: list[DiscoveredItem], new_count: int, seen_store: SeenStore
-    ) -> FeedRunStats:
+    ) -> tuple[FeedRunStats, list[DroppedUrl]]:
         """Compare this run's discovered items against the previous run's for the
         same source, compute stats, and persist the new snapshot in memory
-        (call save() to write it to disk)."""
+        (call save() to write it to disk). Returns the stats plus the list of
+        dropped-but-never-archived URLs with their failure reason, for logging
+        only -- not persisted, to keep feed_stats.json from growing unbounded."""
         current_urls = {normalize_url(item.url) for item in items}
         previous = self._sources.get(source_name, {})
         previous_urls = set(previous.get("last_urls", []))
 
         dropped = previous_urls - current_urls
-        dropped_unarchived = [url for url in dropped if not seen_store.is_archived(url)]
+        dropped_unarchived = [
+            DroppedUrl(url=url, reason=_drop_reason(seen_store.status_of(url)))
+            for url in dropped
+            if not seen_store.is_archived(url)
+        ]
 
         published = [item.published_at for item in items if item.published_at]
         stats = FeedRunStats(
@@ -83,7 +100,7 @@ class FeedStatsStore:
             "last_urls": sorted(current_urls),
             "history": history,
         }
-        return stats
+        return stats, dropped_unarchived
 
     def purge_older_than(self, days: int) -> int:
         cutoff = datetime.now(timezone.utc) - timedelta(days=days)
@@ -93,6 +110,15 @@ class FeedStatsStore:
             purged += len(source["history"]) - len(kept)
             source["history"] = kept
         return purged
+
+
+def _drop_reason(status: str | None) -> str:
+    return {
+        None: "never_attempted",
+        "error": "gave_up",
+        "error_retry": "still_retrying",
+        "pending": "still_pending",
+    }.get(status, status or "never_attempted")
 
 
 def _now_iso() -> str:

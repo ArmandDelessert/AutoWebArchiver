@@ -60,6 +60,12 @@ class SeenStore:
         entry = self._entries.get(normalize_url(url))
         return entry is not None and entry.get("status") == "success"
 
+    def status_of(self, url: str) -> str | None:
+        """The raw status ("pending"/"success"/"error"/"error_retry"), or None
+        if the URL was never seen at all (no submit was ever attempted)."""
+        entry = self._entries.get(normalize_url(url))
+        return entry.get("status") if entry else None
+
     def pending_entries(self) -> dict[str, dict]:
         return {
             url: entry for url, entry in self._entries.items() if entry.get("status") == "pending"

@@ -296,7 +296,7 @@ def run(
             items = discover_source(source)
             new_count = sum(1 for item in items if not store.is_known(item.url))
             logger.info("Discovered %d item(s) from %s", len(items), source.name)
-            stats = feed_stats.record(source.name, items, new_count, store)
+            stats, dropped_unarchived = feed_stats.record(source.name, items, new_count, store)
             coverage = (
                 f", coverage {stats.oldest_published_at}..{stats.newest_published_at}"
                 if stats.oldest_published_at and stats.newest_published_at
@@ -310,12 +310,18 @@ def run(
                 stats.dropped_unarchived_count,
                 coverage,
             )
-            if stats.dropped_unarchived_count:
+            if dropped_unarchived:
+                reason_counts: dict[str, int] = {}
+                for dropped in dropped_unarchived:
+                    reason_counts[dropped.reason] = reason_counts.get(dropped.reason, 0) + 1
                 logger.warning(
-                    "%d URL(s) from %s fell out of the feed before being archived",
-                    stats.dropped_unarchived_count,
+                    "%d URL(s) from %s fell out of the feed before being archived (%s)",
+                    len(dropped_unarchived),
                     source.name,
+                    ", ".join(f"{count} {reason}" for reason, count in sorted(reason_counts.items())),
                 )
+                for dropped in dropped_unarchived[:10]:
+                    logger.warning('  - [%s] "%s"', dropped.reason, dropped.url)
             discovered.extend(items)
         except Exception as exc:  # noqa: BLE001 - isolate failures per source
             logger.error("Failed to discover items from %s: %s", source.name, exc)

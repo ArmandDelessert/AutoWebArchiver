@@ -14,12 +14,13 @@ def test_first_run_has_no_drops():
     seen = SeenStore("unused-seen.json")
     items = [_item("https://e.com/a"), _item("https://e.com/b")]
 
-    stats = stats_store.record("rts.ch", items, new_count=2, seen_store=seen)
+    stats, dropped = stats_store.record("rts.ch", items, new_count=2, seen_store=seen)
 
     assert stats.item_count == 2
     assert stats.new_count == 2
     assert stats.dropped_count == 0
     assert stats.dropped_unarchived_count == 0
+    assert dropped == []
 
 
 def test_dropped_unarchived_is_flagged(tmp_path):
@@ -32,10 +33,13 @@ def test_dropped_unarchived_is_flagged(tmp_path):
 
     # Run 2: "b" fell out of the feed without ever being archived; "a" did too,
     # but it doesn't count since it was successfully captured.
-    stats = stats_store.record("rts.ch", [_item("https://e.com/c")], 1, seen)
+    stats, dropped = stats_store.record("rts.ch", [_item("https://e.com/c")], 1, seen)
 
     assert stats.dropped_count == 2
     assert stats.dropped_unarchived_count == 1
+    assert len(dropped) == 1
+    assert dropped[0].url == "https://e.com/b"
+    assert dropped[0].reason == "never_attempted"
 
 
 def test_published_at_coverage_tracks_min_max():
@@ -47,7 +51,7 @@ def test_published_at_coverage_tracks_min_max():
         _item("https://e.com/c", published_at=None),
     ]
 
-    stats = stats_store.record("letemps.ch", items, new_count=3, seen_store=seen)
+    stats, _ = stats_store.record("letemps.ch", items, new_count=3, seen_store=seen)
 
     assert stats.oldest_published_at == "2026-06-25T08:00:00Z"
     assert stats.newest_published_at == "2026-06-25T10:00:00Z"
@@ -65,8 +69,37 @@ def test_save_and_reload_roundtrip(tmp_path):
     assert len(on_disk["rts.ch"]["history"]) == 1
 
     reloaded = FeedStatsStore(path)
-    stats = reloaded.record("rts.ch", [_item("https://e.com/a")], 0, seen)
+    stats, _ = reloaded.record("rts.ch", [_item("https://e.com/a")], 0, seen)
     assert stats.dropped_count == 0  # "a" is still present, not dropped
+
+
+def test_dropped_reason_breakdown(tmp_path):
+    stats_store = FeedStatsStore(tmp_path / "feed_stats.json")
+    seen = SeenStore(tmp_path / "seen.json")
+
+    seen.mark_error("https://e.com/gave-up", retryable=False, max_attempts=3)
+    seen.mark_error("https://e.com/retrying", retryable=True, max_attempts=3)
+    seen.mark_pending("https://e.com/in-flight", "job-1")
+    # "https://e.com/never-tried" has no entry at all in seen_store.
+
+    stats_store.record(
+        "rts.ch",
+        [
+            _item("https://e.com/gave-up"),
+            _item("https://e.com/retrying"),
+            _item("https://e.com/in-flight"),
+            _item("https://e.com/never-tried"),
+        ],
+        new_count=1,
+        seen_store=seen,
+    )
+    _, dropped = stats_store.record("rts.ch", [], new_count=0, seen_store=seen)
+
+    reasons = {d.url: d.reason for d in dropped}
+    assert reasons["https://e.com/gave-up"] == "gave_up"
+    assert reasons["https://e.com/retrying"] == "still_retrying"
+    assert reasons["https://e.com/in-flight"] == "still_pending"
+    assert reasons["https://e.com/never-tried"] == "never_attempted"
 
 
 def test_purge_older_than_removes_stale_history(tmp_path):
