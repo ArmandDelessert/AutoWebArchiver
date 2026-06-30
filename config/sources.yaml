@@ -2,20 +2,18 @@ sources:
   - name: rts.ch
     type: rss
     url: https://www.rts.ch/info/toute-info/?format=rss/news
+    exhaustive: false
 
   - name: lemonde.fr
     type: sitemap
     url: https://www.lemonde.fr/sitemap_news.xml
     url_pattern: ".*\\.html$"
+    exhaustive: false
 
   - name: letemps.ch
     type: rss
     url: https://www.letemps.ch/articles.rss
-
-  - name: apreslabiere.fr
-    type: sitemap
-    url: https://www.apreslabiere.fr/sitemap.xml
-    exhaustive: true
+    exhaustive: false
 
   - name: le-courrier.ch
     type: sitemap
@@ -30,6 +28,11 @@ sources:
   - name: techcafe.fr
     type: sitemap
     url: https://techcafe.fr/sitemap_index.xml
+    exhaustive: true
+
+  - name: apreslabiere.fr
+    type: sitemap
+    url: https://www.apreslabiere.fr/sitemap.xml
     exhaustive: true
 
 settings:
