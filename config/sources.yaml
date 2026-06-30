@@ -12,6 +12,26 @@ sources:
     type: rss
     url: https://www.letemps.ch/articles.rss
 
+  - name: apreslabiere.fr
+    type: sitemap
+    url: https://www.apreslabiere.fr/sitemap.xml
+    exhaustive: true
+
+  - name: le-courrier.ch
+    type: sitemap
+    url: https://www.le-courrier.ch/wp-sitemap.xml
+    exhaustive: true
+
+  - name: frenchspin.fr
+    type: sitemap
+    url: https://frenchspin.fr/wp-sitemap.xml
+    exhaustive: true
+
+  - name: techcafe.fr
+    type: sitemap
+    url: https://techcafe.fr/sitemap_index.xml
+    exhaustive: true
+
 settings:
   if_not_archived_within: "1w"
   capture_outlinks: false
