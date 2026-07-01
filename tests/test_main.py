@@ -139,14 +139,45 @@ def test_scheduler_falls_back_to_proportional_once_minimum_is_met():
 
     # Both sources are always reported as already meeting the reserved
     # minimum, so every pick goes through the proportional branch: "b"'s 2
-    # items should land interleaved across the run (not clumped), roughly in
-    # proportion to its 20% share of the 10 items -- not starved-prioritized,
-    # but not starved-out either.
+    # items should land interleaved across the run (not clumped at either
+    # end), roughly in proportion to its 20% share of the 10 items -- not
+    # starved-prioritized, but not starved-out either. The exact tie-break
+    # order is an implementation detail (see the rotation regression test
+    # below), so only the interleaving property is asserted here.
     in_flight = {"a": 1, "b": 1}
     picks = [scheduler.pop_next(in_flight, min_reserved=1).source for _ in range(10)]
 
     assert picks.count("b") == 2
-    assert picks == ["a", "b", "a", "a", "a", "a", "b", "a", "a", "a"]
+    assert picks[0] == "a"  # "a" starts furthest behind proportionally (tied at 0, first in order)
+    assert picks[-1] != "b"  # "b"'s 2 picks should not both land at the very end (clumped)
+
+
+def test_scheduler_rotates_ties_instead_of_starving_last_source():
+    # Regression test for the bug found in production: when several sources
+    # are simultaneously starved (or tied) on every pick -- which happens
+    # whenever the real concurrent-capture capacity is lower than the number
+    # of active sources -- pop_next used to always resolve the tie in favor
+    # of whichever source was listed earliest in sources.yaml, permanently
+    # starving the last-listed source (apreslabiere.fr, purely because of its
+    # position in the file, not anything about that site) for as long as any
+    # earlier source still had items.
+    items = []
+    for name in ["a", "b", "c", "d"]:
+        items += [
+            DiscoveredItem(url=f"{name}{i}", title=None, published_at=None, source=name) for i in range(50)
+        ]
+    scheduler = main.SourceScheduler(items)
+
+    # Every call sees all sources with 0 in-flight, as if real concurrency
+    # never lets more than one source's slot persist between decisions --
+    # the worst case for a fixed tie-break order.
+    picks = [scheduler.pop_next({}, min_reserved=1).source for _ in range(8)]
+
+    from collections import Counter
+
+    counts = Counter(picks)
+    assert set(counts) == {"a", "b", "c", "d"}
+    assert counts["d"] >= 2  # "d" is last in config order -- the one that used to starve
 
 
 def test_scheduler_demotes_exhaustive_sources_behind_urgent_ones():

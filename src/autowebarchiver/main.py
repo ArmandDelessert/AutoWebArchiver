@@ -156,7 +156,18 @@ class SourceScheduler:
     listing a site's entire history, where nothing is ever at risk of being
     lost) only compete for spare capacity once every time-sensitive source is
     satisfied for this slot-fill, so a huge historical sitemap can't crowd out
-    urgent captures just because it has the largest raw item count."""
+    urgent captures just because it has the largest raw item count.
+
+    Tie-breaks (multiple sources simultaneously starved, or tied on
+    emitted/total ratio) rotate through sources round-robin rather than
+    always favoring whichever source happens to be listed first in
+    sources.yaml. Without this, if the real concurrent-capture capacity ever
+    falls below the number of active sources, sources placed early in the
+    config permanently win every tie and the last-listed source can be
+    starved out completely, for as long as any earlier source still has
+    items -- this actually happened to whichever source ended up last once
+    4 large sitemaps were added, and isn't specific to that source's site,
+    just its position in the file."""
 
     def __init__(self, items: list[DiscoveredItem], exhaustive: dict[str, bool] | None = None):
         self._exhaustive = exhaustive or {}
@@ -172,23 +183,35 @@ class SourceScheduler:
             self._total[item.source] += 1
         for source, queue in self._queues.items():
             self._queues[source] = deque(sorted(queue, key=_urgency_key))
+        self._order: list[str] = list(self._queues.keys())
+        self._rotate_from = 0  # index into _order; advances past whichever source we last picked
 
     def __len__(self) -> int:
         return sum(len(q) for q in self._queues.values())
 
+    def _rotated(self, candidates: set[str]) -> list[str]:
+        """`candidates` reordered to start just after the last pick, so a set
+        of tied sources cycles through fairly across repeated calls instead
+        of always resolving to the same (earliest-configured) member."""
+        return [s for s in self._order[self._rotate_from :] + self._order[: self._rotate_from] if s in candidates]
+
     def pop_next(self, in_flight_count_by_source: dict[str, int], min_reserved: int) -> DiscoveredItem | None:
-        active = [source for source, queue in self._queues.items() if queue]
+        active = {source for source, queue in self._queues.items() if queue}
         if not active:
             return None
 
-        starved = [s for s in active if in_flight_count_by_source.get(s, 0) < min_reserved]
+        starved = {s for s in active if in_flight_count_by_source.get(s, 0) < min_reserved}
         if starved:
-            source = starved[0]
+            source = self._rotated(starved)[0]
         else:
-            urgent = [s for s in active if not self._exhaustive.get(s, False)]
+            urgent = {s for s in active if not self._exhaustive.get(s, False)}
             pool = urgent or active  # fall back to exhaustive sources if nothing urgent remains
-            source = min(pool, key=lambda s: self._emitted[s] / self._total[s])
+            # min() breaks ties by picking the first candidate in the input
+            # order, so feeding it the rotated order makes ties round-robin
+            # instead of always favoring the same source.
+            source = min(self._rotated(pool), key=lambda s: self._emitted[s] / self._total[s])
 
+        self._rotate_from = (self._order.index(source) + 1) % len(self._order)
         self._emitted[source] += 1
         return self._queues[source].popleft()
 
@@ -229,6 +252,13 @@ def archive_new_urls(
         available = settings.max_concurrent_spn2_jobs
 
     concurrency = max(1, min(settings.max_concurrent_spn2_jobs, available))
+    logger.info(
+        "Using %d concurrent slot(s) (SPN2 reports %d available, cap is %d) across %d source(s)",
+        concurrency,
+        available,
+        settings.max_concurrent_spn2_jobs,
+        len({item.source for item in new_items}),
+    )
     scheduler = SourceScheduler(new_items, exhaustive)
     in_flight: dict[str, tuple[str, str, float]] = {}
     run_deadline = time.monotonic() + settings.max_run_seconds
