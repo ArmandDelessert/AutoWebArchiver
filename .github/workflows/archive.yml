@@ -54,11 +54,11 @@ jobs:
           # rebase onto the new tip is expected to always be conflict-free and
           # fast-forwardable; retry a few times rather than discarding a full
           # run's worth of archiving progress on the first race.
-          for attempt in 1 2 3 4 5; do
+          for attempt in 1 2 3; do
             if git push; then
               exit 0
             fi
-            echo "Push rejected (attempt $attempt/5), rebasing onto the latest main and retrying..."
+            echo "Push rejected (attempt $attempt/3), rebasing onto the latest main and retrying..."
             git fetch origin main
             if ! git rebase origin/main; then
               echo "::error::Rebase onto origin/main failed unexpectedly -- aborting rather than risk pushing something wrong"
@@ -66,5 +66,5 @@ jobs:
               exit 1
             fi
           done
-          echo "::error::Failed to push after 5 attempts"
+          echo "::error::Failed to push after 3 attempts"
           exit 1
