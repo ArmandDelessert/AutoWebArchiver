@@ -1,6 +1,7 @@
+import pytest
 import responses
 
-from autowebarchiver.spn2.client import SPN2Client
+from autowebarchiver.spn2.client import AlreadyArchivedError, SPN2Client
 
 
 def make_client(**kwargs):
@@ -20,6 +21,25 @@ def test_submit_returns_job_id():
     job_id = client.submit("https://example.com/")
 
     assert job_id == "job-1"
+
+
+@responses.activate
+def test_submit_raises_already_archived_when_no_job_id():
+    responses.add(
+        responses.POST,
+        "https://web.archive.org/save",
+        json={
+            "url": "https://example.com/",
+            "job_id": None,
+            "message": "The same snapshot had been made 4 hours, 45 minutes ago. "
+            "You can make new capture of this URL after 168 hours.",
+        },
+        status=200,
+    )
+
+    client = make_client()
+    with pytest.raises(AlreadyArchivedError, match="same snapshot"):
+        client.submit("https://example.com/")
 
 
 @responses.activate

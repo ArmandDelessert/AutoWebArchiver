@@ -1,6 +1,7 @@
 import autowebarchiver.main as main
 from autowebarchiver.config import Settings
 from autowebarchiver.discovery.models import DiscoveredItem
+from autowebarchiver.spn2.client import AlreadyArchivedError
 from autowebarchiver.state.store import SeenStore
 
 
@@ -8,9 +9,10 @@ class FakeClient:
     """Records the order of submit/status calls so tests can assert that a whole
     wave is submitted before it is polled (i.e. captures run concurrently)."""
 
-    def __init__(self, status_by_url, available=10):
+    def __init__(self, status_by_url, available=10, already_archived_urls=()):
         self._status_by_url = status_by_url
         self.available = available
+        self._already_archived_urls = set(already_archived_urls)
         self.calls = []  # ordered log of ("submit" | "status", url)
         self._job_url = {}
         self._n = 0
@@ -22,10 +24,12 @@ class FakeClient:
         return 0.0
 
     def submit(self, url, **kwargs):
+        self.calls.append(("submit", url))
+        if url in self._already_archived_urls:
+            raise AlreadyArchivedError("The same snapshot had been made 1 hour ago.")
         self._n += 1
         job_id = f"job-{self._n}"
         self._job_url[job_id] = url
-        self.calls.append(("submit", url))
         return job_id
 
     def get_status(self, job_id):
@@ -104,6 +108,25 @@ def test_retryable_error_is_resubmitted_on_next_run(tmp_path):
     # A subsequent run re-submits the same URL.
     main.archive_new_urls(client, store, [item], settings)
     assert len([c for c in client.calls if c[0] == "submit"]) == 2
+
+
+def test_already_archived_is_not_counted_as_an_error(tmp_path):
+    item = _items(1)[0]
+    client = FakeClient({}, available=10, already_archived_urls={item.url})
+    store = SeenStore(tmp_path / "seen.json")
+    settings = _settings(max_concurrent_spn2_jobs=10)
+
+    counts = main.archive_new_urls(client, store, [item], settings)
+
+    assert counts == {"success": 0, "error": 0, "pending": 0, "already_archived": 1}
+    assert store.is_known(item.url)
+    assert store.is_archived(item.url)
+    # No status polling should ever happen -- there was no job to poll.
+    assert not any(kind == "status" for kind, _ in client.calls)
+
+    # A subsequent run does not re-submit it.
+    main.archive_new_urls(client, store, [item], settings)
+    assert len([c for c in client.calls if c[0] == "submit"]) == 1
 
 
 def test_scheduler_orders_oldest_first_within_a_source():
@@ -251,9 +274,34 @@ def test_archive_defers_everything_when_run_budget_is_zero(tmp_path):
 
     # Time budget spent before submitting anything: nothing captured, nothing
     # marked known, so every URL is retried on the next run.
-    assert counts == {"success": 0, "error": 0, "pending": 0}
+    assert counts == {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
     assert not any(kind == "submit" for kind, _ in client.calls)
     assert all(not store.is_known(it.url) for it in items)
+
+
+def test_save_quietly_throttles_writes(tmp_path, monkeypatch):
+    clock = {"t": 1000.0}
+    monkeypatch.setattr("autowebarchiver.main.time.monotonic", lambda: clock["t"])
+    store = SeenStore(tmp_path / "seen.json")
+    save_calls = []
+    monkeypatch.setattr(store, "save", lambda: save_calls.append(clock["t"]))
+
+    main._save_quietly(store, min_interval_seconds=20)
+    main._save_quietly(store, min_interval_seconds=20)  # too soon, skipped
+    assert save_calls == [1000.0]
+
+    clock["t"] = 1015.0
+    main._save_quietly(store, min_interval_seconds=20)  # still too soon
+    assert save_calls == [1000.0]
+
+    clock["t"] = 1021.0
+    main._save_quietly(store, min_interval_seconds=20)  # interval elapsed
+    assert save_calls == [1000.0, 1021.0]
+
+    # min_interval_seconds=0 (the default, e.g. a final unconditional flush)
+    # always writes regardless of how recently the last one happened.
+    main._save_quietly(store)
+    assert save_calls == [1000.0, 1021.0, 1021.0]
 
 
 def test_poll_leftovers_resolves_previous_run_pending(tmp_path):

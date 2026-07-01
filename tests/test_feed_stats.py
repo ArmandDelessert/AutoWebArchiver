@@ -102,6 +102,33 @@ def test_dropped_reason_breakdown(tmp_path):
     assert reasons["https://e.com/never-tried"] == "never_attempted"
 
 
+def test_exhaustive_source_skips_drop_tracking_and_last_urls(tmp_path):
+    path = tmp_path / "feed_stats.json"
+    stats_store = FeedStatsStore(path)
+    seen = SeenStore(tmp_path / "seen.json")
+    items = [_item(f"https://big.example/{i}") for i in range(5000)]
+
+    stats, dropped = stats_store.record("big-sitemap", items, new_count=5000, seen_store=seen, exhaustive=True)
+    stats_store.save()
+
+    assert stats.dropped_count is None
+    assert stats.dropped_unarchived_count is None
+    assert dropped == []
+
+    # The whole point: no 5000-URL list persisted to disk for an exhaustive
+    # source, which is what made feed_stats.json balloon in practice.
+    on_disk = json.loads(path.read_text())
+    assert on_disk["big-sitemap"]["last_urls"] == []
+
+    # A later run doesn't spuriously report drops either (nothing was stored
+    # to diff against).
+    stats2, dropped2 = stats_store.record(
+        "big-sitemap", items[:100], new_count=0, seen_store=seen, exhaustive=True
+    )
+    assert stats2.dropped_count is None
+    assert dropped2 == []
+
+
 def test_purge_older_than_removes_stale_history(tmp_path):
     stats_store = FeedStatsStore(tmp_path / "feed_stats.json")
     seen = SeenStore(tmp_path / "seen.json")

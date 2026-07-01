@@ -67,6 +67,14 @@ def test_is_archived_false_for_pending_and_error(tmp_path):
     assert not store.is_archived("https://example.com/unknown")
 
 
+def test_is_archived_true_for_already_archived(tmp_path):
+    store = SeenStore(tmp_path / "seen.json")
+    store.mark_resolved("https://example.com/a", status="already_archived")
+
+    assert store.is_known("https://example.com/a")
+    assert store.is_archived("https://example.com/a")
+
+
 def test_purge_keeps_pending_entries_regardless_of_age(tmp_path):
     store = SeenStore(tmp_path / "seen.json")
     store.mark_pending("https://example.com/in-flight", "job-1")

@@ -45,6 +45,11 @@ class Settings:
     poll_interval_seconds: int = 15
     poll_timeout_seconds: int = 180
     state_max_age_days: int = 90
+    # Minimum time between full seen.json rewrites. Bounds worst-case data
+    # loss (from an external kill) to roughly this interval instead of every
+    # single mutation -- with thousands of tracked URLs, writing on every
+    # submit/resolve made the file rewrite itself a real, growing cost.
+    state_save_interval_seconds: int = 20
 
 
 @dataclass(frozen=True)

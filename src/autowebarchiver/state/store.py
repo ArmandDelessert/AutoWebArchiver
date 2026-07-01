@@ -55,10 +55,11 @@ class SeenStore:
         return entry.get("status") != "error_retry"
 
     def is_archived(self, url: str) -> bool:
-        """True only if SPN2 confirmed a successful capture (stricter than
-        is_known, which also covers pending/error states)."""
+        """True if SPN2 confirmed a capture, either just now ("success") or
+        already recently enough to skip a new one ("already_archived") --
+        stricter than is_known, which also covers pending/error states."""
         entry = self._entries.get(normalize_url(url))
-        return entry is not None and entry.get("status") == "success"
+        return entry is not None and entry.get("status") in ("success", "already_archived")
 
     def status_of(self, url: str) -> str | None:
         """The raw status ("pending"/"success"/"error"/"error_retry"), or None

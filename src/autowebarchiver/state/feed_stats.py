@@ -17,8 +17,10 @@ class FeedRunStats:
     timestamp: str
     item_count: int
     new_count: int
-    dropped_count: int
-    dropped_unarchived_count: int
+    # None means "not tracked this run" (exhaustive sources -- see record()),
+    # not "confirmed zero drops".
+    dropped_count: int | None
+    dropped_unarchived_count: int | None
     oldest_published_at: str | None
     newest_published_at: str | None
 
@@ -65,13 +67,44 @@ class FeedStatsStore:
         )
 
     def record(
-        self, source_name: str, items: list[DiscoveredItem], new_count: int, seen_store: SeenStore
+        self,
+        source_name: str,
+        items: list[DiscoveredItem],
+        new_count: int,
+        seen_store: SeenStore,
+        exhaustive: bool = False,
     ) -> tuple[FeedRunStats, list[DroppedUrl]]:
         """Compare this run's discovered items against the previous run's for the
         same source, compute stats, and persist the new snapshot in memory
         (call save() to write it to disk). Returns the stats plus the list of
         dropped-but-never-archived URLs with their failure reason, for logging
-        only -- not persisted, to keep feed_stats.json from growing unbounded."""
+        only -- not persisted, to keep feed_stats.json from growing unbounded.
+
+        For exhaustive sources, drop-tracking is skipped entirely: dropped_count
+        and dropped_unarchived_count come back None, and the previous full URL
+        list isn't stored. That metric exists to catch items about to roll off
+        a rotating/size-limited feed -- not meaningful for a full-site sitemap,
+        where nothing is at risk the same way (see SourceScheduler's exhaustive
+        tier). Storing last_urls for these anyway is what made feed_stats.json
+        balloon past seen.json's own size once large sitemaps were added: a
+        12,000+ item sitemap means a 12,000-URL list rewritten whole every run,
+        for a signal that was never actionable there in the first place."""
+        if exhaustive:
+            published = [item.published_at for item in items if item.published_at]
+            stats = FeedRunStats(
+                timestamp=_now_iso(),
+                item_count=len(items),
+                new_count=new_count,
+                dropped_count=None,
+                dropped_unarchived_count=None,
+                oldest_published_at=min(published) if published else None,
+                newest_published_at=max(published) if published else None,
+            )
+            history = self._sources.get(source_name, {}).get("history", [])
+            history.append(stats.__dict__)
+            self._sources[source_name] = {"last_urls": [], "history": history}
+            return stats, []
+
         current_urls = {normalize_url(item.url) for item in items}
         previous = self._sources.get(source_name, {})
         previous_urls = set(previous.get("last_urls", []))

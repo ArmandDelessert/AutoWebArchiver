@@ -14,7 +14,7 @@ from .discovery.models import DiscoveredItem
 from .discovery.rss import discover_rss
 from .discovery.sitemap import discover_sitemap
 from .logging_setup import setup_logging
-from .spn2.client import SPN2Client
+from .spn2.client import AlreadyArchivedError, SPN2Client
 from .spn2.models import SPN2Result, result_from_status_payload
 from .state.feed_stats import FeedStatsStore
 from .state.store import SeenStore, normalize_url
@@ -73,7 +73,7 @@ def _poll_jobs(
     client: SPN2Client, store: SeenStore, jobs: dict[str, str], settings: Settings
 ) -> dict[str, int]:
     """Poll a fixed set of jobs (job_id -> url) until each resolves or times out."""
-    counts = {"success": 0, "error": 0, "pending": 0}
+    counts = {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
     deadline = time.monotonic() + settings.poll_timeout_seconds
     # No per-source scheduling happens here, so the source slot is unused ("").
     in_flight = {job_id: (url, "", deadline) for job_id, url in jobs.items()}
@@ -94,10 +94,14 @@ def poll_leftovers(client: SPN2Client, store: SeenStore, settings: Settings) -> 
     return _poll_jobs(client, store, jobs, settings)
 
 
-def _submit(client: SPN2Client, store: SeenStore, url: str, settings: Settings) -> str | None:
-    """Submit a single capture request for an already-normalized URL. Returns its
-    job_id, or None if the submit failed (the URL is then marked for a bounded
-    retry)."""
+def _submit(
+    client: SPN2Client, store: SeenStore, url: str, settings: Settings, counts: dict[str, int]
+) -> str | None:
+    """Submit a single capture request for an already-normalized URL. Returns
+    its job_id if a capture job was created, or None if there's nothing to
+    poll -- either because SPN2 already had a recent-enough capture (counted
+    as "already_archived", not an error) or the submit genuinely failed
+    (counted as "error" and marked for a bounded retry)."""
     try:
         job_id = client.submit(
             url,
@@ -107,27 +111,44 @@ def _submit(client: SPN2Client, store: SeenStore, url: str, settings: Settings) 
             if_not_archived_within=settings.if_not_archived_within,
             js_behavior_timeout=settings.js_behavior_timeout,
         )
+    except AlreadyArchivedError as exc:
+        logger.info('"%s" is already archived recently enough, skipping (%s)', url, exc)
+        store.mark_resolved(url, status="already_archived")
+        counts["already_archived"] += 1
+        _save_quietly(store, settings.state_save_interval_seconds)
+        return None
     except Exception as exc:  # noqa: BLE001 - isolate failures per URL
         logger.error('Failed to submit "%s" for capture: %s', url, exc)
         # A submit failure is almost always transient (network/SPN2 hiccup),
         # so keep it eligible for a bounded number of retries.
         store.mark_error(url, retryable=True, max_attempts=settings.max_capture_attempts)
-        _save_quietly(store)
+        counts["error"] += 1
+        _save_quietly(store, settings.state_save_interval_seconds)
         return None
     store.mark_pending(url, job_id)
-    _save_quietly(store)
+    _save_quietly(store, settings.state_save_interval_seconds)
     return job_id
 
 
-def _save_quietly(store: SeenStore) -> None:
-    """Persist state immediately after every mutation. If the process is killed
-    externally (e.g. a canceled CI job) mid-run, this bounds the data loss to the
-    single in-flight HTTP call instead of the whole run, since nothing was
-    previously durable until the final save() at the end of run()."""
+def _save_quietly(store: SeenStore, min_interval_seconds: float = 0.0) -> None:
+    """Persist state, but skip the write if the last one happened less than
+    `min_interval_seconds` ago. Bounds worst-case data loss (if the process is
+    killed externally, e.g. a canceled CI job) to roughly that interval instead
+    of the whole run, while avoiding a full-file JSON rewrite after every
+    single mutation -- with thousands of tracked URLs now, writing on every
+    submit/resolve made the file rewrite itself a real, growing cost. Pass
+    min_interval_seconds=0 (the default) to always write, e.g. for a final,
+    unconditional flush."""
+    now = time.monotonic()
+    last_flush = getattr(store, "_last_flush_monotonic", None)
+    if last_flush is not None and now - last_flush < min_interval_seconds:
+        return
     try:
         store.save()
     except OSError as exc:
         logger.error("Could not write state file: %s", exc)
+    else:
+        store._last_flush_monotonic = now
 
 
 def _urgency_key(item: DiscoveredItem) -> tuple[bool, str]:
@@ -230,7 +251,7 @@ def archive_new_urls(
     them -- no threads or asyncio needed (the throughput ceiling is SPN2's 7
     submissions/min, not our local concurrency). Which item gets the next slot
     is decided by SourceScheduler -- see its docstring for the scheduling rules."""
-    counts = {"success": 0, "error": 0, "pending": 0}
+    counts = {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
 
     # Normalize and de-duplicate (a URL can appear under several feeds, or with
     # different tracking params that normalize to the same canonical URL).
@@ -282,10 +303,9 @@ def archive_new_urls(
             if item is None:
                 break
             url = normalize_url(item.url)
-            job_id = _submit(client, store, url, settings)
+            job_id = _submit(client, store, url, settings, counts)
             if job_id is None:
-                counts["error"] += 1
-                continue
+                continue  # _submit already recorded the outcome (error or already_archived)
             in_flight[job_id] = (url, item.source, time.monotonic() + settings.poll_timeout_seconds)
             in_flight_count_by_source[item.source] = in_flight_count_by_source.get(item.source, 0) + 1
 
@@ -338,7 +358,7 @@ def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> 
         # status == "timeout": leave it marked as pending so it gets repolled next run.
         logger.warning("Job for %s is still pending after polling timeout", result.url)
         return
-    _save_quietly(store)
+    _save_quietly(store, settings.state_save_interval_seconds)
 
 
 def run(
@@ -369,7 +389,7 @@ def run(
         access_key, secret_key, max_captures_per_minute=config.settings.max_captures_per_minute
     )
 
-    totals = {"success": 0, "error": 0, "pending": 0}
+    totals = {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
 
     leftover_counts = poll_leftovers(client, store, config.settings)
     for key, value in leftover_counts.items():
@@ -381,20 +401,30 @@ def run(
             items = discover_source(source)
             new_count = sum(1 for item in items if not store.is_known(item.url))
             logger.info("Discovered %d item(s) from %s", len(items), source.name)
-            stats, dropped_unarchived = feed_stats.record(source.name, items, new_count, store)
+            stats, dropped_unarchived = feed_stats.record(
+                source.name, items, new_count, store, exhaustive=source.exhaustive
+            )
             coverage = (
                 f", coverage {stats.oldest_published_at}..{stats.newest_published_at}"
                 if stats.oldest_published_at and stats.newest_published_at
                 else ""
             )
-            logger.info(
-                "Feed stats for %s: %d new, %d dropped (%d never archived)%s",
-                source.name,
-                stats.new_count,
-                stats.dropped_count,
-                stats.dropped_unarchived_count,
-                coverage,
-            )
+            if stats.dropped_count is None:
+                logger.info(
+                    "Feed stats for %s: %d new (exhaustive, drop-tracking skipped)%s",
+                    source.name,
+                    stats.new_count,
+                    coverage,
+                )
+            else:
+                logger.info(
+                    "Feed stats for %s: %d new, %d dropped (%d never archived)%s",
+                    source.name,
+                    stats.new_count,
+                    stats.dropped_count,
+                    stats.dropped_unarchived_count,
+                    coverage,
+                )
             if dropped_unarchived:
                 reason_counts: dict[str, int] = {}
                 for dropped in dropped_unarchived:
@@ -432,11 +462,12 @@ def run(
 
     logger.info(
         "Run summary: %d source(s) processed, %d discovered, %d success, %d error, "
-        "%d still pending, %d state entries purged",
+        "%d already archived, %d still pending, %d state entries purged",
         len(config.sources),
         len(discovered),
         totals["success"],
         totals["error"],
+        totals["already_archived"],
         totals["pending"],
         purged,
     )

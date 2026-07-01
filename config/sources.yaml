@@ -49,3 +49,4 @@ settings:
   poll_interval_seconds: 15
   poll_timeout_seconds: 180
   state_max_age_days: 90
+  state_save_interval_seconds: 20

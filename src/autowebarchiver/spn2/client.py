@@ -22,6 +22,13 @@ class SPN2Error(Exception):
     """Raised for non-retryable failures while talking to the SPN2 API."""
 
 
+class AlreadyArchivedError(SPN2Error):
+    """Raised when SPN2 skips the capture because a capture recent enough to
+    satisfy if_not_archived_within already exists. Not a failure: the URL is
+    already archived, just not by this request, so callers should treat it as
+    a resolved outcome rather than an error to retry."""
+
+
 class SPN2Client:
     def __init__(
         self,
@@ -118,7 +125,12 @@ class SPN2Client:
         payload = response.json()
         job_id = payload.get("job_id")
         if not job_id:
-            raise SPN2Error(f"SPN2 capture request for {url} did not return a job_id: {payload}")
+            # SPN2 returns 200 with no job_id specifically when
+            # if_not_archived_within is already satisfied by an existing
+            # capture -- it's telling us no new capture was needed, not that
+            # the request failed.
+            message = payload.get("message") or f"No job_id returned for {url}: {payload}"
+            raise AlreadyArchivedError(message)
         return job_id
 
     @retry(
