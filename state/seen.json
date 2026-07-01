@@ -366,9 +366,9 @@
   "https://frenchspin.fr/2014/03/appload-187-optimise-moi/": {
     "attempts": 2,
     "first_seen": "2026-06-30T20:08:09Z",
-    "last_checked": "2026-06-30T21:48:04Z",
+    "last_checked": "2026-07-01T01:21:09Z",
     "spn2_job_id": "spn2-d8850cabab1d68271d6209632d36cfdb67dffe58",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://frenchspin.fr/2014/03/le-rdv-tech-128-ara-bouygues-bitcoin/": {
     "attempts": 0,
@@ -807,9 +807,9 @@
   "https://frenchspin.fr/2014/12/le-rdv-tech-149-special-seo-et-referencement/": {
     "attempts": 1,
     "first_seen": "2026-06-30T22:35:10Z",
-    "last_checked": "2026-06-30T22:35:27Z",
+    "last_checked": "2026-07-01T01:23:00Z",
     "spn2_job_id": "spn2-c3beb31ce4e826f12a60ef5aca8086fe0079406a",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://frenchspin.fr/2014/12/positron-38-princesse-mononoq/": {
     "attempts": 0,
@@ -884,9 +884,9 @@
   "https://frenchspin.fr/2015/02/appload-207-tu-pousses-ta-boulette/": {
     "attempts": 1,
     "first_seen": "2026-06-30T22:52:16Z",
-    "last_checked": "2026-06-30T22:52:33Z",
+    "last_checked": "2026-07-01T01:24:14Z",
     "spn2_job_id": "spn2-a57e7b267a67aebd3a3f76fa3851eb4ce15095f7",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://frenchspin.fr/2015/02/appload-208-50-nuances-dappload/": {
     "attempts": 0,
@@ -954,9 +954,9 @@
   "https://frenchspin.fr/2015/03/le-rendez-vous-jeux-10-la-maitrise-de-la-comm/": {
     "attempts": 1,
     "first_seen": "2026-06-30T23:05:07Z",
-    "last_checked": "2026-06-30T23:05:24Z",
+    "last_checked": "2026-07-01T01:24:46Z",
     "spn2_job_id": "spn2-005b89cd1ca459b9d0023f4a3e19a2e36447ac57",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://frenchspin.fr/2015/03/le-rendez-vous-jeux-8-place-au-pc/": {
     "attempts": 0,
@@ -1063,11 +1063,25 @@
     "spn2_job_id": "spn2-12ecf9c922357214583b7aa5be6e80648bbf0576",
     "status": "success"
   },
+  "https://frenchspin.fr/2015/05/appload-213-la-communaute-du-bien-vivre/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:27:19Z",
+    "last_checked": "2026-07-01T01:28:16Z",
+    "spn2_job_id": "spn2-f462cea8b877710f2dd2432abc6b500f00a81a3f",
+    "status": "success"
+  },
   "https://frenchspin.fr/2015/05/le-rendez-vous-jeux-13-un-sacre-goggog/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:17:06Z",
     "last_checked": "2026-06-30T23:18:21Z",
     "spn2_job_id": "spn2-b517fdb513ed23a0ff45ed968319ac3a33f046f5",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/05/le-rendez-vous-jeux-14-stunfest-fever/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:31:43Z",
+    "last_checked": "2026-07-01T01:33:34Z",
+    "spn2_job_id": "spn2-806134345a0a0bcfbff5cd0789ef286aea358e0e",
     "status": "success"
   },
   "https://frenchspin.fr/2015/05/le-rendez-vous-tech-158-one-billion-devices/": {
@@ -1077,11 +1091,543 @@
     "spn2_job_id": "spn2-6f90db5116e8dd1d554b806601d4e5f3eb7bec53",
     "status": "success"
   },
+  "https://frenchspin.fr/2015/05/le-rendez-vous-tech-159-facebook-apocalypse/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:25:04Z",
+    "last_checked": "2026-07-01T01:26:57Z",
+    "spn2_job_id": "spn2-3715de8281e5cf1c111f45f31631e8d3a2411de4",
+    "status": "success"
+  },
   "https://frenchspin.fr/2015/05/positron-49-on-appelle-ca-un-ptit-con/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:18:22Z",
     "last_checked": "2026-06-30T23:19:20Z",
     "spn2_job_id": "spn2-2ede8995789b3a288190771c60f71b961a26b53c",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/05/positron-50-la-grammaire-londonienne/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:28:17Z",
+    "last_checked": "2026-07-01T01:29:51Z",
+    "spn2_job_id": "spn2-585911d47d1f0dccaba7997f83840c56f4931ac1",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/06/appload-214-le-point-news/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:33:34Z",
+    "last_checked": "2026-07-01T01:35:10Z",
+    "spn2_job_id": "spn2-85d2b2b9b76e92382e491e2a275e05214963a962",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/06/appload-215-ninvitez-pas-cedric/": {
+    "attempts": 1,
+    "first_seen": "2026-07-01T01:41:14Z",
+    "last_checked": "2026-07-01T01:41:30Z",
+    "spn2_job_id": "spn2-37bd1d2067267096581aad0fb2c4a6caf50bdc2a",
+    "status": "error_retry"
+  },
+  "https://frenchspin.fr/2015/06/le-rendez-vous-jeux-15-tout-le3-2015/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:38:07Z",
+    "last_checked": "2026-07-01T01:38:39Z",
+    "spn2_job_id": "spn2-b4d3bea00e78302b8b7d733e38909e3b39f49d88",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/06/le-rendez-vous-tech-160-io15/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:29:52Z",
+    "last_checked": "2026-07-01T01:31:42Z",
+    "spn2_job_id": "spn2-7a196f04bf9c7290e6c7ce567ef48b8490a61a95",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/06/le-rendez-vous-tech-161-wwdc15/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:36:30Z",
+    "last_checked": "2026-07-01T01:38:05Z",
+    "spn2_job_id": "spn2-dd7d89811add53bba405197a4546281c54665ead",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/06/le-rendez-vous-tech-162-initiation-alhygiene-informatique/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:39:01Z",
+    "last_checked": "2026-07-01T01:41:13Z",
+    "spn2_job_id": "spn2-74fd2aa164b7b24d3b31e8218e89d9e077cdc54c",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/06/positron-51-bienvenue-dans-le-cosmos/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:35:11Z",
+    "last_checked": "2026-07-01T01:36:29Z",
+    "spn2_job_id": "spn2-571075a22aa35198720791aa16fc75f1b6bafe0c",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/06/positron-52-docteur-qui/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:52:10Z",
+    "last_checked": "2026-07-01T01:53:07Z",
+    "spn2_job_id": "spn2-77088295fd97de239021a006a02ab4167a3d9879",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/07/appload-216-on-vous-vend-du-vent/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:43:56Z",
+    "last_checked": "2026-07-01T01:45:22Z",
+    "spn2_job_id": "spn2-b6a8e6c167af4137f2e36c2a5a8696c235ebee99",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/07/appload-217-est-ce-que-je-dois-mettre-un-slip-aujourdhui/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:47:10Z",
+    "last_checked": "2026-07-01T01:48:04Z",
+    "spn2_job_id": "spn2-83531175ab55db8ac6ff92d07d3fc07fde7455d4",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/07/le-rendez-vous-jeux-16-taylor-swift-vs-batman/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:42:05Z",
+    "last_checked": "2026-07-01T01:43:56Z",
+    "spn2_job_id": "spn2-0bf73e66d150c71df62d056afbe73dd89d2a3df8",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/07/le-rendez-vous-jeux-17-iwata-et-evo-2015/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:46:02Z",
+    "last_checked": "2026-07-01T01:46:33Z",
+    "spn2_job_id": "spn2-8b8adbb95c8f1c511b3d452c2cbf4c4b4eac4d83",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/07/le-rendez-vous-tech-163-internet-premium/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:45:23Z",
+    "last_checked": "2026-07-01T01:46:01Z",
+    "spn2_job_id": "spn2-b1a02e1fcb2ef649d611177fa3fd3eec66c9dce3",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/07/le-rendez-vous-tech-164-windows-tuile/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:46:34Z",
+    "last_checked": "2026-07-01T01:47:09Z",
+    "spn2_job_id": "spn2-0a25adcea26909caad47991353c145e27f7d8b58",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/08/appload-218-petit-jeu-dete/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:50:19Z",
+    "last_checked": "2026-07-01T01:51:08Z",
+    "spn2_job_id": "spn2-c378cab80e90006860993a036532bcde5a1d38b5",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/08/appload-219-la-minute-hipster/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:54:24Z",
+    "last_checked": "2026-07-01T01:55:26Z",
+    "spn2_job_id": "spn2-c778a32a5ff637f4d3e8b43e2fc5ec29b97d2abb",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/08/le-rendez-vous-jeux-18-gamescom-2016/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:48:05Z",
+    "last_checked": "2026-07-01T01:49:23Z",
+    "spn2_job_id": "spn2-442169182581aa72a6b068a45405253152c55a2b",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/08/le-rendez-vous-jeux-19-gamescom-suite/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:51:08Z",
+    "last_checked": "2026-07-01T01:52:09Z",
+    "spn2_job_id": "spn2-0c7bb2f78c31b9f65d49f8d9418ca27d8c4f0860",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/08/le-rendez-vous-jeux-20-a-hideo-kojima-game/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:56:02Z",
+    "last_checked": "2026-07-01T01:56:34Z",
+    "spn2_job_id": "spn2-dce413a6a1fcc5ccde1021fab651cfbbd77cfbde",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/08/le-rendez-vous-tech-165-les-fondamentaux/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:49:24Z",
+    "last_checked": "2026-07-01T01:50:18Z",
+    "spn2_job_id": "spn2-61c0b4fd7ac0f1ed72387f4c921138a044b820ab",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/08/le-rendez-vous-tech-166-le-g-cest-google/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:53:09Z",
+    "last_checked": "2026-07-01T01:54:24Z",
+    "spn2_job_id": "spn2-d70910f55fa9e0dbbb760dfe14345c9c17e0866a",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/09/appload-220-live-event-apple-septembre-2015/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:57:02Z",
+    "last_checked": "2026-07-01T01:59:03Z",
+    "spn2_job_id": "spn2-9793f4cc7372bc1c2c0d500145a2b4a0fca86541",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/09/appload-221-goldorak-gogo/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:00:03Z",
+    "last_checked": "2026-07-01T02:01:18Z",
+    "spn2_job_id": "spn2-77e4f307bd6e241942a69586ac7363fe2ac1067e",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/09/appload-222-live-conference-google-nexus-2015/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:02:16Z",
+    "last_checked": "2026-07-01T02:03:19Z",
+    "spn2_job_id": "spn2-9241f0ddf9e5de187975e5410b8f94f1a2886bb9",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/09/le-rdv-jeux-21-un-marche-intermediaire/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:59:04Z",
+    "last_checked": "2026-07-01T02:00:01Z",
+    "spn2_job_id": "spn2-14fab902668d8dcc14b13b885e3a4c7fb024788a",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/09/le-rdv-jeux-22-tokyo-game-show-15/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:03:20Z",
+    "last_checked": "2026-07-01T02:04:07Z",
+    "spn2_job_id": "spn2-a5498f56c587ff42fa33c035a3818c7a4375bea2",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/09/positron-53-rouge-communiste/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:56:35Z",
+    "last_checked": "2026-07-01T01:57:00Z",
+    "spn2_job_id": "spn2-84787bad20858ce0f3d3759cd09437682573227b",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/09/positron-54-sense-huit/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:01:19Z",
+    "last_checked": "2026-07-01T02:02:15Z",
+    "spn2_job_id": "spn2-69751e90f6543800b944c53c674aba7e6cf37f67",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/appload-223-live-conference-microsoft-hardware-2015/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:08:04Z",
+    "last_checked": "2026-07-01T02:08:37Z",
+    "spn2_job_id": "spn2-acb961cbfb9fb839441c3c94018ef89ef584555e",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/appload-224-cinquante-nuances-de-jerome/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:14:15Z",
+    "last_checked": "2026-07-01T02:15:25Z",
+    "spn2_job_id": "spn2-119a1a95b56a313f680227a290afc6d2dc787043",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/le-rdv-jeux-23-star-wars-popcorn/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:09:04Z",
+    "last_checked": "2026-07-01T02:10:10Z",
+    "spn2_job_id": "spn2-62e69aa5210c832351ee7f12c449eaedb8b6ff67",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/le-rdv-jeux-24-paris-games-week-2015/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:16:15Z",
+    "last_checked": "2026-07-01T02:17:09Z",
+    "spn2_job_id": "spn2-f73c1d48995dc416feb652a8790e9f40ec6450d9",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/le-rdv-tech-169-the-nexus-lumia-show/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:06:28Z",
+    "last_checked": "2026-07-01T02:08:03Z",
+    "spn2_job_id": "spn2-c60f2b73737b213a0cac80046e87b98b415748ef",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/le-rdv-tech-170-la-loi-dans-la-loi/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:13:07Z",
+    "last_checked": "2026-07-01T02:13:40Z",
+    "spn2_job_id": "spn2-8830389c1aec4a3df78d90b975d58510c0bf135f",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/positron-55-abracadabrantesque/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:04:07Z",
+    "last_checked": "2026-07-01T02:05:18Z",
+    "spn2_job_id": "spn2-ecd451b3831400da183cb0bd4be75b9fade2315b",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/positron-56-la-table-des-chefs/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:10:12Z",
+    "last_checked": "2026-07-01T02:11:16Z",
+    "spn2_job_id": "spn2-fb944174434e032311041f71fa6b09bb518e965e",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/positron-57-new-york-est-une-banane/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:17:15Z",
+    "last_checked": "2026-07-01T02:17:31Z",
+    "spn2_job_id": "spn2-7f8ddbe0e9b1535826a0060669dcc920b035a85f",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/save-the-date-rencontre-rdv-tech-a-paris-le-31-octobre/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:12:38Z",
+    "last_checked": "2026-07-01T02:12:54Z",
+    "spn2_job_id": "spn2-c5c3aa025d96b6c5e4b257d73a20b1b8226a1a2f",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/10/sondage-frenchspin-2015/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:11:16Z",
+    "last_checked": "2026-07-01T02:12:36Z",
+    "spn2_job_id": "spn2-321b0e637d6a9a7fbeca879f93ddeb15b874384a",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/11/appload-225-korben-casse-pas-des-briques/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:19:09Z",
+    "last_checked": "2026-07-01T02:21:02Z",
+    "spn2_job_id": "spn2-a27d27ccc5194a504ae31e436abdb5705fb0120d",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/11/appload-226-la-moite-du-plaisir-du-jeu/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:25:14Z",
+    "last_checked": "2026-07-01T02:26:41Z",
+    "spn2_job_id": "spn2-1d92c4b446d1db57bb9ad39849ce38077193ad85",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/11/le-rdv-jeux-25-blizzcon-2015-et-plus/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:21:04Z",
+    "last_checked": "2026-07-01T02:22:15Z",
+    "spn2_job_id": "spn2-b5437a7d350894037ed584de3eed322dd9d3c840",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/11/le-rdv-jeux-26-la-fete-a-zelda/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:27:01Z",
+    "last_checked": "2026-07-01T02:28:47Z",
+    "spn2_job_id": "spn2-9b07d227f58e8a013781a1dc332b9f0386ae5dce",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/11/le-rdv-tech-171-un-an-de-patreotes/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:18:05Z",
+    "last_checked": "2026-07-01T02:19:08Z",
+    "spn2_job_id": "spn2-9b76cb48266f0174a1ac29e3645c97b823596b40",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/11/le-rdv-tech-172-les-algorithmes-de-frustration/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:24:21Z",
+    "last_checked": "2026-07-01T02:25:13Z",
+    "spn2_job_id": "spn2-b6933508cc7fb3ef76c83adeb3f0d5560603ceeb",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/11/le-rdv-tech-173-chiffrement-les-bonnes-questions/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:31:14Z",
+    "last_checked": "2026-07-01T02:32:39Z",
+    "spn2_job_id": "spn2-5765967bbc57e5c6801e494bfe6a66bd48ecfb82",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/11/positron-58-the-road-to-valhallaaaaa/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:22:15Z",
+    "last_checked": "2026-07-01T02:24:13Z",
+    "spn2_job_id": "spn2-fa64cc5c31a11ab6144969703c5043ff2577dd95",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/11/positron-59-voyage-en-asie/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:30:09Z",
+    "last_checked": "2026-07-01T02:30:40Z",
+    "spn2_job_id": "spn2-9c2339dbb2cead7ff729e56834f189e4843a1767",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/12/appload-227-des-jeux-et-de-la-bonne-humeur/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:32:40Z",
+    "last_checked": "2026-07-01T02:33:18Z",
+    "spn2_job_id": "spn2-2ea8b973ab0343b1dec202ff922b7a5d0c880125",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/12/appload-229-special-star-wars/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:42:06Z",
+    "last_checked": "2026-07-01T02:42:37Z",
+    "spn2_job_id": "spn2-e5c54810c16d31daa9255bde43394826777dece5",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/12/le-rdv-jeux-27-game-awards-ps-experience/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:34:39Z",
+    "last_checked": "2026-07-01T02:36:17Z",
+    "spn2_job_id": "spn2-21662a315a48ae6796113faacf5d0e3fbcdd3d66",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/12/le-rdv-jeux-28-meli-melo-de-news/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:43:10Z",
+    "last_checked": "2026-07-01T02:43:42Z",
+    "spn2_job_id": "spn2-f99e5b8b76861a3cf15b8718bcf3f6086f1b532f",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/12/le-rdv-tech-174-une-pointe-de-confusion/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:38:03Z",
+    "last_checked": "2026-07-01T02:39:09Z",
+    "spn2_job_id": "spn2-19dfbce9542648d88b510c8804e54a34742e3f5f",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/12/le-rdv-tech-175-2015/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:41:11Z",
+    "last_checked": "2026-07-01T02:41:49Z",
+    "spn2_job_id": "spn2-b18ebdefd64f447cf7cd42c9865d427ea3df23bd",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/12/le-sujet-tech-de-2015/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:36:18Z",
+    "last_checked": "2026-07-01T02:37:29Z",
+    "spn2_job_id": "spn2-cf022dfef5b29d7feffb53746cecbdeef13cfc26",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/12/positron-60-go-lequipe/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:39:10Z",
+    "last_checked": "2026-07-01T02:39:41Z",
+    "spn2_job_id": "spn2-ff85f0249aa2c3322507751b01cf0fa8d4fad55d",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2015/12/positron-61-lesprit-de-noel/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:40:18Z",
+    "last_checked": "2026-07-01T02:41:10Z",
+    "spn2_job_id": "spn2-2370d01f107b5dd9327a7dde94f4fa11535e0b7d",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/01/appload-230-jerome-selfie/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:47:33Z",
+    "last_checked": "2026-07-01T02:48:06Z",
+    "spn2_job_id": "spn2-f509fddb33d7c3f6f466cbeefc813077a16e6b92",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/01/le-rdv-jeux-29-panorama-2015-2016/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:45:01Z",
+    "last_checked": "2026-07-01T02:46:07Z",
+    "spn2_job_id": "spn2-e8324bf67540eb332dbc99a21e7107886fdf1b6d",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/01/le-rdv-tech-176-ces-2016/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:44:13Z",
+    "last_checked": "2026-07-01T02:44:45Z",
+    "spn2_job_id": "spn2-a8608dc05fe156373d76963743cf128f872f8f4b",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/01/le-rdv-tech-177-lheure-des-points/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:47:02Z",
+    "last_checked": "2026-07-01T02:47:33Z",
+    "spn2_job_id": "spn2-d7d0a75dbc9949ff173ae6086a49d95b073e49d1",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/01/positron-62-a-decouvrir-ou-a-redecouvrir/": {
+    "attempts": 1,
+    "first_seen": "2026-07-01T02:43:42Z",
+    "last_checked": "2026-07-01T02:43:59Z",
+    "spn2_job_id": "spn2-df284d22164d96f313596dded44ba23052cb520a",
+    "status": "error_retry"
+  },
+  "https://frenchspin.fr/2016/01/positron-63-tamponne-par-korben/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:46:08Z",
+    "last_checked": "2026-07-01T02:47:01Z",
+    "spn2_job_id": "spn2-84fce594c3a3d63b2d9eed3fdb4855bba4662809",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/02/appload-231-cedric-cest-le-plus-beau/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:51:09Z",
+    "last_checked": "2026-07-01T02:51:40Z",
+    "spn2_job_id": "spn2-af3a40accf7a4c506e4811c24c52d4a5afdab7f5",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/02/appload-232-predictions-au-fond-du-lac/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:55:06Z",
+    "last_checked": "2026-07-01T02:56:09Z",
+    "spn2_job_id": "spn2-a684e55b8df3478a5985065f44eab2c80b5451d7",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/02/le-rdv-jeux-30-bilan-nintendien/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:48:07Z",
+    "last_checked": "2026-07-01T02:49:01Z",
+    "spn2_job_id": "spn2-e33f7c1fb7ca5757f8344932e14e7eadd339a92a",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/02/le-rdv-jeux-31-une-relation-talkie-walkaire/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:52:12Z",
+    "last_checked": "2026-07-01T02:53:13Z",
+    "spn2_job_id": "spn2-c8433a1def4189efc877bfccb94fac499168d65b",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/02/le-rdv-tech-179-mwc-2016/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:54:06Z",
+    "last_checked": "2026-07-01T02:55:05Z",
+    "spn2_job_id": "spn2-7a2e2ce418425dcc547f7727aa52b6a462b84155",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/02/le-rdv-tech178-les-resultats-en-samusant/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:50:19Z",
+    "last_checked": "2026-07-01T02:50:51Z",
+    "spn2_job_id": "spn2-1e227f47102063349e614d992f2b6648c5613f2e",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/02/positron-64-pigeon-jusquau-bout/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:49:07Z",
+    "last_checked": "2026-07-01T02:50:18Z",
+    "spn2_job_id": "spn2-ae55b14db1f41650448da60271728db8a1f501e6",
+    "status": "success"
+  },
+  "https://frenchspin.fr/2016/02/positron-65-bizutronage/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:53:13Z",
+    "last_checked": "2026-07-01T02:54:06Z",
+    "spn2_job_id": "spn2-0d1bd36915047c1692204325053308259363a2ba",
+    "status": "success"
+  },
+  "https://frenchspin.fr/chat/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:05:19Z",
+    "last_checked": "2026-07-01T02:06:28Z",
+    "spn2_job_id": "spn2-2ba4946a5fdb31e9ef650479c8c2b9ee920f9b19",
+    "status": "success"
+  },
+  "https://frenchspin.fr/contactmerci/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:33:18Z",
+    "last_checked": "2026-07-01T02:34:37Z",
+    "spn2_job_id": "spn2-4370557a441342a9f588754ea7643fa7a0efbc58",
+    "status": "success"
+  },
+  "https://frenchspin.fr/pourboire/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:28:47Z",
+    "last_checked": "2026-07-01T02:30:08Z",
+    "spn2_job_id": "spn2-595acfa86796d198b5a5ee38455f749be704474f",
     "status": "success"
   },
   "https://frenchspin.fr/quest-ce-quun-podcast/": {
@@ -1409,9 +1955,9 @@
   "https://techcafe.fr/116-spy-games/": {
     "attempts": 1,
     "first_seen": "2026-06-30T22:23:05Z",
-    "last_checked": "2026-06-30T22:23:21Z",
+    "last_checked": "2026-07-01T01:31:26Z",
     "spn2_job_id": "spn2-7c657647570965827cda55994e7b0204256c298e",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://techcafe.fr/117-lovecast/": {
     "attempts": 0,
@@ -1446,6 +1992,13 @@
     "first_seen": "2026-06-30T19:29:08Z",
     "last_checked": "2026-06-30T19:29:25Z",
     "spn2_job_id": "spn2-0240b1090e2e879f6079d4aa92c4bb57ccb44b12",
+    "status": "success"
+  },
+  "https://techcafe.fr/133-sign-in-with-apple/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:43:40Z",
+    "last_checked": "2026-07-01T01:44:13Z",
+    "spn2_job_id": "spn2-11f0a550efea679f2019ab49996334c2c0ce1703",
     "status": "success"
   },
   "https://techcafe.fr/141-nouveau-sursis-huawei-ethique-gamescom-2019/": {
@@ -1714,6 +2267,13 @@
     "spn2_job_id": "spn2-5d777d3eee4c87c90ec6f7fc7a8f2ac3075390ec",
     "status": "success"
   },
+  "https://techcafe.fr/56-complement-le-point-de-vue-de-pierre-olivier-dybman/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:07:32Z",
+    "last_checked": "2026-07-01T02:08:20Z",
+    "spn2_job_id": "spn2-11e0d9502e2fa5cf4e4a33cb39eefd1515799264",
+    "status": "success"
+  },
   "https://techcafe.fr/57-revue-solo-rentree-2017/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:04:08Z",
@@ -1738,9 +2298,9 @@
   "https://techcafe.fr/60-rentree-de-monsieur-tiede/": {
     "attempts": 1,
     "first_seen": "2026-06-30T22:01:12Z",
-    "last_checked": "2026-06-30T22:01:29Z",
+    "last_checked": "2026-07-01T01:29:51Z",
     "spn2_job_id": "spn2-7606b284d8df97e143d0c567128bdbde0c67b6fe",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://techcafe.fr/61-revue-solo-26092017/": {
     "attempts": 0,
@@ -1836,9 +2396,9 @@
   "https://techcafe.fr/74-valse-reseaux-sociaux/": {
     "attempts": 2,
     "first_seen": "2026-06-30T20:23:00Z",
-    "last_checked": "2026-06-30T21:52:02Z",
+    "last_checked": "2026-07-01T01:28:17Z",
     "spn2_job_id": "spn2-55ebca53bd3b54c30ca1531b19aa04b5978d6d53",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://techcafe.fr/75-le-plomb-dans-laile-de-nokia-health/": {
     "attempts": 0,
@@ -1864,9 +2424,9 @@
   "https://techcafe.fr/78-skys-the-limit/": {
     "attempts": 2,
     "first_seen": "2026-06-30T20:20:07Z",
-    "last_checked": "2026-06-30T21:51:19Z",
+    "last_checked": "2026-07-01T01:27:19Z",
     "spn2_job_id": "spn2-b92dcd47f4469fc1c6f96f966356a24192f16691",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://techcafe.fr/79-austin-powers/": {
     "attempts": 0,
@@ -2015,11 +2575,53 @@
     "spn2_job_id": "spn2-56499fa7ab9e46ec856f7114405c25a965e94cfc",
     "status": "success"
   },
+  "https://techcafe.fr/adobe-max-2019-google-rachete-fitbit-publicite-politique-sur-les-reseaux-sociaux/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:45:02Z",
+    "last_checked": "2026-07-01T02:46:23Z",
+    "spn2_job_id": "spn2-dd4a31b801ac920b9bf4963130af0fbda76893e0",
+    "status": "success"
+  },
+  "https://techcafe.fr/amende-facebook-trump-et-social-media/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:35:27Z",
+    "last_checked": "2026-07-01T01:36:46Z",
+    "spn2_job_id": "spn2-e61fc9b77e1f4849e5f27c0e7a0748728cdc6421",
+    "status": "success"
+  },
   "https://techcafe.fr/annonces-apple-septembre-2019/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:14:04Z",
     "last_checked": "2026-06-30T23:14:27Z",
     "spn2_job_id": "spn2-ad0343556bc7a7c40f393bd313f241346b90b749",
+    "status": "success"
+  },
+  "https://techcafe.fr/apocalypse-zombie-demonetise-par-youtube/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:20:04Z",
+    "last_checked": "2026-07-01T02:20:20Z",
+    "spn2_job_id": "spn2-0685e1b529c5de5ad7cf5b9637f0a6d32aa4786a",
+    "status": "success"
+  },
+  "https://techcafe.fr/apple-annexe-la-crimee-arrestations-algorithmiques/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:39:08Z",
+    "last_checked": "2026-07-01T02:39:41Z",
+    "spn2_job_id": "spn2-20d106cbb2b5006158dc36af232638efa23e5426",
+    "status": "success"
+  },
+  "https://techcafe.fr/apple-heart-study-les-resultats-une-ia-predit-votre-mort-health-data-hub/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:34:06Z",
+    "last_checked": "2026-07-01T02:34:38Z",
+    "spn2_job_id": "spn2-ecfdd3989e44b0abc15128667246e08b72c97c69",
+    "status": "success"
+  },
+  "https://techcafe.fr/apple-iphone-se-scandales-zoom/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:15:09Z",
+    "last_checked": "2026-07-01T02:16:15Z",
+    "spn2_job_id": "spn2-beaae4da7258432fc5ac6c951a3254103202ce9b",
     "status": "success"
   },
   "https://techcafe.fr/apple-it-is-show-time-scandales-facebook-boeing-737/": {
@@ -2029,6 +2631,27 @@
     "spn2_job_id": "spn2-13ba89ebd03651097877cf2b9692b02041f908d0",
     "status": "success"
   },
+  "https://techcafe.fr/apple-trump-porno-vr-a-la-carte-tesla-cybertruck/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:40:18Z",
+    "last_checked": "2026-07-01T02:41:11Z",
+    "spn2_job_id": "spn2-ad0b85d5d63215e8ef5b25137295dd86e97145c3",
+    "status": "success"
+  },
+  "https://techcafe.fr/application-stopcovid-scandale-ou-salut/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:12:04Z",
+    "last_checked": "2026-07-01T02:12:36Z",
+    "spn2_job_id": "spn2-0881b1172d9bbfb0e3a3bbb010e4e06ad3477f1a",
+    "status": "success"
+  },
+  "https://techcafe.fr/bezos-hacke-le-scandale-avast/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:30:09Z",
+    "last_checked": "2026-07-01T02:30:40Z",
+    "spn2_job_id": "spn2-f9f79320aa8277ae38504631373b54e1a44dab6a",
+    "status": "success"
+  },
   "https://techcafe.fr/bill-gates-of-heaven/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:25:21Z",
@@ -2036,11 +2659,39 @@
     "spn2_job_id": "spn2-49e986f901272b9028e0b98502b0df3d94c893b6",
     "status": "success"
   },
+  "https://techcafe.fr/bonjour-tout-le-monde-2/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:06:29Z",
+    "last_checked": "2026-07-01T02:07:31Z",
+    "spn2_job_id": "spn2-b7bd93c9cd1749e39c62184d099ceda9c8223c45",
+    "status": "success"
+  },
   "https://techcafe.fr/breaking-news-tech-cafe-domotique/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:59:00Z",
     "last_checked": "2026-06-30T22:59:25Z",
     "spn2_job_id": "spn2-a7aba9def86275e8a7b78492104deeeed42ae748",
+    "status": "success"
+  },
+  "https://techcafe.fr/cdc38-hot-chips-2018/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:52:09Z",
+    "last_checked": "2026-07-01T01:52:26Z",
+    "spn2_job_id": "spn2-9b00ad236ca3db01d1ec3e07908dabeec6365e6f",
+    "status": "success"
+  },
+  "https://techcafe.fr/censure-chinoise-lavertissement-de-mark-zuckerberg/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:50:20Z",
+    "last_checked": "2026-07-01T02:50:51Z",
+    "spn2_job_id": "spn2-38d49cdc83716457c7d190cd3934521263b4fc9d",
+    "status": "success"
+  },
+  "https://techcafe.fr/ces-2020-facebook-interdit-les-deepfakes/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:31:14Z",
+    "last_checked": "2026-07-01T02:31:46Z",
+    "spn2_job_id": "spn2-1cbcde09645bc19f1b0f8c060c75e148c36636d6",
     "status": "success"
   },
   "https://techcafe.fr/chronique-composants-24-emulation-mars-2016/": {
@@ -2055,6 +2706,69 @@
     "first_seen": "2026-06-30T22:41:06Z",
     "last_checked": "2026-06-30T22:41:22Z",
     "spn2_job_id": "spn2-a4b399ceef7593ba3b1fbbbb452b3e62f6c8f95d",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-composants-27/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:03:51Z",
+    "last_checked": "2026-07-01T02:04:39Z",
+    "spn2_job_id": "spn2-d2430243c688517f497d1dcfbe9b79d4d8f28888",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-composants-28-grands-coeurs-petits-sensibles-partie-1-juin-2016/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:03:03Z",
+    "last_checked": "2026-07-01T02:03:51Z",
+    "spn2_job_id": "spn2-5a57ad6841038eea4dac6d2093c48085a635cac6",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-composants-28-grands-coeurs-petits-sensibles-partie-2-juin-2016/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:01:19Z",
+    "last_checked": "2026-07-01T02:03:02Z",
+    "spn2_job_id": "spn2-bed04247e114100745e495cbcd661f3525970d3d",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-composants-29-sac-de-nodes-hotchips-i-a-quelquun-2/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:00:01Z",
+    "last_checked": "2026-07-01T02:01:18Z",
+    "spn2_job_id": "spn2-4763aafc663bbc2dd3fd806fb4c77b4c77703e32",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-composants-30-dr-guillaume-tempere-vos-ardeurs/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:59:03Z",
+    "last_checked": "2026-07-01T01:59:20Z",
+    "spn2_job_id": "spn2-b6f1a941cb02340911bda232689d7ca79734df6e",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-composants-31-a-plus-bus/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:58:29Z",
+    "last_checked": "2026-07-01T01:58:44Z",
+    "spn2_job_id": "spn2-3e0334b665540c989e764b694e93b7fa93e8e0e0",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-composants-32-taille-compte/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:58:12Z",
+    "last_checked": "2026-07-01T01:58:28Z",
+    "spn2_job_id": "spn2-fc8af5712f6b3d5ec79d67c6e43c56c7c3c4c48f",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-composants-33-sac-a-puces/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:57:00Z",
+    "last_checked": "2026-07-01T01:57:18Z",
+    "spn2_job_id": "spn2-218323b5d914b1a2008b097f9ffd9c59660a47ea",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-composants-36-alan-turing/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:54:25Z",
+    "last_checked": "2026-07-01T01:55:10Z",
+    "spn2_job_id": "spn2-9acec8488c7977e6878990a61d870b8b2ba3f056",
     "status": "success"
   },
   "https://techcafe.fr/chronique-composants-decembre-apollo/": {
@@ -2084,6 +2798,34 @@
     "last_checked": "2026-06-30T22:44:04Z",
     "spn2_job_id": "spn2-10b9c495c69178c09ca36d1a79c707d859a41fa7",
     "status": "success"
+  },
+  "https://techcafe.fr/chronique-des-composants-34-cest-un-tel-computex-2017/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:56:03Z",
+    "last_checked": "2026-07-01T01:56:34Z",
+    "spn2_job_id": "spn2-e0e0082c8549e004f9b6964c50abe45cd8fd5270",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-des-composants-35-ibmmit-nvidia/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:55:10Z",
+    "last_checked": "2026-07-01T01:56:02Z",
+    "spn2_job_id": "spn2-67460048ed3ea51b6719063b3328d8baf70be62f",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-des-composants-37-computex-2018/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:53:07Z",
+    "last_checked": "2026-07-01T01:54:23Z",
+    "spn2_job_id": "spn2-17606053c33e8ffc1f6017450d998f03d68cd089",
+    "status": "success"
+  },
+  "https://techcafe.fr/chronique-des-composants-40-les-systemes-dexploitation-et-leur-noyau/": {
+    "attempts": 1,
+    "first_seen": "2026-07-01T02:48:06Z",
+    "last_checked": "2026-07-01T02:48:23Z",
+    "spn2_job_id": "spn2-df8aa3a302bd3a38edd16fb999030f6399dc2749",
+    "status": "error_retry"
   },
   "https://techcafe.fr/chronique-des-composants-fin-juin-2015/": {
     "attempts": 0,
@@ -2120,11 +2862,60 @@
     "spn2_job_id": "spn2-c1de2698639eba63f2f30db95a4f8266bbfc7778",
     "status": "success"
   },
+  "https://techcafe.fr/chronique-des-composants/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:05:18Z",
+    "last_checked": "2026-07-01T02:06:28Z",
+    "spn2_job_id": "spn2-800aff269be185795b50433b1773314ac8e2e2cc",
+    "status": "success"
+  },
+  "https://techcafe.fr/composants-ces-2020-les-compilateurs/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:27:02Z",
+    "last_checked": "2026-07-01T02:27:33Z",
+    "spn2_job_id": "spn2-6c385d500e1ad03c81fb520779a32c73526d52ee",
+    "status": "success"
+  },
+  "https://techcafe.fr/confines-fuites-ios14-specifications-xbox-series-x/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:19:10Z",
+    "last_checked": "2026-07-01T02:20:03Z",
+    "spn2_job_id": "spn2-820d72a94aecb348a1fd5ec2622b16abbca863c4",
+    "status": "success"
+  },
+  "https://techcafe.fr/des-jeux-video-par-la-pensee/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:29:37Z",
+    "last_checked": "2026-07-01T02:30:08Z",
+    "spn2_job_id": "spn2-4ef10bac9796ad8bd0fd46c46312138a69340c7c",
+    "status": "success"
+  },
+  "https://techcafe.fr/domotique-acces-a-la-maison-et-serrures-connectees/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:22:15Z",
+    "last_checked": "2026-07-01T02:22:47Z",
+    "spn2_job_id": "spn2-e095e567eb22a51d8072db54dc97512fb36072fd",
+    "status": "success"
+  },
+  "https://techcafe.fr/domotique-ces-2020/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:28:48Z",
+    "last_checked": "2026-07-01T02:29:36Z",
+    "spn2_job_id": "spn2-4bb62cbc422db5049263333803e283baeedde74b",
+    "status": "success"
+  },
   "https://techcafe.fr/domotique-en-vacances/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:58:10Z",
     "last_checked": "2026-06-30T22:58:27Z",
     "spn2_job_id": "spn2-cc7ba98f8391da48a111d0025e26a29258612322",
+    "status": "success"
+  },
+  "https://techcafe.fr/domotique-la-securite-des-biens-et-des-personnes/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:51:09Z",
+    "last_checked": "2026-07-01T02:51:40Z",
+    "spn2_job_id": "spn2-7dbf4b4fdf50a1cbd78a5765fad1a1b20261b633",
     "status": "success"
   },
   "https://techcafe.fr/domotique-pratique-avec-julien-de-ca-sert-a-quoi/": {
@@ -2134,12 +2925,33 @@
     "spn2_job_id": "spn2-34ce7396c29881297219eef97b8c73a68a75386e",
     "status": "success"
   },
+  "https://techcafe.fr/domotique-recommandation-de-cadeaux-de-noel/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:41:18Z",
+    "last_checked": "2026-07-01T02:42:06Z",
+    "spn2_job_id": "spn2-83918eac62e4d48b9e8e39815fba46108cb6eec0",
+    "status": "success"
+  },
+  "https://techcafe.fr/e3-cyberguerre-libra/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:41:15Z",
+    "last_checked": "2026-07-01T01:42:05Z",
+    "spn2_job_id": "spn2-0a9a25772c8d67f02e08988314aae52b73bb240a",
+    "status": "success"
+  },
   "https://techcafe.fr/echo-securite-oculus-connect-6/": {
     "attempts": 1,
     "first_seen": "2026-06-30T23:11:07Z",
-    "last_checked": "2026-06-30T23:11:24Z",
+    "last_checked": "2026-07-01T01:34:06Z",
     "spn2_job_id": "spn2-ed7e395cbcece91d26324ce594c645fb96e52642",
-    "status": "error_retry"
+    "status": "success"
+  },
+  "https://techcafe.fr/enfin-un-super-smartphone-pliant/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:26:09Z",
+    "last_checked": "2026-07-01T02:26:41Z",
+    "spn2_job_id": "spn2-226e8495992414729cb3e437f78fee6093efb653",
+    "status": "success"
   },
   "https://techcafe.fr/episode-1-est-ce-que-ca-me-fait-kiffer-davoir-le-wifi-dans-le-cerveau/": {
     "attempts": 0,
@@ -2197,6 +3009,13 @@
     "spn2_job_id": "spn2-a2b322ac685ed548b0ca70a5772ec8d9a7c2cf94",
     "status": "success"
   },
+  "https://techcafe.fr/ev-materiel-et-mwc-shanghai-cryptos/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:40:05Z",
+    "last_checked": "2026-07-01T01:41:14Z",
+    "spn2_job_id": "spn2-940a32b54236e0edef323d513dc099c36903d08c",
+    "status": "success"
+  },
   "https://techcafe.fr/f8-apple-qualcomm-tesla-robots-et-problematiques-rh/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:34:10Z",
@@ -2204,11 +3023,39 @@
     "spn2_job_id": "spn2-130b5f377a10303bc86895b0e41ace5d8b6886b6",
     "status": "success"
   },
+  "https://techcafe.fr/frasques-elon-musk-nouveautes-microsoft-xbox-surface/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:55:05Z",
+    "last_checked": "2026-07-01T02:56:09Z",
+    "spn2_job_id": "spn2-f0ac8dbb06005bc3a5cefa521935a8b0b083c8c9",
+    "status": "success"
+  },
   "https://techcafe.fr/fusillade-de-christchurch-moderation-regulation-google-stadia/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:27:01Z",
     "last_checked": "2026-06-30T22:27:27Z",
     "spn2_job_id": "spn2-dcab94162da357b121560adc44639385d656cf08",
+    "status": "success"
+  },
+  "https://techcafe.fr/google-a-des-problemes/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:42:06Z",
+    "last_checked": "2026-07-01T01:43:39Z",
+    "spn2_job_id": "spn2-939475cbb4c6d678e5c6f52b667c9404ea26b81e",
+    "status": "success"
+  },
+  "https://techcafe.fr/google-i-o-microsoft-build-espace/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:48:03Z",
+    "last_checked": "2026-07-01T01:49:40Z",
+    "spn2_job_id": "spn2-a2bcc410b02a718437f9f01bea410b1dc726a889",
+    "status": "success"
+  },
+  "https://techcafe.fr/google-stadia-smartphones-pliants-oracle-vs-google/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:47:01Z",
+    "last_checked": "2026-07-01T02:47:33Z",
+    "spn2_job_id": "spn2-03b7bdec313271c3b71c420acf7eea4e503c5d51",
     "status": "success"
   },
   "https://techcafe.fr/guerres-commerciales-moonshots/": {
@@ -2281,6 +3128,41 @@
     "spn2_job_id": "spn2-2783742a2699926549af66ac56463d9570236a4e",
     "status": "success"
   },
+  "https://techcafe.fr/hors-serie-smartwatchs-avec-guillaume-prome/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:34:07Z",
+    "last_checked": "2026-07-01T01:35:27Z",
+    "spn2_job_id": "spn2-b80ac47e859f82f2f50624904183ad217968e463",
+    "status": "success"
+  },
+  "https://techcafe.fr/hot-chips-2019-chronique-des-composants/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:50:17Z",
+    "last_checked": "2026-07-01T01:51:24Z",
+    "spn2_job_id": "spn2-a4c62b96f3f187905f986937da02dfde3f3c21a0",
+    "status": "success"
+  },
+  "https://techcafe.fr/huawei-computex-2019-playdate/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:44:13Z",
+    "last_checked": "2026-07-01T01:44:45Z",
+    "spn2_job_id": "spn2-a3ee7e9f301824ead691850a13fccf293e7f3586",
+    "status": "success"
+  },
+  "https://techcafe.fr/huawei-vs-google-4-mariages-et-un-enterrement/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:45:06Z",
+    "last_checked": "2026-07-01T01:46:33Z",
+    "spn2_job_id": "spn2-d23f503b1971a4ff0ade9c1cf5c0d4b424c2ef91",
+    "status": "success"
+  },
+  "https://techcafe.fr/humanoid-une-redaction-en-confinement/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:17:09Z",
+    "last_checked": "2026-07-01T02:17:31Z",
+    "spn2_job_id": "spn2-02f9de793c45e405086afc4903e089adfea24e65",
+    "status": "success"
+  },
   "https://techcafe.fr/ifa-2019-geants-chahutes/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:13:16Z",
@@ -2288,11 +3170,116 @@
     "spn2_job_id": "spn2-60a4af09acc82c7c9d8cb1cd3879201ced6f526b",
     "status": "success"
   },
+  "https://techcafe.fr/ipad-pro-covid-19-ps5/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:18:09Z",
+    "last_checked": "2026-07-01T02:19:08Z",
+    "spn2_job_id": "spn2-c104597d14303d7d39ad4afad27a2e7471906954",
+    "status": "success"
+  },
+  "https://techcafe.fr/iphone-9-uber-perd-google-orphelin/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:37:13Z",
+    "last_checked": "2026-07-01T02:37:29Z",
+    "spn2_job_id": "spn2-2714d89c7f877abc8a8633f36abb6dfc2f34bede",
+    "status": "success"
+  },
+  "https://techcafe.fr/iphone-se-489-euros-pandemie-mentale/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:10:10Z",
+    "last_checked": "2026-07-01T02:11:32Z",
+    "spn2_job_id": "spn2-c48cea7c4eaf8d7410f86b2ebf2126989f10834d",
+    "status": "success"
+  },
+  "https://techcafe.fr/jony-ive-international-deep-nude/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:38:39Z",
+    "last_checked": "2026-07-01T01:40:04Z",
+    "spn2_job_id": "spn2-fe381d0a8d46aada2c161be460f4a296a4baad8e",
+    "status": "success"
+  },
+  "https://techcafe.fr/la-production-de-the-mandalorian-change-tout/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:23:21Z",
+    "last_checked": "2026-07-01T02:23:38Z",
+    "spn2_job_id": "spn2-06b31e38ecd6b3b869239cd6e7957db687aaf9b4",
+    "status": "success"
+  },
+  "https://techcafe.fr/le-contact-tracing-comment-ca-marche/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:14:16Z",
+    "last_checked": "2026-07-01T02:15:08Z",
+    "spn2_job_id": "spn2-853493fbaf814350648d1271dd844e8c10719717",
+    "status": "success"
+  },
+  "https://techcafe.fr/le-coronavirus-est-il-un-cygne-noir/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:21:02Z",
+    "last_checked": "2026-07-01T02:21:20Z",
+    "spn2_job_id": "spn2-1c03f74384bccbeca1f939ed503aa0ad1862d0fe",
+    "status": "success"
+  },
+  "https://techcafe.fr/les-puces-a-l-oreille-starlink-coup-de-genie-elon-musk/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:38:04Z",
+    "last_checked": "2026-07-01T02:38:20Z",
+    "spn2_job_id": "spn2-c9db8c085c03850d0091846fa3e3aec600052e5d",
+    "status": "success"
+  },
+  "https://techcafe.fr/les-us-face-au-virus-avec-lethargic-panda/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:16:16Z",
+    "last_checked": "2026-07-01T02:16:32Z",
+    "spn2_job_id": "spn2-5998d049bca7f85cdea662a54803a578704e8e63",
+    "status": "success"
+  },
+  "https://techcafe.fr/lets-play-with-huawei-mate-30/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:53:14Z",
+    "last_checked": "2026-07-01T02:54:06Z",
+    "spn2_job_id": "spn2-29e535dfc2ba2ea6cfebf50aff13d6b73cd82970",
+    "status": "success"
+  },
+  "https://techcafe.fr/lhistoire-de-la-3d-dans-les-jeux-video/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:12:39Z",
+    "last_checked": "2026-07-01T02:14:15Z",
+    "spn2_job_id": "spn2-23bede57f97e9887c299e50b5f28f1b9d8bafb60",
+    "status": "success"
+  },
+  "https://techcafe.fr/loi-anti-apple-runet-huawei-aide-par-la-chine/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:32:40Z",
+    "last_checked": "2026-07-01T02:34:05Z",
+    "spn2_job_id": "spn2-5fa38244e8086768035a250f815cc1a942930f6d",
+    "status": "success"
+  },
+  "https://techcafe.fr/lunettes-apple-ar-vr-uber-adobe-sneaks-microsoft-ignite/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:43:43Z",
+    "last_checked": "2026-07-01T02:45:01Z",
+    "spn2_job_id": "spn2-72c051dcd4bba68065f8e76d8bb0d116d4b56dd0",
+    "status": "success"
+  },
   "https://techcafe.fr/microsoft-fait-un-carton-facebook-panique-uber-money/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:10:09Z",
     "last_checked": "2026-06-30T23:11:06Z",
     "spn2_job_id": "spn2-e7759126fbe780b018780d0d6962a59eb4923d36",
+    "status": "success"
+  },
+  "https://techcafe.fr/microsoft-negatif-en-emissions-carbone-en-2030/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:28:16Z",
+    "last_checked": "2026-07-01T02:28:47Z",
+    "spn2_job_id": "spn2-0a3e90136b0ec26044662c2f70c732a6fe391312",
+    "status": "success"
+  },
+  "https://techcafe.fr/mobile-world-congress-annule/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:24:13Z",
+    "last_checked": "2026-07-01T02:25:13Z",
+    "spn2_job_id": "spn2-47724bd4923bee574c3acb415a04ac4b07b7afcf",
     "status": "success"
   },
   "https://techcafe.fr/momortel/": {
@@ -2316,6 +3303,13 @@
     "spn2_job_id": "spn2-e72bac40619a8c96ec805ce3cb1b8f311614b2dd",
     "status": "success"
   },
+  "https://techcafe.fr/panique-coronavirus-resultats-google-microsoft-apple-amazon-facebook/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:25:14Z",
+    "last_checked": "2026-07-01T02:26:08Z",
+    "spn2_job_id": "spn2-c6f338a4b82c3135f474a86aa280a6e3d01f5601",
+    "status": "success"
+  },
   "https://techcafe.fr/paraculte-1-pilote-playstation-vr/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:51:12Z",
@@ -2330,6 +3324,20 @@
     "spn2_job_id": "spn2-e388b8816eefeb6d81159ede89fe0115e0a7c29b",
     "status": "success"
   },
+  "https://techcafe.fr/pixel-libra-politique-jv/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:52:13Z",
+    "last_checked": "2026-07-01T02:52:29Z",
+    "spn2_job_id": "spn2-a4567be97ad40dcd50eca0402d1afd57cb34c09e",
+    "status": "success"
+  },
+  "https://techcafe.fr/plongee-sous-les-surface-neo-duo-pro-laptop-earbuds/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:52:29Z",
+    "last_checked": "2026-07-01T02:53:13Z",
+    "spn2_job_id": "spn2-73e896fbbd87cc191b0fbf6e50739a1fae325092",
+    "status": "success"
+  },
   "https://techcafe.fr/processeurs-tesla-robotaxis-et-mobilite-de-demain/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:33:03Z",
@@ -2337,11 +3345,25 @@
     "spn2_job_id": "spn2-714cac07dc847d8c4a4efd0e1609cca91a4905c2",
     "status": "success"
   },
+  "https://techcafe.fr/realite-augmentee-realite-virtuelle-a-quoi-ca-sert/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:32:08Z",
+    "last_checked": "2026-07-01T02:32:39Z",
+    "spn2_job_id": "spn2-02c824225dd805977ef1ab4cc5233659950e7766",
+    "status": "success"
+  },
   "https://techcafe.fr/regulation-reseaux-sociaux-vie-privee-droit-de-reparer/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:29:17Z",
     "last_checked": "2026-06-30T22:30:44Z",
     "spn2_job_id": "spn2-8f3716290ced2937f4d2725f40217ac452ad2c5e",
+    "status": "success"
+  },
+  "https://techcafe.fr/retour-io-et-build-demantelement-facebook-blue-moon/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:47:09Z",
+    "last_checked": "2026-07-01T01:47:42Z",
+    "spn2_job_id": "spn2-c08112a5a40af93e330c79e4fd44fb749d9769ea",
     "status": "success"
   },
   "https://techcafe.fr/serie-tech-sante/": {
@@ -2356,6 +3378,20 @@
     "first_seen": "2026-06-30T23:12:16Z",
     "last_checked": "2026-06-30T23:13:11Z",
     "spn2_job_id": "spn2-9b44b5d77ebd91f8a8ef004043c3f9d71b63d293",
+    "status": "success"
+  },
+  "https://techcafe.fr/stopcovid-encorecovid-et-parfums-de-scandales/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:08:21Z",
+    "last_checked": "2026-07-01T02:09:37Z",
+    "spn2_job_id": "spn2-6962229ebe4987dcabbcbf6a77018a68374c98ec",
+    "status": "success"
+  },
+  "https://techcafe.fr/switch-light-chroniques-chinoises-haine-en-ligne/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:36:47Z",
+    "last_checked": "2026-07-01T01:38:38Z",
+    "spn2_job_id": "spn2-6e42219e7cbea1e742e04a94e3a2e4b9b5b3efa1",
     "status": "success"
   },
   "https://techcafe.fr/tc55/": {
@@ -2424,9 +3460,9 @@
   "https://techcafe.fr/tech-cafe-domotique-2-la-domotique-a-petit-prix/": {
     "attempts": 1,
     "first_seen": "2026-06-30T23:03:17Z",
-    "last_checked": "2026-06-30T23:03:34Z",
+    "last_checked": "2026-07-01T01:33:02Z",
     "spn2_job_id": "spn2-2dd1ba69147f6b933246606fb374408f1b8ffcd6",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://techcafe.fr/tech-cafe-domotique-3-chauffage-intelligent/": {
     "attempts": 0,
@@ -2449,12 +3485,40 @@
     "spn2_job_id": "spn2-e56b954eca806598aa76a05e34285bc72e7c56fd",
     "status": "success"
   },
+  "https://techcafe.fr/tech-cafe-domotique-les-cameras/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:44:45Z",
+    "last_checked": "2026-07-01T01:45:01Z",
+    "spn2_job_id": "spn2-4647177625eff5e96fc2ef2daeda31014de267d8",
+    "status": "success"
+  },
   "https://techcafe.fr/tech-cafe-domotique-pilote/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:04:06Z",
     "last_checked": "2026-06-30T23:05:06Z",
     "spn2_job_id": "spn2-77c342465f6e8b06fab7ef501b63156a00210a19",
     "status": "success"
+  },
+  "https://techcafe.fr/tech-sante-1-homme-bionique-gafa-etats-gadget-au-sante/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:49:00Z",
+    "last_checked": "2026-07-01T02:50:18Z",
+    "spn2_job_id": "spn2-1fe309d6e2e29dfd41605174507d5c98563dbcc4",
+    "status": "success"
+  },
+  "https://techcafe.fr/tech-sante-2-bionic-man-docteur-ia-gafa-etats-tech-4-illness-gadget-au-sante/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:42:06Z",
+    "last_checked": "2026-07-01T02:43:42Z",
+    "spn2_job_id": "spn2-966949e60c9e29c16a2cd9a8dfc208855ea0d0cc",
+    "status": "success"
+  },
+  "https://techcafe.fr/test-du-combo-touch-de-logitech-pour-ipad/": {
+    "attempts": 1,
+    "first_seen": "2026-07-01T02:54:13Z",
+    "last_checked": "2026-07-01T02:54:28Z",
+    "spn2_job_id": "spn2-63857c4198972260405a2348de7edac7f208d239",
+    "status": "error_retry"
   },
   "https://techcafe.fr/transparent-citizen/": {
     "attempts": 0,
@@ -2468,6 +3532,13 @@
     "first_seen": "2026-06-30T23:18:21Z",
     "last_checked": "2026-06-30T23:19:20Z",
     "spn2_job_id": "spn2-a7674b9b5635b8ae3f5fda8d98e0b7691e488a71",
+    "status": "success"
+  },
+  "https://techcafe.fr/xbox-series-x-capteur-infrarouge-dans-iphone/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:35:13Z",
+    "last_checked": "2026-07-01T02:36:17Z",
+    "spn2_job_id": "spn2-86839adb668fa12f12ec2f16b351eba1c008f8a6",
     "status": "success"
   },
   "https://www.24heures.ch/asile-26-cantons-et-autant-de-modeles-differents-950809966211": {
@@ -2585,6 +3656,13 @@
     "spn2_job_id": "spn2-845aba5b05463969dbecbfbe6bffdcb053479403",
     "status": "success"
   },
+  "https://www.le-courrier.ch/%e2%80%89docteur-jack%e2%80%89-medecin-des-demunis-documentaire-de-benoit-lange/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:56:09Z",
+    "last_checked": "2026-07-01T02:56:24Z",
+    "spn2_job_id": "spn2-0e894a89706b120b2701b745503e6539a7acba46",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/%e2%80%89le-ciel-attendra%e2%80%89/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:08:11Z",
@@ -2599,6 +3677,13 @@
     "spn2_job_id": "spn2-8fe83e798228b9c3aa1a30d2d51ebbd996fbefae",
     "status": "success"
   },
+  "https://www.le-courrier.ch/18e-tir-villageois/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:47:10Z",
+    "last_checked": "2026-07-01T01:48:03Z",
+    "spn2_job_id": "spn2-7d9d78f929def84d8c4529f27ee8eade9d508fde",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/24e-edition-dune-formule-a-succes%e2%80%89/": {
     "attempts": 0,
     "first_seen": "2026-06-30T20:15:01Z",
@@ -2607,17 +3692,38 @@
     "status": "success"
   },
   "https://www.le-courrier.ch/24e-trial-des-vestiges/": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-06-30T21:51:17Z",
-    "last_checked": "2026-06-30T21:52:02Z",
+    "last_checked": "2026-07-01T01:19:26Z",
     "spn2_job_id": "spn2-5d6d14700c85b3bf6143a5ba2035545550c02c52",
     "status": "error_retry"
+  },
+  "https://www.le-courrier.ch/5-ans-deja-a-moudon/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:37:49Z",
+    "last_checked": "2026-07-01T01:38:05Z",
+    "spn2_job_id": "spn2-326cef5f24a6e3da00d3482760431492b28726c3",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/90-ans-ca-se-fete-solennellement%e2%80%89/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:39:32Z",
+    "last_checked": "2026-07-01T01:40:04Z",
+    "spn2_job_id": "spn2-25300a36022a28ec2521f7d58378b65d017be75e",
+    "status": "success"
   },
   "https://www.le-courrier.ch/95-ou-98%e2%80%89-ordinaire-ou-super%e2%80%89/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:11:05Z",
     "last_checked": "2026-06-30T19:12:05Z",
     "spn2_job_id": "spn2-b8d89e82f74cb40ee92f7a8701815ab166096299",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/a-fond-dans-les-raidillons%e2%80%89/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:20:03Z",
+    "last_checked": "2026-07-01T02:20:19Z",
+    "spn2_job_id": "spn2-ca814aa9e09f746b4afe1ab99d35f98195a342cf",
     "status": "success"
   },
   "https://www.le-courrier.ch/a-la-%e2%80%89botte-de-foin%e2%80%89-les-petits-animaux-attendent-vos-calins/": {
@@ -2662,6 +3768,13 @@
     "spn2_job_id": "spn2-8fb2a2f0183dfde47732787ff78355cacefa86a6",
     "status": "success"
   },
+  "https://www.le-courrier.ch/abondance-de-courges-pour-vos-mets-dautomne/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:55:10Z",
+    "last_checked": "2026-07-01T01:55:26Z",
+    "spn2_job_id": "spn2-c04ec09ebde5de682e2afdcb2b863e5fa23d7992",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/accueil-enthousiaste-pour-le-fil-dariane/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:03:15Z",
@@ -2704,6 +3817,20 @@
     "spn2_job_id": "spn2-f8fbc08115218a3a3ab34e79c2cbaa21c7470b18",
     "status": "success"
   },
+  "https://www.le-courrier.ch/anonyme-80-pour-larfec-a-palezieux/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:55:04Z",
+    "last_checked": "2026-07-01T02:55:22Z",
+    "spn2_job_id": "spn2-dee4a24d6f5c0dab9836b86fd489059da9838b96",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/aparte/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:48:04Z",
+    "last_checked": "2026-07-01T01:48:20Z",
+    "spn2_job_id": "spn2-08168187b7803084a7e4fca26f364f35a5961f0b",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/arbres-compagnons-de-route/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:49:11Z",
@@ -2714,9 +3841,9 @@
   "https://www.le-courrier.ch/assermentation-a-la-police-securite-est-lausannois/": {
     "attempts": 1,
     "first_seen": "2026-06-30T23:00:00Z",
-    "last_checked": "2026-06-30T23:00:02Z",
+    "last_checked": "2026-07-01T01:25:37Z",
     "spn2_job_id": "spn2-27b72d6bbb90caebb378b0a4929d8887d0c12713",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.le-courrier.ch/assermentation-de-la-municipalite-de-belmont-sur-lausanne/": {
     "attempts": 0,
@@ -2746,6 +3873,13 @@
     "spn2_job_id": "spn2-9d45cd237a6e8612ee20d0fc1bbdf0700b5d4582",
     "status": "success"
   },
+  "https://www.le-courrier.ch/au-lac-de-bret-les-oiseaux-etaient-au-rendez-vous/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:34:39Z",
+    "last_checked": "2026-07-01T01:36:29Z",
+    "spn2_job_id": "spn2-5bf4e429213fb2e5501605c4519d4acc1e5f0fda",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/au-sujet-du-caveau-du-coeur-dor/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:56:03Z",
@@ -2765,6 +3899,13 @@
     "first_seen": "2026-06-30T22:53:08Z",
     "last_checked": "2026-06-30T22:53:31Z",
     "spn2_job_id": "spn2-b5bbec5879032703c77ed4a34c7cb5785c367e5e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/avenir-radieux/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:20:20Z",
+    "last_checked": "2026-07-01T02:21:03Z",
+    "spn2_job_id": "spn2-a466c7b1cd59ab506e6d6e6391da643e850e596b",
     "status": "success"
   },
   "https://www.le-courrier.ch/avis-denquetes/": {
@@ -2865,11 +4006,32 @@
     "spn2_job_id": "spn2-d6b9b577b0f19531f1e1802d411a24b892f93787",
     "status": "success"
   },
+  "https://www.le-courrier.ch/briser-la-glace-julien-blanc-gras-editions-paulsen/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:02:15Z",
+    "last_checked": "2026-07-01T02:04:08Z",
+    "spn2_job_id": "spn2-f2c808d29f4172ef187e128417e8555ddb6de1a5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/california-dream-a-la-route-66/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:28:17Z",
+    "last_checked": "2026-07-01T01:29:51Z",
+    "spn2_job_id": "spn2-2df25ccfd9b862a73202ab1d0eb9f851dfe45c8b",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/carte-des-communes/": {
     "attempts": 0,
     "first_seen": "2026-06-30T18:52:14Z",
     "last_checked": "2026-06-30T18:52:47Z",
     "spn2_job_id": "spn2-ad0d8bcfbc79bc4c053ec8153237f2e55aa48bd2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/champion-vaudois-au-match-couche-300m-cat-d/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:10:11Z",
+    "last_checked": "2026-07-01T02:10:27Z",
+    "spn2_job_id": "spn2-2a73e0456e788bbc0e0eae369b4cff27c3ad2955",
     "status": "success"
   },
   "https://www.le-courrier.ch/championnats-suisses-de-vtt/": {
@@ -2935,6 +4097,13 @@
     "spn2_job_id": "spn2-cad8d833ec7a9a120aabffd999cfc627ea841564",
     "status": "success"
   },
+  "https://www.le-courrier.ch/danse-avec-la-pluie/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:34:38Z",
+    "last_checked": "2026-07-01T02:36:00Z",
+    "spn2_job_id": "spn2-82192d1f05c64318ffd630c31a31bb74481c1cbb",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/de-cotonou-au-benin-jusquau-domaine-de-bory-a-lutry/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:25:10Z",
@@ -2956,6 +4125,13 @@
     "spn2_job_id": "spn2-81ee97d15570a6ba3e0805ec502bcca80ee8e5b6",
     "status": "success"
   },
+  "https://www.le-courrier.ch/deces-dalexis-waridel/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:31:30Z",
+    "last_checked": "2026-07-01T02:32:56Z",
+    "spn2_job_id": "spn2-aa30483141d46306a65f26c9bf3c2fee38fea0b6",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/deficit-de-fonctionnement-mais-equilibre-atteint-pour-ferlens/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:00:21Z",
@@ -2973,15 +4149,22 @@
   "https://www.le-courrier.ch/des-claques-se-perdent/": {
     "attempts": 1,
     "first_seen": "2026-06-30T21:54:14Z",
-    "last_checked": "2026-06-30T21:54:16Z",
+    "last_checked": "2026-07-01T01:21:56Z",
     "spn2_job_id": "spn2-a7cfb3f068a3652b72810779a4d7022175699db4",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.le-courrier.ch/des-confidences-dans-le-silence/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:55:06Z",
     "last_checked": "2026-06-30T22:55:28Z",
     "spn2_job_id": "spn2-57d66868584e3939ba316c07629265a790ab0ac3",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/des-coups-de-vent-perturbateurs/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:46:01Z",
+    "last_checked": "2026-07-01T01:47:09Z",
+    "spn2_job_id": "spn2-169f0bc0e049a9f77c1ee0075a7edae2f017bac7",
     "status": "success"
   },
   "https://www.le-courrier.ch/des-espaces-multiusages-pour-tous/": {
@@ -3019,6 +4202,13 @@
     "spn2_job_id": "spn2-7695cc8e17e629ac0cd79addd8b02f7a0e80f71b",
     "status": "success"
   },
+  "https://www.le-courrier.ch/dinosaur-jr-give-a-glimpse-of-what-yer-not/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:14:15Z",
+    "last_checked": "2026-07-01T02:14:31Z",
+    "spn2_job_id": "spn2-1f4b52a08681faa32decd4330a26d833f6d6364b",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/doit-on-pleurer-aux-funerailles-de-dictateurs%e2%80%89/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:05:18Z",
@@ -3031,6 +4221,13 @@
     "first_seen": "2026-06-30T19:59:11Z",
     "last_checked": "2026-06-30T19:59:31Z",
     "spn2_job_id": "spn2-0b97424887f230b5250cc95154df9223a25bc9bb",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/du-leman-a-la-mer-noire/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:21:04Z",
+    "last_checked": "2026-07-01T02:21:20Z",
+    "spn2_job_id": "spn2-58471889dfa5e7c4c7ac308e401ccde463196770",
     "status": "success"
   },
   "https://www.le-courrier.ch/edition-dexception%e2%80%89/": {
@@ -3047,6 +4244,13 @@
     "spn2_job_id": "spn2-13b3598d221a1cabce64c6193d008d466e6af8f1",
     "status": "success"
   },
+  "https://www.le-courrier.ch/ensemble-autour-de-la-table/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:53:12Z",
+    "last_checked": "2026-07-01T02:53:29Z",
+    "spn2_job_id": "spn2-13117e4269d2c1cfbd37d1629e69fa09a53715f7",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/ephemere%e2%80%89/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:13:05Z",
@@ -3059,6 +4263,27 @@
     "first_seen": "2026-06-30T20:29:04Z",
     "last_checked": "2026-06-30T20:29:21Z",
     "spn2_job_id": "spn2-293b362c0143f434781655b8387e5762cfcfea60",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/excellente-cuvee-accompagnee-dun-jean-rosset-magnifique/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:49:24Z",
+    "last_checked": "2026-07-01T01:50:17Z",
+    "spn2_job_id": "spn2-b83c329eba805ac2439b150e1a2d9e2ae85678e0",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/faibles-femmes%e2%80%89-et-pourtant%e2%80%89/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:45:22Z",
+    "last_checked": "2026-07-01T01:45:39Z",
+    "spn2_job_id": "spn2-d118c996006bcf57e2ccd45077aa44b26cf3e5d6",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/fantaisie-musicale-et-theatrale-a-oron-la-ville/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:51:41Z",
+    "last_checked": "2026-07-01T02:52:45Z",
+    "spn2_job_id": "spn2-66ad347bab3907fca8b3e9f69b38cd9f5e064601",
     "status": "success"
   },
   "https://www.le-courrier.ch/fantomes-au-clair-de-lune/": {
@@ -3087,6 +4312,13 @@
     "first_seen": "2026-06-30T22:54:11Z",
     "last_checked": "2026-06-30T22:54:28Z",
     "spn2_job_id": "spn2-7c63c8f447b60b15d1b902df109f81c63993783e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/festivitis-3e-edition/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:42:38Z",
+    "last_checked": "2026-07-01T02:43:58Z",
+    "spn2_job_id": "spn2-52c81daabf624c8eaf47986a74720050ddc3c02c",
     "status": "success"
   },
   "https://www.le-courrier.ch/fete-de-la-mi-ete-a-mollie-margot/": {
@@ -3138,6 +4370,13 @@
     "spn2_job_id": "spn2-32d6ff2d520996cfd64c1d7f05d89ce33ab09970",
     "status": "success"
   },
+  "https://www.le-courrier.ch/formidable-travail-a-mezieres-pour-la-realisation-du-parcours-vita/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:29:52Z",
+    "last_checked": "2026-07-01T01:30:54Z",
+    "spn2_job_id": "spn2-41044da23ccea7221857dbe3327bcdd31fab2e9e",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/futur-college-de-servion-pose-de-la-premiere-pierre/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:23:01Z",
@@ -3180,11 +4419,32 @@
     "spn2_job_id": "spn2-a93b36f29fbb5061395e01b098a30c23369b153f",
     "status": "success"
   },
+  "https://www.le-courrier.ch/halloween-avec-les-chiens-polaires/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:23:38Z",
+    "last_checked": "2026-07-01T02:24:13Z",
+    "spn2_job_id": "spn2-2a2553f903d62e7ad8bd51582dedf5a5321d0c5a",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/i-have-a-dream/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:40:04Z",
+    "last_checked": "2026-07-01T01:40:21Z",
+    "spn2_job_id": "spn2-b752368ec2ef790ae6d1f8e8cc65f2a83c5a192a",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/inauguration-du-nouveau-bateau/": {
     "attempts": 0,
     "first_seen": "2026-06-30T20:19:07Z",
     "last_checked": "2026-06-30T20:20:28Z",
     "spn2_job_id": "spn2-1168d7ee450f3cb264bfda18ae588140027c98cf",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/inauguration-dune-installation-de-production-de-biogaz-a-palezieux/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:27:20Z",
+    "last_checked": "2026-07-01T01:28:16Z",
+    "spn2_job_id": "spn2-41d3f1c560da019c9852908bcc9dc9e6d263b5ff",
     "status": "success"
   },
   "https://www.le-courrier.ch/inauguration-officielle-et-visite-dune-installation-de-production-de-biogaz/": {
@@ -3229,6 +4489,20 @@
     "spn2_job_id": "spn2-799194002bc20675e4339028d3c8e91df51580e5",
     "status": "success"
   },
+  "https://www.le-courrier.ch/jupes-longues-et-chapeaux-etaient-a-la-mode/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:29:05Z",
+    "last_checked": "2026-07-01T02:30:08Z",
+    "spn2_job_id": "spn2-631bb0a18d34bb3bfdac88038d876bf61224ce4a",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/la-banane-un-fruit-tropical-tres-prise-par-les-suisses/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:13:08Z",
+    "last_checked": "2026-07-01T02:13:24Z",
+    "spn2_job_id": "spn2-ce71a55dc8b35b8e8fa03b1c2ba18820a276d526",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/la-broye-vaudoise-honore-sept-artistes-suisses/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:52:15Z",
@@ -3246,9 +4520,9 @@
   "https://www.le-courrier.ch/la-commune-accueille-ses-nouveaux-habitants/": {
     "attempts": 1,
     "first_seen": "2026-06-30T23:01:12Z",
-    "last_checked": "2026-06-30T23:01:12Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-07-01T01:26:24Z",
+    "spn2_job_id": "spn2-20333dff1c8efaf3f2bfee46f4f13619068fc6c9",
+    "status": "success"
   },
   "https://www.le-courrier.ch/la-fete-des-recoltes/": {
     "attempts": 0,
@@ -3267,9 +4541,9 @@
   "https://www.le-courrier.ch/la-grande-histoire-dun-petit-grain/": {
     "attempts": 1,
     "first_seen": "2026-06-30T21:57:04Z",
-    "last_checked": "2026-06-30T21:57:21Z",
+    "last_checked": "2026-07-01T01:23:33Z",
     "spn2_job_id": "spn2-d0c6829fac9978b1031ba319c0cd26f21f2dc4a2",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.le-courrier.ch/la-guinguette-sinvite-au-chateau/": {
     "attempts": 0,
@@ -3292,6 +4566,13 @@
     "spn2_job_id": "spn2-3253110eb95621b66bc867a99b100acb8325b404",
     "status": "success"
   },
+  "https://www.le-courrier.ch/la-philosophie-comme-lien-social/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:33:51Z",
+    "last_checked": "2026-07-01T01:34:39Z",
+    "spn2_job_id": "spn2-b996a73b1e394a70b887dd07c127c5b937a57168",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/la-recolte-des-fruits-marque-le-retour-de-lautomne/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:34:28Z",
@@ -3306,11 +4587,32 @@
     "spn2_job_id": "spn2-75c268bf25afdbfb00c727271b2c1db1f59eff1f",
     "status": "success"
   },
+  "https://www.le-courrier.ch/la-sereine-mystique-de-lame-russe/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:40:21Z",
+    "last_checked": "2026-07-01T01:40:37Z",
+    "spn2_job_id": "spn2-dcda2837bf91a8d7d75b6714151335b72328fed9",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/la-sylvain-trinquet/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:57:10Z",
     "last_checked": "2026-06-30T22:57:27Z",
     "spn2_job_id": "spn2-349c5c7d5e42df12a9dadcb9a6d31eb5fc689cc5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/larbre-decline-sous-toutes-ses-formes-par-une-artiste-de-notre-district/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:42:37Z",
+    "last_checked": "2026-07-01T01:43:56Z",
+    "spn2_job_id": "spn2-6d74b69773f4f257a5337ea3e9297c991770ec84",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/lavaux-dor-prix-du-merite-2017/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:51:07Z",
+    "last_checked": "2026-07-01T01:51:24Z",
+    "spn2_job_id": "spn2-da56e71aa2648d0f6229e99f50296e99f6dd9a31",
     "status": "success"
   },
   "https://www.le-courrier.ch/lavaux-passion-au-programme/": {
@@ -3334,6 +4636,13 @@
     "spn2_job_id": "spn2-2b92576df00fca0948516b15c00568a4b70d128c",
     "status": "success"
   },
+  "https://www.le-courrier.ch/le-charme-dune-chambre-paysanne-de-1900/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:04:08Z",
+    "last_checked": "2026-07-01T02:04:40Z",
+    "spn2_job_id": "spn2-4b63d9c8462c98a489e0524aa357d2e1393495f0",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/le-coeur-de-moudon-va-retenir-son-souffle/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:58:09Z",
@@ -3346,6 +4655,27 @@
     "first_seen": "2026-06-30T23:11:05Z",
     "last_checked": "2026-06-30T23:11:24Z",
     "spn2_job_id": "spn2-ee58d25a1ed6b228d6b6e7d4c3a5b5d453cf0c0b",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/le-mentaliste-se-confie-au-hasard/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:27:34Z",
+    "last_checked": "2026-07-01T02:29:03Z",
+    "spn2_job_id": "spn2-aa0c82b8950ece71d4a8717ee4c4f104c28c5dfd",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/le-millesime-2016-promet-tant-en-quantite-quen-qualite/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:49:08Z",
+    "last_checked": "2026-07-01T01:49:23Z",
+    "spn2_job_id": "spn2-661a2ec94bb5f027932375dcb821e43612613831",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/le-monde-de-lartisan-annick-roulet-modiste/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:45:01Z",
+    "last_checked": "2026-07-01T02:45:18Z",
+    "spn2_job_id": "spn2-beebb01a471fe8f88b2c8b9fe44946c757a1fb2b",
     "status": "success"
   },
   "https://www.le-courrier.ch/le-monde-de-lartisan-bieres-artisanales-du-docteur-gabs%e2%80%89/": {
@@ -3369,6 +4699,13 @@
     "spn2_job_id": "spn2-e09daceb0807a193cd799f68f309212068aa1453",
     "status": "success"
   },
+  "https://www.le-courrier.ch/le-monde-de-lartisan-fabienne-biedermann-fromages-de-chevre/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:11:33Z",
+    "last_checked": "2026-07-01T02:13:07Z",
+    "spn2_job_id": "spn2-0f8ad0d4845626a9e2470784d78d20dfd56a71b6",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/le-monde-de-lartisan-jacques-rey-art-et-tradition-du-pavage/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:49:07Z",
@@ -3383,11 +4720,25 @@
     "spn2_job_id": "spn2-8f266c4cefa647093c182cd0a4e1697bf936e692",
     "status": "success"
   },
+  "https://www.le-courrier.ch/le-monde-de-lartisan-raymond-meyer-imprimeur-taille-doucier/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:26:25Z",
+    "last_checked": "2026-07-01T02:27:33Z",
+    "spn2_job_id": "spn2-07f6cd1b8a8d644003b6023f1064d6b2a6458b89",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/le-monde-de-lartisan-serge-porchet%e2%80%89-fumoir-artisanal/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:45:01Z",
     "last_checked": "2026-06-30T22:45:18Z",
     "spn2_job_id": "spn2-63c18e991d1e7296dbfa490038009dd1c3c0436c",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/le-monde-de-lartisan-ursula-bachmann-creation-et-recouvrement-dabat-jour/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:52:10Z",
+    "last_checked": "2026-07-01T01:52:26Z",
+    "spn2_job_id": "spn2-1c0e2755444eec5f55bf7c9ea7bcc233c9c43018",
     "status": "success"
   },
   "https://www.le-courrier.ch/le-monde-de-lartisan-vincent-desmeules-ferronnier-dart/": {
@@ -3397,11 +4748,39 @@
     "spn2_job_id": "spn2-7cb1ac8214a3e8a0f9dac7cc0ea0aed5463c593a",
     "status": "success"
   },
+  "https://www.le-courrier.ch/le-monde-de-lartisan-xavier-penon-et-catherine-campagna-design-contextuel-industriel-et-visuel/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:32:15Z",
+    "last_checked": "2026-07-01T01:33:50Z",
+    "spn2_job_id": "spn2-2fe6323fe36680a8c2826cbc4b35454c2abd83d1",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/le-monde-des-artisans-lucie-weber-la-deuxieme-vie-du-bouton%e2%80%89/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:04:05Z",
     "last_checked": "2026-06-30T23:04:32Z",
     "spn2_job_id": "spn2-d47315fdd63f905cd20368041999bb089e746803",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/le-nobel-de-la-pedze/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:15:08Z",
+    "last_checked": "2026-07-01T02:15:25Z",
+    "spn2_job_id": "spn2-76205bd141d55a5ec1f96f76eef4313588490fd8",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/le-peril-jaune/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:37:30Z",
+    "last_checked": "2026-07-01T02:38:19Z",
+    "spn2_job_id": "spn2-a6b51acf14d69cc2029dae25adaaf86046fbc62b",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/le-pont-de-la-comprehension/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:49:00Z",
+    "last_checked": "2026-07-01T02:49:22Z",
+    "spn2_job_id": "spn2-b411e20b4040c9f6e32f1165bffa74170837e295",
     "status": "success"
   },
   "https://www.le-courrier.ch/le-rendez-vous-incontournable/": {
@@ -3418,6 +4797,13 @@
     "spn2_job_id": "spn2-d476a0aeb36ae4a1155090cf17a8d58d727cba49",
     "status": "success"
   },
+  "https://www.le-courrier.ch/le-territoire-des-barbares-rosa-montero-editions-points/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:41:13Z",
+    "last_checked": "2026-07-01T01:42:37Z",
+    "spn2_job_id": "spn2-7e580aec872a16de967a3f783e4d9a01cf5d7d28",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/le-trial-club-passepartout-ne-manque-pas-dair%e2%80%89/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:43:14Z",
@@ -3425,11 +4811,32 @@
     "spn2_job_id": "spn2-1a1c4746a23d97df2806d1eab914262b6fedda77",
     "status": "success"
   },
+  "https://www.le-courrier.ch/le-virage-necessaire-de-la-recherche-medicale/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:00:01Z",
+    "last_checked": "2026-07-01T02:00:19Z",
+    "spn2_job_id": "spn2-c88c44034a7295c061198b37ebdd988167a62ab3",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/lecture-de-la-on-voit-la-mer/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:40:07Z",
     "last_checked": "2026-06-30T19:41:08Z",
     "spn2_job_id": "spn2-09ac7ad57f043c65bde6e06dfd44f034e6f59855",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/lenergie-nue-clairiere/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:59:03Z",
+    "last_checked": "2026-07-01T01:59:20Z",
+    "spn2_job_id": "spn2-d9bf9bbf5b502a90500f31fe2aec38cd1eeeb45e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/lepopee-fabuleuse-de-la-course-a-pied/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:13:24Z",
+    "last_checked": "2026-07-01T02:13:40Z",
+    "spn2_job_id": "spn2-e740af23af6c2136606873d09762d076c80ecc27",
     "status": "success"
   },
   "https://www.le-courrier.ch/les-25-ans-du-mohair-du-jorat-ou-lhistoire-dun-reve/": {
@@ -3453,6 +4860,20 @@
     "spn2_job_id": "spn2-28d09e93ffe50dd4e4485ccadfdaa16275cc0b8c",
     "status": "success"
   },
+  "https://www.le-courrier.ch/les-as-du-trial-au-coeur-de-la-ville/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:11:15Z",
+    "last_checked": "2026-07-01T02:11:32Z",
+    "spn2_job_id": "spn2-e6dce64ddff101a9ade248a28e6c8f269663a4d4",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/les-bois-de-ferlens-volent-dans-les-airs-doron/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:06:12Z",
+    "last_checked": "2026-07-01T02:07:31Z",
+    "spn2_job_id": "spn2-9d07f27f225ee36adba73c6e89a5362180ee1c80",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/les-casse-botoilles-en-concert-a-lhopital-de-lavaux/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:16:34Z",
@@ -3465,6 +4886,13 @@
     "first_seen": "2026-06-30T19:18:03Z",
     "last_checked": "2026-06-30T19:18:19Z",
     "spn2_job_id": "spn2-702d77e997107ed2b3d56cdef0fa7e7d8aabec50",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/les-chaudrons-vont-fumer-pour-la-6e-nuit-du-vin-cuit/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:40:19Z",
+    "last_checked": "2026-07-01T02:40:35Z",
+    "spn2_job_id": "spn2-288bc1a6a897faa1e2f9431add57411395a43b6c",
     "status": "success"
   },
   "https://www.le-courrier.ch/les-dimanches-tels-quils-sont-aujourdhui/": {
@@ -3502,6 +4930,13 @@
     "spn2_job_id": "spn2-6d7019338b5f86948c2bf1d9c6bb900c2731300c",
     "status": "success"
   },
+  "https://www.le-courrier.ch/les-plus-beaux-airs-des-comedies-musicales/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:07:48Z",
+    "last_checked": "2026-07-01T02:08:20Z",
+    "spn2_job_id": "spn2-4db7394f3083329b11fcdacca459a65945f86096",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/les-points-rencontre-de-lassociation-spes-lavaux/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:46:20Z",
@@ -3530,11 +4965,39 @@
     "spn2_job_id": "spn2-28af9ce68c84187622dec39118ad424d135c5abc",
     "status": "success"
   },
+  "https://www.le-courrier.ch/letape-maguri-sur-la-route-de-chabag/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:41:10Z",
+    "last_checked": "2026-07-01T02:42:37Z",
+    "spn2_job_id": "spn2-8d75c8aef06886dfc6b98aaaf445477f6497dbe1",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/letat-de-vaud-manifeste-son-soutien-a-lavaux/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:57:01Z",
+    "last_checked": "2026-07-01T01:58:28Z",
+    "spn2_job_id": "spn2-6b4ec15e930e1e51e62707e1d1b8fea940e9d3b5",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/lete-rime-avec-plaisirs-aquatiques/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:41:09Z",
     "last_checked": "2026-06-30T19:41:26Z",
     "spn2_job_id": "spn2-55e8abd6f8d8f54088cc5141fd0263dbefa55b96",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/lexemplarite-energetique-de-la-confederation-perd-en-credibilite/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:22:14Z",
+    "last_checked": "2026-07-01T02:23:21Z",
+    "spn2_job_id": "spn2-a1a1d57407f0771300b7e1ba3d2c94cf39e32838",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/lheure-dete-en-octobre-na-pas-de-sens/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:36:01Z",
+    "last_checked": "2026-07-01T02:36:18Z",
+    "spn2_job_id": "spn2-0e8c35062bd8e7d6567ce8b09581deec5f3fa253",
     "status": "success"
   },
   "https://www.le-courrier.ch/lhistoire-dun-nonagenaire-qui-a-vu-du-pays/": {
@@ -3558,11 +5021,25 @@
     "spn2_job_id": "spn2-4ba4fa8a607179960aaf546bf544658b19ff983d",
     "status": "success"
   },
+  "https://www.le-courrier.ch/lorsque-bracaillon-rime-avec-passion/": {
+    "attempts": 1,
+    "first_seen": "2026-07-01T02:04:40Z",
+    "last_checked": "2026-07-01T02:05:18Z",
+    "spn2_job_id": "spn2-4f93da53843a4f2327bd08deae3ffec5fb1614e2",
+    "status": "error_retry"
+  },
   "https://www.le-courrier.ch/lucas-et-martin-en-grands-triomphateurs/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:44:03Z",
     "last_checked": "2026-06-30T22:44:29Z",
     "spn2_job_id": "spn2-0fdc73abab92c7f542e5299e0662aeb0ba968659",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/lutry-opensunday/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:44:12Z",
+    "last_checked": "2026-07-01T02:44:29Z",
+    "spn2_job_id": "spn2-08a4260c50b9e1f0daddddadbe187b7973180401",
     "status": "success"
   },
   "https://www.le-courrier.ch/magnifique-course-dete/": {
@@ -3572,11 +5049,25 @@
     "spn2_job_id": "spn2-92453dec67a62699bc3d5c683a2f1dda68e6cfe6",
     "status": "success"
   },
+  "https://www.le-courrier.ch/maman-courage-fete-ses-90-ans/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:30:08Z",
+    "last_checked": "2026-07-01T02:31:30Z",
+    "spn2_job_id": "spn2-aa4025a7464ac4a7d90dc0e57b156c9484e2e7e9",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/marchethon-plus-de-30-ans-dune-vraie-amitie/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:42:01Z",
     "last_checked": "2026-06-30T22:43:14Z",
     "spn2_job_id": "spn2-ca92f186e43dde5a56efe1d97414b9368b252bbc",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/marre-de-senerver-avec-les-devoirs-de-ses-enfants/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:23:22Z",
+    "last_checked": "2026-07-01T02:23:38Z",
+    "spn2_job_id": "spn2-e32a0acdb05fe1d4604dd01bd5307ede002f1044",
     "status": "success"
   },
   "https://www.le-courrier.ch/maya-a-frappe-fort%e2%80%89/": {
@@ -3621,11 +5112,32 @@
     "spn2_job_id": "spn2-ab0d4b9fd466eaf16e04762406336ebf34c00f28",
     "status": "success"
   },
+  "https://www.le-courrier.ch/mezieres-tout-un-poeme-a-la-rue-du-theatre/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:50:18Z",
+    "last_checked": "2026-07-01T02:51:40Z",
+    "spn2_job_id": "spn2-16fa95093a0efdbbfefcfcce11a3199c4d2678ce",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/mezieres-ultrasecret/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:46:07Z",
+    "last_checked": "2026-07-01T02:46:24Z",
+    "spn2_job_id": "spn2-464d8bee1c2ea9c3d7b679525aefae96946adba6",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/michael-kiwanuka-love-hate/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:51:13Z",
     "last_checked": "2026-06-30T22:51:30Z",
     "spn2_job_id": "spn2-25abaa98ce43ff684a9e609f8207c04ec3ad7cc1",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/michel-buenzod-lhomme-engage-lecrivain-pierre-jeanneret-editions-de-laire/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:17:08Z",
+    "last_checked": "2026-07-01T02:17:31Z",
+    "spn2_job_id": "spn2-086ba11026fac4692c7e2c483744a734c2aac9a3",
     "status": "success"
   },
   "https://www.le-courrier.ch/mim-peinture-lartisane-peintre-ambassadrice-des-belles-realisations-en-produits-naturels/": {
@@ -3649,6 +5161,13 @@
     "spn2_job_id": "spn2-3258ec30d3e494206f672a12d446eaab8efee5b0",
     "status": "success"
   },
+  "https://www.le-courrier.ch/ni-palabres-ni-bulletin-secret-a-corcelles-le-jorat/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:26:41Z",
+    "last_checked": "2026-07-01T01:27:19Z",
+    "spn2_job_id": "spn2-a98ed2d108264ce2f9f3b84dc77ea421e79e2654",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/no-plastic-in-water-defi-sportif-caritatif-de-650-km/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:36:10Z",
@@ -3656,18 +5175,32 @@
     "spn2_job_id": "spn2-4684d0a069000e78df5a4c07ff06a3fd33ac2288",
     "status": "success"
   },
+  "https://www.le-courrier.ch/nombreux-engagements-de-la-nouvelle-legislature-a-chexbres/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:36:30Z",
+    "last_checked": "2026-07-01T01:37:49Z",
+    "spn2_job_id": "spn2-4431bee1ed12375748d1bcc1c9ea3cce9e8d963a",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/notre-dame-de-cully-en-fete/": {
     "attempts": 1,
     "first_seen": "2026-06-30T22:47:19Z",
-    "last_checked": "2026-06-30T22:47:21Z",
+    "last_checked": "2026-07-01T01:24:30Z",
     "spn2_job_id": "spn2-ea92e8ba59c56a86a4c8673485da81856adbe838",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.le-courrier.ch/nouvelle-legislature-sur-les-rails/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:02:02Z",
     "last_checked": "2026-06-30T23:02:18Z",
     "spn2_job_id": "spn2-14cd859e1a1740dbc003708da619ab94c45367e2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/nouvelle-saison-de-toute-beaute-a-moudon/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:30:55Z",
+    "last_checked": "2026-07-01T01:32:14Z",
+    "spn2_job_id": "spn2-21c83858e37af42d6c7993beea486fb7a006b375",
     "status": "success"
   },
   "https://www.le-courrier.ch/o-tempora%e2%80%89-o-mores%e2%80%89/": {
@@ -3677,6 +5210,20 @@
     "spn2_job_id": "spn2-1acb41bb06d4b86809327e9b9729b56bfec24829",
     "status": "success"
   },
+  "https://www.le-courrier.ch/on-a-joue-aux-playmobils-syriens-a-lausanne/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:15:25Z",
+    "last_checked": "2026-07-01T02:16:15Z",
+    "spn2_job_id": "spn2-28151c39b47a8064cec32aa0b00394b9a3e6df81",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/oron-3-jours-de-folie%e2%80%89/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:24:14Z",
+    "last_checked": "2026-07-01T02:24:37Z",
+    "spn2_job_id": "spn2-5d403998a5e728f9fc0e078e874c8dac92f81aad",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/oron-orbe-a-peine-50-km-et-en-plus-il-y-aura-a-manger-et-a-boire/": {
     "attempts": 0,
     "first_seen": "2026-06-30T20:00:05Z",
@@ -3684,11 +5231,46 @@
     "spn2_job_id": "spn2-04ff75e570081263b4ddf70a1db22bc255307fac",
     "status": "success"
   },
+  "https://www.le-courrier.ch/oui-a-larret-des-vieilles-centrales-nucleaires/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:46:24Z",
+    "last_checked": "2026-07-01T02:48:06Z",
+    "spn2_job_id": "spn2-096903f4f4dd440702536ee86ba9e40e6b868614",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/palezieux-au-village-propose-un-concours/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:44:29Z",
+    "last_checked": "2026-07-01T02:44:45Z",
+    "spn2_job_id": "spn2-ed8910e47dc7ce073463299a62cd3c0eeed38ccd",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/palezieux-des-creations-uniques-%e2%80%89au-village%e2%80%89/": {
+    "attempts": 1,
+    "first_seen": "2026-07-01T01:51:24Z",
+    "last_checked": "2026-07-01T01:52:09Z",
+    "spn2_job_id": "spn2-9848b4d60cd9ccd3b0d6f3a2cad404a7e7410b57",
+    "status": "error_retry"
+  },
   "https://www.le-courrier.ch/parcolitre/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:51:11Z",
     "last_checked": "2026-06-30T19:51:28Z",
     "spn2_job_id": "spn2-42e4f66e234e47a6e8becdf2d3ba5f4abdd256a0",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/parfois-le-hasard-fait-bien-les-choses/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:26:25Z",
+    "last_checked": "2026-07-01T01:26:41Z",
+    "spn2_job_id": "spn2-11acef063094b85069884b0a4c056479dd364feb",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/passation-des-pouvoirs-2016-au-kivanis-club-doron/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:58:28Z",
+    "last_checked": "2026-07-01T01:58:44Z",
+    "spn2_job_id": "spn2-4e7adb558f75f470581f31c4307f79cbd5fd1980",
     "status": "success"
   },
   "https://www.le-courrier.ch/passeport-vacances-franc-succes%e2%80%89/": {
@@ -3726,6 +5308,13 @@
     "spn2_job_id": "spn2-44a15fc9e3b2ecd261268b6b564b2e21e5dd444e",
     "status": "success"
   },
+  "https://www.le-courrier.ch/pierre-monachon-un-passionne-passionnant%e2%80%89/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:39:09Z",
+    "last_checked": "2026-07-01T02:40:18Z",
+    "spn2_job_id": "spn2-520dc6af2257ac5a2d33069455bf52490e0d9577",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/pique-assiette-invite-le-chefs/": {
     "attempts": 0,
     "first_seen": "2026-06-30T23:13:11Z",
@@ -3745,6 +5334,27 @@
     "first_seen": "2026-06-30T22:19:06Z",
     "last_checked": "2026-06-30T22:19:18Z",
     "spn2_job_id": "spn2-9c5ac03b38c5ca97864ea9506c5adbc76ee7485c",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/premiere-seance-a-bourg-en-lavaux-de-la-legislature-2016-2021/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:54:23Z",
+    "last_checked": "2026-07-01T01:54:40Z",
+    "spn2_job_id": "spn2-7c997e450c332f13d91737c3dd0b7830d2aef08e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/premiere-seance-a-puidoux-de-la-nouvelle-legislature-2016-2021/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:53:04Z",
+    "last_checked": "2026-07-01T01:53:25Z",
+    "spn2_job_id": "spn2-898c542ca37923e5c7e2e2c62540a316a1870ca8",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/premiere-seance-de-la-legislature-2016-2021/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:09:05Z",
+    "last_checked": "2026-07-01T02:09:21Z",
+    "spn2_job_id": "spn2-a2d150ce932ce53e65d139c760a0a224ef8581b8",
     "status": "success"
   },
   "https://www.le-courrier.ch/prochain-culte-des-groupes-de-maison/": {
@@ -3768,11 +5378,32 @@
     "spn2_job_id": "spn2-a37b350e14f7f089b67b63f97a6cf15669ae4429",
     "status": "success"
   },
+  "https://www.le-courrier.ch/que-de-chamboulements/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:43:57Z",
+    "last_checked": "2026-07-01T01:45:22Z",
+    "spn2_job_id": "spn2-19cf3c71071a85fe3751d4b1e86adf14e71929ad",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/que-de-mariages-qui-ne-durent-quune-lune-de-miel%e2%80%89/": {
     "attempts": 0,
     "first_seen": "2026-06-30T22:32:12Z",
     "last_checked": "2026-06-30T22:32:29Z",
     "spn2_job_id": "spn2-d022ab569f2cf559f3ee9ef6ec37cd36ab91fdd0",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/quel-plan-pour-proteger-la-population-en-cas-daccident-dans-une-de-nos-centrales-nucleaires%e2%80%89/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:48:07Z",
+    "last_checked": "2026-07-01T02:48:23Z",
+    "spn2_job_id": "spn2-c5a9ab57d1c0b5fa71c07e8e34a48f46a37f71d2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/qui-dit-amour-dit-passion/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:26:08Z",
+    "last_checked": "2026-07-01T02:26:25Z",
+    "spn2_job_id": "spn2-cdefd598e47134cef8168b610639c69788c3ecac",
     "status": "success"
   },
   "https://www.le-courrier.ch/recherche-de-chauffeurs-benevoles/": {
@@ -3782,11 +5413,32 @@
     "spn2_job_id": "spn2-4b03f8d350ef07f0b92ee32fa91b10f93eb4ef6c",
     "status": "success"
   },
+  "https://www.le-courrier.ch/redemarrage-en-cours/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:16:15Z",
+    "last_checked": "2026-07-01T02:16:32Z",
+    "spn2_job_id": "spn2-aae7c25a1a874592ca6665c0842271c3bb86f4f7",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/refondation-de-la-section-pop-lavaux-oron-riviera/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:36:18Z",
+    "last_checked": "2026-07-01T02:37:13Z",
+    "spn2_job_id": "spn2-06cbb56317360cd6a3bc152dde895ebd250cce69",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/regate-cest-dans-les-vieilles-casseroles/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:44:08Z",
     "last_checked": "2026-06-30T19:44:31Z",
     "spn2_job_id": "spn2-246a4f7cdb6a9c84b83122b3f64e6c1405018876",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/regate-des-%e2%80%89feuilles-mortes%e2%80%89/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:38:20Z",
+    "last_checked": "2026-07-01T02:39:09Z",
+    "spn2_job_id": "spn2-5bc87d0f49530a844e60cc27476599bdd0bf105c",
     "status": "success"
   },
   "https://www.le-courrier.ch/regate-des-vieux-bateaux-3/": {
@@ -3801,6 +5453,20 @@
     "first_seen": "2026-06-30T21:55:02Z",
     "last_checked": "2026-06-30T21:55:15Z",
     "spn2_job_id": "spn2-828d8efa23b8a1284837418aa477a7a22bdd5459",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/renaud-le-rimbaud-des-faubourgs-alain-wodrascka-editions-favre/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:33:18Z",
+    "last_checked": "2026-07-01T02:34:37Z",
+    "spn2_job_id": "spn2-e4cabf366924d75cb16ba0f2cab11136e16727c2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/rencontres-sur-les-chemins-de-romainmotier/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:01:18Z",
+    "last_checked": "2026-07-01T02:01:35Z",
+    "spn2_job_id": "spn2-ad98e3f4f82e44b5f4d930769ca857017c3c7815",
     "status": "success"
   },
   "https://www.le-courrier.ch/renforcer-lavs-augmenter-les-rentes-dire-oui-a-avsplus/": {
@@ -3859,6 +5525,13 @@
     "spn2_job_id": "spn2-20e826671d475f546dbd700bcb75c10b303332c6",
     "status": "success"
   },
+  "https://www.le-courrier.ch/seconde-edition-encore-plus-grande/": {
+    "attempts": 1,
+    "first_seen": "2026-07-01T02:07:31Z",
+    "last_checked": "2026-07-01T02:07:47Z",
+    "spn2_job_id": "spn2-c7cd00bccd5e303daed545d59286d3dd9a63128f",
+    "status": "error_retry"
+  },
   "https://www.le-courrier.ch/selection-des-vins-vaudois-edition-2016/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:27:15Z",
@@ -3887,6 +5560,13 @@
     "spn2_job_id": "spn2-c56fab0bdfd9d3f6e1529ed3ff829a4b41272f40",
     "status": "success"
   },
+  "https://www.le-courrier.ch/seul-a-olympie/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:18:03Z",
+    "last_checked": "2026-07-01T02:18:24Z",
+    "spn2_job_id": "spn2-d5f79f15edfe610ab66209d89703fc91c74263d3",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/si-tu-vas-a-rio/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:42:21Z",
@@ -3899,6 +5579,13 @@
     "first_seen": "2026-06-30T20:05:12Z",
     "last_checked": "2026-06-30T20:05:30Z",
     "spn2_job_id": "spn2-9326554c0c06fb65dcf35f2a903e814192beca34",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/sortie-anticipee-du-nucleaire-une-balle-dans-le-pied%e2%80%89/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:25:13Z",
+    "last_checked": "2026-07-01T02:25:30Z",
+    "spn2_job_id": "spn2-bde1799c3fcab2c3598f8c9900f84715540f609c",
     "status": "success"
   },
   "https://www.le-courrier.ch/soutenons-le-coeur-dor%e2%80%89/": {
@@ -3943,6 +5630,34 @@
     "spn2_job_id": "spn2-87b5abfeefafb6c56d1225d076ce3e30712092fd",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tir-de-cloture/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:19:08Z",
+    "last_checked": "2026-07-01T02:19:25Z",
+    "spn2_job_id": "spn2-3ff3e894d07c0bb828b1be54a711b500794bbaaa",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tir-des-municipalites/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:50:18Z",
+    "last_checked": "2026-07-01T01:50:35Z",
+    "spn2_job_id": "spn2-590ad231d3e4dea8cd2a59b470e5b0d239a62c18",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tout-pour-le-mouvement-junior/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:55:27Z",
+    "last_checked": "2026-07-01T01:57:00Z",
+    "spn2_job_id": "spn2-b52ecf362779fa296b22f6be1b0603d85a62e677",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tout-savoir-ou-presque-sur-la-vie-et-loeuvre-de-charlie-chaplin/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:09:21Z",
+    "last_checked": "2026-07-01T02:10:11Z",
+    "spn2_job_id": "spn2-f86cf101544e4a5a8b874e397cab92cf254ce328",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tracteur-et-machine-agricole-il-y-a-un-demi-siecle/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:39:07Z",
@@ -3976,6 +5691,20 @@
     "first_seen": "2026-06-30T22:50:38Z",
     "last_checked": "2026-06-30T22:51:12Z",
     "spn2_job_id": "spn2-6abb1e7f7a62e712a07324675b099df645bfcc0e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/un-noel-en-famille-jennifer-johnston-editions-10-18domaine-etranger/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:54:06Z",
+    "last_checked": "2026-07-01T02:54:28Z",
+    "spn2_job_id": "spn2-13ef299f56710f25540bd5c3d772760f99685781",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/un-talus-en-passe-de-devenir-celebre/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:08:21Z",
+    "last_checked": "2026-07-01T02:09:04Z",
+    "spn2_job_id": "spn2-8f74ed73cc019d5f92750bf4b5bfa98e52ce027b",
     "status": "success"
   },
   "https://www.le-courrier.ch/un-week-end-de-douce-folie/": {
@@ -4013,11 +5742,25 @@
     "spn2_job_id": "spn2-50e3bca1540ff65561871418c1b1f6d1cb72a232",
     "status": "success"
   },
+  "https://www.le-courrier.ch/une-histoire-de-lart/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:05:19Z",
+    "last_checked": "2026-07-01T02:05:51Z",
+    "spn2_job_id": "spn2-ca1b411caa5ffecae78da3d42f81be0d86addf78",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/une-invasion-de-batraciens-a-mollie-margot/": {
     "attempts": 0,
     "first_seen": "2026-06-30T19:46:03Z",
     "last_checked": "2026-06-30T19:46:36Z",
     "spn2_job_id": "spn2-b3a477088f9c40aaced15ff4f6f278ccc2d51ff1",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/une-montee-droit-haut-la-pente%e2%80%89/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T02:37:13Z",
+    "last_checked": "2026-07-01T02:37:29Z",
+    "spn2_job_id": "spn2-446fd16cc2444ea441ecab0c1fdd06c3126f11f2",
     "status": "success"
   },
   "https://www.le-courrier.ch/une-nonagenaire-qui-a-concilie-labeur-et-bonheur/": {
@@ -4037,9 +5780,16 @@
   "https://www.le-courrier.ch/une-rentree-de-maicresse-cest/": {
     "attempts": 1,
     "first_seen": "2026-06-30T21:48:04Z",
-    "last_checked": "2026-06-30T21:48:20Z",
+    "last_checked": "2026-07-01T01:18:48Z",
     "spn2_job_id": "spn2-ef958382cadb34b5825764dd4a5f8cc853b3c692",
-    "status": "error_retry"
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/une-soiree-dediee-a-la-question-des-migrants/": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:38:06Z",
+    "last_checked": "2026-07-01T01:39:32Z",
+    "spn2_job_id": "spn2-678bd2e16b034f5980c92d8d62a1ba3a895b9ba2",
+    "status": "success"
   },
   "https://www.le-courrier.ch/une-titanesque-realisation-qui-fait-la-fierte-de-la-suisse/": {
     "attempts": 0,
@@ -5255,6 +7005,13 @@
     "first_seen": "2026-06-30T10:29:08Z",
     "last_checked": "2026-06-30T10:29:30Z",
     "spn2_job_id": "spn2-b7c330f207096f7c698e3ed7ff4b5f7964a9a465",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/economie/article/2026/06/30/mercosur-tensions-sur-l-accord-de-libre-echange-avec-l-ue-a-l-ouverture-du-sommet-au-paraguay_6717342_3234.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:17:16Z",
+    "last_checked": "2026-07-01T01:17:17Z",
+    "spn2_job_id": "spn2-b94b0abc05d59bda43d4dafda81856a1f858b377",
     "status": "success"
   },
   "https://www.lemonde.fr/economie/article/2026/06/30/mk2-le-circuit-de-cinemas-independants-mise-sur-le-grand-public-sans-recours-a-la-bourse-ni-appel-a-des-groupes-exterieurs_6717203_3234.html": {
@@ -6698,9 +8455,9 @@
   "https://www.lemonde.fr/international/article/2026/06/30/le-directeur-de-la-cia-compare-l-ia-de-pointe-a-des-armes-nucleaires-numeriques_6717339_3210.html": {
     "attempts": 1,
     "first_seen": "2026-06-30T21:47:22Z",
-    "last_checked": "2026-06-30T21:47:23Z",
+    "last_checked": "2026-07-01T01:19:26Z",
     "spn2_job_id": "spn2-4083d34815d88461d190c1c99a3ca6e025be656a",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/06/30/le-royaume-uni-annonce-un-budget-militaire-de-300-milliards-de-livres-pour-moderniser-l-armee-face-aux-nouvelles-menaces_6717268_3210.html": {
     "attempts": 0,
@@ -6763,6 +8520,27 @@
     "first_seen": "2026-06-30T13:03:52Z",
     "last_checked": "2026-06-30T16:14:27Z",
     "spn2_job_id": "spn2-42a1f65f28b808a655bd46b5ec8105bae041f93d",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/07/01/au-mexique-l-ambition-de-taxer-les-ultrariches-prospere_6717351_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:25:05Z",
+    "last_checked": "2026-07-01T01:25:21Z",
+    "spn2_job_id": "spn2-e8320c658d4137c3ccf31c1976d390462935616b",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/07/01/aux-etats-unis-la-cour-supreme-censure-la-maison-blanche-et-confirme-le-droit-du-sol-pour-les-enfants-de-sans-papiers_6717346_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:20:22Z",
+    "last_checked": "2026-07-01T01:21:09Z",
+    "spn2_job_id": "spn2-f8b2a34cd1d76348f8947e4de1b12d74ede79740",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/07/01/donald-trump-a-engrange-1-2-milliard-de-dollars-grace-aux-cryptomonnaies-en-2025-d-apres-des-documents-officiels_6717350_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:23:17Z",
+    "last_checked": "2026-07-01T01:23:33Z",
+    "spn2_job_id": "spn2-c620eeb5118af5b7fc9b522491178a7725291c25",
     "status": "success"
   },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
@@ -6924,6 +8702,13 @@
     "first_seen": "2026-06-30T10:29:08Z",
     "last_checked": "2026-06-30T10:29:30Z",
     "spn2_job_id": "spn2-c21b3f92510f3c677e1fed6516e1fb38764102cf",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/live/2026/07/01/en-direct-guerre-en-ukraine-kiev-a-lance-une-attaque-de-drones-sur-la-russie_6716525_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:16:10Z",
+    "last_checked": "2026-07-01T01:16:26Z",
+    "spn2_job_id": "spn2-829957f2ebda1952c3a1df68cde597e5e34b3a88",
     "status": "success"
   },
   "https://www.lemonde.fr/international/video/2026/06/23/les-images-de-la-fusillade-de-montreal-le-tireur-a-laisse-un-manifeste-inspire-du-courant-incel_6708994_3210.html": {
@@ -7684,6 +9469,13 @@
     "spn2_job_id": "spn2-c43a28868e8802e31312cce60010899aaf576f0f",
     "status": "success"
   },
+  "https://www.lemonde.fr/pixels/article/2026/07/01/ia-washington-leve-ses-restrictions-sur-les-modeles-les-plus-puissants-d-anthropic_6717349_4408996.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:23:34Z",
+    "last_checked": "2026-07-01T01:25:04Z",
+    "spn2_job_id": "spn2-5ef2527dd63265705e21cc1f72e4039898e13ad8",
+    "status": "success"
+  },
   "https://www.lemonde.fr/pixels/video/2026/06/25/les-dessous-de-legend-le-media-en-ligne-de-guillaume-pley-qui-pourrait-peser-dans-la-campagne-presidentielle_6715447_4408996.html": {
     "attempts": 0,
     "first_seen": "2026-06-25T22:42:05Z",
@@ -8003,6 +9795,13 @@
     "first_seen": "2026-06-30T18:56:08Z",
     "last_checked": "2026-06-30T18:56:27Z",
     "spn2_job_id": "spn2-726d9885bda56f08f13dc519937c5267489f1128",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/planete/article/2026/07/01/une-vague-de-chaleur-record-aux-etats-unis-fait-suffoquer-des-dizaines-de-millions-d-americains_6717343_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:18:11Z",
+    "last_checked": "2026-07-01T01:18:32Z",
+    "spn2_job_id": "spn2-7b357d50b636813aae202590e334ddb3a02b6dd7",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/live/2026/06/23/en-direct-canicule-la-vague-de-chaleur-est-tout-a-fait-comparable-en-severite-a-celle-d-aout-2003-selon-meteo-france_6704498_3244.html": {
@@ -8561,6 +10360,13 @@
     "spn2_job_id": "spn2-e4ceb8b5f58819854a59bdf2a44dda7385f5b3d9",
     "status": "success"
   },
+  "https://www.lemonde.fr/politique/article/2026/07/01/primaire-a-gauche-le-parti-socialiste-et-les-ecologistes-se-divisent-sur-leur-strategie-pour-la-presidentielle_6717347_823448.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:21:57Z",
+    "last_checked": "2026-07-01T01:23:16Z",
+    "spn2_job_id": "spn2-f31ed85cb9ced281035ebe00fd6ba6aa3118332a",
+    "status": "success"
+  },
   "https://www.lemonde.fr/politique/video/2026/06/24/la-pantheonisation-de-marc-bloch-et-simonne-vidal-en-images_6710220_823448.html": {
     "first_seen": "2026-06-24T07:22:20Z",
     "last_checked": "2026-06-24T07:24:06Z",
@@ -8711,6 +10517,13 @@
     "first_seen": "2026-06-30T10:25:03Z",
     "last_checked": "2026-06-30T10:26:02Z",
     "spn2_job_id": "spn2-ef98e245fe3e06511dab11428fd56f9a611f8a69",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/sciences/article/2026/07/01/la-nasa-consolide-son-projet-de-base-lunaire-avec-l-annonce-de-nouvelles-missions_6717348_1650684.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:21:10Z",
+    "last_checked": "2026-07-01T01:21:56Z",
+    "spn2_job_id": "spn2-23c0642c4877f9d062db3fdbfec35e78adcc3b07",
     "status": "success"
   },
   "https://www.lemonde.fr/sciences/video/2026/06/26/alerte-a-la-pollution-de-la-baie-de-rio-de-janeiro_6715853_1650684.html": {
@@ -9679,6 +11492,13 @@
     "spn2_job_id": "spn2-7e48441a3619961d032ec59a95262a1879756473",
     "status": "success"
   },
+  "https://www.lemonde.fr/sport/article/2026/07/01/coupe-du-monde-2026-le-selectionneur-des-pays-bas-ronald-koeman-quitte-son-poste-apres-l-elimination-face-au-maroc_6717344_3242.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:18:32Z",
+    "last_checked": "2026-07-01T01:19:09Z",
+    "spn2_job_id": "spn2-c7e53e44b0d528b4a42b64fb3bce2b3ed28e84bf",
+    "status": "success"
+  },
   "https://www.lemonde.fr/sport/live/2026/06/22/en-direct-france-irak-suivez-le-match-de-la-coupe-du-monde-de-football_6708202_3242.html": {
     "first_seen": "2026-06-22T19:15:13Z",
     "last_checked": "2026-06-22T19:15:44Z",
@@ -10595,6 +12415,13 @@
     "spn2_job_id": "spn2-4c074e454c1b4b614ce6d9bb114a303c93b2988d",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/la-bonne-fortune-de-donald-trump-dans-les-cryptomonnaies-des-gains-estimes-a-1-2-milliard-de-dollars": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:17:17Z",
+    "last_checked": "2026-07-01T01:19:09Z",
+    "spn2_job_id": "spn2-364d003cd77dabccd83a24e102a19bf5498c32fc",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/la-chine-bat-les-etats-unis-3-a-2-et-l-on-ne-parle-pas-de-football-mais-d-energie": {
     "attempts": 1,
     "first_seen": "2026-06-30T01:15:10Z",
@@ -10607,6 +12434,13 @@
     "first_seen": "2026-06-29T10:46:17Z",
     "last_checked": "2026-06-29T10:47:01Z",
     "spn2_job_id": "spn2-f98363402c2887ae6e6fe4354b7f34ccd0d0632e",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/la-cour-supreme-americaine-valide-l-exclusion-des-sportives-transgenres-de-competitions-feminines": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:16:11Z",
+    "last_checked": "2026-07-01T01:16:26Z",
+    "spn2_job_id": "spn2-b0798fe26802d9c23177ffb0e9979c9dc4e7920c",
     "status": "success"
   },
   "https://www.letemps.ch/articles/la-cour-supreme-desavoue-donald-trump-et-maintient-le-droit-du-sol": {
@@ -11564,9 +13398,9 @@
   "https://www.rts.ch/info/monde/2026/article/allemagne-l-auteur-de-la-fusillade-de-stade-aurait-secoue-son-bebe-29290981.html": {
     "attempts": 1,
     "first_seen": "2026-06-30T21:41:17Z",
-    "last_checked": "2026-06-30T21:42:13Z",
+    "last_checked": "2026-07-01T01:17:17Z",
     "spn2_job_id": "spn2-d714e268186e79f877845ac55c70dc9d3f8ba322",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/attentat-de-magdebourg-prison-a-vie-pour-l-auteur-de-l-attaque-29286937.html": {
     "attempts": 0,
@@ -11845,6 +13679,13 @@
     "first_seen": "2026-06-29T16:23:06Z",
     "last_checked": "2026-06-29T16:23:22Z",
     "spn2_job_id": "spn2-05ce744e1a3db3c7a478dc91cf4e8115e921e8f9",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/regions/fribourg/2026/article/un-important-incendie-detruit-une-salle-de-sport-a-romont-fr-29291085.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-01T01:17:17Z",
+    "last_checked": "2026-07-01T01:18:12Z",
+    "spn2_job_id": "spn2-ae4777aa518a031ca9390759a6dba85dab088b74",
     "status": "success"
   },
   "https://www.rts.ch/info/regions/geneve/2026/article/geneve-interdit-le-travail-en-exterieur-l-apres-midi-face-a-la-canicule-29285842.html": {
