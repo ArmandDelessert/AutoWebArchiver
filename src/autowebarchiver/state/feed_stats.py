@@ -23,6 +23,9 @@ class FeedRunStats:
     dropped_unarchived_count: int | None
     oldest_published_at: str | None
     newest_published_at: str | None
+    # Filled in later via record_already_archived(), once submission outcomes
+    # are known (record() runs at discovery time, before any submit happens).
+    already_archived_count: int = 0
 
 
 @dataclass(frozen=True)
@@ -134,6 +137,19 @@ class FeedStatsStore:
             "history": history,
         }
         return stats, dropped_unarchived
+
+    def record_already_archived(self, source_name: str, count: int) -> None:
+        """Attach the "already_archived" submission count to the history entry
+        just appended for this run by record(). Submission outcomes are only
+        known after archiving completes, later than record() itself runs, so
+        this is a separate, best-effort update -- a no-op if record() was
+        never called for this source this run (e.g. discovery failed)."""
+        if not count:
+            return
+        source = self._sources.get(source_name)
+        if not source or not source.get("history"):
+            return
+        source["history"][-1]["already_archived_count"] = count
 
     def purge_older_than(self, days: int) -> int:
         cutoff = datetime.now(timezone.utc) - timedelta(days=days)

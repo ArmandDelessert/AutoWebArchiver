@@ -95,13 +95,14 @@ def poll_leftovers(client: SPN2Client, store: SeenStore, settings: Settings) -> 
 
 
 def _submit(
-    client: SPN2Client, store: SeenStore, url: str, settings: Settings, counts: dict[str, int]
-) -> str | None:
+    client: SPN2Client, store: SeenStore, url: str, settings: Settings
+) -> tuple[str | None, str]:
     """Submit a single capture request for an already-normalized URL. Returns
-    its job_id if a capture job was created, or None if there's nothing to
-    poll -- either because SPN2 already had a recent-enough capture (counted
-    as "already_archived", not an error) or the submit genuinely failed
-    (counted as "error" and marked for a bounded retry)."""
+    (job_id, outcome). job_id is only set when outcome == "submitted" (a
+    capture job was created and needs polling). Otherwise there's nothing to
+    poll: "already_archived" means SPN2 already had a recent-enough capture
+    (not an error), "error" means the submit genuinely failed (marked for a
+    bounded retry)."""
     try:
         job_id = client.submit(
             url,
@@ -114,20 +115,18 @@ def _submit(
     except AlreadyArchivedError as exc:
         logger.info('"%s" is already archived recently enough, skipping (%s)', url, exc)
         store.mark_resolved(url, status="already_archived")
-        counts["already_archived"] += 1
         _save_quietly(store, settings.state_save_interval_seconds)
-        return None
+        return None, "already_archived"
     except Exception as exc:  # noqa: BLE001 - isolate failures per URL
         logger.error('Failed to submit "%s" for capture: %s', url, exc)
         # A submit failure is almost always transient (network/SPN2 hiccup),
         # so keep it eligible for a bounded number of retries.
         store.mark_error(url, retryable=True, max_attempts=settings.max_capture_attempts)
-        counts["error"] += 1
         _save_quietly(store, settings.state_save_interval_seconds)
-        return None
+        return None, "error"
     store.mark_pending(url, job_id)
     _save_quietly(store, settings.state_save_interval_seconds)
-    return job_id
+    return job_id, "submitted"
 
 
 def _save_quietly(store: SeenStore, min_interval_seconds: float = 0.0) -> None:
@@ -243,15 +242,21 @@ def archive_new_urls(
     items: list[DiscoveredItem],
     settings: Settings,
     exhaustive: dict[str, bool] | None = None,
-) -> dict[str, int]:
+) -> tuple[dict[str, int], dict[str, int]]:
     """Archive newly discovered URLs with a single-threaded sliding window: keep
     up to `concurrency` captures in flight, submitting a new one as soon as a slot
     frees and the per-minute rate allows, until the time budget runs out.
     Submitting and polling are both quick HTTP calls, so one thread interleaves
     them -- no threads or asyncio needed (the throughput ceiling is SPN2's 7
     submissions/min, not our local concurrency). Which item gets the next slot
-    is decided by SourceScheduler -- see its docstring for the scheduling rules."""
+    is decided by SourceScheduler -- see its docstring for the scheduling rules.
+
+    Returns (counts, already_archived_by_source): the aggregate outcome
+    counts, plus a per-source breakdown of the "already_archived" outcome
+    specifically -- known only here (during submission), not at discovery
+    time, so the caller can attach it to that source's feed_stats entry."""
     counts = {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
+    already_archived_by_source: dict[str, int] = {}
 
     # Normalize and de-duplicate (a URL can appear under several feeds, or with
     # different tracking params that normalize to the same canonical URL).
@@ -303,9 +308,12 @@ def archive_new_urls(
             if item is None:
                 break
             url = normalize_url(item.url)
-            job_id = _submit(client, store, url, settings, counts)
-            if job_id is None:
-                continue  # _submit already recorded the outcome (error or already_archived)
+            job_id, outcome = _submit(client, store, url, settings)
+            if outcome != "submitted":
+                counts[outcome] += 1
+                if outcome == "already_archived":
+                    already_archived_by_source[item.source] = already_archived_by_source.get(item.source, 0) + 1
+                continue
             in_flight[job_id] = (url, item.source, time.monotonic() + settings.poll_timeout_seconds)
             in_flight_count_by_source[item.source] = in_flight_count_by_source.get(item.source, 0) + 1
 
@@ -333,7 +341,7 @@ def archive_new_urls(
             len(scheduler),
         )
 
-    return counts
+    return counts, already_archived_by_source
 
 
 def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> None:
@@ -441,16 +449,25 @@ def run(
         except Exception as exc:  # noqa: BLE001 - isolate failures per source
             logger.error("Failed to discover items from %s: %s", source.name, exc)
 
+    exhaustive_by_source = {source.name: source.exhaustive for source in config.sources}
+    archive_counts, already_archived_by_source = archive_new_urls(
+        client, store, discovered, config.settings, exhaustive_by_source
+    )
+    for key, value in archive_counts.items():
+        totals[key] += value
+
+    # Submission outcomes (including which URLs were already archived) are only
+    # known now, after archive_new_urls runs -- attach them to the history
+    # entries feed_stats.record() already appended per source above.
+    for source_name, count in sorted(already_archived_by_source.items()):
+        feed_stats.record_already_archived(source_name, count)
+        logger.info('%d URL(s) from %s were "already archived" recently enough (skipped by SPN2)', count, source_name)
+
     try:
         feed_stats.purge_older_than(config.settings.state_max_age_days)
         feed_stats.save()
     except OSError as exc:
         logger.error("Could not write feed stats file %s: %s", feed_stats_path, exc)
-
-    exhaustive_by_source = {source.name: source.exhaustive for source in config.sources}
-    archive_counts = archive_new_urls(client, store, discovered, config.settings, exhaustive_by_source)
-    for key, value in archive_counts.items():
-        totals[key] += value
 
     purged = store.purge_older_than(config.settings.state_max_age_days)
 
