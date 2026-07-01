@@ -60,6 +60,48 @@ def test_submit_retries_after_429(monkeypatch):
 
     assert job_id == "job-2"
     assert len(responses.calls) == 2
+    assert client.rate_limited_count == 1  # only the 429 counts, not the eventual success
+
+
+@responses.activate
+def test_already_archived_does_not_consume_local_rate_budget():
+    responses.add(
+        responses.POST,
+        "https://web.archive.org/save",
+        json={"url": "https://example.com/a", "job_id": None, "message": "same snapshot"},
+        status=200,
+    )
+    responses.add(
+        responses.POST,
+        "https://web.archive.org/save",
+        json={"url": "https://example.com/b", "job_id": None, "message": "same snapshot"},
+        status=200,
+    )
+
+    client = SPN2Client("access", "secret", max_captures_per_minute=1)
+    with pytest.raises(AlreadyArchivedError):
+        client.submit("https://example.com/a")
+    # A real per-minute cap of 1 would normally force a wait for a 2nd
+    # submission -- but since the 1st was a dedup skip (no real capture
+    # work), it must not count against the budget.
+    assert client.next_submit_wait_seconds() == 0.0
+    with pytest.raises(AlreadyArchivedError):
+        client.submit("https://example.com/b")
+
+
+@responses.activate
+def test_real_capture_consumes_local_rate_budget():
+    responses.add(
+        responses.POST,
+        "https://web.archive.org/save",
+        json={"url": "https://example.com/a", "job_id": "job-1"},
+        status=200,
+    )
+
+    client = SPN2Client("access", "secret", max_captures_per_minute=1)
+    client.submit("https://example.com/a")
+
+    assert client.next_submit_wait_seconds() > 0
 
 
 @responses.activate

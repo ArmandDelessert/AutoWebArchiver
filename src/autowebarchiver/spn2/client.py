@@ -44,6 +44,7 @@ class SPN2Client:
         self._max_captures_per_minute = max_captures_per_minute
         self._request_timeout = request_timeout
         self._submit_timestamps: deque[float] = deque()
+        self.rate_limited_count = 0  # total 429s seen from /save across this client's lifetime
 
     def _headers(self) -> dict[str, str]:
         return {"Accept": "application/json", "Authorization": self._auth_header}
@@ -66,13 +67,24 @@ class SPN2Client:
         return max(0.0, self._WINDOW - (now - self._submit_timestamps[0]) + 0.1)
 
     def _throttle(self) -> None:
-        """Block until submitting would not exceed max_captures_per_minute, then
-        record the submission. Callers that pre-check next_submit_wait_seconds()
-        (e.g. the sliding-window loop) will find this is a no-op wait."""
+        """Block until submitting would not exceed max_captures_per_minute.
+        Does NOT record the attempt -- callers record it themselves (via
+        _record_submit) only once the outcome is known, so requests SPN2
+        answers without doing real capture work (if_not_archived_within
+        dedup skips) don't consume a slot of our local budget. Callers that
+        pre-check next_submit_wait_seconds() (e.g. the sliding-window loop)
+        will find this is a no-op wait."""
         wait = self.next_submit_wait_seconds()
         if wait > 0:
             logger.debug("Throttling SPN2 submissions, sleeping %.1fs", wait)
             time.sleep(wait)
+
+    def _record_submit(self) -> None:
+        """Record that a submission actually happened, for rate-limiting
+        purposes. Called only when SPN2 did real capture work (a job_id came
+        back) -- not for dedup skips (AlreadyArchivedError), which cost SPN2
+        a cheap index lookup rather than the crawler capacity the 7/min cap
+        is meant to protect."""
         self._submit_timestamps.append(time.monotonic())
 
     @retry(
@@ -117,6 +129,13 @@ class SPN2Client:
         )
 
         if response.status_code == 429:
+            # A real rate-limit rejection: this attempt genuinely counted
+            # against SPN2's budget, so record it too (on top of the
+            # server-mandated backoff) -- self-correcting our own pacing to
+            # be more conservative rather than immediately retrying as if
+            # nothing happened.
+            self._record_submit()
+            self.rate_limited_count += 1
             logger.warning('SPN2 returned 429 for "%s", backing off', url)
             time.sleep(random.uniform(10, 20))
             response.raise_for_status()
@@ -128,9 +147,12 @@ class SPN2Client:
             # SPN2 returns 200 with no job_id specifically when
             # if_not_archived_within is already satisfied by an existing
             # capture -- it's telling us no new capture was needed, not that
-            # the request failed.
+            # the request failed. This didn't consume any real crawler
+            # capacity, so it doesn't count against our local submit budget
+            # either (see _record_submit).
             message = payload.get("message") or f"No job_id returned for {url}: {payload}"
             raise AlreadyArchivedError(message)
+        self._record_submit()
         return job_id
 
     @retry(

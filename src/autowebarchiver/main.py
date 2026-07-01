@@ -242,7 +242,7 @@ def archive_new_urls(
     items: list[DiscoveredItem],
     settings: Settings,
     exhaustive: dict[str, bool] | None = None,
-) -> tuple[dict[str, int], dict[str, int]]:
+) -> tuple[dict[str, int], dict[str, int], dict[str, int]]:
     """Archive newly discovered URLs with a single-threaded sliding window: keep
     up to `concurrency` captures in flight, submitting a new one as soon as a slot
     frees and the per-minute rate allows, until the time budget runs out.
@@ -251,12 +251,14 @@ def archive_new_urls(
     submissions/min, not our local concurrency). Which item gets the next slot
     is decided by SourceScheduler -- see its docstring for the scheduling rules.
 
-    Returns (counts, already_archived_by_source): the aggregate outcome
-    counts, plus a per-source breakdown of the "already_archived" outcome
-    specifically -- known only here (during submission), not at discovery
-    time, so the caller can attach it to that source's feed_stats entry."""
+    Returns (counts, already_archived_by_source, rate_limited_by_source): the
+    aggregate outcome counts, plus per-source breakdowns of the
+    "already_archived" outcome and of 429 (rate-limited) responses -- both
+    known only here (during submission), not at discovery time, so the caller
+    can attach them to each source's feed_stats entry."""
     counts = {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
     already_archived_by_source: dict[str, int] = {}
+    rate_limited_by_source: dict[str, int] = {}
 
     # Normalize and de-duplicate (a URL can appear under several feeds, or with
     # different tracking params that normalize to the same canonical URL).
@@ -308,7 +310,13 @@ def archive_new_urls(
             if item is None:
                 break
             url = normalize_url(item.url)
+            rate_limited_before = client.rate_limited_count
             job_id, outcome = _submit(client, store, url, settings)
+            rate_limited_delta = client.rate_limited_count - rate_limited_before
+            if rate_limited_delta:
+                rate_limited_by_source[item.source] = (
+                    rate_limited_by_source.get(item.source, 0) + rate_limited_delta
+                )
             if outcome != "submitted":
                 counts[outcome] += 1
                 if outcome == "already_archived":
@@ -341,7 +349,7 @@ def archive_new_urls(
             len(scheduler),
         )
 
-    return counts, already_archived_by_source
+    return counts, already_archived_by_source, rate_limited_by_source
 
 
 def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> None:
@@ -450,18 +458,23 @@ def run(
             logger.error("Failed to discover items from %s: %s", source.name, exc)
 
     exhaustive_by_source = {source.name: source.exhaustive for source in config.sources}
-    archive_counts, already_archived_by_source = archive_new_urls(
+    archive_counts, already_archived_by_source, rate_limited_by_source = archive_new_urls(
         client, store, discovered, config.settings, exhaustive_by_source
     )
     for key, value in archive_counts.items():
         totals[key] += value
 
-    # Submission outcomes (including which URLs were already archived) are only
-    # known now, after archive_new_urls runs -- attach them to the history
-    # entries feed_stats.record() already appended per source above.
+    # Submission outcomes (including which URLs were already archived, and
+    # which hit a 429) are only known now, after archive_new_urls runs --
+    # attach them to the history entries feed_stats.record() already appended
+    # per source above, so the trend is visible over time in feed_stats.json
+    # rather than only in this run's ephemeral CI logs.
     for source_name, count in sorted(already_archived_by_source.items()):
         feed_stats.record_already_archived(source_name, count)
         logger.info('%d URL(s) from %s were "already archived" recently enough (skipped by SPN2)', count, source_name)
+    for source_name, count in sorted(rate_limited_by_source.items()):
+        feed_stats.record_rate_limited(source_name, count)
+        logger.info("%d SPN2 429 (rate-limited) response(s) for %s", count, source_name)
 
     try:
         feed_stats.purge_older_than(config.settings.state_max_age_days)
@@ -479,13 +492,14 @@ def run(
 
     logger.info(
         "Run summary: %d source(s) processed, %d discovered, %d success, %d error, "
-        "%d already archived, %d still pending, %d state entries purged",
+        "%d already archived, %d still pending, %d rate-limited (429), %d state entries purged",
         len(config.sources),
         len(discovered),
         totals["success"],
         totals["error"],
         totals["already_archived"],
         totals["pending"],
+        client.rate_limited_count,
         purged,
     )
     return 0

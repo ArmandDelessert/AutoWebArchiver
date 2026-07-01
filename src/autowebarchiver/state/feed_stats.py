@@ -23,9 +23,11 @@ class FeedRunStats:
     dropped_unarchived_count: int | None
     oldest_published_at: str | None
     newest_published_at: str | None
-    # Filled in later via record_already_archived(), once submission outcomes
-    # are known (record() runs at discovery time, before any submit happens).
+    # Both filled in later, via record_already_archived()/record_rate_limited(),
+    # once submission outcomes are known (record() runs at discovery time,
+    # before any submit happens).
     already_archived_count: int = 0
+    rate_limited_count: int = 0
 
 
 @dataclass(frozen=True)
@@ -144,12 +146,23 @@ class FeedStatsStore:
         known after archiving completes, later than record() itself runs, so
         this is a separate, best-effort update -- a no-op if record() was
         never called for this source this run (e.g. discovery failed)."""
+        self._attach_to_latest(source_name, "already_archived_count", count)
+
+    def record_rate_limited(self, source_name: str, count: int) -> None:
+        """Attach the count of SPN2 429 (rate-limited) responses hit while
+        submitting for this source to the history entry just appended for this
+        run. Tracking this over time (rather than only in ephemeral CI logs)
+        is what lets us tell whether a rate-limiting change actually made 429s
+        more or less frequent, instead of guessing."""
+        self._attach_to_latest(source_name, "rate_limited_count", count)
+
+    def _attach_to_latest(self, source_name: str, field: str, count: int) -> None:
         if not count:
             return
         source = self._sources.get(source_name)
         if not source or not source.get("history"):
             return
-        source["history"][-1]["already_archived_count"] = count
+        source["history"][-1][field] = count
 
     def purge_older_than(self, days: int) -> int:
         cutoff = datetime.now(timezone.utc) - timedelta(days=days)

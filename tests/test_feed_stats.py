@@ -121,6 +121,24 @@ def test_record_already_archived_is_noop_for_unknown_source(tmp_path):
     stats_store.record_already_archived("unknown.ch", 5)
 
 
+def test_record_rate_limited_attaches_to_latest_history_entry(tmp_path):
+    path = tmp_path / "feed_stats.json"
+    stats_store = FeedStatsStore(path)
+    seen = SeenStore(tmp_path / "seen.json")
+
+    stats_store.record("rts.ch", [_item("https://e.com/a")], new_count=1, seen_store=seen)
+    stats_store.record_rate_limited("rts.ch", 7)
+    stats_store.save()
+
+    on_disk = json.loads(path.read_text())
+    assert on_disk["rts.ch"]["history"][-1]["rate_limited_count"] == 7
+
+
+def test_record_rate_limited_is_noop_for_unknown_source(tmp_path):
+    stats_store = FeedStatsStore(tmp_path / "feed_stats.json")
+    stats_store.record_rate_limited("unknown.ch", 2)
+
+
 def test_exhaustive_source_skips_drop_tracking_and_last_urls(tmp_path):
     path = tmp_path / "feed_stats.json"
     stats_store = FeedStatsStore(path)
