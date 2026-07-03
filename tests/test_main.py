@@ -73,7 +73,7 @@ def test_archive_submits_whole_wave_before_polling(tmp_path):
     client = FakeClient({it.url: _success(it.url) for it in items}, available=10)
     store = SeenStore(tmp_path / "seen.json")
 
-    counts, _, _ = main.archive_new_urls(client, store, items, _settings(max_concurrent_spn2_jobs=10))
+    counts, _, _, _ = main.archive_new_urls(client, store, items, _settings(max_concurrent_spn2_jobs=10))
 
     assert counts["success"] == 3
     # One wave of 3: all submits happen before any status poll (decoupled).
@@ -107,7 +107,7 @@ def test_retryable_error_is_resubmitted_on_next_run(tmp_path):
     store = SeenStore(tmp_path / "seen.json")
     settings = _settings(max_concurrent_spn2_jobs=10, max_capture_attempts=3)
 
-    counts, _, _ = main.archive_new_urls(client, store, [item], settings)
+    counts, _, _, _ = main.archive_new_urls(client, store, [item], settings)
     assert counts["error"] == 1
     assert not store.is_known(item.url)  # transient -> eligible for retry
 
@@ -122,7 +122,7 @@ def test_already_archived_is_not_counted_as_an_error(tmp_path):
     store = SeenStore(tmp_path / "seen.json")
     settings = _settings(max_concurrent_spn2_jobs=10)
 
-    counts, already_archived_by_source, _ = main.archive_new_urls(client, store, [item], settings)
+    counts, already_archived_by_source, _, _ = main.archive_new_urls(client, store, [item], settings)
 
     assert counts == {"success": 0, "error": 0, "pending": 0, "already_archived": 1}
     assert already_archived_by_source == {"s": 1}
@@ -147,7 +147,7 @@ def test_rate_limited_hits_are_tracked_per_source(tmp_path):
     store = SeenStore(tmp_path / "seen.json")
     settings = _settings(max_concurrent_spn2_jobs=10)
 
-    counts, _, rate_limited_by_source = main.archive_new_urls(client, store, [a, b], settings)
+    counts, _, rate_limited_by_source, _ = main.archive_new_urls(client, store, [a, b], settings)
 
     assert counts["success"] == 2  # a 429 doesn't prevent an eventual real capture
     assert rate_limited_by_source == {"src-a": 1}
@@ -265,7 +265,7 @@ def test_archive_submits_normalized_url(tmp_path):
     client = FakeClient({clean: _success(clean)}, available=10)
     store = SeenStore(tmp_path / "seen.json")
 
-    counts, _, _ = main.archive_new_urls(client, store, [item], _settings(max_concurrent_spn2_jobs=10))
+    counts, _, _, _ = main.archive_new_urls(client, store, [item], _settings(max_concurrent_spn2_jobs=10))
 
     assert counts["success"] == 1
     # The tracking param is stripped before submission, so the capture is clean.
@@ -281,7 +281,7 @@ def test_archive_dedupes_urls_differing_only_by_tracking_param(tmp_path):
     client = FakeClient({"https://e.com/a": _success("https://e.com/a")}, available=10)
     store = SeenStore(tmp_path / "seen.json")
 
-    counts, _, _ = main.archive_new_urls(client, store, items, _settings(max_concurrent_spn2_jobs=10))
+    counts, _, _, _ = main.archive_new_urls(client, store, items, _settings(max_concurrent_spn2_jobs=10))
 
     assert counts["success"] == 1
     assert len([c for c in client.calls if c[0] == "submit"]) == 1
@@ -292,7 +292,7 @@ def test_archive_defers_everything_when_run_budget_is_zero(tmp_path):
     client = FakeClient({it.url: _success(it.url) for it in items}, available=10)
     store = SeenStore(tmp_path / "seen.json")
 
-    counts, _, _ = main.archive_new_urls(
+    counts, _, _, _ = main.archive_new_urls(
         client, store, items, _settings(max_concurrent_spn2_jobs=10, max_run_seconds=0)
     )
 

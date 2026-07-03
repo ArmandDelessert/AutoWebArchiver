@@ -17,6 +17,7 @@ from .logging_setup import setup_logging
 from .spn2.client import AlreadyArchivedError, SPN2Client
 from .spn2.models import SPN2Result, result_from_status_payload
 from .state.feed_stats import FeedStatsStore
+from .state.run_history import RunHistoryStore
 from .state.store import SeenStore, normalize_url
 
 logger = logging.getLogger(__name__)
@@ -25,6 +26,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG_PATH = REPO_ROOT / "config" / "sources.yaml"
 DEFAULT_STATE_PATH = REPO_ROOT / "state" / "seen.json"
 DEFAULT_FEED_STATS_PATH = REPO_ROOT / "state" / "feed_stats.json"
+DEFAULT_RUN_HISTORY_PATH = REPO_ROOT / "state" / "run_history.json"
 
 
 class FatalError(Exception):
@@ -242,7 +244,7 @@ def archive_new_urls(
     items: list[DiscoveredItem],
     settings: Settings,
     exhaustive: dict[str, bool] | None = None,
-) -> tuple[dict[str, int], dict[str, int], dict[str, int]]:
+) -> tuple[dict[str, int], dict[str, int], dict[str, int], int]:
     """Archive newly discovered URLs with a single-threaded sliding window: keep
     up to `concurrency` captures in flight, submitting a new one as soon as a slot
     frees and the per-minute rate allows, until the time budget runs out.
@@ -251,11 +253,10 @@ def archive_new_urls(
     submissions/min, not our local concurrency). Which item gets the next slot
     is decided by SourceScheduler -- see its docstring for the scheduling rules.
 
-    Returns (counts, already_archived_by_source, rate_limited_by_source): the
-    aggregate outcome counts, plus per-source breakdowns of the
-    "already_archived" outcome and of 429 (rate-limited) responses -- both
-    known only here (during submission), not at discovery time, so the caller
-    can attach them to each source's feed_stats entry."""
+    Returns (counts, already_archived_by_source, rate_limited_by_source,
+    deferred_count): the aggregate outcome counts, per-source breakdowns of
+    the "already_archived" outcome and of 429 (rate-limited) responses, and
+    how many URLs were left unsubmitted when the time budget ran out."""
     counts = {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
     already_archived_by_source: dict[str, int] = {}
     rate_limited_by_source: dict[str, int] = {}
@@ -342,14 +343,15 @@ def archive_new_urls(
             break
         time.sleep(min(waits))
 
-    if len(scheduler):
+    deferred_count = len(scheduler)
+    if deferred_count:
         logger.warning(
             "Stopped after the %ds run budget; %d URL(s) deferred to the next run",
             settings.max_run_seconds,
-            len(scheduler),
+            deferred_count,
         )
 
-    return counts, already_archived_by_source, rate_limited_by_source
+    return counts, already_archived_by_source, rate_limited_by_source, deferred_count
 
 
 def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> None:
@@ -381,6 +383,7 @@ def run(
     config_path: Path = DEFAULT_CONFIG_PATH,
     state_path: Path = DEFAULT_STATE_PATH,
     feed_stats_path: Path = DEFAULT_FEED_STATS_PATH,
+    run_history_path: Path = DEFAULT_RUN_HISTORY_PATH,
 ) -> int:
     setup_logging()
     load_dotenv()
@@ -401,6 +404,7 @@ def run(
 
     store = SeenStore(state_path)
     feed_stats = FeedStatsStore(feed_stats_path)
+    run_history = RunHistoryStore(run_history_path)
     client = SPN2Client(
         access_key, secret_key, max_captures_per_minute=config.settings.max_captures_per_minute
     )
@@ -458,7 +462,7 @@ def run(
             logger.error("Failed to discover items from %s: %s", source.name, exc)
 
     exhaustive_by_source = {source.name: source.exhaustive for source in config.sources}
-    archive_counts, already_archived_by_source, rate_limited_by_source = archive_new_urls(
+    archive_counts, already_archived_by_source, rate_limited_by_source, deferred_count = archive_new_urls(
         client, store, discovered, config.settings, exhaustive_by_source
     )
     for key, value in archive_counts.items():
@@ -489,6 +493,23 @@ def run(
     except OSError as exc:
         logger.error("Could not write state file %s: %s", state_path, exc)
         return 1
+
+    run_history.record(
+        sources_processed=len(config.sources),
+        discovered=len(discovered),
+        success=totals["success"],
+        error=totals["error"],
+        already_archived=totals["already_archived"],
+        pending=totals["pending"],
+        rate_limited=client.rate_limited_count,
+        deferred=deferred_count,
+        purged=purged,
+    )
+    try:
+        run_history.purge_older_than(config.settings.state_max_age_days)
+        run_history.save()
+    except OSError as exc:
+        logger.error("Could not write run history file %s: %s", run_history_path, exc)
 
     logger.info(
         "Run summary: %d source(s) processed, %d discovered, %d success, %d error, "

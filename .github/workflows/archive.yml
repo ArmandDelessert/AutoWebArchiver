@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add state/seen.json state/feed_stats.json
+          git add state/seen.json state/feed_stats.json state/run_history.json
           if git diff --staged --quiet; then
             echo "No state changes to commit"
             exit 0

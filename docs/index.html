@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoWebArchiver — Monitoring</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --border: #2a2e38;
+    --text: #e6e8ee;
+    --muted: #9aa1b1;
+    --accent: #5b8def;
+    --ok: #3fb950;
+    --warn: #d29922;
+    --bad: #f85149;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 24px;
+  }
+  header { margin-bottom: 24px; }
+  h1 { margin: 0 0 4px; font-size: 1.5rem; }
+  .subtitle { color: var(--muted); font-size: 0.9rem; }
+  .subtitle a { color: var(--accent); }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .card .label { color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; }
+  .card .value { font-size: 1.6rem; font-weight: 600; margin-top: 4px; }
+  .card .value.ok { color: var(--ok); }
+  .card .value.warn { color: var(--warn); }
+  .card .value.bad { color: var(--bad); }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .panel h2 { margin: 0 0 12px; font-size: 1.05rem; }
+
+  .charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; }
+  .chart-box { position: relative; height: 220px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 500; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; }
+  tr:last-child td { border-bottom: none; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 0.75rem; }
+  .badge.exhaustive { background: #2a2e38; color: var(--muted); }
+  .badge.urgent { background: #1f3a2e; color: var(--ok); }
+  .highlight-bad { color: var(--bad); font-weight: 600; }
+
+  .alerts { display: flex; flex-direction: column; gap: 8px; }
+  .alert { border-left: 3px solid var(--bad); background: #2a1416; padding: 10px 12px; border-radius: 4px; font-size: 0.88rem; }
+  .alert.none { border-left-color: var(--ok); background: #14241a; color: var(--muted); }
+
+  .error-msg { color: var(--bad); padding: 40px; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AutoWebArchiver — Monitoring</h1>
+  <div class="subtitle">
+    Données lues en direct depuis
+    <a href="https://github.com/ArmandDelessert/AutoWebArchiver" target="_blank">ArmandDelessert/AutoWebArchiver</a>
+    (branche <code>main</code>) — <span id="last-updated">chargement…</span>
+  </div>
+</header>
+
+<div id="content">
+  <div class="cards" id="cards"></div>
+
+  <div class="panel">
+    <h2>Alertes</h2>
+    <div class="alerts" id="alerts"></div>
+  </div>
+
+  <div class="panel">
+    <h2>Tendance des runs</h2>
+    <div class="charts">
+      <div class="chart-box"><canvas id="chart-outcomes"></canvas></div>
+      <div class="chart-box"><canvas id="chart-429"></canvas></div>
+      <div class="chart-box"><canvas id="chart-backlog"></canvas></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>État par source</h2>
+    <table id="sources-table">
+      <thead>
+        <tr>
+          <th>Source</th>
+          <th>Type</th>
+          <th class="num">Nouveaux</th>
+          <th class="num">Dropped</th>
+          <th class="num">Jamais archivés</th>
+          <th class="num">Déjà archivés</th>
+          <th class="num">429</th>
+          <th>Couverture (récent)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+const OWNER = "ArmandDelessert";
+const REPO = "AutoWebArchiver";
+const BRANCH = "main";
+const RAW = (path) => `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${path}`;
+
+const CHART_COLORS = {
+  success: "#3fb950",
+  error: "#f85149",
+  already_archived: "#5b8def",
+  rate_limited: "#d29922",
+  backlog: "#8957e5",
+};
+
+function fmt(n) {
+  return new Intl.NumberFormat("fr-FR").format(n);
+}
+
+function timeAgo(isoString) {
+  const then = new Date(isoString.replace(" ", "T"));
+  const diffMin = Math.round((Date.now() - then.getTime()) / 60000);
+  if (diffMin < 60) return `il y a ${diffMin} min`;
+  const diffH = Math.round(diffMin / 60);
+  if (diffH < 48) return `il y a ${diffH} h`;
+  return `il y a ${Math.round(diffH / 24)} j`;
+}
+
+async function fetchJson(path) {
+  const res = await fetch(RAW(path) + `?_=${Date.now()}`); // cache-bust
+  if (!res.ok) throw new Error(`${path}: HTTP ${res.status}`);
+  return res.json();
+}
+
+function card(label, value, cls = "") {
+  const div = document.createElement("div");
+  div.className = "card";
+  div.innerHTML = `<div class="label">${label}</div><div class="value ${cls}">${value}</div>`;
+  return div;
+}
+
+function renderCards(runHistory) {
+  const cardsEl = document.getElementById("cards");
+  cardsEl.innerHTML = "";
+  if (!runHistory.length) {
+    cardsEl.appendChild(card("Runs enregistrés", "0"));
+    return;
+  }
+  const last = runHistory[runHistory.length - 1];
+  const total = last.success + last.error;
+  const successRate = total ? Math.round((last.success / total) * 100) : 100;
+  const rateCls = successRate >= 80 ? "ok" : successRate >= 50 ? "warn" : "bad";
+
+  cardsEl.appendChild(card("Dernier run", timeAgo(last.timestamp)));
+  cardsEl.appendChild(card("Succès / Erreurs (dernier run)", `${fmt(last.success)} / ${fmt(last.error)}`, rateCls));
+  cardsEl.appendChild(card("Taux de succès (dernier run)", `${successRate}%`, rateCls));
+  cardsEl.appendChild(card("Déjà archivés (dernier run)", fmt(last.already_archived || 0)));
+  cardsEl.appendChild(card("429 rate-limited (dernier run)", fmt(last.rate_limited || 0), last.rate_limited > 150 ? "warn" : ""));
+  cardsEl.appendChild(card("Backlog reporté", fmt(last.deferred || 0)));
+}
+
+function renderAlerts(feedStats) {
+  const alertsEl = document.getElementById("alerts");
+  alertsEl.innerHTML = "";
+  const problems = [];
+  for (const [source, data] of Object.entries(feedStats)) {
+    const history = data.history || [];
+    if (!history.length) continue;
+    const latest = history[history.length - 1];
+    if (latest.dropped_unarchived_count) {
+      problems.push(
+        `<strong>${source}</strong> : ${latest.dropped_unarchived_count} URL(s) sorties du flux sans jamais avoir été archivées (perte réelle, dernier run).`
+      );
+    }
+  }
+  if (!problems.length) {
+    alertsEl.innerHTML = `<div class="alert none">Aucune perte d'URL détectée sur le dernier run de chaque source.</div>`;
+    return;
+  }
+  for (const p of problems) {
+    const div = document.createElement("div");
+    div.className = "alert";
+    div.innerHTML = p;
+    alertsEl.appendChild(div);
+  }
+}
+
+function renderCharts(runHistory) {
+  const labels = runHistory.map((r) => new Date(r.timestamp.replace(" ", "T")).toLocaleString("fr-FR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }));
+
+  new Chart(document.getElementById("chart-outcomes"), {
+    type: "line",
+    data: {
+      labels,
+      datasets: [
+        { label: "Succès", data: runHistory.map((r) => r.success), borderColor: CHART_COLORS.success, tension: 0.2 },
+        { label: "Erreurs", data: runHistory.map((r) => r.error), borderColor: CHART_COLORS.error, tension: 0.2 },
+        { label: "Déjà archivés", data: runHistory.map((r) => r.already_archived || 0), borderColor: CHART_COLORS.already_archived, tension: 0.2 },
+      ],
+    },
+    options: chartOptions("Issues par run"),
+  });
+
+  new Chart(document.getElementById("chart-429"), {
+    type: "line",
+    data: {
+      labels,
+      datasets: [
+        { label: "429 (rate-limited)", data: runHistory.map((r) => r.rate_limited || 0), borderColor: CHART_COLORS.rate_limited, tension: 0.2, fill: true, backgroundColor: "rgba(210,153,34,0.15)" },
+      ],
+    },
+    options: chartOptions("429 par run"),
+  });
+
+  new Chart(document.getElementById("chart-backlog"), {
+    type: "line",
+    data: {
+      labels,
+      datasets: [
+        { label: "Backlog reporté", data: runHistory.map((r) => r.deferred || 0), borderColor: CHART_COLORS.backlog, tension: 0.2, fill: true, backgroundColor: "rgba(137,87,229,0.15)" },
+      ],
+    },
+    options: chartOptions("Backlog restant"),
+  });
+}
+
+function chartOptions(title) {
+  return {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      title: { display: true, text: title, color: "#e6e8ee" },
+      legend: { labels: { color: "#9aa1b1", boxWidth: 12, font: { size: 11 } } },
+    },
+    scales: {
+      x: { ticks: { color: "#9aa1b1", maxRotation: 0, autoSkip: true, font: { size: 10 } }, grid: { color: "#2a2e38" } },
+      y: { ticks: { color: "#9aa1b1" }, grid: { color: "#2a2e38" }, beginAtZero: true },
+    },
+  };
+}
+
+function renderSourcesTable(feedStats) {
+  const tbody = document.querySelector("#sources-table tbody");
+  tbody.innerHTML = "";
+  const sources = Object.keys(feedStats).sort();
+  for (const source of sources) {
+    const history = feedStats[source].history || [];
+    if (!history.length) continue;
+    const latest = history[history.length - 1];
+    const exhaustive = latest.dropped_count === null || latest.dropped_count === undefined;
+
+    const tr = document.createElement("tr");
+    const neverArchived = latest.dropped_unarchived_count;
+    const neverArchivedCell = neverArchived
+      ? `<span class="highlight-bad">${fmt(neverArchived)}</span>`
+      : (exhaustive ? "—" : "0");
+
+    tr.innerHTML = `
+      <td>${source}</td>
+      <td><span class="badge ${exhaustive ? "exhaustive" : "urgent"}">${exhaustive ? "exhaustif" : "rotatif"}</span></td>
+      <td class="num">${fmt(latest.new_count)}</td>
+      <td class="num">${exhaustive ? "—" : fmt(latest.dropped_count)}</td>
+      <td class="num">${neverArchivedCell}</td>
+      <td class="num">${fmt(latest.already_archived_count || 0)}</td>
+      <td class="num">${fmt(latest.rate_limited_count || 0)}</td>
+      <td>${latest.newest_published_at ? new Date(latest.newest_published_at).toLocaleDateString("fr-FR") : "—"}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
+async function main() {
+  try {
+    const [runHistory, feedStats] = await Promise.all([
+      fetchJson("state/run_history.json"),
+      fetchJson("state/feed_stats.json"),
+    ]);
+
+    document.getElementById("last-updated").textContent = runHistory.length
+      ? `dernier run ${timeAgo(runHistory[runHistory.length - 1].timestamp)}`
+      : "aucun run enregistré";
+
+    renderCards(runHistory);
+    renderAlerts(feedStats);
+    if (runHistory.length > 1) renderCharts(runHistory);
+    renderSourcesTable(feedStats);
+  } catch (err) {
+    document.getElementById("content").innerHTML = `<div class="error-msg">Impossible de charger les données : ${err.message}</div>`;
+  }
+}
+
+main();
+</script>
+
+</body>
+</html>
