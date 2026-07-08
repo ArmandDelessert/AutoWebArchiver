@@ -560,6 +560,17 @@
         "oldest_published_at": "2026-01-20T14:34:10+01:00",
         "rate_limited_count": 0,
         "timestamp": "2026-07-08T19:48:17Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 141,
+        "new_count": 0,
+        "newest_published_at": "2026-07-07T15:10:05+02:00",
+        "oldest_published_at": "2026-01-20T14:34:10+01:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-07-08T22:16:49Z"
       }
     ],
     "last_urls": []
@@ -1125,6 +1136,17 @@
         "oldest_published_at": "2013-06-26T15:16:47+02:00",
         "rate_limited_count": 0,
         "timestamp": "2026-07-08T19:48:10Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 2313,
+        "new_count": 0,
+        "newest_published_at": "2026-07-07T15:02:15+02:00",
+        "oldest_published_at": "2013-06-26T15:16:47+02:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-07-08T22:16:40Z"
       }
     ],
     "last_urls": []
@@ -1690,6 +1712,17 @@
         "oldest_published_at": "2013-12-17T19:25:52+01:00",
         "rate_limited_count": 55,
         "timestamp": "2026-07-08T19:48:05Z"
+      },
+      {
+        "already_archived_count": 72,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 13012,
+        "new_count": 3653,
+        "newest_published_at": "2026-07-08T10:03:19+02:00",
+        "oldest_published_at": "2013-12-17T19:25:52+01:00",
+        "rate_limited_count": 208,
+        "timestamp": "2026-07-08T22:16:35Z"
       }
     ],
     "last_urls": []
@@ -2552,11 +2585,21 @@
         "oldest_published_at": "2026-07-06T22:00:10+02:00",
         "rate_limited_count": 0,
         "timestamp": "2026-07-08T19:47:51Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 7,
+        "dropped_unarchived_count": 0,
+        "item_count": 270,
+        "new_count": 5,
+        "newest_published_at": "2026-07-09T00:09:37+02:00",
+        "oldest_published_at": "2026-07-07T02:49:52+02:00",
+        "rate_limited_count": 2,
+        "timestamp": "2026-07-08T22:16:21Z"
       }
     ],
     "last_urls": [
       "https://www.lemonde.fr/actualite-medias/article/2026/07/07/le-prince-harry-et-elton-john-perdent-leur-proces-pour-atteinte-a-la-vie-privee-contre-le-daily-mail_6721501_3236.html",
-      "https://www.lemonde.fr/afrique/article/2026/07/06/au-soudan-15-mineurs-meurent-dans-l-effondrement-d-une-mine-d-or-dans-le-nord-du-pays_6721256_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/07/07/au-mali-comment-djihadistes-et-independantistes-se-sont-allies-pour-faire-tomber-la-junte-a-bamako_6721401_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/07/07/au-zimbabwe-le-president-promulgue-une-reforme-constitutionnelle-prolongeant-son-mandat-de-deux-ans_6721529_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/07/07/maroc-plusieurs-femmes-accusent-de-violences-sexuelles-l-archeveque-de-rabat-cristobal-lopez-romero-le-vatican-ouvre-une-enquete_6721534_3212.html",
@@ -2574,7 +2617,6 @@
       "https://www.lemonde.fr/campus/article/2026/07/07/baccalaureat-2026-un-taux-de-reussite-provisoire-de-85-5-selon-le-ministre-de-l-education-nationale_6721470_4401467.html",
       "https://www.lemonde.fr/campus/article/2026/07/08/j-entends-des-voisins-se-baigner-dans-leur-piscine-ca-donne-envie-en-pleine-canicule-la-chambre-de-bonne-dans-les-beaux-quartiers-de-nina-etudiante-a-paris_6721872_4401467.html",
       "https://www.lemonde.fr/campus/article/2026/07/08/la-canicule-un-bapteme-du-feu-pour-les-externes-en-medecine-je-n-ai-pas-vecu-le-covid-ca-ete-ma-premiere-crise-sanitaire_6721727_4401467.html",
-      "https://www.lemonde.fr/critique-litteraire/article/2026/07/06/les-breves-critiques-du-monde-des-livres-ian-soliane-victor-del-arbol-anne-solange-muis-anna-starobinets_6721255_5473203.html",
       "https://www.lemonde.fr/culture/article/2026/07/07/a-barcelone-les-architectes-au-chevet-d-une-planete-en-transition_6721454_3246.html",
       "https://www.lemonde.fr/culture/article/2026/07/07/en-tension-sur-france-tv-hugodecrypte-modernise-les-codes-du-reportage-televise_6721514_3246.html",
       "https://www.lemonde.fr/culture/article/2026/07/07/festival-d-avignon-cuckoo-la-melancolie-du-cuiseur-de-riz_6721445_3246.html",
@@ -2599,8 +2641,6 @@
       "https://www.lemonde.fr/culture/article/2026/07/08/les-films-a-l-affiche-la-chaleur-evil-dead-burn-dry-leaf-l-ecologie-des-sentiments_6721770_3246.html",
       "https://www.lemonde.fr/culture/article/2026/07/08/sebastien-vanicek-realisateur-d-evil-dead-burn-l-horreur-est-le-seul-genre-qui-peut-rivaliser-avec-les-blockbusters_6721805_3246.html",
       "https://www.lemonde.fr/culture/article/2026/07/08/vaiana-la-legende-du-bout-du-monde-une-version-en-prise-de-vue-reelle-fidele-au-film-d-animation-d-origine_6721777_3246.html",
-      "https://www.lemonde.fr/economie/article/2026/07/06/fibre-excellence-ultime-delai-pour-conforter-le-plan-de-sauvetage-de-matthieu-pigasse_6721257_3234.html",
-      "https://www.lemonde.fr/economie/article/2026/07/06/thales-trouve-un-accord-avec-exail-technologies-l-expert-francais-en-drones-chasseurs-de-mines-et-en-systemes-de-navigation_6721253_3234.html",
       "https://www.lemonde.fr/economie/article/2026/07/07/canicule-a-paris-le-reseau-electrique-d-enedis-face-a-des-accumulations-de-chaleur-inedites_6721435_3234.html",
       "https://www.lemonde.fr/economie/article/2026/07/07/croissance-en-france-le-gouvernement-abaisse-sa-prevision-a-0-7-pour-2026_6721463_3234.html",
       "https://www.lemonde.fr/economie/article/2026/07/07/des-petits-ateliers-aux-grandes-maisons-la-joaillerie-ravive-un-secteur-du-luxe-a-la-peine_6721408_3234.html",
@@ -2627,6 +2667,7 @@
       "https://www.lemonde.fr/economie/article/2026/07/08/scission-de-vivendi-vincent-bollore-gagne-encore-une-manche-face-aux-actionnaires-minoritaires_6721879_3234.html",
       "https://www.lemonde.fr/economie/article/2026/07/08/symbole-de-la-crise-de-l-emploi-l-apprentissage-poursuit-son-recul_6721820_3234.html",
       "https://www.lemonde.fr/economie/article/2026/07/08/transport-aerien-l-union-europeenne-renforce-les-droits-des-passagers_6721854_3234.html",
+      "https://www.lemonde.fr/economie/article/2026/07/09/france-televisions-s-inscrit-plus-que-jamais-dans-la-strategie-streaming-first_6721906_3234.html",
       "https://www.lemonde.fr/emploi/article/2026/07/07/forfait-en-jours-l-employeur-seul-responsable-du-controle-de-la-charge-de-travail-de-ses-salaries_6721409_1698637.html",
       "https://www.lemonde.fr/emploi/article/2026/07/08/entre-salaries-et-patrons-le-grand-malentendu-des-strategies-d-entreprise-mon-patron-en-start-up-pouvait-changer-d-avis-du-jour-au-lendemain-en-fonction-de-ce-qu-il-lisait-sur-linkedin_6721760_1698637.html",
       "https://www.lemonde.fr/idees/article/2026/07/07/a-chaque-episode-climatique-majeur-notre-capacite-collective-a-faire-face-repose-sur-des-travailleurs-en-premiere-ligne_6721427_3232.html",
@@ -2681,6 +2722,7 @@
       "https://www.lemonde.fr/international/article/2026/07/08/attentat-a-damas-pendant-la-visite-d-emmanuel-macron-le-bilan-revu-a-un-mort-et-36-blesses_6721829_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/au-japon-les-ryokan-de-luxe-se-transforment-pour-seduire-la-clientele-etrangere_6721624_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/au-venezuela-la-tenue-d-elections-et-le-sort-des-prisonniers-politiques-incertains-apres-le-seisme_6721876_3210.html",
+      "https://www.lemonde.fr/international/article/2026/07/08/des-missiles-patriot-fabriques-en-ukraine-une-promesse-de-trump-aux-contours-flous_6721903_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/donald-trump-affirme-que-le-cessez-le-feu-avec-l-iran-est-termine-apres-la-reprise-de-frappes-massives_6721802_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/donald-trump-annonce-que-les-etats-unis-vont-autoriser-l-ukraine-a-fabriquer-des-missiles-patriot_6721889_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/en-allemagne-attaque-dans-un-college-lycee-en-baviere-deux-blessees-graves-un-adolescent-de-16-ans-arrete_6721863_3210.html",
@@ -2688,6 +2730,7 @@
       "https://www.lemonde.fr/international/article/2026/07/08/l-unrwa-l-agence-de-l-onu-chargee-des-refugies-palestiniens-visee-par-des-campagnes-d-influence-de-l-allemagne-aux-etats-unis_6721825_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/le-groenland-n-est-pas-a-vendre-reaffirme-la-premiere-ministre-danoise-en-reponse-a-donald-trump_6721785_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/les-etats-unis-frappent-l-iran-apres-de-nouvelles-attaques-de-navires-dans-le-detroit-d-ormuz_6721557_3210.html",
+      "https://www.lemonde.fr/international/article/2026/07/08/les-etats-unis-vont-retirer-la-syrie-de-leur-liste-des-etats-soutenant-le-terrorisme_6721904_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/les-groenlandais-ont-ete-tres-clairs-ils-ne-souhaitent-pas-faire-partie-des-etats-unis-repond-la-premiere-ministre-danoise-mette-frederiksen-a-donald-trump_6721812_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/les-pays-de-l-otan-y-compris-les-etats-unis-reaffirment-leur-engagement-indefectible-envers-la-clause-d-assistance-mutuelle_6721840_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/pakistan-42-morts-ces-quatre-derniers-jours-lors-d-attaques-dans-le-baloutchistan_6721849_3210.html",
@@ -2695,8 +2738,9 @@
       "https://www.lemonde.fr/international/article/2026/07/08/sa-prothese-lui-fait-mal-mais-il-supporte-pour-ne-pas-montrer-qu-il-est-different-a-gaza-le-traumatisme-des-enfants-mutiles-de-guerre_6721856_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/seismes-au-venezuela-le-bilan-du-s-eleve-desormais-a-3-685-morts-l-aeroport-de-caracas-bientot-rouvert_6721591_3210.html",
       "https://www.lemonde.fr/international/article/2026/07/08/sommet-de-l-otan-donald-trump-annonce-que-les-etats-unis-vont-cesser-tout-echange-commercial-avec-l-espagne_6721813_3210.html",
+      "https://www.lemonde.fr/international/article/2026/07/09/affaire-e-jean-carroll-un-juge-ordonne-a-donald-trump-de-verser-les-5-millions-de-dollars-qu-il-doit-a-l-autrice_6721905_3210.html",
       "https://www.lemonde.fr/international/live/2026/07/08/en-direct-guerre-au-moyen-orient-le-vice-president-americain-j-d-vance-menace-l-iran-d-une-reponse-militaire-en-cas-de-fermeture-du-detroit-d-ormuz_6721826_3210.html",
-      "https://www.lemonde.fr/international/live/2026/07/08/en-direct-guerre-en-ukraine-le-gouvernement-russe-interdit-les-exportations-de-gazole-en-raison-des-penuries-provoquees-par-les-frappes-ukrainiennes_6720832_3210.html",
+      "https://www.lemonde.fr/international/live/2026/07/08/en-direct-guerre-en-ukraine-les-pays-de-l-otan-reaffirment-leur-soutien-indefectible-a-kiev-a-l-issue-du-sommet-de-l-alliance-en-turquie_6720832_3210.html",
       "https://www.lemonde.fr/international/video/2026/07/07/a-damas-les-images-des-explosions-pres-de-l-hotel-d-emmanuel-macron_6721482_3210.html",
       "https://www.lemonde.fr/intimites/article/2026/07/07/cinq-pepites-a-lire-ecouter-ou-regarder-pour-parler-d-ecologie-a-vos-enfants_6721406_6190330.html",
       "https://www.lemonde.fr/l-air-du-temps/article/2026/07/07/le-football-selon-trump_6721479_6589000.html",
@@ -2724,7 +2768,6 @@
       "https://www.lemonde.fr/pixels/article/2026/07/08/je-me-sens-salie-humiliee-au-proces-de-l-administrateur-de-cfake-site-de-deepfakes-a-caractere-sexuel_6721558_4408996.html",
       "https://www.lemonde.fr/pixels/article/2026/07/08/jeux-video-un-rapport-parlementaire-veut-conditionner-les-aides-a-des-engagements-contre-le-sexisme-et-es-violences-sexuelles_6721842_4408996.html",
       "https://www.lemonde.fr/pixels/article/2026/07/08/openai-annonce-le-lancement-public-jeudi-de-son-nouveau-modele-d-ia-gpt-5-6-apres-un-premier-deploiement-limite_6721784_4408996.html",
-      "https://www.lemonde.fr/planete/article/2026/07/06/seismes-au-venezuela-le-bilan-s-alourdit-passant-a-plus-de-3-500-morts-annonce-le-gouvernement_6721254_3244.html",
       "https://www.lemonde.fr/planete/article/2026/07/07/canicule-61-departements-maintenus-en-vigilance-orange-risques-accrus-d-incendies-selon-meteo-france_6721419_3244.html",
       "https://www.lemonde.fr/planete/article/2026/07/07/comment-les-chercheurs-scrutent-les-impacts-des-vagues-de-chaleur-sur-la-faune-et-la-flore-de-mediterranee-nous-sommes-entres-dans-un-monde-inconnu_6721498_3244.html",
       "https://www.lemonde.fr/planete/article/2026/07/07/incendies-dans-les-pyrenees-orientales-entre-la-fumee-qui-obscurcissait-tout-la-cendre-qu-on-respirait-les-canadair-qui-rasaient-nos-tetes-je-ne-pensais-pas-m-en-sortir_6721412_3244.html",
@@ -2821,7 +2864,6 @@
       "https://www.lemonde.fr/sport/article/2026/07/08/tour-de-france-2026-la-victoire-au-sprint-d-olav-kooij-ramene-un-peu-de-normalite-a-une-edition-qui-en-manquait_6721898_3242.html",
       "https://www.lemonde.fr/sport/article/2026/07/08/tour-de-france-2026-le-parcours-de-la-cinquieme-etape-lannemezan-pau_6721782_3242.html",
       "https://www.lemonde.fr/sport/live/2026/07/07/en-direct-argentine-egypte-suivez-le-huitieme-de-finale-de-la-coupe-du-monde-de-football_6721497_3242.html",
-      "https://www.lemonde.fr/sport/live/2026/07/07/en-direct-etats-unis-belgique-suivez-le-huitieme-de-finale-de-la-coupe-du-monde-de-football_6721258_3242.html",
       "https://www.lemonde.fr/sport/live/2026/07/07/en-direct-suisse-colombie-suivez-le-huitieme-de-finale-de-la-coupe-du-monde-de-football_6721540_3242.html",
       "https://www.lemonde.fr/sport/live/2026/07/07/en-direct-tour-de-france-suivez-la-quatrieme-etape-entre-carcassonne-et-foix_6721466_3242.html",
       "https://www.lemonde.fr/sport/live/2026/07/08/en-direct-tour-de-france-suivez-la-cinquieme-etape-entre-lannemezan-et-pau_6721837_3242.html",
@@ -3687,6 +3729,17 @@
         "oldest_published_at": "2026-07-08T08:42:25Z",
         "rate_limited_count": 0,
         "timestamp": "2026-07-08T19:47:51Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 0,
+        "dropped_unarchived_count": 0,
+        "item_count": 21,
+        "new_count": 0,
+        "newest_published_at": "2026-07-08T19:05:08Z",
+        "oldest_published_at": "2026-07-08T08:42:25Z",
+        "rate_limited_count": 0,
+        "timestamp": "2026-07-08T22:16:22Z"
       }
     ],
     "last_urls": [
@@ -4571,6 +4624,17 @@
         "oldest_published_at": "2026-07-07T18:14:27Z",
         "rate_limited_count": 0,
         "timestamp": "2026-07-08T19:47:50Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 0,
+        "dropped_unarchived_count": 0,
+        "item_count": 25,
+        "new_count": 1,
+        "newest_published_at": "2026-07-08T20:55:00Z",
+        "oldest_published_at": "2026-07-07T18:14:27Z",
+        "rate_limited_count": 0,
+        "timestamp": "2026-07-08T22:16:21Z"
       }
     ],
     "last_urls": [
@@ -5162,6 +5226,17 @@
         "oldest_published_at": "2018-09-12T09:37:54+00:00",
         "rate_limited_count": 0,
         "timestamp": "2026-07-08T19:48:17Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 862,
+        "new_count": 0,
+        "newest_published_at": "2026-07-08T20:18:05+00:00",
+        "oldest_published_at": "2018-09-12T09:37:54+00:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-07-08T22:16:49Z"
       }
     ],
     "last_urls": []
