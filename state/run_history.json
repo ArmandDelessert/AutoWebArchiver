@@ -922,5 +922,17 @@
     "rate_limited": 0,
     "deferred": 0,
     "purged": 0
+  },
+  {
+    "timestamp": "2026-07-15T14:14:08Z",
+    "sources_processed": 7,
+    "discovered": 16611,
+    "success": 34,
+    "error": 1,
+    "already_archived": 0,
+    "pending": 106,
+    "rate_limited": 12,
+    "deferred": 0,
+    "purged": 0
   }
 ]
