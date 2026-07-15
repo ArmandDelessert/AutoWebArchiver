@@ -50,7 +50,11 @@ def _poll_once(
 ) -> None:
     """Poll every in-flight job (job_id -> (url, source, deadline)) exactly once.
     Resolved jobs are recorded and removed; jobs past their per-job deadline are
-    left pending for the next run. Mutates in_flight and counts in place."""
+    left pending for the next run, UNLESS the entry has been pending for longer
+    than settings.pending_job_max_age_hours -- SPN2 only keeps job status "for
+    a limited time", so a job that old is unlikely to ever resolve and is given
+    up on (retried like any other transient failure) instead of being polled
+    forever. Mutates in_flight and counts in place."""
     now = time.monotonic()
     for job_id, (url, _source, deadline) in list(in_flight.items()):
         try:
@@ -66,8 +70,19 @@ def _poll_once(
             counts[result.status] += 1
             del in_flight[job_id]
         elif now >= deadline:
-            logger.warning('Job for "%s" is still pending after polling timeout', url)
-            counts["pending"] += 1
+            if store.is_pending_stale(url, settings.pending_job_max_age_hours):
+                will_retry = store.mark_error(url, retryable=True, max_attempts=settings.max_capture_attempts)
+                logger.warning(
+                    'Giving up polling "%s": still pending after %.0fh (SPN2 likely no longer has its status)%s',
+                    url,
+                    settings.pending_job_max_age_hours,
+                    " - will retry next run" if will_retry else " - giving up for good",
+                )
+                _save_quietly(store, settings.state_save_interval_seconds)
+                counts["error"] += 1
+            else:
+                logger.warning('Job for "%s" is still pending after polling timeout', url)
+                counts["pending"] += 1
             del in_flight[job_id]
 
 

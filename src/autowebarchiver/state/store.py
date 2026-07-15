@@ -72,6 +72,21 @@ class SeenStore:
             url: entry for url, entry in self._entries.items() if entry.get("status") == "pending"
         }
 
+    def is_pending_stale(self, url: str, max_age_hours: float) -> bool:
+        """True if a "pending" entry has been sitting unresolved for longer
+        than max_age_hours. SPN2's own status API only keeps a job's result
+        "for a limited time due to system memory limitations" (~1h per their
+        docs); once a job has been pending across a cron cycle or two without
+        resolving, further polling attempts are unlikely to ever get a real
+        answer and just keep re-checking a job SPN2 itself may have forgotten
+        about -- this is what lets the caller give up instead of polling the
+        same dead job forever."""
+        entry = self._entries.get(normalize_url(url))
+        if entry is None:
+            return False
+        age = datetime.now(timezone.utc) - _parse_iso(entry.get("first_seen"))
+        return age > timedelta(hours=max_age_hours)
+
     def mark_pending(self, url: str, job_id: str) -> None:
         key = normalize_url(url)
         existing = self._entries.get(key, {})

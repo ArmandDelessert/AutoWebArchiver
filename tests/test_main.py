@@ -340,3 +340,38 @@ def test_poll_leftovers_resolves_previous_run_pending(tmp_path):
     assert counts["success"] == 1
     assert store.is_known(item.url)
     assert len(store.pending_entries()) == 0
+
+
+def test_poll_leftovers_gives_up_on_stale_pending_job(tmp_path):
+    item = _items(1)[0]
+    still_pending = {"status": "pending", "job_id": "job-1", "resources": []}
+    client = FakeClient({item.url: still_pending}, available=10)
+    store = SeenStore(tmp_path / "seen.json")
+    store.mark_pending(item.url, "job-1")
+    store._entries[item.url]["first_seen"] = "2000-01-01T00:00:00Z"  # long past max age
+    client._job_url["job-1"] = item.url
+
+    counts = main.poll_leftovers(client, store, _settings(max_capture_attempts=3, pending_job_max_age_hours=6.0))
+
+    # Given up on, not left pending forever: counted as an error and eligible
+    # for a bounded retry rather than polled again next run.
+    assert counts["error"] == 1
+    assert counts["pending"] == 0
+    assert len(store.pending_entries()) == 0
+    assert not store.is_known(item.url)  # error_retry -> eligible for resubmission
+    assert store.status_of(item.url) == "error_retry"
+
+
+def test_poll_leftovers_still_waits_on_young_pending_job(tmp_path):
+    item = _items(1)[0]
+    still_pending = {"status": "pending", "job_id": "job-1", "resources": []}
+    client = FakeClient({item.url: still_pending}, available=10)
+    store = SeenStore(tmp_path / "seen.json")
+    store.mark_pending(item.url, "job-1")  # first_seen is "now" -- not stale
+    client._job_url["job-1"] = item.url
+
+    counts = main.poll_leftovers(client, store, _settings(pending_job_max_age_hours=6.0))
+
+    assert counts["pending"] == 1
+    assert counts["error"] == 0
+    assert len(store.pending_entries()) == 1

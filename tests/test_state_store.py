@@ -109,6 +109,21 @@ def test_non_retryable_error_is_known_immediately(tmp_path):
     assert store.is_known(url)
 
 
+def test_is_pending_stale(tmp_path):
+    store = SeenStore(tmp_path / "seen.json")
+    store.mark_pending("https://example.com/a", "job-1")
+
+    assert not store.is_pending_stale("https://example.com/a", max_age_hours=6.0)
+
+    store._entries["https://example.com/a"]["first_seen"] = "2000-01-01T00:00:00Z"
+    assert store.is_pending_stale("https://example.com/a", max_age_hours=6.0)
+
+
+def test_is_pending_stale_false_for_unknown_url(tmp_path):
+    store = SeenStore(tmp_path / "seen.json")
+    assert not store.is_pending_stale("https://example.com/unknown", max_age_hours=6.0)
+
+
 def test_attempts_persist_across_pending_resubmit(tmp_path):
     store = SeenStore(tmp_path / "seen.json")
     url = "https://example.com/flaky"

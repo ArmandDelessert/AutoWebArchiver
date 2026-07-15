@@ -50,3 +50,4 @@ settings:
   poll_timeout_seconds: 180
   state_max_age_days: 90
   state_save_interval_seconds: 20
+  pending_job_max_age_hours: 6.0

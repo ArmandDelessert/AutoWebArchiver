@@ -50,6 +50,14 @@ class Settings:
     # single mutation -- with thousands of tracked URLs, writing on every
     # submit/resolve made the file rewrite itself a real, growing cost.
     state_save_interval_seconds: int = 20
+    # A job stuck "pending" past this age is given up on (retried like any
+    # other transient failure, up to max_capture_attempts) instead of being
+    # polled forever. SPN2 only keeps job status "for a limited time" (~1h
+    # per their docs); at a several-hour cron interval, any job that doesn't
+    # resolve within its own run is unlikely to ever get a real answer on a
+    # later poll -- without this, such jobs stay "pending" (and un-resubmittable)
+    # indefinitely, accumulating run over run.
+    pending_job_max_age_hours: float = 6.0
 
 
 @dataclass(frozen=True)
