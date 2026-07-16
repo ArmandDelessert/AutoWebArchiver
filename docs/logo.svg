@@ -2,7 +2,7 @@
   <!-- Pages carried in on a conveyor belt that runs deep into the building:
        drawn before the archive so the rightmost column occludes its left end,
        including the leading page and the belt's first roller. -->
-  <rect x="77" y="63" width="63" height="14" rx="7" fill="#2c2c2c"/>
+  <rect x="77.5" y="63" width="59.5" height="14" rx="7" fill="#2c2c2c"/>
 
   <!-- rollers: cut into the belt's own thickness (never poking below it) as
        small pale "windows" rather than a same-colour shape, so they read
@@ -19,7 +19,7 @@
        outline so they read as paper. The leading page is half-swallowed by
        the rightmost column, showing it entering the archive. -->
   <g fill="#fff" stroke="#2c2c2c" stroke-width="3" stroke-linejoin="round">
-    <path d="M78,45 h12 l8,8 v10 h-20 z"/>
+    <path d="M78.5,45 h12 l8,8 v10 h-20 z"/>
     <path d="M108,45 h12 l8,8 v10 h-20 z"/>
   </g>
 
