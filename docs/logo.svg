@@ -11,20 +11,24 @@
   </g>
 
   <!-- Pages carried in on a conveyor belt, stopping short of the archive
-       with a clear gap (not hidden behind the columns, for legibility). -->
+       with a clear gap (not hidden behind the columns, for legibility).
+       Lowered to sit close to ground level, near the temple's own base. -->
   <g fill="#2c2c2c">
-    <rect x="106" y="52" width="84" height="14" rx="7"/>
-    <!-- pages (rectangle with a folded top-right corner) -->
-    <path d="M118 34h15l5 5v13h-20z"/>
-    <path d="M152 34h15l5 5v13h-20z"/>
+    <rect x="106" y="63" width="84" height="14" rx="7"/>
+    <!-- pages (rectangle with a folded top-right corner): white with a
+         black outline, rather than solid fill, so they read as paper. -->
+    <g fill="#fff" stroke="#2c2c2c" stroke-width="3" stroke-linejoin="round">
+      <path d="M118 45h15l5 5v13h-20z"/>
+      <path d="M152 45h15l5 5v13h-20z"/>
+    </g>
   </g>
   <!-- rollers: cut into the belt's own thickness (never poking below it) as
        small pale "windows" rather than a same-colour shape, so they read
        clearly without adding a new colour. -->
   <g fill="#fff">
-    <circle cx="119" cy="59" r="4.5"/>
-    <circle cx="138" cy="59" r="4.5"/>
-    <circle cx="158" cy="59" r="4.5"/>
-    <circle cx="177" cy="59" r="4.5"/>
+    <circle cx="119" cy="70" r="4.5"/>
+    <circle cx="138" cy="70" r="4.5"/>
+    <circle cx="158" cy="70" r="4.5"/>
+    <circle cx="177" cy="70" r="4.5"/>
   </g>
 </svg>
