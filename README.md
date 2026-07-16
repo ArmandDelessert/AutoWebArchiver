@@ -1,4 +1,4 @@
-<img src="docs/icon.svg" width="48" height="48" align="left" alt="">
+<img src="docs/logo.svg" height="70" alt="">
 
 # AutoWebArchiver
 
@@ -38,15 +38,15 @@ Configurées dans [`config/sources.yaml`](config/sources.yaml) : flux RSS ou sit
 qui tourne et dont les anciens articles peuvent disparaître — voir le scheduler dans
 [`src/autowebarchiver/main.py`](src/autowebarchiver/main.py)).
 
-| Source | Type | Exhaustif |
+| Exhaustif | Type | Source |
 |---|---|---|
-| [rts.ch](https://www.rts.ch/info/toute-info/?format=rss/news) | RSS | non |
-| [lemonde.fr](https://www.lemonde.fr/sitemap_news.xml) | Sitemap | non |
-| [letemps.ch](https://www.letemps.ch/articles.rss) | RSS | non |
-| [le-courrier.ch](https://www.le-courrier.ch/wp-sitemap.xml) | Sitemap | oui |
-| [frenchspin.fr](https://frenchspin.fr/wp-sitemap.xml) | Sitemap | oui |
-| [techcafe.fr](https://techcafe.fr/sitemap_index.xml) | Sitemap | oui |
-| [apreslabiere.fr](https://www.apreslabiere.fr/sitemap.xml) | Sitemap | oui |
+| non | RSS | [letemps.ch](https://www.letemps.ch/articles.rss) |
+| non | RSS | [rts.ch](https://www.rts.ch/info/toute-info/?format=rss/news) |
+| non | Sitemap | [lemonde.fr](https://www.lemonde.fr/sitemap_news.xml) |
+| oui | Sitemap | [apreslabiere.fr](https://www.apreslabiere.fr/sitemap.xml) |
+| oui | Sitemap | [frenchspin.fr](https://frenchspin.fr/wp-sitemap.xml) |
+| oui | Sitemap | [le-courrier.ch](https://www.le-courrier.ch/wp-sitemap.xml) |
+| oui | Sitemap | [techcafe.fr](https://techcafe.fr/sitemap_index.xml) |
 
 `24heures.ch` a été essayé puis retiré : la découverte des articles fonctionnait, mais toutes les tentatives
 de capture échouaient systématiquement (502 *bad gateway*) — le site bloque vraisemblablement les requêtes
