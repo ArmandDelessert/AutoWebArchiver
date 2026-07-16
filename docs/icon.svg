@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Plinth, echoing the Internet Archive's pillar mark (a nod to the
+       destination this project archives to), redrawn as simple bars rather
+       than reusing IA's own logo path. -->
+  <rect x="6" y="52" width="54" height="6" rx="2" fill="#2c2c2c"/>
+  <rect x="8"  y="24" width="7" height="28" rx="2" fill="#2c2c2c"/>
+  <rect x="19" y="30" width="7" height="22" rx="2" fill="#2c2c2c"/>
+  <rect x="30" y="16" width="7" height="36" rx="2" fill="#2c2c2c"/>
+  <rect x="41" y="30" width="7" height="22" rx="2" fill="#2c2c2c"/>
+  <rect x="52" y="24" width="7" height="28" rx="2" fill="#2c2c2c"/>
+  <!-- A page being captured down into the archive, standing in for "auto". -->
+  <path d="M33.5 2v9m-4.5-4 4.5 4.5 4.5-4.5"
+        fill="none" stroke="#c2703d" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

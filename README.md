@@ -1,3 +1,5 @@
+<img src="docs/icon.svg" width="48" height="48" align="left" alt="">
+
 # AutoWebArchiver
 
 Archivage automatique de pages web sur l'[Internet Archive](https://web.archive.org/).
@@ -5,6 +7,9 @@ Archivage automatique de pages web sur l'[Internet Archive](https://web.archive.
 Surveille une liste de sites (flux RSS ou sitemap XML, voir [`config/sources.yaml`](config/sources.yaml)),
 détecte les nouveaux articles, et déclenche leur archivage via l'API [Save Page Now 2](https://web.archive.org/save).
 Conçu pour tourner périodiquement via [GitHub Actions](.github/workflows/archive.yml).
+
+📊 [**Page de statistiques et de monitoring**](https://armanddelessert.github.io/AutoWebArchiver/) — état des sources,
+tendances (succès/erreurs/429), backlog restant.
 
 ## Installation locale
 
@@ -26,55 +31,23 @@ python -m autowebarchiver.main
 pytest
 ```
 
-## Flux RSS & sitemap
+## Sources surveillées
 
-### 24 heures
+Configurées dans [`config/sources.yaml`](config/sources.yaml) : flux RSS ou sitemap XML, avec un indicateur
+`exhaustive` par source (un sitemap qui liste tout l'historique d'un site, sans urgence de capture, vs un flux
+qui tourne et dont les anciens articles peuvent disparaître — voir le scheduler dans
+[`src/autowebarchiver/main.py`](src/autowebarchiver/main.py)).
 
-Notes :
+| Source | Type | Exhaustif |
+|---|---|---|
+| [rts.ch](https://www.rts.ch/info/toute-info/?format=rss/news) | RSS | non |
+| [lemonde.fr](https://www.lemonde.fr/sitemap_news.xml) | Sitemap | non |
+| [letemps.ch](https://www.letemps.ch/articles.rss) | RSS | non |
+| [le-courrier.ch](https://www.le-courrier.ch/wp-sitemap.xml) | Sitemap | oui |
+| [frenchspin.fr](https://frenchspin.fr/wp-sitemap.xml) | Sitemap | oui |
+| [techcafe.fr](https://techcafe.fr/sitemap_index.xml) | Sitemap | oui |
+| [apreslabiere.fr](https://www.apreslabiere.fr/sitemap.xml) | Sitemap | oui |
 
-- `24heures.ch` semble bloquer les requêtes en provenance du robot d'Internet Archive.
-
-#### Flux RSS
-
-- `https://partner-feeds.publishing.tamedia.ch/rss/24heures/`
-
-#### Sitemap
-
-- `https://www.24heures.ch/news.xml`
-- `https://www.24heures.ch/sitemaps/category.xml`
-- `https://www.24heures.ch/sitemaps/sitemapindex.xml`
-
-### Le Monde
-
-#### Flux RSS
-
-[Liste des flux RSS du Monde](https://www.lemonde.fr/le-monde-et-vous/article/2025/07/14/les-flux-rss-du-monde-fr_5498778_3237.html)
-
-#### Sitemap
-
-- `https://www.lemonde.fr/sitemap_news.xml`
-
-### Le Temps
-
-#### Flux RSS
-
-- `https://www.letemps.ch/articles.rss`
-
-#### Sitemap
-
-- `https://www.letemps.ch/sitemap/AAAA-MM.xml`
-
-Notes :
-
-- Il y a un sitemap par mois, nommé `AAAA-MM.xml`.
-- Le premier semble être `https://www.letemps.ch/sitemap/1998-03.xml`.
-
-### RTS
-
-#### Flux RSS
-
-- `https://www.rts.ch/info/toute-info/?format=rss/news`
-
-#### Sitemap
-
-- `https://www.rts.ch/sitemaps/pages.xml`
+`24heures.ch` a été essayé puis retiré : la découverte des articles fonctionnait, mais toutes les tentatives
+de capture échouaient systématiquement (502 *bad gateway*) — le site bloque vraisemblablement les requêtes
+en provenance de l'infrastructure d'Internet Archive.
