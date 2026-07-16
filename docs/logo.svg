@@ -1,48 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100" width="260" height="100">
-  <!-- Left: the archive (redraw of the Internet Archive pillars mark). -->
-  <g>
-    <polygon points="50,8 4,30 96,30" fill="#2c2c2c"/>
-    <rect x="8" y="28" width="84" height="8" fill="#2c2c2c"/>
-    <path d="M12,38 H24 L22.5,80 H13.5 Z" fill="#2c2c2c"/>
-    <path d="M33.33,38 H45.33 L43.83,80 H34.83 Z" fill="#2c2c2c"/>
-    <path d="M54.67,38 H66.67 L65.17,80 H56.17 Z" fill="#2c2c2c"/>
-    <path d="M76,38 H88 L86.5,80 H77.5 Z" fill="#2c2c2c"/>
-    <rect x="6" y="80" width="88" height="7" fill="#2c2c2c"/>
-    <rect x="2" y="89" width="96" height="4" rx="1" fill="#2c2c2c"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <!-- The archive (redraw of the Internet Archive pillars mark). -->
+  <g fill="#2c2c2c">
+    <polygon points="50,8 4,30 8,36 92,36 96,30"/>
+    <path d="M12,38 H24 L22.5,80 H13.5 Z"/>
+    <path d="M33.33,38 H45.33 L43.83,80 H34.83 Z"/>
+    <path d="M54.67,38 H66.67 L65.17,80 H56.17 Z"/>
+    <path d="M76,38 H88 L86.5,80 H77.5 Z"/>
+    <rect x="6" y="80" width="88" height="7"/>
+    <rect x="2" y="89" width="96" height="4" rx="1"/>
   </g>
 
-  <!-- Right: pages carried in automatically on a conveyor belt. -->
-  <g>
-    <!-- ground line tying the belt's legs to the temple's plinth -->
-    <rect x="98" y="91" width="152" height="2" fill="#d8d2c6"/>
-    <!-- belt legs -->
-    <rect x="143" y="86" width="4" height="9" fill="#8a5a34"/>
-    <rect x="229" y="86" width="4" height="9" fill="#8a5a34"/>
-    <!-- belt + rollers -->
-    <rect x="138" y="76" width="100" height="10" rx="5" fill="#c2703d"/>
-    <circle cx="145" cy="81" r="7" fill="#a85f30"/>
-    <circle cx="231" cy="81" r="7" fill="#a85f30"/>
-    <!-- pages riding the belt -->
-    <g fill="#f4ede1" stroke="#2c2c2c" stroke-width="1.5">
-      <rect x="152" y="58" width="15" height="19" rx="2"/>
-      <rect x="180" y="58" width="15" height="19" rx="2"/>
-      <rect x="208" y="58" width="15" height="19" rx="2"/>
-    </g>
-    <g stroke="#2c2c2c" stroke-width="1.2" stroke-linecap="round">
-      <path d="M155 63h9M155 67h9M155 71h6"/>
-      <path d="M183 63h9M183 67h9M183 71h6"/>
-      <path d="M211 63h9M211 67h9M211 71h6"/>
-    </g>
-    <!-- a page mid-flight toward the archive, plus motion chevrons -->
-    <g fill="#f4ede1" stroke="#2c2c2c" stroke-width="1.5" transform="rotate(-8 118 60)">
-      <rect x="110" y="52" width="15" height="19" rx="2"/>
-    </g>
-    <g transform="rotate(-8 118 60)" stroke="#2c2c2c" stroke-width="1.2" stroke-linecap="round">
-      <path d="M113 57h9M113 61h9M113 65h6"/>
-    </g>
-    <g fill="none" stroke="#c2703d" stroke-width="3" stroke-linecap="round">
-      <path d="M133 45l-7 4 7 4"/>
-      <path d="M143 45l-7 4 7 4"/>
-    </g>
+  <!-- Pages carried in on a conveyor belt, stopping short of the archive
+       with a clear gap (not hidden behind the columns, for legibility). -->
+  <g fill="#2c2c2c">
+    <rect x="106" y="52" width="84" height="14" rx="7"/>
+    <!-- pages (rectangle with a folded top-right corner) -->
+    <path d="M118 34h15l5 5v13h-20z"/>
+    <path d="M152 34h15l5 5v13h-20z"/>
+  </g>
+  <!-- rollers: cut into the belt's own thickness (never poking below it) as
+       small pale "windows" rather than a same-colour shape, so they read
+       clearly without adding a new colour. -->
+  <g fill="#fff">
+    <circle cx="119" cy="59" r="4.5"/>
+    <circle cx="138" cy="59" r="4.5"/>
+    <circle cx="158" cy="59" r="4.5"/>
+    <circle cx="177" cy="59" r="4.5"/>
   </g>
 </svg>
