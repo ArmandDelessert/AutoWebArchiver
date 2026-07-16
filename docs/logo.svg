@@ -13,14 +13,18 @@
   <!-- Pages carried in on a conveyor belt, stopping short of the archive
        with a clear gap (not hidden behind the columns, for legibility).
        Lowered to sit close to ground level, near the temple's own base. -->
+  <rect x="106" y="63" width="84" height="14" rx="7" fill="#2c2c2c"/>
+
+  <!-- pages (rectangle with a folded top-right corner): white with a black
+       outline so they read as paper, centred over the belt's visible span. -->
+  <g fill="#fff" stroke="#2c2c2c" stroke-width="3" stroke-linejoin="round">
+    <path d="M121 45h15l5 5v13h-20z"/>
+    <path d="M155 45h15l5 5v13h-20z"/>
+  </g>
+  <!-- the folded corner itself: black on white, like the back of the flap. -->
   <g fill="#2c2c2c">
-    <rect x="106" y="63" width="84" height="14" rx="7"/>
-    <!-- pages (rectangle with a folded top-right corner): white with a
-         black outline, rather than solid fill, so they read as paper. -->
-    <g fill="#fff" stroke="#2c2c2c" stroke-width="3" stroke-linejoin="round">
-      <path d="M118 45h15l5 5v13h-20z"/>
-      <path d="M152 45h15l5 5v13h-20z"/>
-    </g>
+    <path d="M136 45h5v5z"/>
+    <path d="M170 45h5v5z"/>
   </g>
   <!-- rollers: cut into the belt's own thickness (never poking below it) as
        small pale "windows" rather than a same-colour shape, so they read
