@@ -1,34 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 100" width="158" height="100">
-  <!-- Pages carried in on a conveyor belt that runs straight into the building:
-       drawn before the archive so the rightmost column occludes its left end. -->
-  <rect x="80" y="63" width="70" height="14" rx="7" fill="#2c2c2c"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145 100" width="145" height="100">
+  <!-- Pages carried in on a conveyor belt that runs deep into the building:
+       drawn before the archive so the rightmost column occludes its left end,
+       including the leading page and the belt's first roller. -->
+  <rect x="77" y="63" width="63" height="14" rx="7" fill="#2c2c2c"/>
 
   <!-- rollers: cut into the belt's own thickness (never poking below it) as
        small pale "windows" rather than a same-colour shape, so they read
-       clearly without adding a new colour. -->
+       clearly without adding a new colour. One sits fully behind the column
+       and is not shown; the other three stay visible on the belt. -->
   <g fill="#fff">
-    <circle cx="91" cy="70" r="4.5"/>
-    <circle cx="107" cy="70" r="4.5"/>
-    <circle cx="123" cy="70" r="4.5"/>
-    <circle cx="139" cy="70" r="4.5"/>
+    <circle cx="82" cy="70" r="4.5"/>
+    <circle cx="98" cy="70" r="4.5"/>
+    <circle cx="114" cy="70" r="4.5"/>
+    <circle cx="130" cy="70" r="4.5"/>
   </g>
 
   <!-- pages (rectangle with a folded top-right corner): white with a black
-       outline so they read as paper, centred over the belt's visible span. -->
+       outline so they read as paper. The leading page is half-swallowed by
+       the rightmost column, showing it entering the archive. -->
   <g fill="#fff" stroke="#2c2c2c" stroke-width="3" stroke-linejoin="round">
-    <path d="M95 45h15l5 5v13h-20z"/>
-    <path d="M122 45h15l5 5v13h-20z"/>
+    <path d="M78,45 h12 l8,8 v10 h-20 z"/>
+    <path d="M108,45 h12 l8,8 v10 h-20 z"/>
   </g>
 
-  <!-- the folded corner itself: drawn just inside the bevel, overlapping the
-       page's own body, like the back of the flap folding down over the paper. -->
+  <!-- the folded corner itself: a right triangle sharing the same hypotenuse
+       as the bevel cut, drawn just inside it so the flap overlaps the page's
+       own body like paper folding down over itself. Sized to match the bevel. -->
   <g fill="#2c2c2c">
-    <path d="M110,45 L115,50 L110,50 Z"/>
-    <path d="M137,45 L142,50 L137,50 Z"/>
+    <path d="M90,45 L98,53 L90,53 Z"/>
+    <path d="M120,45 L128,53 L120,53 Z"/>
   </g>
 
   <!-- The archive (redraw of the Internet Archive pillars mark), drawn last so
-       its rightmost column hides the belt's incoming end. -->
+       its rightmost column hides the belt's incoming end and the leading page. -->
   <g fill="#2c2c2c">
     <polygon points="50,8 4,30 8,36 92,36 96,30"/>
     <path d="M12,38 H24 L22.5,80 H13.5 Z"/>
