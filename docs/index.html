@@ -217,7 +217,7 @@ function renderCards(runHistory) {
   const errorPermanent = last.error_permanent || 0;
   cardsEl.appendChild(card("Erreurs à réessayer / abandonnées", `${fmt(errorRetry)} / ${fmt(errorPermanent)}`, errorPermanent > 0 ? "warn" : ""));
   cardsEl.appendChild(card("Erreur 429 (limitation de débit)", fmt(last.rate_limited || 0), last.rate_limited > 150 ? "warn" : ""));
-  cardsEl.appendChild(card("Backlog reporté", fmt(last.deferred || 0)));
+  cardsEl.appendChild(card("Reliquat reporté", fmt(last.deferred || 0)));
 }
 
 function renderAlerts(feedStats) {
@@ -278,10 +278,10 @@ function renderCharts(runHistory) {
     data: {
       labels,
       datasets: [
-        { label: "Backlog reporté", data: runHistory.map((r) => r.deferred || 0), borderColor: CHART_COLORS.backlog, tension: 0.2, fill: true, backgroundColor: "rgba(137,87,229,0.15)" },
+        { label: "Reliquat reporté", data: runHistory.map((r) => r.deferred || 0), borderColor: CHART_COLORS.backlog, tension: 0.2, fill: true, backgroundColor: "rgba(137,87,229,0.15)" },
       ],
     },
-    options: chartOptions("Backlog restant"),
+    options: chartOptions("Reliquat restant"),
   });
 }
 
