@@ -68,6 +68,7 @@
   td.num { text-align: right; font-variant-numeric: tabular-nums; }
   .badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 0.75rem; background: #2a2e38; color: var(--muted); }
   .highlight-bad { color: var(--bad); font-weight: 600; }
+  .pct { color: var(--muted); font-size: 0.85em; }
   .table-scroll { overflow-x: auto; }
 
   .run-group { border: 1px solid var(--accent); border-radius: 10px; padding: 20px; margin-bottom: 24px; }
@@ -98,7 +99,7 @@
 <div id="content">
   <section class="run-group">
     <div class="run-group-header">
-      <h2>Dernier run</h2>
+      <h2>Dernière exécution</h2>
       <span class="run-group-time" id="last-run-time"></span>
     </div>
 
@@ -119,7 +120,7 @@
               <th>Type</th>
               <th class="num">Total découvert</th>
               <th class="num">Nouveaux</th>
-              <th class="num">Dropped</th>
+              <th class="num">Sortis du flux</th>
               <th class="num">Jamais archivés</th>
               <th class="num">Déjà archivés</th>
               <th class="num">Erreur 429</th>
@@ -134,7 +135,7 @@
   </section>
 
   <div class="panel">
-    <h2>Tendance des runs</h2>
+    <h2>Tendance des exécutions</h2>
     <div class="charts">
       <div class="chart-box"><canvas id="chart-outcomes"></canvas></div>
       <div class="chart-box"><canvas id="chart-429"></canvas></div>
@@ -170,6 +171,12 @@ function timeAgo(isoString) {
   return `il y a ${Math.round(diffH / 24)} j`;
 }
 
+function pct(count, total) {
+  if (!total) return "";
+  const p = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 1 }).format((count / total) * 100);
+  return ` <span class="pct">(${p} %)</span>`;
+}
+
 function feedSpan(latest) {
   if (!latest.oldest_published_at || !latest.newest_published_at) return "—";
   const diffH = Math.round((new Date(latest.newest_published_at) - new Date(latest.oldest_published_at)) / 3600000);
@@ -194,8 +201,8 @@ function renderCards(runHistory) {
   const cardsEl = document.getElementById("cards");
   cardsEl.innerHTML = "";
   if (!runHistory.length) {
-    document.getElementById("last-run-time").textContent = "aucun run enregistré";
-    cardsEl.appendChild(card("Runs enregistrés", "0"));
+    document.getElementById("last-run-time").textContent = "aucune exécution enregistrée";
+    cardsEl.appendChild(card("Exécutions enregistrées", "0"));
     return;
   }
   const last = runHistory[runHistory.length - 1];
@@ -206,8 +213,10 @@ function renderCards(runHistory) {
 
   cardsEl.appendChild(card("Succès / Erreurs", `${fmt(last.success)} / ${fmt(last.error)}`, rateCls));
   cardsEl.appendChild(card("Taux de succès", `${successRate}%`, rateCls));
-  cardsEl.appendChild(card("Déjà archivés", fmt(last.already_archived || 0)));
-  cardsEl.appendChild(card("Erreur 429 (rate-limited)", fmt(last.rate_limited || 0), last.rate_limited > 150 ? "warn" : ""));
+  const errorRetry = last.error_retry || 0;
+  const errorPermanent = last.error_permanent || 0;
+  cardsEl.appendChild(card("Erreurs à réessayer / abandonnées", `${fmt(errorRetry)} / ${fmt(errorPermanent)}`, errorPermanent > 0 ? "warn" : ""));
+  cardsEl.appendChild(card("Erreur 429 (limitation de débit)", fmt(last.rate_limited || 0), last.rate_limited > 150 ? "warn" : ""));
   cardsEl.appendChild(card("Backlog reporté", fmt(last.deferred || 0)));
 }
 
@@ -250,7 +259,7 @@ function renderCharts(runHistory) {
         { label: "Déjà archivés", data: runHistory.map((r) => r.already_archived || 0), borderColor: CHART_COLORS.already_archived, tension: 0.2 },
       ],
     },
-    options: chartOptions("Issues par run"),
+    options: chartOptions("Résultats par exécution"),
   });
 
   new Chart(document.getElementById("chart-429"), {
@@ -258,10 +267,10 @@ function renderCharts(runHistory) {
     data: {
       labels,
       datasets: [
-        { label: "Erreur 429 (rate-limited)", data: runHistory.map((r) => r.rate_limited || 0), borderColor: CHART_COLORS.rate_limited, tension: 0.2, fill: true, backgroundColor: "rgba(210,153,34,0.15)" },
+        { label: "Erreur 429 (limitation de débit)", data: runHistory.map((r) => r.rate_limited || 0), borderColor: CHART_COLORS.rate_limited, tension: 0.2, fill: true, backgroundColor: "rgba(210,153,34,0.15)" },
       ],
     },
-    options: chartOptions("Erreur 429 par run"),
+    options: chartOptions("Erreur 429 par exécution"),
   });
 
   new Chart(document.getElementById("chart-backlog"), {
@@ -319,8 +328,8 @@ function renderSourcesTable(feedStats) {
       <td>${source}</td>
       <td><span class="badge">${exhaustive ? "exhaustif" : "rotatif"}</span></td>
       <td class="num">${fmt(latest.item_count)}</td>
-      <td class="num">${fmt(latest.new_count)}</td>
-      <td class="num">${exhaustive ? "—" : fmt(latest.dropped_count)}</td>
+      <td class="num">${fmt(latest.new_count)}${pct(latest.new_count, latest.item_count)}</td>
+      <td class="num">${exhaustive ? "—" : `${fmt(latest.dropped_count)}${pct(latest.dropped_count, latest.item_count)}`}</td>
       <td class="num">${neverArchivedCell}</td>
       <td class="num">${fmt(latest.already_archived_count || 0)}</td>
       <td class="num">${fmt(latest.rate_limited_count || 0)}</td>
@@ -339,8 +348,8 @@ async function main() {
     ]);
 
     document.getElementById("last-updated").textContent = runHistory.length
-      ? `dernier run ${timeAgo(runHistory[runHistory.length - 1].timestamp)}`
-      : "aucun run enregistré";
+      ? `dernière exécution ${timeAgo(runHistory[runHistory.length - 1].timestamp)}`
+      : "aucune exécution enregistrée";
 
     renderCards(runHistory);
     renderAlerts(feedStats);

@@ -109,11 +109,48 @@ def test_retryable_error_is_resubmitted_on_next_run(tmp_path):
 
     counts, _, _, _ = main.archive_new_urls(client, store, [item], settings)
     assert counts["error"] == 1
+    assert counts["error_retry"] == 1
+    assert counts["error_permanent"] == 0
     assert not store.is_known(item.url)  # transient -> eligible for retry
 
     # A subsequent run re-submits the same URL.
     main.archive_new_urls(client, store, [item], settings)
     assert len([c for c in client.calls if c[0] == "submit"]) == 2
+
+
+def test_non_retryable_error_is_counted_as_permanently_given_up(tmp_path):
+    item = _items(1)[0]
+    blocked = {
+        "status": "error",
+        "job_id": "x",
+        "status_ext": "error:blocked",
+        "message": "Blocked",
+    }
+    client = FakeClient({item.url: blocked}, available=10)
+    store = SeenStore(tmp_path / "seen.json")
+    settings = _settings(max_concurrent_spn2_jobs=10, max_capture_attempts=3)
+
+    counts, _, _, _ = main.archive_new_urls(client, store, [item], settings)
+    assert counts["error"] == 1
+    assert counts["error_retry"] == 0
+    assert counts["error_permanent"] == 1
+
+
+def test_error_is_permanent_once_max_attempts_reached(tmp_path):
+    item = _items(1)[0]
+    bad_gateway = {
+        "status": "error",
+        "job_id": "x",
+        "status_ext": "error:bad-gateway",
+        "message": "Bad Gateway",
+    }
+    client = FakeClient({item.url: bad_gateway}, available=10)
+    store = SeenStore(tmp_path / "seen.json")
+    settings = _settings(max_concurrent_spn2_jobs=10, max_capture_attempts=1)
+
+    counts, _, _, _ = main.archive_new_urls(client, store, [item], settings)
+    assert counts["error_retry"] == 0
+    assert counts["error_permanent"] == 1
 
 
 def test_already_archived_is_not_counted_as_an_error(tmp_path):
@@ -124,7 +161,14 @@ def test_already_archived_is_not_counted_as_an_error(tmp_path):
 
     counts, already_archived_by_source, _, _ = main.archive_new_urls(client, store, [item], settings)
 
-    assert counts == {"success": 0, "error": 0, "pending": 0, "already_archived": 1}
+    assert counts == {
+        "success": 0,
+        "error": 0,
+        "pending": 0,
+        "already_archived": 1,
+        "error_retry": 0,
+        "error_permanent": 0,
+    }
     assert already_archived_by_source == {"s": 1}
     assert store.is_known(item.url)
     assert store.is_archived(item.url)
@@ -298,7 +342,14 @@ def test_archive_defers_everything_when_run_budget_is_zero(tmp_path):
 
     # Time budget spent before submitting anything: nothing captured, nothing
     # marked known, so every URL is retried on the next run.
-    assert counts == {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
+    assert counts == {
+        "success": 0,
+        "error": 0,
+        "pending": 0,
+        "already_archived": 0,
+        "error_retry": 0,
+        "error_permanent": 0,
+    }
     assert not any(kind == "submit" for kind, _ in client.calls)
     assert all(not store.is_known(it.url) for it in items)
 

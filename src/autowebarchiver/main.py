@@ -66,8 +66,10 @@ def _poll_once(
             continue
         result = result_from_status_payload(job_id, url, payload)
         if result is not None:
-            _record_result(store, result, settings)
+            will_retry = _record_result(store, result, settings)
             counts[result.status] += 1
+            if result.status == "error":
+                counts["error_retry" if will_retry else "error_permanent"] += 1
             del in_flight[job_id]
         elif now >= deadline:
             if store.is_pending_stale(url, settings.pending_job_max_age_hours):
@@ -80,6 +82,7 @@ def _poll_once(
                 )
                 _save_quietly(store, settings.state_save_interval_seconds)
                 counts["error"] += 1
+                counts["error_retry" if will_retry else "error_permanent"] += 1
             else:
                 logger.warning('Job for "%s" is still pending after polling timeout', url)
                 counts["pending"] += 1
@@ -90,7 +93,7 @@ def _poll_jobs(
     client: SPN2Client, store: SeenStore, jobs: dict[str, str], settings: Settings
 ) -> dict[str, int]:
     """Poll a fixed set of jobs (job_id -> url) until each resolves or times out."""
-    counts = {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
+    counts = {"success": 0, "error": 0, "pending": 0, "already_archived": 0, "error_retry": 0, "error_permanent": 0}
     deadline = time.monotonic() + settings.poll_timeout_seconds
     # No per-source scheduling happens here, so the source slot is unused ("").
     in_flight = {job_id: (url, "", deadline) for job_id, url in jobs.items()}
@@ -113,13 +116,13 @@ def poll_leftovers(client: SPN2Client, store: SeenStore, settings: Settings) -> 
 
 def _submit(
     client: SPN2Client, store: SeenStore, url: str, settings: Settings
-) -> tuple[str | None, str]:
+) -> tuple[str | None, str, bool | None]:
     """Submit a single capture request for an already-normalized URL. Returns
-    (job_id, outcome). job_id is only set when outcome == "submitted" (a
-    capture job was created and needs polling). Otherwise there's nothing to
+    (job_id, outcome, will_retry). job_id is only set when outcome == "submitted"
+    (a capture job was created and needs polling). Otherwise there's nothing to
     poll: "already_archived" means SPN2 already had a recent-enough capture
     (not an error), "error" means the submit genuinely failed (marked for a
-    bounded retry)."""
+    bounded retry). will_retry is only meaningful when outcome == "error"."""
     try:
         job_id = client.submit(
             url,
@@ -133,17 +136,17 @@ def _submit(
         logger.info('"%s" is already archived recently enough, skipping (%s)', url, exc)
         store.mark_resolved(url, status="already_archived")
         _save_quietly(store, settings.state_save_interval_seconds)
-        return None, "already_archived"
+        return None, "already_archived", None
     except Exception as exc:  # noqa: BLE001 - isolate failures per URL
         logger.error('Failed to submit "%s" for capture: %s', url, exc)
         # A submit failure is almost always transient (network/SPN2 hiccup),
         # so keep it eligible for a bounded number of retries.
-        store.mark_error(url, retryable=True, max_attempts=settings.max_capture_attempts)
+        will_retry = store.mark_error(url, retryable=True, max_attempts=settings.max_capture_attempts)
         _save_quietly(store, settings.state_save_interval_seconds)
-        return None, "error"
+        return None, "error", will_retry
     store.mark_pending(url, job_id)
     _save_quietly(store, settings.state_save_interval_seconds)
-    return job_id, "submitted"
+    return job_id, "submitted", None
 
 
 def _save_quietly(store: SeenStore, min_interval_seconds: float = 0.0) -> None:
@@ -272,7 +275,7 @@ def archive_new_urls(
     deferred_count): the aggregate outcome counts, per-source breakdowns of
     the "already_archived" outcome and of 429 (rate-limited) responses, and
     how many URLs were left unsubmitted when the time budget ran out."""
-    counts = {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
+    counts = {"success": 0, "error": 0, "pending": 0, "already_archived": 0, "error_retry": 0, "error_permanent": 0}
     already_archived_by_source: dict[str, int] = {}
     rate_limited_by_source: dict[str, int] = {}
 
@@ -327,7 +330,7 @@ def archive_new_urls(
                 break
             url = normalize_url(item.url)
             rate_limited_before = client.rate_limited_count
-            job_id, outcome = _submit(client, store, url, settings)
+            job_id, outcome, will_retry = _submit(client, store, url, settings)
             rate_limited_delta = client.rate_limited_count - rate_limited_before
             if rate_limited_delta:
                 rate_limited_by_source[item.source] = (
@@ -337,6 +340,8 @@ def archive_new_urls(
                 counts[outcome] += 1
                 if outcome == "already_archived":
                     already_archived_by_source[item.source] = already_archived_by_source.get(item.source, 0) + 1
+                elif outcome == "error":
+                    counts["error_retry" if will_retry else "error_permanent"] += 1
                 continue
             in_flight[job_id] = (url, item.source, time.monotonic() + settings.poll_timeout_seconds)
             in_flight_count_by_source[item.source] = in_flight_count_by_source.get(item.source, 0) + 1
@@ -369,7 +374,10 @@ def archive_new_urls(
     return counts, already_archived_by_source, rate_limited_by_source, deferred_count
 
 
-def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> None:
+def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> bool | None:
+    """Returns whether the job will be retried next run, or None when that
+    question doesn't apply (status other than "error")."""
+    will_retry = None
     if result.status == "success":
         store.mark_resolved(result.url, status="success", job_id=result.job_id)
         logger.info('Archived "%s" -> "%s"', result.url, result.wayback_url)
@@ -390,8 +398,9 @@ def _record_result(store: SeenStore, result: SPN2Result, settings: Settings) -> 
     else:
         # status == "timeout": leave it marked as pending so it gets repolled next run.
         logger.warning("Job for %s is still pending after polling timeout", result.url)
-        return
+        return will_retry
     _save_quietly(store, settings.state_save_interval_seconds)
+    return will_retry
 
 
 def run(
@@ -424,7 +433,7 @@ def run(
         access_key, secret_key, max_captures_per_minute=config.settings.max_captures_per_minute
     )
 
-    totals = {"success": 0, "error": 0, "pending": 0, "already_archived": 0}
+    totals = {"success": 0, "error": 0, "pending": 0, "already_archived": 0, "error_retry": 0, "error_permanent": 0}
 
     leftover_counts = poll_leftovers(client, store, config.settings)
     for key, value in leftover_counts.items():
@@ -514,6 +523,8 @@ def run(
         discovered=len(discovered),
         success=totals["success"],
         error=totals["error"],
+        error_retry=totals["error_retry"],
+        error_permanent=totals["error_permanent"],
         already_archived=totals["already_archived"],
         pending=totals["pending"],
         rate_limited=client.rate_limited_count,
@@ -527,12 +538,15 @@ def run(
         logger.error("Could not write run history file %s: %s", run_history_path, exc)
 
     logger.info(
-        "Run summary: %d source(s) processed, %d discovered, %d success, %d error, "
-        "%d already archived, %d still pending, %d rate-limited (429), %d state entries purged",
+        "Run summary: %d source(s) processed, %d discovered, %d success, %d error "
+        "(%d will retry, %d gave up), %d already archived, %d still pending, "
+        "%d rate-limited (429), %d state entries purged",
         len(config.sources),
         len(discovered),
         totals["success"],
         totals["error"],
+        totals["error_retry"],
+        totals["error_permanent"],
         totals["already_archived"],
         totals["pending"],
         client.rate_limited_count,
