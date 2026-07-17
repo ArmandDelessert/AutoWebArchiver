@@ -152,10 +152,12 @@ const RAW = (path) => `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRAN
 
 const CHART_COLORS = {
   success: "#3fb950",
-  error: "#f85149",
   already_archived: "#5b8def",
+  pending: "#6e7681",
+  error_retry: "#d29922",
+  error_permanent: "#f85149",
   rate_limited: "#d29922",
-  backlog: "#8957e5",
+  queue: "#8957e5",
 };
 
 function fmt(n) {
@@ -217,7 +219,7 @@ function renderCards(runHistory) {
   const errorPermanent = last.error_permanent || 0;
   cardsEl.appendChild(card("Erreurs à réessayer / abandonnées", `${fmt(errorRetry)} / ${fmt(errorPermanent)}`, errorPermanent > 0 ? "warn" : ""));
   cardsEl.appendChild(card("Erreur 429 (limitation de débit)", fmt(last.rate_limited || 0), last.rate_limited > 150 ? "warn" : ""));
-  cardsEl.appendChild(card("Reliquat reporté", fmt(last.deferred || 0)));
+  cardsEl.appendChild(card("File d'attente reportée", fmt(last.deferred || 0)));
 }
 
 function renderAlerts(feedStats) {
@@ -254,12 +256,14 @@ function renderCharts(runHistory) {
     data: {
       labels,
       datasets: [
-        { label: "Succès", data: runHistory.map((r) => r.success), borderColor: CHART_COLORS.success, tension: 0.2 },
-        { label: "Erreurs", data: runHistory.map((r) => r.error), borderColor: CHART_COLORS.error, tension: 0.2 },
-        { label: "Déjà archivés", data: runHistory.map((r) => r.already_archived || 0), borderColor: CHART_COLORS.already_archived, tension: 0.2 },
+        { label: "Succès", data: runHistory.map((r) => r.success), borderColor: CHART_COLORS.success, backgroundColor: "rgba(63,185,80,0.35)", tension: 0.2, fill: "origin" },
+        { label: "Déjà archivés", data: runHistory.map((r) => r.already_archived || 0), borderColor: CHART_COLORS.already_archived, backgroundColor: "rgba(91,141,239,0.35)", tension: 0.2, fill: "-1" },
+        { label: "En attente", data: runHistory.map((r) => r.pending || 0), borderColor: CHART_COLORS.pending, backgroundColor: "rgba(110,118,129,0.35)", tension: 0.2, fill: "-1" },
+        { label: "Erreurs à réessayer", data: runHistory.map((r) => r.error_retry || 0), borderColor: CHART_COLORS.error_retry, backgroundColor: "rgba(210,153,34,0.35)", tension: 0.2, fill: "-1" },
+        { label: "Erreurs abandonnées", data: runHistory.map((r) => r.error_permanent || 0), borderColor: CHART_COLORS.error_permanent, backgroundColor: "rgba(248,81,73,0.35)", tension: 0.2, fill: "-1" },
       ],
     },
-    options: chartOptions("Résultats par exécution"),
+    options: chartOptions("Résultats par exécution (empilés)", true),
   });
 
   new Chart(document.getElementById("chart-429"), {
@@ -278,14 +282,14 @@ function renderCharts(runHistory) {
     data: {
       labels,
       datasets: [
-        { label: "Reliquat reporté", data: runHistory.map((r) => r.deferred || 0), borderColor: CHART_COLORS.backlog, tension: 0.2, fill: true, backgroundColor: "rgba(137,87,229,0.15)" },
+        { label: "File d'attente reportée", data: runHistory.map((r) => r.deferred || 0), borderColor: CHART_COLORS.queue, tension: 0.2, fill: true, backgroundColor: "rgba(137,87,229,0.15)" },
       ],
     },
-    options: chartOptions("Reliquat restant"),
+    options: chartOptions("File d'attente restante"),
   });
 }
 
-function chartOptions(title) {
+function chartOptions(title, stacked = false) {
   return {
     responsive: true,
     maintainAspectRatio: false,
@@ -294,8 +298,8 @@ function chartOptions(title) {
       legend: { labels: { color: "#9aa1b1", boxWidth: 12, font: { size: 11 } } },
     },
     scales: {
-      x: { ticks: { color: "#9aa1b1", maxRotation: 0, autoSkip: true, font: { size: 10 } }, grid: { color: "#2a2e38" } },
-      y: { ticks: { color: "#9aa1b1" }, grid: { color: "#2a2e38" }, beginAtZero: true },
+      x: { stacked, ticks: { color: "#9aa1b1", maxRotation: 0, autoSkip: true, font: { size: 10 } }, grid: { color: "#2a2e38" } },
+      y: { stacked, ticks: { color: "#9aa1b1" }, grid: { color: "#2a2e38" }, beginAtZero: true },
     },
   };
 }
