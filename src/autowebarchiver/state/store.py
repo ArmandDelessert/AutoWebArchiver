@@ -27,6 +27,9 @@ class SeenStore:
     def __init__(self, path: str | Path):
         self._path = Path(path)
         self._entries: dict[str, dict] = {}
+        # Set by callers throttling save() (see scheduling._save_quietly), not by
+        # this class itself -- None means "never saved yet this process".
+        self._last_flush_monotonic: float | None = None
         self._load()
 
     def _load(self) -> None:

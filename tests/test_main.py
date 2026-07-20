@@ -356,7 +356,7 @@ def test_archive_defers_everything_when_run_budget_is_zero(tmp_path):
 
 def test_save_quietly_throttles_writes(tmp_path, monkeypatch):
     clock = {"t": 1000.0}
-    monkeypatch.setattr("autowebarchiver.main.time.monotonic", lambda: clock["t"])
+    monkeypatch.setattr("autowebarchiver.scheduling.time.monotonic", lambda: clock["t"])
     store = SeenStore(tmp_path / "seen.json")
     save_calls = []
     monkeypatch.setattr(store, "save", lambda: save_calls.append(clock["t"]))
