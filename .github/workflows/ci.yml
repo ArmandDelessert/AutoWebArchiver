@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Lint
+        run: ruff check src tests
+
+      - name: Type check
+        env:
+          PYTHONPATH: src
+        run: mypy src/autowebarchiver
+
+      - name: Test
+        env:
+          PYTHONPATH: src
+        run: pytest --cov=autowebarchiver --cov-report=term-missing
