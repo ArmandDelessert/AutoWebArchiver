@@ -8,8 +8,6 @@ from collections import deque
 import requests
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential_jitter
 
-from .models import SPN2Result, result_from_status_payload
-
 logger = logging.getLogger(__name__)
 
 _CAPTURE_URL = "https://web.archive.org/save"
@@ -167,27 +165,6 @@ class SPN2Client:
         )
         response.raise_for_status()
         return response.json()
-
-    def poll_until_resolved(
-        self, job_id: str, url: str, *, interval: int = 15, timeout: int = 180
-    ) -> SPN2Result:
-        """Poll a capture job until it resolves to success/error, or timeout."""
-        deadline = time.monotonic() + timeout
-        while True:
-            payload = self.get_status(job_id)
-            result = result_from_status_payload(job_id, url, payload)
-            if result is not None:
-                return result
-
-            if time.monotonic() >= deadline:
-                logger.warning("Timed out waiting for SPN2 job %s (%s)", job_id, url)
-                return SPN2Result(job_id=job_id, url=url, status="timeout")
-
-            time.sleep(interval)
-
-    def submit_and_poll(self, url: str, *, interval: int = 15, timeout: int = 180, **submit_kwargs) -> SPN2Result:
-        job_id = self.submit(url, **submit_kwargs)
-        return self.poll_until_resolved(job_id, url, interval=interval, timeout=timeout)
 
     def get_user_status(self) -> dict:
         """Returns {"available": N, "processing": N} for the authenticated account."""
