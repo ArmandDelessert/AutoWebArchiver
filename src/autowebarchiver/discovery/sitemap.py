@@ -6,12 +6,11 @@ import re
 import requests
 from lxml import etree
 
-from .models import DiscoveredItem
+from .models import USER_AGENT, DiscoveredItem
 
 logger = logging.getLogger(__name__)
 
 _NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-_USER_AGENT = "AutoWebArchiver/0.1 (+https://github.com/)"
 _REQUEST_TIMEOUT = 10
 
 
@@ -68,7 +67,7 @@ def _fetch_urls(url: str, *, _is_index_url: bool) -> list[tuple[str, str | None]
 def _fetch_xml(url: str) -> etree._Element | None:
     try:
         response = requests.get(
-            url, headers={"User-Agent": _USER_AGENT}, timeout=_REQUEST_TIMEOUT
+            url, headers={"User-Agent": USER_AGENT}, timeout=_REQUEST_TIMEOUT
         )
         response.raise_for_status()
     except requests.RequestException as exc:

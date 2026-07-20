@@ -4,14 +4,24 @@ import logging
 import time
 
 import feedparser
+import requests
 
-from .models import DiscoveredItem
+from .models import USER_AGENT, DiscoveredItem
 
 logger = logging.getLogger(__name__)
 
+_REQUEST_TIMEOUT = 10
+
 
 def discover_rss(source_name: str, feed_url: str) -> list[DiscoveredItem]:
-    feed = feedparser.parse(feed_url)
+    try:
+        response = requests.get(feed_url, headers={"User-Agent": USER_AGENT}, timeout=_REQUEST_TIMEOUT)
+        response.raise_for_status()
+    except requests.RequestException as exc:
+        logger.warning("Failed to fetch RSS feed %s for %s: %s", feed_url, source_name, exc)
+        return []
+
+    feed = feedparser.parse(response.content)
 
     if feed.bozo:
         logger.warning(
