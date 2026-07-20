@@ -16,3 +16,16 @@ testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_configs = true
+warn_redundant_casts = true
+
+[[tool.mypy.overrides]]
+# No stub package exists on PyPI for feedparser.
+module = "feedparser"
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["autowebarchiver"]
