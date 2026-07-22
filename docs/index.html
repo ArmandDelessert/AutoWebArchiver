@@ -91,8 +91,12 @@
   .pct { color: var(--muted); font-size: 0.85em; }
   .table-scroll { overflow-x: auto; }
 
-  .url-cell { display: flex; align-items: center; gap: 8px; }
-  .url-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 420px; }
+  #dropped-urls-table { table-layout: fixed; min-width: 600px; }
+  #dropped-urls-table th:nth-child(1), #dropped-urls-table td:nth-child(1) { width: 100px; white-space: nowrap; }
+  #dropped-urls-table th:nth-child(2), #dropped-urls-table td:nth-child(2) { width: 100px; }
+  #dropped-urls-table th:nth-child(4), #dropped-urls-table td:nth-child(4) { width: 170px; }
+  .url-cell { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  .url-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1 1 auto; min-width: 0; }
   .url-actions { display: flex; gap: 4px; flex-shrink: 0; }
   .icon-btn {
     display: inline-flex; align-items: center; justify-content: center;
@@ -465,7 +469,7 @@ function renderDroppedUrlsTable(droppedUrls) {
   const noteEl = document.getElementById("dropped-urls-note");
 
   if (!droppedUrls.length) {
-    noteEl.textContent = "Aucune perte d'URL enregistrée depuis la mise en place de ce suivi.";
+    noteEl.textContent = "Aucune perte d'URL enregistrée.";
     return;
   }
 
