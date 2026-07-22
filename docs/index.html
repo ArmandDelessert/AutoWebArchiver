@@ -91,7 +91,7 @@
   .pct { color: var(--muted); font-size: 0.85em; }
   .table-scroll { overflow-x: auto; }
 
-  #dropped-urls-table { table-layout: fixed; min-width: 650px; }
+  #dropped-urls-table { table-layout: fixed; min-width: 780px; }
   #dropped-urls-table td { vertical-align: top; }
   #dropped-urls-table th:nth-child(1), #dropped-urls-table td:nth-child(1) { width: 100px; white-space: nowrap; }
   #dropped-urls-table th:nth-child(2), #dropped-urls-table td:nth-child(2) { width: 100px; }
@@ -106,7 +106,9 @@
     cursor: pointer; text-decoration: none;
   }
   .icon-btn:hover { color: var(--accent); border-color: var(--accent); }
-  .icon-btn.copied { color: var(--ok); border-color: var(--ok); }
+  .icon-btn.copied, .icon-btn.found { color: var(--ok); border-color: var(--ok); }
+  .icon-btn.not-found { color: var(--warn); border-color: var(--warn); }
+  .icon-btn:disabled { opacity: 0.5; cursor: wait; }
 
   .run-group { border: 1px solid var(--accent); border-radius: 10px; padding: 20px; margin-bottom: 24px; }
   .run-group-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; }
@@ -234,6 +236,9 @@ const CHART_COLORS = {
 const ICON_OPEN = `<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3H3v10h10v-3"/><path d="M9 2h5v5"/><path d="M14 2 7 9"/></svg>`;
 const ICON_COPY = `<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5"/></svg>`;
 const ICON_CHECK = `<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5 6.5 12 13 4"/></svg>`;
+const ICON_SEARCH = `<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="4.5"/><path d="M13.5 13.5 10.3 10.3"/></svg>`;
+const ICON_NOT_FOUND = `<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M6 6l4 4M10 6l-4 4"/></svg>`;
+const ICON_SAVE = `<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10V2"/><path d="M5 5l3-3 3 3"/><path d="M2.5 10v2.5A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5V10"/></svg>`;
 
 function fmt(n) {
   return new Intl.NumberFormat("fr-FR").format(n);
@@ -492,6 +497,8 @@ function renderDroppedUrlsTable(droppedUrls) {
         <span class="url-actions">
           <a class="icon-btn" href="${url}" target="_blank" rel="noopener" title="Ouvrir l'article" aria-label="Ouvrir l'article">${ICON_OPEN}</a>
           <button type="button" class="icon-btn copy-btn" data-url="${url}" title="Copier l'URL" aria-label="Copier l'URL">${ICON_COPY}</button>
+          <button type="button" class="icon-btn check-btn" data-url="${url}" title="Vérifier sur Internet Archive" aria-label="Vérifier sur Internet Archive">${ICON_SEARCH}</button>
+          <a class="icon-btn" href="https://web.archive.org/save/${url}" target="_blank" rel="noopener" title="Sauvegarder manuellement sur Internet Archive" aria-label="Sauvegarder manuellement sur Internet Archive">${ICON_SAVE}</a>
         </span>
       </td>
       <td>${DROPPED_URLS_REASON_LABELS[entry.reason] || entry.reason}</td>
@@ -543,6 +550,44 @@ document.addEventListener("click", async (event) => {
     }, 1200);
   } catch (err) {
     console.error("Copy to clipboard failed:", err);
+  }
+});
+
+function formatWaybackTimestamp(ts) {
+  return `${ts.slice(6, 8)}/${ts.slice(4, 6)}/${ts.slice(0, 4)}`;
+}
+
+document.addEventListener("click", async (event) => {
+  const btn = event.target.closest(".check-btn");
+  if (!btn) return;
+
+  if (btn.dataset.foundUrl) {
+    window.open(btn.dataset.foundUrl, "_blank", "noopener");
+    return;
+  }
+
+  btn.disabled = true;
+  try {
+    const res = await fetch(`https://archive.org/wayback/available?url=${encodeURIComponent(btn.dataset.url)}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const closest = data.archived_snapshots && data.archived_snapshots.closest;
+    btn.classList.remove("found", "not-found");
+    if (closest && closest.available) {
+      btn.classList.add("found");
+      btn.innerHTML = ICON_CHECK;
+      btn.dataset.foundUrl = closest.url;
+      btn.title = `Archivé le ${formatWaybackTimestamp(closest.timestamp)} — cliquer pour ouvrir`;
+    } else {
+      btn.classList.add("not-found");
+      btn.innerHTML = ICON_NOT_FOUND;
+      btn.title = "Non archivé sur Internet Archive — cliquer pour revérifier";
+    }
+  } catch (err) {
+    console.error("Wayback availability check failed:", err);
+    btn.title = "Erreur de vérification — cliquer pour réessayer";
+  } finally {
+    btn.disabled = false;
   }
 });
 
