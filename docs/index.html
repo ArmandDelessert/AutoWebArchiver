@@ -91,7 +91,6 @@
 <header>
   <h1>AutoWebArchiver — Monitoring</h1>
   <div class="subtitle">
-    Données lues en direct depuis
     <a href="https://github.com/ArmandDelessert/AutoWebArchiver" target="_blank">ArmandDelessert/AutoWebArchiver</a>
     — <span id="last-updated">chargement…</span>
   </div>
@@ -391,8 +390,12 @@ function renderRunsTable(runHistory) {
   const recent = runHistory.slice(-RUNS_TABLE_LIMIT).reverse();
   for (const run of recent) {
     const tr = document.createElement("tr");
+    const date = new Date(run.timestamp.replace(" ", "T")).toLocaleString("fr-FR", { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
+    const dateCell = run.github_run_id
+      ? `<a href="https://github.com/${OWNER}/${REPO}/actions/runs/${run.github_run_id}" target="_blank">${date}</a>`
+      : date;
     tr.innerHTML = `
-      <td>${new Date(run.timestamp.replace(" ", "T")).toLocaleString("fr-FR", { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" })}</td>
+      <td>${dateCell}</td>
       <td class="num">${fmt(run.success)}</td>
       <td class="num">${fmt(run.error_retry || 0)} / ${fmt(run.error_permanent || 0)}</td>
       <td class="num">${fmt(run.already_archived || 0)}</td>

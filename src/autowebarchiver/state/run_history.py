@@ -37,7 +37,7 @@ class RunHistoryStore:
             encoding="utf-8",
         )
 
-    def record(self, **fields: int) -> None:
+    def record(self, **fields: int | str | None) -> None:
         self._runs.append({"timestamp": _now_iso(), **fields})
 
     def purge_older_than(self, days: int) -> int:

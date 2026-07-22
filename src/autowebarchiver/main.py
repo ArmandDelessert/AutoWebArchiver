@@ -171,6 +171,7 @@ def run(
         return 1
 
     run_history.record(
+        github_run_id=os.environ.get("GITHUB_RUN_ID"),
         sources_processed=len(config.sources),
         discovered=len(discovered),
         success=totals["success"],
