@@ -91,6 +91,18 @@
   .pct { color: var(--muted); font-size: 0.85em; }
   .table-scroll { overflow-x: auto; }
 
+  .url-cell { display: flex; align-items: center; gap: 8px; }
+  .url-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 420px; }
+  .url-actions { display: flex; gap: 4px; flex-shrink: 0; }
+  .icon-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 4px; flex-shrink: 0;
+    color: var(--muted); background: transparent; border: 1px solid var(--border);
+    cursor: pointer; text-decoration: none;
+  }
+  .icon-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .icon-btn.copied { color: var(--ok); border-color: var(--ok); }
+
   .run-group { border: 1px solid var(--accent); border-radius: 10px; padding: 20px; margin-bottom: 24px; }
   .run-group-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; }
   .run-group-header h2 { margin: 0; font-size: 1.05rem; color: var(--accent); }
@@ -214,8 +226,16 @@ const CHART_COLORS = {
   queue: "#8957e5",
 };
 
+const ICON_OPEN = `<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3H3v10h10v-3"/><path d="M9 2h5v5"/><path d="M14 2 7 9"/></svg>`;
+const ICON_COPY = `<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5"/></svg>`;
+const ICON_CHECK = `<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5 6.5 12 13 4"/></svg>`;
+
 function fmt(n) {
   return new Intl.NumberFormat("fr-FR").format(n);
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 }
 
 function timeAgo(isoString) {
@@ -458,10 +478,17 @@ function renderDroppedUrlsTable(droppedUrls) {
 
   for (const entry of shown) {
     const tr = document.createElement("tr");
+    const url = escapeHtml(entry.url);
     tr.innerHTML = `
       <td>${new Date(entry.timestamp.replace(" ", "T")).toLocaleDateString("fr-FR")}</td>
-      <td>${entry.source}</td>
-      <td>${entry.url}</td>
+      <td>${escapeHtml(entry.source)}</td>
+      <td class="url-cell">
+        <span class="url-text" title="${url}">${url}</span>
+        <span class="url-actions">
+          <a class="icon-btn" href="${url}" target="_blank" rel="noopener" title="Ouvrir l'article" aria-label="Ouvrir l'article">${ICON_OPEN}</a>
+          <button type="button" class="icon-btn copy-btn" data-url="${url}" title="Copier l'URL" aria-label="Copier l'URL">${ICON_COPY}</button>
+        </span>
+      </td>
       <td>${DROPPED_URLS_REASON_LABELS[entry.reason] || entry.reason}</td>
     `;
     tbody.appendChild(tr);
@@ -496,6 +523,23 @@ async function main() {
     document.getElementById("content").innerHTML = `<div class="error-msg">Impossible de charger les données : ${err.message}</div>`;
   }
 }
+
+document.addEventListener("click", async (event) => {
+  const btn = event.target.closest(".copy-btn");
+  if (!btn) return;
+  try {
+    await navigator.clipboard.writeText(btn.dataset.url);
+    const original = btn.innerHTML;
+    btn.classList.add("copied");
+    btn.innerHTML = ICON_CHECK;
+    setTimeout(() => {
+      btn.classList.remove("copied");
+      btn.innerHTML = original;
+    }, 1200);
+  } catch (err) {
+    console.error("Copy to clipboard failed:", err);
+  }
+});
 
 main();
 </script>
