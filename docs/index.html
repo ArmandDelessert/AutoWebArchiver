@@ -91,10 +91,11 @@
   .pct { color: var(--muted); font-size: 0.85em; }
   .table-scroll { overflow-x: auto; }
 
-  #dropped-urls-table { table-layout: fixed; min-width: 600px; }
+  #dropped-urls-table { table-layout: fixed; min-width: 650px; }
+  #dropped-urls-table td { vertical-align: top; }
   #dropped-urls-table th:nth-child(1), #dropped-urls-table td:nth-child(1) { width: 100px; white-space: nowrap; }
   #dropped-urls-table th:nth-child(2), #dropped-urls-table td:nth-child(2) { width: 100px; }
-  #dropped-urls-table th:nth-child(4), #dropped-urls-table td:nth-child(4) { width: 170px; }
+  #dropped-urls-table th:nth-child(4), #dropped-urls-table td:nth-child(4) { width: 200px; white-space: nowrap; }
   .url-cell { display: flex; align-items: center; gap: 8px; min-width: 0; }
   .url-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1 1 auto; min-width: 0; }
   .url-actions { display: flex; gap: 4px; flex-shrink: 0; }
