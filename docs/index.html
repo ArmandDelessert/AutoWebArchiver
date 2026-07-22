@@ -28,6 +28,8 @@
   }
   header { margin-bottom: 24px; }
   h1 { margin: 0 0 4px; font-size: 1.5rem; }
+  h1 a { color: inherit; text-decoration: none; }
+  h1 a:hover { text-decoration: underline; }
   .subtitle { color: var(--muted); font-size: 0.9rem; }
   .subtitle a { color: var(--accent); }
 
@@ -89,11 +91,8 @@
 <body>
 
 <header>
-  <h1>AutoWebArchiver — Monitoring</h1>
-  <div class="subtitle">
-    <a href="https://github.com/ArmandDelessert/AutoWebArchiver" target="_blank">ArmandDelessert/AutoWebArchiver</a>
-    — <span id="last-updated">chargement…</span>
-  </div>
+  <h1><a href="https://github.com/ArmandDelessert/AutoWebArchiver" target="_blank">AutoWebArchiver</a> — Monitoring</h1>
+  <div class="subtitle"><span id="last-updated">Chargement…</span></div>
 </header>
 
 <div id="content">
@@ -453,8 +452,8 @@ async function main() {
     ]);
 
     document.getElementById("last-updated").textContent = runHistory.length
-      ? `dernière exécution ${timeAgo(runHistory[runHistory.length - 1].timestamp)}`
-      : "aucune exécution enregistrée";
+      ? `Dernière exécution ${timeAgo(runHistory[runHistory.length - 1].timestamp)}.`
+      : "Aucune exécution enregistrée.";
 
     renderCards(runHistory);
     renderAlerts(feedStats);
