@@ -19,6 +19,7 @@ from .scheduling import (  # noqa: F401 - _save_quietly re-exported for tests
     poll_leftovers,
 )
 from .spn2.client import SPN2Client
+from .state.dropped_urls import DroppedUrlsStore
 from .state.feed_stats import FeedStatsStore
 from .state.run_history import RunHistoryStore
 from .state.store import SeenStore
@@ -30,6 +31,7 @@ DEFAULT_CONFIG_PATH = REPO_ROOT / "config" / "sources.yaml"
 DEFAULT_STATE_PATH = REPO_ROOT / "state" / "seen.json"
 DEFAULT_FEED_STATS_PATH = REPO_ROOT / "state" / "feed_stats.json"
 DEFAULT_RUN_HISTORY_PATH = REPO_ROOT / "state" / "run_history.json"
+DEFAULT_DROPPED_URLS_PATH = REPO_ROOT / "state" / "dropped_urls.json"
 
 
 class FatalError(Exception):
@@ -49,6 +51,7 @@ def run(
     state_path: Path = DEFAULT_STATE_PATH,
     feed_stats_path: Path = DEFAULT_FEED_STATS_PATH,
     run_history_path: Path = DEFAULT_RUN_HISTORY_PATH,
+    dropped_urls_path: Path = DEFAULT_DROPPED_URLS_PATH,
 ) -> int:
     setup_logging()
     load_dotenv()
@@ -70,6 +73,7 @@ def run(
     store = SeenStore(state_path)
     feed_stats = FeedStatsStore(feed_stats_path)
     run_history = RunHistoryStore(run_history_path)
+    dropped_urls = DroppedUrlsStore(dropped_urls_path)
     client = SPN2Client(
         access_key, secret_key, max_captures_per_minute=config.settings.max_captures_per_minute
     )
@@ -122,6 +126,7 @@ def run(
                 )
                 for dropped in dropped_unarchived[:10]:
                     logger.warning('  - [%s] "%s"', dropped.reason, dropped.url)
+                dropped_urls.record(source.name, dropped_unarchived)
             discovered.extend(items)
         except Exception as exc:  # noqa: BLE001 - isolate failures per source
             logger.error("Failed to discover items from %s: %s", source.name, exc)
@@ -150,6 +155,12 @@ def run(
         feed_stats.save()
     except OSError as exc:
         logger.error("Could not write feed stats file %s: %s", feed_stats_path, exc)
+
+    try:
+        dropped_urls.purge_older_than(config.settings.state_max_age_days)
+        dropped_urls.save()
+    except OSError as exc:
+        logger.error("Could not write dropped-URL log %s: %s", dropped_urls_path, exc)
 
     purged = store.purge_older_than(config.settings.state_max_age_days)
 
