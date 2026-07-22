@@ -77,6 +77,14 @@
   }
   .panel h2 { margin: 0 0 12px; font-size: 1.05rem; }
   .panel-note { color: var(--muted); font-size: 0.85rem; margin: -6px 0 12px; }
+  .panel-header-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .panel-header-row .panel-note { margin: -6px 0 12px 0; }
+  .btn-secondary {
+    font-size: 0.82rem; padding: 5px 12px; border-radius: 6px; white-space: nowrap;
+    border: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer;
+  }
+  .btn-secondary:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .btn-secondary:disabled { opacity: 0.6; cursor: wait; }
 
   .charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; }
   .chart-box { position: relative; height: 220px; }
@@ -200,7 +208,10 @@
 
   <div class="panel">
     <h2>Liens perdus</h2>
-    <p class="panel-note" id="dropped-urls-note"></p>
+    <div class="panel-header-row">
+      <p class="panel-note" id="dropped-urls-note"></p>
+      <button type="button" class="btn-secondary" id="check-all-btn" data-label="Tout vérifier sur IA">Tout vérifier sur IA</button>
+    </div>
     <div class="table-scroll">
       <table id="dropped-urls-table">
         <thead>
@@ -473,11 +484,14 @@ function renderDroppedUrlsTable(droppedUrls) {
   const tbody = document.querySelector("#dropped-urls-table tbody");
   tbody.innerHTML = "";
   const noteEl = document.getElementById("dropped-urls-note");
+  const checkAllBtn = document.getElementById("check-all-btn");
 
   if (!droppedUrls.length) {
     noteEl.textContent = "Aucune perte d'URL enregistrée.";
+    checkAllBtn.style.display = "none";
     return;
   }
+  checkAllBtn.style.display = "";
 
   const sorted = [...droppedUrls].sort((a, b) => b.timestamp.localeCompare(a.timestamp));
   const shown = sorted.slice(0, DROPPED_URLS_TABLE_LIMIT);
@@ -557,15 +571,11 @@ function formatWaybackTimestamp(ts) {
   return `${ts.slice(6, 8)}/${ts.slice(4, 6)}/${ts.slice(0, 4)}`;
 }
 
-document.addEventListener("click", async (event) => {
-  const btn = event.target.closest(".check-btn");
-  if (!btn) return;
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
-  if (btn.dataset.foundUrl) {
-    window.open(btn.dataset.foundUrl, "_blank", "noopener");
-    return;
-  }
-
+async function checkUrlAvailability(btn) {
   btn.disabled = true;
   try {
     const res = await fetch(`https://archive.org/wayback/available?url=${encodeURIComponent(btn.dataset.url)}`);
@@ -589,6 +599,44 @@ document.addEventListener("click", async (event) => {
   } finally {
     btn.disabled = false;
   }
+}
+
+// Spacing between requests when checking every row in sequence, so a long
+// list never fires a burst of near-simultaneous calls at the public,
+// unauthenticated availability API -- a single manual click has no such
+// delay, only the bulk "check all" action does.
+const CHECK_ALL_DELAY_MS = 500;
+
+document.addEventListener("click", async (event) => {
+  const btn = event.target.closest(".check-btn");
+  if (!btn) return;
+
+  if (btn.dataset.foundUrl) {
+    window.open(btn.dataset.foundUrl, "_blank", "noopener");
+    return;
+  }
+  await checkUrlAvailability(btn);
+});
+
+document.addEventListener("click", async (event) => {
+  const allBtn = event.target.closest("#check-all-btn");
+  if (!allBtn || allBtn.disabled) return;
+
+  // Already-archived URLs won't stop being archived -- skip them so a
+  // second "check all" run only spends requests on URLs still worth
+  // re-checking (not yet found, or that previously errored).
+  const buttons = Array.from(document.querySelectorAll(".check-btn")).filter((b) => !b.dataset.foundUrl);
+  if (!buttons.length) return;
+
+  allBtn.disabled = true;
+  const originalLabel = allBtn.textContent;
+  for (let i = 0; i < buttons.length; i++) {
+    allBtn.textContent = `Vérification… (${i + 1}/${buttons.length})`;
+    await checkUrlAvailability(buttons[i]);
+    if (i < buttons.length - 1) await sleep(CHECK_ALL_DELAY_MS);
+  }
+  allBtn.textContent = originalLabel;
+  allBtn.disabled = false;
 });
 
 main();
