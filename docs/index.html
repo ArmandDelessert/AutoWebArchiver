@@ -199,7 +199,7 @@
             <th class="num">En attente</th>
             <th class="num">Erreur 429</th>
             <th class="num">File d'attente</th>
-            <th class="num">Liens perdus</th>
+            <th class="num">Échecs d'archivage</th>
           </tr>
         </thead>
         <tbody></tbody>
@@ -208,7 +208,7 @@
   </div>
 
   <div class="panel">
-    <h2>Liens perdus</h2>
+    <h2>Échecs d'archivage automatique</h2>
     <div class="panel-header-row">
       <p class="panel-note" id="dropped-urls-note"></p>
       <button type="button" class="btn-secondary" id="check-all-btn" data-label="Tout vérifier sur IA">Tout vérifier sur IA</button>
@@ -328,12 +328,12 @@ function renderAlerts(feedStats) {
     const latest = history[history.length - 1];
     if (latest.dropped_unarchived_count) {
       problems.push(
-        `<strong>${source}</strong> : ${latest.dropped_unarchived_count} URL(s) sorties du flux sans jamais avoir été archivées (perte réelle).`
+        `<strong>${source}</strong> : ${latest.dropped_unarchived_count} URL(s) dont l'archivage automatique a échoué avant leur sortie du flux (nécessite une action manuelle).`
       );
     }
   }
   if (!problems.length) {
-    alertsEl.innerHTML = `<div class="alert none">Aucune perte d'URL détectée.</div>`;
+    alertsEl.innerHTML = `<div class="alert none">Aucun échec d'archivage automatique détecté.</div>`;
     return;
   }
   for (const p of problems) {
@@ -496,7 +496,7 @@ function renderDroppedUrlsTable(droppedUrls) {
   const checkAllBtn = document.getElementById("check-all-btn");
 
   if (!droppedUrls.length) {
-    noteEl.textContent = "Aucune perte d'URL enregistrée.";
+    noteEl.textContent = "Aucun échec d'archivage automatique enregistré.";
     checkAllBtn.style.display = "none";
     return;
   }
@@ -506,8 +506,8 @@ function renderDroppedUrlsTable(droppedUrls) {
   const shown = sorted.slice(0, DROPPED_URLS_TABLE_LIMIT);
   noteEl.textContent =
     droppedUrls.length > DROPPED_URLS_TABLE_LIMIT
-      ? `${fmt(droppedUrls.length)} URL(s) perdues au total — les ${DROPPED_URLS_TABLE_LIMIT} plus récentes sont affichées.`
-      : `${fmt(droppedUrls.length)} URL(s) perdue(s) au total.`;
+      ? `${fmt(droppedUrls.length)} échec(s) d'archivage automatique au total — les ${DROPPED_URLS_TABLE_LIMIT} plus récents sont affichés.`
+      : `${fmt(droppedUrls.length)} échec(s) d'archivage automatique au total.`;
 
   for (const entry of shown) {
     const tr = document.createElement("tr");
