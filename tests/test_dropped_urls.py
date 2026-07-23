@@ -23,6 +23,26 @@ def test_record_appends_one_entry_per_dropped_url(tmp_path):
     assert "timestamp" in store._entries[0]
 
 
+def test_record_stores_github_run_id(tmp_path):
+    store = DroppedUrlsStore(tmp_path / "dropped_urls.json")
+
+    store.record(
+        "lemonde.fr",
+        [DroppedUrl(url="https://example.com/a", reason="gave_up")],
+        github_run_id="123456",
+    )
+
+    assert store._entries[0]["github_run_id"] == "123456"
+
+
+def test_record_defaults_github_run_id_to_none(tmp_path):
+    store = DroppedUrlsStore(tmp_path / "dropped_urls.json")
+
+    store.record("lemonde.fr", [DroppedUrl(url="https://example.com/a", reason="gave_up")])
+
+    assert store._entries[0]["github_run_id"] is None
+
+
 def test_record_with_no_dropped_urls_is_a_no_op(tmp_path):
     store = DroppedUrlsStore(tmp_path / "dropped_urls.json")
 

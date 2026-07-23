@@ -70,6 +70,8 @@ def run(
         )
         return 1
 
+    github_run_id = os.environ.get("GITHUB_RUN_ID")
+
     store = SeenStore(state_path)
     feed_stats = FeedStatsStore(feed_stats_path)
     run_history = RunHistoryStore(run_history_path)
@@ -126,7 +128,7 @@ def run(
                 )
                 for dropped in dropped_unarchived[:10]:
                     logger.warning('  - [%s] "%s"', dropped.reason, dropped.url)
-                dropped_urls.record(source.name, dropped_unarchived)
+                dropped_urls.record(source.name, dropped_unarchived, github_run_id=github_run_id)
             discovered.extend(items)
         except Exception as exc:  # noqa: BLE001 - isolate failures per source
             logger.error("Failed to discover items from %s: %s", source.name, exc)
@@ -171,7 +173,7 @@ def run(
         return 1
 
     run_history.record(
-        github_run_id=os.environ.get("GITHUB_RUN_ID"),
+        github_run_id=github_run_id,
         sources_processed=len(config.sources),
         discovered=len(discovered),
         success=totals["success"],

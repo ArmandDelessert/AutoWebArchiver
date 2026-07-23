@@ -44,11 +44,17 @@ class DroppedUrlsStore:
             encoding="utf-8",
         )
 
-    def record(self, source_name: str, dropped: list[DroppedUrl]) -> None:
+    def record(self, source_name: str, dropped: list[DroppedUrl], github_run_id: str | None = None) -> None:
         now = _now_iso()
         for item in dropped:
             self._entries.append(
-                {"timestamp": now, "source": source_name, "url": item.url, "reason": item.reason}
+                {
+                    "timestamp": now,
+                    "source": source_name,
+                    "url": item.url,
+                    "reason": item.reason,
+                    "github_run_id": github_run_id,
+                }
             )
 
     def purge_older_than(self, days: int) -> int:
