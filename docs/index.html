@@ -199,6 +199,7 @@
             <th class="num">En attente</th>
             <th class="num">Erreur 429</th>
             <th class="num">File d'attente</th>
+            <th class="num">Liens perdus</th>
           </tr>
         </thead>
         <tbody></tbody>
@@ -448,9 +449,14 @@ function renderSourcesTable(feedStats) {
 
 const RUNS_TABLE_LIMIT = 20;
 
-function renderRunsTable(runHistory) {
+function renderRunsTable(runHistory, droppedUrls) {
   const tbody = document.querySelector("#runs-table tbody");
   tbody.innerHTML = "";
+  const droppedCountByRunId = {};
+  for (const entry of droppedUrls) {
+    if (!entry.github_run_id) continue;
+    droppedCountByRunId[entry.github_run_id] = (droppedCountByRunId[entry.github_run_id] || 0) + 1;
+  }
   const recent = runHistory.slice(-RUNS_TABLE_LIMIT).reverse();
   for (const run of recent) {
     const tr = document.createElement("tr");
@@ -458,6 +464,8 @@ function renderRunsTable(runHistory) {
     const dateCell = run.github_run_id
       ? `<a href="https://github.com/${OWNER}/${REPO}/actions/runs/${run.github_run_id}" target="_blank">${date}</a>`
       : date;
+    const droppedCount = run.github_run_id ? droppedCountByRunId[run.github_run_id] || 0 : null;
+    const droppedCell = droppedCount === null ? "—" : fmt(droppedCount);
     tr.innerHTML = `
       <td>${dateCell}</td>
       <td class="num">${fmt(run.success)}</td>
@@ -466,6 +474,7 @@ function renderRunsTable(runHistory) {
       <td class="num">${fmt(run.pending || 0)}</td>
       <td class="num">${fmt(run.rate_limited || 0)}</td>
       <td class="num">${fmt(run.deferred || 0)}</td>
+      <td class="num">${droppedCount > 0 ? `<span class="highlight-bad">${droppedCell}</span>` : droppedCell}</td>
     `;
     tbody.appendChild(tr);
   }
@@ -536,7 +545,6 @@ async function main() {
     renderAlerts(feedStats);
     if (runHistory.length > 1) renderCharts(runHistory);
     renderSourcesTable(feedStats);
-    renderRunsTable(runHistory);
 
     let droppedUrls = [];
     try {
@@ -544,6 +552,7 @@ async function main() {
     } catch (err) {
       console.warn("state/dropped_urls.json not available yet:", err.message);
     }
+    renderRunsTable(runHistory, droppedUrls);
     renderDroppedUrlsTable(droppedUrls);
   } catch (err) {
     document.getElementById("content").innerHTML = `<div class="error-msg">Impossible de charger les données : ${err.message}</div>`;
