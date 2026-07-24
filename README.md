@@ -117,10 +117,10 @@ au tableau de bord.
 
 | Fichier | Contenu | Écrit par |
 | --- | --- | --- |
-| `seen.json` | Le **quoi a été fait** : un statut par URL (`pending` → `success` / `already_archived` / `error_retry` / `error`), le nombre de tentatives et l'`spn2_job_id`. C'est la source de vérité qui évite de re-soumettre une URL déjà traitée. | `SeenStore` |
-| `feed_stats.json` | Statistiques par source et par exécution : taille du flux, nouveaux, sortis du flux, couverture temporelle. Ne stocke **pas** la liste complète des URLs (pour rester petit). | `FeedStatsStore` |
+| `seen.json` | Le **quoi a été fait**, indexé par URL : un statut par URL *effectivement soumise* (`pending` → `success` / `already_archived` / `error_retry` / `error`), le nombre de tentatives et le `spn2_job_id`. C'est la source de vérité qui évite de re-soumettre une URL déjà traitée. | `SeenStore` |
+| `feed_stats.json` | Statistiques par source et par exécution : taille du flux, nouveaux, sortis du flux, couverture temporelle. Ne stocke **pas** la liste des URLs individuelles (pour rester petit). | `FeedStatsStore` |
 | `run_history.json` | Un enregistrement agrégé par exécution (succès, erreurs, 429, file d'attente reportée…) — alimente les graphiques de tendance. | `RunHistoryStore` |
-| `dropped_urls.json` | Les URLs précises dont l'archivage automatique a échoué avant leur sortie du flux — le seul magasin qui conserve des URLs individuelles, car ces cas sont rares et actionnables. | `DroppedUrlsStore` |
+| `dropped_urls.json` | Un journal des URLs précises dont l'archivage automatique a échoué avant leur sortie du flux. Complémentaire de `seen.json` : les URLs *jamais soumises* (sorties du flux avant qu'on ait pu les tenter) n'apparaissent que là, tandis que celles réellement tentées y figurent **et** dans `seen.json`. | `DroppedUrlsStore` |
 
 ### Modèle d'ordonnancement et de débit
 
