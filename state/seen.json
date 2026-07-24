@@ -126465,6 +126465,13 @@
     "spn2_job_id": "spn2-46a7c111763805f6721168401733b621d36651a5",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/07/24/karim-khan-procureur-general-de-la-cpi-demis-de-ses-fonctions-apres-des-accusations-d-agression-sexuelle_6731579_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-24T22:13:06Z",
+    "last_checked": "2026-07-24T22:13:22Z",
+    "spn2_job_id": "spn2-876f3b69fcbc89a967ff45ec6b0093bdcf3e06f8",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/07/24/la-hongrie-annonce-enqueter-sur-un-troupeau-de-zebres-appartenant-a-un-proche-de-viktor-orban_6731502_3210.html": {
     "attempts": 0,
     "first_seen": "2026-07-24T14:03:06Z",
@@ -137764,6 +137771,13 @@
     "first_seen": "2026-07-24T11:10:18Z",
     "last_checked": "2026-07-24T11:10:34Z",
     "spn2_job_id": "spn2-1879dcbba80e8b92ba80fcaa7536abf2610c821c",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/07/24/face-a-la-succession-d-incendies-les-syndicats-de-pompiers-racontent-des-professionnels-et-un-systeme-a-bout-de-souffle_6731613_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-24T22:12:01Z",
+    "last_checked": "2026-07-24T22:12:17Z",
+    "spn2_job_id": "spn2-99ec7930e47c560075b0546c8f24918af453a0ba",
     "status": "success"
   },
   "https://www.lemonde.fr/societe/article/2026/07/24/le-gouvernement-precise-sa-feuille-de-route-d-economies-pour-la-sante-ciblant-les-medicaments-les-soins-dentaires-et-les-transports-sanitaires_6731538_3224.html": {
@@ -150283,9 +150297,9 @@
   "https://www.rts.ch/info/environnement/2026/article/sante-quels-bienfaits-scientifiquement-prouves-nous-procure-la-nature-29291585.html": {
     "attempts": 2,
     "first_seen": "2026-07-24T16:51:19Z",
-    "last_checked": "2026-07-24T19:42:17Z",
+    "last_checked": "2026-07-24T22:12:17Z",
     "spn2_job_id": "spn2-b7d82f18a48601446c030347fdcf83f8123fce37",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/environnement/2026/article/secheresse-la-suisse-fait-face-aux-incendies-de-foret-29294045.html": {
     "attempts": 0,
@@ -152272,6 +152286,13 @@
     "last_checked": "2026-07-09T20:03:51Z",
     "spn2_job_id": "spn2-319aa940fcb749636a4ec17711df83ada7b594e1",
     "status": "success"
+  },
+  "https://www.rts.ch/info/regions/geneve/2026/article/hug-geneve-affiche-des-reserves-de-sang-alarmantes-cet-ete-29312058.html": {
+    "attempts": 1,
+    "first_seen": "2026-07-24T22:13:06Z",
+    "last_checked": "2026-07-24T22:13:37Z",
+    "spn2_job_id": "spn2-2fe55b25c55f74e62ebc69974ed2123fcb3740f0",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/regions/geneve/2026/article/la-vente-de-puffs-a-nouveau-interdite-a-geneve-29306185.html": {
     "attempts": 3,
@@ -154613,9 +154634,9 @@
   "https://www.rts.ch/info/suisse/2026/article/william-heinzer-voix-historique-de-la-rsr-et-de-la-tsr-est-decede-29312081.html": {
     "attempts": 1,
     "first_seen": "2026-07-24T19:42:18Z",
-    "last_checked": "2026-07-24T19:43:05Z",
+    "last_checked": "2026-07-24T22:12:17Z",
     "spn2_job_id": "spn2-1e49a1823a54b20c6ac5e12d2c70aed62dbd4e01",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/worldskills-2026-trois-romands-s-envolent-pour-shanghai-29303838.html": {
     "attempts": 0,
