@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 _AVAILABILITY_URL = "https://archive.org/wayback/available"
 
 
-def is_archived(url: str, *, timeout: int = 10, min_age_hours: float = 3.0) -> bool | None:
+def is_archived(url: str, *, timeout: int = 10, min_age_hours: float = 5.0) -> bool | None:
     """Best-effort check via the public Wayback availability API (the same
     one the dashboard's "Vérifier sur Internet Archive" button uses -- fast,
     ~0.5s, but known to be unreliable in both directions: it can report a
