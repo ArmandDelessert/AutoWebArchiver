@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
-from urllib.parse import urlencode, urlparse, parse_qsl, urlunparse
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 logger = logging.getLogger(__name__)
 
@@ -87,7 +87,7 @@ class SeenStore:
         entry = self._entries.get(normalize_url(url))
         if entry is None:
             return False
-        age = datetime.now(timezone.utc) - _parse_iso(entry.get("first_seen"))
+        age = datetime.now(UTC) - _parse_iso(entry.get("first_seen"))
         return age > timedelta(hours=max_age_hours)
 
     def mark_pending(self, url: str, job_id: str) -> None:
@@ -138,7 +138,7 @@ class SeenStore:
         return will_retry
 
     def purge_older_than(self, days: int) -> int:
-        cutoff = datetime.now(timezone.utc) - timedelta(days=days)
+        cutoff = datetime.now(UTC) - timedelta(days=days)
         to_remove = [
             url
             for url, entry in self._entries.items()
@@ -153,10 +153,10 @@ class SeenStore:
 
 
 def _now_iso() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def _parse_iso(value: str | None) -> datetime:
     if not value:
-        return datetime.min.replace(tzinfo=timezone.utc)
-    return datetime.strptime(value, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        return datetime.min.replace(tzinfo=UTC)
+    return datetime.strptime(value, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=UTC)

@@ -1,4 +1,4 @@
-import autowebarchiver.main as main
+from autowebarchiver import main
 from autowebarchiver.config import Settings
 from autowebarchiver.discovery.models import DiscoveredItem
 from autowebarchiver.spn2.client import AlreadyArchivedError
