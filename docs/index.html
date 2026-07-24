@@ -587,7 +587,9 @@ function sleep(ms) {
 async function checkUrlAvailability(btn) {
   btn.disabled = true;
   try {
-    const res = await fetch(`https://archive.org/wayback/available?url=${encodeURIComponent(btn.dataset.url)}`);
+    const res = await fetch(`https://archive.org/wayback/available?url=${encodeURIComponent(btn.dataset.url)}`, {
+      cache: "no-store",
+    });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     const closest = data.archived_snapshots && data.archived_snapshots.closest;
