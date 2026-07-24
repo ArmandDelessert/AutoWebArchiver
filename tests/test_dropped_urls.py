@@ -66,6 +66,41 @@ def test_save_and_reload_roundtrip(tmp_path):
     assert len(reloaded._entries) == 2
 
 
+def test_purge_confirmed_archived_removes_only_confirmed_urls(tmp_path):
+    store = DroppedUrlsStore(tmp_path / "dropped_urls.json")
+    store.record(
+        "s",
+        [
+            DroppedUrl(url="https://example.com/archived", reason="gave_up"),
+            DroppedUrl(url="https://example.com/still-missing", reason="gave_up"),
+            DroppedUrl(url="https://example.com/check-failed", reason="gave_up"),
+        ],
+    )
+
+    def fake_checker(url):
+        return {
+            "https://example.com/archived": True,
+            "https://example.com/still-missing": False,
+            "https://example.com/check-failed": None,
+        }[url]
+
+    removed = store.purge_confirmed_archived(fake_checker)
+
+    assert removed == 1
+    remaining = {e["url"] for e in store._entries}
+    assert remaining == {"https://example.com/still-missing", "https://example.com/check-failed"}
+
+
+def test_purge_confirmed_archived_with_no_entries_checks_nothing(tmp_path):
+    store = DroppedUrlsStore(tmp_path / "dropped_urls.json")
+    calls = []
+
+    removed = store.purge_confirmed_archived(lambda url: calls.append(url) or True)
+
+    assert removed == 0
+    assert calls == []
+
+
 def test_purge_older_than_removes_stale_entries(tmp_path):
     store = DroppedUrlsStore(tmp_path / "dropped_urls.json")
     store.record("s", [DroppedUrl(url="https://example.com/old", reason="gave_up")])

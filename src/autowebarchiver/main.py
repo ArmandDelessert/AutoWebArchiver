@@ -23,6 +23,7 @@ from .state.dropped_urls import DroppedUrlsStore
 from .state.feed_stats import FeedStatsStore
 from .state.run_history import RunHistoryStore
 from .state.store import SeenStore
+from .wayback import is_archived as wayback_is_archived
 
 logger = logging.getLogger(__name__)
 
@@ -79,6 +80,19 @@ def run(
     client = SPN2Client(
         access_key, secret_key, max_captures_per_minute=config.settings.max_captures_per_minute
     )
+
+    # Re-check the existing backlog before adding this run's own new entries --
+    # an entry archived by someone else since it was recorded (IA's own
+    # crawler, a manual save via the dashboard) no longer needs attention.
+    try:
+        confirmed_archived = dropped_urls.purge_confirmed_archived(wayback_is_archived, delay_seconds=0.3)
+        if confirmed_archived:
+            logger.info(
+                "%d URL(s) in dropped_urls.json are now archived on IA, removed from the list",
+                confirmed_archived,
+            )
+    except Exception as exc:  # noqa: BLE001 - never let this abort the run
+        logger.warning("Could not re-check dropped_urls.json against Internet Archive: %s", exc)
 
     totals = {"success": 0, "error": 0, "pending": 0, "already_archived": 0, "error_retry": 0, "error_permanent": 0}
 

@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime, timedelta, timezone
+import time
+from collections.abc import Callable
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 from .feed_stats import DroppedUrl
@@ -57,8 +59,32 @@ class DroppedUrlsStore:
                 }
             )
 
+    def purge_confirmed_archived(
+        self, is_archived: Callable[[str], bool | None], *, delay_seconds: float = 0.0
+    ) -> int:
+        """Re-check every entry against Internet Archive and drop the ones
+        confirmed archived since they were recorded -- the point of this
+        list is "still needs attention", and an entry archived by someone
+        else in the meantime (IA's own crawler, a manual save) no longer
+        does. is_archived(url) returning None (check failed) leaves the
+        entry in place: better to keep re-checking next run than to drop it
+        on a flaky network call. delay_seconds is only meaningful with a
+        real, non-instant checker -- see main.py's use of wayback.is_archived,
+        a public unauthenticated endpoint best not hammered in a tight loop."""
+        kept = []
+        removed = 0
+        for i, entry in enumerate(self._entries):
+            if i:
+                time.sleep(delay_seconds)
+            if is_archived(entry["url"]):
+                removed += 1
+            else:
+                kept.append(entry)
+        self._entries = kept
+        return removed
+
     def purge_older_than(self, days: int) -> int:
-        cutoff = datetime.now(timezone.utc) - timedelta(days=days)
+        cutoff = datetime.now(UTC) - timedelta(days=days)
         kept = [e for e in self._entries if _parse_iso(e["timestamp"]) >= cutoff]
         purged = len(self._entries) - len(kept)
         self._entries = kept
@@ -66,8 +92,8 @@ class DroppedUrlsStore:
 
 
 def _now_iso() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def _parse_iso(value: str) -> datetime:
-    return datetime.strptime(value, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    return datetime.strptime(value, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=UTC)
