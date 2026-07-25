@@ -126713,9 +126713,9 @@
   "https://www.lemonde.fr/international/article/2026/07/25/otan-soupcons-d-espionnage-au-quartier-general-du-commandement-militaire-de-l-organisation_6732381_3210.html": {
     "attempts": 1,
     "first_seen": "2026-07-25T16:10:05Z",
-    "last_checked": "2026-07-25T16:10:09Z",
+    "last_checked": "2026-07-25T19:20:22Z",
     "spn2_job_id": "spn2-045963cde8ac04525fdbc00221757e6b2c21ef5c",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/07/25/un-citoyen-francais-arbitrairement-detenu-en-arabie-saoudite_6732131_3210.html": {
     "attempts": 0,
@@ -128124,11 +128124,25 @@
     "spn2_job_id": "spn2-2fe0d07f75c9ebeceed8192922cbb995d2312300",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/live/2026/07/25/en-direct-guerre-au-moyen-orient-le-ministre-des-affaires-etrangeres-iranien-appelle-au-dialogue-entre-les-saoudiens-et-les-houthistes_6725301_3210.html": {
+    "attempts": 1,
+    "first_seen": "2026-07-25T19:21:00Z",
+    "last_checked": "2026-07-25T19:21:02Z",
+    "spn2_job_id": "spn2-91f81b6e3a673276352b4959c97227d5da559831",
+    "status": "error_retry"
+  },
   "https://www.lemonde.fr/international/live/2026/07/25/en-direct-guerre-au-moyen-orient-les-houthistes-revendiquent-un-tir-de-missile-en-arabie-saoudite-apres-des-attaques-contre-des-sites-militaires-au-yemen_6725301_3210.html": {
     "attempts": 0,
     "first_seen": "2026-07-25T08:29:14Z",
     "last_checked": "2026-07-25T08:30:23Z",
     "spn2_job_id": "spn2-5d299aa5594b3468e4cacd35df99c98b0aeb92e8",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/live/2026/07/25/en-direct-guerre-en-ukraine-au-moins-20-morts-en-ukraine-et-en-russie-selon-les-autorites-des-deux-pays_6725306_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T19:22:03Z",
+    "last_checked": "2026-07-25T19:23:04Z",
+    "spn2_job_id": "spn2-69e8da9d681930bf20d14161a5d4d615a8d886a8",
     "status": "success"
   },
   "https://www.lemonde.fr/international/live/2026/07/25/en-direct-guerre-en-ukraine-le-president-du-kazakhstan-a-dit-a-vladimir-poutine-lors-d-une-rencontre-face-a-face-que-les-combats-en-ukraine-devaient-etre-arretes_6725306_3210.html": {
@@ -132584,6 +132598,13 @@
     "spn2_job_id": "spn2-80bbfc53b90dcf869c623aa23fc8642cc4d91c9d",
     "status": "success"
   },
+  "https://www.lemonde.fr/planete/article/2026/07/25/nous-faisons-un-constat-d-echec-de-la-politique-menee-ces-dernieres-annees-pour-assurer-la-disponibilite-des-canadair_6732425_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T19:23:00Z",
+    "last_checked": "2026-07-25T19:23:19Z",
+    "spn2_job_id": "spn2-758cf327c62e15fa7102b15132880512fbe90bb9",
+    "status": "success"
+  },
   "https://www.lemonde.fr/planete/article/2026/07/25/pour-faire-face-aux-tres-grands-incendies-il-faut-anticiper-a-contre-saison-en-plein-hiver-quand-nous-n-avons-plus-le-feu-a-l-esprit_6731792_3244.html": {
     "attempts": 0,
     "first_seen": "2026-07-25T08:27:06Z",
@@ -133148,6 +133169,13 @@
     "first_seen": "2026-07-25T08:29:20Z",
     "last_checked": "2026-07-25T08:29:36Z",
     "spn2_job_id": "spn2-e3b52b6915818af5f55a2b03087dda9e4ee330bb",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/planete/live/2026/07/25/en-direct-incendies-l-avion-militaire-a400m-a-ete-deploye-pour-la-premiere-fois-en-gironde-une-evacuation-de-bordeaux-pas-a-l-ordre-du-jour_6730417_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T19:23:04Z",
+    "last_checked": "2026-07-25T19:23:19Z",
+    "spn2_job_id": "spn2-8ca8acdac1d4ede0cc4c1ec46541c89844b07b2e",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/live/2026/07/25/en-direct-incendies-le-feu-se-dirige-vers-bordeaux-500-militaires-supplementaires-et-1-5-million-de-masques-ffp2-envoyes-en-gironde_6730417_3244.html": {
@@ -140383,6 +140411,13 @@
     "spn2_job_id": "spn2-853df7274acff66f94b4eb279891e042a6917f6e",
     "status": "success"
   },
+  "https://www.lemonde.fr/sport/article/2026/07/25/tour-de-france-2026-le-jour-ou-paul-seixas-a-abandonne-ses-reves-de-podium-et-ou-tadej-pogacar-a-verrouille-son-cinquieme-sacre_6732391_3242.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T19:19:00Z",
+    "last_checked": "2026-07-25T19:20:05Z",
+    "spn2_job_id": "spn2-d3e858941507f6cbca6557cbc58081ac463d0338",
+    "status": "success"
+  },
   "https://www.lemonde.fr/sport/article/2026/07/25/tour-de-france-2026-le-parcours-de-la-vingtieme-etape-le-bourg-d-oisans-l-alpe-d-huez_6731891_3242.html": {
     "attempts": 0,
     "first_seen": "2026-07-25T08:23:15Z",
@@ -141306,6 +141341,13 @@
     "spn2_job_id": "spn2-0764dc2069dd9e2c5b8ec2db929f67650e9c1b16",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/a-l-alpe-d-huez-tadej-pogacar-vers-son-cinquieme-sacre-et-les-cyclistes-en-cinquieme-roue-du-carrosse": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T19:21:02Z",
+    "last_checked": "2026-07-25T19:22:20Z",
+    "spn2_job_id": "spn2-9a0dd99fb78933f5b1b6dba74ba4dbc0a2ee13b8",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/a-l-evian-championship-chiara-tamburlini-choisit-le-panache-plutot-que-la-securite-pour-franchir-le-cut": {
     "attempts": 1,
     "first_seen": "2026-07-10T17:22:02Z",
@@ -141787,6 +141829,13 @@
     "first_seen": "2026-06-30T16:07:15Z",
     "last_checked": "2026-06-30T16:07:37Z",
     "spn2_job_id": "spn2-11bd24a6a637ed78671e17d9c4cb3d95eda5b749",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/arkady-dvorkovich-echec-et-mat-les-sanctions-contre-moscou-condamnent-le-patron-des-echecs-au-banc-de-touche": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T19:19:03Z",
+    "last_checked": "2026-07-25T19:20:21Z",
+    "spn2_job_id": "spn2-d090468f166193da0d4c6198bd2202de7bd451f2",
     "status": "success"
   },
   "https://www.letemps.ch/articles/arpenter-le-mont-blanc-compter-les-myrtilles-les-tetards-et-les-bourdons-et-evaluer-l-impact-du-changement-climatique": {
@@ -145912,6 +145961,13 @@
     "spn2_job_id": "spn2-284e4136e37a3102825a6aeee0db8db73ba630af",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/la-pride-rassemblent-des-milliers-de-personnes-a-berne": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T19:22:04Z",
+    "last_checked": "2026-07-25T19:22:20Z",
+    "spn2_job_id": "spn2-78fae28b64c45ab65303231358bf6adf2b635169",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/la-prochaine-canicule-se-prepare-des-aujourd-hui": {
     "attempts": 0,
     "first_seen": "2026-06-29T16:26:10Z",
@@ -147536,6 +147592,13 @@
     "spn2_job_id": "spn2-2f784a3f7bf721a8b35559fced7665ebc218d3ce",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/mort-de-la-chanteuse-marie-paule-belle-interprete-de-la-parisienne": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T19:20:24Z",
+    "last_checked": "2026-07-25T19:21:00Z",
+    "spn2_job_id": "spn2-9a8f3b89749616abc3f3bcf7b5fc336f882b4159",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/mort-de-roland-collombin-le-dernier-envol-de-la-colombe": {
     "attempts": 1,
     "first_seen": "2026-07-10T19:56:21Z",
@@ -148955,6 +149018,13 @@
     "first_seen": "2026-07-04T09:01:18Z",
     "last_checked": "2026-07-04T09:01:33Z",
     "spn2_job_id": "spn2-11da5ae92bbe051c60ac6beeb3ca99f9e3a3b901",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/tom-hiddleston-vous-emmene-au-coeur-de-l-eruption-de-pompei-et-en-fait-des-tonnes": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T19:22:22Z",
+    "last_checked": "2026-07-25T19:23:01Z",
+    "spn2_job_id": "spn2-70db07fe60c09a17415c97ca40604d1bb865b31b",
     "status": "success"
   },
   "https://www.letemps.ch/articles/toronto-asphyxiee-par-les-fumees-des-feux-de-foret-du-sud-ouest-du-canada": {
@@ -150792,9 +150862,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/environnement/2026/article/geneve-les-sternes-pierregarins-de-retour-grace-a-des-radeaux-29311705.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-07-25T13:54:20Z",
-    "last_checked": "2026-07-25T16:12:13Z",
+    "last_checked": "2026-07-25T19:21:00Z",
     "spn2_job_id": "spn2-6375362f64f98b5e01c02afa6620c61fa72c7179",
     "status": "error_retry"
   },
@@ -151121,11 +151191,11 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/antonio-guterres-en-syrie-premiere-visite-d-un-chef-de-l-onu-depuis-2009-29312347.html": {
-    "attempts": 4,
+    "attempts": 5,
     "first_seen": "2026-07-25T08:20:08Z",
-    "last_checked": "2026-07-25T16:09:47Z",
+    "last_checked": "2026-07-25T19:19:03Z",
     "spn2_job_id": "spn2-637fcb77d83af612bcc78e5c06f396f2b5768151",
-    "status": "error_retry"
+    "status": "error"
   },
   "https://www.rts.ch/info/monde/2026/article/attaques-d-ours-au-japon-800-cameras-deployees-pour-les-traquer-29292764.html": {
     "attempts": 0,
@@ -151434,6 +151504,13 @@
     "last_checked": "2026-07-11T08:10:01Z",
     "spn2_job_id": "spn2-1a7910f97c5303e83bfad163585891b78140e63a",
     "status": "success"
+  },
+  "https://www.rts.ch/info/monde/2026/article/face-a-des-incendies-historiques-la-france-mobilise-l-armee-29312638.html": {
+    "attempts": 1,
+    "first_seen": "2026-07-25T19:21:07Z",
+    "last_checked": "2026-07-25T19:21:23Z",
+    "spn2_job_id": "spn2-a5718363c7f2180e47c84a288a0dbe3964ab1d4d",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/monde/2026/article/face-aux-etats-unis-l-europe-et-le-canada-se-rapprochent-29293418.html": {
     "attempts": 0,
@@ -152285,9 +152362,9 @@
   "https://www.rts.ch/info/monde/2026/article/seveso-un-collectif-de-citoyens-lutte-contre-l-oubli-29311605.html": {
     "attempts": 3,
     "first_seen": "2026-07-25T10:44:06Z",
-    "last_checked": "2026-07-25T16:11:07Z",
+    "last_checked": "2026-07-25T19:20:21Z",
     "spn2_job_id": "spn2-48aaf2c6e5b0d991fe5263b9f7018934e2162665",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/sicile-les-incendies-se-multiplient-sous-une-chaleur-extreme-29310522.html": {
     "attempts": 0,
