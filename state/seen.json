@@ -128127,9 +128127,9 @@
   "https://www.lemonde.fr/international/live/2026/07/25/en-direct-guerre-au-moyen-orient-le-ministre-des-affaires-etrangeres-iranien-appelle-au-dialogue-entre-les-saoudiens-et-les-houthistes_6725301_3210.html": {
     "attempts": 1,
     "first_seen": "2026-07-25T19:21:00Z",
-    "last_checked": "2026-07-25T19:21:02Z",
+    "last_checked": "2026-07-25T22:03:08Z",
     "spn2_job_id": "spn2-91f81b6e3a673276352b4959c97227d5da559831",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.lemonde.fr/international/live/2026/07/25/en-direct-guerre-au-moyen-orient-les-houthistes-revendiquent-un-tir-de-missile-en-arabie-saoudite-apres-des-attaques-contre-des-sites-militaires-au-yemen_6725301_3210.html": {
     "attempts": 0,
@@ -133190,6 +133190,13 @@
     "first_seen": "2026-07-25T13:57:07Z",
     "last_checked": "2026-07-25T13:58:10Z",
     "spn2_job_id": "spn2-a3c12ec605009a74f70bbfdedf27c26dda2ac37e",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/planete/live/2026/07/25/en-direct-incendies-tant-que-le-feu-n-est-pas-fixe-il-n-y-aura-pas-de-reintegration-des-personnes-evacuees-en-gironde-previent-laurent-nunez_6730417_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T22:03:19Z",
+    "last_checked": "2026-07-25T22:03:35Z",
+    "spn2_job_id": "spn2-db5db7ac577d62518c9f14b273bca9a3acf0e2e8",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/video/2026/06/25/seismes-au-venezuela-les-images-au-moment-des-secousses-et-les-degats-importants_6713383_3244.html": {
@@ -148425,6 +148432,13 @@
     "spn2_job_id": "spn2-b4e0b8f30a4e8a028a616ba4ea15399190de974e",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/quelque-260-000-refugies-du-feu-evacues-en-france-et-en-espagne": {
+    "attempts": 1,
+    "first_seen": "2026-07-25T22:04:19Z",
+    "last_checked": "2026-07-25T22:04:30Z",
+    "spn2_job_id": "spn2-007215999a5818755228afabc042554dd3817984",
+    "status": "error_retry"
+  },
   "https://www.letemps.ch/articles/qui-est-castlelake-le-fonds-americain-qui-veut-racheter-easyjet": {
     "attempts": 0,
     "first_seen": "2026-07-06T20:18:03Z",
@@ -148746,6 +148760,13 @@
     "last_checked": "2026-07-16T08:28:29Z",
     "spn2_job_id": "spn2-c4bd56d987cdb0d689836bf5b8a46faefd0c21d4",
     "status": "error_retry"
+  },
+  "https://www.letemps.ch/articles/soleil-vert-un-roman-et-un-film-pour-raconter-l-epuisement-de-la-planete": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T22:03:07Z",
+    "last_checked": "2026-07-25T22:03:35Z",
+    "spn2_job_id": "spn2-04c20f59f3c4f11a6140b23a0553ca505c2d9ff3",
+    "status": "success"
   },
   "https://www.letemps.ch/articles/sommes-nous-condamnes-a-cuire-toujours-plus-l-ete-les-scenarios-climatiques-montrent-comment-eviter-le-pire": {
     "attempts": 0,
@@ -150862,9 +150883,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/environnement/2026/article/geneve-les-sternes-pierregarins-de-retour-grace-a-des-radeaux-29311705.html": {
-    "attempts": 3,
+    "attempts": 4,
     "first_seen": "2026-07-25T13:54:20Z",
-    "last_checked": "2026-07-25T19:21:00Z",
+    "last_checked": "2026-07-25T22:03:07Z",
     "spn2_job_id": "spn2-6375362f64f98b5e01c02afa6620c61fa72c7179",
     "status": "error_retry"
   },
@@ -151508,9 +151529,9 @@
   "https://www.rts.ch/info/monde/2026/article/face-a-des-incendies-historiques-la-france-mobilise-l-armee-29312638.html": {
     "attempts": 1,
     "first_seen": "2026-07-25T19:21:07Z",
-    "last_checked": "2026-07-25T19:21:23Z",
+    "last_checked": "2026-07-25T22:03:35Z",
     "spn2_job_id": "spn2-a5718363c7f2180e47c84a288a0dbe3964ab1d4d",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/face-aux-etats-unis-l-europe-et-le-canada-se-rapprochent-29293418.html": {
     "attempts": 0,
@@ -152196,6 +152217,13 @@
     "first_seen": "2026-07-22T03:25:47Z",
     "last_checked": "2026-07-22T03:26:07Z",
     "spn2_job_id": "spn2-5eeb89a37764cf2ac1579e8a9690fa232b89956f",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/monde/2026/article/plusieurs-personnes-ont-ete-blessees-en-marge-d-une-marche-des-fiertes-a-berlin-29312868.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T22:05:07Z",
+    "last_checked": "2026-07-25T22:06:08Z",
+    "spn2_job_id": "spn2-74b4069347e1a85dd052f613fd0d9ff5ea24fe51",
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/portugal-lisbonne-et-plusieurs-regions-en-alerte-rouge-canicule-29292261.html": {
@@ -154674,6 +154702,13 @@
     "spn2_job_id": "spn2-2f2714d2d89d2bd9da6fd0a070c2931d8ef1daeb",
     "status": "success"
   },
+  "https://www.rts.ch/info/suisse/2026/article/brunch-du-1er-aout-a-la-ferme-un-defi-pour-les-agriculteurs-29312824.html": {
+    "attempts": 1,
+    "first_seen": "2026-07-25T22:04:30Z",
+    "last_checked": "2026-07-25T22:05:07Z",
+    "spn2_job_id": "spn2-e98618c370592e0b168897b18ee39a707e36cf5d",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/suisse/2026/article/canicule-comment-les-refuges-de-la-spa-protegent-les-animaux-29301320.html": {
     "attempts": 0,
     "first_seen": "2026-07-12T13:50:24Z",
@@ -155427,6 +155462,13 @@
     "first_seen": "2026-06-28T07:37:01Z",
     "last_checked": "2026-06-28T07:37:25Z",
     "spn2_job_id": "spn2-c09ef88a7c599fec4966d56e335180cf62c27f11",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/suisse/2026/article/swiss-deux-pilotes-prives-de-vol-pour-cause-d-alcool-a-geneve-29312726.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-25T22:04:24Z",
+    "last_checked": "2026-07-25T22:05:07Z",
+    "spn2_job_id": "spn2-c850c136846de1acf60333550bb53a4e8306c03e",
     "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/terre-des-hommes-enquete-sur-des-derives-medicales-passees-29307598.html": {
