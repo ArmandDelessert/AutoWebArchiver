@@ -272,7 +272,7 @@ function timeAgo(isoString) {
 function formatGeneratedAt(date) {
   const dateStr = date.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
   const timeStr = date.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
-  return `Page générée le ${dateStr} à ${timeStr}.`;
+  return `Généré le ${dateStr} à ${timeStr}`;
 }
 
 function pct(count, total) {
