@@ -119095,6 +119095,13 @@
     "spn2_job_id": "spn2-17b8c98109e00691f3160658916927eecf22e74a",
     "status": "success"
   },
+  "https://www.lemonde.fr/disparitions/article/2026/07/28/betye-saar-figure-tutelaire-de-l-art-afro-americain-est-morte_6735604_3382.html": {
+    "attempts": 1,
+    "first_seen": "2026-07-28T22:17:06Z",
+    "last_checked": "2026-07-28T22:17:07Z",
+    "spn2_job_id": "spn2-dfa732743b493bce743ac3a852125c122b440bf0",
+    "status": "error_retry"
+  },
   "https://www.lemonde.fr/disparitions/article/2026/07/28/mort-du-journaliste-senegalais-idriss-fall-une-voix-influente-de-l-afrique-francophone_6735329_3382.html": {
     "attempts": 0,
     "first_seen": "2026-07-28T16:54:13Z",
@@ -121252,6 +121259,13 @@
     "first_seen": "2026-07-28T03:22:06Z",
     "last_checked": "2026-07-28T03:22:23Z",
     "spn2_job_id": "spn2-0f25431339705b5e31f5e538d231f81460513544",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/economie/article/2026/07/28/incendie-en-gironde-a-proximite-des-sites-industriels-sous-surveillance-l-exposition-est-mesuree_6735537_3234.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-28T22:15:05Z",
+    "last_checked": "2026-07-28T22:16:04Z",
+    "spn2_job_id": "spn2-6fbb96c6724dc64140827692f77f0964896cfb78",
     "status": "success"
   },
   "https://www.lemonde.fr/economie/article/2026/07/28/l-incendie-de-gironde-met-en-evidence-l-exposition-des-sites-seveso-aux-risques-des-feux-de-foret_6734494_3234.html": {
@@ -127471,6 +127485,13 @@
     "first_seen": "2026-07-28T16:53:37Z",
     "last_checked": "2026-07-28T16:54:15Z",
     "spn2_job_id": "spn2-6d622dec11b75ecbdaa680a61d510ecaa771c4e5",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/07/29/aux-etats-unis-une-reforme-pour-accelerer-l-expulsion-des-demandeurs-d-asile_6735606_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-28T22:18:07Z",
+    "last_checked": "2026-07-28T22:18:23Z",
+    "spn2_job_id": "spn2-7b1b4e09334619a034995025161b388681a09f31",
     "status": "success"
   },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
@@ -133767,6 +133788,13 @@
     "spn2_job_id": "spn2-287a658f49faa48ef4b992ccd68959071e215083",
     "status": "success"
   },
+  "https://www.lemonde.fr/planete/article/2026/07/28/dans-le-var-l-incendie-du-gros-bessillon-est-fixe-laissant-des-pompiers-epuises-c-est-du-non-stop-depuis-huit-jours_6735605_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-28T22:18:06Z",
+    "last_checked": "2026-07-28T22:18:38Z",
+    "spn2_job_id": "spn2-38df67018ad01262b64d21db55e88d2672d17f6e",
+    "status": "success"
+  },
   "https://www.lemonde.fr/planete/article/2026/07/28/en-espagne-le-pacte-d-etat-de-pedro-sanchez-face-a-l-urgence-climatique-est-rejete-par-la-droite_6735402_3244.html": {
     "attempts": 0,
     "first_seen": "2026-07-28T19:52:19Z",
@@ -139878,6 +139906,20 @@
     "first_seen": "2026-07-28T08:59:13Z",
     "last_checked": "2026-07-28T09:00:12Z",
     "spn2_job_id": "spn2-365e9e76fd61992c8f616d56ea5f8c99e1f56dc0",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/07/28/patrick-bruel-sous-le-coup-de-deux-nouvelles-plaintes-pour-viol-et-agression-sexuelle_6735570_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-28T22:16:06Z",
+    "last_checked": "2026-07-28T22:17:05Z",
+    "spn2_job_id": "spn2-402bfecb002409a891cf2d012063faaede44e1dc",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/07/28/vol-du-torque-en-or-de-vix-un-suspect-place-en-detention-provisoire_6735536_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-28T22:16:06Z",
+    "last_checked": "2026-07-28T22:16:07Z",
+    "spn2_job_id": "spn2-fd3718aa88b9e3999c016a72d790cf1c8f4c8047",
     "status": "success"
   },
   "https://www.lemonde.fr/societe/live/2026/07/02/affaire-dany-leprince-posez-vos-questions-a-notre-journaliste-franck-johannes-sur-la-decision-historique-de-la-justice-d-annuler-la-condamnation-rendue_6717824_3224.html": {
@@ -147938,9 +147980,9 @@
   "https://www.letemps.ch/articles/la-fed-entre-data-et-politique-s": {
     "attempts": 1,
     "first_seen": "2026-07-28T19:48:15Z",
-    "last_checked": "2026-07-28T19:48:31Z",
+    "last_checked": "2026-07-28T22:16:04Z",
     "spn2_job_id": "spn2-58a3aa8312483585dfaea40bbcd349630fd91f29",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.letemps.ch/articles/la-fille-dans-les-nuages-girl-power-contre-negationnisme-climatique": {
     "attempts": 0,
@@ -152458,11 +152500,11 @@
     "status": "success"
   },
   "https://www.rts.ch/info/culture/cinema/2026/article/la-fille-dans-les-nuages-un-film-d-animation-lumineux-et-familial-29311939.html": {
-    "attempts": 4,
+    "attempts": 5,
     "first_seen": "2026-07-28T11:32:10Z",
-    "last_checked": "2026-07-28T19:46:18Z",
+    "last_checked": "2026-07-28T22:15:06Z",
     "spn2_job_id": "spn2-a881e0804d40a6102c6d164304124b8c12830b8d",
-    "status": "error_retry"
+    "status": "error"
   },
   "https://www.rts.ch/info/culture/cinema/2026/article/le-festival-de-locarno-va-presenter-233-films-durant-sa-79e-edition-29299486.html": {
     "attempts": 0,
@@ -155265,9 +155307,9 @@
     "status": "error"
   },
   "https://www.rts.ch/info/monde/2026/article/trump-recoit-zelensky-et-netanyahu-le-meme-jour-a-washington-29315086.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-07-28T19:48:16Z",
-    "last_checked": "2026-07-28T19:48:31Z",
+    "last_checked": "2026-07-28T22:17:07Z",
     "spn2_job_id": "spn2-a233b43f703ca048ae85a785bbbfdf83656dd85b",
     "status": "error_retry"
   },
@@ -156655,6 +156697,13 @@
     "spn2_job_id": "spn2-bcaa0f2098fc0c3604ada76724f6548e3a672ffd",
     "status": "success"
   },
+  "https://www.rts.ch/info/regions/vaud/2026/article/le-site-vaudois-de-la-tine-de-conflens-est-ferme-au-public-29315002.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-28T22:18:07Z",
+    "last_checked": "2026-07-28T22:18:23Z",
+    "spn2_job_id": "spn2-88af15e45f6e696334377b970a15f5dbb49759dc",
+    "status": "success"
+  },
   "https://www.rts.ch/info/regions/vaud/2026/article/le-trafic-ferroviaire-interrompu-en-gare-de-lausanne-29287114.html": {
     "attempts": 0,
     "first_seen": "2026-06-26T12:54:16Z",
@@ -157792,9 +157841,9 @@
   "https://www.rts.ch/info/suisse/2026/article/des-drones-permettent-de-sauver-7600-faons-en-suisse-29314923.html": {
     "attempts": 1,
     "first_seen": "2026-07-28T19:47:18Z",
-    "last_checked": "2026-07-28T19:48:15Z",
+    "last_checked": "2026-07-28T22:17:05Z",
     "spn2_job_id": "spn2-76a502a95131fd331bff63de8032a96026876d77",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/droits-de-douane-guy-parmelin-fait-le-bilan-de-sa-visite-aux-usa-29298745.html": {
     "attempts": 0,
@@ -158130,6 +158179,13 @@
     "first_seen": "2026-07-17T22:03:16Z",
     "last_checked": "2026-07-17T22:04:05Z",
     "spn2_job_id": "spn2-37756b3eca95afc8a8e56663e4f03f5535bef81a",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/suisse/2026/article/le-laboratoire-de-spiez-va-etre-profondement-modernise-et-renove-29315150.html": {
+    "attempts": 0,
+    "first_seen": "2026-07-28T22:17:07Z",
+    "last_checked": "2026-07-28T22:18:07Z",
+    "spn2_job_id": "spn2-54e41dc13eb9a28dc250c2769f52b9d2c6e762a3",
     "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/legende-urbaine-la-suisse-n-interdit-pas-de-tirer-la-chasse-la-nuit-29290297.html": {
