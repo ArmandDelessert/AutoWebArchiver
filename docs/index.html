@@ -136,7 +136,7 @@
 
 <header>
   <h1><a href="https://github.com/ArmandDelessert/AutoWebArchiver" target="_blank">AutoWebArchiver</a> — Monitoring</h1>
-  <div class="subtitle"><span id="last-updated">Chargement…</span></div>
+  <div class="subtitle"><span id="page-generated">Chargement…</span></div>
 </header>
 
 <div id="content">
@@ -267,6 +267,12 @@ function timeAgo(isoString) {
   const diffH = Math.round(diffMin / 60);
   if (diffH < 48) return `il y a ${diffH} h`;
   return `il y a ${Math.round(diffH / 24)} j`;
+}
+
+function formatGeneratedAt(date) {
+  const dateStr = date.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+  const timeStr = date.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+  return `Page générée le ${dateStr} à ${timeStr}.`;
 }
 
 function pct(count, total) {
@@ -531,15 +537,18 @@ function renderDroppedUrlsTable(droppedUrls) {
 }
 
 async function main() {
+  // Independent of the data fetch below: this page has no separate build
+  // step (GitHub Pages serves index.html as-is; state/*.json is fetched
+  // live, in your browser, every time you load this page), so "when was
+  // this generated" is simply "now" -- there's no version.json-style build
+  // timestamp to fetch here.
+  document.getElementById("page-generated").textContent = formatGeneratedAt(new Date());
+
   try {
     const [runHistory, feedStats] = await Promise.all([
       fetchJson("state/run_history.json"),
       fetchJson("state/feed_stats.json"),
     ]);
-
-    document.getElementById("last-updated").textContent = runHistory.length
-      ? `Dernière exécution ${timeAgo(runHistory[runHistory.length - 1].timestamp)}.`
-      : "Aucune exécution enregistrée.";
 
     renderCards(runHistory);
     renderAlerts(feedStats);
