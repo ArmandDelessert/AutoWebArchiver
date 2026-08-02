@@ -269,10 +269,11 @@ function timeAgo(isoString) {
   return `il y a ${Math.round(diffH / 24)} j`;
 }
 
-function formatGeneratedAt(date) {
+function formatDataAsOf(isoString) {
+  const date = new Date(isoString.replace(" ", "T"));
   const dateStr = date.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
   const timeStr = date.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
-  return `Généré le ${dateStr} à ${timeStr}`;
+  return `Données à jour au ${dateStr} à ${timeStr}.`;
 }
 
 function pct(count, total) {
@@ -537,18 +538,20 @@ function renderDroppedUrlsTable(droppedUrls) {
 }
 
 async function main() {
-  // Independent of the data fetch below: this page has no separate build
-  // step (GitHub Pages serves index.html as-is; state/*.json is fetched
-  // live, in your browser, every time you load this page), so "when was
-  // this generated" is simply "now" -- there's no version.json-style build
-  // timestamp to fetch here.
-  document.getElementById("page-generated").textContent = formatGeneratedAt(new Date());
-
   try {
     const [runHistory, feedStats] = await Promise.all([
       fetchJson("state/run_history.json"),
       fetchJson("state/feed_stats.json"),
     ]);
+
+    // The 4 state/*.json files are committed together, right after each
+    // run finishes -- so the last run's own timestamp is exactly "as of
+    // when" the data on this page reflects, not some separate build time
+    // (this page has no build step: it's served as-is, and state/*.json is
+    // fetched live, in your browser, on every load).
+    document.getElementById("page-generated").textContent = runHistory.length
+      ? formatDataAsOf(runHistory[runHistory.length - 1].timestamp)
+      : "Aucune exécution enregistrée.";
 
     renderCards(runHistory);
     renderAlerts(feedStats);
