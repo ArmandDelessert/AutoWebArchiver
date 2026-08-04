@@ -129433,6 +129433,13 @@
     "spn2_job_id": "spn2-f48453dcf2f1336c3676e4eaf5776c696db03ddd",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/08/05/incendies-dans-le-nord-ouest-des-etats-unis-un-homme-soupconne-d-avoir-provoque-l-un-des-feux-devastateurs-de-spokane-arrete_6738982_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-04T22:19:35Z",
+    "last_checked": "2026-08-04T22:20:18Z",
+    "spn2_job_id": "spn2-a48cf24a5eddb512cbffa5cbf29ffb11e00338d2",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
     "attempts": 0,
     "first_seen": "2026-06-25T20:54:14Z",
@@ -136833,6 +136840,13 @@
     "spn2_job_id": "spn2-3435f3b2281048f617f62b48bd7438fcc08bd33d",
     "status": "success"
   },
+  "https://www.lemonde.fr/planete/article/2026/08/04/l-un-des-incendies-meurtriers-de-los-angeles-en-2025-a-ete-cause-par-une-ligne-electrique-defectueuse_6738949_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-04T22:19:15Z",
+    "last_checked": "2026-08-04T22:19:32Z",
+    "spn2_job_id": "spn2-5860d223a15a91eb9ed61eeb7da9f166b0d721f3",
+    "status": "success"
+  },
   "https://www.lemonde.fr/planete/article/2026/08/04/le-projet-de-ferme-usine-a-saumons-pure-salmon-autorise-par-la-prefecture-de-gironde-dans-un-cadre-environnemental-strict_6738490_3244.html": {
     "attempts": 0,
     "first_seen": "2026-08-04T11:39:11Z",
@@ -137719,6 +137733,13 @@
     "first_seen": "2026-08-04T09:04:28Z",
     "last_checked": "2026-08-04T09:04:44Z",
     "spn2_job_id": "spn2-3a34f7d6780e39a7df084c2f93d59a8418623cc1",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/planete/live/2026/08/04/en-direct-incendies-plus-de-400-interpellations-en-france-en-lien-avec-les-feux-depuis-le-debut-de-l-ete-selon-le-ministre-de-l-interieur_6737310_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-04T22:18:36Z",
+    "last_checked": "2026-08-04T22:19:15Z",
+    "spn2_job_id": "spn2-a082a6ee95d507b36283b5e975303615f75d4d1a",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/live/2026/08/04/en-direct-incendies-quatre-massifs-du-var-fermes-en-raison-d-un-risque-d-incendies-tres-severes-un-feu-de-foret-dans-la-drome-mobilise-d-importants-moyens-aeriens_6737310_3244.html": {
@@ -160984,9 +161005,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/incendies-en-grece-amelioration-a-l-ouest-d-athenes-29320273.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-08-04T19:49:06Z",
-    "last_checked": "2026-08-04T19:49:10Z",
+    "last_checked": "2026-08-04T22:19:15Z",
     "spn2_job_id": "spn2-70b7e32494e53642988efcdc0802a58b505690a4",
     "status": "error_retry"
   },
@@ -161492,6 +161513,13 @@
     "first_seen": "2026-07-27T10:10:10Z",
     "last_checked": "2026-07-27T10:11:22Z",
     "spn2_job_id": "spn2-61012402721be2559ef436bdcbeca0c0135ffd30",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/monde/2026/article/liechtenstein-donnees-de-31-000-entites-derobees-par-des-hackers-29320364.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-04T22:19:16Z",
+    "last_checked": "2026-08-04T22:19:32Z",
+    "spn2_job_id": "spn2-a7c11d1b07bb94da406de54b127fac8c3380d9f7",
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/manhattan-un-gratte-ciel-menace-de-s-effondrer-a-new-york-29297267.html": {
@@ -162179,6 +162207,13 @@
     "last_checked": "2026-07-05T09:30:29Z",
     "spn2_job_id": "spn2-f0f1dcab51db71479075961de139b5f5a0b6da3d",
     "status": "success"
+  },
+  "https://www.rts.ch/info/monde/2026/article/volcan-de-fuego-au-guatemala-alerte-maximale-et-500-evacuations-29320353.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-04T22:20:17Z",
+    "last_checked": "2026-08-04T22:20:33Z",
+    "spn2_job_id": "spn2-a06949a4961b37ca1657e8071e6695015897756b",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/monde/2026/article/volker-turk-prolonge-comme-chef-des-droits-de-l-homme-a-l-onu-29312303.html": {
     "attempts": 2,
@@ -164370,9 +164405,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/societe/2026/article/cyril-dion-pourquoi-changer-de-recit-face-a-la-crise-climatique-29164620.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-08-04T17:02:18Z",
-    "last_checked": "2026-08-04T19:46:39Z",
+    "last_checked": "2026-08-04T22:18:36Z",
     "spn2_job_id": "spn2-8d53454df76f474451a5178376a59cd4c0da4240",
     "status": "error_retry"
   },
