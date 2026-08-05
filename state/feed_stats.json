@@ -2606,6 +2606,17 @@
         "oldest_published_at": "2026-01-20T14:34:10+01:00",
         "rate_limited_count": 0,
         "timestamp": "2026-08-05T11:26:19Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 141,
+        "new_count": 0,
+        "newest_published_at": "2026-07-15T23:07:40+02:00",
+        "oldest_published_at": "2026-01-20T14:34:10+01:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T14:25:13Z"
       }
     ],
     "last_urls": []
@@ -5217,6 +5228,17 @@
         "oldest_published_at": "2013-06-26T15:16:47+02:00",
         "rate_limited_count": 0,
         "timestamp": "2026-08-05T11:26:09Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 2320,
+        "new_count": 0,
+        "newest_published_at": "2026-07-31T18:40:21+02:00",
+        "oldest_published_at": "2013-06-26T15:16:47+02:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T14:25:05Z"
       }
     ],
     "last_urls": []
@@ -7828,6 +7850,17 @@
         "oldest_published_at": "2013-12-17T19:25:52+01:00",
         "rate_limited_count": 0,
         "timestamp": "2026-08-05T11:26:03Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 13076,
+        "new_count": 0,
+        "newest_published_at": "2026-07-22T10:49:01+02:00",
+        "oldest_published_at": "2013-12-17T19:25:52+01:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T14:24:59Z"
       }
     ],
     "last_urls": []
@@ -10736,20 +10769,30 @@
         "oldest_published_at": "2026-08-03T14:00:03+02:00",
         "rate_limited_count": 11,
         "timestamp": "2026-08-05T11:25:47Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 8,
+        "dropped_unarchived_count": 0,
+        "item_count": 144,
+        "new_count": 14,
+        "newest_published_at": "2026-08-05T16:18:35+02:00",
+        "oldest_published_at": "2026-08-03T16:22:35+02:00",
+        "rate_limited_count": 4,
+        "timestamp": "2026-08-05T14:24:43Z"
       }
     ],
     "last_urls": [
       "https://www.lemonde.fr/afrique/article/2026/08/03/au-mali-l-ancien-premier-ministre-moussa-mara-est-sorti-de-prison_6737545_3212.html",
-      "https://www.lemonde.fr/afrique/article/2026/08/03/mettre-le-feu-c-est-le-moyen-le-plus-rapide-d-etre-renvoye-chez-soi-au-kenya-le-systeme-des-internats-au-bord-de-l-implosion_6737369_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/08/04/au-senegal-les-grandes-figures-de-l-islam-soufi-inspirent-les-discours-souverainistes-et-anticolonialistes_6738251_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/08/04/au-soudan-les-defections-se-multiplient-dans-les-rangs-des-paramilitaires-au-profit-de-l-armee_6738728_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/08/04/crise-de-ceuta-le-maroc-appelle-l-union-europeenne-a-ne-pas-handicaper-son-developpement_6738916_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/08/05/la-guerre-en-somalie-l-autre-impasse-strategique-de-l-administration-trump_6739356_3212.html",
       "https://www.lemonde.fr/argent/article/2026/08/04/des-fonds-risques-vendus-a-la-veuve-et-l-orphelin-cinq-questions-sur-la-degringolade-des-produits-de-keys-reim_6738017_1657007.html",
       "https://www.lemonde.fr/argent/article/2026/08/05/credit-immobilier-comment-profiter-de-taux-encore-attractifs-pour-acheter-son-logement_6739352_1657007.html",
+      "https://www.lemonde.fr/campus/article/2026/08/05/etudes-de-medecine-10-260-postes-d-internes-ouverts-pour-la-promotion-2026-annonce-le-gouvernement_6739423_4401467.html",
       "https://www.lemonde.fr/cinema/article/2026/08/05/les-films-a-l-affiche-girl-les-silences-de-riyad-cotton-queen-enamorada_6739181_3476.html",
       "https://www.lemonde.fr/comprendre-en-3-minutes/video/2026/08/04/comment-ont-evolue-les-relations-entre-les-etats-unis-et-cuba-comprendre-en-trois-minutes_6738772_6176282.html",
-      "https://www.lemonde.fr/culture/article/2026/08/03/l-odyssee-de-pagnol-par-ariane-ascaride-sur-france-inter-marcel-marseille-et-moi_6737368_3246.html",
       "https://www.lemonde.fr/culture/article/2026/08/04/ariana-grande-qui-fait-l-objet-d-inquietudes-et-de-speculations-sur-sa-sante-annonce-une-pause-dans-sa-vie-publique_6738779_3246.html",
       "https://www.lemonde.fr/culture/article/2026/08/04/avocat-chanteur-ou-peintre-paolo-conte-et-ses-savants-melanges_6738734_3246.html",
       "https://www.lemonde.fr/culture/article/2026/08/04/dans-la-retrospective-lorna-simpson-a-venise-la-peinture-contre-l-effacement-des-memoires_6738013_3246.html",
@@ -10757,12 +10800,13 @@
       "https://www.lemonde.fr/culture/article/2026/08/05/au-79-festival-de-locarno-un-defile-de-stars-de-cinema-et-de-nouveaux-visages-en-quete-du-leopard-d-or_6739358_3246.html",
       "https://www.lemonde.fr/culture/article/2026/08/05/cotton-queen-au-soudan-le-cri-de-resistance-de-deux-generations-de-femmes_6739404_3246.html",
       "https://www.lemonde.fr/culture/article/2026/08/05/des-fleurs-pour-tokyo-retrouvailles-ameres-dans-le-dedale-de-la-capitale-japonaise_6739403_3246.html",
+      "https://www.lemonde.fr/culture/article/2026/08/05/disney-et-tiktok-annoncent-un-accord-pour-l-utilisation-d-extraits-de-films-et-de-series-sur-la-plateforme_6739424_3246.html",
       "https://www.lemonde.fr/culture/article/2026/08/05/girl-a-taiwan-le-desir-de-liberte-d-une-ecoliere-face-a-la-sauvagerie-du-quotidien_6739402_3246.html",
       "https://www.lemonde.fr/culture/article/2026/08/05/le-flamboyant-enamorada-sur-un-amour-pris-dans-les-soubresauts-de-la-revolution-mexicaine-revient-en-salles_6739415_3246.html",
       "https://www.lemonde.fr/disparitions/article/2026/08/04/allan-nascimento-combattant-de-mma-bresilien-est-mort-a-l-age-de-34-ans_6738727_3382.html",
       "https://www.lemonde.fr/disparitions/article/2026/08/04/jean-paul-dreau-le-parolier-du-tube-le-coup-de-soleil-est-mort-a-l-age-de-73-ans_6738422_3382.html",
+      "https://www.lemonde.fr/disparitions/article/2026/08/05/l-ecrivain-didier-decoin-prix-goncourt-en-1977-et-ancien-president-de-son-jury-est-mort-a-l-age-de-81-ans_6739418_3382.html",
       "https://www.lemonde.fr/economie/article/2026/08/03/a-tarascon-les-salaries-de-fibre-excellence-esperent-toujours-un-miracle_6737743_3234.html",
-      "https://www.lemonde.fr/economie/article/2026/08/03/anta-la-marque-de-sport-chinoise-qui-rachete-ses-rivales-etrangeres-pour-conquerir-le-marche-occidental_6737371_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/03/droits-de-douane-de-donald-trump-25-etats-americains-democrates-saisissent-la-justice_6737710_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/03/le-boeing-737-max-7-certifie-avec-sept-ans-de-retard_6737611_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/04/dans-le-nord-toyota-celebre-le-succes-de-la-yaris-sa-voiture-hybride-et-assume-de-ne-pas-prendre-le-virage-du-tout-electrique_6738560_3234.html",
@@ -10770,11 +10814,14 @@
       "https://www.lemonde.fr/economie/article/2026/08/04/l-individualisation-des-augmentations-de-salaires-se-generalise-dans-les-entreprises-francaises_6738352_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/04/la-plainte-visant-charles-alloncle-pour-prise-illegale-d-interets-classee-sans-suite_6738778_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/04/le-rhin-a-sec-met-l-economie-allemande-sous-pression-et-menace-de-peser-sur-le-pib_6738284_3234.html",
+      "https://www.lemonde.fr/economie/article/2026/08/05/le-japon-sort-de-la-deflation-mais-son-economie-comme-sa-monnaie-restent-fragiles_6739422_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/05/le-mega-projet-d-extension-des-capacites-de-l-aeroport-charles-de-gaulle-entre-dans-sa-derniere-ligne-droite_6739355_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/05/le-soutien-des-etats-unis-aux-devises-des-pays-amis-une-maniere-de-s-assurer-leur-subordination_6739408_3234.html",
+      "https://www.lemonde.fr/economie/article/2026/08/05/les-incertitudes-politiques-et-geopolitiques-croissantes-pesent-sur-l-economie-europeenne_6739431_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/05/revolut-la-banque-britannique-a-l-assaut-de-la-jeunesse-mondialisee_6739215_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/05/spacex-double-quasiment-son-chiffre-d-affaires-sans-enrayer-la-chute-de-son-titre-recemment-introduit-en-bourse_6739349_3234.html",
       "https://www.lemonde.fr/flux-video-immersif/video/2026/08/04/tiananmen-des-videos-inedites-revelent-comment-tout-a-bascule_6738318_6717263.html",
+      "https://www.lemonde.fr/guerre-au-proche-orient/article/2026/08/05/au-liban-l-armee-israelienne-annonce-mener-des-frappes-sur-le-sud-du-pays-apres-un-appel-a-evacuer-un-village_6739432_6325529.html",
       "https://www.lemonde.fr/guides-d-achat/article/2026/08/05/les-meilleurs-nettoyeurs-haute-pression_6739405_5306571.html",
       "https://www.lemonde.fr/idees/article/2026/08/03/derriere-les-questions-agricoles-se-dessinent-des-enjeux-de-sante-publique-de-cohesion-sociale-et-de-stabilite-democratique_6737408_3232.html",
       "https://www.lemonde.fr/idees/article/2026/08/04/avec-l-introduction-des-apercus-ia-le-web-et-les-applications-mobiles-pourraient-n-avoir-ete-qu-une-etape-intermediaire-dans-la-transformation-numerique_6738050_3232.html",
@@ -10784,8 +10831,7 @@
       "https://www.lemonde.fr/idees/article/2026/08/05/crise-de-ceuta-le-maroc-n-a-pas-besoin-d-un-nouveau-plan-de-developpement-mais-d-un-nouveau-contrat-social_6739350_3232.html",
       "https://www.lemonde.fr/idees/article/2026/08/05/iran-la-multiplication-des-executions-ne-temoigne-pas-d-une-confiance-retrouvee-du-pouvoir-mais-au-contraire-de-son-extreme-fragilite_6739351_3232.html",
       "https://www.lemonde.fr/idees/article/2026/08/05/l-ecologie-bouc-emissaire-facile-de-ceux-qui-n-ont-rien-vu-venir_6739413_3232.html",
-      "https://www.lemonde.fr/international/article/2026/08/03/aux-etats-unis-des-incendies-ravagent-la-ville-de-spokane-dans-le-nord-ouest-du-pays-ou-60-000-personnes-ont-ete-evacuees_6737344_3211.html",
-      "https://www.lemonde.fr/international/article/2026/08/03/crise-de-ceuta-ursula-von-der-leyen-appelle-a-une-reponse-europeenne-commune-pour-renforcer-les-frontieres_6737366_3210.html",
+      "https://www.lemonde.fr/idees/article/2026/08/05/les-forets-ne-brulent-pas-a-cause-des-ecologistes-et-encore-moins-a-cause-de-la-biodiversite_6739420_3232.html",
       "https://www.lemonde.fr/international/article/2026/08/03/dans-le-michigan-la-bataille-des-deux-gauches-fait-rage-au-sein-du-parti-democrate_6737407_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/03/l-opposant-russe-boris-nadejdine-condamne-en-russie-annonce-avoir-rejoint-la-france_6737405_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/03/legionellose-en-suisse-un-mort-et-vingt-six-cas-recenses-a-bale_6737372_3210.html",
@@ -10806,6 +10852,7 @@
       "https://www.lemonde.fr/international/article/2026/08/04/mon-seul-crime-a-ete-de-vouloir-faire-mes-etudes-en-lituanie-a-vilnius-une-universite-bielorusse-en-exil-harcelee-par-le-regime-de-loukachenko_6738524_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/04/pres-de-160-migrants-secourus-lors-d-une-tentative-de-traversee-de-la-manche-annonce-la-prefecture_6738421_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/04/todd-blanche-l-ancien-avocat-personnel-de-donald-trump-en-passe-de-devenir-ministre-de-la-justice-des-etats-unis_6738769_3210.html",
+      "https://www.lemonde.fr/international/article/2026/08/05/dans-le-michigan-la-victoire-du-progressiste-abdul-el-sayed-a-la-primaire-democrate-confirme-la-poussee-de-l-aile-gauche-au-sein-d-un-parti-fracture_6739433_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/donald-trump-lance-un-acces-payant-a-ses-annonces-sur-truth-social-qui-bousculent-regulierement-les-marches-l-opposition-s-insurge_6739048_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/en-allemagne-le-trafic-a-l-aeroport-de-leipzig-temporairement-interrompu-en-raison-d-un-objet-volant-non-identifie_6739411_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/en-inde-plus-de-100-morts-a-la-suite-d-inondations-et-de-glissements-de-terrain-depuis-juillet_6739400_3210.html",
@@ -10814,6 +10861,7 @@
       "https://www.lemonde.fr/international/article/2026/08/05/incendies-dans-le-nord-ouest-des-etats-unis-un-homme-soupconne-d-avoir-provoque-l-un-des-feux-devastateurs-de-spokane-arrete_6738982_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/la-chine-annonce-des-restrictions-sur-les-exportations-de-pieces-de-drones-vers-les-etats-unis-en-represailles-aux-sanctions-commerciales-americaines_6739416_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/le-pdg-de-paramount-david-ellison-defend-le-rachat-de-warner-bros-en-assurant-preserver-l-independance-et-en-ecartant-toute-domination-du-marche_6739015_3210.html",
+      "https://www.lemonde.fr/international/article/2026/08/05/londres-quatre-hommes-poignardes-a-covent-garden-une-femme-arretee_6739434_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/moyen-orient-les-negociations-s-accelerent-autour-d-une-reouverture-du-detroit-d-ormuz_6739360_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/un-homme-arme-arrete-dans-un-golf-de-donald-trump-en-californie-deux-jours-avant-une-visite-du-president-sur-place-mardi_6739114_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/washington-a-revoque-le-visa-de-l-ambassadrice-du-bresil-aux-etats-unis-brasilia-denonce-une-escalade-de-mesures-hostiles_6739281_3210.html",
@@ -10827,9 +10875,9 @@
       "https://www.lemonde.fr/pixels/article/2026/08/03/cyberattaque-300-000-clients-d-intermarche-concernes-par-une-fuite-de-donnees_6737677_4408996.html",
       "https://www.lemonde.fr/pixels/article/2026/08/04/cinq-jeux-video-pour-faire-semblant-de-travailler-pendant-les-vacances_6737842_4408996.html",
       "https://www.lemonde.fr/pixels/article/2026/08/04/crise-de-ceuta-l-impossible-quete-des-origines-de-la-rumeur-d-une-ouverture-de-la-frontiere_6738730_4408996.html",
+      "https://www.lemonde.fr/pixels/article/2026/08/05/affaire-jean-pormanove-les-deux-streamers-condamnes-a-des-peines-de-prison-avec-sursis_6739425_4408996.html",
       "https://www.lemonde.fr/pixels/article/2026/08/05/cringe-attack-quand-la-peur-d-etre-genant-paralyse-les-jeunes-sur-les-reseaux-sociaux_6739354_4408996.html",
       "https://www.lemonde.fr/planete/article/2026/08/03/l-assechement-du-danube-met-les-pays-d-europe-centrale-au-bord-d-une-crise-energetique_6737474_3244.html",
-      "https://www.lemonde.fr/planete/article/2026/08/03/orages-meteo-france-place-douze-departements-en-vigilance-orange_6737340_3245.html",
       "https://www.lemonde.fr/planete/article/2026/08/04/au-guatemala-le-volcan-fuego-est-entre-en-eruption-le-gouvernement-declenche-l-alerte-maximale_6738182_3245.html",
       "https://www.lemonde.fr/planete/article/2026/08/04/en-gironde-apres-l-incendie-la-bataille-qui-s-annonce-pour-faire-emerger-une-nouvelle-foret_6737945_3244.html",
       "https://www.lemonde.fr/planete/article/2026/08/04/juillet-2026-a-ete-le-mois-le-plus-chaud-jamais-enregistre-en-france-depuis-le-debut-des-mesures-en-1900_6738385_3244.html",
@@ -10837,8 +10885,7 @@
       "https://www.lemonde.fr/planete/article/2026/08/04/le-projet-de-ferme-usine-a-saumons-pure-salmon-autorise-par-la-prefecture-de-gironde-dans-un-cadre-environnemental-strict_6738490_3244.html",
       "https://www.lemonde.fr/planete/article/2026/08/05/l-islande-ordonne-l-expulsion-de-21-militants-engages-contre-la-chasse-a-la-baleine-avec-la-fondation-de-paul-watson_6739414_3244.html",
       "https://www.lemonde.fr/planete/article/2026/08/05/records-de-secheresse-et-de-chaleur-en-juillet-la-question-de-l-eau-devient-absolument-critique_6739248_3244.html",
-      "https://www.lemonde.fr/planete/live/2026/08/05/en-direct-incendies-situation-calme-dans-la-drome-et-dans-le-var-la-journee-de-mercredi-a-risque-en-raison-des-fortes-chaleurs_6737310_3244.html",
-      "https://www.lemonde.fr/politique/article/2026/08/03/elections-senatoriales-dans-le-gard-a-droite-comme-a-gauche-l-union-pour-faire-obstacle-au-rn_6737365_823448.html",
+      "https://www.lemonde.fr/planete/live/2026/08/05/en-direct-incendies-le-feu-dans-la-drome-pas-encore-fixe-le-gouvernement-annonce-un-plan-pour-accompagner-les-agriculteurs-face-aux-catastrophes-climatiques_6737310_3244.html",
       "https://www.lemonde.fr/politique/article/2026/08/03/les-canicules-et-les-incendies-menacent-l-objectif-de-reduction-du-deficit-en-france_6737542_823448.html",
       "https://www.lemonde.fr/politique/article/2026/08/04/deja-107-milliards-d-euros-de-deficit-pour-l-etat-en-six-mois_6738216_823448.html",
       "https://www.lemonde.fr/politique/article/2026/08/04/le-depute-insoumis-eric-coquerel-reclame-un-budget-rectificatif-pour-financer-la-lutte-contre-les-megafeux_6737809_823448.html",
@@ -10855,6 +10902,7 @@
       "https://www.lemonde.fr/series-d-ete/article/2026/08/04/les-dents-de-la-mer-de-steven-spielberg-un-tournage-catastrophique-devenu-blockbuster-estival_6738776_3451060.html",
       "https://www.lemonde.fr/series-d-ete/article/2026/08/04/les-uns-apres-les-autres-nos-desormais-ex-collegues-nous-rejoignent-le-bar-se-remplit-le-pot-de-depart-improvise-de-gabou-vire-de-sa-boite-d-e-commerce_6738561_3451060.html",
       "https://www.lemonde.fr/series-d-ete/article/2026/08/04/swami-vivekananda-le-gourou-hindou-parti-en-1893-a-chicago-aider-spirituellement-le-nouveau-monde_6737944_3451060.html",
+      "https://www.lemonde.fr/series-d-ete/article/2026/08/05/a-munich-la-table-qui-ne-manque-pas-d-air_6739428_3451060.html",
       "https://www.lemonde.fr/series-d-ete/article/2026/08/05/le-soldat-ros-intrepide-chien-detecteur-d-explosifs-devenu-l-un-des-heros-a-quatre-pattes-de-l-armee-francaise_6739283_3451060.html",
       "https://www.lemonde.fr/series-d-ete/article/2026/08/05/les-enfants-de-cisjordanie-dans-l-objectif-du-photographe-palestinien-sakir-khader-pour-conserver-la-memoire-de-la-survie_6739401_3451060.html",
       "https://www.lemonde.fr/series-d-ete/article/2026/08/05/maharishi-mahesh-yogi-le-gourou-des-beatles-qui-initie-a-la-meditation-la-generation-hippie_6739180_3451060.html",
@@ -10873,10 +10921,12 @@
       "https://www.lemonde.fr/sport/article/2026/08/04/tour-de-france-femmes-2026-le-parcours-de-la-quatrieme-etape-gevrey-chambertin-dijon_6738116_3242.html",
       "https://www.lemonde.fr/sport/article/2026/08/04/tour-de-france-femmes-2026-pourquoi-ne-peut-on-pas-une-fois-encore-regarder-les-etapes-en-integralite_6738558_3242.html",
       "https://www.lemonde.fr/sport/article/2026/08/04/tour-de-france-femmes-pauline-ferrand-prevot-voit-ses-chances-de-double-s-eloigner-apres-un-contre-la-montre-decevant_6738883_3242.html",
+      "https://www.lemonde.fr/sport/article/2026/08/05/aleksander-ceferin-le-dirigeant-qui-a-fait-plier-gianni-infantino_6739421_3242.html",
       "https://www.lemonde.fr/sport/article/2026/08/05/l-ol-se-complique-deja-la-tache-dans-sa-course-a-la-ligue-des-champions-en-s-inclinant-chez-le-sparta-prague_6739147_3242.html",
       "https://www.lemonde.fr/sport/article/2026/08/05/tour-de-france-femmes-2026-le-parcours-de-la-cinquieme-etape-macon-belleville-en-beaujolais_6739395_3242.html",
       "https://www.lemonde.fr/sport/article/2026/08/05/tour-de-france-femmes-2026-sandrine-tas-la-patineuse-de-vitesse-devenue-revelation-du-peloton_6739361_3242.html",
-      "https://www.lemonde.fr/sport/live/2026/08/04/en-direct-tour-de-france-femmes-2026-suivez-le-contre-la-montre-entre-gevrey-chambertin-et-dijon_6738559_3242.html"
+      "https://www.lemonde.fr/sport/live/2026/08/04/en-direct-tour-de-france-femmes-2026-suivez-le-contre-la-montre-entre-gevrey-chambertin-et-dijon_6738559_3242.html",
+      "https://www.lemonde.fr/sport/live/2026/08/05/en-direct-tour-de-france-femmes-2026-suivez-la-cinquieme-etape-entre-macon-et-belleville-en-beaujolais_6739417_3242.html"
     ]
   },
   "letemps.ch": {
@@ -13783,30 +13833,41 @@
         "oldest_published_at": "2026-08-05T03:35:20Z",
         "rate_limited_count": 2,
         "timestamp": "2026-08-05T11:25:48Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 7,
+        "dropped_unarchived_count": 0,
+        "item_count": 21,
+        "new_count": 7,
+        "newest_published_at": "2026-08-05T14:23:18Z",
+        "oldest_published_at": "2026-08-05T06:39:10Z",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T14:24:44Z"
       }
     ],
     "last_urls": [
-      "https://www.letemps.ch/articles/apres-les-feux-le-lent-retour-de-la-foret-on-a-le-sentiment-qu-il-n-y-a-plus-du-tout-de-vie-mais-en-realite-il-y-en-a-encore",
+      "https://www.letemps.ch/articles/a-la-chaux-de-fonds-apres-une-canicule-historique-la-plage-des-six-pompes-commence-sous-les-trombes-d-eau",
+      "https://www.letemps.ch/articles/accuse-de-violences-le-chef-jean-imbert-va-etre-presente-a-un-juge",
       "https://www.letemps.ch/articles/apres-sa-collision-avec-une-baleine-le-navigateur-anatole-facon-redecouvre-horta-port-refuge-au-milieu-de-l-atlantique",
       "https://www.letemps.ch/articles/au-jardin-robinson-les-enfants-crusoe-de-la-cite-du-lignon",
+      "https://www.letemps.ch/articles/dans-le-monde-entier-des-papillons-se-deplacent-vers-les-poles-en-reponse-au-changement-climatique",
+      "https://www.letemps.ch/articles/deces-de-l-ecrivain-et-scenariste-didier-decoin",
       "https://www.letemps.ch/articles/e-mails-et-sms-frauduleux-les-signes-qui-doivent-alerter-face-a-des-arnaques-de-plus-en-plus-sophistiquees",
       "https://www.letemps.ch/articles/gianni-infantino-tient-une-reunion-de-crise-de-la-fifa-ce-mercredi-apres-midi",
       "https://www.letemps.ch/articles/google-a-laisse-n-importe-qui-manipuler-les-images-de-son-service-earth-un-nouveau-derapage-des-geants-de-l-ia",
       "https://www.letemps.ch/articles/il-y-a-plus-de-suisses-frontaliers-que-de-lausannois",
       "https://www.letemps.ch/articles/je-ne-savais-pas-si-je-serais-toujours-vivante-pour-la-creation-du-spectacle-au-castrum-a-yverdon-des-acrobates-de-60-ans-et-plus-vont-faire-sensation",
-      "https://www.letemps.ch/articles/kyma-l-onde-mysterieuse-un-film-de-science-fiction-francais-pour-ados-sur-les-traces-de-spielberg",
       "https://www.letemps.ch/articles/la-collegialite-ce-monstre-par-frederic-recrosio",
-      "https://www.letemps.ch/articles/la-mort-civique-derniere-arme-de-moscou-contre-les-opposants-en-exil-avant-les-legislatives-de-septembre",
-      "https://www.letemps.ch/articles/la-regulation-americaine-sur-l-ia-ne-visera-qu-openai-google-et-anthropic",
+      "https://www.letemps.ch/articles/la-volatilite-des-matieres-premieres-permet-au-zougois-glencore-de-renouer-avec-la-rentabilite",
       "https://www.letemps.ch/articles/le-drame-de-ceuta-premiere-demonstration-a-grande-echelle-d-une-attaque-hybride-algorithmique-contre-une-frontiere-de-l-ue",
       "https://www.letemps.ch/articles/le-reglement-de-vieux-litiges-fait-plonger-le-benefice-de-sandoz",
       "https://www.letemps.ch/articles/le-rock-r-sauvage-festival-de-plus-en-plus-a-l-ouest-et-c-est-heureux",
       "https://www.letemps.ch/articles/le-tunnel-routier-du-gothard-sera-ferme-durant-douze-nuits",
-      "https://www.letemps.ch/articles/les-chiffres-parlent-d-eux-memes-l-initiative-pour-la-depenalisation-de-l-ivg-au-liechtenstein-recolte-un-nombre-quasi-record-de-signatures",
       "https://www.letemps.ch/articles/louisa-yousfi-je-pourrais-ecrire-un-livre-entier-sur-le-rire-exceptionnel-de-djamila-bouhired-cette-icone-de-la-resistance-anticoloniale",
       "https://www.letemps.ch/articles/musique-barbare-quand-agatha-christie-ecrivait-sans-poirot-sans-marple-sans-meme-son-propre-nom",
-      "https://www.letemps.ch/articles/ultra-conquerant-elon-musk-veut-desormais-fournir-la-majorite-de-l-internet-mondial-mais-les-actionnaires-de-spacex-restent-mefiants",
-      "https://www.letemps.ch/articles/un-homme-arme-a-ete-arrete-sur-un-golf-de-trump-en-californie"
+      "https://www.letemps.ch/articles/prison-avec-sursis-pour-les-streamers-qui-animaient-la-chaine-ou-jean-pormanove-est-mort-en-direct",
+      "https://www.letemps.ch/articles/si-les-etats-unis-prenaient-au-serieux-la-question-du-travail-force-ils-agiraient-par-l-intermediaire-de-l-oit-et-de-la-convention-sur-le-travail-force-de-l-onu"
     ]
   },
   "rts.ch": {
@@ -16713,33 +16774,44 @@
         "oldest_published_at": "2026-07-30T12:13:37Z",
         "rate_limited_count": 5,
         "timestamp": "2026-08-05T11:25:47Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 7,
+        "dropped_unarchived_count": 0,
+        "item_count": 25,
+        "new_count": 9,
+        "newest_published_at": "2026-08-05T14:02:44Z",
+        "oldest_published_at": "2026-07-30T12:13:37Z",
+        "rate_limited_count": 18,
+        "timestamp": "2026-08-05T14:24:43Z"
       }
     ],
     "last_urls": [
       "https://www.rts.ch/archives/grands-formats/2026/article/fete-nationale-comment-celebrez-vous-le-1er-aout-29289252.html",
       "https://www.rts.ch/info/culture/arts-visuels/2026/article/one-piece-fait-son-entree-au-musee-grevin-29316497.html",
+      "https://www.rts.ch/info/culture/cinema/2026/article/le-festival-du-film-de-locarno-lance-sa-79e-edition-29320560.html",
+      "https://www.rts.ch/info/culture/livres/2026/article/l-ecrivain-didier-decoin-ancien-prix-goncourt-est-mort-a-81-ans-29320934.html",
       "https://www.rts.ch/info/economie/2026/article/le-chiffre-d-affaires-de-spacex-en-hausse-de-92-mais-l-action-chute-29320466.html",
-      "https://www.rts.ch/info/environnement/2026/article/zermatt-le-ski-d-ete-suspendu-sur-le-glacier-sauf-pour-swiss-ski-29320152.html",
+      "https://www.rts.ch/info/monde/2026/article/abdul-el-sayed-gagne-la-primaire-democrate-du-michigan-29320777.html",
       "https://www.rts.ch/info/monde/2026/article/europe-les-incendies-de-l-ete-vont-peser-sur-les-budgets-29320627.html",
-      "https://www.rts.ch/info/monde/2026/article/incendies-en-grece-amelioration-a-l-ouest-d-athenes-29320273.html",
-      "https://www.rts.ch/info/monde/2026/article/italie-des-eboueurs-retrouvent-un-ticket-de-loto-a-un-million-d-euros-29320203.html",
       "https://www.rts.ch/info/monde/2026/article/liechtenstein-donnees-de-31-000-entites-derobees-par-des-hackers-29320364.html",
+      "https://www.rts.ch/info/monde/2026/article/mort-d-un-streamer-en-direct-prison-avec-sursis-pour-deux-complices-29320953.html",
+      "https://www.rts.ch/info/monde/2026/article/otan-un-drone-explosif-decouvert-sur-un-hub-militaire-en-allemagne-29320918.html",
       "https://www.rts.ch/info/monde/2026/article/ukraine-15-morts-dans-des-bombardements-russes-a-kiev-29320492.html",
       "https://www.rts.ch/info/monde/2026/article/un-chef-presume-de-la-dz-mafia-a-ete-arrete-en-algerie-29320712.html",
       "https://www.rts.ch/info/monde/2026/article/volcan-de-fuego-au-guatemala-alerte-maximale-et-500-evacuations-29320353.html",
       "https://www.rts.ch/info/monde/2026/minute-par-minute/29315250.html",
       "https://www.rts.ch/info/regions/autres-cantons/2026/article/au-tessin-une-procession-seculaire-est-organisee-pour-demander-la-pluie-29320651.html",
+      "https://www.rts.ch/info/regions/autres-cantons/2026/article/legionellose-a-bale-la-flambee-maitrisee-mais-la-lenter-de-l-alerte-critiquee-29320800.html",
       "https://www.rts.ch/info/regions/autres-cantons/2026/article/secheresse-une-bourse-au-fourrage-creee-a-zurich-et-schaffhouse-29320393.html",
       "https://www.rts.ch/info/regions/geneve/2026/article/un-chalet-s-embrase-sur-le-saleve-l-incendie-visible-depuis-geneve-29320417.html",
       "https://www.rts.ch/info/regions/vaud/2026/article/la-grotte-de-naye-fermee-pour-au-moins-un-an-sur-les-hauts-de-montreux-29320512.html",
-      "https://www.rts.ch/info/regions/vaud/2026/article/les-diablerets-le-projet-de-restaurant-a-isenau-retoque-29320139.html",
-      "https://www.rts.ch/info/regions/vaud/2026/article/pays-d-enhaut-un-chalet-d-alpage-renait-selon-des-techniques-ancestrales-29320134.html",
       "https://www.rts.ch/info/regions/vaud/2026/article/sainte-croix-un-homme-de-72-ans-grievement-blesse-un-mineur-arrete-29320747.html",
       "https://www.rts.ch/info/sante/2026/article/vol-de-21-heures-quels-risques-pour-la-sante-du-corps-humain-29319075.html",
-      "https://www.rts.ch/info/sciences-tech/2026/article/le-cochon-noir-des-alpes-reconnu-comme-race-autochtone-en-suisse-29320186.html",
+      "https://www.rts.ch/info/sciences-tech/2026/article/pourquoi-les-moustiques-piquent-ils-certaines-personnes-plus-que-d-autres-29320621.html",
       "https://www.rts.ch/info/suisse/2026/article/christoph-blocher-s-engage-pour-l-initiative-sur-la-neutralite-29320302.html",
       "https://www.rts.ch/info/suisse/2026/article/energie-solaire-l-essor-du-photovoltaique-booste-les-batteries-29320567.html",
-      "https://www.rts.ch/sport/2026/article/tour-de-france-marlen-reusser-gagne-le-chrono-et-prend-le-maillot-jaune-29320150.html",
       "https://www.rts.ch/sport/football/2026/article/fifa-conteste-apres-son-projet-avorte-gianni-infantino-en-reunion-de-crise-29320755.html"
     ]
   },
@@ -19350,6 +19422,17 @@
         "oldest_published_at": "2018-09-12T09:37:54+00:00",
         "rate_limited_count": 0,
         "timestamp": "2026-08-05T11:26:17Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 872,
+        "new_count": 0,
+        "newest_published_at": "2026-08-05T07:00:00+00:00",
+        "oldest_published_at": "2018-09-12T09:37:54+00:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T14:25:12Z"
       }
     ],
     "last_urls": []
