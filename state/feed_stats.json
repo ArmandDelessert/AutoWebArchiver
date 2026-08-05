@@ -2639,6 +2639,17 @@
         "oldest_published_at": "2026-01-20T14:34:10+01:00",
         "rate_limited_count": 0,
         "timestamp": "2026-08-05T19:46:02Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 141,
+        "new_count": 0,
+        "newest_published_at": "2026-07-15T23:07:40+02:00",
+        "oldest_published_at": "2026-01-20T14:34:10+01:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T22:16:49Z"
       }
     ],
     "last_urls": []
@@ -5283,6 +5294,17 @@
         "oldest_published_at": "2013-06-26T15:16:47+02:00",
         "rate_limited_count": 0,
         "timestamp": "2026-08-05T19:45:54Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 2320,
+        "new_count": 0,
+        "newest_published_at": "2026-07-31T18:40:21+02:00",
+        "oldest_published_at": "2013-06-26T15:16:47+02:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T22:16:41Z"
       }
     ],
     "last_urls": []
@@ -7927,6 +7949,17 @@
         "oldest_published_at": "2013-12-17T19:25:52+01:00",
         "rate_limited_count": 0,
         "timestamp": "2026-08-05T19:45:49Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 13076,
+        "new_count": 0,
+        "newest_published_at": "2026-07-22T10:49:01+02:00",
+        "oldest_published_at": "2013-12-17T19:25:52+01:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T22:16:36Z"
       }
     ],
     "last_urls": []
@@ -10868,12 +10901,24 @@
         "oldest_published_at": "2026-08-04T02:02:43+02:00",
         "rate_limited_count": 10,
         "timestamp": "2026-08-05T19:45:35Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 3,
+        "dropped_unarchived_count": 0,
+        "item_count": 158,
+        "new_count": 4,
+        "newest_published_at": "2026-08-06T00:12:55+02:00",
+        "oldest_published_at": "2026-08-04T04:30:05+02:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T22:16:21Z"
       }
     ],
     "last_urls": [
       "https://www.lemonde.fr/afrique/article/2026/08/04/au-senegal-les-grandes-figures-de-l-islam-soufi-inspirent-les-discours-souverainistes-et-anticolonialistes_6738251_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/08/04/au-soudan-les-defections-se-multiplient-dans-les-rangs-des-paramilitaires-au-profit-de-l-armee_6738728_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/08/04/crise-de-ceuta-le-maroc-appelle-l-union-europeenne-a-ne-pas-handicaper-son-developpement_6738916_3212.html",
+      "https://www.lemonde.fr/afrique/article/2026/08/05/au-nigeria-plus-de-300-victimes-d-enlevements-ont-ete-liberees_6739466_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/08/05/la-france-aime-les-gens-gentils-une-video-embarrassante-de-l-ambassade-francaise-au-congo-refait-surface_6739447_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/08/05/la-guerre-en-somalie-l-autre-impasse-strategique-de-l-administration-trump_6739356_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/08/05/ma-tete-a-ete-mise-a-prix-par-le-fils-du-president-bobi-wine-le-premier-opposant-en-ouganda-raconte-sa-fuite-du-pays_6739438_3212.html",
@@ -10898,8 +10943,6 @@
       "https://www.lemonde.fr/disparitions/article/2026/08/04/jean-paul-dreau-le-parolier-du-tube-le-coup-de-soleil-est-mort-a-l-age-de-73-ans_6738422_3382.html",
       "https://www.lemonde.fr/disparitions/article/2026/08/05/daniel-bernard-l-ex-pdg-de-carrefour-est-mort-a-80-ans_6739437_3382.html",
       "https://www.lemonde.fr/disparitions/article/2026/08/05/l-ecrivain-didier-decoin-prix-goncourt-en-1977-et-ancien-president-de-son-jury-est-mort-a-l-age-de-81-ans_6739418_3382.html",
-      "https://www.lemonde.fr/economie/article/2026/08/03/a-tarascon-les-salaries-de-fibre-excellence-esperent-toujours-un-miracle_6737743_3234.html",
-      "https://www.lemonde.fr/economie/article/2026/08/03/droits-de-douane-de-donald-trump-25-etats-americains-democrates-saisissent-la-justice_6737710_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/04/dans-le-nord-toyota-celebre-le-succes-de-la-yaris-sa-voiture-hybride-et-assume-de-ne-pas-prendre-le-virage-du-tout-electrique_6738560_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/04/dans-les-hauts-de-france-l-euphorie-creee-par-les-gigafactories-de-batteries-electriques-laisse-place-au-doute_6737877_3234.html",
       "https://www.lemonde.fr/economie/article/2026/08/04/l-individualisation-des-augmentations-de-salaires-se-generalise-dans-les-entreprises-francaises_6738352_3234.html",
@@ -10952,6 +10995,7 @@
       "https://www.lemonde.fr/international/article/2026/08/05/incendies-dans-le-nord-ouest-des-etats-unis-un-homme-soupconne-d-avoir-provoque-l-un-des-feux-devastateurs-de-spokane-arrete_6738982_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/l-iran-dit-avoir-trouve-un-accord-avec-oman-sur-un-nouveau-trace-dans-le-detroit-d-ormuz_6739360_3211.html",
       "https://www.lemonde.fr/international/article/2026/08/05/la-chine-annonce-des-restrictions-sur-les-exportations-de-pieces-de-drones-vers-les-etats-unis-en-represailles-aux-sanctions-commerciales-americaines_6739416_3210.html",
+      "https://www.lemonde.fr/international/article/2026/08/05/la-communication-avec-le-guide-supreme-iranien-est-tres-difficile-en-ce-moment-affirme-le-president-iranien_6739465_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/le-pdg-de-paramount-david-ellison-defend-le-rachat-de-warner-bros-en-assurant-preserver-l-independance-et-en-ecartant-toute-domination-du-marche_6739015_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/les-houthistes-revendiquent-l-attaque-en-mer-rouge-d-un-deuxieme-petrolier-saoudien-en-une-journee_6739464_3210.html",
       "https://www.lemonde.fr/international/article/2026/08/05/londres-quatre-hommes-poignardes-a-covent-garden-une-femme-arretee_6739434_3210.html",
@@ -10963,7 +11007,6 @@
       "https://www.lemonde.fr/international/video/2026/08/05/ukraine-des-frappes-russes-font-au-moins-15-morts-a-kiev-et-dans-ses-environs-des-entrepots-touches_6739399_3210.html",
       "https://www.lemonde.fr/le-monde-en-falc/article/2026/08/04/contre-l-anxiete-et-la-depression-il-est-temps-d-assumer-que-la-culture-peut-devenir-un-instrument-de-sante-publique_6738488_6170206.html",
       "https://www.lemonde.fr/les-decodeurs/article/2026/08/04/le-rechauffement-climatique-implacable-ennemi-des-forets-attise-les-incendies_6737876_4355770.html",
-      "https://www.lemonde.fr/pixels/article/2026/08/03/cyberattaque-300-000-clients-d-intermarche-concernes-par-une-fuite-de-donnees_6737677_4408996.html",
       "https://www.lemonde.fr/pixels/article/2026/08/04/cinq-jeux-video-pour-faire-semblant-de-travailler-pendant-les-vacances_6737842_4408996.html",
       "https://www.lemonde.fr/pixels/article/2026/08/04/crise-de-ceuta-l-impossible-quete-des-origines-de-la-rumeur-d-une-ouverture-de-la-frontiere_6738730_4408996.html",
       "https://www.lemonde.fr/pixels/article/2026/08/05/affaire-jean-pormanove-les-deux-streamers-condamnes-a-des-peines-de-prison-avec-sursis_6739425_4408996.html",
@@ -10973,6 +11016,8 @@
       "https://www.lemonde.fr/planete/article/2026/08/04/juillet-2026-a-ete-le-mois-le-plus-chaud-jamais-enregistre-en-france-depuis-le-debut-des-mesures-en-1900_6738385_3244.html",
       "https://www.lemonde.fr/planete/article/2026/08/04/l-un-des-incendies-meurtriers-de-los-angeles-en-2025-a-ete-cause-par-une-ligne-electrique-defectueuse_6738949_3244.html",
       "https://www.lemonde.fr/planete/article/2026/08/04/le-projet-de-ferme-usine-a-saumons-pure-salmon-autorise-par-la-prefecture-de-gironde-dans-un-cadre-environnemental-strict_6738490_3244.html",
+      "https://www.lemonde.fr/planete/article/2026/08/05/au-guatemala-l-eruption-du-volcan-fuego-a-pris-fin_6739467_3244.html",
+      "https://www.lemonde.fr/planete/article/2026/08/05/entente-sur-les-prix-aux-etats-unis-des-producteurs-vont-devoir-payer-3-3-millions-de-dollars-et-donner-53-millions-d-ufs_6739468_3244.html",
       "https://www.lemonde.fr/planete/article/2026/08/05/l-islande-ordonne-l-expulsion-de-21-militants-engages-contre-la-chasse-a-la-baleine-avec-la-fondation-de-paul-watson_6739414_3244.html",
       "https://www.lemonde.fr/planete/article/2026/08/05/records-de-secheresse-et-de-chaleur-en-juillet-la-question-de-l-eau-devient-absolument-critique_6739248_3244.html",
       "https://www.lemonde.fr/planete/live/2026/08/05/en-direct-incendies-dans-la-drome-le-feu-est-stable-mais-n-est-pas-encore-fixe-l-acces-aux-massifs-forestiers-restreint-dans-plusieurs-departements-du-sud_6737310_3244.html",
@@ -13967,6 +14012,17 @@
         "oldest_published_at": "2026-08-05T13:27:28Z",
         "rate_limited_count": 5,
         "timestamp": "2026-08-05T19:45:35Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 0,
+        "dropped_unarchived_count": 0,
+        "item_count": 21,
+        "new_count": 0,
+        "newest_published_at": "2026-08-05T19:00:26Z",
+        "oldest_published_at": "2026-08-05T13:27:28Z",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T22:16:22Z"
       }
     ],
     "last_urls": [
@@ -16930,6 +16986,17 @@
         "oldest_published_at": "2026-07-30T12:13:37Z",
         "rate_limited_count": 9,
         "timestamp": "2026-08-05T19:45:34Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 0,
+        "dropped_unarchived_count": 0,
+        "item_count": 25,
+        "new_count": 2,
+        "newest_published_at": "2026-08-05T19:01:52Z",
+        "oldest_published_at": "2026-07-30T12:13:37Z",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T22:16:21Z"
       }
     ],
     "last_urls": [
@@ -19600,6 +19667,17 @@
         "oldest_published_at": "2018-09-12T09:37:54+00:00",
         "rate_limited_count": 0,
         "timestamp": "2026-08-05T19:46:01Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 872,
+        "new_count": 0,
+        "newest_published_at": "2026-08-05T07:00:00+00:00",
+        "oldest_published_at": "2018-09-12T09:37:54+00:00",
+        "rate_limited_count": 0,
+        "timestamp": "2026-08-05T22:16:48Z"
       }
     ],
     "last_urls": []
