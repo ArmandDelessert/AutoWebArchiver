@@ -130392,6 +130392,20 @@
     "spn2_job_id": "spn2-128ac131fae5268175acc24603a27b8ca9d2c98a",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/08/08/au-texas-amazon-fait-construire-la-plus-grande-centrale-a-gaz-des-etats-unis-pour-alimenter-ses-centres-de-donnees_6740607_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-08T02:07:17Z",
+    "last_checked": "2026-08-08T02:07:33Z",
+    "spn2_job_id": "spn2-394773a9e9dfe69f29dad7270db665d85c7e7a58",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/08/08/investi-president-de-la-colombie-abelardo-de-la-espriella-promet-une-offensive-contre-le-narcotrafic_6740541_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-08T02:06:17Z",
+    "last_checked": "2026-08-08T02:07:14Z",
+    "spn2_job_id": "spn2-8c87337fe7e9dbcf5ea90cd628920d9e232b3b2d",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
     "attempts": 0,
     "first_seen": "2026-06-25T20:54:14Z",
@@ -132553,6 +132567,13 @@
     "first_seen": "2026-08-07T10:06:20Z",
     "last_checked": "2026-08-07T10:06:37Z",
     "spn2_job_id": "spn2-34eabdecb05418db826ec2abdeaed8393c2ba62d",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/live/2026/08/08/en-direct-guerre-en-ukraine-trois-morts-dont-un-enfant-dans-des-frappes-russes-pres-de-kiev_6737250_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-08T02:05:04Z",
+    "last_checked": "2026-08-08T02:06:17Z",
+    "spn2_job_id": "spn2-1ebbce2692d7c3a7d98b5ceccf62fd6b3ba5628e",
     "status": "success"
   },
   "https://www.lemonde.fr/international/video/2026/06/23/les-images-de-la-fusillade-de-montreal-le-tireur-a-laisse-un-manifeste-inspire-du-courant-incel_6708994_3210.html": {
@@ -138105,6 +138126,13 @@
     "first_seen": "2026-08-07T13:27:10Z",
     "last_checked": "2026-08-07T13:27:32Z",
     "spn2_job_id": "spn2-5b75bab0b777abd3c350539a898a170a1f26c53f",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/planete/article/2026/08/08/la-deforestation-de-l-amazonie-bresilienne-poursuit-une-baisse-historique-dans-la-lignee-de-la-promesse-de-campagne-de-lula_6740574_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-08T02:07:14Z",
+    "last_checked": "2026-08-08T02:07:32Z",
+    "spn2_job_id": "spn2-01f82322c62c58d805bd6bae3e55bc8389c085fc",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/live/2026/06/23/en-direct-canicule-la-vague-de-chaleur-est-tout-a-fait-comparable-en-severite-a-celle-d-aout-2003-selon-meteo-france_6704498_3244.html": {
@@ -145695,6 +145723,13 @@
     "first_seen": "2026-08-07T16:07:27Z",
     "last_checked": "2026-08-07T16:07:43Z",
     "spn2_job_id": "spn2-2c7da6f0474ca12478a7574a6c6bb6daff3b92af",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/08/08/le-rappeur-moha-la-squale-condamne-a-deux-ans-de-prison-pour-des-violences-sur-deux-femmes_6740503_3225.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-08T02:05:04Z",
+    "last_checked": "2026-08-08T02:05:20Z",
+    "spn2_job_id": "spn2-c397cbbb5c50e47cabd0d316ae15b9d5fb2a81d5",
     "status": "success"
   },
   "https://www.lemonde.fr/societe/live/2026/07/02/affaire-dany-leprince-posez-vos-questions-a-notre-journaliste-franck-johannes-sur-la-decision-historique-de-la-justice-d-annuler-la-condamnation-rendue_6717824_3224.html": {
@@ -163023,9 +163058,9 @@
   "https://www.rts.ch/info/environnement/2026/article/podcast-comment-adapter-l-agriculture-au-dereglement-climatique-29254001.html": {
     "attempts": 3,
     "first_seen": "2026-08-07T16:10:08Z",
-    "last_checked": "2026-08-07T21:48:02Z",
+    "last_checked": "2026-08-08T02:05:20Z",
     "spn2_job_id": "spn2-5b7d8e548d1ed469e8afc796418e88e8cbc860f5",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/environnement/2026/article/pollution-au-plomb-4000-anciens-sites-de-tir-pollues-en-suisse-29295867.html": {
     "attempts": 0,
@@ -163462,9 +163497,9 @@
     "status": "error_retry"
   },
   "https://www.rts.ch/info/monde/2026/article/colombie-abelardo-de-la-espriella-d-extreme-droite-investi-president-29322991.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-08-07T21:50:04Z",
-    "last_checked": "2026-08-07T21:50:20Z",
+    "last_checked": "2026-08-08T02:07:17Z",
     "spn2_job_id": "spn2-097e0fb977058a731dd5020aa8ab436660d175c8",
     "status": "error_retry"
   },
@@ -169563,9 +169598,9 @@
     "status": "success"
   },
   "https://www.rts.ch/sport/cyclisme/2026/article/tour-de-pologne-le-suisse-jan-christen-gagne-la-5e-etape-29322855.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-08-07T19:14:24Z",
-    "last_checked": "2026-08-07T21:49:03Z",
+    "last_checked": "2026-08-08T02:06:17Z",
     "spn2_job_id": "spn2-0ba64c0f1a92adbf92901964e2e8fa5e69fdd009",
     "status": "error_retry"
   },
