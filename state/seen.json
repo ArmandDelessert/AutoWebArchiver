@@ -122906,6 +122906,13 @@
     "spn2_job_id": "spn2-12cffa865ceb8bf4a7900db8c35ff692c5f46702",
     "status": "success"
   },
+  "https://www.lemonde.fr/economie/article/2026/08/11/la-maison-mere-de-truth-social-le-reseau-de-donald-trump-affiche-240-millions-de-dollars-de-pertes-au-deuxieme-trimestre_6743610_3234.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T02:12:45Z",
+    "last_checked": "2026-08-11T02:13:01Z",
+    "spn2_job_id": "spn2-19128bced56cf0c7786c141106b5e3208582e052",
+    "status": "success"
+  },
   "https://www.lemonde.fr/education/article/2026/06/26/bernard-arnault-finance-un-nouvel-institut-de-mathematiques-a-polytechnique-avec-un-don-de-50-millions-d-euros_6715503_1473685.html": {
     "attempts": 0,
     "first_seen": "2026-06-26T01:08:26Z",
@@ -131127,6 +131134,13 @@
     "spn2_job_id": "spn2-1449c55aae00ffdf3bcd1fb1e964fdac8d038e2d",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/08/11/aux-etats-unis-donald-trump-relance-son-offensive-contre-la-vaccination_6743643_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T02:13:01Z",
+    "last_checked": "2026-08-11T02:13:17Z",
+    "spn2_job_id": "spn2-eacb91e5743e8ac9820039959660c602e56363ff",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
     "attempts": 0,
     "first_seen": "2026-06-25T20:54:14Z",
@@ -133386,6 +133400,13 @@
     "first_seen": "2026-08-10T07:59:37Z",
     "last_checked": "2026-08-10T08:00:10Z",
     "spn2_job_id": "spn2-5c1ce52caec4b6d71ffbe9d6d969d1c66f1df4a9",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/live/2026/08/11/en-direct-guerre-en-ukraine-nouvelles-frappes-russes-sur-kiev_6741928_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T02:14:03Z",
+    "last_checked": "2026-08-11T02:14:19Z",
+    "spn2_job_id": "spn2-790b804d96a1facb9ea25e2e9809ca8e23e90e4a",
     "status": "success"
   },
   "https://www.lemonde.fr/international/video/2026/06/23/les-images-de-la-fusillade-de-montreal-le-tireur-a-laisse-un-manifeste-inspire-du-courant-incel_6708994_3210.html": {
@@ -158554,6 +158575,13 @@
     "spn2_job_id": "spn2-39f3f6eec518f5eba9b73a7eb6950d7ba93dfefc",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/la-turquie-adopte-une-loi-historique-sur-la-reintegration-des-combattants-du-pkk": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T02:12:46Z",
+    "last_checked": "2026-08-11T02:13:17Z",
+    "spn2_job_id": "spn2-7fca66ce7fbf88b4c828ee54ba13a06e3ce9b479",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/la-vague-de-chaleur-touche-le-portugal-plusieurs-regions-en-alerte-rouge": {
     "attempts": 0,
     "first_seen": "2026-07-02T06:58:05Z",
@@ -163637,9 +163665,9 @@
     "status": "error"
   },
   "https://www.rts.ch/archives/grands-formats/2026/article/glaces-batonnets-ou-sorbets-des-archives-de-premiere-fraicheur-29303130.html": {
-    "attempts": 3,
+    "attempts": 4,
     "first_seen": "2026-08-10T16:08:08Z",
-    "last_checked": "2026-08-10T21:52:10Z",
+    "last_checked": "2026-08-11T02:12:46Z",
     "spn2_job_id": "spn2-94a47b2a8aef7c6259fc6ce49fc18a61e216fd10",
     "status": "error_retry"
   },
@@ -166948,10 +166976,17 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/la-suede-dejoue-une-operation-du-renseignement-russe-29324964.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-08-10T19:12:16Z",
-    "last_checked": "2026-08-10T21:54:09Z",
+    "last_checked": "2026-08-11T02:13:33Z",
     "spn2_job_id": "spn2-5d740b97624f178b99d13403ea87d6892def5207",
+    "status": "error_retry"
+  },
+  "https://www.rts.ch/info/monde/2026/article/la-turquie-vote-une-loi-pour-ouvrir-la-voie-a-la-paix-avec-le-pkk-29325115.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-11T02:14:03Z",
+    "last_checked": "2026-08-11T02:14:19Z",
+    "spn2_job_id": "spn2-4cb8c9921728a20d09cd7fc79d8a86b8e6efaebe",
     "status": "error_retry"
   },
   "https://www.rts.ch/info/monde/2026/article/las-vegas-la-face-cachee-de-la-ville-du-divertissement-29305236.html": {
@@ -167634,9 +167669,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/russie-le-seul-parti-anti-guerre-banni-des-legislatives-29325082.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-08-10T21:55:15Z",
-    "last_checked": "2026-08-10T21:55:30Z",
+    "last_checked": "2026-08-11T02:14:19Z",
     "spn2_job_id": "spn2-c9e0a542150cb65e703650a8a9017c429ad6ef0d",
     "status": "error_retry"
   },
@@ -169832,9 +169867,9 @@
   "https://www.rts.ch/info/regions/vaud/2026/article/secheresse-de-grandes-differences-de-restrictions-entre-communes-romandes-29324783.html": {
     "attempts": 3,
     "first_seen": "2026-08-10T16:14:32Z",
-    "last_checked": "2026-08-10T21:53:04Z",
+    "last_checked": "2026-08-11T02:13:17Z",
     "spn2_job_id": "spn2-22d1d917d85f5d2e4a20ee76cdbcd86c8db916e7",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/regions/vaud/2026/article/secheresse-des-trains-du-blonay-chamby-restent-au-hangar-29310518.html": {
     "attempts": 3,
