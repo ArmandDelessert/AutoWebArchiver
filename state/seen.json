@@ -131323,6 +131323,13 @@
     "spn2_job_id": "spn2-c3cf3b2c713c71cccd6147e226168b91eea7dd25",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/08/11/au-liban-une-double-frappe-israelienne-fait-un-mort-et-endommage-une-ambulance_6744330_3210.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-11T21:58:04Z",
+    "last_checked": "2026-08-11T21:58:05Z",
+    "spn2_job_id": "spn2-cf1b263a7e965c867ddeb1253f30f0f3adcc641d",
+    "status": "error"
+  },
   "https://www.lemonde.fr/international/article/2026/08/11/aux-etats-unis-donald-trump-relance-son-offensive-contre-la-vaccination_6743643_3210.html": {
     "attempts": 0,
     "first_seen": "2026-08-11T02:13:01Z",
@@ -131462,6 +131469,13 @@
     "last_checked": "2026-08-11T04:31:23Z",
     "spn2_job_id": "spn2-f8e1e1059fc7c7d47b7e5120082319c5a99fabe2",
     "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/08/11/l-armee-americaine-dit-avoir-tire-sur-un-navire-qui-violait-son-blocus-des-ports-iraniens_6744297_3210.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-11T21:57:33Z",
+    "last_checked": "2026-08-11T21:57:34Z",
+    "spn2_job_id": "spn2-01153c81964b9302e578d4af4db36ddb26770711",
+    "status": "error"
   },
   "https://www.lemonde.fr/international/article/2026/08/11/le-gouvernement-hongrois-depose-une-plainte-concernant-les-frais-de-communication-de-viktor-orban_6743974_3210.html": {
     "attempts": 0,
@@ -150708,6 +150722,13 @@
     "spn2_job_id": "spn2-4cef119914ac5ec78dc09198c98bea545de01f9f",
     "status": "success"
   },
+  "https://www.lemonde.fr/sport/article/2026/08/11/euro-d-athletisme-laeticia-bapte-en-bronze-sur-100-m-haies-2-medaille-pour-la-france_6744363_3242.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-11T21:59:09Z",
+    "last_checked": "2026-08-11T21:59:09Z",
+    "spn2_job_id": "spn2-48c3775ec7192d23194c9ff537899352a3f22ecd",
+    "status": "error"
+  },
   "https://www.lemonde.fr/sport/article/2026/08/11/la-francaise-pauline-mahieu-remporte-la-medaille-de-bronze-sur-le-200-m-dos-aux-championnats-d-europe_6744026_3242.html": {
     "attempts": 1,
     "first_seen": "2026-08-11T19:23:04Z",
@@ -159443,6 +159464,13 @@
     "spn2_job_id": "spn2-46880e10cac713ad7f049a9534be1cea57bb9a3b",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/la-suisse-evalue-comment-aider-la-colombie-apres-le-tremblement-de-terre-qui-a-fait-au-moins-240-morts": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T21:57:34Z",
+    "last_checked": "2026-08-11T21:58:04Z",
+    "spn2_job_id": "spn2-01e931d280cc94663cc481873a1ffc09cea4897b",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/la-suisse-pauvre-en-dettes": {
     "attempts": 0,
     "first_seen": "2026-08-07T13:20:21Z",
@@ -160302,6 +160330,13 @@
     "first_seen": "2026-08-08T07:17:04Z",
     "last_checked": "2026-08-08T07:19:35Z",
     "spn2_job_id": "spn2-3238b52658c5a1c4530b990b90427232b6e3d276",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/le-port": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T21:58:34Z",
+    "last_checked": "2026-08-11T21:59:09Z",
+    "spn2_job_id": "spn2-86891e74c1a67107dafc93654deab5a7387c6e56",
     "status": "success"
   },
   "https://www.letemps.ch/articles/le-premier-semestre-2026-s-annonce-tres-solide-pour-la-gestion-de-fortune": {
@@ -164413,6 +164448,13 @@
     "spn2_job_id": "spn2-1b35e6096d867fb3bfaba950464f8cbebae4e4c9",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/valerie-dittli-candidate-en-2027-le-centre-vaudois-reste-sans-reponse-et-en-pleine-tourmente": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T21:59:10Z",
+    "last_checked": "2026-08-11T22:00:12Z",
+    "spn2_job_id": "spn2-c5d2af60f911ff7c9dc8e64b7acd87cdaf8e1492",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/vaud-et-la-ville-de-geneve-reactivent-leur-plan-canicule": {
     "attempts": 0,
     "first_seen": "2026-08-10T16:07:13Z",
@@ -165093,9 +165135,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/culture/cinema/2026/article/le-cineaste-james-gray-celebre-au-festival-de-locarno-29325464.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-08-11T16:12:07Z",
-    "last_checked": "2026-08-11T19:16:19Z",
+    "last_checked": "2026-08-11T21:59:09Z",
     "spn2_job_id": "spn2-b7b11970fd7d1bcd7d7e2f9158731b88655b7d26",
     "status": "error_retry"
   },
@@ -166534,6 +166576,13 @@
     "spn2_job_id": "spn2-52e45585934a981b5761124dee36cb30160999bd",
     "status": "success"
   },
+  "https://www.rts.ch/info/environnement/2026/article/le-delta-de-l-oder-se-renature-pour-les-bisons-lynx-et-elans-29325808.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T22:00:13Z",
+    "last_checked": "2026-08-11T22:00:30Z",
+    "spn2_job_id": "spn2-81557316b4d12fe15023e4ccaa8cf660e5a2aef6",
+    "status": "success"
+  },
   "https://www.rts.ch/info/environnement/2026/article/le-lac-leman-atteint-27-degres-un-record-menacant-pour-les-poissons-29303608.html": {
     "attempts": 0,
     "first_seen": "2026-07-14T22:11:12Z",
@@ -167188,9 +167237,9 @@
   "https://www.rts.ch/info/monde/2026/article/crise-de-ceuta-deux-fake-news-sur-les-etats-unis-et-israel-dementies-29325820.html": {
     "attempts": 1,
     "first_seen": "2026-08-11T19:17:20Z",
-    "last_checked": "2026-08-11T19:18:02Z",
+    "last_checked": "2026-08-11T22:00:29Z",
     "spn2_job_id": "spn2-c9eeab83f950fd0d095eb843a59f146aa44ac0c2",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/cuba-asphyxiee-par-le-blocus-americain-l-ile-s-enfonce-dans-la-crise-29313953.html": {
     "attempts": 0,
@@ -169215,6 +169264,13 @@
     "spn2_job_id": "spn2-e3863c3ae97acf031180275cf0367db23276c551",
     "status": "success"
   },
+  "https://www.rts.ch/info/monde/2026/article/un-parc-d-attractions-dragon-ball-bientot-a-cote-de-paris-29326077.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T22:01:02Z",
+    "last_checked": "2026-08-11T22:01:18Z",
+    "spn2_job_id": "spn2-02d44fa6c5b63bdbf958f20c06279c6b4a804415",
+    "status": "success"
+  },
   "https://www.rts.ch/info/monde/2026/article/un-policier-de-l-immigration-americain-tue-un-mexicain-a-houston-29297287.html": {
     "attempts": 0,
     "first_seen": "2026-07-08T08:44:20Z",
@@ -169399,9 +169455,9 @@
   "https://www.rts.ch/info/regions/autres-cantons/2026/article/affaire-de-l-ex-elu-udc-argovie-lance-une-enquete-externe-29325684.html": {
     "attempts": 2,
     "first_seen": "2026-08-11T16:09:09Z",
-    "last_checked": "2026-08-11T19:14:25Z",
+    "last_checked": "2026-08-11T21:58:20Z",
     "spn2_job_id": "spn2-0e4772e27196a8dae12b4fb14e33efac8d7f5ddc",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/regions/autres-cantons/2026/article/argovie-aide-sociale-pour-les-victimes-de-l-ex-depute-udc-29317308.html": {
     "attempts": 0,
@@ -170600,9 +170656,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/valais/2026/article/le-musee-alpin-de-berne-restitue-une-statue-centenaire-au-valais-29325528.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-08-11T16:06:02Z",
-    "last_checked": "2026-08-11T19:13:42Z",
+    "last_checked": "2026-08-11T21:57:34Z",
     "spn2_job_id": "spn2-68018b4d8e9b0628dbbd4b731714f387aeadd044",
     "status": "error_retry"
   },
@@ -172601,6 +172657,13 @@
     "spn2_job_id": "spn2-8ed3c7da078d887db05226818a8ca2ab5089cf83",
     "status": "success"
   },
+  "https://www.rts.ch/info/suisse/2026/article/f-35-la-commission-du-national-valide-un-credit-additionnel-29326054.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-11T22:00:12Z",
+    "last_checked": "2026-08-11T22:00:30Z",
+    "spn2_job_id": "spn2-66c82110f5281a56cc7430d48b7fb9cade914afc",
+    "status": "success"
+  },
   "https://www.rts.ch/info/suisse/2026/article/f-35-la-suisse-verse-500-millions-de-francs-de-maniere-anticipee-29288392.html": {
     "attempts": 0,
     "first_seen": "2026-06-28T07:34:16Z",
@@ -173684,6 +173747,13 @@
     "last_checked": "2026-07-12T19:21:21Z",
     "spn2_job_id": "spn2-085e6dc3d26f3fe4af8802103a197f088277396d",
     "status": "success"
+  },
+  "https://www.rts.ch/sport/athletisme/2026/article/athletisme-simon-ehammer-en-argent-au-saut-en-longueur-29326005.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-11T22:01:01Z",
+    "last_checked": "2026-08-11T22:01:02Z",
+    "spn2_job_id": "spn2-2705a91f46a1d20f6812f01dff94f1e28af13cdf",
+    "status": "error_retry"
   },
   "https://www.rts.ch/sport/athletisme/2026/article/audrey-werro-bat-encore-le-record-de-suisse-du-800m-a-paris-29288608.html": {
     "attempts": 0,
