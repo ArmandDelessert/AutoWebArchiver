@@ -132394,6 +132394,34 @@
     "spn2_job_id": "spn2-b860a084f1073d6eb2e12631d66cb5f8d3fe24e0",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/08/14/aux-etats-unis-trois-condamnes-a-mort-executes-dans-la-meme-journee-dans-trois-etats-differents_6745972_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-14T02:33:07Z",
+    "last_checked": "2026-08-14T02:33:22Z",
+    "spn2_job_id": "spn2-14b53dd5ad2ac3b31b340d2f0f3c0400490c5375",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/08/14/donald-trump-impose-100-de-droits-de-douane-sur-certains-drones-pour-contrer-les-importations-chinoises_6745906_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-14T02:31:10Z",
+    "last_checked": "2026-08-14T02:31:26Z",
+    "spn2_job_id": "spn2-113606de15d15f285d978e5641c931948db271e0",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/08/14/les-emirats-arabes-unis-accusent-l-iran-d-avoir-attaque-deux-navires-dans-le-detroit-d-ormuz_6745873_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-14T02:30:49Z",
+    "last_checked": "2026-08-14T02:31:10Z",
+    "spn2_job_id": "spn2-4dc8df565c85dcdeade26170dc288824bdb0fff8",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/08/14/les-etats-unis-et-le-mexique-menent-des-exercices-a-leur-frontiere-commune-la-ou-opere-le-cartel-de-juarez_6745939_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-14T02:32:01Z",
+    "last_checked": "2026-08-14T02:33:07Z",
+    "spn2_job_id": "spn2-73a5d4353f1d27611b8ad48029c57a113712e9ce",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
     "attempts": 0,
     "first_seen": "2026-06-25T20:54:14Z",
@@ -153598,6 +153626,13 @@
     "spn2_job_id": "spn2-2338badb4d4879acfc63a17824e3f70ebbb52843",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/a-malley-des-immeubles-minergie-neufs-en-surchauffe-soulevent-la-question-du-refroidissement-des-logements": {
+    "attempts": 0,
+    "first_seen": "2026-08-14T02:31:11Z",
+    "last_checked": "2026-08-14T02:31:26Z",
+    "spn2_job_id": "spn2-cb4a5cb990ec4af6129fe86f0a57c9ec5a389170",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/a-memphis-comme-dans-le-reste-des-etats-unis-la-representation-des-noirs-en-politique-remise-en-question": {
     "attempts": 0,
     "first_seen": "2026-08-07T19:10:19Z",
@@ -163790,6 +163825,13 @@
     "spn2_job_id": "spn2-f0111054226bf699c6121a4db98e77382427f11e",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/mon-frere-ils-vont-te-manger-la-bas-apres-ceuta-la-vague-du-15-aout-vers-l-espagne-peine-a-prendre-forme-alors-que-le-maroc-se-barricade": {
+    "attempts": 0,
+    "first_seen": "2026-08-14T02:30:49Z",
+    "last_checked": "2026-08-14T02:31:10Z",
+    "spn2_job_id": "spn2-689dc95592a56a80450a526417f2ca579818f978",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/mon-opinion-puisqu-elle-est-ma-perception-du-monde-devient-ma-verite": {
     "attempts": 1,
     "first_seen": "2026-07-13T15:04:26Z",
@@ -169251,9 +169293,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/allemagne-vers-la-fin-de-l-alcool-pour-les-ados-avec-parents-29327770.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-08-13T19:18:21Z",
-    "last_checked": "2026-08-13T21:57:21Z",
+    "last_checked": "2026-08-14T02:32:02Z",
     "spn2_job_id": "spn2-610559e96d70a6d92935e0a2f84bcd3e1cdb739f",
     "status": "error_retry"
   },
@@ -169704,6 +169746,13 @@
     "last_checked": "2026-08-07T10:12:33Z",
     "spn2_job_id": "spn2-9806a3cd9fc848496b3af66b6bd9b4f25e2387e1",
     "status": "success"
+  },
+  "https://www.rts.ch/info/monde/2026/article/donald-trump-taxe-les-drones-importes-pour-soutenir-l-industrie-us-29328153.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-14T02:32:01Z",
+    "last_checked": "2026-08-14T02:33:07Z",
+    "spn2_job_id": "spn2-535e83cf70768bd415137c601d2e9ce719e649cf",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/monde/2026/article/donald-trump-va-taxer-a-100-les-medicaments-generiques-29309689.html": {
     "attempts": 3,
@@ -171036,11 +171085,11 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/oman-une-maree-noire-causee-par-un-petrolier-atteint-les-cotes-29327419.html": {
-    "attempts": 4,
+    "attempts": 5,
     "first_seen": "2026-08-13T13:34:01Z",
-    "last_checked": "2026-08-13T21:56:13Z",
+    "last_checked": "2026-08-14T02:30:50Z",
     "spn2_job_id": "spn2-b640e6adcbf8503cc18b518d04b57d587458bec2",
-    "status": "error_retry"
+    "status": "error"
   },
   "https://www.rts.ch/info/monde/2026/article/otan-un-drone-explosif-decouvert-sur-un-hub-militaire-en-allemagne-29320918.html": {
     "attempts": 0,
@@ -175905,9 +175954,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/pierin-vincenz-le-parquet-de-zurich-reclame-6-ans-de-prison-29327892.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-08-13T19:17:23Z",
-    "last_checked": "2026-08-13T21:56:29Z",
+    "last_checked": "2026-08-14T02:31:11Z",
     "spn2_job_id": "spn2-183d4dc4611d1d911775d04079cbd5ddccf4eb60",
     "status": "error_retry"
   },
