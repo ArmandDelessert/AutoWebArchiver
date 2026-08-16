@@ -117964,6 +117964,13 @@
     "spn2_job_id": "spn2-1bb606e32fe72386b5f74e0e921a80a90791050b",
     "status": "success"
   },
+  "https://www.lemonde.fr/climat/live/2026/08/16/en-direct-incendies-et-canicule-plus-de-2-700-hectares-ravages-en-belgique-dans-les-landes-le-feu-ne-progresse-plus-mais-n-est-pas-en-voie-d-etre-fixe_6744636_1652612.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-16T01:48:23Z",
+    "last_checked": "2026-08-16T01:49:12Z",
+    "spn2_job_id": "spn2-a721c74f520f0a4df35384500887235d76158d60",
+    "status": "success"
+  },
   "https://www.lemonde.fr/comprendre-en-3-minutes/video/2026/06/29/comment-des-enfants-sont-pris-pour-cibles-par-l-armee-israelienne-en-cisjordanie_6716888_6176282.html": {
     "attempts": 0,
     "first_seen": "2026-06-29T10:52:11Z",
@@ -132996,6 +133003,13 @@
     "spn2_job_id": "spn2-47fea03272c9ba52345dad074013c899b6f8b195",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/08/16/l-iran-denonce-la-detention-de-trois-pilotes-de-chasse-par-le-qatar-qui-dement-les-avoir-captures_6746919_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-16T01:49:10Z",
+    "last_checked": "2026-08-16T01:49:32Z",
+    "spn2_job_id": "spn2-44180e3be14cafe06f44c1f4efda2d466d6c40c9",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
     "attempts": 0,
     "first_seen": "2026-06-25T20:54:14Z",
@@ -135423,6 +135437,13 @@
     "first_seen": "2026-08-15T12:59:12Z",
     "last_checked": "2026-08-15T12:59:28Z",
     "spn2_job_id": "spn2-dd9420aaf67f4978509ed27d55023f3b765fcdde",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/live/2026/08/16/en-direct-guerre-en-ukraine-le-maire-de-kiev-annonce-une-attaque-de-missiles-alors-que-retentissent-des-explosions-dans-la-capitale_6746952_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-16T01:49:15Z",
+    "last_checked": "2026-08-16T01:49:33Z",
+    "spn2_job_id": "spn2-dd4191ed4f0ee7b161bd001e7338d6b7b2067446",
     "status": "success"
   },
   "https://www.lemonde.fr/international/video/2026/06/23/les-images-de-la-fusillade-de-montreal-le-tireur-a-laisse-un-manifeste-inspire-du-courant-incel_6708994_3210.html": {
@@ -155593,6 +155614,13 @@
     "spn2_job_id": "spn2-11bd24a6a637ed78671e17d9c4cb3d95eda5b749",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/apres-une-attente-interminable-valerie-dittli-se-porte-candidate-au-conseil-d-etat-en-2027": {
+    "attempts": 0,
+    "first_seen": "2026-08-16T01:48:24Z",
+    "last_checked": "2026-08-16T01:48:48Z",
+    "spn2_job_id": "spn2-0318d83ad7b64b298093d63d27f21cdb7093c1d8",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/apres-une-decennie-de-galopades-le-couple-robin-godel-et-grandeur-de-lully-ecrira-son-epilogue-a-aix-la-chapelle": {
     "attempts": 0,
     "first_seen": "2026-08-11T16:07:22Z",
@@ -170958,6 +170986,13 @@
     "spn2_job_id": "spn2-408afe6e0f113dab14d816a7b0528a871d4fff63",
     "status": "success"
   },
+  "https://www.rts.ch/info/monde/2026/article/affaire-patrick-bruel-le-chanteur-autorise-a-voyager-a-l-etranger-le-parquet-fait-appel-29329544.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-16T01:49:08Z",
+    "last_checked": "2026-08-16T01:49:13Z",
+    "spn2_job_id": "spn2-2ade2df470fff2947ee72732294ec70c8325355e",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/monde/2026/article/afghanistan-les-femmes-resistent-malgre-les-talibans-29329383.html": {
     "attempts": 1,
     "first_seen": "2026-08-15T18:55:00Z",
@@ -172298,9 +172333,9 @@
   "https://www.rts.ch/info/monde/2026/article/la-belgique-affronte-l-un-des-pires-incendies-de-son-histoire-29329492.html": {
     "attempts": 1,
     "first_seen": "2026-08-15T21:31:08Z",
-    "last_checked": "2026-08-15T21:31:16Z",
+    "last_checked": "2026-08-16T01:48:31Z",
     "spn2_job_id": "spn2-9dc9fa3e995e5a223c744a2ca37c3fb2c6a08afa",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/la-canicule-reflue-a-l-ouest-de-l-europe-mais-persiste-a-l-est-29289504.html": {
     "attempts": 0,
