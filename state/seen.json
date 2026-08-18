@@ -116900,12 +116900,26 @@
     "spn2_job_id": "spn2-95cdc8ac02684dd2511d19abd0e27b77f272584e",
     "status": "success"
   },
+  "https://www.lemonde.fr/afrique/article/2026/08/18/au-maroc-l-horizon-bouche-des-jeunes-qui-revent-de-rejoindre-ceuta-j-ai-l-impression-de-faire-du-surplace-pendant-que-ma-fille-grandit_6749071_3212.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:57:39Z",
+    "last_checked": "2026-08-18T15:58:29Z",
+    "spn2_job_id": "spn2-3609384ef26c5dfe0d7adce0e2faaeafecb2c7ba",
+    "status": "success"
+  },
   "https://www.lemonde.fr/afrique/article/2026/08/18/au-nigeria-au-moins-24-morts-dans-des-attaques-communautaires-dans-l-etat-du-plateau_6749048_3212.html": {
     "attempts": 0,
     "first_seen": "2026-08-18T13:12:27Z",
     "last_checked": "2026-08-18T13:12:27Z",
     "spn2_job_id": "spn2-a0350af51053e3db19786b3f94d3faf8d4fbab5d",
     "status": "pending"
+  },
+  "https://www.lemonde.fr/afrique/article/2026/08/18/ebola-en-rdc-l-epidemie-est-loin-d-etre-maitrisee-alerte-le-chef-de-l-oms_6749057_3212.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:46:10Z",
+    "last_checked": "2026-08-18T15:46:11Z",
+    "spn2_job_id": "spn2-7b54d7b4c22f2f0f177b61d0c5f873f482367583",
+    "status": "success"
   },
   "https://www.lemonde.fr/afrique/live/2026/07/21/ebola-en-rdc-posez-vos-questions-a-nos-journalistes-morgane-le-cam-et-philemon-barbier-de-retour-de-reportage-dans-l-epicentre-de-l-epidemie_6728461_3212.html": {
     "attempts": 0,
@@ -120740,6 +120754,20 @@
     "spn2_job_id": "spn2-b1a8467c36932e7e98d9b6c49fabf3761d8c098e",
     "status": "success"
   },
+  "https://www.lemonde.fr/culture/article/2026/08/18/les-moutons-detectives-sur-prime-video-agatha-christie-a-la-mode-ovine_6749072_3246.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:58:13Z",
+    "last_checked": "2026-08-18T15:58:45Z",
+    "spn2_job_id": "spn2-74682e416ad2955b98926a24a70f51d13357075a",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/culture/article/2026/08/18/quand-en-1959-gustav-metzger-invente-l-art-a-disparition-programmee_6749069_3246.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:54:21Z",
+    "last_checked": "2026-08-18T15:55:36Z",
+    "spn2_job_id": "spn2-4014d3a603a3acc03c414589743a8b2d887aab37",
+    "status": "success"
+  },
   "https://www.lemonde.fr/disparitions/article/2026/06/25/yaacov-agam-plasticien-et-heros-de-l-art-cinetique-est-mort_6715441_3382.html": {
     "attempts": 0,
     "first_seen": "2026-06-25T22:44:19Z",
@@ -121212,9 +121240,16 @@
   "https://www.lemonde.fr/disparitions/article/2026/08/18/nicolas-altmayer-producteur-de-oss-117-et-sa-compagne-mathilde-favier-meurent-dans-un-accident-de-la-route-dans-les-deux-sevres_6749044_3382.html": {
     "attempts": 1,
     "first_seen": "2026-08-18T13:18:30Z",
-    "last_checked": "2026-08-18T13:18:30Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-08-18T15:50:21Z",
+    "spn2_job_id": "spn2-9aeb97cafda5ee80a994e0cadc981fce04d07ffc",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/disparitions/article/2026/08/18/yvette-roudy-ancienne-ministre-des-droits-de-la-femme-a-l-origine-du-remboursement-de-l-ivg-est-morte_6749059_3382.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:47:21Z",
+    "last_checked": "2026-08-18T15:47:35Z",
+    "spn2_job_id": "spn2-25cc9642596190fc435ffe41c40880aae1f9b5b9",
+    "status": "success"
   },
   "https://www.lemonde.fr/economie-francaise/article/2026/06/25/marylise-leon-reelue-a-la-tete-de-la-cfdt-pour-un-mandat-de-quatre-ans-denonce-les-a-coups-successifs-portes-a-la-democratie_6715453_1656968.html": {
     "attempts": 0,
@@ -133601,9 +133636,9 @@
   "https://www.lemonde.fr/international/article/2026/08/18/a-gaza-le-hamas-accepte-la-feuille-de-route-americaine-pour-la-paix-israel-attendu-sur-le-desarmement_6749043_3210.html": {
     "attempts": 1,
     "first_seen": "2026-08-18T13:24:56Z",
-    "last_checked": "2026-08-18T13:24:56Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-08-18T15:45:33Z",
+    "spn2_job_id": "spn2-2453a63763795f74346e2ba2789d5b1cf1b6764c",
+    "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/08/18/au-pakistan-l-ex-premier-ministre-imran-khan-transfere-a-l-hopital-pour-examens-medicaux-sur-ordre-de-la-cour-supreme_6748972_3210.html": {
     "attempts": 0,
@@ -133645,6 +133680,13 @@
     "first_seen": "2026-08-18T09:45:27Z",
     "last_checked": "2026-08-18T09:46:08Z",
     "spn2_job_id": "spn2-2d45c55340554041a343dd5913d2ae3d35a5817f",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/08/18/la-chaine-abc-poursuit-l-administration-trump-au-nom-de-la-liberte-d-expression-apres-des-menaces-contre-ses-licences-de-diffusion_6749065_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:56:15Z",
+    "last_checked": "2026-08-18T15:56:35Z",
+    "spn2_job_id": "spn2-dee3a119ffddff78e8d45efe690c5330ff6292c6",
     "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/08/18/les-etats-unis-accusent-israel-de-frappes-en-syrie-a-la-suite-de-l-attaque-d-une-base-aerienne_6749051_3210.html": {
@@ -136144,6 +136186,13 @@
     "first_seen": "2026-08-17T19:05:12Z",
     "last_checked": "2026-08-17T19:05:22Z",
     "spn2_job_id": "spn2-b2295cbdd581523418b6a90db28fbfe374706d36",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/live/2026/08/18/en-direct-guerre-en-ukraine-kiev-pourra-atteindre-la-russie-avec-des-missiles-balistiques-de-sa-propre-fabrication-d-ici-trois-a-six-mois-selon-l-ex-ministre-de-la-defense-ukrainien_6746952_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:48:00Z",
+    "last_checked": "2026-08-18T15:48:10Z",
+    "spn2_job_id": "spn2-e0d4a7269734d39b276639ffc6c999201b5bce14",
     "status": "success"
   },
   "https://www.lemonde.fr/international/live/2026/08/18/en-direct-guerre-en-ukraine-le-maire-de-moscou-affirme-que-620-drones-ont-ete-lances-vers-la-capitale-russe-dans-la-nuit_6746952_3210.html": {
@@ -140229,6 +140278,13 @@
     "spn2_job_id": "spn2-aea56d6433ee976b88750fa960f72224b5e07738",
     "status": "success"
   },
+  "https://www.lemonde.fr/pixels/article/2026/08/18/les-pirates-du-site-des-impots-affirment-avoir-aussi-derobe-des-informations-personnelles-de-millions-d-eleves-au-ministere-de-l-education-nationale_6749056_4408996.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:49:08Z",
+    "last_checked": "2026-08-18T15:49:19Z",
+    "spn2_job_id": "spn2-83602802fd75f2c1718c46bcc6d49aac20e034fb",
+    "status": "success"
+  },
   "https://www.lemonde.fr/pixels/article/2026/08/18/piratage-du-site-des-impots-la-direction-generale-des-finances-publiques-a-informe-les-contribuables-concernes_6749005_4408996.html": {
     "attempts": 0,
     "first_seen": "2026-08-18T13:21:33Z",
@@ -140248,6 +140304,13 @@
     "first_seen": "2026-08-18T13:20:16Z",
     "last_checked": "2026-08-18T13:21:40Z",
     "spn2_job_id": "spn2-b043e92b0f774e02dfd1d6b182bc862052958852",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/pixels/live/2026/08/18/en-direct-piratage-du-site-des-impots-le-gouvernement-detaille-les-trois-fuites-de-donnees-qui-concernent-aussi-les-donnees-cadastrales-et-les-successions_6749047_4408996.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:58:13Z",
+    "last_checked": "2026-08-18T15:58:30Z",
+    "spn2_job_id": "spn2-d13582ab4236f77a842fe305496f0b13c987d313",
     "status": "success"
   },
   "https://www.lemonde.fr/pixels/video/2026/06/25/les-dessous-de-legend-le-media-en-ligne-de-guillaume-pley-qui-pourrait-peser-dans-la-campagne-presidentielle_6715447_4408996.html": {
@@ -142788,6 +142851,13 @@
     "first_seen": "2026-08-18T03:55:36Z",
     "last_checked": "2026-08-18T03:56:07Z",
     "spn2_job_id": "spn2-119307b8b6d60e99f8abf33bcb8d031884b2c90a",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/planete/article/2026/08/18/loi-d-urgence-agricole-comment-le-conseil-constitutionnel-donne-le-dernier-mot-a-l-anses_6749070_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:57:19Z",
+    "last_checked": "2026-08-18T15:57:38Z",
+    "spn2_job_id": "spn2-b4c3267eb4b3e1840d07981b5b2622a8e3a3d249",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/live/2026/06/23/en-direct-canicule-la-vague-de-chaleur-est-tout-a-fait-comparable-en-severite-a-celle-d-aout-2003-selon-meteo-france_6704498_3244.html": {
@@ -146104,6 +146174,13 @@
     "spn2_job_id": "spn2-c1c0734d2539821db7b1a171df701e9e445dc0af",
     "status": "success"
   },
+  "https://www.lemonde.fr/politique/article/2026/08/18/edouard-philippe-et-la-strategie-des-ralliements-premiere-etape-de-sa-campagne-pour-contrer-le-rn-a-la-presidentielle-2027_6749066_823448.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:53:00Z",
+    "last_checked": "2026-08-18T15:54:21Z",
+    "spn2_job_id": "spn2-ab1a91f72425c1307e1aeabd9c9bacdd8e75bcaa",
+    "status": "success"
+  },
   "https://www.lemonde.fr/politique/article/2026/08/18/emmanuel-macron-effectue-sa-derniere-rentree-politique-comme-president-de-la-republique-en-appelant-a-ne-pas-ceder-au-defaitisme_6748727_823448.html": {
     "attempts": 0,
     "first_seen": "2026-08-18T07:04:14Z",
@@ -146114,9 +146191,9 @@
   "https://www.lemonde.fr/politique/article/2026/08/18/le-parquet-de-paris-se-saisit-des-soupcons-d-ingerence-russes-ayant-cible-gabriel-attal-et-edouard-philippe_6749039_823448.html": {
     "attempts": 1,
     "first_seen": "2026-08-18T13:10:31Z",
-    "last_checked": "2026-08-18T13:10:31Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-08-18T15:44:52Z",
+    "spn2_job_id": "spn2-25101ac3f7928b29e8ca5df1f76874580b37f1be",
+    "status": "success"
   },
   "https://www.lemonde.fr/politique/live/2026/07/07/en-direct-proces-en-appel-de-marine-le-pen-la-candidature-a-la-presidentielle-de-la-leader-d-extreme-droite-qui-se-pourvoit-en-cassation-reste-suspendue-a-une-decision-de-justice_6721429_823448.html": {
     "attempts": 0,
@@ -146982,6 +147059,13 @@
     "first_seen": "2026-08-13T10:21:21Z",
     "last_checked": "2026-08-13T10:22:38Z",
     "spn2_job_id": "spn2-5578a85dc68a44c3f128e4ce2980b20725ace6dc",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/sciences/video/2026/08/18/espace-les-images-historiques-de-la-premiere-sortie-extravehiculaire-d-une-astronaute-francaise_6749062_1650684.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:56:16Z",
+    "last_checked": "2026-08-18T15:57:36Z",
+    "spn2_job_id": "spn2-82bf03b30490dd83af99d7f2beb82124a96c3af4",
     "status": "success"
   },
   "https://www.lemonde.fr/series-d-ete/article/2026/07/07/alexander-mcqueen-et-isabella-blow-a-la-mode-a-la-mort_6721416_3451060.html": {
@@ -151780,6 +151864,13 @@
     "spn2_job_id": "spn2-4f3ad3ebf9d25a4b47dfecd62028cb2e45736483",
     "status": "success"
   },
+  "https://www.lemonde.fr/societe/article/2026/08/18/en-corse-les-groupes-mafieux-multiplient-les-incendies-criminels-pour-etendre-leur-mainmise-sur-l-economie-locale_6749063_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:51:17Z",
+    "last_checked": "2026-08-18T15:51:30Z",
+    "spn2_job_id": "spn2-f583259f542057b34ba226c8933c567a846cca69",
+    "status": "success"
+  },
   "https://www.lemonde.fr/societe/article/2026/08/18/l-allocation-de-rentree-scolaire-doit-etre-versee-mardi-a-3-millions-de-familles_6748401_3225.html": {
     "attempts": 0,
     "first_seen": "2026-08-18T07:04:13Z",
@@ -154887,11 +154978,25 @@
     "spn2_job_id": "spn2-e9248990b973be924499788dd47c7ae14854d033",
     "status": "success"
   },
+  "https://www.lemonde.fr/sport/article/2026/08/18/en-ligue-des-champions-l-olympique-lyonnais-joue-sa-qualification-face-a-un-fenerbahce-naturellement-favori_6749068_3242.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:55:12Z",
+    "last_checked": "2026-08-18T15:55:38Z",
+    "spn2_job_id": "spn2-278852fa0e9ecdfb0df71f92b88c8080e51ea3b9",
+    "status": "success"
+  },
   "https://www.lemonde.fr/sport/article/2026/08/18/kevin-lamour-le-reformateur-francais-de-la-fifa-qui-n-a-pas-hesite-a-defier-gianni-infantino_6749049_3242.html": {
     "attempts": 0,
     "first_seen": "2026-08-18T13:19:06Z",
     "last_checked": "2026-08-18T13:19:24Z",
     "spn2_job_id": "spn2-ffb8e1a4de1a79a56aa84d437fc220d81a4d84ce",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/sport/article/2026/08/18/patrick-vieira-a-la-tete-de-l-equipe-du-senegal-pour-sa-premiere-experience-de-selectionneur_6749064_3242.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:52:03Z",
+    "last_checked": "2026-08-18T15:52:25Z",
+    "spn2_job_id": "spn2-8e7cb77e7cb0e35cb890e7ba97390f313be1d6ae",
     "status": "success"
   },
   "https://www.lemonde.fr/sport/live/2026/06/22/en-direct-france-irak-suivez-le-match-de-la-coupe-du-monde-de-football_6708202_3242.html": {
@@ -159541,6 +159646,13 @@
     "spn2_job_id": "spn2-3a623856540682b52e87098d277c825c8a1e2aba",
     "status": "error_retry"
   },
+  "https://www.letemps.ch/articles/des-dissidents-du-mouvement-libertes-et-justice-sociale-lancent-le-parti-horizon-geneve-avec-la-promesse-de-depasser-les-clivages-partisans": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:46:12Z",
+    "last_checked": "2026-08-18T15:47:23Z",
+    "spn2_job_id": "spn2-726bd0013a930377b84b19fc80c7fe3051410c60",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/des-etiquettes-ai-generated-arrivent-sur-vos-ecrans-voici-comment-elles-vont-fonctionner": {
     "attempts": 0,
     "first_seen": "2026-08-10T10:27:07Z",
@@ -160969,6 +161081,13 @@
     "spn2_job_id": "spn2-92850dcd4ed2fc5a049b10dd82cdfca200f00415",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/en-suisse-les-principaux-risques-de-blanchiment-d-argent-proviennent-des-societes-etrangeres": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:48:06Z",
+    "last_checked": "2026-08-18T15:49:09Z",
+    "spn2_job_id": "spn2-6f39a8ddf38a0ae38e2b8353a45e7cf6ee89c1ba",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/en-suisse-seuls-zurich-et-lausanne-figurent-au-classement-des-meilleures-villes-etudiantes-au-monde": {
     "attempts": 0,
     "first_seen": "2026-07-21T11:15:17Z",
@@ -161282,6 +161401,13 @@
     "first_seen": "2026-08-15T03:49:19Z",
     "last_checked": "2026-08-15T03:49:36Z",
     "spn2_job_id": "spn2-0e0cf114aeec70f82bdd40b273e1a5551e12ae52",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/et-si-macron-perdait-sa-guerre-sainte-pour-l-emploi": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:52:06Z",
+    "last_checked": "2026-08-18T15:53:01Z",
+    "spn2_job_id": "spn2-59270fbf5bf3d04750dcaaa9d10f430929d10bfb",
     "status": "success"
   },
   "https://www.letemps.ch/articles/etats-unis-face-a-l-ue-et-a-la-suisse-nouveau-protectionnisme-par-le-biais-de-la-securite": {
@@ -161751,6 +161877,13 @@
     "first_seen": "2026-07-23T11:20:14Z",
     "last_checked": "2026-07-23T11:21:00Z",
     "spn2_job_id": "spn2-b47d75c574887abc570268b8f9d238564ea401e0",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/geneve-accueillera-des-2027-le-siege-mondial-d-un-organisme-pour-des-investissements-durables-face-au-climat": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:49:15Z",
+    "last_checked": "2026-08-18T15:50:08Z",
+    "spn2_job_id": "spn2-58364283cc1b2711171286c7e06352aab9664af1",
     "status": "success"
   },
   "https://www.letemps.ch/articles/geneve-lance-son-offensive-pour-attirer-les-tournages-de-films-et-de-series": {
@@ -162416,6 +162549,13 @@
     "first_seen": "2026-07-11T16:05:13Z",
     "last_checked": "2026-07-11T16:05:31Z",
     "spn2_job_id": "spn2-a29d76f82a49cccb94561716bec200bd4c44f556",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/j-ai-ete-victime-du-systeme-ecrit-le-commandant-du-concordia-cette-annee-a-nyon-la-jeune-garde-du-far-choisit-le-rire-pour-parler-du-pire": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:44:34Z",
+    "last_checked": "2026-08-18T15:46:10Z",
+    "spn2_job_id": "spn2-e79db141db299c739609e78aeb49eedb16bf7665",
     "status": "success"
   },
   "https://www.letemps.ch/articles/j-ai-eu-l-impression-d-etre-un-cadeau-du-ciel-que-c-etait-merveilleux-pour-lui-de-m-avoir-dans-son-lit-le-praise-kink-ou-le-fait-d-aimer-etre-venere": {
@@ -167465,6 +167605,13 @@
     "spn2_job_id": "spn2-43997a780955e62f5302a50c88157637ce71e9a8",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/nestle-sous-la-menace-d-une-expropriation-en-russie": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:51:32Z",
+    "last_checked": "2026-08-18T15:52:03Z",
+    "spn2_job_id": "spn2-435677af80da404055fa837d3ef7d7cf88944e71",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/netanyahou-rejette-le-plan-de-trump-pour-gaza-au-risque-de-s-aliener-washington": {
     "attempts": 0,
     "first_seen": "2026-08-10T13:28:04Z",
@@ -167850,6 +167997,13 @@
     "spn2_job_id": "spn2-0c7777ca08525fcda6e7f258558e9a66807ed721",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/palestine-la-discretion-strategique-de-la-suisse": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:47:30Z",
+    "last_checked": "2026-08-18T15:48:02Z",
+    "spn2_job_id": "spn2-5e76335adb9bab48a7129de564c6d4660d79ed47",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/par-temps-de-canicule-les-employes-de-tokyo-tombent-le-pantalon-non-sans-debat": {
     "attempts": 0,
     "first_seen": "2026-07-15T08:43:37Z",
@@ -168205,6 +168359,13 @@
     "first_seen": "2026-06-25T20:57:08Z",
     "last_checked": "2026-06-25T20:57:09Z",
     "spn2_job_id": "spn2-b76fee73f74a03b373b311c008012ab1526f8031",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/pour-la-premiere-fois-les-fitness-sont-davantage-frequentes-que-les-clubs-sportifs": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:53:01Z",
+    "last_checked": "2026-08-18T15:53:19Z",
+    "spn2_job_id": "spn2-0a0fc2d9c7ff58bf195c56e8d30ac0a1b650d441",
     "status": "success"
   },
   "https://www.letemps.ch/articles/pour-la-rentree-scolaire-vaudoise-frederic-borloz-renforce-l-aide-aux-petits-eleves-mise-sur-l-ia-et-teste-des-ventilateurs": {
@@ -168891,6 +169052,13 @@
     "first_seen": "2026-07-19T10:48:18Z",
     "last_checked": "2026-07-19T10:49:18Z",
     "spn2_job_id": "spn2-b7cd39785b490b1f147f6b3f905788e05370f1e6",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/roger-federer-peut-se-rassurer-la-marque-on-ne-va-pas-si-mal-meme-si-la-lune-de-miel-boursiere-est-terminee": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:54:20Z",
+    "last_checked": "2026-08-18T15:54:37Z",
+    "spn2_job_id": "spn2-45b235973834c1a3c96590f49370d1d3a16f80b3",
     "status": "success"
   },
   "https://www.letemps.ch/articles/roger-nordmann-je-serai-candidat-au-conseil-d-etat-en-2027-et-je-souhaite-conserver-le-dsas": {
@@ -170440,6 +170608,13 @@
     "spn2_job_id": "spn2-2e5c1b8e830f7b083a090267e3741f168ebb9973",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/viviane-gabriel-qui-prend-les-commandes-d-a-bon-entendeur-veut-briser-le-quatrieme-mur": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:50:15Z",
+    "last_checked": "2026-08-18T15:51:23Z",
+    "spn2_job_id": "spn2-9bdf681279da4a89923e1c3d38945730e6dcee27",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/vladimir-poutine-se-rend-pour-la-premiere-fois-dans-les-iles-kouriles-une-visite-jugee-absolument-inacceptable-par-le-japon": {
     "attempts": 0,
     "first_seen": "2026-08-13T10:21:05Z",
@@ -170765,9 +170940,9 @@
   "https://www.rts.ch/info/culture/2026/article/le-marche-folklorique-de-bulle-attire-la-foule-depuis-cinquante-ans-29328373.html": {
     "attempts": 1,
     "first_seen": "2026-08-18T13:19:22Z",
-    "last_checked": "2026-08-18T13:19:27Z",
+    "last_checked": "2026-08-18T15:47:25Z",
     "spn2_job_id": "spn2-e06bff107bd25bab22a2b5bd68ec4c23afc27110",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/culture/2026/article/marie-paule-belle-celebre-interprete-de-la-parisienne-est-decedee-29312513.html": {
     "attempts": 0,
@@ -171182,6 +171357,13 @@
     "spn2_job_id": "spn2-fb15cd9ae60b5207f42d1fb841380265170df1d9",
     "status": "success"
   },
+  "https://www.rts.ch/info/culture/cinema/2026/article/mort-du-producteur-nicolas-altmayer-et-de-mathilde-favier-29331600.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:54:20Z",
+    "last_checked": "2026-08-18T15:54:37Z",
+    "spn2_job_id": "spn2-09036d4d79d389832b9309ddbe62095718daf6a1",
+    "status": "success"
+  },
   "https://www.rts.ch/info/culture/cinema/2026/article/nous-l-orchestre-offre-une-immersion-dans-l-orchestre-de-paris-29284908.html": {
     "attempts": 2,
     "first_seen": "2026-06-28T10:05:06Z",
@@ -171460,6 +171642,13 @@
     "first_seen": "2026-07-29T16:29:08Z",
     "last_checked": "2026-07-29T16:30:02Z",
     "spn2_job_id": "spn2-f79f7875d87b6d6ebf199bcdf8985ab56ae10cea",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/culture/musiques/2026/article/hollywood-angelique-kidjo-decroche-son-etoile-sur-le-walk-of-fame-29331590.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:57:19Z",
+    "last_checked": "2026-08-18T15:57:37Z",
+    "spn2_job_id": "spn2-50ce3e8e4accc8ce1411e47d802046a5161114b9",
     "status": "success"
   },
   "https://www.rts.ch/info/culture/musiques/2026/article/khatia-buniatishvili-une-virtuose-du-piano-dans-les-festivals-d-ete-suisses-29290438.html": {
@@ -172116,9 +172305,9 @@
   "https://www.rts.ch/info/economie/2026/article/francois-fellay-le-solaire-est-un-defi-pas-un-probleme-29331247.html": {
     "attempts": 1,
     "first_seen": "2026-08-18T13:17:15Z",
-    "last_checked": "2026-08-18T13:17:15Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-08-18T15:45:33Z",
+    "spn2_job_id": "spn2-52d31cb7f18f9af04e31ba5b09737abc4b1f8695",
+    "status": "success"
   },
   "https://www.rts.ch/info/economie/2026/article/gaz-les-stocks-europeens-accusent-cinq-mois-de-retard-29324375.html": {
     "attempts": 0,
@@ -172664,6 +172853,13 @@
     "first_seen": "2026-07-25T16:14:11Z",
     "last_checked": "2026-07-25T16:14:29Z",
     "spn2_job_id": "spn2-b12976a3c45fc95555d4d8bdf3a079f81f734616",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/environnement/2026/article/hongrie-travaux-d-urgence-sur-le-danube-face-a-la-secheresse-29331558.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:49:18Z",
+    "last_checked": "2026-08-18T15:50:09Z",
+    "spn2_job_id": "spn2-92822a76a501a19e7470ba716f4cfae14e417620",
     "status": "success"
   },
   "https://www.rts.ch/info/environnement/2026/article/l-empreinte-carbone-des-mines-de-metaux-sous-estimee-29309755.html": {
@@ -176711,6 +176907,13 @@
     "spn2_job_id": "spn2-fd072f0d99f8d505bd4b6238b503da154c6b19d0",
     "status": "success"
   },
+  "https://www.rts.ch/info/regions/geneve/2026/article/geneve-baisse-d-un-tiers-des-eleves-frontaliers-a-la-rentree-29331410.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:50:20Z",
+    "last_checked": "2026-08-18T15:51:28Z",
+    "spn2_job_id": "spn2-1368db46d63a3428fdd6224723c59a901284b3ce",
+    "status": "success"
+  },
   "https://www.rts.ch/info/regions/geneve/2026/article/geneve-debloque-un-million-de-francs-pour-attirer-les-tournages-29325672.html": {
     "attempts": 0,
     "first_seen": "2026-08-11T13:27:00Z",
@@ -177515,6 +177718,13 @@
     "spn2_job_id": "spn2-d9160f4875ee0c24b9f15d2ee4a47c38c0369a9f",
     "status": "success"
   },
+  "https://www.rts.ch/info/regions/valais/2026/article/plus-de-3-5-tonnes-de-mercure-retirees-des-sols-du-haut-valais-29331366.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-18T15:48:09Z",
+    "last_checked": "2026-08-18T15:49:10Z",
+    "spn2_job_id": "spn2-07ce4a818634bb15f35ef5a7a52fdfe40e58b9a3",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/regions/valais/2026/article/saas-fee-ferme-ses-pistes-de-ski-d-ete-en-raison-de-la-chaleur-29322824.html": {
     "attempts": 0,
     "first_seen": "2026-08-07T16:08:21Z",
@@ -177872,6 +178082,13 @@
     "spn2_job_id": "spn2-e298ee74d88896e60f765a84a17359fabd97a6cb",
     "status": "success"
   },
+  "https://www.rts.ch/info/regions/vaud/2026/article/le-canton-de-vaud-explore-la-piste-d-une-caisse-maladie-publique-29331693.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:55:09Z",
+    "last_checked": "2026-08-18T15:55:38Z",
+    "spn2_job_id": "spn2-1a82401ebbbefe47388613d66d7cb747f51e29c8",
+    "status": "success"
+  },
   "https://www.rts.ch/info/regions/vaud/2026/article/le-centre-vaud-lache-valerie-dittli-pour-les-elections-2027-29328383.html": {
     "attempts": 1,
     "first_seen": "2026-08-14T10:19:14Z",
@@ -178201,11 +178418,25 @@
     "spn2_job_id": "spn2-e8c6ab394a97eb7968a56a46c4038865c71f3e89",
     "status": "success"
   },
+  "https://www.rts.ch/info/sante/2026/article/ebola-en-rdc-l-epidemie-est-loin-d-etre-maitrisee-alerte-l-oms-29331599.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-18T15:55:39Z",
+    "last_checked": "2026-08-18T15:56:17Z",
+    "spn2_job_id": "spn2-bba50a3305f30bafb87de615ac3d4a8ea7acb621",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/sante/2026/article/ebola-le-canada-interdit-l-entree-aux-etrangers-venus-de-rdc-29307442.html": {
     "attempts": 0,
     "first_seen": "2026-07-19T22:02:25Z",
     "last_checked": "2026-07-19T22:02:41Z",
     "spn2_job_id": "spn2-e8c2370b9dfeabd1b8ab10826ea429ffe53e6404",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/sante/2026/article/faut-il-abolir-les-open-spaces-les-explications-d-une-chercheuse-29325425.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:56:19Z",
+    "last_checked": "2026-08-18T15:56:37Z",
+    "spn2_job_id": "spn2-de5146e4eddad16c4c98fe1be30182b72160fa78",
     "status": "success"
   },
   "https://www.rts.ch/info/sante/2026/article/financement-des-soins-des-cantons-denoncent-des-couts-imprevus-29297663.html": {
@@ -178242,6 +178473,13 @@
     "last_checked": "2026-08-09T18:54:39Z",
     "spn2_job_id": "spn2-c0c44bd8b3aa6b095e44671833bb421d68b866e0",
     "status": "success"
+  },
+  "https://www.rts.ch/info/sante/2026/article/la-pratique-sportive-des-suisses-a-t-elle-atteint-un-pic-29331292.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-18T15:45:34Z",
+    "last_checked": "2026-08-18T15:46:11Z",
+    "spn2_job_id": "spn2-55fde31645b3e1b0444d80598070415008a4de27",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/sante/2026/article/legionellose-comment-eviter-les-risques-chez-soi-ou-en-vacances-29319692.html": {
     "attempts": 0,
@@ -178283,6 +178521,13 @@
     "first_seen": "2026-07-25T08:19:00Z",
     "last_checked": "2026-07-25T08:19:16Z",
     "spn2_job_id": "spn2-e16e2975482f4e42cbfe6e93b5c76bf1dc503d9c",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/sante/2026/article/rente-ai-refusee-la-double-peine-des-malades-du-covid-long-29331221.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-18T15:52:09Z",
+    "last_checked": "2026-08-18T15:53:01Z",
+    "spn2_job_id": "spn2-90cc2f64d5eb35ab522e74b7ac78c9a7086f8910",
     "status": "success"
   },
   "https://www.rts.ch/info/sante/2026/article/sante-et-revenus-comment-la-precarite-aggrave-les-inegalites-29304640.html": {
@@ -178699,9 +178944,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/sciences-tech/2026/article/sophie-adenot-devient-la-1ere-francaise-a-sortir-dans-l-espace-29331377.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-08-18T13:21:01Z",
-    "last_checked": "2026-08-18T13:21:05Z",
+    "last_checked": "2026-08-18T15:48:03Z",
     "spn2_job_id": "spn2-916ba70bc2d786a410a2517ef450f5eec0ebbe4e",
     "status": "error_retry"
   },
@@ -179194,6 +179439,13 @@
     "last_checked": "2026-07-22T19:43:23Z",
     "spn2_job_id": "spn2-d6bae7b262342a7b00091fa7008e5e9ff5d11dc9",
     "status": "success"
+  },
+  "https://www.rts.ch/info/suisse/2026/article/accord-suisse-ue-taxe-d-immigration-voulue-aux-etats-29331580.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-18T15:53:03Z",
+    "last_checked": "2026-08-18T15:53:19Z",
+    "spn2_job_id": "spn2-6b78cde038ed694188fb785a3e7195dbee418487",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/suisse/2026/article/accords-avec-l-ue-le-conseil-federal-veut-un-referendum-facultatif-29326638.html": {
     "attempts": 0,
@@ -180084,6 +180336,13 @@
     "spn2_job_id": "spn2-b0e84ebdb517f697f7da79985a723f7eb4fffdc5",
     "status": "success"
   },
+  "https://www.rts.ch/info/suisse/2026/article/la-suisse-renverra-des-requerants-d-asile-en-italie-des-fin-aout-29331452.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-18T15:51:38Z",
+    "last_checked": "2026-08-18T15:52:03Z",
+    "spn2_job_id": "spn2-4b0c52f817e335bf9abe5fc15ba119fff17e5346",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/suisse/2026/article/la-surpopulation-des-prisons-suisses-viole-les-droits-humains-29289370.html": {
     "attempts": 1,
     "first_seen": "2026-06-29T13:49:13Z",
@@ -180101,9 +180360,9 @@
   "https://www.rts.ch/info/suisse/2026/article/le-cartable-des-enfants-est-il-trop-lourd-pour-l-ecole-29331026.html": {
     "attempts": 1,
     "first_seen": "2026-08-18T13:06:56Z",
-    "last_checked": "2026-08-18T13:11:02Z",
+    "last_checked": "2026-08-18T15:44:51Z",
     "spn2_job_id": "spn2-5840afb48ab2e3ad5eea2dadab5efd5e1a1de4e8",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/le-cdf-denonce-les-previsions-lacunaires-du-conseil-federal-29291972.html": {
     "attempts": 0,
