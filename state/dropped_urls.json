@@ -737,20 +737,6 @@
   {
     "timestamp": "2026-08-17T15:32:17Z",
     "source": "rts.ch",
-    "url": "https://www.rts.ch/info/monde/2026/article/l-iran-offre-30-000-dollars-pour-eliminer-des-soldats-us-29329962.html",
-    "reason": "gave_up",
-    "github_run_id": "32042568858"
-  },
-  {
-    "timestamp": "2026-08-17T15:32:17Z",
-    "source": "rts.ch",
-    "url": "https://www.rts.ch/info/regions/neuchatel/2026/article/suisse-des-vendanges-precoces-debutent-deja-a-la-mi-aout-29329955.html",
-    "reason": "gave_up",
-    "github_run_id": "32042568858"
-  },
-  {
-    "timestamp": "2026-08-17T15:32:17Z",
-    "source": "rts.ch",
     "url": "https://www.rts.ch/info/monde/2026/article/incendie-historique-en-belgique-le-pays-compte-sur-l-aide-europeenne-29329912.html",
     "reason": "gave_up",
     "github_run_id": "32042568858"
@@ -759,13 +745,6 @@
     "timestamp": "2026-08-17T15:32:17Z",
     "source": "rts.ch",
     "url": "https://www.rts.ch/info/sciences-tech/2026/article/l-ocytocine-renforce-la-confiance-des-hommes-mefiants-29327175.html",
-    "reason": "gave_up",
-    "github_run_id": "32042568858"
-  },
-  {
-    "timestamp": "2026-08-17T15:32:17Z",
-    "source": "rts.ch",
-    "url": "https://www.rts.ch/info/regions/vaud/2026/article/elections-vaudoises-2027-valerie-dittli-defend-sa-candidature-29330009.html",
     "reason": "gave_up",
     "github_run_id": "32042568858"
   },
@@ -821,13 +800,6 @@
   {
     "timestamp": "2026-08-17T18:52:21Z",
     "source": "rts.ch",
-    "url": "https://www.rts.ch/info/suisse/2026/article/le-porte-a-porte-des-ong-fait-reagir-en-suisse-romande-29256432.html",
-    "reason": "still_retrying",
-    "github_run_id": "32056828564"
-  },
-  {
-    "timestamp": "2026-08-17T18:52:21Z",
-    "source": "rts.ch",
     "url": "https://www.rts.ch/info/culture/cinema/2026/article/l-actrice-americaine-hayden-panettiere-est-morte-a-36-ans-29330281.html",
     "reason": "still_retrying",
     "github_run_id": "32056828564"
@@ -845,5 +817,12 @@
     "url": "https://www.rts.ch/info/environnement/2026/article/la-cop17-sur-la-desertification-s-ouvre-en-mongolie-29330529.html",
     "reason": "gave_up",
     "github_run_id": "32108945925"
+  },
+  {
+    "timestamp": "2026-08-18T13:06:25Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/regions/vaud/2026/article/impots-dans-le-canton-de-vaud-l-initiative-des-12-lancee-29330630.html",
+    "reason": "gave_up",
+    "github_run_id": "32139626359"
   }
 ]
