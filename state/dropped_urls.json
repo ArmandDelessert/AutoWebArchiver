@@ -492,13 +492,6 @@
   {
     "timestamp": "2026-08-13T19:13:29Z",
     "source": "lemonde.fr",
-    "url": "https://www.lemonde.fr/international/article/2026/08/11/bruno-foucher-l-ambassadeur-de-france-en-centrafrique-vise-par-une-procedure-disciplinaire-du-quai-d-orsay_6744093_3210.html",
-    "reason": "gave_up",
-    "github_run_id": "31734546265"
-  },
-  {
-    "timestamp": "2026-08-13T19:13:29Z",
-    "source": "lemonde.fr",
     "url": "https://www.lemonde.fr/sciences/video/2026/08/11/les-files-d-attente-s-allongent-devant-les-vendeurs-de-lunettes-d-observation-de-l-eclipse-solaire_6744018_1650684.html",
     "reason": "gave_up",
     "github_run_id": "31734546265"
@@ -875,13 +868,6 @@
     "github_run_id": "32213624272"
   },
   {
-    "timestamp": "2026-08-19T21:34:16Z",
-    "source": "rts.ch",
-    "url": "https://www.rts.ch/info/monde/2026/article/trump-menace-oman-apres-son-echec-avec-l-iran-sur-le-detroit-d-ormuz-29332171.html",
-    "reason": "still_retrying",
-    "github_run_id": "32304276681"
-  },
-  {
     "timestamp": "2026-08-20T13:05:24Z",
     "source": "rts.ch",
     "url": "https://www.rts.ch/info/regions/autres-cantons/2026/article/proces-raiffeisen-pierin-vincenz-demande-son-acquittement-29332755.html",
@@ -908,5 +894,19 @@
     "url": "https://www.rts.ch/info/regions/neuchatel/2026/article/musee-du-locle-les-cambrioleurs-arretes-en-france-29333205.html",
     "reason": "still_retrying",
     "github_run_id": "32405294740"
+  },
+  {
+    "timestamp": "2026-08-20T21:39:47Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/regions/valais/2026/article/valais-le-canton-concentre-l-accueil-des-gens-du-voyage-a-charrat-29333292.html",
+    "reason": "still_retrying",
+    "github_run_id": "32420012159"
+  },
+  {
+    "timestamp": "2026-08-20T21:39:47Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/regions/valais/2026/article/valais-la-population-devrait-depasser-440-000-habitants-en-2055-29333356.html",
+    "reason": "still_retrying",
+    "github_run_id": "32420012159"
   }
 ]
