@@ -141323,6 +141323,13 @@
     "spn2_job_id": "spn2-f159538258d80e5a3305b3153b5a5cdf1a47aaf2",
     "status": "success"
   },
+  "https://www.lemonde.fr/m-styles/article/2026/08/23/de-l-immortelle-au-ciste-labdanum-ces-plantes-qui-sentent-bon-l-ete_6753712_4497319.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-23T03:59:10Z",
+    "last_checked": "2026-08-23T03:59:25Z",
+    "spn2_job_id": "spn2-8079d1c0dc3a4d7c407b62ff3c41aa2ba026f1f6",
+    "status": "success"
+  },
   "https://www.lemonde.fr/mondephilatelique/article/2026/07/14/chemin-suspendu-des-gorges-de-la-diosaz-festival-de-souillac-en-jazz-saint-antoine-l-abbaye-michele-morgan-les-timbres-poste-de-vos-vacances_6723251_5470897.html": {
     "attempts": 0,
     "first_seen": "2026-07-14T08:26:04Z",
@@ -157949,9 +157956,9 @@
   "https://www.lemonde.fr/sport/article/2026/08/23/des-debuts-en-fanfare-pour-lens-la-bonne-operation-pour-lyon-les-resultats-de-la-premiere-journee-de-ligue-1_6753679_3242.html": {
     "attempts": 1,
     "first_seen": "2026-08-23T01:52:05Z",
-    "last_checked": "2026-08-23T01:52:05Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-08-23T03:59:10Z",
+    "spn2_job_id": "spn2-239ab00c3c1e261a566122cc60512a40e784cf4a",
+    "status": "success"
   },
   "https://www.lemonde.fr/sport/live/2026/06/22/en-direct-france-irak-suivez-le-match-de-la-coupe-du-monde-de-football_6708202_3242.html": {
     "first_seen": "2026-06-22T19:15:13Z",
@@ -176433,11 +176440,11 @@
     "status": "success"
   },
   "https://www.rts.ch/info/culture/spectacles/2026/article/un-spectacle-son-et-lumiere-illumine-les-nuits-estivales-genevoises-29331405.html": {
-    "attempts": 4,
+    "attempts": 5,
     "first_seen": "2026-08-22T15:38:05Z",
-    "last_checked": "2026-08-23T01:51:01Z",
+    "last_checked": "2026-08-23T03:58:17Z",
     "spn2_job_id": "spn2-285fb0faff2d6351e264d4039427eec15f8786ad",
-    "status": "error_retry"
+    "status": "error"
   },
   "https://www.rts.ch/info/culture/spectacles/2026/article/yoann-provenzano-defend-l-humour-et-le-stand-up-romands-29325679.html": {
     "attempts": 1,
@@ -184016,6 +184023,13 @@
     "first_seen": "2026-06-29T13:43:17Z",
     "last_checked": "2026-06-29T13:45:09Z",
     "spn2_job_id": "spn2-11cff076e84c9d716fce0b18d7ae6155cfce19a6",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/sciences-tech/2026/article/tesla-cybercab-lancement-du-robotaxi-sans-volant-ni-pedales-29335659.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-23T03:58:17Z",
+    "last_checked": "2026-08-23T03:59:41Z",
+    "spn2_job_id": "spn2-d06476679b2129606d33c89e1a04e42e581b6dee",
     "status": "success"
   },
   "https://www.rts.ch/info/sciences-tech/2026/article/tout-savoir-sur-l-eclipse-en-suisse-guide-pratique-et-explications-29325393.html": {
