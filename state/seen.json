@@ -135376,6 +135376,13 @@
     "spn2_job_id": "spn2-a550186f6a1c3d87db6d3ed630dc93383ff626be",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/08/23/droits-de-douane-le-premier-ministre-canadien-mark-carney-denonce-la-guerre-commerciale-lancee-par-donald-trump_6753507_3211.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-23T01:51:01Z",
+    "last_checked": "2026-08-23T01:52:06Z",
+    "spn2_job_id": "spn2-2697b3a69e4e3a8ab7943dc723e62813e8e26c75",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
     "attempts": 0,
     "first_seen": "2026-06-25T20:54:14Z",
@@ -157939,6 +157946,13 @@
     "spn2_job_id": "spn2-bf89767d83eed7de5990f634bb784e8334c440a0",
     "status": "success"
   },
+  "https://www.lemonde.fr/sport/article/2026/08/23/des-debuts-en-fanfare-pour-lens-la-bonne-operation-pour-lyon-les-resultats-de-la-premiere-journee-de-ligue-1_6753679_3242.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-23T01:52:05Z",
+    "last_checked": "2026-08-23T01:52:05Z",
+    "spn2_job_id": null,
+    "status": "error_retry"
+  },
   "https://www.lemonde.fr/sport/live/2026/06/22/en-direct-france-irak-suivez-le-match-de-la-coupe-du-monde-de-football_6708202_3242.html": {
     "first_seen": "2026-06-22T19:15:13Z",
     "last_checked": "2026-06-22T19:15:44Z",
@@ -176419,9 +176433,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/culture/spectacles/2026/article/un-spectacle-son-et-lumiere-illumine-les-nuits-estivales-genevoises-29331405.html": {
-    "attempts": 3,
+    "attempts": 4,
     "first_seen": "2026-08-22T15:38:05Z",
-    "last_checked": "2026-08-22T21:31:50Z",
+    "last_checked": "2026-08-23T01:51:01Z",
     "spn2_job_id": "spn2-285fb0faff2d6351e264d4039427eec15f8786ad",
     "status": "error_retry"
   },
@@ -176589,9 +176603,9 @@
   "https://www.rts.ch/info/economie/2026/article/dette-des-etats-unis-le-seuil-des-40-000-milliards-franchi-29335479.html": {
     "attempts": 1,
     "first_seen": "2026-08-22T21:34:08Z",
-    "last_checked": "2026-08-22T21:34:26Z",
+    "last_checked": "2026-08-23T01:52:22Z",
     "spn2_job_id": "spn2-dd2bdc6c06f4a1d42192ada032eea5a0d3388c20",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/economie/2026/article/donald-trump-menace-d-un-embargo-sur-les-montres-de-suisse-29322742.html": {
     "attempts": 1,
@@ -182796,9 +182810,9 @@
   "https://www.rts.ch/info/regions/vaud/2026/article/chasse-vaud-lance-une-nouvelle-formation-de-securite-29335499.html": {
     "attempts": 1,
     "first_seen": "2026-08-22T21:33:09Z",
-    "last_checked": "2026-08-22T21:33:11Z",
+    "last_checked": "2026-08-23T01:52:06Z",
     "spn2_job_id": "spn2-02fff32ef7677bb4dfe5da61d939e57522c94b72",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/regions/vaud/2026/article/cyberharcelement-d-une-deputee-vaudoise-4-personnes-condamnees-29333895.html": {
     "attempts": 2,
@@ -183708,6 +183722,13 @@
     "first_seen": "2026-08-09T07:18:40Z",
     "last_checked": "2026-08-09T07:19:34Z",
     "spn2_job_id": "spn2-1911af941af25a349f7ca06e4d3755ac8015c30a",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/sciences-tech/2026/article/environnement-le-premier-ballon-de-baudruche-100-biodegradable-29335661.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-23T01:52:07Z",
+    "last_checked": "2026-08-23T01:53:08Z",
+    "spn2_job_id": "spn2-cd4b3aaa73847d6c9411c1111fcaab8fd1941c22",
     "status": "success"
   },
   "https://www.rts.ch/info/sciences-tech/2026/article/espace-l-inde-lance-avec-succes-sa-premiere-fusee-privee-29306688.html": {
