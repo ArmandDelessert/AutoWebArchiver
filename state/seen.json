@@ -137637,6 +137637,13 @@
     "spn2_job_id": "spn2-7d17af064e9036e6a8254108fa4c0f2f0c18acce",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/08/29/bande-de-gaza-quatre-morts-signales-apres-des-tirs-de-l-armee-israelienne-qui-dit-avoir-vise-un-cadre-militaire-du-hamas_6760165_3211.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-29T23:17:13Z",
+    "last_checked": "2026-08-29T23:18:06Z",
+    "spn2_job_id": "spn2-c673022298050ded7bc96b76ca90bc5c0476fa8f",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/08/29/donald-trump-annonce-la-mainmise-americaine-sur-le-petrole-venezuelien_6759434_3210.html": {
     "attempts": 0,
     "first_seen": "2026-08-29T10:16:54Z",
@@ -148501,6 +148508,13 @@
     "last_checked": "2026-08-29T10:16:14Z",
     "spn2_job_id": "spn2-d8947a4e3390d7ac8285c15f5e6299e106aaa003",
     "status": "success"
+  },
+  "https://www.lemonde.fr/planete/article/2026/08/30/en-haute-corse-un-incendie-toujours-en-cours-a-parcouru-environ-130-hectares-de-vegetation_6760466_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-29T23:18:07Z",
+    "last_checked": "2026-08-29T23:18:07Z",
+    "spn2_job_id": "spn2-ab33262ea482f1ed8559754b3e749d0eb45f297e",
+    "status": "pending"
   },
   "https://www.lemonde.fr/planete/live/2026/06/23/en-direct-canicule-la-vague-de-chaleur-est-tout-a-fait-comparable-en-severite-a-celle-d-aout-2003-selon-meteo-france_6704498_3244.html": {
     "first_seen": "2026-06-23T20:50:52Z",
@@ -184413,9 +184427,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/environnement/2026/article/nappes-phreatiques-la-suisse-connait-mal-ses-reserves-d-eau-29336553.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-08-29T16:51:45Z",
-    "last_checked": "2026-08-29T20:55:07Z",
+    "last_checked": "2026-08-29T23:18:06Z",
     "spn2_job_id": "spn2-1cc54004ff7acecafb8dd89bb65ae28acb474b15",
     "status": "error_retry"
   },
@@ -187171,9 +187185,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/nepal-les-defis-s-accumulent-apres-la-crue-devastatrice-29341369.html": {
-    "attempts": 3,
+    "attempts": 4,
     "first_seen": "2026-08-29T10:05:42Z",
-    "last_checked": "2026-08-29T20:54:10Z",
+    "last_checked": "2026-08-29T23:18:06Z",
     "spn2_job_id": "spn2-d631a21b7469ae962029e446cfecc32fe4727662",
     "status": "error_retry"
   },
@@ -194086,9 +194100,9 @@
   "https://www.rts.ch/info/suisse/2026/article/secheresse-en-suisse-du-fourrage-importe-depuis-le-canada-29341562.html": {
     "attempts": 1,
     "first_seen": "2026-08-29T21:00:36Z",
-    "last_checked": "2026-08-29T21:01:11Z",
+    "last_checked": "2026-08-29T23:18:07Z",
     "spn2_job_id": "spn2-7e647f39f29955ed91e7e33116613f65f2d3c91c",
-    "status": "error_retry"
+    "status": "pending"
   },
   "https://www.rts.ch/info/suisse/2026/article/secheresse-en-suisse-hausse-des-prix-des-fruits-et-legumes-29334262.html": {
     "attempts": 3,
