@@ -126693,6 +126693,13 @@
     "spn2_job_id": "spn2-5b3ac1fdfac07ceeae209fa14a413c438fa29988",
     "status": "success"
   },
+  "https://www.lemonde.fr/football/article/2026/08/30/ligue-1-monaco-s-impose-face-a-l-om-2-0-et-prend-la-tete-du-championnat_6761597_1616938.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-30T23:24:15Z",
+    "last_checked": "2026-08-30T23:24:29Z",
+    "spn2_job_id": "spn2-614574a68c089a96e7efee50da15e8eabd6acfc9",
+    "status": "success"
+  },
   "https://www.lemonde.fr/football/video/2026/06/27/video-le-cap-vert-celebre-sa-qualification-historique-en-seiziemes-de-finale-de-la-coupe-du-monde-2026_6716366_1616938.html": {
     "attempts": 0,
     "first_seen": "2026-06-27T12:45:11Z",
@@ -140771,6 +140778,13 @@
     "first_seen": "2026-08-30T16:42:17Z",
     "last_checked": "2026-08-30T16:42:33Z",
     "spn2_job_id": "spn2-c0c39b85b732babbe6e33b2cb1bb21e89be066f0",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/live/2026/08/31/en-direct-guerre-au-moyen-orient-les-etats-unis-ont-mene-de-nouvelles-frappes-en-iran-les-premieres-en-un-mois_6761630_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-08-30T23:25:32Z",
+    "last_checked": "2026-08-30T23:26:00Z",
+    "spn2_job_id": "spn2-13e5f4080df3ce0e2a023b1ace0bf3524a85cfc1",
     "status": "success"
   },
   "https://www.lemonde.fr/international/video/2026/06/23/les-images-de-la-fusillade-de-montreal-le-tireur-a-laisse-un-manifeste-inspire-du-courant-incel_6708994_3210.html": {
@@ -159683,6 +159697,13 @@
     "spn2_job_id": "spn2-656cbee61b270c09818b5fb6fd688e5c5346d868",
     "status": "success"
   },
+  "https://www.lemonde.fr/societe/article/2026/08/31/a-paris-le-president-d-une-association-lgbt-grievement-blesse-dans-une-agression_6761663_3224.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-30T23:26:05Z",
+    "last_checked": "2026-08-30T23:26:26Z",
+    "spn2_job_id": "spn2-d920ed1b77cd76c6c26cccddf67a4247e08a50af",
+    "status": "error_retry"
+  },
   "https://www.lemonde.fr/societe/live/2026/07/02/affaire-dany-leprince-posez-vos-questions-a-notre-journaliste-franck-johannes-sur-la-decision-historique-de-la-justice-d-annuler-la-condamnation-rendue_6717824_3224.html": {
     "attempts": 0,
     "first_seen": "2026-07-02T12:14:26Z",
@@ -166448,6 +166469,13 @@
     "first_seen": "2026-08-29T10:08:29Z",
     "last_checked": "2026-08-29T10:09:00Z",
     "spn2_job_id": "spn2-b55811fd0bee481082f3719155713ea6808efae5",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/aux-etats-unis-plus-de-20-personnes-recherchees-apres-une-crue-dans-le-grand-canyon": {
+    "attempts": 0,
+    "first_seen": "2026-08-30T23:27:28Z",
+    "last_checked": "2026-08-30T23:27:43Z",
+    "spn2_job_id": "spn2-2c81eff4f87c7ce3851f76fb87555c28214bd582",
     "status": "success"
   },
   "https://www.letemps.ch/articles/aux-etats-unis-six-primaires-prolongent-l-incertitude-sur-la-strategie-des-partis-avant-les-elections-de-mi-mandat": {
@@ -178553,6 +178581,13 @@
     "spn2_job_id": "spn2-16f019e4bb60747c913474873e8b5db0aaf9b517",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/olivier-faure-se-declare-candidat-a-la-primaire-de-la-gauche": {
+    "attempts": 0,
+    "first_seen": "2026-08-30T23:26:10Z",
+    "last_checked": "2026-08-30T23:27:28Z",
+    "spn2_job_id": "spn2-53e43613fef721eafd280a78610ede885e5a5966",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/olivier-remaud-enchante-et-reveille-avec-nocturne-amphibien-un-conte-ecologique": {
     "attempts": 0,
     "first_seen": "2026-07-16T19:32:50Z",
@@ -178717,9 +178752,9 @@
   "https://www.letemps.ch/articles/ou-sont-les-trombinoscopes-de-ceux-qui-s-occuperont-de-nos-enfants-apres-les-scandales-l-inquietude-demeure-pour-la-rentree-du-periscolaire-francais": {
     "attempts": 1,
     "first_seen": "2026-08-30T21:01:33Z",
-    "last_checked": "2026-08-30T21:01:33Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-08-30T23:26:00Z",
+    "spn2_job_id": "spn2-ed127508962cecad8f101507433d7ccd913b9639",
+    "status": "success"
   },
   "https://www.letemps.ch/articles/ou-trouver-les-milliards-pour-financer-la-climatisation-des-hopitaux-en-france": {
     "attempts": 0,
@@ -179473,9 +179508,9 @@
   "https://www.letemps.ch/articles/prets-feu-vide-grenier-aux-eaux-vives-la-ruee-vers-un-morceau-de-rue-ou-vendre-ses-affaires": {
     "attempts": 1,
     "first_seen": "2026-08-30T21:00:14Z",
-    "last_checked": "2026-08-30T21:00:14Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-08-30T23:25:32Z",
+    "spn2_job_id": "spn2-81aba0260c5d147e2aa00b71ddeafec70b92f890",
+    "status": "success"
   },
   "https://www.letemps.ch/articles/prevoyance-professionnelle-le-troisieme-cotisant-n-a-jamais-ete-aussi-fort": {
     "attempts": 0,
@@ -183944,9 +183979,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/culture/spectacles/2026/article/la-demande-en-mariage-et-l-ours-de-tchekhov-se-jouent-a-travers-geneve-29338812.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-08-30T16:43:17Z",
-    "last_checked": "2026-08-30T21:02:50Z",
+    "last_checked": "2026-08-30T23:25:32Z",
     "spn2_job_id": "spn2-dfcd822c1bc85a61a0e59e8aa3aa578a8ee389b6",
     "status": "error_retry"
   },
@@ -186953,6 +186988,13 @@
     "spn2_job_id": "spn2-9a122ed635e49eaa6e8f6526ee8834f86633074a",
     "status": "success"
   },
+  "https://www.rts.ch/info/monde/2026/article/iran-les-etats-unis-menent-de-nouvelles-frappes-29342474.html": {
+    "attempts": 1,
+    "first_seen": "2026-08-30T23:27:23Z",
+    "last_checked": "2026-08-30T23:27:28Z",
+    "spn2_job_id": "spn2-276d6468f409142e8acb5e108a73883afb45105a",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/monde/2026/article/iran-les-funerailles-geantes-de-l-ayatollah-khamenei-ont-debute-29294242.html": {
     "attempts": 0,
     "first_seen": "2026-07-04T08:55:04Z",
@@ -186998,9 +187040,9 @@
   "https://www.rts.ch/info/monde/2026/article/israel-les-expatries-s-organisent-pour-voter-le-27-octobre-29339412.html": {
     "attempts": 3,
     "first_seen": "2026-08-30T11:53:06Z",
-    "last_checked": "2026-08-30T20:58:51Z",
+    "last_checked": "2026-08-30T23:24:29Z",
     "spn2_job_id": "spn2-243588e6bf30a9a92350ac7f916b31cb14d33fcf",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/italie-770-kilos-de-cocaine-saisis-dans-une-cargaison-de-bananes-29308715.html": {
     "attempts": 0,
@@ -188207,9 +188249,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/presidentielle-francaise-olivier-faure-est-candidat-a-l-elysee-29342417.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-08-30T21:05:18Z",
-    "last_checked": "2026-08-30T21:06:05Z",
+    "last_checked": "2026-08-30T23:26:10Z",
     "spn2_job_id": "spn2-4c79642ba671c1fce5da8fdd648d602b9c9e0343",
     "status": "error_retry"
   },
