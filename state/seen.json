@@ -123032,9 +123032,9 @@
   "https://www.lemonde.fr/disparitions/article/2026/09/01/ada-yonath-biologiste-moleculaire-est-morte_6763510_3382.html": {
     "attempts": 1,
     "first_seen": "2026-09-01T18:46:04Z",
-    "last_checked": "2026-09-01T18:47:22Z",
+    "last_checked": "2026-09-01T23:22:24Z",
     "spn2_job_id": "spn2-fdb05517529a1e73aaaf09dd3afee5829e306459",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.lemonde.fr/disparitions/video/2026/08/26/dolly-parton-les-etats-unis-rendent-hommage-a-leur-idole_6757317_3382.html": {
     "attempts": 1,
@@ -127223,6 +127223,13 @@
     "first_seen": "2026-09-01T18:49:56Z",
     "last_checked": "2026-09-01T18:50:57Z",
     "spn2_job_id": "spn2-bf46d73ae74c5d01e4cc47f72b71f0f91db9753c",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/guerre-au-proche-orient/article/2026/09/01/iran-les-etats-unis-bombardent-des-positions-des-gardiens-de-la-revolution-les-forces-iraniennes-annoncent-une-operation-decisive-en-represailles_6763515_6325530.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:25:03Z",
+    "last_checked": "2026-09-01T23:25:19Z",
+    "spn2_job_id": "spn2-7b1efe5bb9572bc0c4281286e48fad8558e46b25",
     "status": "success"
   },
   "https://www.lemonde.fr/guerre-au-proche-orient/video/2026/08/20/bande-de-gaza-l-australie-outree-par-la-decision-d-israel-de-clore-une-enquete-sur-la-mort-d-humanitaires_6750861_6325529.html": {
@@ -138589,6 +138596,13 @@
     "spn2_job_id": "spn2-dacc30083828e4f84062472b6fdd93139d1431e4",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/09/01/au-venezuela-l-assemblee-nationale-approuve-l-accord-petrolier-avec-les-etats-unis_6763530_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:23:04Z",
+    "last_checked": "2026-09-01T23:24:01Z",
+    "spn2_job_id": "spn2-0e83f9262de7ecbeb71047c2232742dbe3aee5ac",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/09/01/bombardement-de-bouake-en-2004-les-familles-des-victimes-portent-plainte-contre-un-marchand-d-armes_6763503_3210.html": {
     "attempts": 0,
     "first_seen": "2026-09-01T18:39:14Z",
@@ -138631,6 +138645,13 @@
     "spn2_job_id": "spn2-b148c66f609e99938b5e40c83bb2d6ba7c9d57db",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/09/01/en-israel-la-droite-menacee-de-defaite-aux-legislatives-se-dechire-et-se-radicalise_6763524_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:24:04Z",
+    "last_checked": "2026-09-01T23:24:20Z",
+    "spn2_job_id": "spn2-ba09ac359285cbc512d33295033fda6485e23e0b",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/09/01/en-ukraine-l-emergence-des-societes-de-securite-specialisees-dans-la-protection-antidrone-des-entreprises-privees_6763094_3210.html": {
     "attempts": 0,
     "first_seen": "2026-09-01T09:08:14Z",
@@ -138666,11 +138687,25 @@
     "spn2_job_id": "spn2-dcf1f1157f7fe9fa9350bba6c5f4726b76f0fcc5",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/09/01/l-allemagne-accuse-la-russie-d-avoir-pilote-une-tentative-d-attentat-a-leipzig_6763526_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:23:03Z",
+    "last_checked": "2026-09-01T23:24:01Z",
+    "spn2_job_id": "spn2-290c36e1e23185157a16c4820da591db5c246f33",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/09/01/la-cour-supreme-autorise-la-poursuite-du-chantier-de-la-salle-de-bal-a-la-maison-blanche_6762954_3210.html": {
     "attempts": 1,
     "first_seen": "2026-09-01T00:47:08Z",
     "last_checked": "2026-09-01T08:38:10Z",
     "spn2_job_id": "spn2-2d64ab50be1e2bf2b5551455c90108075e0daadf",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/09/01/la-france-et-l-allemagne-veulent-dynamiser-la-coordination-de-la-politique-exterieure-de-l-union-europeenne_6763528_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:25:02Z",
+    "last_checked": "2026-09-01T23:25:19Z",
+    "spn2_job_id": "spn2-a43030d1e1de898a90661af0b4023c66f087afb8",
     "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/09/01/la-suede-dans-la-crainte-d-une-guerre-planifie-les-funerailles-d-une-partie-de-sa-population_6763088_3210.html": {
@@ -138706,6 +138741,13 @@
     "first_seen": "2026-09-01T09:00:28Z",
     "last_checked": "2026-09-01T09:01:01Z",
     "spn2_job_id": "spn2-114d38b3440867af74da7480ba04a55ae9f9abf3",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/09/01/royaume-uni-andy-burnham-dans-son-premier-discours-au-parlement-comme-chef-du-gouvernement-promet-un-controle-accru-de-l-etat-sur-les-services-essentiels_6763523_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:22:04Z",
+    "last_checked": "2026-09-01T23:22:24Z",
+    "spn2_job_id": "spn2-2be4d0694b76756d6f40ded1575719a01faa68dc",
     "status": "success"
   },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
@@ -141627,6 +141669,13 @@
     "spn2_job_id": "spn2-42c4739a9449a94d0e02533215899db8c437cd86",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/live/2026/09/01/en-direct-guerre-en-ukraine-vladimir-poutine-dit-qu-on-ne-negocie-pas-avec-les-terroristes-apres-l-avertissement-de-volodymyr-zelensky-sur-la-securite-de-l-espace-aerien-russe_6760568_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:24:04Z",
+    "last_checked": "2026-09-01T23:24:20Z",
+    "spn2_job_id": "spn2-2dfe0537aa14205834a9aaa90e64a269b0ec9d7a",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/video/2026/06/23/les-images-de-la-fusillade-de-montreal-le-tireur-a-laisse-un-manifeste-inspire-du-courant-incel_6708994_3210.html": {
     "first_seen": "2026-06-23T13:09:06Z",
     "last_checked": "2026-06-23T13:10:37Z",
@@ -144462,9 +144511,9 @@
   "https://www.lemonde.fr/m-le-mag/article/2026/09/01/en-iran-une-photojournaliste-condamnee-a-quinze-ans-de-prison-pour-avoir-diffuse-des-images-de-la-repression-a-l-etranger_6763492_4500055.html": {
     "attempts": 1,
     "first_seen": "2026-09-01T18:33:04Z",
-    "last_checked": "2026-09-01T18:33:24Z",
+    "last_checked": "2026-09-01T23:21:08Z",
     "spn2_job_id": "spn2-e5946dee80399f0c4182ae30c01b1520ef3fcdea",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.lemonde.fr/m-le-mag/article/2026/09/01/les-culottees-de-penelope-bagieu-font-leur-rentree-officielle-au-college_6763486_4500055.html": {
     "attempts": 0,
@@ -160971,12 +161020,19 @@
     "spn2_job_id": "spn2-3049e56c5e65166306267271dcbcdb43c2fa0ec5",
     "status": "success"
   },
+  "https://www.lemonde.fr/societe/article/2026/09/01/la-loi-integrale-contre-les-violences-sexistes-et-sexuelles-sera-bien-examinee-debut-octobre-a-l-assemblee-confirme-sebastien-lecornu_6763527_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:25:01Z",
+    "last_checked": "2026-09-01T23:25:19Z",
+    "spn2_job_id": "spn2-3db39e77b0d80d78d824ed7cbf3ed9ddd252cc44",
+    "status": "success"
+  },
   "https://www.lemonde.fr/societe/article/2026/09/01/patrick-bruel-annonce-l-annulation-de-sa-tournee-apres-avoir-ete-mis-en-examen-dans-des-affaires-de-violences-sexuelles_6763508_3224.html": {
     "attempts": 1,
     "first_seen": "2026-09-01T18:49:28Z",
-    "last_checked": "2026-09-01T18:49:28Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-09-01T23:21:25Z",
+    "spn2_job_id": "spn2-c4ec5b9b008df59ff994f23b4b91d5968068f4d3",
+    "status": "success"
   },
   "https://www.lemonde.fr/societe/article/2026/09/01/surpopulation-carcerale-au-1-aout-le-nombre-de-detenus-dans-les-prisons-francaises-atteint-89-668-un-chiffre-inedit_6763475_3224.html": {
     "attempts": 0,
@@ -171987,6 +172043,13 @@
     "spn2_job_id": "spn2-e83b9a09de4de6e1e827161b21c5095645c83da7",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/en-republique-serbe-de-bosnie-plusieurs-milliers-de-personnes-rendent-hommage-a-ratko-mladic-ancien-chef-militaire-condamne-pour-genocide": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:21:09Z",
+    "last_checked": "2026-09-01T23:22:04Z",
+    "spn2_job_id": "spn2-7c3da0c8ae7252fa6b78d80ed360035b77070073",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/en-soutenant-le-yen-japonais-les-etats-unis-protegent-en-realite-leurs-propres-interets": {
     "attempts": 0,
     "first_seen": "2026-08-04T17:04:14Z",
@@ -180149,6 +180212,13 @@
     "spn2_job_id": "spn2-435677af80da404055fa837d3ef7d7cf88944e71",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/nestle-vend-ses-activites-grand-public-de-vitamines-et-complements-alimentaires-pour-811-millions-de-francs": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:20:11Z",
+    "last_checked": "2026-09-01T23:21:08Z",
+    "spn2_job_id": "spn2-64e2f53dbdf80d8a1f49389c333a5240c925e0d0",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/netanyahou-rejette-le-plan-de-trump-pour-gaza-au-risque-de-s-aliener-washington": {
     "attempts": 0,
     "first_seen": "2026-08-10T13:28:04Z",
@@ -186555,9 +186625,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/economie/2026/article/loyers-le-taux-de-reference-reste-inchange-a-1-25-29343982.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-09-01T14:22:10Z",
-    "last_checked": "2026-09-01T18:33:05Z",
+    "last_checked": "2026-09-01T23:20:11Z",
     "spn2_job_id": "spn2-09a4e1a919d9b4b895c97e27db1f62b898eefcb2",
     "status": "error_retry"
   },
@@ -188387,6 +188457,13 @@
     "last_checked": "2026-08-22T06:58:27Z",
     "spn2_job_id": "spn2-62bde0576a5db64d1514376761bdc5c0f63e25c9",
     "status": "success"
+  },
+  "https://www.rts.ch/info/monde/2026/article/drone-explosif-a-leipzig-l-allemagne-designe-la-russie-29344790.html": {
+    "attempts": 1,
+    "first_seen": "2026-09-01T23:23:03Z",
+    "last_checked": "2026-09-01T23:23:04Z",
+    "spn2_job_id": "spn2-aee8f86212ba92128dca264d4c786402f2284472",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/monde/2026/article/drones-russes-a-kherson-zelensky-denonce-un-safari-humain-29321518.html": {
     "attempts": 0,
@@ -191789,6 +191866,13 @@
     "spn2_job_id": "spn2-94222af2f133e25ed9b9ddcbd6887d820394274f",
     "status": "success"
   },
+  "https://www.rts.ch/info/regions/autres-cantons/2026/article/mafia-en-suisse-la-mafia-est-a-vocation-entrepreneuriale-29344794.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-01T23:24:01Z",
+    "last_checked": "2026-09-01T23:25:02Z",
+    "spn2_job_id": "spn2-9c1d5131617188ed811a7f908beb244e1ed029e6",
+    "status": "success"
+  },
   "https://www.rts.ch/info/regions/autres-cantons/2026/article/pesticides-un-legume-asiatique-sur-trois-non-conforme-a-soleure-29305855.html": {
     "attempts": 0,
     "first_seen": "2026-07-18T10:29:10Z",
@@ -193051,9 +193135,9 @@
   "https://www.rts.ch/info/regions/valais/2026/article/budget-2027-du-valais-un-equilibre-trouve-a-4-9-milliards-29344601.html": {
     "attempts": 1,
     "first_seen": "2026-09-01T18:38:05Z",
-    "last_checked": "2026-09-01T18:39:19Z",
+    "last_checked": "2026-09-01T23:22:24Z",
     "spn2_job_id": "spn2-4822c416290fc84617ad6e48666ad5075bf2525b",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/regions/valais/2026/article/cesar-ritz-un-parcours-rend-hommage-a-l-hotelier-a-niederwald-29341518.html": {
     "attempts": 0,
@@ -194045,9 +194129,9 @@
   "https://www.rts.ch/info/regions/vaud/2026/article/mouvement-liberal-vaudois-luigi-mancini-nouveau-president-29344332.html": {
     "attempts": 2,
     "first_seen": "2026-09-01T14:23:12Z",
-    "last_checked": "2026-09-01T18:33:25Z",
+    "last_checked": "2026-09-01T23:21:25Z",
     "spn2_job_id": "spn2-0b77729e4f5b2df39e1a6cc3087480933d151b1f",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/regions/vaud/2026/article/nuria-gorrite-quittera-le-conseil-d-etat-vaudois-en-2027-29293184.html": {
     "attempts": 0,
