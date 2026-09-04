@@ -140356,9 +140356,9 @@
   "https://www.lemonde.fr/international/article/2026/09/04/en-argentine-un-tableau-vole-par-les-nazis-sera-restitue-a-l-heritiere-d-un-galeriste-juif_6765850_3210.html": {
     "attempts": 1,
     "first_seen": "2026-09-04T20:55:12Z",
-    "last_checked": "2026-09-04T20:56:19Z",
+    "last_checked": "2026-09-04T23:05:31Z",
     "spn2_job_id": "spn2-a029b370b27f9f007ec34ea5480535211309c579",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/09/04/en-suede-des-connexions-prorusses-qui-embarrassent-l-extreme-droite_6765854_3210.html": {
     "attempts": 0,
@@ -146086,9 +146086,9 @@
   "https://www.lemonde.fr/livres/article/2026/09/04/trois-livres-de-poche-conseilles-par-francois-angelier-pierre-boisson-melvin-melissa-et-celine-minard_6765841_3260.html": {
     "attempts": 1,
     "first_seen": "2026-09-04T20:48:13Z",
-    "last_checked": "2026-09-04T20:48:30Z",
+    "last_checked": "2026-09-04T23:05:15Z",
     "spn2_job_id": "spn2-5ed7bd38753d0facd34553665f3bdc31417e5e6f",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.lemonde.fr/m-design-deco/article/2026/08/18/six-mobiliers-de-jardins-publics-de-new-york-a-amsterdam-en-passant-par-nice_6748649_4497702.html": {
     "attempts": 0,
@@ -163795,9 +163795,9 @@
   "https://www.lemonde.fr/societe/article/2026/09/04/dans-le-finistere-une-femme-tuee-sur-la-voie-publique-par-un-homme-retranche-dans-un-immeuble_6765834_3224.html": {
     "attempts": 1,
     "first_seen": "2026-09-04T21:02:03Z",
-    "last_checked": "2026-09-04T21:02:19Z",
+    "last_checked": "2026-09-04T23:06:00Z",
     "spn2_job_id": "spn2-06a63b0f6a9d24892b8ea030cb4494fac9f6e312",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.lemonde.fr/societe/article/2026/09/04/de-l-ecole-au-lycee-l-apprentissage-au-defi-de-l-ia-une-reponse-immediate-comble-le-desir-de-savoir-mais-tue-le-desir-d-apprendre_6765591_3224.html": {
     "attempts": 0,
@@ -192273,6 +192273,13 @@
     "spn2_job_id": "spn2-f53c7fe7a69ffd25d61db075a72374d0dce2f82b",
     "status": "error_retry"
   },
+  "https://www.rts.ch/info/monde/2026/article/cartographie-l-onu-adopte-des-cartes-aux-proportions-reelles-29348055.html": {
+    "attempts": 1,
+    "first_seen": "2026-09-04T23:06:00Z",
+    "last_checked": "2026-09-04T23:06:16Z",
+    "spn2_job_id": "spn2-ecd7ddcb02841f23f353274a67168ae2e90232c5",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/monde/2026/article/catalogne-la-justice-europeenne-valide-l-amnistie-des-independantistes-29305081.html": {
     "attempts": 0,
     "first_seen": "2026-07-16T16:31:21Z",
@@ -194360,9 +194367,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/liban-israel-affirme-avoir-consolide-sa-zone-de-securite-29347583.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-09-04T16:23:32Z",
-    "last_checked": "2026-09-04T20:45:31Z",
+    "last_checked": "2026-09-04T23:04:45Z",
     "spn2_job_id": "spn2-3f84413ce1a1f7dcd721051f5f88677e65622acd",
     "status": "error_retry"
   },
@@ -197830,18 +197837,18 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/valais/2026/article/faille-des-fios-pas-d-acceleration-dans-le-val-d-anniviers-29347789.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-09-04T16:38:48Z",
-    "last_checked": "2026-09-04T20:49:20Z",
+    "last_checked": "2026-09-04T23:05:15Z",
     "spn2_job_id": "spn2-73091fac315d159023a5cf79e189678ec1ef3f6a",
     "status": "error_retry"
   },
   "https://www.rts.ch/info/regions/valais/2026/article/glacier-du-rhone-la-grotte-de-glace-contrainte-de-fermer-29347832.html": {
     "attempts": 1,
     "first_seen": "2026-09-04T20:51:14Z",
-    "last_checked": "2026-09-04T20:51:15Z",
+    "last_checked": "2026-09-04T23:06:46Z",
     "spn2_job_id": "spn2-da20af7bbd4f4340d54d1438a8e3cdd7bc98d8a5",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/regions/valais/2026/article/glacier-du-rhone-une-petition-demande-la-fin-de-la-grotte-de-glace-29319835.html": {
     "attempts": 1,
@@ -201456,9 +201463,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/junge-tat-le-groupuscule-d-extreme-droite-juge-a-zurich-29347728.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-09-04T20:49:21Z",
-    "last_checked": "2026-09-04T20:51:13Z",
+    "last_checked": "2026-09-04T23:05:31Z",
     "spn2_job_id": "spn2-2cca1f7bfc30ab3dafa653b5e8a737de63be9d11",
     "status": "error_retry"
   },
