@@ -6685,5 +6685,20 @@
     "rate_limited": 26,
     "deferred": 0,
     "purged": 0
+  },
+  {
+    "timestamp": "2026-09-13T11:57:32Z",
+    "github_run_id": "34754746325",
+    "sources_processed": 7,
+    "discovered": 16803,
+    "success": 45,
+    "error": 5,
+    "error_retry": 5,
+    "error_permanent": 0,
+    "already_archived": 0,
+    "pending": 0,
+    "rate_limited": 38,
+    "deferred": 0,
+    "purged": 0
   }
 ]
