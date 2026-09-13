@@ -15,6 +15,11 @@ sources:
     url: https://www.letemps.ch/articles.rss
     exhaustive: false
 
+  - name: heidi.news
+    type: rss
+    url: https://www.heidi.news/articles.rss
+    exhaustive: false
+
   - name: le-courrier.ch
     type: sitemap
     url: https://www.le-courrier.ch/wp-sitemap.xml
