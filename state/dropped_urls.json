@@ -317,13 +317,6 @@
   {
     "timestamp": "2026-08-08T18:52:01Z",
     "source": "lemonde.fr",
-    "url": "https://www.lemonde.fr/politique/article/2026/08/06/le-parquet-de-paris-ouvre-une-enquete-sur-des-soupcons-d-ingerence-russe-visant-raphael-glucksmann_6740080_823448.html",
-    "reason": "gave_up",
-    "github_run_id": "31272806966"
-  },
-  {
-    "timestamp": "2026-08-08T18:52:01Z",
-    "source": "lemonde.fr",
     "url": "https://www.lemonde.fr/planete/article/2026/08/08/incendie-dans-la-drome-pres-de-bellegarde-en-diois-la-situation-est-stabilisee-meme-si-une-vigilance-particuliere-demeure-sur-deux-secteurs_6741362_3244.html",
     "reason": "still_pending",
     "github_run_id": "31272806966"
@@ -1937,5 +1930,12 @@
     "url": "https://www.rts.ch/info/culture/livres/2026/article/la-bd-une-vie-pour-les-autres-bouscule-l-humanitaire-29354483.html",
     "reason": "still_retrying",
     "github_run_id": "35275293101"
+  },
+  {
+    "timestamp": "2026-09-18T11:10:08Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/culture/musiques/2026/article/le-groupe-jolly-and-the-flytrap-secret-bien-garde-du-rock-suisse-29359655.html",
+    "reason": "still_retrying",
+    "github_run_id": "35337384926"
   }
 ]
