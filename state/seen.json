@@ -146772,6 +146772,13 @@
     "spn2_job_id": "spn2-3b2113d86830a312c02e9efc6ccb4e5a0a0f72eb",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/09/18/donald-trump-affirme-avoir-obtenu-un-controle-permanent-de-washington-sur-la-securite-du-groenland_6776878_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-18T23:23:19Z",
+    "last_checked": "2026-09-18T23:23:20Z",
+    "spn2_job_id": "spn2-46f0acd776597d250dbb222c299080b501bc7220",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/09/18/donald-trump-annonce-interdire-avec-effet-immediat-l-acces-de-la-maison-blanche-aux-chaines-cnn-et-msnow-ainsi-qu-a-politico_6776841_3210.html": {
     "attempts": 0,
     "first_seen": "2026-09-18T21:13:09Z",
@@ -146854,6 +146861,20 @@
     "first_seen": "2026-09-18T04:38:30Z",
     "last_checked": "2026-09-18T04:39:07Z",
     "spn2_job_id": "spn2-6a69c1918edb9d3878383a6896b882a2411c3276",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/09/19/donald-trump-assure-que-son-fils-don-jr-a-l-intention-de-rembourser-les-festivites-payees-par-un-homme-d-affaires-russe_6776945_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-18T23:22:05Z",
+    "last_checked": "2026-09-18T23:22:22Z",
+    "spn2_job_id": "spn2-dae3184d7459a591549bf119853e415c2a6beaf2",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/09/19/donald-trump-bannit-trois-grands-medias-americains-de-la-maison-blanche_6776912_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-18T23:21:46Z",
+    "last_checked": "2026-09-18T23:22:06Z",
+    "spn2_job_id": "spn2-a717156e4e6d461f94cb7339beb223eab9cf37c5",
     "status": "success"
   },
   "https://www.lemonde.fr/international/live/2026/06/25/en-direct-guerre-en-ukraine-kiev-annonce-la-signature-de-multiples-accords-pour-soutenir-ses-installations-energetiques_6706390_3210.html": {
@@ -204902,9 +204923,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/culture/2026/article/sorties-culturelles-que-faire-ce-week-end-du-18-au-21-septembre-29360727.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-09-18T16:37:08Z",
-    "last_checked": "2026-09-18T21:04:02Z",
+    "last_checked": "2026-09-18T23:21:47Z",
     "spn2_job_id": "spn2-b4b0054cfe559500724e7c361332786c5ebeed0e",
     "status": "error_retry"
   },
@@ -206155,9 +206176,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/culture/musiques/2026/article/l-audacieuse-tempete-de-frank-martin-au-grand-theatre-de-geneve-29360770.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-09-18T16:35:25Z",
-    "last_checked": "2026-09-18T21:03:08Z",
+    "last_checked": "2026-09-18T23:21:47Z",
     "spn2_job_id": "spn2-d2378c6d6736df5ddf1c995b92a9847b7a91d6e6",
     "status": "error_retry"
   },
@@ -214351,9 +214372,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/autres-cantons/2026/article/zurich-l-auteur-de-l-attaque-au-couteau-condamne-a-15-ans-de-prison-29361349.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-09-18T16:41:13Z",
-    "last_checked": "2026-09-18T21:07:21Z",
+    "last_checked": "2026-09-18T23:22:07Z",
     "spn2_job_id": "spn2-fcffd3bde3fe98296a434ffad7056f1fd603d815",
     "status": "error_retry"
   },
@@ -215750,9 +215771,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/neuchatel/2026/article/violaine-bletry-de-montmollin-quittera-l-executif-de-neuchatel-29361302.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-09-18T16:38:18Z",
-    "last_checked": "2026-09-18T21:05:06Z",
+    "last_checked": "2026-09-18T23:22:06Z",
     "spn2_job_id": "spn2-00f9c2d3184856f0b98dc77a7e43969359aaa0a0",
     "status": "error_retry"
   },
@@ -215785,9 +215806,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/valais/2026/article/blatten-150-000-litres-de-mazout-menacent-l-environnement-29360852.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-09-18T21:09:05Z",
-    "last_checked": "2026-09-18T21:09:05Z",
+    "last_checked": "2026-09-18T23:23:20Z",
     "spn2_job_id": "spn2-5fe23e2c543eef579a80481ef1930f2a828a4406",
     "status": "error_retry"
   },
@@ -221426,9 +221447,9 @@
     "status": "error_retry"
   },
   "https://www.rts.ch/info/suisse/2026/article/protestinfo-pas-de-censure-des-eglises-selon-un-rapport-29361362.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-09-18T21:08:01Z",
-    "last_checked": "2026-09-18T21:08:09Z",
+    "last_checked": "2026-09-18T23:23:20Z",
     "spn2_job_id": "spn2-1607bd3c4790b5a68b1b015a9fb4adf5b39087c1",
     "status": "error_retry"
   },
