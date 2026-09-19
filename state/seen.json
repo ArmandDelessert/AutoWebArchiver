@@ -150664,6 +150664,13 @@
     "spn2_job_id": "spn2-fa313e536b69141bb5a7de17616f8c7271bbe74a",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/live/2026/09/19/en-direct-guerre-en-ukraine-quatre-civils-tues-dans-une-frappe-russe-dans-l-oblast-de-soumy_6772184_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-19T23:04:51Z",
+    "last_checked": "2026-09-19T23:05:04Z",
+    "spn2_job_id": "spn2-faccd6586de1da0617039cc0758de5a6243f135e",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/video/2026/06/23/les-images-de-la-fusillade-de-montreal-le-tireur-a-laisse-un-manifeste-inspire-du-courant-incel_6708994_3210.html": {
     "first_seen": "2026-06-23T13:09:06Z",
     "last_checked": "2026-06-23T13:10:37Z",
@@ -179782,9 +179789,16 @@
   "https://www.lemonde.fr/sport/article/2026/09/19/tony-parker-pour-ses-debuts-sur-le-banc-de-l-asvel-s-incline-face-a-roanne-et-a-son-frere-tj_6777837_3242.html": {
     "attempts": 1,
     "first_seen": "2026-09-19T20:58:14Z",
-    "last_checked": "2026-09-19T20:58:14Z",
-    "spn2_job_id": null,
-    "status": "error_retry"
+    "last_checked": "2026-09-19T23:05:21Z",
+    "spn2_job_id": "spn2-52e40ace0ccc811c27ccbb386ecbe9576a04725f",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/sport/article/2026/09/20/l-olympique-lyonnais-et-le-paris-fc-prennent-place-sur-le-podium-de-ligue-1_6777878_3242.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-19T23:06:08Z",
+    "last_checked": "2026-09-19T23:07:10Z",
+    "spn2_job_id": "spn2-11b93a9638b6c3f733afa9416699f354e0436f67",
+    "status": "success"
   },
   "https://www.lemonde.fr/sport/live/2026/06/22/en-direct-france-irak-suivez-le-match-de-la-coupe-du-monde-de-football_6708202_3242.html": {
     "first_seen": "2026-06-22T19:15:13Z",
@@ -211089,6 +211103,13 @@
     "spn2_job_id": "spn2-7d483506bd6e2beb36516b4691112c864c36ff0b",
     "status": "success"
   },
+  "https://www.rts.ch/info/monde/2026/article/france-inter-charles-sapin-renonce-a-son-edito-conteste-29362206.html": {
+    "attempts": 1,
+    "first_seen": "2026-09-19T23:05:06Z",
+    "last_checked": "2026-09-19T23:05:22Z",
+    "spn2_job_id": "spn2-5d3835bb57ab8ee916cd88b22ed8239e49b13688",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/monde/2026/article/france-l-incendie-dans-les-landes-progresse-650-evacues-29329263.html": {
     "attempts": 0,
     "first_seen": "2026-08-15T12:55:09Z",
@@ -215050,6 +215071,13 @@
     "spn2_job_id": "spn2-9c1d5131617188ed811a7f908beb244e1ed029e6",
     "status": "success"
   },
+  "https://www.rts.ch/info/regions/autres-cantons/2026/article/marche-pour-la-vie-1-000-opposants-a-l-avortement-a-zurich-29362058.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-19T23:05:03Z",
+    "last_checked": "2026-09-19T23:05:37Z",
+    "spn2_job_id": "spn2-083cdacb2140e0595c7938392241c2acc526fbc0",
+    "status": "success"
+  },
   "https://www.rts.ch/info/regions/autres-cantons/2026/article/neutralite-carbone-vote-inedit-a-l-eglise-reformee-de-zurich-29357893.html": {
     "attempts": 0,
     "first_seen": "2026-09-15T17:21:06Z",
@@ -215723,9 +215751,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/fribourg/2026/article/risques-en-foret-un-drame-fribourgeois-relance-le-debat-29362076.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-09-19T20:53:19Z",
-    "last_checked": "2026-09-19T20:53:21Z",
+    "last_checked": "2026-09-19T23:04:52Z",
     "spn2_job_id": "spn2-a3a4c69f1de1d3f6c5aff496dae2cea832458fc7",
     "status": "error_retry"
   },
@@ -221182,9 +221210,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/f-35-lockheed-martin-finance-un-ordinateur-quantique-a-l-epfz-29359720.html": {
-    "attempts": 3,
+    "attempts": 4,
     "first_seen": "2026-09-19T11:12:05Z",
-    "last_checked": "2026-09-19T20:49:28Z",
+    "last_checked": "2026-09-19T23:04:51Z",
     "spn2_job_id": "spn2-9815760da2b78083c21b76b2516dd9828a367d1e",
     "status": "error_retry"
   },
@@ -222159,6 +222187,13 @@
     "first_seen": "2026-07-15T19:27:22Z",
     "last_checked": "2026-07-15T19:28:04Z",
     "spn2_job_id": "spn2-a89c067f62306823a744b2cff94363008b52daa4",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/suisse/2026/article/nucleaire-125-000-signatures-contre-de-nouvelles-centrales-29362178.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-19T23:06:09Z",
+    "last_checked": "2026-09-19T23:07:11Z",
+    "spn2_job_id": "spn2-20e2f404cd2fcf7f5bf8b65f1584d4569df8a461",
     "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/nucleaire-en-suisse-la-campagne-de-referendum-est-lancee-29290713.html": {
