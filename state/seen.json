@@ -16323,12 +16323,6 @@
     "spn2_job_id": "spn2-4b3c8bbba96b1b9011d2f23201035761cfb60024",
     "status": "success"
   },
-  "https://korben.info/orion-navigateur-webkit-mac.html": {
-    "first_seen": "2026-06-24T20:40:50Z",
-    "last_checked": "2026-06-24T20:40:50Z",
-    "spn2_job_id": "spn2-09bc7349806c140522489d7310e766a5bbff82ab",
-    "status": "success"
-  },
   "https://techcafe.fr/": {
     "attempts": 0,
     "first_seen": "2026-07-02T02:27:05Z",
@@ -125098,10 +125092,17 @@
     "spn2_job_id": "spn2-e98d1e1a89ce51dfa6aa59c60af1a2069cb4cd52",
     "status": "success"
   },
+  "https://www.lemonde.fr/culture/article/2026/09/22/le-grand-prix-decerne-par-la-revue-specialisee-d-a-fixe-le-cap-de-la-bonne-architecture_6780278_3246.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:23:12Z",
+    "last_checked": "2026-09-22T21:23:29Z",
+    "spn2_job_id": "spn2-2efc4db5f888f2cfcf077f79e5afa298163cf5f0",
+    "status": "success"
+  },
   "https://www.lemonde.fr/culture/article/2026/09/22/les-cercles-du-silence-l-affaire-le-scouarnec-une-histoire-d-omerta-sur-france-2-radiographie-d-une-faille-collective_6780257_3246.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-09-22T17:21:19Z",
-    "last_checked": "2026-09-22T17:21:35Z",
+    "last_checked": "2026-09-22T21:20:08Z",
     "spn2_job_id": "spn2-777572c3af31890883dcdc7ca302c7199b064019",
     "status": "error_retry"
   },
@@ -125987,6 +125988,13 @@
     "spn2_job_id": "spn2-b59ccc95f87696b6e1a61993f07f4232b981ef23",
     "status": "success"
   },
+  "https://www.lemonde.fr/disparitions/article/2026/09/22/lucien-lazare-historien-franco-israelien-et-ancien-resistant-est-mort_6780286_3382.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:26:14Z",
+    "last_checked": "2026-09-22T21:27:25Z",
+    "spn2_job_id": "spn2-dc2a48b77265dc97630f8d79152785fc5c8cb989",
+    "status": "success"
+  },
   "https://www.lemonde.fr/disparitions/article/2026/09/22/mort-d-arnaud-denis-comedien-et-metteur-en-scene-au-bout-de-la-douleur-mort-par-euthanasie_6780259_3382.html": {
     "attempts": 0,
     "first_seen": "2026-09-22T17:21:35Z",
@@ -126057,12 +126065,6 @@
     "spn2_job_id": null,
     "status": "error"
   },
-  "https://www.lemonde.fr/economie/article/2026/06/24/coupures-de-courant-surchauffe-des-lignes-a-haute-tension-les-reseaux-electriques-mis-a-rude-epreuve-par-la-canicule_6713232_3234.html": {
-    "first_seen": "2026-06-24T20:41:16Z",
-    "last_checked": "2026-06-24T20:41:32Z",
-    "spn2_job_id": "spn2-0f2b9f01bac5fc4b7432a71d5c509d8a4fee69b7",
-    "status": "success"
-  },
   "https://www.lemonde.fr/economie/article/2026/06/24/devant-les-fourneaux-la-temperature-oscille-entre-50-c-et-60-c-malgre-la-canicule-il-reste-impensable-d-arreter-le-service-dans-la-restauration_6713187_3234.html": {
     "attempts": 0,
     "first_seen": "2026-06-26T11:20:09Z",
@@ -126083,12 +126085,6 @@
     "last_checked": "2026-06-26T11:18:26Z",
     "spn2_job_id": null,
     "status": "error"
-  },
-  "https://www.lemonde.fr/economie/article/2026/06/24/les-syndicats-de-sfr-redoutent-des-milliers-de-suppressions-de-postes-apres-le-rachat-du-groupe-par-bouygues-orange-et-free_6713233_3234.html": {
-    "first_seen": "2026-06-24T20:40:55Z",
-    "last_checked": "2026-06-24T20:41:11Z",
-    "spn2_job_id": "spn2-5b340a029bb600219f34a9d5f5f9bd80b98e4ff8",
-    "status": "success"
   },
   "https://www.lemonde.fr/economie/article/2026/06/24/renault-annonce-800-departs-volontaires-d-ici-2027-parmi-ses-ingenieurs-en-france-pour-faire-face-a-la-concurrence-chinoise_6713229_3234.html": {
     "attempts": 3,
@@ -131149,6 +131145,13 @@
     "first_seen": "2026-09-22T12:16:02Z",
     "last_checked": "2026-09-22T12:16:18Z",
     "spn2_job_id": "spn2-4c772ce81f9d7dd78a2ce95ed066b5563edc59fc",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/economie/article/2026/09/22/infomaniak-l-acteur-suisse-qui-milite-pour-l-autonomie-numerique-europeenne_6780283_3234.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:24:13Z",
+    "last_checked": "2026-09-22T21:24:13Z",
+    "spn2_job_id": "spn2-552a031c5bb9c55c35046d65f393977428f00048",
     "status": "success"
   },
   "https://www.lemonde.fr/economie/article/2026/09/22/intelligence-artificielle-le-gouvernement-lance-un-plan-de-80-millions-d-euros-pour-accompagner-le-monde-du-travail_6780070_3234.html": {
@@ -136261,6 +136264,13 @@
     "spn2_job_id": "spn2-e9316c89b72e9eaf1b77fd295b8a3dacd71ddcfa",
     "status": "success"
   },
+  "https://www.lemonde.fr/idees/article/2026/09/22/ou-habiter-comment-l-ete-caniculaire-nous-oblige-a-reinventer-nos-rapports-avec-le-territoire_6780271_3232.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:29:09Z",
+    "last_checked": "2026-09-22T21:29:26Z",
+    "spn2_job_id": "spn2-ede5b9b3026cd4898154d3395530f529efe4289b",
+    "status": "success"
+  },
   "https://www.lemonde.fr/idees/article/2026/09/22/pour-donald-trump-l-heure-du-choix-face-a-la-russie_6780078_3232.html": {
     "attempts": 0,
     "first_seen": "2026-09-22T12:14:06Z",
@@ -136302,12 +136312,6 @@
     "last_checked": "2026-06-26T11:17:12Z",
     "spn2_job_id": null,
     "status": "error"
-  },
-  "https://www.lemonde.fr/international/article/2026/06/24/cisjordanie-occupee-un-palestinien-tue-lors-d-un-raid-de-l-armee-israelienne-a-al-yamoun_6713224_3210.html": {
-    "first_seen": "2026-06-24T18:43:52Z",
-    "last_checked": "2026-06-24T18:44:24Z",
-    "spn2_job_id": "spn2-d39925daf94f63a4667b7840af5e3a54f215f5bf",
-    "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/06/24/en-colombie-ivan-cepeda-reconnait-la-victoire-du-candidat-d-extreme-droite-au-terme-du-scrutin-presidentielle-le-plus-serre-de-l-histoire-du-pays_6713195_3210.html": {
     "attempts": 3,
@@ -148013,11 +148017,25 @@
     "spn2_job_id": "spn2-e2bbb98d9f9e2c4e7997f9f846e62acc9843b109",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/09/22/dissuasion-nucleaire-francaise-la-lettonie-annonce-qu-emmanuel-macron-a-accepte-d-ouvrir-des-discussions_6780295_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:32:09Z",
+    "last_checked": "2026-09-22T21:32:25Z",
+    "spn2_job_id": "spn2-7bc7139c8d8389b7db5f419f089b72560d3c33f4",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/09/22/donald-trump-signe-un-accord-de-securite-avec-le-groenland-et-le-danemark_6780267_3210.html": {
     "attempts": 0,
     "first_seen": "2026-09-22T17:27:02Z",
     "last_checked": "2026-09-22T17:27:18Z",
     "spn2_job_id": "spn2-590d6a5cc718b88e5a134ea20237245abfda27db",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/09/22/emmanuel-macron-appelle-a-se-tenir-droit-aux-cotes-des-nations-unies-face-a-la-loi-de-la-jungle_6780290_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:33:06Z",
+    "last_checked": "2026-09-22T21:34:17Z",
+    "spn2_job_id": "spn2-52f56d402d5df1af34b2a08bdd4c954e178fb4f7",
     "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/09/22/en-italie-giorgia-meloni-concurrencee-sur-sa-droite-durcit-le-ton-contre-l-islam_6779969_3210.html": {
@@ -148041,6 +148059,20 @@
     "spn2_job_id": "spn2-fea9cb6742070f86771592fdd1cf3ba9cb8495b7",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/09/22/je-tremble-de-peur-a-chaque-alerte-aerienne-mais-je-reste-a-kiev-dans-le-quartier-de-loukianivka-la-guerre-desormais-omnipresente_6780276_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:31:09Z",
+    "last_checked": "2026-09-22T21:31:24Z",
+    "spn2_job_id": "spn2-6055f8ae8c7e23f40a8c5ec2c67854332039223e",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/09/22/l-influenceur-masculiniste-americain-clavicular-inculpe-de-viol-sur-mineure-aux-etats-unis_6780287_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:27:26Z",
+    "last_checked": "2026-09-22T21:28:00Z",
+    "spn2_job_id": "spn2-69e092b914cc228da1ec224296795fd7f25e13f7",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/09/22/l-oligarque-russo-ouzbek-alicher-ousmanov-echappe-aux-sanctions-europeennes-grace-a-la-france_6780243_3210.html": {
     "attempts": 0,
     "first_seen": "2026-09-22T17:22:19Z",
@@ -148060,6 +148092,13 @@
     "first_seen": "2026-09-22T00:18:04Z",
     "last_checked": "2026-09-22T00:18:20Z",
     "spn2_job_id": "spn2-0b15d5ef4b675a33c720bae6af7fd53a95135d9a",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/09/22/les-houthistes-accusent-l-arabie-saoudite-d-avoir-mene-de-nouvelles-frappes-meurtrieres-au-yemen_6780293_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:31:25Z",
+    "last_checked": "2026-09-22T21:32:05Z",
+    "spn2_job_id": "spn2-aa683871fa00ee41d4cff1804c03cab0611d10a9",
     "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/09/22/les-medias-au-service-de-poutine-deroulent-leur-realite-inversee-transparence-des-elections-en-russie-chaos-en-europe_6780097_3210.html": {
@@ -151604,6 +151643,13 @@
     "spn2_job_id": "spn2-34782b965c00e9ea64a1aa9f33bb3504b03e5213",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/live/2026/09/22/en-direct-guerre-en-ukraine-la-turquie-juge-inacceptables-les-attaques-contre-les-navires-commerciaux-en-mer-noire_6777944_3210.html": {
+    "attempts": 1,
+    "first_seen": "2026-09-22T21:24:06Z",
+    "last_checked": "2026-09-22T21:24:07Z",
+    "spn2_job_id": "spn2-54340f0f22a6c79603341af089b4daf14e615e8a",
+    "status": "error_retry"
+  },
   "https://www.lemonde.fr/international/video/2026/06/24/israel-une-commission-de-l-onu-denonce-la-poursuite-d-un-genocide-dans-la-bande-de-gaza_6713183_3210.html": {
     "attempts": 1,
     "first_seen": "2026-06-26T12:58:09Z",
@@ -152283,6 +152329,13 @@
     "spn2_job_id": "spn2-93e37ca539c8f7ceb528591adb75ee8570d0e8bc",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/video/2026/09/22/un-spectacle-qui-nous-fait-honte-a-tous-les-images-du-discours-d-emmanuel-macron-a-l-assemblee-generale-de-l-onu_6780296_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:33:05Z",
+    "last_checked": "2026-09-22T21:33:21Z",
+    "spn2_job_id": "spn2-be47cf0f02ac597c312e3f15705eb71929ea6226",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/visuel/2026/06/28/en-cartes-comment-la-pression-americaine-enferme-cuba-dans-l-impasse-economique_6716523_3210.html": {
     "attempts": 0,
     "first_seen": "2026-06-28T04:42:17Z",
@@ -152638,6 +152691,13 @@
     "first_seen": "2026-09-21T20:31:11Z",
     "last_checked": "2026-09-21T20:31:26Z",
     "spn2_job_id": "spn2-a24717fc05e31147e29fa099749d943921bcf92d",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/intimites/article/2026/09/22/ces-jeunes-hommes-qui-notent-les-femmes-sur-10-et-estiment-que-ca-ne-pose-pas-trop-de-problemes-au-niveau-du-sexisme_6780273_6190330.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:30:11Z",
+    "last_checked": "2026-09-22T21:30:27Z",
+    "spn2_job_id": "spn2-b163d5f65ab5c47158c8c4f755cd6466651e8359",
     "status": "success"
   },
   "https://www.lemonde.fr/l-air-du-temps/article/2026/06/29/canicule_6716897_6589000.html": {
@@ -153191,12 +153251,6 @@
     "first_seen": "2026-09-20T04:38:17Z",
     "last_checked": "2026-09-20T04:38:33Z",
     "spn2_job_id": "spn2-299703de91ed909fe3705f93b398f0b3e799aa86",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/les-decodeurs/article/2026/06/24/secheresse-etes-vous-concerne-par-des-restrictions-d-eau_6183749_4355771.html": {
-    "first_seen": "2026-06-24T18:42:54Z",
-    "last_checked": "2026-06-24T18:43:25Z",
-    "spn2_job_id": "spn2-143292e6f424a71c6a700ad3a01b4658cc83ad4b",
     "status": "success"
   },
   "https://www.lemonde.fr/les-decodeurs/article/2026/06/25/canicule-et-droit-du-travail-que-dit-la-loi_5147950_4355771.html": {
@@ -155213,6 +155267,13 @@
     "first_seen": "2026-09-21T12:51:12Z",
     "last_checked": "2026-09-21T12:51:28Z",
     "spn2_job_id": "spn2-2887dadb6721cee99e6307b0c3c6f8f8aa4f3f9d",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/livres/article/2026/09/22/le-nouvel-essai-de-la-philosophe-meryem-sebti-montre-toute-la-pertinence-de-la-pensee-du-sage-medieval-avicenne_6780272_3260.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:21:05Z",
+    "last_checked": "2026-09-22T21:21:24Z",
+    "spn2_job_id": "spn2-c7337193a0fec4fb9804db8f2ecde544677ee41e",
     "status": "success"
   },
   "https://www.lemonde.fr/livres/article/2026/09/22/un-essai-documente-d-enguerran-macia-etudie-la-jouissance-sexuelle-au-moyen-d-une-impressionnante-approche-pluridisciplinaire_6779795_3260.html": {
@@ -159023,6 +159084,13 @@
     "spn2_job_id": "spn2-57291f34ae60114b25a5c606643132414bf06a6e",
     "status": "success"
   },
+  "https://www.lemonde.fr/pixels/article/2026/09/22/lunettes-connectees-le-parquet-de-paris-ouvre-plusieurs-enquetes-apres-des-plaintes-de-femmes-filmees-sans-leur-consentement_6780288_4408996.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:32:05Z",
+    "last_checked": "2026-09-22T21:32:25Z",
+    "spn2_job_id": "spn2-7278a39c7df65eb5f99796106c983ef390814941",
+    "status": "success"
+  },
   "https://www.lemonde.fr/pixels/article/2026/09/22/mounim-sabhi-un-createur-de-contenus-soupconne-de-violences-et-d-humiliations-en-direct-place-en-garde-a-vue_6780091_4408996.html": {
     "attempts": 0,
     "first_seen": "2026-09-22T12:18:02Z",
@@ -159105,12 +159173,6 @@
     "first_seen": "2026-09-02T16:48:07Z",
     "last_checked": "2026-09-02T16:48:23Z",
     "spn2_job_id": "spn2-acc40234b2e88b97add4ae040b5bc4c7cc8162f3",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/planete/article/2026/06/24/apres-avoir-enregistre-sa-journee-la-plus-chaude-la-france-entrapercoit-la-fin-de-la-canicule_6713225_3244.html": {
-    "first_seen": "2026-06-24T18:43:30Z",
-    "last_checked": "2026-06-24T18:43:46Z",
-    "spn2_job_id": "spn2-76d53d200ca68c50477908971d87a47b0dc6ad0d",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/article/2026/06/25/comment-se-decide-un-niveau-de-vigilance-orange-ou-rouge-a-meteo-france_6182495_3245.html": {
@@ -163059,6 +163121,13 @@
     "first_seen": "2026-09-22T17:27:18Z",
     "last_checked": "2026-09-22T17:27:34Z",
     "spn2_job_id": "spn2-3b26af3bc5dd412dbe6afb4bca9d91e5cc9f1407",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/planete/article/2026/09/22/une-secheresse-des-sols-a-un-niveau-historique-apres-des-pluies-quasi-absentes-en-septembre_6780282_3244.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:25:14Z",
+    "last_checked": "2026-09-22T21:26:10Z",
+    "spn2_job_id": "spn2-1b97376c50cfc16eda4ea4d99f58e4dd7277d99c",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/live/2026/06/26/en-direct-canicule-50-000-clients-prives-d-electricite-selon-enedis-en-raison-des-chaleurs-exceptionnelles_6710159_3244.html": {
@@ -168381,6 +168450,13 @@
     "spn2_job_id": "spn2-ffc9ce71af9a0b49cc61e6d16c900ef52dd9d8c9",
     "status": "success"
   },
+  "https://www.lemonde.fr/politique/article/2026/09/22/carburants-pour-eviter-une-crise-le-gouvernement-double-les-aides-aux-automobilistes_6780285_823448.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:30:28Z",
+    "last_checked": "2026-09-22T21:31:24Z",
+    "spn2_job_id": "spn2-0e0f763d98a63c9e7219c7ec7760b5730a428d6b",
+    "status": "success"
+  },
   "https://www.lemonde.fr/politique/article/2026/09/22/carburants-sebastien-lecornu-propose-d-inscrire-une-regle-d-or-dans-le-budget-2027-pour-restituer-les-surplus-de-tva-aux-francais_6780071_823448.html": {
     "attempts": 0,
     "first_seen": "2026-09-22T12:11:11Z",
@@ -168428,6 +168504,13 @@
     "first_seen": "2026-09-22T12:12:09Z",
     "last_checked": "2026-09-22T12:13:18Z",
     "spn2_job_id": "spn2-21c70b25e8074e9ce24098e4df524886117f57b0",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/politique/article/2026/09/22/primaire-a-gauche-segolene-royal-ressuscite-son-ordre-juste_6780297_823448.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:34:01Z",
+    "last_checked": "2026-09-22T21:34:17Z",
+    "spn2_job_id": "spn2-f1f0d4c3ae76e2e1a9531db8ebfad4f56b02cae5",
     "status": "success"
   },
   "https://www.lemonde.fr/politique/article/2026/09/22/retraites-des-fonctionnaires-d-etat-des-pistes-pour-revoir-les-regles-sur-les-departs-anticipes_6780262_823448.html": {
@@ -177278,6 +177361,13 @@
     "spn2_job_id": "spn2-21d171536778bcf3610172dd59d6b68758e1ebf4",
     "status": "success"
   },
+  "https://www.lemonde.fr/societe/article/2026/09/22/a-metz-la-visite-du-pape-sous-le-sceau-de-l-europe-et-de-la-paix-sait-il-qu-il-va-servir-la-messe-sur-un-autel-fait-avec-le-bronze-d-anciens-canons-allemands_6780277_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:34:01Z",
+    "last_checked": "2026-09-22T21:34:17Z",
+    "spn2_job_id": "spn2-8a351c993d77d58ae1a382e6ef8e4fac338b8c8d",
+    "status": "success"
+  },
   "https://www.lemonde.fr/societe/article/2026/09/22/arrets-maladie-de-courte-duree-le-president-du-medef-patrick-martin-prone-un-non-remboursement-pour-limiter-les-abus_6780074_3224.html": {
     "attempts": 0,
     "first_seen": "2026-09-22T12:13:01Z",
@@ -177304,6 +177394,13 @@
     "first_seen": "2026-09-22T12:17:14Z",
     "last_checked": "2026-09-22T17:02:34Z",
     "spn2_job_id": "spn2-7e922a6536e93f2b52bf014780327564208ebb4d",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/09/22/derriere-les-plans-thailande-proposes-sur-les-reseaux-sociaux-une-filiere-massive-d-importation-de-cannabis_6780284_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:33:05Z",
+    "last_checked": "2026-09-22T21:33:22Z",
+    "spn2_job_id": "spn2-5e0654a768eb6e5cf7d243675f15cf1e0ebff2c0",
     "status": "success"
   },
   "https://www.lemonde.fr/societe/article/2026/09/22/georges-fotinos-chercheur-le-politique-a-trop-longtemps-laisse-de-cote-l-enjeu-de-la-relation-entre-l-ecole-et-les-parents_6779644_3224.html": {
@@ -177341,11 +177438,46 @@
     "spn2_job_id": "spn2-7c31084f9ddbd3f46a33c3e9f78e496c378f6895",
     "status": "success"
   },
+  "https://www.lemonde.fr/societe/article/2026/09/22/le-gel-annonce-des-apl-un-enieme-coup-de-rabot-qui-fragilisera-les-locataires-les-plus-modestes_6780280_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:31:08Z",
+    "last_checked": "2026-09-22T21:31:24Z",
+    "spn2_job_id": "spn2-96c2552f27c6f0de91726dec681476b3cb133fe9",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/09/22/le-negationniste-vincent-reynouard-condamne-a-huit-mois-de-prison-ferme_6780279_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:22:05Z",
+    "last_checked": "2026-09-22T21:22:22Z",
+    "spn2_job_id": "spn2-f3ac0b589ea3021964cda74f577620be20dacf48",
+    "status": "success"
+  },
   "https://www.lemonde.fr/societe/article/2026/09/22/mort-de-federico-martin-aramburu-accule-par-deux-semaines-d-audience-loik-le-priol-nuance-et-amende-sa-defense-lors-de-son-interrogatoire_6779785_3224.html": {
     "attempts": 0,
     "first_seen": "2026-09-22T05:13:16Z",
     "last_checked": "2026-09-22T05:13:33Z",
     "spn2_job_id": "spn2-d125fd0123bf450af53a7604faf24fb7932f2136",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/09/22/saisies-record-dans-les-aeroports-et-services-de-police-satures-l-inquietude-des-autorites-devant-l-essor-du-trafic-de-cannabis-thailandais_6780289_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:28:09Z",
+    "last_checked": "2026-09-22T21:28:09Z",
+    "spn2_job_id": "spn2-8e8ad018ff6aca14a2ce72220aa7bc1897d20ba7",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/09/22/un-animateur-periscolaire-mis-en-examen-pour-viols-et-agressions-sexuelles-en-bretagne_6780294_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:32:04Z",
+    "last_checked": "2026-09-22T21:32:25Z",
+    "spn2_job_id": "spn2-a39af436ed1d91163c9dcf616676b84e04569210",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/09/22/visite-du-pape-leon-xiv-l-enseignement-catholique-demande-la-banalisation-de-la-journee-du-25-septembre-dans-les-etablissements-prives_6780275_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:29:10Z",
+    "last_checked": "2026-09-22T21:30:27Z",
+    "spn2_job_id": "spn2-33627dec883f2a14583a2113c0dc96639e3a7028",
     "status": "success"
   },
   "https://www.lemonde.fr/societe/live/2026/07/02/affaire-dany-leprince-posez-vos-questions-a-notre-journaliste-franck-johannes-sur-la-decision-historique-de-la-justice-d-annuler-la-condamnation-rendue_6717824_3224.html": {
@@ -183443,6 +183575,13 @@
     "first_seen": "2026-07-11T19:18:25Z",
     "last_checked": "2026-07-11T19:19:02Z",
     "spn2_job_id": "spn2-4933c18bfca738aefbb9df08c74ba11a088c6ea6",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/a-l-occasion-d-octobre-rose-le-reseau-cancer-du-sein-alerte-sur-les-risques-des-perturbateurs-endocriniens": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:23:13Z",
+    "last_checked": "2026-09-22T21:25:14Z",
+    "spn2_job_id": "spn2-68fa7f29e31fdbf10e3c5b76fb8a291978a8eeac",
     "status": "success"
   },
   "https://www.letemps.ch/articles/a-l-orangerie-a-geneve-valeria-bertolotto-rafraichit-hamlet-et-fait-sa-fete-a-la-folie": {
@@ -195828,6 +195967,13 @@
     "spn2_job_id": "spn2-14e56fd404d6f6fb258e49e50202b2d02df6a185",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/la-candidature-de-rebecca-joly-au-conseil-d-etat-vaudois-ne-fait-pas-l-unanimite-chez-les-vert-e-s": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:20:08Z",
+    "last_checked": "2026-09-22T21:21:05Z",
+    "spn2_job_id": "spn2-bf98271e72e81f1cf11f3306dd73f556165cea49",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/la-canicule-de-l-ete-2026-a-coute-1-3-milliard-aux-villes-suisses": {
     "attempts": 0,
     "first_seen": "2026-09-20T16:12:46Z",
@@ -196911,6 +197057,13 @@
     "first_seen": "2026-07-03T04:00:39Z",
     "last_checked": "2026-07-03T04:01:16Z",
     "spn2_job_id": "spn2-7d452750c0af6f8ef1b380a023e8dd2a4af0c81c",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/la-montee-de-l-extreme-droite-un-symptome-a-dechiffrer-ou-un-mal-a-eradiquer": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:22:06Z",
+    "last_checked": "2026-09-22T21:22:22Z",
+    "spn2_job_id": "spn2-3bff4a47dedd3df3bd6a9e162d5243d9748a1260",
     "status": "success"
   },
   "https://www.letemps.ch/articles/la-mort-civique-derniere-arme-de-moscou-contre-les-opposants-en-exil-avant-les-legislatives-de-septembre": {
@@ -198495,6 +198648,13 @@
     "spn2_job_id": "spn2-7dea8cf6b697889be601fb442b470bf720c818c7",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/le-dessin-de-sherif-arafa-egypte-2": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:26:31Z",
+    "last_checked": "2026-09-22T21:27:09Z",
+    "spn2_job_id": "spn2-0dca87268f9706840be1f130ffde2774bc6322ad",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/le-dessin-de-tjeerd-royaards-pays-bas": {
     "attempts": 0,
     "first_seen": "2026-08-23T21:32:18Z",
@@ -200054,6 +200214,13 @@
     "first_seen": "2026-09-18T16:47:07Z",
     "last_checked": "2026-09-18T16:48:25Z",
     "spn2_job_id": "spn2-62a5fc0f209e247d18f2266d20ff217472883772",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/le-zurichois-on-multiplie-les-signes-exterieurs-de-succes-et-projette-une-acceleration-de-sa-croissance": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:25:15Z",
+    "last_checked": "2026-09-22T21:26:30Z",
+    "spn2_job_id": "spn2-cbe10f73c111e123b756261d501dfa83f5c58437",
     "status": "success"
   },
   "https://www.letemps.ch/articles/lea-drucker-ma-grand-mere-a-ete-la-premiere-artiste-que-j-ai-cotoyee": {
@@ -201832,6 +201999,13 @@
     "first_seen": "2026-09-21T04:52:02Z",
     "last_checked": "2026-09-21T04:52:18Z",
     "spn2_job_id": "spn2-7d0bdbdc0ff8a0bc3250ee848dcc58990a4e00c0",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/melchie-dumornay-la-footballeuse-qui-monte-j-aime-surprendre": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:21:08Z",
+    "last_checked": "2026-09-22T21:21:24Z",
+    "spn2_job_id": "spn2-174a5c48a6cf2815991e393fabaa8c4bbffbabc0",
     "status": "success"
   },
   "https://www.letemps.ch/articles/melisey-le-village-que-thibaut-pinot-a-fait-rayonner-sans-jamais-le-quitter": {
@@ -206307,6 +206481,13 @@
     "spn2_job_id": "spn2-246b1567b0c1d8509be50df1cb0a9db831128363",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/troie-detruite-il-y-a-trente-trois-siecles-est-pour-l-ecrivain-olivier-rolin-la-mere-de-toutes-les-villes-suppliciees-jusqu-a-hiroshima-marioupol-ou-gaza": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:27:09Z",
+    "last_checked": "2026-09-22T21:27:25Z",
+    "spn2_job_id": "spn2-40cae5514501ba94e7872ed73f4cd3e3a84259fc",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/trois-ans-apres-le-meurtre-de-crepol-la-france-se-dechire-toujours-sur-la-prise-en-compte-du-racisme-anti-blanc": {
     "attempts": 1,
     "first_seen": "2026-08-18T13:07:16Z",
@@ -207861,6 +208042,13 @@
     "spn2_job_id": "spn2-ddafae15b8dcbec120662f09b80166130b5f042d",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/washington-nuuk-et-copenhague-ont-signe-a-new-york-l-accord-sur-le-groenland": {
+    "attempts": 0,
+    "first_seen": "2026-09-22T21:28:00Z",
+    "last_checked": "2026-09-22T21:29:09Z",
+    "spn2_job_id": "spn2-7eebe38170b1d91ba64007886dea2c7ea96dabbf",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/washington-sanctionne-la-presidente-de-la-cpi-et-appelle-ses-allies-a-la-quitter": {
     "attempts": 0,
     "first_seen": "2026-08-18T21:38:05Z",
@@ -208177,9 +208365,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/culture/2026/article/capitale-culturelle-2027-la-chaux-de-fonds-ouvre-sa-billetterie-29364106.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-09-22T17:06:06Z",
-    "last_checked": "2026-09-22T17:06:31Z",
+    "last_checked": "2026-09-22T21:22:22Z",
     "spn2_job_id": "spn2-66a0b7cb3c31c4165d5d4aefe9464c7de47a214b",
     "status": "error_retry"
   },
@@ -211497,9 +211685,9 @@
   "https://www.rts.ch/info/economie/2026/article/ubs-sergio-ermotti-s-oppose-au-durcissement-des-fonds-propres-29364505.html": {
     "attempts": 1,
     "first_seen": "2026-09-22T17:15:10Z",
-    "last_checked": "2026-09-22T17:16:25Z",
+    "last_checked": "2026-09-22T21:26:30Z",
     "spn2_job_id": "spn2-1ecdfe2609815a182c5668616ca9f786a556d7ca",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/economie/2026/article/usa-des-millions-rembourses-aux-entreprises-suisses-29313738.html": {
     "attempts": 0,
@@ -211653,6 +211841,13 @@
     "first_seen": "2026-08-29T10:02:28Z",
     "last_checked": "2026-08-29T16:42:55Z",
     "spn2_job_id": "spn2-6eb5425b6fa44212352f4ec0b0d6907405423faf",
+    "status": "error_retry"
+  },
+  "https://www.rts.ch/info/environnement/2026/article/chili-le-desert-d-atacama-fleurit-apres-les-pluies-d-el-nino-29364559.html": {
+    "attempts": 1,
+    "first_seen": "2026-09-22T21:27:08Z",
+    "last_checked": "2026-09-22T21:28:00Z",
+    "spn2_job_id": "spn2-f3dcbe1c969ba22bdf51f526d2a787146e3700b5",
     "status": "error_retry"
   },
   "https://www.rts.ch/info/environnement/2026/article/climat-comment-agir-enfin-selon-valerie-masson-delmotte-29336476.html": {
@@ -212263,6 +212458,13 @@
     "last_checked": "2026-08-05T16:52:28Z",
     "spn2_job_id": "spn2-99edbd12aa7f49ed310b104cfdecab2ecb28daf0",
     "status": "success"
+  },
+  "https://www.rts.ch/info/environnement/2026/article/solar-express-seuls-4-parcs-solaires-alpins-sont-en-chantier-29364293.html": {
+    "attempts": 1,
+    "first_seen": "2026-09-22T21:28:01Z",
+    "last_checked": "2026-09-22T21:28:09Z",
+    "spn2_job_id": "spn2-7ca0938c5c3745f9bf51f1469c3f1ed28256e28b",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/environnement/2026/article/suisse-les-glaciers-ont-deja-epuise-leurs-reserves-hivernales-29285776.html": {
     "attempts": 0,
@@ -214847,6 +215049,13 @@
     "spn2_job_id": "spn2-4ae9597913e85754e2ba9393cc326e75f39fa909",
     "status": "success"
   },
+  "https://www.rts.ch/info/monde/2026/article/l-influenceur-masculiniste-clavicular-inculpe-de-viol-sur-mineure-aux-etats-unis-29364683.html": {
+    "attempts": 1,
+    "first_seen": "2026-09-22T21:30:12Z",
+    "last_checked": "2026-09-22T21:30:27Z",
+    "spn2_job_id": "spn2-a8077f74e32a938988fce6e5af9f898bed4bf934",
+    "status": "error_retry"
+  },
   "https://www.rts.ch/info/monde/2026/article/l-iran-offre-30-000-dollars-pour-eliminer-des-soldats-us-29329962.html": {
     "attempts": 5,
     "first_seen": "2026-08-16T18:55:11Z",
@@ -216416,9 +216625,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/rubik-s-cube-une-chinoise-de-6-ans-bat-le-record-du-monde-29364108.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-09-22T17:07:14Z",
-    "last_checked": "2026-09-22T17:08:21Z",
+    "last_checked": "2026-09-22T21:24:13Z",
     "spn2_job_id": "spn2-cc8a5f374a5006c1f31292051c1da31c4ed1be53",
     "status": "error_retry"
   },
@@ -219599,9 +219808,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/neuchatel/2026/article/neuchatel-un-benefice-de-pres-de-10-millions-au-budget-2027-29364081.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-09-22T17:07:13Z",
-    "last_checked": "2026-09-22T17:07:13Z",
+    "last_checked": "2026-09-22T21:24:07Z",
     "spn2_job_id": "spn2-8cb73801e504aa389ba56c979846af33a6f8e32b",
     "status": "error_retry"
   },
@@ -220691,9 +220900,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/vaud/2026/article/hopitaux-vaudois-le-grand-conseil-valide-le-logiciel-epic-29364355.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-09-22T17:08:23Z",
-    "last_checked": "2026-09-22T17:09:18Z",
+    "last_checked": "2026-09-22T21:25:15Z",
     "spn2_job_id": "spn2-be22befe5c7f750efa732ecfa3261f37978c68cc",
     "status": "error_retry"
   },
@@ -223983,9 +224192,9 @@
   "https://www.rts.ch/info/suisse/2026/article/conge-parental-geneve-obtient-l-aval-partiel-du-parlement-29363934.html": {
     "attempts": 2,
     "first_seen": "2026-09-22T12:10:11Z",
-    "last_checked": "2026-09-22T17:04:13Z",
+    "last_checked": "2026-09-22T21:21:24Z",
     "spn2_job_id": "spn2-290a67b1052c034bf10a1f9caf8304196ed86ecb",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/conseil-federal-le-centre-vise-un-2e-siege-en-2027-29348240.html": {
     "attempts": 1,
@@ -224203,6 +224412,13 @@
     "last_checked": "2026-07-16T16:26:35Z",
     "spn2_job_id": "spn2-e4ace025887d44fb8f0a1381009472d98c0bb8d6",
     "status": "success"
+  },
+  "https://www.rts.ch/info/suisse/2026/article/erwin-sperisen-saisit-a-nouveau-la-cedh-contre-la-suisse-29364639.html": {
+    "attempts": 1,
+    "first_seen": "2026-09-22T21:29:08Z",
+    "last_checked": "2026-09-22T21:30:11Z",
+    "spn2_job_id": "spn2-4d7dbb0628c1ea7dd7189a168f52ab139bfafd23",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/suisse/2026/article/escroqueries-aux-faux-policiers-les-cantons-romands-s-unissent-29293780.html": {
     "attempts": 0,
@@ -225555,9 +225771,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/protection-de-l-adulte-et-de-l-enfant-record-de-164-336-cas-29364050.html": {
-    "attempts": 2,
+    "attempts": 3,
     "first_seen": "2026-09-22T12:09:14Z",
-    "last_checked": "2026-09-22T17:03:29Z",
+    "last_checked": "2026-09-22T21:21:05Z",
     "spn2_job_id": "spn2-354eb6eb07dd6cb2d137b2f84ad9a020c5f4f59a",
     "status": "error_retry"
   },
