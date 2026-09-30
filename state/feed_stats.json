@@ -10,17 +10,6 @@
         "newest_published_at": "2026-06-15T11:42:20+02:00",
         "oldest_published_at": "2026-01-20T14:34:10+01:00",
         "rate_limited_count": 0,
-        "timestamp": "2026-07-02T01:11:31Z"
-      },
-      {
-        "already_archived_count": 0,
-        "dropped_count": null,
-        "dropped_unarchived_count": null,
-        "item_count": 142,
-        "new_count": 0,
-        "newest_published_at": "2026-06-15T11:42:20+02:00",
-        "oldest_published_at": "2026-01-20T14:34:10+01:00",
-        "rate_limited_count": 0,
         "timestamp": "2026-07-02T06:47:21Z"
       },
       {
@@ -5973,23 +5962,23 @@
         "oldest_published_at": "2026-01-20T14:34:10+01:00",
         "rate_limited_count": 38,
         "timestamp": "2026-09-29T20:09:25Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 141,
+        "new_count": 92,
+        "newest_published_at": "2026-09-01T23:03:58+02:00",
+        "oldest_published_at": "2026-01-20T14:34:10+01:00",
+        "rate_limited_count": 47,
+        "timestamp": "2026-09-30T00:28:32Z"
       }
     ],
     "last_urls": []
   },
   "frenchspin.fr": {
     "history": [
-      {
-        "already_archived_count": 0,
-        "dropped_count": null,
-        "dropped_unarchived_count": null,
-        "item_count": 2311,
-        "new_count": 1631,
-        "newest_published_at": "2026-06-30T15:39:30+02:00",
-        "oldest_published_at": "2013-06-26T15:16:47+02:00",
-        "rate_limited_count": 36,
-        "timestamp": "2026-07-02T01:11:22Z"
-      },
       {
         "already_archived_count": 0,
         "dropped_count": null,
@@ -11951,6 +11940,17 @@
         "oldest_published_at": "2013-06-26T15:16:47+02:00",
         "rate_limited_count": 46,
         "timestamp": "2026-09-29T20:09:12Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 2334,
+        "new_count": 435,
+        "newest_published_at": "2026-09-29T11:51:49+02:00",
+        "oldest_published_at": "2013-06-26T15:16:47+02:00",
+        "rate_limited_count": 50,
+        "timestamp": "2026-09-30T00:28:20Z"
       }
     ],
     "last_urls": []
@@ -12704,6 +12704,17 @@
         "oldest_published_at": "2026-09-12T17:15:00Z",
         "rate_limited_count": 0,
         "timestamp": "2026-09-29T20:08:59Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 0,
+        "dropped_unarchived_count": 0,
+        "item_count": 20,
+        "new_count": 0,
+        "newest_published_at": "2026-09-28T14:32:00Z",
+        "oldest_published_at": "2026-09-12T17:15:00Z",
+        "rate_limited_count": 0,
+        "timestamp": "2026-09-30T00:28:01Z"
       }
     ],
     "last_urls": [
@@ -12731,17 +12742,6 @@
   },
   "le-courrier.ch": {
     "history": [
-      {
-        "already_archived_count": 4,
-        "dropped_count": null,
-        "dropped_unarchived_count": null,
-        "item_count": 13009,
-        "new_count": 12177,
-        "newest_published_at": "2026-07-01T15:21:26+02:00",
-        "oldest_published_at": "2013-12-17T19:25:52+01:00",
-        "rate_limited_count": 114,
-        "timestamp": "2026-07-02T01:11:16Z"
-      },
       {
         "already_archived_count": 6,
         "dropped_count": null,
@@ -18703,23 +18703,23 @@
         "oldest_published_at": "2013-12-17T19:25:52+01:00",
         "rate_limited_count": 44,
         "timestamp": "2026-09-29T20:09:07Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 13302,
+        "new_count": 556,
+        "newest_published_at": "2026-09-24T11:46:30+02:00",
+        "oldest_published_at": "2013-12-17T19:25:52+01:00",
+        "rate_limited_count": 51,
+        "timestamp": "2026-09-30T00:28:16Z"
       }
     ],
     "last_urls": []
   },
   "lemonde.fr": {
     "history": [
-      {
-        "already_archived_count": 0,
-        "dropped_count": 7,
-        "dropped_unarchived_count": 0,
-        "item_count": 285,
-        "new_count": 8,
-        "newest_published_at": "2026-07-02T03:00:11+02:00",
-        "oldest_published_at": "2026-06-30T04:00:09+02:00",
-        "rate_limited_count": 8,
-        "timestamp": "2026-07-02T01:10:59Z"
-      },
       {
         "already_archived_count": 0,
         "dropped_count": 36,
@@ -24681,10 +24681,20 @@
         "oldest_published_at": "2026-09-27T22:16:13+02:00",
         "rate_limited_count": 52,
         "timestamp": "2026-09-29T20:08:57Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 12,
+        "dropped_unarchived_count": 1,
+        "item_count": 260,
+        "new_count": 36,
+        "newest_published_at": "2026-09-30T02:00:27+02:00",
+        "oldest_published_at": "2026-09-28T05:00:10+02:00",
+        "rate_limited_count": 31,
+        "timestamp": "2026-09-30T00:27:58Z"
       }
     ],
     "last_urls": [
-      "https://www.lemonde.fr/afrique/article/2026/09/27/en-ethiopie-la-television-publique-du-tigre-frappee-par-un-drone_6784561_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/09/28/guerre-au-soudan-les-memes-crimes-se-repetent-mais-a-une-echelle-plus-grande-encore-que-lors-du-genocide-de-2003_6785081_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/09/28/samuel-eto-o-le-president-de-la-federation-camerounaise-de-football-accuse-de-detournement-de-fonds-et-de-blanchiment-d-argent_6785074_3212.html",
       "https://www.lemonde.fr/afrique/article/2026/09/29/art-contemporain-d-afrique-a-paris-herve-yamguen-explore-nos-geographies-intimes_6785658_3212.html",
@@ -24703,6 +24713,7 @@
       "https://www.lemonde.fr/campus/article/2026/09/29/j-en-ai-assez-de-ce-sentiment-d-echec-et-d-injustice-l-amertume-des-jeunes-chercheurs-qui-n-arrivent-pas-a-decrocher-un-poste-a-l-universite_6785592_4401467.html",
       "https://www.lemonde.fr/campus/article/2026/09/29/parcoursup-des-universites-franciliennes-remunerees-si-elles-acceptent-des-candidats-restes-sans-proposition_6785619_4401467.html",
       "https://www.lemonde.fr/chaleur-humaine/article/2026/09/29/comment-on-a-reduit-le-risque-d-inondations-et-de-secheresse-dans-notre-village_6785516_6125299.html",
+      "https://www.lemonde.fr/cinema/article/2026/09/30/les-films-a-l-affiche-notre-salut-digger-memoire-de-fille-un-hiver-russe_6785758_3476.html",
       "https://www.lemonde.fr/critique-litteraire/article/2026/09/28/les-breves-critiques-de-la-rentree-litteraire-taffy-brodesser-akner-alda-merini-joseph-roth-et-stefan-zweig_6785111_5473203.html",
       "https://www.lemonde.fr/culture/article/2026/09/28/a-clermont-ferrand-le-fonds-regional-d-art-contemporain-auvergne-ouvre-dans-la-halle-aux-bles-apres-de-multiples-rebondissements_6785100_3246.html",
       "https://www.lemonde.fr/culture/article/2026/09/28/gomorra-manifeste-anti-mafia-sur-arte-tv-vingt-ans-apres-retour-sur-le-phenomene-roberto-saviano_6785077_3246.html",
@@ -24723,7 +24734,6 @@
       "https://www.lemonde.fr/culture/article/2026/09/29/memoire-de-fille-une-relecture-feministe-par-judith-godreche-du-livre-d-annie-ernaux_6785655_3246.html",
       "https://www.lemonde.fr/culture/article/2026/09/29/revoir-aprile-de-et-avec-nanni-moretti-en-salle_6785634_3246.html",
       "https://www.lemonde.fr/culture/article/2026/09/29/trigonometry-sur-arte-tv-cultive-l-esprit-de-trouple_6785645_3246.html",
-      "https://www.lemonde.fr/disparitions/article/2026/09/27/vline-buggy-paroliere-de-claude-francois-johnny-hallyday-et-beaucoup-d-autres-est-morte_6784557_3382.html",
       "https://www.lemonde.fr/disparitions/article/2026/09/28/peter-may-auteur-de-l-ile-des-chasseurs-d-oiseaux-est-mort_6785043_3382.html",
       "https://www.lemonde.fr/economie/article/2026/09/28/a-cuba-une-economie-asphyxiee-par-les-sanctions-americaines_6785054_3234.html",
       "https://www.lemonde.fr/economie/article/2026/09/28/a-l-approche-du-projet-de-budget-2027-regain-d-inquietude-pour-le-financement-des-films_6785092_3234.html",
@@ -24753,6 +24763,7 @@
       "https://www.lemonde.fr/economie/article/2026/09/29/pour-les-mines-d-or-comme-de-cuivre-la-croissance-passe-davantage-par-la-consolidation-que-par-l-exploration_6785585_3234.html",
       "https://www.lemonde.fr/economie/article/2026/09/29/pour-preparer-son-introduction-en-bourse-anthropic-publie-des-chiffres-vertigineux-sur-sa-croissance-et-ses-investissements_6785676_3234.html",
       "https://www.lemonde.fr/economie/article/2026/09/29/pourquoi-le-train-a-batterie-gagne-du-terrain-en-europe_6785615_3234.html",
+      "https://www.lemonde.fr/economie/article/2026/09/30/openai-pousse-la-logique-des-agents-ia-en-proposant-un-genre-de-collaborateur-virtuel-actif-vingt-quatre-heures-sur-vingt-quatre_6785725_3234.html",
       "https://www.lemonde.fr/idees/article/2026/09/28/affaire-thelyson-orelien-que-cette-campagne-virulente-prenne-a-nouveau-pour-cible-une-personne-racisee-devrait-inciter-a-la-vigilance_6785105_3232.html",
       "https://www.lemonde.fr/idees/article/2026/09/28/apres-le-11-septembre-il-etait-tentant-de-s-en-remettre-au-choc-des-civilisations-pour-penser-la-situation_6785022_3232.html",
       "https://www.lemonde.fr/idees/article/2026/09/28/comprendre-les-etats-unis-et-le-monde-qui-vient-avec-la-revue-le-monde-deplie_6785038_3232.html",
@@ -24778,7 +24789,6 @@
       "https://www.lemonde.fr/idees/article/2026/09/29/protection-des-mineurs-les-accords-conclus-par-meta-et-tiktok-n-ont-fait-l-objet-d-aucun-debat-ni-d-aucune-deliberation-publique_6785590_3232.html",
       "https://www.lemonde.fr/idees/article/2026/09/29/violences-sexistes-et-sexuelles-une-loi-qui-protege-les-victimes-sans-jamais-s-attaquer-a-la-prise-en-charge-des-auteurs-n-est-pas-une-loi-integrale_6785681_3232.html",
       "https://www.lemonde.fr/idees/article/2026/09/29/vu-par-herrmann_6785613_3232.html",
-      "https://www.lemonde.fr/international/article/2026/09/27/israel-revoque-l-accreditation-des-diplomates-neerlandais-en-cisjordanie-en-reponse-a-l-interdiction-emise-par-les-pays-bas-d-importer-les-produits-des-colonies_6784560_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/28/au-kenya-la-poesie-comme-arme-de-persuasion-politique_6784730_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/28/au-royaume-uni-le-flou-persiste-sur-la-nature-du-projet-d-attentat-presume-contre-une-base-militaire_6785110_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/28/aux-pays-bas-l-avortement-pourrait-sortir-du-code-penal_6785103_3210.html",
@@ -24796,7 +24806,6 @@
       "https://www.lemonde.fr/international/article/2026/09/28/les-ambiguites-de-l-etat-saoudien-face-a-oussama-ben-laden-et-a-al-qaida_6784873_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/28/projet-d-attaque-contre-une-base-militaire-en-angleterre-l-iran-nie-toute-implication_6785060_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/28/trois-personnes-sont-mortes-en-tentant-de-traverser-clandestinement-la-manche_6785035_3210.html",
-      "https://www.lemonde.fr/international/article/2026/09/28/visite-du-pape-a-metz-emmanuel-macron-assisterait-finalement-a-la-messe-celebree-a-la-cathedrale_6784630_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/29/a-gaza-six-personnes-tuees-par-des-tirs-israeliens-dont-un-responsable-du-hamas-annonce-la-defense-civile_6785687_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/29/a-gaza-usines-a-cibles-et-dommages-collateraux-les-methodes-de-l-armee-israelienne-racontees-par-ses-militaires_6785614_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/29/alerte-pres-d-une-base-militaire-en-angleterre-aucun-engin-explosif-n-a-ete-retrouve-dans-les-vehicules-des-suspects_6785689_3210.html",
@@ -24827,7 +24836,8 @@
       "https://www.lemonde.fr/international/article/2026/09/29/seoul-exige-des-excuses-de-kiev-pour-avoir-devoile-le-transfert-de-deux-prisonniers-nord-coreens-vers-la-coree-du-sud_6785565_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/29/washington-interdit-l-importation-de-certains-produits-canadiens-dont-des-alcools_6785576_3210.html",
       "https://www.lemonde.fr/international/article/2026/09/29/washington-revoque-les-visas-de-responsables-de-quatre-pays-d-amerique-latine-dont-des-juges_6785244_3210.html",
-      "https://www.lemonde.fr/international/live/2026/09/29/en-direct-guerre-en-ukraine-les-dernieres-informations-incendie-en-estonie-budget-militaire-russe-en-hausse-soldats-nord-coreens-formes-pour-la-russie_6783795_3210.html",
+      "https://www.lemonde.fr/international/article/2026/09/30/aux-etats-unis-la-cour-supreme-leve-de-nouveau-des-limites-aux-expulsions-de-sans-papiers-vers-des-pays-tiers_6785791_3210.html",
+      "https://www.lemonde.fr/international/live/2026/09/30/en-direct-guerre-en-ukraine-lutte-contre-les-drones-a-reaction-russes-preparation-a-l-hiver-ce-que-kiev-envisage-pour-les-mois-a-venir_6783795_3210.html",
       "https://www.lemonde.fr/international/video/2026/09/28/kiev-les-images-des-degats-a-la-suite-de-la-frappe-contre-une-clinique-dans-le-centre-de-la-capitale-ukrainienne_6785070_3210.html",
       "https://www.lemonde.fr/international/video/2026/09/28/la-demission-en-images-du-president-serbe-aleksandar-vucic-qui-brigue-le-poste-de-premier-ministre_6785018_3210.html",
       "https://www.lemonde.fr/international/video/2026/09/28/leon-xiv-a-metz-ce-qu-il-faut-retenir-en-images-de-son-deuxieme-discours-en-france_6785052_3210.html",
@@ -24835,7 +24845,6 @@
       "https://www.lemonde.fr/intimites/article/2026/09/29/eva-illouz-sociologue-les-grandes-idees-sont-presque-toujours-portees-par-des-emotions-fortes_6785654_6190330.html",
       "https://www.lemonde.fr/langue-sauce-piquante/article/2026/09/28/du-pigeon-au-balcon_6785032_6603149.html",
       "https://www.lemonde.fr/le-monde-et-vous/article/2026/09/29/en-afrique-il-est-encore-temps-d-eviter-le-modele-du-tout-voiture_6785559_6065879.html",
-      "https://www.lemonde.fr/les-decodeurs/article/2026/09/27/senatoriales-2026-la-nouvelle-composition-du-senat-en-graphiques_6784562_4355770.html",
       "https://www.lemonde.fr/les-decodeurs/article/2026/09/28/quel-est-vraiment-le-niveau-de-vie-des-retraites-en-france_6785049_4355770.html",
       "https://www.lemonde.fr/les-decodeurs/article/2026/09/28/savez-vous-comment-celine-dion-est-devenue-celine-dion-tentez-de-repondre-a-notre-quiz_6680831_4355771.html",
       "https://www.lemonde.fr/les-decodeurs/article/2026/09/29/le-blocage-des-prix-des-carburants-provoquerait-il-des-penuries-les-arguments-de-la-gauche-passes-au-crible_6785665_4355770.html",
@@ -24865,7 +24874,6 @@
       "https://www.lemonde.fr/planete/article/2026/09/29/intemperies-la-lozere-le-gard-et-l-herault-en-vigilance-orange-mercredi_6785564_3244.html",
       "https://www.lemonde.fr/planete/article/2026/09/29/les-pompiers-mobilises-dans-la-rue-apres-un-ete-a-tirer-sur-la-corde-contre-des-incendies-hors-norme_6785447_3244.html",
       "https://www.lemonde.fr/planete/article/2026/09/29/quelles-sont-les-revendications-des-pompiers-en-greve-mardi_6785519_3244.html",
-      "https://www.lemonde.fr/politique/article/2026/09/27/senatoriales-2026-ce-qu-il-faut-retenir-du-scrutin-dans-13-departements-a-enjeux_6784559_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/28/au-senat-les-elus-oscillent-entre-inquietude-et-fatalisme-face-a-la-constitution-d-un-groupe-d-extreme-droite_6784978_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/28/budget-2027-le-scenario-prevoyant-le-gel-de-toutes-les-pensions-penaliserait-les-retraites-les-plus-modestes_6785036_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/28/budget-2027-les-departements-seront-avantages-promet-sebastien-lecornu_6785080_823448.html",
@@ -24874,9 +24882,6 @@
       "https://www.lemonde.fr/politique/article/2026/09/28/proces-en-appel-des-assistants-parlementaires-du-modem-deux-ans-d-emprisonnement-avec-sursis-requis-contre-francois-bayrou_6785102_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/28/propos-antisemites-attribues-a-jordan-bardella-le-crif-denonce-une-illustration-des-limites-de-la-dediabolisation-du-rn_6785088_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/28/senatoriales-2026-au-sein-du-bloc-central-un-apparent-statu-quo-et-une-chasse-ouverte-aux-recrues_6784697_823448.html",
-      "https://www.lemonde.fr/politique/article/2026/09/28/senatoriales-2026-en-formant-un-groupe-pour-la-premiere-fois-le-rassemblement-national-conforte-son-recit-de-marche-vers-le-pouvoir_6784663_823448.html",
-      "https://www.lemonde.fr/politique/article/2026/09/28/senatoriales-2026-la-gauche-resiste-lfi-fait-son-entree-mais-les-divisions-persistent_6784664_823448.html",
-      "https://www.lemonde.fr/politique/article/2026/09/28/senatoriales-2026-les-republicains-limitent-les-degats-et-minimisent-l-arrivee-historique-d-un-groupe-d-extreme-droite_6784629_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/blocages-des-lycees-le-maire-lfi-bally-bagayoko-vise-par-des-attaques-racistes-dement-avoir-allume-un-feu-de-poubelle_6785601_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/budget-2027-le-parquet-ouvre-une-enquete-sur-des-fuites-dans-la-presse-apres-un-signalement-de-sebastien-lecornu_6785600_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/climat-la-ville-de-paris-concretise-le-bricolage-pour-adapter-les-ecoles-en-urgence_6785668_823448.html",
@@ -24889,11 +24894,13 @@
       "https://www.lemonde.fr/politique/article/2026/09/29/la-senatrice-de-gironde-edwige-diaz-designee-presidente-du-nouveau-groupe-rn-au-senat_6785586_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/le-directeur-de-la-tour-eiffel-patrick-branco-ruivo-annonce-son-depart-a-la-fin-de-l-annee-apres-la-polemique-sur-l-eviction-du-personnel-feminin-du-monument_6785620_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/le-pape-revele-en-miroir-un-certain-nombre-de-nos-failles-en-ces-temps-de-campagne-presidentielle_6785612_823448.html",
+      "https://www.lemonde.fr/politique/article/2026/09/29/les-medias-bollore-chassent-la-taupe-d-un-rn-paranoiaque_6785691_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/mobilisation-sociale-le-dilemme-de-la-gauche-face-a-la-rue_6785563_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/municipales-a-vaulx-en-velin-la-justice-annule-les-elections-remportees-par-lfi-apres-celles-de-venissieux_6785680_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/municipales-a-venissieux-pres-de-lyon-la-justice-annule-les-elections-remportees-par-lfi-en-raison-d-irregularites-sur-la-liste-rn-udr_6785599_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/pouvoir-d-achat-la-fonction-publique-dans-la-rue-pour-reclamer-autre-chose-que-des-remerciements_6785684_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/presidentielle-2027-comme-les-sondages-sont-instrumentalises-cela-appelle-d-autant-plus-notre-vigilance_6785622_823448.html",
+      "https://www.lemonde.fr/politique/article/2026/09/29/presidentielle-2027-edouard-philippe-devoile-son-projet-de-retraite-a-65-ans-et-45-annuites_6785692_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/presidentielle-2027-xavier-bertrand-candidat-en-embuscade_6785636_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/reforme-des-retraites-edouard-philippe-force-de-prendre-des-risques-pour-eviter-l-ecueil-du-favori-fragile-pour-2027_6785587_823448.html",
       "https://www.lemonde.fr/politique/article/2026/09/29/retraites-edouard-philippe-propose-de-porter-progressivement-la-duree-de-cotisation-a-45-ans-et-l-age-de-depart-a-65-ans_6785597_823448.html",
@@ -24908,7 +24915,6 @@
       "https://www.lemonde.fr/sciences/article/2026/09/28/comment-apaiser-son-stress-de-la-respiration-au-bain-de-nature-six-pratiques-explorees-par-les-chercheurs_6785078_1650684.html",
       "https://www.lemonde.fr/sciences/article/2026/09/28/peut-on-se-fier-aux-preuves-apportees-par-les-ia-sur-leurs-demonstrations-de-maths_6785073_1650684.html",
       "https://www.lemonde.fr/sciences/article/2026/09/29/comment-le-cern-est-parvenu-a-transporter-de-l-antimatiere-pendant-deux-heures-dans-un-camion_6785591_1650684.html",
-      "https://www.lemonde.fr/societe/article/2026/09/27/feminicide-dans-le-cher-le-compagnon-de-la-victime-mis-en-examen-et-place-en-detention-provisoire_6784596_3224.html",
       "https://www.lemonde.fr/societe/article/2026/09/28/au-proces-de-rachida-dati-pour-corruption-le-parquet-fustige-sa-volonte-de-capitaliser-sur-un-mandat-public-pour-engranger-le-plus-de-profits-possibles_6785075_3224.html",
       "https://www.lemonde.fr/societe/article/2026/09/28/au-proces-en-appel-du-modem-une-lourde-peine-requise-contre-francois-bayrou_6785178_3224.html",
       "https://www.lemonde.fr/societe/article/2026/09/28/dans-le-gard-des-pompiers-entre-debrouille-et-bouts-de-ficelle-l-etat-on-ne-le-voit-pas_6784832_3224.html",
@@ -24937,7 +24943,6 @@
       "https://www.lemonde.fr/societe/live/2026/09/28/en-direct-voyage-du-pape-a-metz-leon-xiv-a-fait-les-derniers-pas-de-sa-visite-en-france-et-s-envole-vers-rome_6784945_3224.html",
       "https://www.lemonde.fr/societe/video/2026/09/29/greve-du-29-septembre-les-images-de-la-mobilisation-partout-en-france_6785683_3224.html",
       "https://www.lemonde.fr/societe/video/2026/09/29/la-video-d-une-violence-policiere-envers-un-lyceen-de-14-ans-touche-a-bout-portant-au-visage_6785609_3224.html",
-      "https://www.lemonde.fr/sport/article/2026/09/27/aux-mondiaux-de-cyclisme-le-miracle-de-brandon-mcnulty-eclipse-l-enorme-deception-de-paul-seixas_6784595_3242.html",
       "https://www.lemonde.fr/sport/article/2026/09/28/belgique-france-le-resume-de-la-victoire-convaincante-des-bleus-face-aux-diables-rouges_6785144_3242.html",
       "https://www.lemonde.fr/sport/article/2026/09/28/belgique-france-rayan-cherki-renait-chez-les-bleus-sous-la-direction-de-zinedine-zidane_6785062_3242.html",
       "https://www.lemonde.fr/sport/article/2026/09/28/il-me-caressait-la-cuisse-tranquillement-pas-loin-des-parties-intimes-dans-la-gueule-du-loup-plonge-dans-l-univers-des-jeunes-footballeurs-parfois-victimes-de-violences-dans-les-centres-de-formation_6785083_3242.html",
@@ -24954,17 +24959,6 @@
   },
   "letemps.ch": {
     "history": [
-      {
-        "already_archived_count": 0,
-        "dropped_count": 1,
-        "dropped_unarchived_count": 0,
-        "item_count": 21,
-        "new_count": 0,
-        "newest_published_at": "2026-07-01T22:26:29Z",
-        "oldest_published_at": "2026-07-01T15:34:12Z",
-        "rate_limited_count": 0,
-        "timestamp": "2026-07-02T01:11:00Z"
-      },
       {
         "already_archived_count": 0,
         "dropped_count": 12,
@@ -30926,45 +30920,45 @@
         "oldest_published_at": "2026-09-29T13:27:27Z",
         "rate_limited_count": 14,
         "timestamp": "2026-09-29T20:08:57Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 3,
+        "dropped_unarchived_count": 1,
+        "item_count": 21,
+        "new_count": 5,
+        "newest_published_at": "2026-09-29T22:59:48Z",
+        "oldest_published_at": "2026-09-29T13:59:08Z",
+        "rate_limited_count": 5,
+        "timestamp": "2026-09-30T00:27:59Z"
       }
     ],
     "last_urls": [
       "https://www.letemps.ch/articles/a-bienne-la-presse-bilingue-perd-son-dernier-veritable-ambassadeur-avec-la-disparition-du-biel-bienne",
       "https://www.letemps.ch/articles/a-lausanne-pompei-renait-de-ses-cendres-virtuelles",
-      "https://www.letemps.ch/articles/a-peine-trois-ans-apres-leur-lancement-nespresso-abandonne-ses-capsules-en-papier",
       "https://www.letemps.ch/articles/accessibilite-la-suisse-tarde-a-adapter-ses-gares-et-ses-arrets-de-bus-aux-personnes-handicapees",
       "https://www.letemps.ch/articles/bilaterales-iii-le-conseil-des-etats-muscle-la-clause-de-sauvegarde-avec-une-taxe-sur-l-immigration",
-      "https://www.letemps.ch/articles/derriere-la-vitrine-de-la-dediabolisation-les-casseroles-de-jordan-bardella-marine-le-pen-et-leurs-proches",
       "https://www.letemps.ch/articles/digger-l-apocalypse-climatique-servie-sur-un-plateau-par-un-tom-cruise-qui-vise-un-oscar",
       "https://www.letemps.ch/articles/elisabeth-baume-schneider-annoncera-t-elle-un-jour-une-baisse-des-primes-je-ne-pense-pas",
+      "https://www.letemps.ch/articles/en-france-plusieurs-centaines-de-milliers-de-fonctionnaires-ont-manifeste-mardi-pour-davantage-de-moyens",
       "https://www.letemps.ch/articles/gaz-medicaments-et-arme-a-feu-a-lausanne-un-proces-ou-se-melent-assistance-au-suicide-et-complicite-de-meurtre",
       "https://www.letemps.ch/articles/l-armee-malienne-et-les-paramilitaires-russes-ont-commis-des-crimes-de-guerre-contre-34-civils-selon-amnesty",
       "https://www.letemps.ch/articles/l-estonie-accuse-les-services-secrets-russes-d-etre-derriere-l-incendie-d-une-usine-de-drones",
       "https://www.letemps.ch/articles/le-conseil-federal-soutient-une-loi-sur-l-armement-qui-ne-beneficie-en-rien-a-l-ukraine",
       "https://www.letemps.ch/articles/le-parlement-prolonge-le-taux-reduit-de-tva-pour-l-hotellerie-jusqu-en-2031-malgre-l-opposition-du-conseil-federal",
       "https://www.letemps.ch/articles/les-autodafes-des-geants-de-l-ia-une-confiscation-du-savoir-qui-augure-du-pire",
-      "https://www.letemps.ch/articles/lindt-abaisse-ses-previsions-apres-une-chute-des-ventes-due-aux-hausses-de-prix-du-cacao",
+      "https://www.letemps.ch/articles/les-patrons-de-l-ia-adoptent-un-code-de-bonne-conduite-sous-la-houlette-de-donald-trump",
       "https://www.letemps.ch/articles/naza-implacable-documentaire-sur-la-mecanique-des-crimes-d-israel-a-gaza-dans-la-nuit-de-tel-aviv",
       "https://www.letemps.ch/articles/notre-graphique-voici-la-hausse-des-primes-maladie-assureur-par-assureur",
       "https://www.letemps.ch/articles/nous-avons-l-impression-de-devoir-eteindre-un-incendie-avec-un-pistolet-a-eau-le-jura-durement-touche-par-la-hausse-des-primes-le-canton-de-vaud-souffle",
       "https://www.letemps.ch/articles/pas-de-constitution-federale-a-la-carte-pour-l-initiative-boussole",
       "https://www.letemps.ch/articles/primes-maladie-en-hausse-berne-renvoie-la-balle-aux-acteurs-de-la-sante",
-      "https://www.letemps.ch/articles/trois-jours-apres-le-vote-sur-l-initiative-12-la-droite-vaudoise-veut-retablir-l-ancien-bouclier-fiscal-en-urgence"
+      "https://www.letemps.ch/articles/trois-jours-apres-le-vote-sur-l-initiative-12-la-droite-vaudoise-veut-retablir-l-ancien-bouclier-fiscal-en-urgence",
+      "https://www.letemps.ch/articles/une-expulsion-provoquee-et-un-but-d-entree-la-suisse-douche-l-ecosse-a-glasgow"
     ]
   },
   "rts.ch": {
     "history": [
-      {
-        "already_archived_count": 0,
-        "dropped_count": 2,
-        "dropped_unarchived_count": 0,
-        "item_count": 25,
-        "new_count": 6,
-        "newest_published_at": "2026-07-02T00:25:05Z",
-        "oldest_published_at": "2026-07-01T07:18:23Z",
-        "rate_limited_count": 3,
-        "timestamp": "2026-07-02T01:10:59Z"
-      },
       {
         "already_archived_count": 0,
         "dropped_count": 5,
@@ -36926,6 +36920,17 @@
         "oldest_published_at": "2026-09-29T10:37:02Z",
         "rate_limited_count": 10,
         "timestamp": "2026-09-29T20:08:56Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": 2,
+        "dropped_unarchived_count": 0,
+        "item_count": 25,
+        "new_count": 7,
+        "newest_published_at": "2026-09-29T23:35:23Z",
+        "oldest_published_at": "2026-09-29T11:42:08Z",
+        "rate_limited_count": 3,
+        "timestamp": "2026-09-30T00:27:58Z"
       }
     ],
     "last_urls": [
@@ -36942,6 +36947,7 @@
       "https://www.rts.ch/info/regions/fribourg/2026/article/groupe-e-12-licenciements-pour-sa-restructuration-29371113.html",
       "https://www.rts.ch/info/regions/neuchatel/2026/article/neuchatel-explosion-dans-un-immeuble-la-police-intervient-29370866.html",
       "https://www.rts.ch/info/regions/neuchatel/2026/article/neuchatel-le-droit-de-vote-sous-curatelle-soumis-au-peuple-29370753.html",
+      "https://www.rts.ch/info/regions/valais/2026/article/fusion-martigny-vernayaz-le-conseil-general-dit-oui-29371616.html",
       "https://www.rts.ch/info/regions/vaud/2026/article/extreme-droite-la-justice-vaudoise-ouvre-une-enquete-29371209.html",
       "https://www.rts.ch/info/regions/vaud/2026/article/jeux-d-argent-le-nouveau-casino-de-prilly-suscite-l-inquietude-29370823.html",
       "https://www.rts.ch/info/regions/vaud/2026/article/tortionnaire-de-moudon-ecope-de-13-ans-de-prison-29371230.html",
@@ -36952,23 +36958,11 @@
       "https://www.rts.ch/info/suisse/2026/article/exportation-d-armes-le-conseil-federal-lance-sa-campagne-29371016.html",
       "https://www.rts.ch/info/suisse/2026/article/primes-maladie-2027-une-nouvelle-hausse-annoncee-en-suisse-29370554.html",
       "https://www.rts.ch/info/suisse/2026/article/primes-maladie-les-propositions-politiques-face-a-la-hausse-29371005.html",
-      "https://www.rts.ch/info/suisse/2026/article/taxe-d-immigration-le-conseil-des-etats-valide-le-projet-29370770.html",
-      "https://www.rts.ch/info/suisse/2026/minute-par-minute/29356658.html"
+      "https://www.rts.ch/sport/football/2026/article/ligue-des-nations-la-suisse-bat-l-ecosse-3-0-a-glasgow-29371079.html"
     ]
   },
   "techcafe.fr": {
     "history": [
-      {
-        "already_archived_count": 27,
-        "dropped_count": null,
-        "dropped_unarchived_count": null,
-        "item_count": 859,
-        "new_count": 105,
-        "newest_published_at": "2026-07-01T15:40:30+00:00",
-        "oldest_published_at": "2018-09-12T09:37:54+00:00",
-        "rate_limited_count": 73,
-        "timestamp": "2026-07-02T01:11:30Z"
-      },
       {
         "already_archived_count": 0,
         "dropped_count": null,
@@ -42930,6 +42924,17 @@
         "oldest_published_at": "2018-09-12T09:37:54+00:00",
         "rate_limited_count": 41,
         "timestamp": "2026-09-29T20:09:24Z"
+      },
+      {
+        "already_archived_count": 0,
+        "dropped_count": null,
+        "dropped_unarchived_count": null,
+        "item_count": 891,
+        "new_count": 475,
+        "newest_published_at": "2026-09-29T17:16:33+00:00",
+        "oldest_published_at": "2018-09-12T09:37:54+00:00",
+        "rate_limited_count": 54,
+        "timestamp": "2026-09-30T00:28:31Z"
       }
     ],
     "last_urls": []
