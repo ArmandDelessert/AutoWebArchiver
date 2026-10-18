@@ -1,35 +1,5 @@
 [
   {
-    "timestamp": "2026-07-20T20:02:36Z",
-    "sources_processed": 7,
-    "discovered": 16579,
-    "success": 29,
-    "error": 3,
-    "error_retry": 1,
-    "error_permanent": 2,
-    "already_archived": 0,
-    "pending": 0,
-    "rate_limited": 24,
-    "deferred": 0,
-    "purged": 0,
-    "github_run_id": "29773615699"
-  },
-  {
-    "timestamp": "2026-07-20T22:11:27Z",
-    "sources_processed": 7,
-    "discovered": 16583,
-    "success": 10,
-    "error": 1,
-    "error_retry": 1,
-    "error_permanent": 0,
-    "already_archived": 0,
-    "pending": 0,
-    "rate_limited": 7,
-    "deferred": 0,
-    "purged": 0,
-    "github_run_id": "29782732160"
-  },
-  {
     "timestamp": "2026-07-21T03:32:55Z",
     "sources_processed": 7,
     "discovered": 16581,
@@ -6763,5 +6733,20 @@
     "rate_limited": 30,
     "deferred": 2496,
     "purged": 69
+  },
+  {
+    "timestamp": "2026-10-18T22:17:45Z",
+    "github_run_id": "39163258773",
+    "sources_processed": 8,
+    "discovered": 17013,
+    "success": 260,
+    "error": 4,
+    "error_retry": 4,
+    "error_permanent": 0,
+    "already_archived": 14,
+    "pending": 2,
+    "rate_limited": 90,
+    "deferred": 2259,
+    "purged": 38
   }
 ]

@@ -91734,6 +91734,27 @@
     "spn2_job_id": "spn2-34f29c3d1ccb2775b2e4086fcdc19b452010b0f9",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/90-ans/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:17:18Z",
+    "last_checked": "2026-10-18T21:17:34Z",
+    "spn2_job_id": "spn2-3e43c9c3c365fc80671d7a1a71474c867fcd4e7b",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/abbaye/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:09:54Z",
+    "last_checked": "2026-10-18T22:09:54Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/accordeon/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:40:11Z",
+    "last_checked": "2026-10-18T21:40:28Z",
+    "spn2_job_id": "spn2-e7a2d1506759de42f17b864c3f7ccd2270716c76",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/agriculture/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:09:44Z",
@@ -91753,6 +91774,13 @@
     "first_seen": "2026-09-17T05:15:10Z",
     "last_checked": "2026-09-17T05:15:33Z",
     "spn2_job_id": "spn2-b563178f89579da510b180c78f82951f879bbce3",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/amicale-des-thioleyres/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:24:21Z",
+    "last_checked": "2026-10-18T21:24:37Z",
+    "spn2_job_id": "spn2-57aa2ab2dd0de7491e1d6ec2700b6992b214d47f",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/amicale/": {
@@ -91811,11 +91839,116 @@
     "spn2_job_id": "spn2-5cace1859d3b4d429f8a918f38842db343b09977",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/apprenti/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:14:12Z",
+    "last_checked": "2026-10-18T22:16:04Z",
+    "spn2_job_id": "spn2-5f70926efc65544de50cae1cccae9d6d052ac897",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/aran-villette/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:11:19Z",
+    "last_checked": "2026-10-18T22:12:23Z",
+    "spn2_job_id": "spn2-d8fc21c98f292c6a7c79cf7fe2d9af89a6a83c45",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/aran/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:41:06Z",
+    "last_checked": "2026-10-18T21:41:27Z",
+    "spn2_job_id": "spn2-6a7ad98cfaea5df38f107404a86677fa8c12fb8d",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/aranvillette/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:17:21Z",
     "last_checked": "2026-10-18T17:18:55Z",
     "spn2_job_id": "spn2-b34d671337bc1569a41ca1cba1e01b6ead351a6c",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/arbre/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:53:01Z",
+    "last_checked": "2026-10-18T21:54:08Z",
+    "spn2_job_id": "spn2-9f8680fced2ede3ada2385e4dadb6ee71176fb1f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/architecture/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:06:31Z",
+    "last_checked": "2026-10-18T21:08:05Z",
+    "spn2_job_id": "spn2-66a3e97205f5b4772904aec6fcc8b3f2dbb78b31",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/argent/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:18:44Z",
+    "last_checked": "2026-10-18T21:20:11Z",
+    "spn2_job_id": "spn2-a9dc6034b2c1532173c33c66189408c172f96ddb",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/art/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:47:13Z",
+    "last_checked": "2026-10-18T21:47:31Z",
+    "spn2_job_id": "spn2-eb39bcdbbbc42a7802f0d125291b68c48e15c2b8",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/artisans/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:27:30Z",
+    "last_checked": "2026-10-18T21:28:36Z",
+    "spn2_job_id": "spn2-bd1a838cf5701b123068ec794dec662891af23d5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/ascl/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:17:14Z",
+    "last_checked": "2026-10-18T22:17:29Z",
+    "spn2_job_id": "spn2-07413615b2169aebeb3e58050586638b656239f1",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/asij/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:16:05Z",
+    "last_checked": "2026-10-18T22:16:21Z",
+    "spn2_job_id": "spn2-2c0955f0c55cc58a01f535f148bb4741c5290d80",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/assemblee-annuelle/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:37:20Z",
+    "last_checked": "2026-10-18T21:38:16Z",
+    "spn2_job_id": "spn2-38ed3f509d30d1bed33729d64d6882a65ef96eec",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/assemblee-generale-annuelle/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:14:09Z",
+    "last_checked": "2026-10-18T21:14:42Z",
+    "spn2_job_id": "spn2-2ad754ee40b9fabdd9a59c9c3948cfe4444f236e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/assemblee-generale/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:22:07Z",
+    "last_checked": "2026-10-18T21:22:39Z",
+    "spn2_job_id": "spn2-6be7b122a4a854bea138263b1b0a86c8c0e6d447",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/assemblee/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:55:28Z",
+    "last_checked": "2026-10-18T20:56:15Z",
+    "spn2_job_id": "spn2-52cff73371777f2d1f025921814d15b913b0eebc",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/association/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:57:05Z",
+    "last_checked": "2026-10-18T20:58:08Z",
+    "spn2_job_id": "spn2-6146c681010106031d02f2b5cc489376e824233e",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/astronomie/": {
@@ -91839,6 +91972,20 @@
     "spn2_job_id": "spn2-a8879bfd2efae21c7ce95a607ee4b7c8f3ce87b7",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/auberge-communale/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:29:07Z",
+    "last_checked": "2026-10-18T21:29:22Z",
+    "spn2_job_id": "spn2-82e92a54399d3ae40059fcf2154b2f7b4316ccc7",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/auberge-de-la-crochettaz/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:15:32Z",
+    "last_checked": "2026-10-18T22:16:37Z",
+    "spn2_job_id": "spn2-cee9370d105cac4b4c598b667c48b102c1c86b92",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/autisme/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:29:14Z",
@@ -91860,6 +92007,13 @@
     "spn2_job_id": "spn2-846bc05ca91115e5512d86bb6b02cc637bfdd777",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/avent/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:22:08Z",
+    "last_checked": "2026-10-18T21:22:39Z",
+    "spn2_job_id": "spn2-533ab0d0ab5aca2987f324bf8ffa3a2cf8a091e7",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/avion/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:50:01Z",
@@ -91872,6 +92026,13 @@
     "first_seen": "2026-10-18T16:22:17Z",
     "last_checked": "2026-10-18T16:23:25Z",
     "spn2_job_id": "spn2-557d6f6d0d195f080ff30f090a5d2e42f5c20e60",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/avs/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:46:15Z",
+    "last_checked": "2026-10-18T20:47:34Z",
+    "spn2_job_id": "spn2-70879b7d6de0c4b9b594c191b846e614f6a934fb",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/balade-des-bracaillons/": {
@@ -91895,6 +92056,34 @@
     "spn2_job_id": "spn2-f680602caf85d5dfcd4df61e6d4a82c12806c977",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/barnabe/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:47:15Z",
+    "last_checked": "2026-10-18T21:48:34Z",
+    "spn2_job_id": "spn2-d6601ed2ebad190ef086c92f0244db4ea7575cba",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/basketball/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:54:07Z",
+    "last_checked": "2026-10-18T21:54:25Z",
+    "spn2_job_id": "spn2-5f251c73158ed658154b55f77fde26c61682e8a3",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/bateau/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:36:09Z",
+    "last_checked": "2026-10-18T21:37:19Z",
+    "spn2_job_id": "spn2-39406ec4b17b3638e726451683e172ec42e09741",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/beach-volley/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:53:09Z",
+    "last_checked": "2026-10-18T21:53:09Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
   "https://www.le-courrier.ch/tag/belmont/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:31:25Z",
@@ -91902,11 +92091,67 @@
     "spn2_job_id": "spn2-18eee1a66ce2bd33f389a0efbacc95da024d6a0a",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/benevoles/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:48:04Z",
+    "last_checked": "2026-10-18T21:49:11Z",
+    "spn2_job_id": "spn2-408548435e6aae1bcc70844ce5732b7843f1b4ec",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/bibliotheque/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:35:14Z",
+    "last_checked": "2026-10-18T21:36:41Z",
+    "spn2_job_id": "spn2-95f0a41eb1e771be3dd17da039eaad186ea43076",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/bien-etre/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:15:08Z",
+    "last_checked": "2026-10-18T21:16:04Z",
+    "spn2_job_id": "spn2-0f53486233c7e6bbffd75fc279c65a3a8e0c117c",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/billet-dhumeur/": {
     "attempts": 0,
     "first_seen": "2026-09-24T04:56:02Z",
     "last_checked": "2026-09-24T04:56:26Z",
     "spn2_job_id": "spn2-ae54481031dd6f288816c21555dd40f493363f1e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/billet/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:34:23Z",
+    "last_checked": "2026-10-18T21:35:15Z",
+    "spn2_job_id": "spn2-c7cfe854ae4042178aa1f40df3856694b7226ad6",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/bois/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:25:11Z",
+    "last_checked": "2026-10-18T21:25:42Z",
+    "spn2_job_id": "spn2-dc5813d7f67bcb505fd93dae294034043d16f57c",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/boite-a-livre/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:10:12Z",
+    "last_checked": "2026-10-18T22:11:14Z",
+    "spn2_job_id": "spn2-42776253d332639ad7a4ce3dcd00af8c8bd0988a",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/bonheur/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:58:11Z",
+    "last_checked": "2026-10-18T21:59:21Z",
+    "spn2_job_id": "spn2-50a459529f23331e38952ad449eb26b7da71eaeb",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/bougie/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:14:10Z",
+    "last_checked": "2026-10-18T21:14:43Z",
+    "spn2_job_id": "spn2-717438834bc5607af16ae1622a6e3afb65c79329",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/bourg-en-lavaux/": {
@@ -91923,11 +92168,32 @@
     "spn2_job_id": "spn2-84f24943da82204b42d1c9be1cfd68a68e5b83c7",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/budget/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:13:22Z",
+    "last_checked": "2026-10-18T21:14:26Z",
+    "spn2_job_id": "spn2-3f7a309e45b9d53c6a1ef53068f766043362d12e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/cafe-theatre-barnabe/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:01:01Z",
+    "last_checked": "2026-10-18T22:01:49Z",
+    "spn2_job_id": "spn2-116a6bd50bbea52b1aa41ba07926e01ca1c9a317",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/cancer/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:21:44Z",
     "last_checked": "2026-10-18T16:23:05Z",
     "spn2_job_id": "spn2-85a41beb6bd742e20ab3969e839f71ce3012d1df",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/canicule/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:14:08Z",
+    "last_checked": "2026-10-18T22:15:47Z",
+    "spn2_job_id": "spn2-df03a2434e8eb3605146b268e1e06593c9a416a1",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/careme/": {
@@ -91944,11 +92210,39 @@
     "spn2_job_id": "spn2-9e7db8ecfccb25412415437cde0c870c61a6452e",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/caveau/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:09:12Z",
+    "last_checked": "2026-10-18T21:10:17Z",
+    "spn2_job_id": "spn2-27bee4b39f23b7a6595ade159ad818488e3e280a",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/celebration/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:11:36Z",
+    "last_checked": "2026-10-18T22:12:40Z",
+    "spn2_job_id": "spn2-65926a6e4108d10be56facc373a30317c7167dba",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/cepage/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:13:05Z",
+    "last_checked": "2026-10-18T21:14:08Z",
+    "spn2_job_id": "spn2-8459bc68bf8d68d7f76a9018c44d0d25f7ce1728",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/ceremonie/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:45:05Z",
     "last_checked": "2026-10-18T16:46:09Z",
     "spn2_job_id": "spn2-c1226c5a57541f41b2d9b6dbf62470c26d0342dc",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/cest-a-lire/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:38:15Z",
+    "last_checked": "2026-10-18T21:38:36Z",
+    "spn2_job_id": "spn2-c71bdce39d7f77f341e4989b0578e7888c8b561d",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/cfc-de-charpentier/": {
@@ -91965,11 +92259,53 @@
     "spn2_job_id": "spn2-56f2f54a3a9f4c93bb8aa650e59658bf52036167",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/chabag/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:04:41Z",
+    "last_checked": "2026-10-18T21:06:30Z",
+    "spn2_job_id": "spn2-ee16932b9f9d55e5322f65dfa501b5425b99a957",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/championnat-du-monde-des-tracassets/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:55:07Z",
+    "last_checked": "2026-10-18T21:55:27Z",
+    "spn2_job_id": "spn2-65da0d87d8432e61b6b1ab99b12478cf96601a01",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/championnats/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:11:20Z",
+    "last_checked": "2026-10-18T22:12:39Z",
+    "spn2_job_id": "spn2-3e48fdf42013727edf40d1dcb28beb1de2cee5ba",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/chant/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:50:14Z",
+    "last_checked": "2026-10-18T20:51:50Z",
+    "spn2_job_id": "spn2-a6e146d7a7b8962efcfcbd578c8c2cb37a40ed64",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/chantier/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:33:12Z",
+    "last_checked": "2026-10-18T21:34:22Z",
+    "spn2_job_id": "spn2-c17ce5a3074100a2d571ccdb4383083a23a559d5",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/chardonne/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:48:14Z",
     "last_checked": "2026-10-18T16:49:10Z",
     "spn2_job_id": "spn2-4f1a63a76fd5b7735bfda71c2605c464f9414599",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/chasse-neige/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:30:23Z",
+    "last_checked": "2026-10-18T21:30:39Z",
+    "spn2_job_id": "spn2-1e566f3e7a5b3cabe4aca86d9cd4b6c6e85b96af",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/chasse/": {
@@ -91986,11 +92322,25 @@
     "spn2_job_id": null,
     "status": "already_archived"
   },
+  "https://www.le-courrier.ch/tag/chateau/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:52:08Z",
+    "last_checked": "2026-10-18T21:52:25Z",
+    "spn2_job_id": "spn2-3508e911275c9fd9d5fd6d4054008b114a56ee5a",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/chocolat/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:45:38Z",
     "last_checked": "2026-10-18T16:46:11Z",
     "spn2_job_id": "spn2-b24006ccdc518ddbd07479fd03e21e6b6343efff",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/choeur-dhommes-lavenir/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:24:22Z",
+    "last_checked": "2026-10-18T21:25:11Z",
+    "spn2_job_id": "spn2-94207b4117d1a93c37f64a8e1af40cd11a7082bc",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/choeur-dhommes/": {
@@ -91999,6 +92349,20 @@
     "last_checked": "2026-10-18T16:58:11Z",
     "spn2_job_id": null,
     "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/choeur/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:04:41Z",
+    "last_checked": "2026-10-18T21:06:30Z",
+    "spn2_job_id": "spn2-8d438132ab17eebe6fa357f42bf2e0f2a1405b6e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/chorale-de-puidoux/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:42:13Z",
+    "last_checked": "2026-10-18T21:42:29Z",
+    "spn2_job_id": "spn2-a8408be2fb3ef8d88ad5be0942c6a02ac9290fef",
+    "status": "success"
   },
   "https://www.le-courrier.ch/tag/chorale/": {
     "attempts": 0,
@@ -92035,11 +92399,25 @@
     "spn2_job_id": "spn2-eef389949b0b747416aaeca63fd3e42a4d105e34",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/chuv/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:36:10Z",
+    "last_checked": "2026-10-18T21:36:25Z",
+    "spn2_job_id": "spn2-9b1e3636fcecee269c2a97e7683a9b6383b143c0",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/cinema-open-air/": {
     "attempts": 0,
     "first_seen": "2026-08-13T02:46:18Z",
     "last_checked": "2026-08-13T02:47:52Z",
     "spn2_job_id": "spn2-5f9275872b5a0f23fe15f8180e1a5e15c64ddf78",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/circulation/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:01:18Z",
+    "last_checked": "2026-10-18T22:02:20Z",
+    "spn2_job_id": "spn2-ae02227239adc2fea4c12ef70a9012e99b64a3e0",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/cirque/": {
@@ -92056,11 +92434,32 @@
     "spn2_job_id": "spn2-2015c7dc8177b7032b2d7fcc9262df60c990e10f",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/climat/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:17:19Z",
+    "last_checked": "2026-10-18T21:18:43Z",
+    "spn2_job_id": "spn2-0dc644a5e23bc854de7f5957fa5b9c7bb26e3bf7",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/club-de-lutte/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:09:27Z",
     "last_checked": "2026-10-18T16:10:45Z",
     "spn2_job_id": "spn2-457294d78e0ac3dbe3b24fd82a43e2cc79247c7f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/college/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:15:49Z",
+    "last_checked": "2026-10-18T22:16:04Z",
+    "spn2_job_id": "spn2-225f43d348f595e2d3c5efc9dfe60c51cc0560e0",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/comedie/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:02:18Z",
+    "last_checked": "2026-10-18T21:04:08Z",
+    "spn2_job_id": "spn2-6e5e711f68c55160b55535184016a7834cb95ea2",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/communes/": {
@@ -92084,6 +92483,27 @@
     "spn2_job_id": "spn2-febde3747c7666db3b0a730e5a8960c8496030a3",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/comptoir-doron/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:31:15Z",
+    "last_checked": "2026-10-18T21:31:38Z",
+    "spn2_job_id": "spn2-115e3e34d9dd598e1f3b7f4cde54d1f4ed869f96",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/comptoir-regional-doron/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:53:13Z",
+    "last_checked": "2026-10-18T21:53:29Z",
+    "spn2_job_id": "spn2-5a02e99cf2fc6f82024d84571c81337f91300ae5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/comptoir/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:52:09Z",
+    "last_checked": "2026-10-18T21:52:25Z",
+    "spn2_job_id": "spn2-2fb61e0e3efca9450626f573189cca272710661b",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/concert-caritatif/": {
     "attempts": 0,
     "first_seen": "2026-09-02T23:33:20Z",
@@ -92105,11 +92525,39 @@
     "spn2_job_id": "spn2-5bd802ea70c2a323d73aab10c2e000325b25a018",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/concerts/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:42:08Z",
+    "last_checked": "2026-10-18T21:42:29Z",
+    "spn2_job_id": "spn2-174d20df564afe4ca7719afb680c227162f06248",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/concours-hippique/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:16:34Z",
     "last_checked": "2026-10-18T17:18:23Z",
     "spn2_job_id": "spn2-93db50be8d0767312e6bb7433e55f6b2a77d1068",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/concours/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:50:09Z",
+    "last_checked": "2026-10-18T21:50:26Z",
+    "spn2_job_id": "spn2-66a888efdecbe5da58421b13900be6e843153774",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/conference-a-cret-berard/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:46:25Z",
+    "last_checked": "2026-10-18T21:46:41Z",
+    "spn2_job_id": "spn2-86610910d297d5bd05c3b3b47776cd3927f2ba2f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/conseil-communal-27-octobre/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:54:20Z",
+    "last_checked": "2026-10-18T20:55:27Z",
+    "spn2_job_id": "spn2-ece88659e06dec5f62533a46b45aede54b924e7f",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/conseil-communal/": {
@@ -92119,6 +92567,20 @@
     "spn2_job_id": "spn2-cb2e9399402df18f357d4f15ddd93f951db0e743",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/conseil-general/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:56:16Z",
+    "last_checked": "2026-10-18T20:56:47Z",
+    "spn2_job_id": "spn2-f04e0d39c8f76c344d754d75b3883772827f5528",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/consommation/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:44:19Z",
+    "last_checked": "2026-10-18T21:45:20Z",
+    "spn2_job_id": "spn2-37c84b5115370890defb5c4a42545d24ec4e7286",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/construction-dimmeubles/": {
     "attempts": 0,
     "first_seen": "2026-09-02T23:32:08Z",
@@ -92126,11 +92588,60 @@
     "spn2_job_id": "spn2-4dae94fc619744ad7f9cdb3f21cf25bc871a74a2",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/construction/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:40:12Z",
+    "last_checked": "2026-10-18T21:41:06Z",
+    "spn2_job_id": "spn2-7e0497a6fc48068ecc28091fab7bebc5ae3204f2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/conte/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:07:49Z",
+    "last_checked": "2026-10-18T21:09:08Z",
+    "spn2_job_id": "spn2-c787c9fe78c62a0204b1c379652d4b54d92fc4aa",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/coop/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:45:52Z",
+    "last_checked": "2026-10-18T21:46:25Z",
+    "spn2_job_id": "spn2-7f52dde752093783abb5225289e98bb94813a0fb",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/corcelles-le-jorat/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:44:37Z",
+    "last_checked": "2026-10-18T21:45:51Z",
+    "spn2_job_id": "spn2-f29f287aea0873fc32e016badf992d946bc51828",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/courrier-de-lecteur/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:23:26Z",
     "last_checked": "2026-10-18T16:25:14Z",
     "spn2_job_id": "spn2-8f5f5525b1b607a195ff39e97a1793a93d847dbf",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/courrier-des-lecteurs/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:19:04Z",
+    "last_checked": "2026-10-18T21:19:04Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/courrier-lecteur/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:43:28Z",
+    "last_checked": "2026-10-18T21:43:28Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/courrier/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:17:35Z",
+    "last_checked": "2026-10-18T21:18:43Z",
+    "spn2_job_id": "spn2-54ee2e72c8314ad2c38c8581f71877aa53c488bb",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/cours/": {
@@ -92161,6 +92672,20 @@
     "spn2_job_id": "spn2-33a9ddccb9b939650c984c6387c5bc5f8c773e21",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/crescendo/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:08:07Z",
+    "last_checked": "2026-10-18T21:09:28Z",
+    "spn2_job_id": "spn2-7d87ffb57d6c7d769ddaad2a364bb3fdf380e2a2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/cross/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:32:12Z",
+    "last_checked": "2026-10-18T21:32:35Z",
+    "spn2_job_id": "spn2-f0d220f19552c431c97d59ba7e30b1085bbc5761",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/cuisine/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:46:11Z",
@@ -92168,11 +92693,25 @@
     "spn2_job_id": "spn2-9eb4030eefd4d44dfab06e46b542823b35abeb3b",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/cully-bazar/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:15:07Z",
+    "last_checked": "2026-10-18T21:15:07Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
   "https://www.le-courrier.ch/tag/cully-cuiband/": {
     "attempts": 0,
     "first_seen": "2026-08-13T02:45:36Z",
     "last_checked": "2026-08-13T02:46:18Z",
     "spn2_job_id": "spn2-8bfd8fdfe151f6b2cb48718ab763444c08cfdbd5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/cully-jazz/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:50:26Z",
+    "last_checked": "2026-10-18T21:51:05Z",
+    "spn2_job_id": "spn2-763defc9236a6cc6b3a93f28442314d319c7fb2c",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/cully/": {
@@ -92182,11 +92721,32 @@
     "spn2_job_id": "spn2-9e083ecd49fb484ad818c0512cdc7d5c20fc37f3",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/cullyjazz/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:27:29Z",
+    "last_checked": "2026-10-18T21:27:45Z",
+    "spn2_job_id": "spn2-195643b1c96a3dab9cb9ba17534456e13b892a07",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/culte/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:50:04Z",
     "last_checked": "2026-10-18T16:51:25Z",
     "spn2_job_id": "spn2-717caf608e08794f4ec2197f3df6af74493362a8",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/culture/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:05:49Z",
+    "last_checked": "2026-10-18T22:05:49Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/cyclisme/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:07:28Z",
+    "last_checked": "2026-10-18T22:08:47Z",
+    "spn2_job_id": "spn2-e4be233305997dec5b3b292a84a11cf3fed4ba2f",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/danse/": {
@@ -92203,11 +92763,25 @@
     "spn2_job_id": "spn2-447fc552d258b795947d058ca2e7385ac380c094",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/dechets/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:21:08Z",
+    "last_checked": "2026-10-18T21:21:24Z",
+    "spn2_job_id": "spn2-45310842a350b04db28a88980845857ad6c47c00",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/dechetterie/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:19:55Z",
     "last_checked": "2026-10-18T16:20:42Z",
     "spn2_job_id": "spn2-f3f4853a34a64dd028908151cb086575afc683a8",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/dedicace/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:49:11Z",
+    "last_checked": "2026-10-18T21:49:28Z",
+    "spn2_job_id": "spn2-7cbde8694a6e6f31b4f57d784eb3e1ed6b04208c",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/defi-cycliste/": {
@@ -92224,6 +92798,13 @@
     "spn2_job_id": "spn2-f758d30a2a78297bba5b04a96e601b59e23ef73b",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/demission/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:28:37Z",
+    "last_checked": "2026-10-18T21:30:22Z",
+    "spn2_job_id": "spn2-b89473462140d143462bb8ed5fff691ac4441cf9",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/denner/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:30:36Z",
@@ -92238,11 +92819,25 @@
     "spn2_job_id": "spn2-b9097979d24a84239fb940f80445b7c9d944157c",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/depistage/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:00:23Z",
+    "last_checked": "2026-10-18T21:01:30Z",
+    "spn2_job_id": "spn2-19ee6246e87b09e08d4bba568859d63e99e0830a",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/desaccords/": {
     "attempts": 0,
     "first_seen": "2026-07-23T03:45:08Z",
     "last_checked": "2026-07-23T03:45:29Z",
     "spn2_job_id": "spn2-1fa3cb7e478cdb4131979b9bea7e513485177ae0",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/dicasteres/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:55:11Z",
+    "last_checked": "2026-10-18T21:55:27Z",
+    "spn2_job_id": "spn2-f6d1208408cf3dd3fccdb769beff78066320b961",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/documentaire/": {
@@ -92264,6 +92859,13 @@
     "first_seen": "2026-08-20T01:56:14Z",
     "last_checked": "2026-08-20T01:57:08Z",
     "spn2_job_id": "spn2-1057cf6cf4b247b0523666e037929fd089d81ed2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/ecole-de-musique/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:19:04Z",
+    "last_checked": "2026-10-18T21:19:21Z",
+    "spn2_job_id": "spn2-026646bf5b08dfd1e7bf79caf3090ace9f439c00",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/ecole/": {
@@ -92292,6 +92894,13 @@
     "first_seen": "2026-10-18T16:43:07Z",
     "last_checked": "2026-10-18T16:44:11Z",
     "spn2_job_id": "spn2-f291984ba522641e26018edfa15ac9bba8a6f5cb",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/editorial/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:37:03Z",
+    "last_checked": "2026-10-18T21:37:19Z",
+    "spn2_job_id": "spn2-16173d6d2ebe7edfbebbac48d715740311410ab2",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/eglise/": {
@@ -92364,6 +92973,13 @@
     "spn2_job_id": "spn2-1030c048da754f28a6613765d399ff3f078b7ff3",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/environnement/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:21:25Z",
+    "last_checked": "2026-10-18T21:22:07Z",
+    "spn2_job_id": "spn2-be33bcc5ddebc55ff34ec03a227693be573dadb2",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/epesses/": {
     "attempts": 0,
     "first_seen": "2026-10-18T12:32:11Z",
@@ -92378,11 +92994,53 @@
     "spn2_job_id": "spn2-8584699cbdb5816a0a9d201534a63f895fbc9eac",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/equitation/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:37:03Z",
+    "last_checked": "2026-10-18T21:38:15Z",
+    "spn2_job_id": "spn2-ada96b30e43ef49ba380852d3236fcd146035b39",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/essertes/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:16:10Z",
+    "last_checked": "2026-10-18T21:17:34Z",
+    "spn2_job_id": "spn2-fff30220a3806d7feea30522690e7962a3295931",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/exposition/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:31:22Z",
+    "last_checked": "2026-10-18T21:32:12Z",
+    "spn2_job_id": "spn2-c6cde22c2550842953b9a93731404dfe6f93733b",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/family-games/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:58:09Z",
     "last_checked": "2026-10-18T16:58:27Z",
     "spn2_job_id": "spn2-c1f0243369c5ada1c131f29cec623526281a681b",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/fanfare-de-grandvaux/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:42:07Z",
+    "last_checked": "2026-10-18T21:42:28Z",
+    "spn2_job_id": "spn2-c3c0cba08b92dfc6d7103286bc4df28c4f04365a",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/fanfare-du-jorat/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:19:25Z",
+    "last_checked": "2026-10-18T21:20:11Z",
+    "spn2_job_id": "spn2-9d4f5b32b613a903c88642d1941443799b2c321c",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/fanfare/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:06:24Z",
+    "last_checked": "2026-10-18T22:07:44Z",
+    "spn2_job_id": "spn2-f154e2a2d0f7f4ea8a0435af1f73fbf39259344b",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/faune-sauvage/": {
@@ -92413,11 +93071,39 @@
     "spn2_job_id": "spn2-8a5d59f4519e63b2d0e771b924a5e8cae7899544",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/ferme/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:51:05Z",
+    "last_checked": "2026-10-18T21:51:25Z",
+    "spn2_job_id": "spn2-689a0fbcaa98568540b24096945f53f26e0c4c54",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/festival-2/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:16:40Z",
     "last_checked": "2026-10-18T16:18:23Z",
     "spn2_job_id": "spn2-49f64b27faf141f14509da0fd3ee7ade0ce3e8b1",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/festivites/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:57:06Z",
+    "last_checked": "2026-10-18T21:57:06Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/festivitis/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:59:33Z",
+    "last_checked": "2026-10-18T21:00:21Z",
+    "spn2_job_id": "spn2-229ef67f519a84b9ee15a4d3b68fa683d49cac8e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/fete-cantonale-vaudoise/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:05:53Z",
+    "last_checked": "2026-10-18T22:07:11Z",
+    "spn2_job_id": "spn2-9426ac676673fb7362454d118a528ccc7dd9e75b",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/fete-de-la-foret/": {
@@ -92427,11 +93113,32 @@
     "spn2_job_id": "spn2-370cd0f7d4d6ea5bfeae8f9586c9d1c0e448dfbd",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/fete-de-la-mi-ete/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:13:15Z",
+    "last_checked": "2026-10-18T22:14:03Z",
+    "spn2_job_id": "spn2-d5791f8a8ba8eb92b8f6c193c6c2ffd9dab33140",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/fete-de-la-musique/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:09:56Z",
+    "last_checked": "2026-10-18T22:11:14Z",
+    "spn2_job_id": "spn2-83b1303752d60f1add116331d11491a04595e466",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/fete-de-la-sentinelle/": {
     "attempts": 1,
     "first_seen": "2026-08-13T02:48:37Z",
     "last_checked": "2026-08-13T05:03:37Z",
     "spn2_job_id": "spn2-d2ba157273ac5f58b0f915aca435d1eed9feb640",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/fete-des-amoureux/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:33:12Z",
+    "last_checked": "2026-10-18T21:34:06Z",
+    "spn2_job_id": "spn2-551e68f63c2c4b5f17d7e7fbbbecd2f8c06129e8",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/fete-des-meres/": {
@@ -92469,6 +93176,20 @@
     "spn2_job_id": "spn2-4cd368fb760a09d2f5e72655d47ee980318a2917",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/fete-nationale/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:13:15Z",
+    "last_checked": "2026-10-18T22:14:03Z",
+    "spn2_job_id": "spn2-fec948ddc53429655da3c86ffa75886bb9ea3e8a",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/fete-paroissiale/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:51:51Z",
+    "last_checked": "2026-10-18T20:52:53Z",
+    "spn2_job_id": "spn2-9b43a02bc690a1c929ced4370a9e6097057e7b1a",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/fete/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:51:34Z",
@@ -92476,11 +93197,32 @@
     "spn2_job_id": "spn2-679ab04868f9dd6bb6ed77c1c6aaf2d0ab5f89fb",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/fetes/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:26:08Z",
+    "last_checked": "2026-10-18T21:27:28Z",
+    "spn2_job_id": "spn2-5a7e3f75dcee28b0cec71a58014061f028a6204d",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/fil-dargent/": {
     "attempts": 0,
     "first_seen": "2026-10-18T15:53:25Z",
     "last_checked": "2026-10-18T15:54:59Z",
     "spn2_job_id": "spn2-0dd35f4644dad0efe5876761dc0c14214ef135e6",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/film/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:27:29Z",
+    "last_checked": "2026-10-18T21:28:35Z",
+    "spn2_job_id": "spn2-5d7f74a9b47cae703805a529755ec25a5e42596f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/finances/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:18:27Z",
+    "last_checked": "2026-10-18T21:19:04Z",
+    "spn2_job_id": "spn2-2672a5309fda3388a9399d99d2712d3952782d07",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/foire-aux-oignons/": {
@@ -92532,6 +93274,27 @@
     "spn2_job_id": "spn2-e588bb606c7803f9b8ed1cb7ab2831f35f385a87",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/foret/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:20:12Z",
+    "last_checked": "2026-10-18T21:21:24Z",
+    "spn2_job_id": "spn2-937380430f353094f8af5a71edd94326773150be",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/forets/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:44:21Z",
+    "last_checked": "2026-10-18T21:44:36Z",
+    "spn2_job_id": "spn2-6d2629bd0fa3a85b8eada4ec0b4b2e70fe2fbd93",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/formation/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:46:09Z",
+    "last_checked": "2026-10-18T21:46:25Z",
+    "spn2_job_id": "spn2-7ee701eb0565117f4b8b27fd6f584cdc9d6541ed",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/francais/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:03:45Z",
@@ -92553,6 +93316,27 @@
     "spn2_job_id": "spn2-2a8d640354c47f2aee810b007303e6a200b6a02b",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/garderie/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:12:42Z",
+    "last_checked": "2026-10-18T22:13:14Z",
+    "spn2_job_id": "spn2-169aaa2f996c30534a683f15f8f08f3a1c9ba24c",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/gare/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:06:15Z",
+    "last_checked": "2026-10-18T21:07:49Z",
+    "spn2_job_id": "spn2-c3d1d009f32f4bc7c8656186341c97b30eb59818",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/general-guisan/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:08:52Z",
+    "last_checked": "2026-10-18T22:10:11Z",
+    "spn2_job_id": "spn2-19978a9c278926625977c8503b4b812176674640",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/georges-pop/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:00:30Z",
@@ -92560,11 +93344,39 @@
     "spn2_job_id": "spn2-837ea7ddebd7c1b0bab16d6b748ae32998a9b0aa",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/giratoire/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:46:26Z",
+    "last_checked": "2026-10-18T21:47:12Z",
+    "spn2_job_id": "spn2-17bf44ded5ec4026ebd0e26537d2018fa9ea5923",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/giron-des-musiques/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:59:23Z",
+    "last_checked": "2026-10-18T22:00:12Z",
+    "spn2_job_id": "spn2-09e063ebde3008d1eeff095ca4cc84447c777511",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/golf/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:12:18Z",
+    "last_checked": "2026-10-18T21:13:05Z",
+    "spn2_job_id": "spn2-d110d8b8dcbb60233fc2986126c5674ec68773dc",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/grandvaux/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:27:48Z",
     "last_checked": "2026-10-18T16:29:12Z",
     "spn2_job_id": "spn2-39934ab2ccfd60cb3a815657e41f2d16b1c43c73",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/groupement-forestier/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:08:32Z",
+    "last_checked": "2026-10-18T22:09:53Z",
+    "spn2_job_id": "spn2-3fdb10a6bf2d3ab89f483cc943c63868e71eff09",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/gym/": {
@@ -92581,6 +93393,20 @@
     "spn2_job_id": "spn2-2d2c6cedc7e0b446f6368b94f2eaf2b407ccd6e5",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/gymoron/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:02:21Z",
+    "last_checked": "2026-10-18T22:03:09Z",
+    "spn2_job_id": "spn2-f2aae279fd503b6a0ecb96b02d9fd071d55698db",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/handball/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:39:10Z",
+    "last_checked": "2026-10-18T21:40:10Z",
+    "spn2_job_id": "spn2-1a35af6afcdbc4cdede124f5905a3a5f2f3630ae",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/harmonie/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:29:45Z",
@@ -92593,6 +93419,27 @@
     "first_seen": "2026-10-18T17:14:44Z",
     "last_checked": "2026-10-18T17:16:33Z",
     "spn2_job_id": "spn2-235aa54d915f36d82f80a1efbfbe4decf2f29731",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/heure-dete/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:53:02Z",
+    "last_checked": "2026-10-18T21:54:08Z",
+    "spn2_job_id": "spn2-3da512169cf7f8b6185e5c593c9d72f07e7a93f5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/hockey/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:23:34Z",
+    "last_checked": "2026-10-18T21:24:55Z",
+    "spn2_job_id": "spn2-6a44f249bb594b054974a157b7e5a95325b57a21",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/hommage/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:39:00Z",
+    "last_checked": "2026-10-18T20:41:05Z",
+    "spn2_job_id": "spn2-09cad773b4a2fb05bd92f34a4a532af653d04cf5",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/hopital-de-lavaux/": {
@@ -92609,11 +93456,25 @@
     "spn2_job_id": "spn2-a449906d416bf65090e9800d615acd09e5dbc158",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/huitres/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:13:06Z",
+    "last_checked": "2026-10-18T21:14:08Z",
+    "spn2_job_id": "spn2-00772d1597a0437a5d2f2b02a56cacc2e1d3bd6f",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/immobilier/": {
     "attempts": 0,
     "first_seen": "2026-10-18T12:36:11Z",
     "last_checked": "2026-10-18T12:36:26Z",
     "spn2_job_id": "spn2-3d9698d28553870c235e2fe76c92d82e444efdc9",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/inauguration/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:25:11Z",
+    "last_checked": "2026-10-18T21:25:42Z",
+    "spn2_job_id": "spn2-dc29a6598cd6fda88e26fbafd7ebeb85f1ed278d",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/incendie-palezieux/": {
@@ -92628,6 +93489,13 @@
     "first_seen": "2026-09-17T05:16:11Z",
     "last_checked": "2026-09-17T05:16:28Z",
     "spn2_job_id": "spn2-16450bcdcd3f128db12b841393e62a9a088ab144",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/incendie/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:29:23Z",
+    "last_checked": "2026-10-18T21:29:39Z",
+    "spn2_job_id": "spn2-e9198b8f4082dfc33e9a6e6334ea2883f6ebb155",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/infrastructures/": {
@@ -92679,6 +93547,20 @@
     "spn2_job_id": "spn2-6c93f52d2fd75a480eaefe86433a0b0b31f05a23",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/jean-luc-berger/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:11:10Z",
+    "last_checked": "2026-10-18T21:11:58Z",
+    "spn2_job_id": "spn2-9bd65f5ba1a2e5512b3d71c8f2f91d0ecca67391",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/jeunes-citoyens/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:01:15Z",
+    "last_checked": "2026-10-18T21:02:35Z",
+    "spn2_job_id": "spn2-c0cf459bd088fabfce46bff238398402108a33bc",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/jeunesse/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:35:32Z",
@@ -92698,6 +93580,13 @@
     "first_seen": "2026-08-27T01:12:04Z",
     "last_checked": "2026-08-27T01:12:28Z",
     "spn2_job_id": "spn2-5e56516f84cc16e1be3ecad6dc303bb83b29c411",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/jubilaires/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:00:14Z",
+    "last_checked": "2026-10-18T22:00:37Z",
+    "spn2_job_id": "spn2-46201ee378cd064cd50380168c519db7a3861efb",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/jubile/": {
@@ -92721,6 +93610,13 @@
     "spn2_job_id": "spn2-b5c7f5433f77d3dad587e9bf3806877f04d8c326",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/kiwanis/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:39:11Z",
+    "last_checked": "2026-10-18T21:40:11Z",
+    "spn2_job_id": "spn2-b1b3979a1e6f890525204c1b713132e3ccd1c3ca",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/la-branche/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:22:58Z",
@@ -92728,11 +93624,39 @@
     "spn2_job_id": "spn2-eba8067713028142ecf24c991354fd14b446272c",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/la-poste/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:18:11Z",
+    "last_checked": "2026-10-18T21:18:27Z",
+    "spn2_job_id": "spn2-821a53881d64aacedbb6f739235302582ec8aeef",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/la-sauge/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:36:26Z",
+    "last_checked": "2026-10-18T21:36:42Z",
+    "spn2_job_id": "spn2-b85a5e2f9809c9b29d893f82fdfe389579de1659",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/lac-leman/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:17:00Z",
     "last_checked": "2026-10-18T16:18:07Z",
     "spn2_job_id": "spn2-ce2266183fdb76c1dfb2c9fabe97a5684e9d2a83",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/landi/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:45:19Z",
+    "last_checked": "2026-10-18T21:45:51Z",
+    "spn2_job_id": "spn2-63233e0c44d913a8b0f224b4d0f2e65372bc3793",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/lausanne/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:02:35Z",
+    "last_checked": "2026-10-18T21:04:40Z",
+    "spn2_job_id": "spn2-39e42e18cd44e4362438817f17b2919fa6724640",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/lavaux-express-2/": {
@@ -92747,6 +93671,13 @@
     "first_seen": "2026-10-18T15:52:00Z",
     "last_checked": "2026-10-18T15:53:22Z",
     "spn2_job_id": "spn2-d0370cf15f8424c3c42dbc7fe4e39c86b7ef841f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/lavaux-panoramic/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:51:06Z",
+    "last_checked": "2026-10-18T21:51:26Z",
+    "spn2_job_id": "spn2-5ceafabd078923c66b02ee2d55ea63f941f7166a",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/lavaux-passion/": {
@@ -92770,6 +93701,13 @@
     "spn2_job_id": "spn2-76cba235c9419f58f68e3a7180121b00c72514fb",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/legislature/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:00:12Z",
+    "last_checked": "2026-10-18T22:01:16Z",
+    "spn2_job_id": "spn2-fa9b64cc5290f39c098d1416a7fa4252ecb7115d",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/les-brigands-du-jorat/": {
     "attempts": 0,
     "first_seen": "2026-09-24T04:57:22Z",
@@ -92784,11 +93722,46 @@
     "spn2_job_id": "spn2-6fc1b67b052c8508023d580bc1f5c34746fed89f",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/les-rossignols-de-forel-lavaux/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:40:12Z",
+    "last_checked": "2026-10-18T21:40:12Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/les-rossignols/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:57:12Z",
+    "last_checked": "2026-10-18T21:57:28Z",
+    "spn2_job_id": "spn2-1203b1d3cb92987002605e258b18a23e240502ef",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/les-tavernes/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:24:06Z",
     "last_checked": "2026-10-18T17:25:10Z",
     "spn2_job_id": "spn2-68114e2b002cf4e7107e3147a45e34010356e79b",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/les-thioleyres/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:23:00Z",
+    "last_checked": "2026-10-18T21:24:20Z",
+    "spn2_job_id": "spn2-ca8daa12e1c6d21836a4b2cb1d43ec19fee88a69",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/livre/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:38:20Z",
+    "last_checked": "2026-10-18T21:38:36Z",
+    "spn2_job_id": "spn2-79fd9b4bf95774217d34fe3fea0170af3d5622c6",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/livres/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:05:49Z",
+    "last_checked": "2026-10-18T22:07:27Z",
+    "spn2_job_id": "spn2-d2125bb1c64c203e63630cdc1af8ab95db24c80f",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/logements/": {
@@ -92805,11 +93778,25 @@
     "spn2_job_id": "spn2-9f28531b0c58f406b144278bb3f7ca31d70b7e6e",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/loto/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:01:31Z",
+    "last_checked": "2026-10-18T21:02:34Z",
+    "spn2_job_id": "spn2-dee98891d0f09bfc97504d8ee45c2c9fce6d50eb",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/lutry/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:39:07Z",
     "last_checked": "2026-10-18T16:40:27Z",
     "spn2_job_id": "spn2-cfab9fc00ed6d78714057b049766d1137583248f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/lutte-suisse/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:54:08Z",
+    "last_checked": "2026-10-18T21:55:07Z",
+    "spn2_job_id": "spn2-88eb7eb3da5c0c6fe4bdda976936cb0e4ce75d12",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/lutte/": {
@@ -92819,6 +93806,13 @@
     "spn2_job_id": "spn2-6097bcf16d1886775fa676add3a3042ec741b3e3",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/mad/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:47:12Z",
+    "last_checked": "2026-10-18T21:47:31Z",
+    "spn2_job_id": "spn2-69f26273cc0e74ed75b7b45e3d23fb7fe20f5e88",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/madagascar/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:50:03Z",
@@ -92826,11 +93820,32 @@
     "spn2_job_id": "spn2-7511adc989fd8851527febec0ffdba331f65d829",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/magasin/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:57:12Z",
+    "last_checked": "2026-10-18T21:58:10Z",
+    "spn2_job_id": "spn2-407628b50a02e69f0475df4ccc9d51cf479375b6",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/mai/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:03:11Z",
+    "last_checked": "2026-10-18T22:05:49Z",
+    "spn2_job_id": "spn2-8c4ea41b86e35ef1841f6afc215ff52b34b7bd1c",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/maison-jaune/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:12:57Z",
     "last_checked": "2026-10-18T16:14:09Z",
     "spn2_job_id": "spn2-f25dc690d808ac3f92b3ac462cb9538210b00356",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/majorite/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:16:04Z",
+    "last_checked": "2026-10-18T21:16:41Z",
+    "spn2_job_id": "spn2-c6f9ff67d67616b76d998ffe26f0e0cefd95390f",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/manifestation/": {
@@ -92854,6 +93869,20 @@
     "spn2_job_id": "spn2-8d88b92ff1b9f70b284087e9acd7d0287ce7a956",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/marche-du-terroir/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:43:27Z",
+    "last_checked": "2026-10-18T21:43:45Z",
+    "spn2_job_id": "spn2-b43a11f43456dce9249626029f0e0e96c857183d",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/marche-romande-du-general-guisan/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:08:51Z",
+    "last_checked": "2026-10-18T22:10:27Z",
+    "spn2_job_id": "spn2-04d50a2076a07db11105d4ac047bd14199137067",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/marche/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:37:15Z",
@@ -92868,6 +93897,13 @@
     "spn2_job_id": "spn2-ad7b65fa80569b9096eebc9dcfc9e6bce5de2e2f",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/match-aux-cartes/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:43:23Z",
+    "last_checked": "2026-10-18T21:43:45Z",
+    "spn2_job_id": "spn2-480d64343a087491baa70d97cf5bb2f7e4d8e4b3",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/maya-chollet/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:42:35Z",
@@ -92875,11 +93911,32 @@
     "spn2_job_id": "spn2-23bc8a44c9e0c062f0adb8647e11ee00609d1b19",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/medecins/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:31:16Z",
+    "last_checked": "2026-10-18T21:31:38Z",
+    "spn2_job_id": "spn2-edeca37b550ff8c31e2b9268a027b8495f1b8bc2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/medias/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:57:04Z",
+    "last_checked": "2026-10-18T20:57:04Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
   "https://www.le-courrier.ch/tag/meeting/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:58:12Z",
     "last_checked": "2026-10-18T16:59:28Z",
     "spn2_job_id": "spn2-6d726a9d564fd081e329afddb8e7f04c540f5bf0",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/message/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:53:12Z",
+    "last_checked": "2026-10-18T20:54:19Z",
+    "spn2_job_id": "spn2-f767fe53b75f61df5b5cfb3bb1d9b602d0640fd9",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/metraux-transports/": {
@@ -92896,6 +93953,13 @@
     "spn2_job_id": "spn2-441bc57d8c55a74efb3110be24e9a1379fd271e8",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/migros/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:45:20Z",
+    "last_checked": "2026-10-18T21:47:12Z",
+    "spn2_job_id": "spn2-6e8f3219e526dbb9dccc75c9f7e7d5546ddb6c7e",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/mise-des-vins/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:14:10Z",
@@ -92908,6 +93972,13 @@
     "first_seen": "2026-10-18T16:53:25Z",
     "last_checked": "2026-10-18T16:54:29Z",
     "spn2_job_id": "spn2-acbb848f0292513b783032293a3df762e31602d5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/montpreveyres/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:10:18Z",
+    "last_checked": "2026-10-18T21:11:26Z",
+    "spn2_job_id": "spn2-8ba431ed21e3ac559aba4755fa79ba200dd28ebb",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/moratel/": {
@@ -92952,11 +94023,25 @@
     "spn2_job_id": "spn2-d0c5e89f74127ebe117b7f302c210cd7a0e96dd4",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/natation/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:54:09Z",
+    "last_checked": "2026-10-18T21:54:25Z",
+    "spn2_job_id": "spn2-771a55a5e465962dab1a2753a70aa98d4b7cbe1c",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/nature-2/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:39:56Z",
     "last_checked": "2026-10-18T16:41:30Z",
     "spn2_job_id": "spn2-24e46d5b0b21748515b3c6b6a900a0c3c1e6eb82",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/navigation/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:52:09Z",
+    "last_checked": "2026-10-18T21:53:02Z",
+    "spn2_job_id": "spn2-6a17880763b4436bd1150e09c3ae1ebf986cb49b",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/nicolas-glauser/": {
@@ -92971,6 +94056,13 @@
     "first_seen": "2026-10-18T12:30:09Z",
     "last_checked": "2026-10-18T12:30:56Z",
     "spn2_job_id": "spn2-4411e5e95641bcda66acfe0ad362fdc606c6127e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/nonagenaires/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:51:10Z",
+    "last_checked": "2026-10-18T21:51:26Z",
+    "spn2_job_id": "spn2-c72f0b67755108adc4114441153ae62d6ce84208",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/norba/": {
@@ -92994,11 +94086,25 @@
     "spn2_job_id": "spn2-eba5073584b2bb1273f009ed14c1f4371ea09754",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/nouveaux-citoyens/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:16:09Z",
+    "last_checked": "2026-10-18T21:16:41Z",
+    "spn2_job_id": "spn2-193ffde3c353852b0587d8dc3830caf08cc81271",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/nouveaux-habitants/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:08:06Z",
     "last_checked": "2026-10-18T16:09:26Z",
     "spn2_job_id": "spn2-efa23f577778ae1706dd020e672f9e5b58b347fd",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/nuit-du-conte/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:08:06Z",
+    "last_checked": "2026-10-18T21:09:45Z",
+    "spn2_job_id": "spn2-fbdd831af0b26b8757b09ea3a6ae1bb02743f6c7",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/nuit-du-vin-cuit/": {
@@ -93008,6 +94114,13 @@
     "spn2_job_id": "spn2-3a2b87500f4e92d67deaf31260663005cea61a43",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/oiseaux/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:42:58Z",
+    "last_checked": "2026-10-18T20:44:31Z",
+    "spn2_job_id": "spn2-e799072c04e7556bf56b33d2353c38628c385793",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/opinion/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:56:18Z",
@@ -93015,11 +94128,25 @@
     "spn2_job_id": "spn2-e38ba6eb6fe98935bb89a9c514de42e5e5183029",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/oranges/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:38:20Z",
+    "last_checked": "2026-10-18T21:38:36Z",
+    "spn2_job_id": "spn2-77b39635c262165a5fb700edc4fae150ce633bef",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/ornithologie/": {
     "attempts": 0,
     "first_seen": "2026-10-18T15:57:26Z",
     "last_checked": "2026-10-18T15:58:48Z",
     "spn2_job_id": "spn2-7b74a6dde4b356a4a8689063bd9c2f94d782694e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/oron-jorat/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:16:22Z",
+    "last_checked": "2026-10-18T22:17:45Z",
+    "spn2_job_id": "spn2-1bcfd26e13cf5131633a6277c5afa1c314217795",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/oron-la-ville/": {
@@ -93034,6 +94161,20 @@
     "first_seen": "2026-10-18T17:23:30Z",
     "last_checked": "2026-10-18T17:24:53Z",
     "spn2_job_id": "spn2-4dabda2136c1ac7fccf40a7c1190260b71f3244e",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/oron-palezieux/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:23:02Z",
+    "last_checked": "2026-10-18T21:24:20Z",
+    "spn2_job_id": "spn2-04d9c105a714e5d091aeb8163493ae359217d8e2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/palezieux-gare/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:26:10Z",
+    "last_checked": "2026-10-18T21:27:28Z",
+    "spn2_job_id": "spn2-e5220775c32a4074d1432ca059b10e81ca2e51f7",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/palezieux-village/": {
@@ -93113,11 +94254,25 @@
     "spn2_job_id": "spn2-b81c8ecf6c90ce36301429bf027aee8242e5f598",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/patois/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:10:50Z",
+    "last_checked": "2026-10-18T21:11:57Z",
+    "spn2_job_id": "spn2-e1a7b74652db19594043ab90f39d2f005c8a8098",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/patoisants/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:25:48Z",
     "last_checked": "2026-10-18T16:27:09Z",
     "spn2_job_id": "spn2-5e6291089b15e54965c66bde199d8e1516d14b50",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/patrimoine/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:28:20Z",
+    "last_checked": "2026-10-18T21:29:05Z",
+    "spn2_job_id": "spn2-ff248d3ea48447ba424fb5109eff4d47e0b43ee0",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/paudex/": {
@@ -93134,18 +94289,60 @@
     "spn2_job_id": "spn2-05c3dddcaa27644a07f6c5731d797719453e1a5b",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/paysans/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:25:10Z",
+    "last_checked": "2026-10-18T21:25:42Z",
+    "spn2_job_id": "spn2-2175834f6d1df1814fd53b58b89c2fe930e933d2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/pci/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:14:10Z",
+    "last_checked": "2026-10-18T22:15:14Z",
+    "spn2_job_id": "spn2-94aaab56aa8f679c34b4018120ac2a0ef4aad869",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/peintre/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:10:28Z",
+    "last_checked": "2026-10-18T22:11:36Z",
+    "spn2_job_id": "spn2-0cc3b4ab10c0f334d58c0909ce867570526045f2",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/petanque-du-verney/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:02:41Z",
-    "last_checked": "2026-10-18T17:02:41Z",
+    "last_checked": "2026-10-18T20:33:19Z",
     "spn2_job_id": "spn2-d894c986dd46f9ac6e798de73d39ca6ea2d418d7",
-    "status": "pending"
+    "status": "success"
   },
   "https://www.le-courrier.ch/tag/petite-enfance/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:47:14Z",
     "last_checked": "2026-10-18T16:47:31Z",
     "spn2_job_id": "spn2-28afcda61c2e8cc7d72e5e703ee434f1216f1c14",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/photographie/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:32:12Z",
+    "last_checked": "2026-10-18T21:32:12Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/photos/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:56:09Z",
+    "last_checked": "2026-10-18T21:56:24Z",
+    "spn2_job_id": "spn2-fadd6c9e96864fbd0ab0bb3d75a5e934cb532a25",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/piano/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:58:08Z",
+    "last_checked": "2026-10-18T21:59:21Z",
+    "spn2_job_id": "spn2-85be800d8216481f5817314f91cb659b07eca21e",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/ping-pong/": {
@@ -93162,11 +94359,46 @@
     "spn2_job_id": "spn2-5564e7cd0989e7734d919f0570d241154786bbc6",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/plan-canicule/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:13:47Z",
+    "last_checked": "2026-10-18T22:14:10Z",
+    "spn2_job_id": "spn2-b7710f39fef9e7c57cabca19d975373b9bcc7415",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/plant-robert/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:12:35Z",
+    "last_checked": "2026-10-18T21:13:21Z",
+    "spn2_job_id": "spn2-7ee2dbae0d55ed17cdc3243880b804a98eda1371",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/plantation/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:34:06Z",
+    "last_checked": "2026-10-18T21:34:22Z",
+    "spn2_job_id": "spn2-ceff9e2a18ce052a5c16e3036426941c28e0a533",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/plr/": {
     "attempts": 0,
     "first_seen": "2026-10-18T12:33:21Z",
     "last_checked": "2026-10-18T12:35:05Z",
     "spn2_job_id": "spn2-54ffbc119119102ae9dba417a427a7c69f14c1df",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/poisson/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:58:10Z",
+    "last_checked": "2026-10-18T21:58:26Z",
+    "spn2_job_id": "spn2-9b7fe6744af52378c1b630c71bc863953cbc0163",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/police-est-lausannois/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:50:10Z",
+    "last_checked": "2026-10-18T21:51:06Z",
+    "spn2_job_id": "spn2-1e0470109f12e298f060c6fc49c1daf0d9518370",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/police/": {
@@ -93190,6 +94422,20 @@
     "spn2_job_id": "spn2-0592eedf3390b21eee445930754d30489c991077",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/pompiers/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:02:35Z",
+    "last_checked": "2026-10-18T21:04:40Z",
+    "spn2_job_id": "spn2-e47edb3f49c342210965a303f0db53c91f23c920",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/pont/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:12:24Z",
+    "last_checked": "2026-10-18T22:12:24Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
   "https://www.le-courrier.ch/tag/portes-ouvertes/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:23:46Z",
@@ -93211,11 +94457,32 @@
     "spn2_job_id": "spn2-a4ad2c597c82afa9d1b38f0ad7f56dd07f1ff1b4",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/presse/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:32:11Z",
+    "last_checked": "2026-10-18T21:32:35Z",
+    "spn2_job_id": "spn2-ea5d114465816a9490e7c047ec9416a4c1853a58",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/prevention/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:03:13Z",
+    "last_checked": "2026-10-18T22:03:13Z",
+    "spn2_job_id": "spn2-931d68efc79d0589f2411a8aa661ecb785efb06b",
+    "status": "pending"
+  },
   "https://www.le-courrier.ch/tag/programme/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:35:53Z",
     "last_checked": "2026-10-18T16:37:12Z",
     "spn2_job_id": "spn2-3f3d2586f2889da87f001985c1f42999cfd494a2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/projet/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:06:32Z",
+    "last_checked": "2026-10-18T21:08:05Z",
+    "spn2_job_id": "spn2-637938a395c92cae6f81b50e43f81b6ee745a621",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/protection-des-salamandres/": {
@@ -93230,6 +94497,13 @@
     "first_seen": "2026-08-27T01:12:11Z",
     "last_checked": "2026-08-27T01:12:39Z",
     "spn2_job_id": "spn2-b690a4020c9f694ed2c449ba851f58683a582b23",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/publireportage/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:07:12Z",
+    "last_checked": "2026-10-18T22:08:31Z",
+    "spn2_job_id": "spn2-bfd7e0c5d63efc8e9ccdd58ddbf97f4ae2f9c150",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/puidoux/": {
@@ -93253,6 +94527,13 @@
     "spn2_job_id": "spn2-a3bddfdc9aaf18a3121532c238e17eb1e698e9bc",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/rallye/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:59:21Z",
+    "last_checked": "2026-10-18T22:00:12Z",
+    "spn2_job_id": "spn2-fd85ddad22e8962ef59bb0af71d540d2d50cb50f",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/ramassage/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:20:11Z",
@@ -93265,6 +94546,13 @@
     "first_seen": "2026-10-18T16:52:59Z",
     "last_checked": "2026-10-18T16:53:19Z",
     "spn2_job_id": "spn2-4acdbd0759c29268b434055cee8c458fd5660de4",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/recit-de-voyage/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:35:16Z",
+    "last_checked": "2026-10-18T21:35:47Z",
+    "spn2_job_id": "spn2-47e996d23b781d7c68a7d2e692c0330f151354a6",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/reconstruction/": {
@@ -93281,12 +94569,33 @@
     "spn2_job_id": "spn2-0e5a794dc691804b5b5fc252651faf8cb0913c60",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/regate-douverture/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:49:12Z",
+    "last_checked": "2026-10-18T21:50:25Z",
+    "spn2_job_id": "spn2-fa8819454e2895ff1700695d90c78c547de4c375",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/regate/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:27:11Z",
     "last_checked": "2026-10-18T16:28:19Z",
     "spn2_job_id": "spn2-b5e0783a798ded2e54331b9afdc2b351ddafd567",
     "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/regates/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:19:05Z",
+    "last_checked": "2026-10-18T21:19:21Z",
+    "spn2_job_id": "spn2-ce54ce9b30fa2aeeb636619de0900c2882427d4f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/rencontre-des-aines/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:05:50Z",
+    "last_checked": "2026-10-18T22:05:50Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
   },
   "https://www.le-courrier.ch/tag/rencontre-economique/": {
     "attempts": 0,
@@ -93309,11 +94618,60 @@
     "spn2_job_id": "spn2-2b24a52281a2ef93e98fff29419f6a30d7367921",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/repas/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:28:03Z",
+    "last_checked": "2026-10-18T21:28:19Z",
+    "spn2_job_id": "spn2-035f83e330b69b3da9750cba460e5a1447af4585",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/reportage/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:55:07Z",
+    "last_checked": "2026-10-18T21:55:27Z",
+    "spn2_job_id": "spn2-98eb78325bba3fae962ee7e65769531d87df36f3",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/restaurant/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:46:11Z",
     "last_checked": "2026-10-18T16:46:43Z",
     "spn2_job_id": "spn2-9c1033bfb54c930ab616c9c1365370ac4e4f7388",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/restauration/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:33:11Z",
+    "last_checked": "2026-10-18T21:33:28Z",
+    "spn2_job_id": "spn2-d58415bb3c475fe9881f471ab952e89f33be45a9",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/resultats/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:41:07Z",
+    "last_checked": "2026-10-18T20:42:57Z",
+    "spn2_job_id": "spn2-d6ce4a86a9696caf5a019ffdaa5bf6d9c73fe5d8",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/retraites/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:44:33Z",
+    "last_checked": "2026-10-18T20:45:55Z",
+    "spn2_job_id": "spn2-ce81568eca7a6a8ce932076b7ba3a514567ec70f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/revue/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:09:46Z",
+    "last_checked": "2026-10-18T21:11:05Z",
+    "spn2_job_id": "spn2-250c7c2003b28dc3828fefb74f2de58acd6f1bae",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/rhone/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:56:09Z",
+    "last_checked": "2026-10-18T21:56:25Z",
+    "spn2_job_id": "spn2-fb0417db2caeb854ad3bb5b4ffc6501719128d87",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/rivaz/": {
@@ -93337,6 +94695,20 @@
     "spn2_job_id": "spn2-3ae93f440a9bd057bfb02343d86214c7d5c41d94",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/rome/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:49:12Z",
+    "last_checked": "2026-10-18T21:49:28Z",
+    "spn2_job_id": "spn2-b4a19524b3668fa493ee0190dbeeca41860970eb",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/ropraz/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:26:09Z",
+    "last_checked": "2026-10-18T21:27:28Z",
+    "spn2_job_id": "spn2-b8cfba7b1ba655664b9b00a2fe860621c1514c46",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/route-66/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:16:34Z",
@@ -93344,11 +94716,32 @@
     "spn2_job_id": "spn2-775312090ff3ce2288c48514f19e1a18b7da5ec3",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/route/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:12:42Z",
+    "last_checked": "2026-10-18T22:13:46Z",
+    "spn2_job_id": "spn2-07c82280e12eb125f6a0cb68349069d8fd6dfe8e",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/rugby/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:21:22Z",
     "last_checked": "2026-10-18T17:22:41Z",
     "spn2_job_id": "spn2-59b52b714e511a213f10f93a5dc93a07db45a131",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/saint-saphorin/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:20:12Z",
+    "last_checked": "2026-10-18T21:21:24Z",
+    "spn2_job_id": "spn2-b8f9797e876d575852d67ba40526d6071b3b35f2",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/saint-valentin/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:32:19Z",
+    "last_checked": "2026-10-18T21:32:35Z",
+    "spn2_job_id": "spn2-49fb6ad35e55e0d76bcebaa96aec44144357c716",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/salon-du-livre/": {
@@ -93365,11 +94758,25 @@
     "spn2_job_id": "spn2-a0256eab34bfa6729d93f0692c685d98439dcb86",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/sapeurs-pompiers/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:48:03Z",
+    "last_checked": "2026-10-18T21:49:11Z",
+    "spn2_job_id": "spn2-ba3ee3889b36bf49f6a9c649ce5cefbdf71b4cfc",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/sapin/": {
     "attempts": 0,
     "first_seen": "2026-10-18T12:32:12Z",
     "last_checked": "2026-10-18T12:33:20Z",
     "spn2_job_id": "spn2-b3f9064e753d077be118dbeee122b2ebda1d3e33",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/savigny-forel/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:48:36Z",
+    "last_checked": "2026-10-18T21:48:51Z",
+    "spn2_job_id": "spn2-f052dd6031718233f525171063259b34921cdd02",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/savigny/": {
@@ -93379,11 +94786,25 @@
     "spn2_job_id": "spn2-efa8cd0079187fa21c03da7a5fc9e2e44c034453",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/sdis/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:04:09Z",
+    "last_checked": "2026-10-18T21:06:14Z",
+    "spn2_job_id": "spn2-ed3a005ad62b5121d696d346ba6378310c208b08",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/securite/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:49:11Z",
     "last_checked": "2026-10-18T16:49:59Z",
     "spn2_job_id": "spn2-1eaa5e10478e5d89ce1119af78f7ac57c480854f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/sel/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:56:08Z",
+    "last_checked": "2026-10-18T21:57:12Z",
+    "spn2_job_id": "spn2-683340bced11ac7418af956f71b9e554ae5b789f",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/selection-vins-vaudois/": {
@@ -93414,11 +94835,25 @@
     "spn2_job_id": "spn2-bb3a5dc01bd773bb9fdcd81b44fa7c8eefb67b64",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/ski-club/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:14:27Z",
+    "last_checked": "2026-10-18T21:15:07Z",
+    "spn2_job_id": "spn2-ad75cb1e45ea2eb256775b5001860476591a86b8",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/ski/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:12:53Z",
     "last_checked": "2026-10-18T17:14:43Z",
     "spn2_job_id": "spn2-c98d949e104f3622ef22e928a34fe180c18e3514",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/smartphones/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:34:07Z",
+    "last_checked": "2026-10-18T21:35:15Z",
+    "spn2_job_id": "spn2-0e6565cc8b7c854ab7cd29d16ca16a7e05ab36d0",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/societe-de-tir/": {
@@ -93428,11 +94863,25 @@
     "spn2_job_id": "spn2-ad2187eef211b043a019ffa680aafcc38f865096",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/societe/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:43:29Z",
+    "last_checked": "2026-10-18T21:44:36Z",
+    "spn2_job_id": "spn2-66dc68ff9a3b37c4598f7c5aba68db6d378e82de",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/soins-dentaires/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:44:12Z",
     "last_checked": "2026-10-18T16:44:47Z",
     "spn2_job_id": "spn2-8d5c84236e028e74349c3e77459422227c180e09",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/soiree/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:09:29Z",
+    "last_checked": "2026-10-18T21:10:49Z",
+    "spn2_job_id": "spn2-3cb6c3ee4a995c81765c7bbf7591010ed94fc187",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/soirees-2027/": {
@@ -93442,11 +94891,32 @@
     "spn2_job_id": "spn2-c71358c4456979e1ce46c812ea3b509341f78b67",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/solidarite/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:30:22Z",
+    "last_checked": "2026-10-18T21:30:39Z",
+    "spn2_job_id": "spn2-ed3d4162a6055f2c769dc6af9b194471551d0309",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/soutien/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:21:25Z",
+    "last_checked": "2026-10-18T21:23:00Z",
+    "spn2_job_id": "spn2-2f4234a26bedf08963fd00a28b092c34a4686b7f",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/spectacle/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:36:25Z",
     "last_checked": "2026-10-18T16:37:46Z",
     "spn2_job_id": "spn2-384ad336ca416b3287ecfbe77019cfc19a42cb29",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/spectacles-2/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:15:06Z",
+    "last_checked": "2026-10-18T21:15:23Z",
+    "spn2_job_id": "spn2-14bd761e0a527a935063e98afd7e59a22fc43ba5",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/st-saphorin/": {
@@ -93470,6 +94940,13 @@
     "spn2_job_id": "spn2-b9ceedfc83aa84a939b4105f5d524a9b5bac0d7b",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/syndic/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:29:05Z",
+    "last_checked": "2026-10-18T21:30:22Z",
+    "spn2_job_id": "spn2-2913940e6de4d34948f9e3c3ffdc0f868a6886bc",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/technologie/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:23:27Z",
@@ -93477,10 +94954,31 @@
     "spn2_job_id": "spn2-e0524301e77ebd7a2eeb1093896dcbe7659513e1",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/telethon/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:12:19Z",
+    "last_checked": "2026-10-18T21:12:35Z",
+    "spn2_job_id": "spn2-5f7756f3a93d78cf49afe48450addc3fc332b3c0",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/tennis-de-table/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:02:39Z",
     "last_checked": "2026-10-18T17:02:39Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/tennis/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:43:28Z",
+    "last_checked": "2026-10-18T21:43:28Z",
+    "spn2_job_id": null,
+    "status": "already_archived"
+  },
+  "https://www.le-courrier.ch/tag/terre-des-hommes/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:14:26Z",
+    "last_checked": "2026-10-18T21:14:26Z",
     "spn2_job_id": null,
     "status": "already_archived"
   },
@@ -93491,11 +94989,32 @@
     "spn2_job_id": "spn2-3118cdda68ff976e6e36ccdbf83558ac1ebb1828",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/the-dansant/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:58:10Z",
+    "last_checked": "2026-10-18T20:59:31Z",
+    "spn2_job_id": "spn2-5208abec905b8c8929c34150e58c176fbe4283a5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/theatre-barnabe/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:04:00Z",
+    "last_checked": "2026-10-18T22:05:48Z",
+    "spn2_job_id": "spn2-afcabf16f00a99c484c10d4761ef4c07f74538ef",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/theatre/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:48:11Z",
     "last_checked": "2026-10-18T16:48:30Z",
     "spn2_job_id": "spn2-63dfe4a8aac41a416ef05e7d51ad09b9fa5b8f9d",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/thierrens/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:11:27Z",
+    "last_checked": "2026-10-18T21:12:18Z",
+    "spn2_job_id": "spn2-149132b485942133507f264927ddce58913ac073",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/tir-des-amoureux/": {
@@ -93512,6 +95031,20 @@
     "spn2_job_id": "spn2-a5dfb20792a43921d8ab37022512b459138ce2aa",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/tirs/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:12:24Z",
+    "last_checked": "2026-10-18T22:13:13Z",
+    "spn2_job_id": "spn2-c75558ba5ed63dcf89b5db6f03115394b00b47e5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/tombola/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:59:23Z",
+    "last_checked": "2026-10-18T21:59:39Z",
+    "spn2_job_id": "spn2-d0e8bf6602b0300ae7fde6e9cefd4531c1e06e0c",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/tour-de-france-feminin/": {
     "attempts": 0,
     "first_seen": "2026-07-23T03:44:24Z",
@@ -93519,11 +95052,39 @@
     "spn2_job_id": "spn2-e43630a90caa6e07f42e32fb1fa7c14b38709adc",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/tourisme/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:30:23Z",
+    "last_checked": "2026-10-18T21:31:16Z",
+    "spn2_job_id": "spn2-75953958f1e581793ff2443cfa826390c35e28fb",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/traditions/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:22:40Z",
+    "last_checked": "2026-10-18T21:23:33Z",
+    "spn2_job_id": "spn2-739181f5f444b623f111d43d57a1ac08c68367c0",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/trains/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:15:15Z",
+    "last_checked": "2026-10-18T22:15:30Z",
+    "spn2_job_id": "spn2-0fc56ff5320e0a186482a8fb5ef82903492a1519",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/transports-publics/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:28:41Z",
     "last_checked": "2026-10-18T16:29:46Z",
     "spn2_job_id": "spn2-58df77b45710ea639ff76a5ddae1af7ba51d3ec8",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/travaux/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:01:49Z",
+    "last_checked": "2026-10-18T22:03:59Z",
+    "spn2_job_id": "spn2-30fe78f39e6f7ce71b22c1e1a275e7525c7a9b21",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/trial-des-vestiges/": {
@@ -93582,11 +95143,32 @@
     "spn2_job_id": "spn2-928c1f7b602557e0083e708e83944bc3dc2ea3ad",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/ursy/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:20:11Z",
+    "last_checked": "2026-10-18T21:20:28Z",
+    "spn2_job_id": "spn2-30acc1f025e2cd99428e2a53795ddbe29628aeee",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/vacances/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:18:24Z",
     "last_checked": "2026-10-18T17:20:00Z",
     "spn2_job_id": "spn2-911bf14cce6e1f97c21e8331d252c5972ceeb75f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/vaches/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:24:39Z",
+    "last_checked": "2026-10-18T21:24:55Z",
+    "spn2_job_id": "spn2-281ac1abea7512c6197b0e68728ea3866ae5fd09",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/vbc-haute-broye/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:57:02Z",
+    "last_checked": "2026-10-18T21:57:28Z",
+    "spn2_job_id": "spn2-fb2b67c623486c242e27bdf2471d0efaf0b9a97e",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/velo-trial/": {
@@ -93624,6 +95206,13 @@
     "spn2_job_id": "spn2-f74b4cfae6226319fa6201d7ee257f1e032bf9d9",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/venise/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:41:05Z",
+    "last_checked": "2026-10-18T21:41:27Z",
+    "spn2_job_id": "spn2-c3c9be20d49dfeeaca9aa5c2d637f36498d01023",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/vestiaire-dautomne/": {
     "attempts": 0,
     "first_seen": "2026-09-24T04:57:22Z",
@@ -93652,11 +95241,25 @@
     "spn2_job_id": "spn2-730b52e1727fb78c2ce767aada62e300ae9a32b5",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/vigneron/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:16:05Z",
+    "last_checked": "2026-10-18T22:17:29Z",
+    "spn2_job_id": "spn2-12b66bc5882d6042b9b6ad03a658a89493f2f3bc",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/vignerons/": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:39:08Z",
     "last_checked": "2026-10-18T16:40:27Z",
     "spn2_job_id": "spn2-256b366bf7070c56660b88926216136b6210c6f8",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/vignes/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:40:10Z",
+    "last_checked": "2026-10-18T21:40:28Z",
+    "spn2_job_id": "spn2-e2122a13122d1ac27fbb10b3893bb335bda4f117",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/vignoble/": {
@@ -93680,11 +95283,25 @@
     "spn2_job_id": "spn2-8b712cc1eb42f2568ce610f015cf1e4be1e6e065",
     "status": "success"
   },
+  "https://www.le-courrier.ch/tag/vin-cuit/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:48:39Z",
+    "last_checked": "2026-10-18T20:49:57Z",
+    "spn2_job_id": "spn2-60214355bb2c8322b7e611a232377de2a3f934e6",
+    "status": "success"
+  },
   "https://www.le-courrier.ch/tag/vin/": {
     "attempts": 0,
     "first_seen": "2026-10-18T17:22:41Z",
     "last_checked": "2026-10-18T17:23:46Z",
     "spn2_job_id": "spn2-c36a23ac190eeae90b4e7b73760df1120e296454",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/vins-de-la-commune/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:39:16Z",
+    "last_checked": "2026-10-18T21:39:31Z",
+    "spn2_job_id": "spn2-32890cd77e7327a0345265c0a69ef9516a3e89b5",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/vins-et-poissons-du-leman/": {
@@ -93699,6 +95316,13 @@
     "first_seen": "2026-08-27T01:12:05Z",
     "last_checked": "2026-08-27T01:12:38Z",
     "spn2_job_id": "spn2-c4f37d2974a7394fd6b8727d8bfaa82023de4ce6",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/vins-vaudois/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:41:12Z",
+    "last_checked": "2026-10-18T21:41:27Z",
+    "spn2_job_id": "spn2-af54bd682f4ca3d7d2d774570498678014c436d6",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/vins/": {
@@ -93720,6 +95344,27 @@
     "first_seen": "2026-10-18T16:27:11Z",
     "last_checked": "2026-10-18T16:28:35Z",
     "spn2_job_id": "spn2-5ea9ed2a7c573f5662b16081a09e158539d0d35b",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/voilier/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:35:16Z",
+    "last_checked": "2026-10-18T21:35:47Z",
+    "spn2_job_id": "spn2-a95b0f7a55419552bcd347e51acc528307d585a5",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/volley/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:15:06Z",
+    "last_checked": "2026-10-18T21:16:04Z",
+    "spn2_job_id": "spn2-15ed980110fc0d7ae857ec4e38725b8d3b8afd1f",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/volleyball/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:00:22Z",
+    "last_checked": "2026-10-18T22:03:08Z",
+    "spn2_job_id": "spn2-03e9bb433faa23a236c123be795c703a50e31a2c",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/votation-27-septembre/": {
@@ -93748,6 +95393,20 @@
     "first_seen": "2026-09-17T05:13:02Z",
     "last_checked": "2026-09-17T05:13:18Z",
     "spn2_job_id": "spn2-fc3e59ead56e42eb78775abb1b7c33877493e855",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/votations/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:11:58Z",
+    "last_checked": "2026-10-18T21:12:51Z",
+    "spn2_job_id": "spn2-4ba1ce8cce7f7c2089cab0be3a75f68e5cea5b96",
+    "status": "success"
+  },
+  "https://www.le-courrier.ch/tag/voyage/": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T22:07:45Z",
+    "last_checked": "2026-10-18T22:08:48Z",
+    "spn2_job_id": "spn2-1a3066cdf0b44c92dc112cdb877b530b8a0ef9fb",
     "status": "success"
   },
   "https://www.le-courrier.ch/tag/vtt/": {
@@ -100631,13 +102290,6 @@
     "spn2_job_id": "spn2-2d838136795732c2d452e9ef2065b5dec6e368f2",
     "status": "success"
   },
-  "https://www.lemonde.fr/afrique/article/2026/07/20/tourne-en-partie-au-sahara-occidental-l-odyssee-de-christopher-nolan-est-la-cible-d-appels-au-boycott_6727512_3212.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:52:10Z",
-    "last_checked": "2026-07-20T19:53:24Z",
-    "spn2_job_id": "spn2-59323e88bb1d1310bdb856b8fc834ea4d4a3387f",
-    "status": "success"
-  },
   "https://www.lemonde.fr/afrique/article/2026/07/21/certains-ont-ete-licencies-d-autres-sont-expulses-de-leur-logement-des-dizaines-de-milliers-d-etrangers-chasses-d-afrique-du-sud_6728223_3212.html": {
     "attempts": 0,
     "first_seen": "2026-07-21T08:44:04Z",
@@ -102715,6 +104367,13 @@
     "first_seen": "2026-10-14T12:47:16Z",
     "last_checked": "2026-10-14T12:48:45Z",
     "spn2_job_id": "spn2-ad2649423885bd7d817d6679fcb7436c613b701b",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/afrique/video/2026/10/18/comment-l-administration-de-donald-trump-utilise-des-pays-africains-pour-expulser-des-migrants-en-depit-du-droit-international_6797087_3212.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:36:56Z",
+    "last_checked": "2026-10-18T20:38:59Z",
+    "spn2_job_id": "spn2-c55879a346aa09c4557a61988b48631477c3fc77",
     "status": "success"
   },
   "https://www.lemonde.fr/afrique/visuel/2026/07/25/tunisie-autopsie-d-un-basculement-autoritaire_6732308_3212.html": {
@@ -108861,13 +110520,6 @@
     "first_seen": "2026-09-13T04:44:09Z",
     "last_checked": "2026-09-13T04:44:26Z",
     "spn2_job_id": "spn2-83401ec01edf2b590670ffa81b8e10b4ebd50ecf",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/disparitions/article/2026/07/20/kevin-keegan-ex-international-et-entraineur-anglais-icone-des-fans-de-liverpool-de-hambourg-et-de-newcastle-est-mort_6727914_3382.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T22:09:23Z",
-    "last_checked": "2026-07-20T22:09:39Z",
-    "spn2_job_id": "spn2-9df299d34a24c0db925a767ad926a73e77568b8a",
     "status": "success"
   },
   "https://www.lemonde.fr/disparitions/article/2026/07/21/jean-marc-sylvestre-journaliste-economique-est-mort-a-79-ans_6728933_3382.html": {
@@ -115100,6 +116752,13 @@
     "spn2_job_id": "spn2-f72cdf5de0be4e5fd749c483066cbac43a22356a",
     "status": "success"
   },
+  "https://www.lemonde.fr/economie/article/2026/10/18/au-lendemain-des-pillages-des-commercants-desesperes-face-a-plusieurs-centaines-de-millions-d-euros-de-degats_6797229_3234.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:57:22Z",
+    "last_checked": "2026-10-18T20:58:25Z",
+    "spn2_job_id": "spn2-ce70d383f0afd78131403432c7faf02b5bce407e",
+    "status": "success"
+  },
   "https://www.lemonde.fr/economie/article/2026/10/18/une-start-up-londonienne-reve-de-recreer-les-concerts-des-idoles-disparues_6797078_3234.html": {
     "attempts": 0,
     "first_seen": "2026-10-18T16:05:07Z",
@@ -115835,13 +117494,6 @@
     "spn2_job_id": "spn2-16d6123c4c69993846f8e0d2667ed6962f724101",
     "status": "success"
   },
-  "https://www.lemonde.fr/football/video/2026/07/20/coupe-du-monde-2026-la-roja-vainqueure-recue-par-le-roi-felipe-vi-et-le-premier-ministre-pedro-sanchez_6727716_1616938.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T20:00:21Z",
-    "last_checked": "2026-07-20T20:02:36Z",
-    "spn2_job_id": "spn2-d0f7af00e53ce0981a5f2720bf54614f80233be1",
-    "status": "success"
-  },
   "https://www.lemonde.fr/football/video/2026/08/18/can-feminine-les-lionnes-indomptables-accueillies-en-heroines-au-cameroun_6749042_1616938.html": {
     "attempts": 0,
     "first_seen": "2026-08-18T13:11:01Z",
@@ -116057,20 +117709,6 @@
     "first_seen": "2026-10-11T13:31:18Z",
     "last_checked": "2026-10-11T13:32:25Z",
     "spn2_job_id": "spn2-d4796fe11e22a3e29325955bb0344f64945a88c1",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/idees/article/2026/07/20/barbara-butch-et-son-avocate-l-antisionisme-invoque-n-a-ete-a-grenoble-que-le-vetement-de-l-antisemitisme_6727479_3232.html": {
-    "attempts": 1,
-    "first_seen": "2026-07-20T19:55:03Z",
-    "last_checked": "2026-07-20T22:10:25Z",
-    "spn2_job_id": "spn2-b5f35d1343138a52ad293964555234b8cad8b14c",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/idees/article/2026/07/20/iran-israel-ou-l-histoire-meconnue-d-un-divorce-sanglant_6727513_3232.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:53:25Z",
-    "last_checked": "2026-07-20T19:54:02Z",
-    "spn2_job_id": "spn2-661974e807c9057a9db10a863ce1ca2e4f5ad763",
     "status": "success"
   },
   "https://www.lemonde.fr/idees/article/2026/07/21/algues-vertes-ce-qui-manque-ce-n-est-plus-la-connaissance-mais-la-volonte-politique-de-remettre-en-cause-un-modele-agricole-productiviste_6728498_3232.html": {
@@ -120567,6 +122205,13 @@
     "spn2_job_id": "spn2-7549c1e8ac96a5e375165b386e9ab30361aafe00",
     "status": "success"
   },
+  "https://www.lemonde.fr/idees/article/2026/10/18/retransmission-de-l-execution-de-nidal-hasan-donald-trump-a-finalement-renonce-a-un-projet-dont-la-mise-en-scene-risquait-de-se-retourner-contre-lui_6797195_3232.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:52:55Z",
+    "last_checked": "2026-10-18T20:54:13Z",
+    "spn2_job_id": "spn2-7de153cb302a3023f476d60697a0007e0136a774",
+    "status": "success"
+  },
   "https://www.lemonde.fr/idees/article/2026/10/18/si-nous-n-etions-pas-aveugles-par-le-marche-nous-pourrions-tout-de-suite-proposer-un-autre-horizon-a-la-jeunesse_6797037_3232.html": {
     "attempts": 0,
     "first_seen": "2026-10-18T11:02:58Z",
@@ -120574,88 +122219,18 @@
     "spn2_job_id": "spn2-95447b6db5ba66902dfdd19b049b47ccd41c75e5",
     "status": "success"
   },
+  "https://www.lemonde.fr/idees/article/2026/10/18/une-large-partie-de-la-communaute-scientifique-considere-que-les-risques-lies-a-l-ia-sont-significatifs_6797088_3232.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:44:32Z",
+    "last_checked": "2026-10-18T20:44:33Z",
+    "spn2_job_id": "spn2-307d4013c9ab88ee1d5c530388b8c112574f7fc4",
+    "status": "success"
+  },
   "https://www.lemonde.fr/intelligences-artificielles-generatives/article/2026/09/04/openai-lance-gpt-6-son-premier-modele-d-ia-capable-de-pirater-seul-des-systemes-informatiques-tres-proteges_6765321_6191406.html": {
     "attempts": 0,
     "first_seen": "2026-09-04T04:21:01Z",
     "last_checked": "2026-09-04T04:21:21Z",
     "spn2_job_id": "spn2-61e9ae9859d956401af1e9737c2b21bf808464d7",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/afghanistan-20-morts-et-plus-de-100-disparus-dans-des-inondations_6727615_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:57:07Z",
-    "last_checked": "2026-07-20T19:57:23Z",
-    "spn2_job_id": "spn2-6a70be941ed1b296114354db1ddb1889ac1d1859",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/au-royaume-uni-le-suspect-du-meurtre-d-ann-widdecombe-a-ete-inculpe_6727881_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T22:08:14Z",
-    "last_checked": "2026-07-20T22:09:38Z",
-    "spn2_job_id": "spn2-4c1684203d93e7aa0c166f039f5ebf6071c5ff65",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/dans-le-nord-du-chili-touche-par-une-tempete-qui-a-cause-cinq-morts-le-president-decrete-l-etat-de-catastrophe_6727815_3210.html": {
-    "attempts": 1,
-    "first_seen": "2026-07-20T22:07:12Z",
-    "last_checked": "2026-07-21T03:27:34Z",
-    "spn2_job_id": "spn2-684acad3b5d20e11b3c6e23c7d0b38947088283a",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/donald-trump-assure-a-benyamin-netanyahou-qu-il-ne-sera-pas-arrete-aux-etats-unis-apres-les-propos-du-maire-de-new-york-evoquant-cette-possibilite_6727614_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:58:18Z",
-    "last_checked": "2026-07-20T19:58:34Z",
-    "spn2_job_id": "spn2-7cb6589c0080e4f35fe8dccc8fbab40072afad26",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/hongrie-l-ex-championne-d-echecs-judit-polgar-refuse-la-presidence-proposee-par-peter-magyar_6726983_3211.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:56:07Z",
-    "last_checked": "2026-07-20T19:57:23Z",
-    "spn2_job_id": "spn2-b675316725775edcb50a17714fdd8e5a7ae881b8",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/inde-mobilisee-dans-la-rue-la-generation-z-ne-relache-pas-la-pression-sur-le-gouvernement_6727580_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:54:06Z",
-    "last_checked": "2026-07-20T19:54:21Z",
-    "spn2_job_id": "spn2-cfc408bd942e67e353e3efab19d05fea74ced06b",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/l-influenceur-masculiniste-andrew-tate-et-son-frere-s-opposent-a-leur-extradition-par-le-royaume-uni-motivee-politiquement-selon-leur-avocat_6727915_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T22:10:10Z",
-    "last_checked": "2026-07-20T22:11:26Z",
-    "spn2_job_id": "spn2-491d8e6ae67daa6949240202548a91f4a3eb6bc4",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/le-narcotrafiquant-el-mayo-chef-du-cartel-de-sinaloa-condamne-a-la-prison-a-vie-a-new-york_6727477_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T20:00:08Z",
-    "last_checked": "2026-07-20T20:00:36Z",
-    "spn2_job_id": "spn2-2c653047975d301ad4490e39abf50eb4be4ef6dc",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/le-rachat-de-warner-bros-par-paramount-suspendu-par-une-juge-californienne_6727683_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:59:20Z",
-    "last_checked": "2026-07-20T19:59:21Z",
-    "spn2_job_id": "spn2-ccf79c140643d4afd97e3a36dddc5cb0d5e13433",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/les-bases-americaines-au-moyen-orient-fournissent-des-capacites-mais-elles-constituent-aussi-des-cibles_6727581_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:55:01Z",
-    "last_checked": "2026-07-20T19:55:18Z",
-    "spn2_job_id": "spn2-979b1a60045ef35abd4b8a90c1b151305ed85e75",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/article/2026/07/20/naufrage-d-un-ferry-au-large-du-guyana-au-moins-10-morts-selon-un-bilan-encore-provisoire_6727782_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T20:01:19Z",
-    "last_checked": "2026-07-20T20:02:06Z",
-    "spn2_job_id": "spn2-e5aa583b114b31d8a10619608e54659dbade96db",
     "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/07/21/andy-burnham-entre-a-downing-street-et-choisit-l-ex-ministre-de-la-defense-john-healey-comme-chancelier-de-l-echiquier_6728014_3210.html": {
@@ -132880,6 +134455,13 @@
     "spn2_job_id": "spn2-1b7ee2f1a337fcf815d5aac6aa03522b42b167d5",
     "status": "success"
   },
+  "https://www.lemonde.fr/international/article/2026/10/18/au-venezuela-la-prix-nobel-de-la-paix-maria-corina-machado-reconnue-leader-de-l-opposition-lors-d-un-grand-accord-national_6797230_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:58:29Z",
+    "last_checked": "2026-10-18T20:59:48Z",
+    "spn2_job_id": "spn2-f5dab5f012ebcc090444d592bef7107329890f0a",
+    "status": "success"
+  },
   "https://www.lemonde.fr/international/article/2026/10/18/aux-etats-unis-dans-les-manifestations-no-kings-les-opposants-a-donald-trump-entre-espoir-de-changement-et-inquietudes_6797035_3210.html": {
     "attempts": 0,
     "first_seen": "2026-10-18T11:10:25Z",
@@ -132899,6 +134481,13 @@
     "first_seen": "2026-10-18T11:20:10Z",
     "last_checked": "2026-10-18T11:21:18Z",
     "spn2_job_id": "spn2-4f560ed48bde08c8b5de937d0fb5c6537619ebe4",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/international/article/2026/10/18/elections-legislatives-en-israel-les-candidats-inondent-la-campagne-de-deepfakes-generes-par-l-ia_6797124_3210.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:55:27Z",
+    "last_checked": "2026-10-18T20:56:15Z",
+    "spn2_job_id": "spn2-e4e83474307aae934f74fdcdf4c5b4304ba755fe",
     "status": "success"
   },
   "https://www.lemonde.fr/international/article/2026/10/18/en-chine-des-grands-parents-reclament-une-indemnite-pour-avoir-garde-leurs-petits-enfants_6797033_3210.html": {
@@ -132962,27 +134551,6 @@
     "first_seen": "2026-10-18T16:15:33Z",
     "last_checked": "2026-10-18T16:16:37Z",
     "spn2_job_id": "spn2-a6e9fc02b8db83036a1440d101beac87488773b0",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/live/2026/07/20/en-direct-guerre-au-moyen-orient-l-armee-jordanienne-dit-avoir-abattu-trois-missiles-iraniens-apres-de-nouvelles-menaces-americaines_6725301_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T22:09:07Z",
-    "last_checked": "2026-07-20T22:09:23Z",
-    "spn2_job_id": "spn2-ae2c8a6199c4007df22b8ddbdfe35b47a9777351",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/live/2026/07/20/en-direct-guerre-en-ukraine-critique-apres-le-depart-de-mykhailo-fedorov-le-chef-de-l-armee-ukrainienne-oleksandr-syrsky-sort-du-silence_6725306_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T22:09:07Z",
-    "last_checked": "2026-07-20T22:10:25Z",
-    "spn2_job_id": "spn2-89043c60e28c7bfb2f754af88b8afb5a33c5745e",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/international/live/2026/07/20/en-direct-guerre-en-ukraine-volodymyr-zelensky-salue-le-soutien-solide-du-royaume-uni-apres-un-entretien-avec-son-nouveau-premier-ministre-andy-burnham_6725306_3210.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:59:21Z",
-    "last_checked": "2026-07-20T20:00:08Z",
-    "spn2_job_id": "spn2-b6df126fc2c498947e5334abcbfa78a3da479b8f",
     "status": "success"
   },
   "https://www.lemonde.fr/international/live/2026/07/21/en-direct-guerre-au-moyen-orient-de-nouvelles-attaques-iraniennes-signalees-en-jordanie-au-koweit-et-a-bahrein_6725301_3210.html": {
@@ -138655,6 +140223,13 @@
     "spn2_job_id": "spn2-6706aeebacb6c8ada8a17273f4ea665d58612370",
     "status": "success"
   },
+  "https://www.lemonde.fr/les-decodeurs/article/2026/10/18/ce-qu-il-faut-retenir-de-l-actualite-du-week-end-des-17-et-18-octobre_6797086_4355770.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:48:56Z",
+    "last_checked": "2026-10-18T20:50:13Z",
+    "spn2_job_id": "spn2-a17b67c44ded4a3e95027651e33e61288848ed2c",
+    "status": "success"
+  },
   "https://www.lemonde.fr/les-envies-du-monde/article/2026/07/27/seau-a-champagne-compotier-les-arts-de-la-table-en-quatre-objets_6733537_6024727.html": {
     "attempts": 0,
     "first_seen": "2026-07-27T03:48:22Z",
@@ -138877,13 +140452,6 @@
     "first_seen": "2026-10-15T17:26:10Z",
     "last_checked": "2026-10-15T17:27:33Z",
     "spn2_job_id": "spn2-2105135fb9066d2242b9fec39a58820b89a3b3f9",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/livres/article/2026/07/20/l-anthologie-visitez-la-grece-avec-un-riche-florilege-litteraire-pour-parcourir-les-terres-hellenes-avec-style_6727514_3260.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:54:02Z",
-    "last_checked": "2026-07-20T19:54:21Z",
-    "spn2_job_id": "spn2-bbe87e5ea33fbef7daf89ae4b9bbdfa7261fd7dd",
     "status": "success"
   },
   "https://www.lemonde.fr/livres/article/2026/07/22/portrait-de-l-ecrivain-daniel-pennac-en-lecteur-a-travers-un-questionnaire-serre-sur-ses-lectures-passees-presentes-et-a-venir_6730052_3260.html": {
@@ -142463,13 +144031,6 @@
     "spn2_job_id": "spn2-4996e15278e1dc35d0f797293acfaf4e74d8ff99",
     "status": "success"
   },
-  "https://www.lemonde.fr/pixels/article/2026/07/20/interdiction-des-reseaux-sociaux-aux-moins-de-15-ans-les-parlementaires-s-accordent-en-commission-mixte-paritaire-avant-un-ultime-vote-prevu-mardi_6727547_4408996.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:56:06Z",
-    "last_checked": "2026-07-20T19:57:06Z",
-    "spn2_job_id": "spn2-93b186cdec95e47e2216ab659f08f9d461c5b536",
-    "status": "success"
-  },
   "https://www.lemonde.fr/pixels/article/2026/07/21/comment-l-interdiction-des-reseaux-sociaux-aux-plus-jeunes-s-impose-partout-dans-le-monde_6729144_4408996.html": {
     "attempts": 0,
     "first_seen": "2026-07-21T19:50:30Z",
@@ -144078,20 +145639,6 @@
     "first_seen": "2026-09-02T16:48:07Z",
     "last_checked": "2026-09-02T16:48:23Z",
     "spn2_job_id": "spn2-acc40234b2e88b97add4ae040b5bc4c7cc8162f3",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/planete/article/2026/07/20/eolien-solaire-biomethane-vers-une-hausse-de-11-du-cout-du-soutien-public-aux-energies-renouvelables-en-2027_6727650_3244.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:59:10Z",
-    "last_checked": "2026-07-20T19:59:20Z",
-    "spn2_job_id": "spn2-a5234fd7709b4aa26daf6b2e2ebe3d734840ce9e",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/planete/article/2026/07/20/l-ete-de-tous-les-records-ne-surprend-pas-les-climatologues-on-est-entres-dans-une-zone-dangereuse_6727476_3244.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T20:01:16Z",
-    "last_checked": "2026-07-20T20:01:35Z",
-    "spn2_job_id": "spn2-0be0009a3cf98299f413ad79596cb53a3e560b66",
     "status": "success"
   },
   "https://www.lemonde.fr/planete/article/2026/07/21/en-espagne-le-depeuplement-des-campagnes-mis-en-cause-dans-la-multiplication-des-grands-feux-de-foret_6728358_3244.html": {
@@ -152872,6 +154419,13 @@
     "spn2_job_id": "spn2-8f51a448f6f528f97d4aa6cb1ec91dd7699176e1",
     "status": "success"
   },
+  "https://www.lemonde.fr/politique/article/2026/10/18/apres-les-violences-du-17-octobre-l-extreme-droite-cible-le-gouvernement-et-laurent-nunez-en-esperant-incarner-le-parti-de-l-ordre_6797125_823448.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:47:19Z",
+    "last_checked": "2026-10-18T20:48:37Z",
+    "spn2_job_id": "spn2-8531c2da13adcf83ae05466c5f4d7318258b2bc6",
+    "status": "success"
+  },
   "https://www.lemonde.fr/politique/article/2026/10/18/avec-referendum-citoyen-le-projet-tres-politique-de-la-famille-jardin_6797050_823448.html": {
     "attempts": 0,
     "first_seen": "2026-10-18T11:17:06Z",
@@ -152898,6 +154452,20 @@
     "first_seen": "2026-10-18T04:25:18Z",
     "last_checked": "2026-10-18T04:26:33Z",
     "spn2_job_id": "spn2-dd942633c12ef38d94215f1714b45d9057721d15",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/politique/article/2026/10/18/mobilisation-du-17-octobre-ce-qu-il-faut-retenir-de-l-allocution-d-emmanuel-macron_6797267_823448.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:00:40Z",
+    "last_checked": "2026-10-18T21:01:13Z",
+    "spn2_job_id": "spn2-40064b927312697558b95310e101adf935f06a54",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/politique/article/2026/10/18/mobilisations-sociales-a-paris-emmanuel-gregoire-denonce-des-defaillances-de-securite-au-lendemain-des-violences-dans-la-capitale_6797192_823448.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:56:16Z",
+    "last_checked": "2026-10-18T20:57:21Z",
+    "spn2_job_id": "spn2-36999ef175e4f371341c39d348cb36a62190f36e",
     "status": "success"
   },
   "https://www.lemonde.fr/politique/live/2026/07/22/le-vote-de-la-loi-d-urgence-agricole-fragilise-t-il-le-gouvernement-de-sebastien-lecornu-posez-vos-questions-a-nos-journalistes_6730007_823448.html": {
@@ -153241,6 +154809,13 @@
     "first_seen": "2026-10-12T11:25:12Z",
     "last_checked": "2026-10-12T11:26:15Z",
     "spn2_job_id": "spn2-49c46f37dd969c31f91dbdc828c50800b336e459",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/politique/video/2026/10/18/manifestation-du-17-octobre-l-essentiel-de-la-declaration-d-emmanuel-macron-en-video_6797231_823448.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:59:49Z",
+    "last_checked": "2026-10-18T21:00:38Z",
+    "spn2_job_id": "spn2-5558add6513fd503b39c08e21547afe222ef286e",
     "status": "success"
   },
   "https://www.lemonde.fr/quiz-de-culture-generale/article/2026/09/11/quiz-histoire-vous-souvenez-vous-de-ces-moments-cles_6179053_6083484.html": {
@@ -156692,20 +158267,6 @@
     "first_seen": "2026-09-11T21:06:25Z",
     "last_checked": "2026-09-11T21:06:25Z",
     "spn2_job_id": "spn2-27d65c951589ee73c992c05a4bda9531c5920022",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/societe/article/2026/07/20/la-cour-des-comptes-appelle-a-plus-de-transparence-dans-le-controle-de-la-deontologie-des-forces-de-l-ordre_6727648_3224.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:58:18Z",
-    "last_checked": "2026-07-20T19:58:34Z",
-    "spn2_job_id": "spn2-1df3a8de33cfc0f0600caf7460d213fdf0212b94",
-    "status": "success"
-  },
-  "https://www.lemonde.fr/societe/article/2026/07/20/projet-de-loi-ripost-deputes-et-senateurs-parviennent-a-un-accord-en-commission-mixte-paritaire_6727848_3224.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T22:08:13Z",
-    "last_checked": "2026-07-20T22:08:29Z",
-    "spn2_job_id": "spn2-539c0606aa36f57d65a71232a104ebe531f82c63",
     "status": "success"
   },
   "https://www.lemonde.fr/societe/article/2026/07/21/affaire-jubillar-le-proces-en-appel-de-cedric-jubillar-prevu-en-septembre-est-renvoye-au-premier-semestre-2027_6728818_3224.html": {
@@ -161580,11 +163141,32 @@
     "spn2_job_id": "spn2-798f55a26e996940959c1b50ffd7a0c1cf6c890b",
     "status": "success"
   },
+  "https://www.lemonde.fr/societe/article/2026/10/18/a-limoges-la-colere-et-la-sideration-apres-l-incendie-qui-a-ravage-l-hotel-de-ville_6797159_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:54:19Z",
+    "last_checked": "2026-10-18T20:55:26Z",
+    "spn2_job_id": "spn2-7b87029094f52d766b1a827c5bf4cf1c64aa2b79",
+    "status": "success"
+  },
   "https://www.lemonde.fr/societe/article/2026/10/18/a-paris-place-de-la-republique-des-commerces-en-lambeaux-apres-les-violences-et-les-pillages-les-gens-se-filmaient-c-etait-le-grand-defouloir_6797039_3224.html": {
     "attempts": 0,
     "first_seen": "2026-10-18T11:18:21Z",
     "last_checked": "2026-10-18T11:18:36Z",
     "spn2_job_id": "spn2-50ada0e621ca4fdca6300652d767f8844f68cd62",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/10/18/la-vie-de-la-resistante-lucie-aubrac-racontee-a-travers-ses-archives-on-sentait-l-antisemitisme-qui-montait-en-1940-il-fallait-faire-quelque-chose_6797089_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:39:01Z",
+    "last_checked": "2026-10-18T20:41:06Z",
+    "spn2_job_id": "spn2-0f2f03a596ba31b5682a43f5ee1f6c5a264100d9",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/10/18/les-gens-sont-enerves-il-y-a-beaucoup-de-colere-accumulee-a-paris-le-jour-d-apres-a-l-heure-de-compter-les-plaies_6797232_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:00:58Z",
+    "last_checked": "2026-10-18T21:02:18Z",
+    "spn2_job_id": "spn2-6a31a3471929e27bf3c394778a519804f1db58d1",
     "status": "success"
   },
   "https://www.lemonde.fr/societe/article/2026/10/18/lors-des-manifestations-du-17-octobre-les-forces-de-l-ordre-depassees-par-une-mobilisation-imprevisible-quelque-chose-a-foire-ce-n-est-pas-concevable-que-des-groupes-puissent-arriver-si-pres-de-l-elysee_6797038_3224.html": {
@@ -161606,6 +163188,13 @@
     "first_seen": "2026-10-18T11:23:02Z",
     "last_checked": "2026-10-18T11:23:13Z",
     "spn2_job_id": "spn2-881cbb59c2d6e213314d8f81e733a13139502035",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/article/2026/10/18/mobilisation-du-17-octobre-l-igpn-saisie-apres-qu-une-adolescente-a-perdu-un-il-a-mulhouse_6797266_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:59:50Z",
+    "last_checked": "2026-10-18T21:00:55Z",
+    "spn2_job_id": "spn2-8eccd9009180071c938553739567271d4b91eaf2",
     "status": "success"
   },
   "https://www.lemonde.fr/societe/live/2026/09/08/en-direct-pisa-2025-depuis-l-edition-2022-on-constate-une-nette-baisse-des-scores-des-eleves-francais-nous-ne-sommes-pas-un-cas-isole-puisque-le-phenomene-est-mondial_6768118_3224.html": {
@@ -161874,6 +163463,13 @@
     "spn2_job_id": "spn2-ebfa13fb7b95695c710869cf798534fee63b3643",
     "status": "success"
   },
+  "https://www.lemonde.fr/societe/live/2026/10/18/en-direct-mobilisation-du-17-octobre-l-allocution-d-emmanuel-macron-critiquee-situation-toujours-tendue-a-paris-sebastien-lecornu-charge-de-reunir-partis-politiques-et-syndicats_6795855_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T21:01:14Z",
+    "last_checked": "2026-10-18T21:01:15Z",
+    "spn2_job_id": "spn2-127704ec0fa9f4e377aa4753d1f7a190997a3a1d",
+    "status": "success"
+  },
   "https://www.lemonde.fr/societe/video/2026/07/21/pourquoi-la-nomination-de-francois-noel-buffet-en-tant-que-defenseur-des-droits-fait-polemique_6729214_3224.html": {
     "attempts": 0,
     "first_seen": "2026-07-21T19:53:04Z",
@@ -161984,6 +163580,13 @@
     "first_seen": "2026-10-18T15:59:54Z",
     "last_checked": "2026-10-18T16:01:16Z",
     "spn2_job_id": "spn2-51a1f54d3ab8fde59561137f6af7dc60ab38eef5",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/societe/video/2026/10/18/manifestations-du-17-octobre-retour-en-images-sur-l-incendie-de-l-hotel-de-ville-de-limoges_6797122_3224.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:41:40Z",
+    "last_checked": "2026-10-18T20:43:13Z",
+    "spn2_job_id": "spn2-5accfc2d27dc09d7049f818eaf1e3cf208b75f21",
     "status": "success"
   },
   "https://www.lemonde.fr/societe/video/2026/10/18/paris-lyon-limoges-les-images-des-degats-dans-plusieurs-villes-de-france-apres-les-manifestations-du-17-octobre_6797069_3224.html": {
@@ -164779,6 +166382,20 @@
     "spn2_job_id": "spn2-3a9bfe1fd9212e28ff90568a934501e534bff43b",
     "status": "success"
   },
+  "https://www.lemonde.fr/sport/article/2026/10/18/en-champions-cup-de-rugby-des-fortunes-diverses-pour-les-clubs-francais-lors-de-la-premiere-journee_6797123_3242.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:45:55Z",
+    "last_checked": "2026-10-18T20:47:16Z",
+    "spn2_job_id": "spn2-3dbeebd891e58362ddd1c4db1566f2e289610125",
+    "status": "success"
+  },
+  "https://www.lemonde.fr/sport/article/2026/10/18/felix-lebrun-sacre-champion-d-europe-pour-la-premiere-fois-confirme-son-statut-actuel-de-meilleur-joueur-du-continent_6797194_3242.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:51:02Z",
+    "last_checked": "2026-10-18T20:52:21Z",
+    "spn2_job_id": "spn2-b0ae1b8d6fd69f65eb664b11ff3d9ce67245646a",
+    "status": "success"
+  },
   "https://www.lemonde.fr/sport/article/2026/10/18/il-a-commence-la-et-il-va-finir-la-a-tours-le-volleyeur-earvin-ngapeth-accueilli-avec-ferveur-pour-son-retour-dans-son-premier-club-professionnel_6797055_3242.html": {
     "attempts": 0,
     "first_seen": "2026-10-18T11:22:29Z",
@@ -166102,13 +167719,6 @@
     "spn2_job_id": "spn2-61a8976df12b009b78f3ad533913a3227ba737d3",
     "status": "success"
   },
-  "https://www.letemps.ch/articles/a-cette-coupe-du-monde-de-la-demesure-l-espagne-offre-un-champion-de-la-raison": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:57:06Z",
-    "last_checked": "2026-07-20T19:57:23Z",
-    "spn2_job_id": "spn2-18cb0e063813c75fb1f46e40786c9a3a9aff237b",
-    "status": "success"
-  },
   "https://www.letemps.ch/articles/a-cette-periode-on-est-cense-etre-pleins-detruit-par-les-feux-en-2022-le-camping-de-la-dune-du-pilat-fait-face-a-une-nouvelle-saison-catastrophique-a-cause-des-incendies": {
     "attempts": 0,
     "first_seen": "2026-08-01T13:43:28Z",
@@ -167019,6 +168629,13 @@
     "spn2_job_id": "spn2-0192fa49a2ad9169cb14e661056820fc70957b91",
     "status": "error_retry"
   },
+  "https://www.letemps.ch/articles/a-pully-deux-footballs-face-a-face-le-temps-d-un-tour-de-coupe-de-suisse": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:45:59Z",
+    "last_checked": "2026-10-18T20:47:17Z",
+    "spn2_job_id": "spn2-5fc5938825035962034e33fcd3050783351a4a27",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/a-pully-l-ombre-de-bardot-et-sachs-enveloppe-une-renovation-pleine-d-elegance": {
     "attempts": 0,
     "first_seen": "2026-10-17T16:36:17Z",
@@ -167255,13 +168872,6 @@
     "first_seen": "2026-10-05T05:45:01Z",
     "last_checked": "2026-10-05T05:45:18Z",
     "spn2_job_id": "spn2-0e37cbad380791ff1ad02290facb07b39c62e608",
-    "status": "success"
-  },
-  "https://www.letemps.ch/articles/abdullah-miniawy-sandra-carrasco-et-mitsune-le-festival-les-suds-a-arles-en-trois-coups-de-coeur": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T20:00:10Z",
-    "last_checked": "2026-07-20T20:00:36Z",
-    "spn2_job_id": "spn2-d5c57bfa6196318b0d2eef1046a31b17efd34508",
     "status": "success"
   },
   "https://www.letemps.ch/articles/abelardo-de-la-espriella-le-president-elu-en-colombie-va-rompre-les-relations-diplomatiques-avec-cuba-et-le-nicaragua": {
@@ -168193,6 +169803,13 @@
     "first_seen": "2026-09-26T21:29:20Z",
     "last_checked": "2026-09-26T21:29:36Z",
     "spn2_job_id": "spn2-ce8289b22eeb41f4d16d8b8d9478b62d8b56d524",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/apres-les-violences-emmanuel-macron-s-adresse-aux-francais-nos-juges-savent-ce-que-vous-attendez": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:47:35Z",
+    "last_checked": "2026-10-18T20:48:55Z",
+    "spn2_job_id": "spn2-00bb6b4f57a2197ee4ee7e383e56b6d66524397a",
     "status": "success"
   },
   "https://www.letemps.ch/articles/apres-maints-rebondissements-le-proces-en-appel-de-l-ancien-patron-de-raiffeisen-debute-lundi": {
@@ -169329,13 +170946,6 @@
     "spn2_job_id": "spn2-5620ccbfe7c998f8acd122cf840ef958489aa310",
     "status": "success"
   },
-  "https://www.letemps.ch/articles/avec-les-premiers-controles-pratiques-en-pleine-nuit-la-lutte-contre-les-tricheurs-s-intensifie-sur-le-tour-de-france": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:58:19Z",
-    "last_checked": "2026-07-20T20:00:08Z",
-    "spn2_job_id": "spn2-c86d5608e4bdfef5ef99d7bd8c5a10b4eceba757",
-    "status": "success"
-  },
   "https://www.letemps.ch/articles/avec-les-requerants-d-asile-mineurs-non-accompagnes-vacances-en-eaux-vives": {
     "attempts": 0,
     "first_seen": "2026-08-06T11:31:11Z",
@@ -169980,6 +171590,13 @@
     "spn2_job_id": "spn2-7078ed3b6462b14133385f364261b99d9b6dce63",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/callista-gingrich-ambassadrice-des-etats-unis-en-suisse-je-ne-peux-pas-speculer-sur-les-futures-decisions-en-matiere-de-droits-de-douane": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:44:33Z",
+    "last_checked": "2026-10-18T20:45:54Z",
+    "spn2_job_id": "spn2-4e3e5bff03da78c2177cbb50bec6e0f1c17506b0",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/camille-cottin-et-noemie-merlant-deux-actrices-a-l-epreuve-des-miserables": {
     "attempts": 0,
     "first_seen": "2026-10-13T23:10:12Z",
@@ -170251,6 +171868,13 @@
     "first_seen": "2026-10-08T01:19:09Z",
     "last_checked": "2026-10-08T01:20:04Z",
     "spn2_job_id": "spn2-e3054138ecc31c3249aaa46148c61c9e8ca988cf",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/certains-ont-voulu-bruler-le-chateau-stupefaction-et-tensions-a-limoges-au-lendemain-de-l-incendie-de-l-hotel-de-ville-brule-par-des-emeutiers": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:39:18Z",
+    "last_checked": "2026-10-18T20:41:39Z",
+    "spn2_job_id": "spn2-a0e5849cf93d3bb0721b28b3a50b1c216923618c",
     "status": "success"
   },
   "https://www.letemps.ch/articles/ces-chers-travailleurs-pauvres": {
@@ -171406,13 +173030,6 @@
     "first_seen": "2026-09-04T11:23:13Z",
     "last_checked": "2026-09-04T11:23:34Z",
     "spn2_job_id": "spn2-9ea07b9c8cc03710b194981036e3eae0b9158145",
-    "status": "success"
-  },
-  "https://www.letemps.ch/articles/dans-l-escalade-iran-etats-unis-l-eau-menace-de-devenir-une-cible-militaire": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:52:15Z",
-    "last_checked": "2026-07-20T19:53:04Z",
-    "spn2_job_id": "spn2-eddd29bd31a848b63d610fe77bfc45f4650a484b",
     "status": "success"
   },
   "https://www.letemps.ch/articles/dans-l-himalaya-10-jours-apres-la-terrible-crue-un-troisieme-rescape-est-extrait-d-un-tunnel": {
@@ -173065,6 +174682,13 @@
     "first_seen": "2026-07-21T16:33:41Z",
     "last_checked": "2026-07-21T16:35:03Z",
     "spn2_job_id": "spn2-fb2c8751aed7d3313d9721342158a529d0b027c0",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/droits-de-douane-franc-fort-et-inflation-comment-la-suisse-a-resiste-aux-vents-contraires": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:51:34Z",
+    "last_checked": "2026-10-18T20:53:10Z",
+    "spn2_job_id": "spn2-7b36dc41608be071bd27b4f8d94ce7cfd5d02f09",
     "status": "success"
   },
   "https://www.letemps.ch/articles/drones-russes-l-otan-prise-de-vitesse": {
@@ -174850,13 +176474,6 @@
     "first_seen": "2026-07-22T16:29:03Z",
     "last_checked": "2026-07-22T16:30:03Z",
     "spn2_job_id": "spn2-4f6e5a59d8bb42967bb56fc1ab0d42e408abb930",
-    "status": "success"
-  },
-  "https://www.letemps.ch/articles/en-video-arrestation-d-andrew-tate-l-influenceur-masculiniste-est-vise-avec-son-frere-par-59-chefs-d-accusation": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T22:07:13Z",
-    "last_checked": "2026-07-20T22:08:13Z",
-    "spn2_job_id": "spn2-7bd44cbb5147fdcdf9a1b9db439c476192848dfd",
     "status": "success"
   },
   "https://www.letemps.ch/articles/en-video-ce-qu-attendent-les-suisses-de-leur-retraite-en-2026": {
@@ -176656,13 +178273,6 @@
     "first_seen": "2026-07-22T19:45:15Z",
     "last_checked": "2026-07-22T19:46:22Z",
     "spn2_job_id": "spn2-436b7548332ef6e72afa9d3b96b8787440d64264",
-    "status": "success"
-  },
-  "https://www.letemps.ch/articles/harcelement-et-agressions-dans-les-festivals-comment-les-organisateurs-romands-cultivent-la-prevention": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:53:09Z",
-    "last_checked": "2026-07-20T19:53:24Z",
-    "spn2_job_id": "spn2-a0bdfeafb059c32d334b0dcb0aa737146f535c21",
     "status": "success"
   },
   "https://www.letemps.ch/articles/harcelement-scolaire-pourquoi-la-suisse-fait-moins-bien-que-l-ocde": {
@@ -179647,6 +181257,13 @@
     "spn2_job_id": "spn2-a41a91f52788aa30433d06a2a3f607c1fda0d7a3",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/la-cosmetique-c-est-toute-une-histoire-comment-le-fond-de-teint-a-change-d-objectif-au-fil-des-siecles": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:42:57Z",
+    "last_checked": "2026-10-18T20:44:31Z",
+    "spn2_job_id": "spn2-1d2de71689c61f7f73f646cd15a604b179cfc098",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/la-cosmetique-c-est-toute-une-histoire-la-creme-de-la-creme-hydratante": {
     "attempts": 1,
     "first_seen": "2026-09-20T16:18:05Z",
@@ -180030,6 +181647,13 @@
     "first_seen": "2026-07-21T08:47:16Z",
     "last_checked": "2026-07-21T08:48:47Z",
     "spn2_job_id": "spn2-7af0e131e776ed92ba5a00ddf4341707197b37af",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/la-france-sideree-et-en-quete-d-explications-apres-le-chaos-en-marge-des-manifestations": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:53:11Z",
+    "last_checked": "2026-10-18T20:54:14Z",
+    "spn2_job_id": "spn2-548d3d2041ed449cfbbf7b4573a54ae191b2b5f9",
     "status": "success"
   },
   "https://www.letemps.ch/articles/la-frappe-un-pere-et-un-fils-et-des-blessures-impossibles-a-guerir": {
@@ -184582,6 +186206,13 @@
     "spn2_job_id": "spn2-25a080aef047245c83bedd911e4f2470c65ec329",
     "status": "success"
   },
+  "https://www.letemps.ch/articles/les-nouveaux-gerants-de-fortune-qui-se-lancent-en-independants": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:49:58Z",
+    "last_checked": "2026-10-18T20:51:01Z",
+    "spn2_job_id": "spn2-5b8e21888a4547fd1e58f9678746d310e23113a9",
+    "status": "success"
+  },
   "https://www.letemps.ch/articles/les-nuages-s-amoncellent-sur-l-economie-francaise-menacee-de-recession": {
     "attempts": 0,
     "first_seen": "2026-09-02T16:36:13Z",
@@ -185602,6 +187233,13 @@
     "first_seen": "2026-09-15T17:05:32Z",
     "last_checked": "2026-09-15T17:06:39Z",
     "spn2_job_id": "spn2-79e2c9db0e94adfbad3fc547bcc5251a71b842e6",
+    "status": "success"
+  },
+  "https://www.letemps.ch/articles/microsoft-365-ou-le-piege-de-la-dependance-numerique": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:36:56Z",
+    "last_checked": "2026-10-18T20:39:00Z",
+    "spn2_job_id": "spn2-45ec73ea679f122afdb124abd80902727256b588",
     "status": "success"
   },
   "https://www.letemps.ch/articles/microsoft-prive-de-carte-verte-pour-ses-salaries-aux-etats-unis": {
@@ -186645,13 +188283,6 @@
     "first_seen": "2026-08-01T13:46:38Z",
     "last_checked": "2026-08-01T16:05:53Z",
     "spn2_job_id": "spn2-dcc761b5513a880ef889a0d4fd0aba8ec1bd6302",
-    "status": "success"
-  },
-  "https://www.letemps.ch/articles/paleo-festival-2026-les-12-coups-de-coeur-de-nos-journalistes-musicaux": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:54:02Z",
-    "last_checked": "2026-07-20T19:54:21Z",
-    "spn2_job_id": "spn2-0c7777ca08525fcda6e7f258558e9a66807ed721",
     "status": "success"
   },
   "https://www.letemps.ch/articles/palestine-la-discretion-strategique-de-la-suisse": {
@@ -188206,13 +189837,6 @@
     "first_seen": "2026-10-16T11:35:24Z",
     "last_checked": "2026-10-16T11:35:40Z",
     "spn2_job_id": "spn2-708211c92e45ae61174cb59100024d76ea05bebe",
-    "status": "success"
-  },
-  "https://www.letemps.ch/articles/quand-le-general-guisan-pactisait-avec-la-france-contre-le-iiie-reich": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:56:06Z",
-    "last_checked": "2026-07-20T19:56:23Z",
-    "spn2_job_id": "spn2-9eb130b49fbc7eb539e1657c880f7a44a10efde0",
     "status": "success"
   },
   "https://www.letemps.ch/articles/quand-le-musee-devient-une-oasis-de-lenteur": {
@@ -190252,13 +191876,6 @@
     "spn2_job_id": "spn2-cfe71b6e88dfab2ed403d3381234226f783c8264",
     "status": "success"
   },
-  "https://www.letemps.ch/articles/ukraine-et-iran-deux-guerres-qui-convergent-sur-un-meme-enjeu-le-petrole": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:57:23Z",
-    "last_checked": "2026-07-20T19:58:18Z",
-    "spn2_job_id": "spn2-c5736deb5aed2abceaf34ecb65dfdcc5fd8a828d",
-    "status": "success"
-  },
   "https://www.letemps.ch/articles/ukraine-l-inavouable-impasse": {
     "attempts": 0,
     "first_seen": "2026-08-29T16:47:24Z",
@@ -191125,13 +192742,6 @@
     "first_seen": "2026-08-22T13:03:07Z",
     "last_checked": "2026-08-22T15:30:30Z",
     "spn2_job_id": "spn2-26f96d48b66ecb84a5272b0cd23fb70ae41dcfe4",
-    "status": "success"
-  },
-  "https://www.letemps.ch/articles/une-juge-federale-americaine-bloque-temporairement-l-achat-de-warner-bros-par-paramount": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:55:01Z",
-    "last_checked": "2026-07-20T19:55:18Z",
-    "spn2_job_id": "spn2-a1786cb9873973108f4631346b0eae2346f4c1f9",
     "status": "success"
   },
   "https://www.letemps.ch/articles/une-langue-nationale-des-le-primaire-les-divisions-s-etalent-au-grand-jour": {
@@ -192899,9 +194509,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/culture/cinema/2026/article/street-fighter-le-defi-des-adaptations-de-jeux-video-au-cinema-29385510.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-10-18T15:56:04Z",
-    "last_checked": "2026-10-18T15:57:23Z",
+    "last_checked": "2026-10-18T20:44:32Z",
     "spn2_job_id": "spn2-f36e7b2d4299b777dd601452c2ce6a01de5b7cc9",
     "status": "error_retry"
   },
@@ -193156,6 +194766,13 @@
     "last_checked": "2026-10-16T17:37:07Z",
     "spn2_job_id": "spn2-b6b3ee6307da1cf05691bf121beff43e9732d908",
     "status": "success"
+  },
+  "https://www.rts.ch/info/culture/livres/2026/article/haneia-maurer-de-la-telerealite-a-la-vie-mormone-dans-l-utah-29384289.html": {
+    "attempts": 1,
+    "first_seen": "2026-10-18T20:48:39Z",
+    "last_checked": "2026-10-18T20:50:13Z",
+    "spn2_job_id": "spn2-d4e393b642ecb24e1524029647139b8d8426288d",
+    "status": "error_retry"
   },
   "https://www.rts.ch/info/culture/livres/2026/article/imperium-le-nouveau-polar-de-nicolas-feuz-et-marc-voltenauer-29350732.html": {
     "attempts": 0,
@@ -196818,13 +198435,6 @@
     "spn2_job_id": "spn2-f42f49561842711bd7ee94bee9c7b9d874f45ed2",
     "status": "success"
   },
-  "https://www.rts.ch/info/monde/2026/article/annecy-la-mairie-accusee-d-avoir-tente-d-etouffer-un-viol-29308380.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T22:07:12Z",
-    "last_checked": "2026-07-20T22:08:13Z",
-    "spn2_job_id": "spn2-4b93f259de782f128bc61c41a636b44a87aa0c09",
-    "status": "success"
-  },
   "https://www.rts.ch/info/monde/2026/article/antonio-guterres-a-l-onu-ses-alertes-sur-l-ia-et-la-cisjordanie-29364342.html": {
     "attempts": 0,
     "first_seen": "2026-09-22T17:12:16Z",
@@ -198557,9 +200167,9 @@
   "https://www.rts.ch/info/monde/2026/article/gaza-le-systeme-de-sante-maternelle-decime-selon-l-onu-29386254.html": {
     "attempts": 2,
     "first_seen": "2026-10-18T11:13:42Z",
-    "last_checked": "2026-10-18T15:52:48Z",
+    "last_checked": "2026-10-18T20:42:57Z",
     "spn2_job_id": "spn2-0c6c63457609f942ae34266a381e091800d32a55",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/george-clooney-critique-la-kakistocratie-de-donald-trump-29346754.html": {
     "attempts": 0,
@@ -198674,9 +200284,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/guatemala-un-ex-procureur-anti-corruption-assassine-29388958.html": {
-    "attempts": 3,
+    "attempts": 4,
     "first_seen": "2026-10-18T04:24:14Z",
-    "last_checked": "2026-10-18T15:51:57Z",
+    "last_checked": "2026-10-18T20:39:16Z",
     "spn2_job_id": "spn2-99e1a344fba90949a420380c81666cca4bf96931",
     "status": "error_retry"
   },
@@ -201928,6 +203538,13 @@
     "spn2_job_id": "spn2-4fa35be4304eff26ff602015961f338880b63b80",
     "status": "success"
   },
+  "https://www.rts.ch/info/monde/2026/article/unrwa-philippe-lazzarini-temoigne-des-atrocites-commises-a-gaza-29389570.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:57:22Z",
+    "last_checked": "2026-10-18T20:58:25Z",
+    "spn2_job_id": "spn2-b275e5fc83d12df6b6d7f5dfa2016ae547f0d786",
+    "status": "success"
+  },
   "https://www.rts.ch/info/monde/2026/article/ursula-von-der-leyen-propose-un-conseil-europeen-de-securite-29358566.html": {
     "attempts": 0,
     "first_seen": "2026-09-16T11:37:16Z",
@@ -201968,6 +203585,13 @@
     "first_seen": "2026-09-25T17:30:03Z",
     "last_checked": "2026-09-25T17:31:01Z",
     "spn2_job_id": "spn2-89ba480095119507fdb984688fff5ccca309924f",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/monde/2026/article/violences-en-france-emmanuel-macron-denonce-les-casseurs-29389458.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:55:11Z",
+    "last_checked": "2026-10-18T20:56:14Z",
+    "spn2_job_id": "spn2-43c3d9eea62a27c69d4458886eea2849fe614042",
     "status": "success"
   },
   "https://www.rts.ch/info/monde/2026/article/vol-dubai-tel-aviv-un-avion-deroute-apres-une-altercation-29372058.html": {
@@ -202906,13 +204530,6 @@
     "first_seen": "2026-10-01T13:32:23Z",
     "last_checked": "2026-10-01T20:43:25Z",
     "spn2_job_id": "spn2-45701d4d07343adad3ccab7a8980fc7081c2daad",
-    "status": "success"
-  },
-  "https://www.rts.ch/info/regions/autres-cantons/2026/article/zurich-des-supporters-reclament-la-demission-de-gianni-infantino-29308393.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T22:08:13Z",
-    "last_checked": "2026-07-20T22:08:29Z",
-    "spn2_job_id": "spn2-c551da90692e77d69c41769a03beb001701a9b68",
     "status": "success"
   },
   "https://www.rts.ch/info/regions/autres-cantons/2026/article/zurich-l-auteur-de-l-attaque-au-couteau-condamne-a-15-ans-de-prison-29361349.html": {
@@ -204127,9 +205744,9 @@
     "status": "success"
   },
   "https://www.rts.ch/info/regions/jura/2026/article/jura-debat-sur-la-fusion-des-communes-au-60e-comptoir-29389196.html": {
-    "attempts": 1,
+    "attempts": 2,
     "first_seen": "2026-10-18T16:03:48Z",
-    "last_checked": "2026-10-18T16:05:06Z",
+    "last_checked": "2026-10-18T20:46:14Z",
     "spn2_job_id": "spn2-147cb142329d2364be56c5ba7a2f472bcf97e5a5",
     "status": "error_retry"
   },
@@ -205141,6 +206758,13 @@
     "spn2_job_id": "spn2-280660dc0ac160f8c468590da6aa48e3cd604d96",
     "status": "success"
   },
+  "https://www.rts.ch/info/regions/vaud/2026/article/abus-l-indemnite-d-une-victime-de-l-eglise-imposee-par-le-fisc-vaudois-29388657.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:50:15Z",
+    "last_checked": "2026-10-18T20:51:33Z",
+    "spn2_job_id": "spn2-776bb637df59968cb3a3799db98c38b7f5765a86",
+    "status": "success"
+  },
   "https://www.rts.ch/info/regions/vaud/2026/article/abus-sexuels-vaud-va-creer-une-liste-noire-pour-les-creches-29377892.html": {
     "attempts": 3,
     "first_seen": "2026-10-06T20:58:02Z",
@@ -206135,6 +207759,13 @@
     "spn2_job_id": "spn2-577508a68bb53909f99f7d5a3e04d09bd79a36d2",
     "status": "success"
   },
+  "https://www.rts.ch/info/regions/vaud/2026/article/vallee-de-joux-la-premiere-municipalite-unifiee-est-connue-29389389.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:58:27Z",
+    "last_checked": "2026-10-18T20:59:48Z",
+    "spn2_job_id": "spn2-8b33b3b6bd0968ee83729ac55199e9c2b3c52d59",
+    "status": "success"
+  },
   "https://www.rts.ch/info/regions/vaud/2026/article/vaud-16-israeliens-et-palestiniens-reunis-pour-la-paix-29371713.html": {
     "attempts": 0,
     "first_seen": "2026-10-01T13:26:11Z",
@@ -206632,6 +208263,13 @@
     "spn2_job_id": "spn2-5e38b31e9fffad917da3f87f7906ab2950565c34",
     "status": "success"
   },
+  "https://www.rts.ch/info/sante/2026/article/sous-le-feu-des-rayons-notre-journaliste-raconte-sa-radiotherapie-contre-le-cancer-29385298.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:54:15Z",
+    "last_checked": "2026-10-18T20:55:06Z",
+    "spn2_job_id": "spn2-c118c2656c19767449329fd87ab5b816e6a66e03",
+    "status": "success"
+  },
   "https://www.rts.ch/info/sante/2026/article/suicide-assiste-une-etude-du-chuv-decrypte-la-demarche-29384788.html": {
     "attempts": 3,
     "first_seen": "2026-10-13T23:12:21Z",
@@ -206658,6 +208296,13 @@
     "first_seen": "2026-09-03T16:33:18Z",
     "last_checked": "2026-09-03T21:08:54Z",
     "spn2_job_id": "spn2-df467b3fd441df0de0578878753bbf80ea9d3d1e",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/sante/2026/article/temps-d-ecran-53-minutes-par-jour-pour-les-enfants-de-moins-de-2-ans-29388850.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:52:22Z",
+    "last_checked": "2026-10-18T20:53:10Z",
+    "spn2_job_id": "spn2-d21a42c17b75e26ef709fa1b101096d8d29f032a",
     "status": "success"
   },
   "https://www.rts.ch/info/sante/2026/article/testosterone-en-suisse-l-engouement-inquiete-les-medecins-29330461.html": {
@@ -207316,13 +208961,6 @@
     "first_seen": "2026-08-21T21:46:29Z",
     "last_checked": "2026-08-21T21:48:17Z",
     "spn2_job_id": "spn2-a619c95938c6a0c129e2bc1962d91a1e66bf35e3",
-    "status": "success"
-  },
-  "https://www.rts.ch/info/sciences-tech/2026/article/netflix-a-utilise-l-ia-dans-pres-de-300-films-et-series-en-2026-29306211.html": {
-    "attempts": 0,
-    "first_seen": "2026-07-20T19:53:04Z",
-    "last_checked": "2026-07-20T19:53:24Z",
-    "spn2_job_id": "spn2-fd517b62df3afe12ab10b3360c954cf7b88882cc",
     "status": "success"
   },
   "https://www.rts.ch/info/sciences-tech/2026/article/nobel-de-medecine-2026-la-lumiere-et-le-cerveau-recompenses-29364474.html": {
@@ -208086,6 +209724,13 @@
     "first_seen": "2026-09-07T12:27:03Z",
     "last_checked": "2026-09-07T12:28:16Z",
     "spn2_job_id": "spn2-ce50d0ce387ed31c6ce63e97e25d5bcdf884b2a3",
+    "status": "success"
+  },
+  "https://www.rts.ch/info/societe/2026/article/playstation-la-fin-des-jeux-physiques-enerve-les-gamers-29387775.html": {
+    "attempts": 0,
+    "first_seen": "2026-10-18T20:56:15Z",
+    "last_checked": "2026-10-18T20:57:21Z",
+    "spn2_job_id": "spn2-0ad967bfd8f261f129f39b368f30a9bf06bfe398",
     "status": "success"
   },
   "https://www.rts.ch/info/societe/2026/article/podcast-victoire-tuaillon-comment-ne-pas-se-resigner-29202582.html": {
@@ -208980,9 +210625,9 @@
   "https://www.rts.ch/info/suisse/2026/article/crimes-suisses-un-meurtre-dans-le-jura-resolu-six-ans-plus-tard-29384542.html": {
     "attempts": 1,
     "first_seen": "2026-10-18T16:06:43Z",
-    "last_checked": "2026-10-18T16:08:05Z",
+    "last_checked": "2026-10-18T20:48:37Z",
     "spn2_job_id": "spn2-2e84a3c6685ce4783518c4a336bd4a3a63d5b8ed",
-    "status": "error_retry"
+    "status": "success"
   },
   "https://www.rts.ch/info/suisse/2026/article/cyberattaque-contre-l-ofit-200-comptes-compromis-sur-sharepoint-29319895.html": {
     "attempts": 0,
