@@ -1,19 +1,5 @@
 [
   {
-    "timestamp": "2026-08-12T02:30:15Z",
-    "source": "lemonde.fr",
-    "url": "https://www.lemonde.fr/international/live/2026/08/11/en-direct-guerre-en-ukraine-le-renseignement-ukrainien-affirme-que-la-russie-prepare-une-mobilisation-pour-l-automne-declare-volodymyr-zelensky_6741928_3210.html",
-    "reason": "gave_up",
-    "github_run_id": "31556973371"
-  },
-  {
-    "timestamp": "2026-08-12T13:25:31Z",
-    "source": "rts.ch",
-    "url": "https://www.rts.ch/info/culture/cinema/2026/article/le-cineaste-james-gray-celebre-au-festival-de-locarno-29325464.html",
-    "reason": "gave_up",
-    "github_run_id": "31601196656"
-  },
-  {
     "timestamp": "2026-08-13T19:13:29Z",
     "source": "lemonde.fr",
     "url": "https://www.lemonde.fr/idees/article/2026/08/11/hugging-face-le-recit-de-l-ia-qui-s-echappe-dispense-de-chercher-qui-repond-de-la-machine_6744014_3232.html",
@@ -4825,13 +4811,6 @@
   {
     "timestamp": "2026-11-01T00:16:09Z",
     "source": "letemps.ch",
-    "url": "https://www.letemps.ch/articles/donald-trump-n-etait-probablement-pas-la-bonne-personne-pour-ce-job-dans-la-bourgade-de-gainesville-l-anxiete-des-republicains-qui-soutiennent-rick-jackson",
-    "reason": "still_retrying",
-    "github_run_id": "41254739125"
-  },
-  {
-    "timestamp": "2026-11-01T00:16:09Z",
-    "source": "letemps.ch",
     "url": "https://www.letemps.ch/articles/les-gymnases-et-ecoles-professionnelles-vaudois-ont-ete-cyberattaques",
     "reason": "still_retrying",
     "github_run_id": "41254739125"
@@ -5917,13 +5896,6 @@
   {
     "timestamp": "2026-11-04T06:14:51Z",
     "source": "lemonde.fr",
-    "url": "https://www.lemonde.fr/international/video/2026/11/01/au-texas-le-chantier-du-plus-grand-data-center-au-monde-divise-le-camp-de-trump_6804134_3210.html",
-    "reason": "still_retrying",
-    "github_run_id": "41781850654"
-  },
-  {
-    "timestamp": "2026-11-04T06:14:51Z",
-    "source": "lemonde.fr",
     "url": "https://www.lemonde.fr/international/article/2026/11/01/en-inde-des-manifestations-massives-se-tiennent-a-new-delhi-contre-la-revision-des-listes-electorales-et-pour-la-demission-du-chef-de-la-commission-electorale_6804170_3210.html",
     "reason": "still_retrying",
     "github_run_id": "41781850654"
@@ -6394,13 +6366,6 @@
     "timestamp": "2026-11-05T06:31:43Z",
     "source": "lemonde.fr",
     "url": "https://www.lemonde.fr/culture/article/2026/11/02/prix-medicis-2026-philippe-vasset-recompense-pour-son-roman-dans-les-grandes-lignes_6805258_3246.html",
-    "reason": "never_attempted",
-    "github_run_id": "41978871021"
-  },
-  {
-    "timestamp": "2026-11-05T06:31:43Z",
-    "source": "lemonde.fr",
-    "url": "https://www.lemonde.fr/les-decodeurs/article/2026/11/04/midterms-2026-les-cartes-des-resultats-des-elections-americaines-de-mi-mandat-en-temps-reel_6805570_4355771.html",
     "reason": "never_attempted",
     "github_run_id": "41978871021"
   },
@@ -7016,13 +6981,6 @@
   {
     "timestamp": "2026-11-08T18:17:46Z",
     "source": "rts.ch",
-    "url": "https://www.rts.ch/info/sante/2026/article/demence-precoce-5-conseils-pour-reagir-apres-le-diagnostic-29406957.html",
-    "reason": "still_retrying",
-    "github_run_id": "42506964089"
-  },
-  {
-    "timestamp": "2026-11-08T18:17:46Z",
-    "source": "rts.ch",
     "url": "https://www.rts.ch/info/culture/cinema/2026/article/giff-2026-la-gradiva-de-marine-atlan-remporte-le-reflet-d-or-29409095.html",
     "reason": "still_retrying",
     "github_run_id": "42506964089"
@@ -7152,5 +7110,145 @@
     "url": "https://www.lemonde.fr/international/live/2026/11/08/en-direct-guerre-en-ukraine-les-dernieres-informations_6803934_3210.html",
     "reason": "still_retrying",
     "github_run_id": "42569474526"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/sport/autres-sports/2026/article/triathlon-alanis-siffert-bat-le-record-suisse-de-daniela-ryf-29409308.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/monde/2026/article/tuerie-de-cracovie-enquete-pour-terrorisme-ouverte-29409349.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/monde/2026/article/guerre-en-ukraine-850-000-usagers-prives-d-electricite-29409411.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/regions/neuchatel/2026/article/la-chaux-de-fonds-subventionne-l-effacement-des-tags-29409337.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/suisse/2026/article/tests-covid-l-ofsp-traque-213-millions-de-factures-suspectes-29409299.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/monde/2026/article/iran-les-etats-unis-veulent-bloquer-les-acces-terrestres-29409502.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/monde/2026/article/lfi-decrets-d-urgence-pour-le-smic-et-la-retraite-a-62-ans-29409522.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/suisse/2026/article/cop31-la-suisse-veut-confirmer-les-progres-sur-le-climat-29409485.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/monde/2026/article/egypte-6-journalistes-d-investigation-arretes-en-24h-29407613.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/monde/2026/article/riyad-le-quartier-financier-vise-par-des-missiles-houthis-29409325.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/monde/2026/article/cnews-la-petition-de-fermeture-depasse-1-million-de-signatures-29410081.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/suisse/2026/article/ofsp-5-ans-de-combat-pour-lever-le-secret-des-assureurs-29407948.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:36Z",
+    "source": "rts.ch",
+    "url": "https://www.rts.ch/info/societe/2026/article/comment-l-uberisation-du-crime-piege-les-jeunes-sur-les-reseaux-29409362.html",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:37Z",
+    "source": "lemonde.fr",
+    "url": "https://www.lemonde.fr/societe/article/2026/11/08/l-affaire-michel-zecler-emblematique-des-violences-policieres-devant-la-justice_6808454_3224.html",
+    "reason": "gave_up",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:37Z",
+    "source": "letemps.ch",
+    "url": "https://www.letemps.ch/monde/dans-l-argentine-de-l-ultraliberal-milei-le-pape-leon-xiv-reclame-une-economie-au-service-de-la-personne",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:37Z",
+    "source": "letemps.ch",
+    "url": "https://www.letemps.ch/monde/moyenorient/en-direct-moyen-orient-le-dispositif-pour-bloquer-les-routes-terrestres-vers-l-iran-operationnel-selon-trump",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:37Z",
+    "source": "letemps.ch",
+    "url": "https://www.letemps.ch/opinions/chroniques/pour-une-finma-pleinement-engagee-au-service-de-la-competitivite-suisse",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:37Z",
+    "source": "letemps.ch",
+    "url": "https://www.letemps.ch/cyber/intelligence-artificielle/les-liaisons-dangereuses-du-patron-de-nvidia-avec-une-probable-espionne-de-pekin-plongent-le-geant-de-la-tech-dans-la-tourmente",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:37Z",
+    "source": "letemps.ch",
+    "url": "https://www.letemps.ch/suisse/un-conte-d-hiver-dans-les-bois-et-la-neige-a-la-decouverte-de-gstaad",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
+  },
+  {
+    "timestamp": "2026-11-10T19:59:37Z",
+    "source": "letemps.ch",
+    "url": "https://www.letemps.ch/societe/sur-les-pistes-de-ski-j-ai-repousse-mes-limites-mais-en-matiere-de-finances-c-est-tout-le-contraire",
+    "reason": "still_retrying",
+    "github_run_id": "42886514615"
   }
 ]
