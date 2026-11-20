@@ -21,6 +21,13 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # Supervision (Healthchecks.io) : sans le secret HEARTBEAT_URL, ces étapes ne font rien.
+      # `|| true` : une panne de la supervision ne doit jamais faire échouer le workflow.
+      - name: Heartbeat (début)
+        env:
+          HEARTBEAT_URL: ${{ secrets.HEARTBEAT_URL }}
+        run: '[ -z "$HEARTBEAT_URL" ] || curl -fsS -m 10 --retry 3 "$HEARTBEAT_URL/start" || true'
+
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -68,3 +75,19 @@ jobs:
           done
           echo "::error::Failed to push after 3 attempts"
           exit 1
+
+      # Dernière étape, `always()` : signale le résultat du job (success -> ping, failure -> /fail).
+      # Un job annulé n'envoie rien : l'absence de ping déclenche l'alerte après le délai de grâce.
+      - name: Heartbeat (fin)
+        if: always()
+        env:
+          HEARTBEAT_URL: ${{ secrets.HEARTBEAT_URL }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          [ -n "$HEARTBEAT_URL" ] || exit 0
+          case "$JOB_STATUS" in
+            success) suffix="" ;;
+            failure) suffix="/fail" ;;
+            *) exit 0 ;;
+          esac
+          curl -fsS -m 10 --retry 3 "$HEARTBEAT_URL$suffix" || true
