@@ -98,6 +98,8 @@ flowchart TB
    `FeedStatsStore.record()` la compare à l'instantané précédent : il en déduit les nouveaux articles et, pour les
    sources rotatives, ceux qui ont **disparu du flux sans confirmation d'archivage** (les « échecs d'archivage »).
 3. **Archivage** — `archive_new_urls()` soumet les nouvelles URLs à SPN2 selon une fenêtre glissante (voir plus bas).
+   En parallèle, les échecs d'archivage déjà notés sont revérifiés un à un : ceux qu'Internet Archive possède
+   désormais sont retirés de la liste (au plus `dropped_recheck_max_seconds`, le reste au run suivant).
 4. **Persistance** — les quatre magasins d'état sont purgés (rétention `state_max_age_days`) puis réécrits sur disque.
 5. **Résumé** — un enregistrement agrégé est ajouté à `run_history.json`.
 
