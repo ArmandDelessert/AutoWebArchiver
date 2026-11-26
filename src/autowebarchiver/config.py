@@ -58,10 +58,10 @@ class Settings:
     # later poll -- without this, such jobs stay "pending" (and un-resubmittable)
     # indefinitely, accumulating run over run.
     pending_job_max_age_hours: float = 6.0
-    # Time allowed at the start of a run to re-check the dropped-URL log
-    # against Internet Archive; what doesn't fit is checked on later runs.
-    # This time is part of max_run_seconds, not added to it.
-    dropped_recheck_max_seconds: int = 300
+    # Time allowed to re-check the dropped-URL log against Internet Archive,
+    # in parallel with archiving; what doesn't fit is checked on later runs.
+    # Never extends past max_run_seconds.
+    dropped_recheck_max_seconds: int = 1800
 
 
 @dataclass(frozen=True)

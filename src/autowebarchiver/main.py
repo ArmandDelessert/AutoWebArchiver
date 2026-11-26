@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 import os
 import sys
+import threading
 import time
 from pathlib import Path
 
@@ -48,6 +49,30 @@ def discover_source(source: Source) -> list[DiscoveredItem]:
     raise FatalError(f"Unknown source type '{source.type}' for {source.name}")
 
 
+def _start_recheck(dropped_urls: DroppedUrlsStore, max_seconds: float) -> threading.Thread:
+    """In a background thread, drop the logged URLs that have since been
+    archived by someone else (IA's own crawler, a manual save via the
+    dashboard): they no longer need attention. One request at a time."""
+
+    def recheck() -> None:
+        try:
+            removed = dropped_urls.purge_confirmed_archived(
+                wayback_is_archived, delay_seconds=0.3, max_seconds=max_seconds
+            )
+            if removed:
+                logger.info(
+                    "%d URL(s) in dropped_urls.json are now archived on IA, removed from the list",
+                    removed,
+                )
+        except Exception as exc:  # noqa: BLE001 - never let this abort the run
+            logger.warning("Could not re-check dropped_urls.json against Internet Archive: %s", exc)
+
+    # daemon: if archiving crashes, don't keep the process alive just for this.
+    thread = threading.Thread(target=recheck, name="dropped-urls-recheck", daemon=True)
+    thread.start()
+    return thread
+
+
 def run(
     config_path: Path = DEFAULT_CONFIG_PATH,
     state_path: Path = DEFAULT_STATE_PATH,
@@ -82,23 +107,6 @@ def run(
     client = SPN2Client(
         access_key, secret_key, max_captures_per_minute=config.settings.max_captures_per_minute
     )
-
-    # Re-check the existing backlog before adding this run's own new entries --
-    # an entry archived by someone else since it was recorded (IA's own
-    # crawler, a manual save via the dashboard) no longer needs attention.
-    try:
-        confirmed_archived = dropped_urls.purge_confirmed_archived(
-            wayback_is_archived,
-            delay_seconds=0.3,
-            max_seconds=config.settings.dropped_recheck_max_seconds,
-        )
-        if confirmed_archived:
-            logger.info(
-                "%d URL(s) in dropped_urls.json are now archived on IA, removed from the list",
-                confirmed_archived,
-            )
-    except Exception as exc:  # noqa: BLE001 - never let this abort the run
-        logger.warning("Could not re-check dropped_urls.json against Internet Archive: %s", exc)
 
     totals = {"success": 0, "error": 0, "pending": 0, "already_archived": 0, "error_retry": 0, "error_permanent": 0}
 
@@ -153,10 +161,20 @@ def run(
         except Exception as exc:  # noqa: BLE001 - isolate failures per source
             logger.error("Failed to discover items from %s: %s", source.name, exc)
 
+    # Re-check the dropped-URL log while archiving runs. Started only now that
+    # discovery has finished adding to it: until the join below, this thread is
+    # the only one touching dropped_urls. Its budget is also capped to what is
+    # left of the run's, so it can't push the run past the CI job timeout.
+    remaining = config.settings.max_run_seconds - (time.monotonic() - run_started)
+    recheck = _start_recheck(
+        dropped_urls, max(0.0, min(config.settings.dropped_recheck_max_seconds, remaining))
+    )
+
     exhaustive_by_source = {source.name: source.exhaustive for source in config.sources}
     archive_counts, already_archived_by_source, rate_limited_by_source, deferred_count = archive_new_urls(
         client, store, discovered, config.settings, exhaustive_by_source, started_at=run_started
     )
+    recheck.join()
     for key, value in archive_counts.items():
         totals[key] += value
 
