@@ -13,7 +13,11 @@ tendances (succès/erreurs/429), backlog restant.
 
 ## Installation locale
 
+La CI et la collecte tournent avec Python 3.15.
+
 ```bash
+python -m venv .venv
+.venv\Scripts\activate    # Windows (Linux : source .venv/bin/activate)
 pip install -e . -r requirements-dev.txt
 cp .env.example .env  # renseigner ARCHIVE_ORG_ACCESS_KEY / ARCHIVE_ORG_SECRET_KEY
                       # (clés gratuites sur https://archive.org/account/s3.php)

@@ -28,9 +28,9 @@ jobs:
           HEARTBEAT_URL: ${{ secrets.HEARTBEAT_URL }}
         run: '[ -z "$HEARTBEAT_URL" ] || curl -fsS -m 10 --retry 3 "$HEARTBEAT_URL/start" || true'
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
-          python-version: "3.12"
+          python-version: "3.15"
           cache: "pip"
 
       - name: Install dependencies

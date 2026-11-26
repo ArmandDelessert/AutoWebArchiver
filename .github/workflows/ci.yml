@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch: {}  # pour tester une branche : gh workflow run ci.yml --ref <branche>
 
 jobs:
   test:
@@ -11,10 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
-          python-version: "3.12"
+          python-version: "3.15"
           cache: "pip"
+          # Par défaut, la clé du cache ne couvre que requirements.txt.
+          cache-dependency-path: "requirements*.txt"
 
       - name: Install dependencies
         run: pip install -r requirements-dev.txt
