@@ -9,3 +9,18 @@ updates:
       github-actions:
         patterns:
           - "*"
+
+  # pip : seulement les outils plafonnés avec ~= dans requirements-dev.txt, qui
+  # n'avanceraient jamais seuls. Les dépendances en >= prennent déjà la dernière
+  # version à chaque installation.
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    allow:
+      - dependency-name: "ruff"
+      - dependency-name: "mypy"
+    groups:
+      outils-analyse:
+        patterns:
+          - "*"
