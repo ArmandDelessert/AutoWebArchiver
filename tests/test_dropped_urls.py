@@ -101,6 +101,29 @@ def test_purge_confirmed_archived_with_no_entries_checks_nothing(tmp_path):
     assert calls == []
 
 
+def test_purge_confirmed_archived_stops_at_time_budget_and_resumes(tmp_path, monkeypatch):
+    clock = {"t": 0.0}
+    monkeypatch.setattr("autowebarchiver.state.dropped_urls.time.monotonic", lambda: clock["t"])
+    store = DroppedUrlsStore(tmp_path / "dropped_urls.json")
+    urls = [f"https://example.com/{i}" for i in range(5)]
+    store.record("s", [DroppedUrl(url=url, reason="gave_up") for url in urls])
+    checked = []
+
+    def slow_checker(url):
+        checked.append(url)
+        clock["t"] += 10
+        return False
+
+    store.purge_confirmed_archived(slow_checker, max_seconds=25)
+    assert checked == urls[:3]
+
+    # The next pass starts with the ones the budget left out.
+    checked.clear()
+    store.purge_confirmed_archived(slow_checker, max_seconds=15)
+    assert checked == urls[3:]
+    assert [e["url"] for e in store._entries] == urls
+
+
 def test_purge_older_than_removes_stale_entries(tmp_path):
     store = DroppedUrlsStore(tmp_path / "dropped_urls.json")
     store.record("s", [DroppedUrl(url="https://example.com/old", reason="gave_up")])

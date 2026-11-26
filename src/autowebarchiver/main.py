@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 import os
 import sys
+import time
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -54,6 +55,7 @@ def run(
     run_history_path: Path = DEFAULT_RUN_HISTORY_PATH,
     dropped_urls_path: Path = DEFAULT_DROPPED_URLS_PATH,
 ) -> int:
+    run_started = time.monotonic()
     setup_logging()
     load_dotenv()
 
@@ -85,7 +87,11 @@ def run(
     # an entry archived by someone else since it was recorded (IA's own
     # crawler, a manual save via the dashboard) no longer needs attention.
     try:
-        confirmed_archived = dropped_urls.purge_confirmed_archived(wayback_is_archived, delay_seconds=0.3)
+        confirmed_archived = dropped_urls.purge_confirmed_archived(
+            wayback_is_archived,
+            delay_seconds=0.3,
+            max_seconds=config.settings.dropped_recheck_max_seconds,
+        )
         if confirmed_archived:
             logger.info(
                 "%d URL(s) in dropped_urls.json are now archived on IA, removed from the list",
@@ -149,7 +155,7 @@ def run(
 
     exhaustive_by_source = {source.name: source.exhaustive for source in config.sources}
     archive_counts, already_archived_by_source, rate_limited_by_source, deferred_count = archive_new_urls(
-        client, store, discovered, config.settings, exhaustive_by_source
+        client, store, discovered, config.settings, exhaustive_by_source, started_at=run_started
     )
     for key, value in archive_counts.items():
         totals[key] += value

@@ -263,6 +263,8 @@ def archive_new_urls(
     items: list[DiscoveredItem],
     settings: Settings,
     exhaustive: dict[str, bool] | None = None,
+    *,
+    started_at: float | None = None,
 ) -> tuple[dict[str, int], dict[str, int], dict[str, int], int]:
     """Archive newly discovered URLs with a single-threaded sliding window: keep
     up to `concurrency` captures in flight, submitting a new one as soon as a slot
@@ -271,6 +273,10 @@ def archive_new_urls(
     them -- no threads or asyncio needed (the throughput ceiling is SPN2's 7
     submissions/min, not our local concurrency). Which item gets the next slot
     is decided by SourceScheduler -- see its docstring for the scheduling rules.
+
+    settings.max_run_seconds counts from started_at (a time.monotonic() value,
+    by default now): the caller passes the start of the whole run, so time
+    spent before this function can't push the run past the CI job timeout.
 
     Returns (counts, already_archived_by_source, rate_limited_by_source,
     deferred_count): the aggregate outcome counts, per-source breakdowns of
@@ -309,7 +315,7 @@ def archive_new_urls(
     )
     scheduler = SourceScheduler(new_items, exhaustive)
     in_flight: dict[str, tuple[str, str, float]] = {}
-    run_deadline = time.monotonic() + settings.max_run_seconds
+    run_deadline = (time.monotonic() if started_at is None else started_at) + settings.max_run_seconds
 
     while True:
         now = time.monotonic()

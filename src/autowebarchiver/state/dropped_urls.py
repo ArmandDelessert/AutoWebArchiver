@@ -60,9 +60,13 @@ class DroppedUrlsStore:
             )
 
     def purge_confirmed_archived(
-        self, is_archived: Callable[[str], bool | None], *, delay_seconds: float = 0.0
+        self,
+        is_archived: Callable[[str], bool | None],
+        *,
+        delay_seconds: float = 0.0,
+        max_seconds: float | None = None,
     ) -> int:
-        """Re-check every entry against Internet Archive and drop the ones
+        """Re-check entries against Internet Archive and drop the ones
         confirmed archived since they were recorded -- the point of this
         list is "still needs attention", and an entry archived by someone
         else in the meantime (IA's own crawler, a manual save) no longer
@@ -70,18 +74,35 @@ class DroppedUrlsStore:
         entry in place: better to keep re-checking next run than to drop it
         on a flaky network call. delay_seconds is only meaningful with a
         real, non-instant checker -- see main.py's use of wayback.is_archived,
-        a public unauthenticated endpoint best not hammered in a tight loop."""
-        kept = []
-        removed = 0
-        for i, entry in enumerate(self._entries):
-            if i:
+        a public unauthenticated endpoint best not hammered in a tight loop.
+
+        max_seconds bounds the whole pass: this list grows into the
+        thousands, at about a second per check, and re-checking all of it
+        every run once pushed runs past the CI job timeout. Entries are
+        taken never-checked first, then longest-unchecked (each one tried is
+        stamped with last_checked), so successive runs cover the whole list.
+        The list keeps its original order. Returns the number removed."""
+        deadline = None if max_seconds is None else time.monotonic() + max_seconds
+        queue = sorted(self._entries, key=lambda e: e.get("last_checked", ""))
+        archived: set[int] = set()
+        checked = 0
+        for entry in queue:
+            if deadline is not None and time.monotonic() >= deadline:
+                break
+            if checked:
                 time.sleep(delay_seconds)
+            checked += 1
+            entry["last_checked"] = _now_iso()
             if is_archived(entry["url"]):
-                removed += 1
-            else:
-                kept.append(entry)
-        self._entries = kept
-        return removed
+                archived.add(id(entry))
+        if queue:
+            logger.info(
+                "Re-checked %d of %d URL(s) in the dropped-URL log against Internet Archive",
+                checked,
+                len(queue),
+            )
+        self._entries = [e for e in self._entries if id(e) not in archived]
+        return len(archived)
 
     def purge_older_than(self, days: int) -> int:
         cutoff = datetime.now(UTC) - timedelta(days=days)

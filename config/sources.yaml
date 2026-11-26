@@ -56,3 +56,4 @@ settings:
   state_max_age_days: 90
   state_save_interval_seconds: 20
   pending_job_max_age_hours: 6.0
+  dropped_recheck_max_seconds: 300

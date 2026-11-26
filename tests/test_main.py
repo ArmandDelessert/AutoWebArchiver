@@ -1,3 +1,5 @@
+import time
+
 from autowebarchiver import main
 from autowebarchiver.config import Settings
 from autowebarchiver.discovery.models import DiscoveredItem
@@ -352,6 +354,25 @@ def test_archive_defers_everything_when_run_budget_is_zero(tmp_path):
     }
     assert not any(kind == "submit" for kind, _ in client.calls)
     assert all(not store.is_known(it.url) for it in items)
+
+
+def test_run_budget_includes_time_spent_before_archiving(tmp_path):
+    items = _items(3)
+    client = FakeClient({it.url: _success(it.url) for it in items}, available=10)
+    store = SeenStore(tmp_path / "seen.json")
+
+    # The run started 200s ago and has a 100s budget: nothing left to spend.
+    counts, _, _, deferred = main.archive_new_urls(
+        client,
+        store,
+        items,
+        _settings(max_concurrent_spn2_jobs=10, max_run_seconds=100),
+        started_at=time.monotonic() - 200,
+    )
+
+    assert deferred == 3
+    assert counts["success"] == 0
+    assert not client.calls
 
 
 def test_save_quietly_throttles_writes(tmp_path, monkeypatch):
